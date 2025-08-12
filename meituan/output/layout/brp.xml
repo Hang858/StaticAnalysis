@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sankuai.waimai.platform.widget.TextAppendImageLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <TextView android:textSize="12.0sp" android:textColor="@color/g3u" android:gravity="center_vertical" android:id="@id/zsz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.5" />
-    <com.meituan.roodesign.resfetcher.widgets.RooImageView android:id="@id/s0f" android:layout_width="13.0dip" android:layout_height="13.0dip" app:project="waimai_c" app:srcName="waimai_c_order_icon_normal_question_gray" />
-</com.sankuai.waimai.platform.widget.TextAppendImageLayout>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:background="@drawable/msv_bg_immersive_bottom_entrance" android:layout_width="fill_parent" android:layout_height="40.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <android.support.v7.widget.AppCompatTextView android:textSize="13.0dip" android:textColor="#d8ffffff" android:ellipsize="end" android:id="@id/tv_bottom_entrance_left_tip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/msv_immersive_bottom_entrance_default_left_tip_text1" android:maxLines="1" android:layout_weight="1.0" android:layout_marginStart="10.0dip" />
-    <android.support.v7.widget.AppCompatTextView android:textSize="13.0dip" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_bottom_entrance_right_tip" android:layout_width="wrap_content" android:layout_height="28.0dip" android:text="@string/msv_immersive_bottom_entrance_default_right_tip_text" android:maxLines="1" android:alpha="0.85" />
-    <android.support.v7.widget.AppCompatImageView android:id="@id/iv_bottom_entrance_arrow" android:layout_width="14.0dip" android:layout_height="14.0dip" android:src="@drawable/msv_immersive_entrance_arrow" android:alpha="0.6" android:layout_marginStart="2.0dip" android:layout_marginEnd="10.0dip" />
-</LinearLayout>

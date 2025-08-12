@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.meituan.android.edfu.mvision.ui.widget.FullScreenAnim android:id="@id/r1v" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <TextView android:textSize="32.0sp" android:textColor="@color/y5x" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/text_new_scantype" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="320.0dip" android:text="@string/mlens_tab_new_scan" android:shadowColor="@color/bc2c" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="5.0" />
-    <TextView android:textSize="15.0sp" android:textColor="@color/y5x" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/mlens_scan_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/mlens_new_scan_tips" android:shadowColor="@color/bc2c" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="5.0" />
-</FrameLayout>

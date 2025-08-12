@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sankuai.xm.imui.common.view.LinkTextView android:textSize="@dimen/xm_sdk_text_msg_text_size" android:gravity="center_vertical" android:autoLink="none" android:id="@id/xm_sdk_tv_chat_txt_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="22.0dip" android:includeFontPadding="true" style="@style/xm_sdk_chat_msg_content_style"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

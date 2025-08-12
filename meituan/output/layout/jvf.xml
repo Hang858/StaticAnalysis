@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout android:id="@id/ocb" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.sankuai.meituan.msv.list.widget.ShortVideoPoisonRecyclerView android:id="@id/g5s" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHeight_default="percent" app:layout_constraintHeight_percent="1.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
-</android.support.constraint.ConstraintLayout>

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:gravity="bottom" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.sankuai.xm.imui.common.view.LinkTextView android:textSize="16.0sp" android:textColor="#ff999999" android:gravity="center" android:id="@id/gk5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.5dip" />
-</FrameLayout>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ix5" android:layout_marginRight="@dimen/ix5"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
-    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
-        <com.dianping.imagemanager.DPNetworkImageView android:id="@id/nx7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" dp:placeholderEmpty="@drawable/upc" dp:placeholderError="@drawable/p5p" dp:placeholderLoading="@drawable/upc" dp:placeholderReload="@drawable/upc" />
-        <ImageView android:layout_gravity="center|right|top" android:id="@id/emf" android:background="@drawable/mit" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="7.0dip" android:src="@drawable/kof" android:scaleType="fitCenter" />
-    </FrameLayout>
-</RelativeLayout>

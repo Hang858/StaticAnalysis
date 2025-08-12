@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="49.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:layout_gravity="center" android:id="@id/iv_tab_day_img" android:layout_width="@dimen/pm8" android:layout_height="@dimen/pm8" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:layout_centerHorizontal="true" android:alpha="1.0" />
-    <ImageView android:layout_gravity="center" android:id="@id/iv_tab_night_img" android:layout_width="@dimen/pm8" android:layout_height="@dimen/pm8" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:layout_centerHorizontal="true" android:alpha="0.0" />
-    <TextView android:textSize="@dimen/v7" android:textColor="@color/d5h" android:gravity="center" android:id="@id/jd8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/iv_tab_day_img" android:layout_centerHorizontal="true" />
-    <TextView android:textSize="@dimen/j3o" android:textColor="#ffffffff" android:id="@id/zxy" android:background="@drawable/fn0" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_alignLeft="@id/iv_tab_day_img" android:layout_alignBottom="@id/iv_tab_day_img" android:layout_marginStart="13.0dip" />
-</RelativeLayout>

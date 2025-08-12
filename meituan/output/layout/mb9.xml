@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Button android:textSize="15.0sp" android:textColor="#59000000" android:id="@id/bbsc" android:background="@drawable/bdc" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="8.5dip" android:text="提交" style="?android:borderlessButtonStyle"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

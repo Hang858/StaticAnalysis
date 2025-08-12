@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.dianping.android.oversea.base.widget.OsNetWorkImageView android:id="@id/icon" android:visibility="gone" android:layout_width="21.0dip" android:layout_height="21.0dip" android:layout_marginRight="6.0dip" />
-    <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ff2c3942" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
-</merge>

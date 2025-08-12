@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <LinearLayout android:orientation="vertical" android:id="@id/ssx" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/bbjr" android:layout_width="26.0dip" android:layout_height="26.0dip" android:layout_marginTop="120.0dip" android:indeterminateDrawable="@anim/loading_animtaion" />
-    <com.meituan.android.common.ui.emptypage.EmptyPage android:layout_gravity="center" android:orientation="vertical" android:id="@id/tpk" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:mainMessage="@string/mb5" app:pageImage="@drawable/commonui_empty_page_network_error" app:subMessage="@string/h0k" />
-</merge>

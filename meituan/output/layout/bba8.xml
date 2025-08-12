@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="11.0sp" android:textColor="#ffff9900" android:gravity="center" android:id="@id/iui" android:background="@drawable/qd8" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:maxEms="6" />
-    <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:gravity="center|left" android:id="@id/user" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:layout_weight="1.0" />
-    <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/yw_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/s_x" android:drawablePadding="3.0dip" />
-    <com.maoyan.android.common.view.ExpandClickAreaTextView android:textSize="13.0sp" android:textColor="#ff999999" android:id="@id/wtk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:drawableLeft="@drawable/ouk" android:drawablePadding="3.0dip" />
-</LinearLayout>

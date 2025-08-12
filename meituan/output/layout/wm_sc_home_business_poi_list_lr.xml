@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.sankuai.waimai.store.poi.list.newbrand.business_poi_list.BusinessCategoryBackgroundView android:id="@id/height_adjustable_image_view" android:layout_width="53.0dip" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="16.0dip" app:layout_constraintBottom_toBottomOf="@id/lr_poi_category_container" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/lr_poi_category_container" />
-    <com.sankuai.waimai.store.newwidgets.list.SCRecyclerView android:id="@id/lr_poi_category_container" android:background="@drawable/sg_new_brand_channel_category_container_bg" android:layout_width="53.0dip" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:layout_marginTop="6.0dip" android:layout_marginBottom="20.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/WmStBaseListviewTheme" />
-    <FrameLayout android:id="@id/lr_poi_container" android:layout_width="0.0dip" android:layout_height="fill_parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/lr_poi_category_container" />
-</merge>

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:background="#66000000" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.sankuai.meituan.mtlive.player.library.view.MTPlayerView android:id="@id/nnr" android:visibility="visible" android:layout_width="90.0dip" android:layout_height="160.0dip" />
-</FrameLayout>

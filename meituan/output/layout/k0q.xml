@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Button android:textSize="14.0sp" android:textColor="#ff222426" android:gravity="center" android:layout_gravity="center" android:background="@drawable/ryb" android:layout_width="28.0dip" android:layout_height="40.0dip" style="?android:borderlessButtonStyle"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

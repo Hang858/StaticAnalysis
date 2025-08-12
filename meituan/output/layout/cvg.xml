@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <ImageView android:id="@id/bap0" android:layout_width="80.0dip" android:layout_height="20.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
-    <com.meituan.roodesign.resfetcher.widgets.RooImageView android:id="@id/yv4" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="12.0dip" android:layout_marginLeft="-2.0dip" android:layout_marginTop="-4.0dip" android:layout_toRightOf="@id/bap0" android:layout_alignTop="@id/bap0" app:project="waimai_c" app:srcName="waimai_c_page_icon_home_poilist_tab_hot" />
-</RelativeLayout>

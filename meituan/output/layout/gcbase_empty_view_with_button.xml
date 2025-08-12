@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="130.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/text_size_h15" android:textColor="@color/black1" android:gravity="center" android:id="@id/tv_empty" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip" />
-    <TextView android:textSize="@dimen/text_size_h17" android:textColor="@color/gcbase_white" android:gravity="center_horizontal" android:id="@id/goto_next" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:text="点击查看明日场次" style="@style/OrangeButton" />
-</LinearLayout>

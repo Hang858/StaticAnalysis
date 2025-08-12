@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:gravity="center" android:id="@id/sale_root_layout" android:background="@android:color/transparent" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/sale_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:minWidth="60.0dip" android:minHeight="60.0dip" android:layout_centerHorizontal="true" />
-    <ImageView android:id="@id/static_badge" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="17.0dip" android:layout_marginTop="-4.0dip" android:layout_alignParentRight="true" />
-    <ViewFlipper android:id="@id/vf_badge" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="17.0dip" android:layout_marginTop="-4.0dip" android:inAnimation="@anim/hades_widget_badge" android:flipInterval="2000" android:layout_alignParentRight="true" android:autoStart="true">
-        <ImageView android:id="@id/child_badge" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitStart" />
-    </ViewFlipper>
-</RelativeLayout>

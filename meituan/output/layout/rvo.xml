@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="horizontal" android:id="@id/w3o" android:paddingRight="16.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="@dimen/hji" android:layout_marginBottom="3.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <FrameLayout android:layout_gravity="center_vertical" android:id="@id/back_layout" android:paddingLeft="12.0dip" android:paddingRight="4.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:contentDescription="返回 按钮">
-        <ImageView android:layout_gravity="center_vertical" android:id="@id/image_back" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ljc" />
-    </FrameLayout>
-    <com.sankuai.meituan.search.view.SearchEditLayout android:id="@id/x5n" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0" />
-</LinearLayout>

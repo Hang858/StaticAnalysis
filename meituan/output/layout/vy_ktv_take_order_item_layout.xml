@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="100.0dip" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
-    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <com.dianping.imagemanager.DPNetworkImageView android:id="@id/icon" android:layout_width="100.0dip" android:layout_height="75.0dip" android:scaleType="centerCrop" dp:placeholderEmpty="@drawable/vy_placeholder_empty" dp:placeholderError="@drawable/vy_placeholder_empty" dp:placeholderLoading="@drawable/vy_placeholder_loading" />
-        <TextView android:textSize="@dimen/vy_text_size_12" android:textColor="@color/vy_white" android:ellipsize="end" android:gravity="center" android:layout_gravity="bottom" android:id="@id/title_desc" android:background="@drawable/vy_shape_gradient_black_to_8000000_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" />
-    </FrameLayout>
-    <TextView android:textSize="@dimen/vy_text_size_14" android:textColor="@color/vy_black1" android:ellipsize="end" android:gravity="center" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:maxLines="1" android:singleLine="true" />
-</LinearLayout>

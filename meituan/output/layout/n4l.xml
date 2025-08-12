@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <View android:id="@id/yl2" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/qxm" app:layout_constraintTop_toTopOf="parent" />
-    <ImageView android:id="@id/qxm" android:layout_width="@dimen/p7e" android:layout_height="@dimen/p7e" android:layout_marginTop="@dimen/td8" android:src="@drawable/b9r" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
-    <com.sankuai.waimai.store.widgets.SCMaxHeightRecyclerView android:id="@id/rv_search_sort_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ty3" app:layout_constraintTop_toTopOf="@id/qxm" />
-    <View android:id="@id/v_search_sort_list_mask" android:background="@color/bjh" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintTop_toBottomOf="@id/rv_search_sort_list" />
-</android.support.constraint.ConstraintLayout>

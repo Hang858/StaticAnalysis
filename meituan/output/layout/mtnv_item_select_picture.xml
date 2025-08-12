@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout android:id="@id/mtnv_cl_picture_root" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <View android:id="@id/q_2" android:layout_width="88.75dip" android:layout_height="88.75dip" />
-    <ImageView android:id="@id/mtnv_iv_add_picture" android:layout_width="81.0dip" android:layout_height="81.0dip" app:layout_constraintBottom_toBottomOf="@id/q_2" app:layout_constraintLeft_toLeftOf="@id/q_2" />
-    <ImageView android:id="@id/mtnv_iv_picture" android:layout_width="81.0dip" android:layout_height="81.0dip" app:layout_constraintBottom_toBottomOf="@id/q_2" app:layout_constraintLeft_toLeftOf="@id/q_2" />
-    <ImageView android:id="@id/mtnv_iv_delete_picture" android:visibility="visible" android:layout_width="15.5dip" android:layout_height="15.5dip" android:alpha="0.6" app:layout_constraintRight_toRightOf="@id/q_2" />
-</android.support.constraint.ConstraintLayout>

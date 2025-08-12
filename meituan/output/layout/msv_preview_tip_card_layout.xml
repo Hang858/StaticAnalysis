@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_gravity="center" android:background="@drawable/bg_msv_preview_tip_card" android:layout_width="wrap_content" android:layout_height="25.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <android.support.v7.widget.AppCompatTextView android:textSize="12.0dip" android:textColor="#e6000000" android:ellipsize="end" android:layout_gravity="center" android:id="@id/tv_msv_preview_tip_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:maxLines="1" />
-</FrameLayout>

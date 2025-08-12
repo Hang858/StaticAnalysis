@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sankuai.waimai.store.view.RoundedCornerRelativeLayout android:id="@id/rl_cover_view" android:layout_width="@dimen/ma3" android:layout_height="@dimen/baee" app:cornerRadius="@dimen/ea5"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <ImageView android:id="@id/img_player_close" android:visibility="visible" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/bb3z" android:layout_alignParentRight="true" />
-</com.sankuai.waimai.store.view.RoundedCornerRelativeLayout>

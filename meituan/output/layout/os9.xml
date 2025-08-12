@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sankuai.meituan.msv.list.widget.PageLoadingItem android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/j77" android:layout_width="90.0dip" android:layout_height="90.0dip" android:contentDescription="@string/s93"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <android.support.v7.widget.AppCompatImageView android:id="@id/anim_icon" android:layout_width="40.0dip" android:layout_height="20.0dip" android:layout_marginTop="8.0dip" android:importantForAccessibility="no" />
-    <android.support.v7.widget.AppCompatTextView android:textSize="15.0dip" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yts" android:importantForAccessibility="no" />
-</com.sankuai.meituan.msv.list.widget.PageLoadingItem>

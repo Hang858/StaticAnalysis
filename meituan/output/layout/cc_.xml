@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sankuai.waimai.ugc.creator.widgets.round.RoundCornerFrameLayout android:id="@id/phx" android:layout_width="fill_parent" android:layout_height="fill_parent" app:cornerRadius="12.0dip" xmlns:app="http://schemas.android.com/apk/res-auto"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

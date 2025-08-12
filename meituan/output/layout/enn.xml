@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.meituan.sankuai.map.unity.lib.views.unitymap.IndoorMapFloorView android:id="@id/l1f" android:background="@drawable/ecn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:elevation="@dimen/mwd" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" />
-</merge>

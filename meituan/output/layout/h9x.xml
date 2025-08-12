@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:layout_gravity="center" android:id="@id/image" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="?movie_base_component_action_collect_icon_selector" android:scaleType="center" />
-    <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:visibility="visible" android:layout_width="30.0dip" android:layout_height="30.0dip" />
-</FrameLayout>

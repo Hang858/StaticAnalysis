@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <android.support.v7.widget.RecyclerView android:id="@id/recyclerView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    <LinearLayout android:orientation="vertical" android:id="@id/ybs" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="94.0dip">
-        <ImageView android:layout_gravity="center_horizontal" android:layout_width="100.0dip" android:layout_height="100.0dip" android:src="@drawable/zpz" />
-        <TextView android:textSize="15.0dip" android:textColor="#ff666666" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="暂时没有这个城市，换个关键词试试吧" />
-    </LinearLayout>
-</RelativeLayout>

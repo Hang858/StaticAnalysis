@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:background="@color/ph8" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <FrameLayout android:id="@id/xi7" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
-    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="16.0dip" android:layout_weight="1.0">
-        <com.sankuai.waimai.ugc.creator.widgets.round.RoundCornerFrameLayout android:layout_gravity="center" android:id="@id/nba" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="16.0dip" app:cornerRadius="12.0dip"
-          xmlns:android="http://schemas.android.com/apk/res/android" />
-    </FrameLayout>
-</LinearLayout>

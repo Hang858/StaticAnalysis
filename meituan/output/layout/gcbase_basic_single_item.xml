@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
-    <com.meituan.android.generalcategories.view.GCNetworkImageView android:id="@id/s_icon" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" />
-    <TextView android:textSize="@dimen/rns" android:textColor="@color/black" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/s_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
-    <TextView android:textSize="@dimen/gcbase_text_medium" android:textColor="@color/black" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/s_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" />
-    <TextView android:textSize="@dimen/rns" android:textColor="@color/orange" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/s_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" />
-    <ImageView android:id="@id/s_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:src="@drawable/gcbase_arrow" />
-</LinearLayout>

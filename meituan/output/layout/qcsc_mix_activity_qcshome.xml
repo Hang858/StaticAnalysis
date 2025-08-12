@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:map="http://schemas.android.com/apk/res-auto">
-    <View android:id="@id/emptyView" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="48.0dip" />
-    <com.sankuai.meituan.mapsdk.maps.MapView android:id="@id/map_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/emptyView" map:mapsdk_key="9ff22032-ec98-4290-8edb-d4cc6d0ec019" />
-    <FrameLayout android:id="@id/webcontainer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <com.meituan.qcs.mix.view.QcsDispatchView android:id="@id/mapmix_dispatch_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/emptyView" />
-</RelativeLayout>

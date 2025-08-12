@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/toast_container" android:background="@drawable/f_c" android:layout_width="wrap_content" android:layout_height="wrap_content">
-        <ImageView android:id="@id/toast_image" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="35.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="35.0dip" android:src="@drawable/p9z" />
-        <ProgressBar android:id="@id/toast_loading" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="35.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="35.0dip" android:indeterminateDrawable="@drawable/msi_anim_toast_white_loading" />
-        <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/toast_text" android:paddingTop="10.0dip" android:paddingBottom="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="110.0dip" android:maxLines="1" />
-    </LinearLayout>
-</merge>

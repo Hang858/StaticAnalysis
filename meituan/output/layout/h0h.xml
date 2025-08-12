@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/z2u" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <android.support.v7.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@id/nd" android:layout_width="14.0dip" android:layout_height="14.0dip" android:src="@drawable/ban4" />
-    <android.support.v7.widget.AppCompatTextView android:textSize="15.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上滑继续看视频" android:layout_marginStart="16.0dip" />
-</FrameLayout>

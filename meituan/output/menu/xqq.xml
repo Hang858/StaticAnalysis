@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:support="http://schemas.android.com/apk/res-auto">
-    <item android:id="@id/favor" android:title="@string/favorite" support:actionLayout="@layout/eyr" support:showAsAction="always" />
-    <item android:id="@id/share" android:title="@string/share_share" support:actionLayout="@layout/fle" support:showAsAction="always" />
-    <item android:id="@id/fso" android:title="" support:actionProviderClass="com.meituan.android.commonmenu.CommonMenuActionProvider" support:showAsAction="always" />
-</menu>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.meituan.android.edfu.mvision.ui.widget.ControlPage android:id="@id/z8r" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <com.meituan.android.edfu.mvision.ui.widget.DetectorLoadingView android:id="@id/pkr" android:visibility="invisible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <FrameLayout android:id="@id/scl" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <com.meituan.android.edfu.mvision.ui.widget.PhotoSearchResultView android:id="@id/photo_search_page" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-</FrameLayout>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:background="@drawable/z4c" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="12.0sp" android:textColor="#ff858687" android:id="@id/vsr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="查看更多" android:maxEms="1" android:ems="1" android:layout_marginStart="10.0dip" />
-    <ImageView android:id="@id/img_arrow" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginTop="6.0dip" android:layout_marginBottom="24.0dip" android:src="@drawable/jiw" android:layout_marginStart="12.0dip" />
-</LinearLayout>

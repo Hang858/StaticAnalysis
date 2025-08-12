@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.meituan.android.qcsc.widget.layout.QcscLinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/qcsc_guide_tips_body_layout" android:background="@drawable/qcsc_img_guide_tips_content_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" app:qcsc_enableShadow="false">
-        <com.meituan.android.qcsc.widget.QcscTextView android:textSize="12.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="left" android:id="@id/qcsc_guide_tips_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" />
-        <ImageView android:id="@id/qcsc_guide_tips_close" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/qcsc_img_guide_tips_close" />
-    </com.meituan.android.qcsc.widget.layout.QcscLinearLayout>
-    <ImageView android:layout_gravity="center_vertical" android:id="@id/qcsc_guide_tips_triangle" android:layout_width="5.0dip" android:layout_height="11.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="-4.0dip" android:src="@drawable/qcsc_img_guide_tips_triangle" />
-</merge>

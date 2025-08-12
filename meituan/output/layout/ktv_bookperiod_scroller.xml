@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <HorizontalScrollView android:id="@id/ktv_bookPeriods_scroll" android:background="@color/ktv_white" android:paddingLeft="6.0dip" android:paddingRight="15.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="50.0dip">
-        <RadioGroup android:gravity="center_vertical" android:layout_gravity="left" android:orientation="horizontal" android:id="@id/ktvBookPeroidGroup" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    </HorizontalScrollView>
-    <View android:background="@drawable/xyu" android:layout_width="fill_parent" android:layout_height="1.0dip" />
-</LinearLayout>

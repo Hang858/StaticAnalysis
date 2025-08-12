@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:background="@color/wm_sg_color_F2F2F2" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.sankuai.waimai.store.view.standard.FlashTab android:gravity="center" android:id="@id/bbid" android:background="@color/white" android:saveEnabled="false" android:layout_width="fill_parent" android:layout_height="@dimen/qp9" app:indicateMode="img" app:labelTextVerticalItemMargin="@dimen/wpy" app:tabType="average" />
-    <com.sankuai.waimai.store.view.banner.SCBaseViewPager android:id="@id/pager" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-</LinearLayout>

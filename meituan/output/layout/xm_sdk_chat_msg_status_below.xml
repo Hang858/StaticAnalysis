@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TextView android:textSize="@dimen/xm_sdk_chat_msg_fail_tip_size" android:textColor="@color/xm_sdk_text_color_black" android:id="@id/xm_sdk_chat_message_fail_tip_text" android:background="@drawable/xm_sdk_chat_system_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xm_sdk_msg_fail_tip_un_auth" android:layout_marginStart="@dimen/xm_sdk_chat_msg_below_margin_right" android:layout_marginEnd="@dimen/xm_sdk_chat_msg_below_margin_right" android:layout_alignParentEnd="true" style="@style/xm_sdk_text_view_style_18n"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

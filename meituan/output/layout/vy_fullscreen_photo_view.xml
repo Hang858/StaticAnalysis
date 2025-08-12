@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.dianping.imagemanager.DPZoomImageView android:id="@id/photo" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" dp:placeholderBackgroundColor="@color/transparent" dp:placeholderEmpty="@drawable/vy_placeholder_empty" dp:placeholderError="@drawable/placeholder_error" dp:placeholderLoading="@drawable/loading_large_background"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto" />

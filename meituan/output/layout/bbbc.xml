@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout android:background="@color/chk" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <TextView android:ellipsize="middle" android:id="@id/title_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="播放名称" android:singleLine="true" app:layout_constraintTop_toTopOf="parent" />
-    <TextView android:textSize="12.0dip" android:ellipsize="middle" android:id="@id/zho" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="起播时长:" android:singleLine="true" app:layout_constraintTop_toBottomOf="@id/title_name" />
-    <TextView android:textSize="10.0dip" android:ellipsize="middle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="（起播时长松手到播放的时长）(-2：未获取到松手时间戳)" android:singleLine="true" app:layout_constraintTop_toBottomOf="@id/zho" />
-</android.support.constraint.ConstraintLayout>

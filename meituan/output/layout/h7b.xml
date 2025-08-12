@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:background="@color/bm3" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <View android:background="@color/bm3" android:layout_width="fill_parent" android:layout_height="@dimen/xnd" />
-    <ScrollView android:id="@id/rr" android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <LinearLayout android:orientation="vertical" android:id="@id/dm9" android:background="@color/fm2" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    </ScrollView>
-</LinearLayout>

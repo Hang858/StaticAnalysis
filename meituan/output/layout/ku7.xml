@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="12.0sp" android:textColor="@color/lrd" android:layout_gravity="center_horizontal" android:id="@id/qpk" android:visibility="gone" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:drawableLeft="@drawable/kz8" android:drawablePadding="5.0dip" style="@style/WmText" />
-    <com.sankuai.waimai.platform.widget.MaxHeightListView android:id="@id/j02" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/WmListView.NoDivider" />
-</LinearLayout>

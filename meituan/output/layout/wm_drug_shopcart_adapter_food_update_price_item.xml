@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="@color/wm_sg_color_222426" android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip" android:text="@string/wm_sc_commen_currecy_unit" />
-    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/wm_sg_color_222426" android:id="@id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1.0dip" />
-    <ImageView android:layout_gravity="center_vertical" android:id="@id/member_price_icon" android:visibility="gone" android:layout_width="@dimen/f7u" android:layout_height="@dimen/wpy" android:layout_marginLeft="@dimen/j8y" />
-    <TextView android:textSize="11.0sp" android:textColor="@color/wm_sg_color_858687" android:layout_gravity="center_vertical" android:id="@id/price_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" />
-</LinearLayout>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:layout_width="fill_parent" android:layout_height="44.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.dianping.android.oversea.base.widget.OsNetWorkImageView android:id="@id/j1h" android:layout_width="39.0dip" android:layout_height="20.0dip" android:layout_centerVertical="true" />
-    <ImageView android:id="@id/s1b" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/vvs" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
-    <TextView android:textSize="12.0sp" android:textColor="@color/xmd" android:id="@id/o8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:layout_toLeftOf="@id/s1b" android:layout_centerVertical="true" />
-    <TextView android:textSize="13.0dip" android:textColor="@color/bbel" android:ellipsize="end" android:id="@id/xqa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="17.0dip" android:lines="1" android:layout_toLeftOf="@id/o8" android:layout_toRightOf="@id/j1h" android:layout_centerVertical="true" />
-</merge>

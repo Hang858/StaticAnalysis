@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <android.support.v7.widget.AppCompatTextView android:textSize="15.0dip" android:textColor="#ff808080" android:ellipsize="end" android:id="@id/tv_listen_select_panel_header_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.5dip" android:maxLines="1" />
-    <android.support.v7.widget.AppCompatTextView android:textSize="13.0dip" android:textColor="#ff999999" android:id="@id/tv_listen_select_panel_list_title_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" />
-    <android.support.v7.widget.RecyclerView android:id="@id/rv_listen_select_panel_list" android:tag="nested" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" />
-</LinearLayout>

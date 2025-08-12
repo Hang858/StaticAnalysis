@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="@dimen/loading_dialog_width" android:layout_height="@dimen/loading_dialog_height"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/progressBar1" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyleLarge" />
-    <TextView android:textSize="18.0sp" android:textColor="@color/black1" android:layout_gravity="center_horizontal" android:id="@id/message_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在查询" />
-</LinearLayout>

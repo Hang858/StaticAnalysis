@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.sankuai.xm.imui.common.view.AdaptiveImageView android:layout_gravity="center" android:id="@id/smiley_icon" android:layout_width="@dimen/xm_sdk_small_emotion_size" android:layout_height="@dimen/xm_sdk_small_emotion_size" android:layout_margin="6.0dip" />
-</RelativeLayout>

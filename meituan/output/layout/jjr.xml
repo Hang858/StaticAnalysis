@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="fill_parent" android:layout_height="100.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <android.support.v7.widget.AppCompatTextView android:textColor="@color/black" android:gravity="center" android:id="@id/ewj" android:background="#77ff0000" android:layout_width="fill_parent" android:layout_height="100.0dip" />
-</FrameLayout>

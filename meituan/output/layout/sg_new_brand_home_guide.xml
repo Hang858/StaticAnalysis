@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <ImageView android:layout_gravity="center|right|top" android:id="@id/new_channel_skip_anim" android:layout_width="48.0dip" android:layout_height="22.0dip" android:layout_marginTop="53.0dip" android:layout_marginRight="20.0dip" />
-    <FrameLayout android:layout_gravity="center" android:id="@id/guide_stage_video_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-</FrameLayout>

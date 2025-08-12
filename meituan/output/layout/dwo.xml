@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout android:id="@id/j31" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <View android:layout_gravity="center_vertical" android:id="@id/foz" android:background="@drawable/lk7" android:layout_width="fill_parent" android:layout_height="6.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent" />
-    <View android:layout_gravity="center|left" android:id="@id/cxr" android:background="@drawable/iue" android:layout_width="0.0dip" android:layout_height="6.0dip" android:layout_marginEnd="4.0dip" android:translationZ="2.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="@id/dv3" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
-    <View android:layout_gravity="center|left" android:id="@id/dv3" android:background="@drawable/hk8" android:layout_width="7.0dip" android:layout_height="10.0dip" android:translationZ="2.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
-</android.support.constraint.ConstraintLayout>

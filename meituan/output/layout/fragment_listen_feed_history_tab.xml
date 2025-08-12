@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <include android:id="@id/ll_listen_feed_history_content_empty" android:visibility="gone" layout="@layout/fragment_listen_feed_content_empty" />
-    <android.support.v7.widget.RecyclerView android:id="@id/rv_listen_feed_history_tab" android:tag="nested" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" />
-</FrameLayout>

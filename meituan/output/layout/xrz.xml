@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:clipChildren="false" android:layout_width="72.69998dip" android:layout_height="72.69998dip"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.dianping.android.oversea.base.widget.OsNetWorkImageView android:id="@id/vx" android:layout_width="45.0dip" android:layout_height="44.19998dip" android:scaleType="fitXY" android:layout_above="@id/gfg" android:layout_centerHorizontal="true" app:placeholderBackgroundColor="@color/ulz" app:placeholderEmpty="@drawable/go6" app:placeholderLoading="@drawable/go6" app:placeholderScaleType="gce" />
-    <TextView android:textSize="13.0sp" android:textColor="@color/to3" android:gravity="center" android:id="@id/gfg" android:layout_width="53.0dip" android:layout_height="wrap_content" android:layout_marginTop="1.0999756dip" android:maxLines="1" android:maxEms="4" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
-    <com.dianping.android.oversea.base.widget.OsNetWorkImageView android:id="@id/mg4" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="16.0dip" android:layout_marginLeft="42.0dip" android:layout_marginTop="3.0dip" android:scaleType="fitStart" app:placeholderBackgroundColor="@color/ulz" app:placeholderEmpty="@drawable/go6" app:placeholderLoading="@drawable/go6" app:placeholderScaleType="centerCrop" />
-</merge>

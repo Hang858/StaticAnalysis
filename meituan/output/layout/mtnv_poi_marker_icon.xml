@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <ImageView android:id="@id/mtnv_img_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
-    <android.support.constraint.Guideline android:orientation="vertical" android:id="@id/yfc" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.5" />
-    <android.support.constraint.Guideline android:orientation="horizontal" android:id="@id/w9r" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.38" />
-    <TextView android:textSize="15.0dip" android:textColor="@color/mtnv_color_white_100" android:gravity="center" android:id="@id/mtnv_tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="经" app:layout_constraintBottom_toBottomOf="@id/w9r" app:layout_constraintLeft_toLeftOf="@id/yfc" app:layout_constraintRight_toRightOf="@id/yfc" app:layout_constraintTop_toTopOf="@id/w9r" />
-</android.support.constraint.ConstraintLayout>

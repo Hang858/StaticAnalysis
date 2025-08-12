@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:background="@color/c56" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <RelativeLayout android:id="@id/rl_container" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
-        <com.dianping.android.oversea.base.widget.OsNetWorkImageView android:id="@id/iv_icon" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginLeft="8.0dip" android:layout_centerVertical="true" />
-        <ImageView android:id="@id/iv_arrow" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/trip_oversea_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
-        <TextView android:textSize="13.0sp" android:textColor="#ff111111" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="9.0dip" android:maxLines="2" android:includeFontPadding="false" android:layout_toLeftOf="@id/iv_arrow" android:layout_toRightOf="@id/iv_icon" android:lineSpacingExtra="2.0dip" />
-    </RelativeLayout>
-</merge>

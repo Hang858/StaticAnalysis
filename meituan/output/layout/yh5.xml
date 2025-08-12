@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
-    <com.dianping.imagemanager.DPNetworkImageView android:layout_gravity="bottom|center|right" android:id="@id/bcyb" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:scaleType="centerCrop" dp:cornerRadius="3.0dip" dp:forceDownload="true" dp:placeholderEmpty="@color/nvu" dp:placeholderError="@color/nvu" dp:placeholderLoading="@color/nvu" />
-    <ImageView android:id="@id/delete" android:padding="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ir7" />
-</RelativeLayout>

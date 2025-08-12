@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.dianping.videoview.widget.video.ui.panelitem.VolumnItem android:id="@id/vgv" android:layout_width="25.0dip" android:layout_height="25.0dip" android:scaleType="fitCenter" android:layout_marginStart="15.0dip" dp:defaultStatus="positive" dp:srcNegative="@drawable/fly" dp:srcPositive="@drawable/m_b"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto" />

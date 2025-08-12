@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:paddingBottom="@dimen/dnf" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/b2c_shopcart_top_img" android:layout_width="@dimen/p7e" android:layout_height="@dimen/p7e" android:layout_marginTop="@dimen/e5p" android:src="@drawable/n7c" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_centerHorizontal="true" />
-    <TextView android:textSize="@dimen/hwz" android:textStyle="bold" android:textColor="@color/jpg" android:gravity="center" android:id="@id/b2c_shopcart_food_num_txt" android:background="@drawable/hjf" android:visibility="invisible" android:layout_width="15.0dip" android:layout_height="15.0dip" android:maxLines="1" android:layout_toRightOf="@id/b2c_shopcart_top_img" />
-    <TextView android:textSize="@dimen/hwz" android:textColor="@color/wm_sg_color_575859" android:id="@id/b2c_shopcart_bottom_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bbj2" android:text="购物车" android:layout_below="@id/b2c_shopcart_top_img" android:layout_centerHorizontal="true" />
-</RelativeLayout>

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="10.0sp" android:textColor="#66000000" android:ellipsize="none" android:gravity="left" android:id="@id/offsite_bubble_scroll_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="12" />
-</FrameLayout>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.meituan.android.qcsc.business.widget.iconfont.IconFontTextView android:id="@id/ic_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="56.0dip" android:layout_centerHorizontal="true" app:qcsc_iconDpSize="48.0dip" app:qcsc_iconDrawableColor="#ffff363f" app:qcsc_iconDrawableLeft="@string/qcsc_icon_qcs_alarm" />
-    <TextView android:textSize="14.0sp" android:textColor="@color/qcsc_text_secondary" android:gravity="center_horizontal" android:id="@id/tv_loading_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/qcsc_fail_retry" android:maxLines="1" android:layout_below="@id/ic_icon" android:layout_centerHorizontal="true" />
-    <Button android:textSize="15.0sp" android:textColor="@color/qcsc_text_primary_new" android:gravity="center" android:id="@id/btn_retry" android:background="@drawable/qcsc_bg_report_btn_retry" android:layout_width="160.0dip" android:layout_height="36.0dip" android:layout_marginTop="15.0dip" android:text="@string/qcsc_estimate_cost_retry" android:maxLines="1" android:layout_below="@id/tv_loading_content" android:layout_centerHorizontal="true" style="?android:borderlessButtonStyle" />
-</RelativeLayout>

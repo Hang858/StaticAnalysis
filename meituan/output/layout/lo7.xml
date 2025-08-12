@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <FrameLayout android:id="@id/ch4" android:background="#99000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <FrameLayout android:id="@id/csd" android:background="@drawable/yyv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginEnd="26.0dip">
-        <FrameLayout android:id="@id/bcr4" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-        <FrameLayout android:id="@id/dpg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    </FrameLayout>
-</FrameLayout>

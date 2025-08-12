@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sankuai.xm.imui.common.view.message.StatusMsgSideView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:layout_marginStart="@dimen/xm_sdk_chat_msg_status_layout_margin_content" android:layout_marginEnd="@dimen/xm_sdk_chat_msg_status_layout_margin_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

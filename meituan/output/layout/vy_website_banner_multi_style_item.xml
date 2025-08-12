@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.dianping.pioneer.widgets.container.roundgroup.GCRoundedCornerFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" dp:round_corner="@dimen/vy_website_banner_corner"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
-    <com.dianping.imagemanager.DPNetworkImageView android:id="@id/vy_website_banner_multi_style_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" dp:cornerRadius="@dimen/vy_website_banner_corner" dp:placeholderEmpty="@drawable/placeholder_empty" dp:placeholderError="@drawable/placeholder_error" dp:placeholderLoading="@drawable/placeholder_loading" />
-    <FrameLayout android:id="@id/vy_website_banner_multi_style_mask_layout" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="7.0dip">
-        <ImageView android:layout_gravity="center" android:id="@id/vy_website_banner_multi_style_video_icon" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/jng" android:scaleType="fitCenter" />
-    </FrameLayout>
-    <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/white" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="bottom" android:id="@id/vy_website_banner_multi_style_title" android:background="@drawable/vy_multi_banner_bg" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
-</com.dianping.pioneer.widgets.container.roundgroup.GCRoundedCornerFrameLayout>

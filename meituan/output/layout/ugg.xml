@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="horizontal" android:id="@id/ge1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="3.0" android:minHeight="240.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <NumberPicker android:theme="@style/TimePickerTextStyle" android:id="@id/zz" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
-    <NumberPicker android:theme="@style/TimePickerTextStyle" android:id="@id/gln" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
-    <NumberPicker android:theme="@style/TimePickerTextStyle" android:id="@id/tmz" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
-</LinearLayout>

@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.dianping.imagemanager.DPNetworkImageView android:id="@id/biz_picasso_batch_vision_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" dp:placeholderEmpty="@drawable/placeholder_empty" dp:placeholderError="@drawable/placeholder_error" dp:placeholderLoading="@drawable/placeholder_error" xmlns:dp="http://schemas.android.com/apk/res-auto"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

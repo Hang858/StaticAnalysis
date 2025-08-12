@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.meituan.android.base.ui.widget.CategoryCheckableLayout android:background="@drawable/bg_category_item_normal" android:paddingLeft="9.0dip" android:paddingRight="20.0dip" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="14.0sp" android:textColor="@color/uxn" android:ellipsize="marquee" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/vvu" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="40.0dip" android:singleLine="true" android:drawableLeft="@drawable/ic_global_filter_check_green_selector" android:drawablePadding="5.0dip" android:layout_weight="1.0" />
-    <TextView android:textSize="14.0sp" android:textColor="@color/uxn" android:ellipsize="marquee" android:gravity="center|right" android:layout_gravity="center|right" android:id="@id/z5b" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="30.0dip" android:singleLine="true" />
-</com.meituan.android.base.ui.widget.CategoryCheckableLayout>

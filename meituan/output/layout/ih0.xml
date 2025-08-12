@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/mel" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.sankuai.meituan.msv.page.widget.UserCenterGestureReceiver android:id="@id/k2u" android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <com.sankuai.meituan.msv.page.widget.NoScrollViewPager android:id="@id/vrr" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
-        <FrameLayout android:id="@id/o4n" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    </com.sankuai.meituan.msv.page.widget.UserCenterGestureReceiver>
-</FrameLayout>

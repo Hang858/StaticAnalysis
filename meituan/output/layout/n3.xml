@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.sankuai.meituan.search.result3.viewpager.SearchResultViewPager android:id="@id/w28" android:background="@color/gho" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    <com.sankuai.meituan.search.result3.tab.view.SearchResultTabLayout android:id="@id/jp6" android:paddingLeft="1.5dip" android:paddingRight="1.5dip" android:layout_width="fill_parent" android:layout_height="@dimen/jfa" android:layout_marginBottom="5.0dip" app:tabBackground="@color/transparent" app:tabIndicatorHeight="0.0dip" app:tabMinWidth="0.0dip" app:tabMode="scrollable" app:tabPaddingEnd="12.0dip" app:tabPaddingStart="12.0dip" />
-    <com.sankuai.meituan.search.result3.tabChild.view.SearchGoodFloatRootLayer android:id="@id/s1f" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-</FrameLayout>

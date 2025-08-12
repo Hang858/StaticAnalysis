@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.sankuai.xm.imui.common.view.LinkTextView android:gravity="start|center" android:autoLink="none" android:id="@id/xm_sdk_tv_chat_long_text_describe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:includeFontPadding="false" style="@style/xm_sdk_text_view_style_18n" />
-    <TextView android:textSize="@dimen/xm_sdk_chat_long_text_more" android:textColor="@color/xm_sdk_chat_long_text_more" android:id="@id/xm_sdk_tv_chat_long_text_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/xm_sdk_chat_long_text_more_margin_top" android:includeFontPadding="false" android:layout_below="@id/xm_sdk_tv_chat_long_text_describe" android:layout_centerVertical="true" style="@style/xm_sdk_text_view_style_18n" />
-    <TextView android:textSize="@dimen/xm_sdk_chat_long_text_link" android:textColor="@color/xm_sdk_chat_long_text_link" android:id="@id/xm_sdk_tv_chat_long_text_link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/xm_sdk_chat_long_text_link_margin_top" android:includeFontPadding="false" android:layout_below="@id/xm_sdk_tv_chat_long_text_more" android:layout_centerVertical="true" style="@style/xm_sdk_text_view_style_18n" />
-</RelativeLayout>

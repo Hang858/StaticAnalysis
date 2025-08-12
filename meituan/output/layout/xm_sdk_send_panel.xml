@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <FrameLayout android:id="@id/input_bar_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    <FrameLayout android:gravity="bottom" android:id="@id/extra_panel_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-</merge>

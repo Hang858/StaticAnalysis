@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:background="@color/wifi_default_bg" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.meituan.android.pin.bosswifi.biz.components.titlebar.WifiTitleBar android:id="@id/fragment_container_titlebar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:showBack="true" app:showCapsule="true" />
-    <FrameLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-</LinearLayout>

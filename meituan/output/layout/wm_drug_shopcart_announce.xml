@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:background="@drawable/wm_drug_shopcart_announce_background" android:paddingLeft="32.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginBottom="@dimen/ba05" android:layout_alignParentBottom="true"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/announce_close_iv" android:padding="@dimen/bbrs" android:layout_width="@dimen/ddv" android:layout_height="@dimen/ddv" android:src="@drawable/uxg" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
-    <TextView android:textSize="11.0dip" android:textColor="#ffff8000" android:gravity="center" android:id="@id/announce_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="8.0dip" android:text="受疫情影响，可待…" android:singleLine="true" android:layout_toLeftOf="@id/announce_close_iv" />
-</RelativeLayout>

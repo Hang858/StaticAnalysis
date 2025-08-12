@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.dianping.widget.view.NovaLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <FrameLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <com.dianping.imagemanager.DPNetworkImageView android:id="@id/baby_techinfo_item_image" android:layout_width="fill_parent" android:layout_height="120.0dip" android:scaleType="centerCrop" />
-    </FrameLayout>
-    <TextView android:textSize="@dimen/rns" android:textColor="#ff333333" android:ellipsize="end" android:gravity="left" android:layout_gravity="center_horizontal" android:id="@id/baby_techinfo_name" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginTop="7.0dip" android:singleLine="true" />
-    <TextView android:textSize="@dimen/baby_text_medium" android:textColor="#ff666666" android:ellipsize="end" android:gravity="left" android:layout_gravity="center_horizontal" android:id="@id/baby_techinfo_position" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:singleLine="true" />
-</com.dianping.widget.view.NovaLinearLayout>

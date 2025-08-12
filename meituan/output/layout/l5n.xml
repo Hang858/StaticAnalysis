@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/mku" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/nl7" android:scaleType="fitXY" />
-    <View android:layout_gravity="right" android:id="@id/zgv" android:background="@color/transparent" android:clickable="true" android:layout_width="128.0dip" android:layout_height="50.0dip" />
-</FrameLayout>

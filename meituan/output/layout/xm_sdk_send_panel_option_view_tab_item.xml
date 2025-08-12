@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sankuai.xm.imui.common.view.AdaptiveImageView android:gravity="center" android:id="@id/xm_sdk_tab_img" android:background="@drawable/xm_sdk_emotion_group_tab_bg" android:padding="6.0dip" android:layout_width="@dimen/xm_sdk_tab_ic_size" android:layout_height="@dimen/xm_sdk_tab_ic_size" android:layout_marginEnd="12.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="16.0sp" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/tvl" android:background="@android:color/transparent" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="这是主标题" />
-    <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/bbnb" android:background="@android:color/transparent" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="这是副标题" />
-</LinearLayout>

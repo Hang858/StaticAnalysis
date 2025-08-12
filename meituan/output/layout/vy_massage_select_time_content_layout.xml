@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
-    <com.dianping.voyager.joy.massage.widgets.MassageSelectTimeHeaderLayout android:id="@id/header_container" android:background="@drawable/vy_tab_bar_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" dp:maxTabCount="20" dp:tabItemLayout="@layout/vy_massage_select_time_tab_item" dp:tabSpace="0" />
-    <com.dianping.voyager.joy.massage.widgets.MassageSelectTimeSubTabLayout android:id="@id/sub_header_container" android:background="@drawable/vy_tab_bar_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" dp:maxTabCount="20" dp:tabItemLayout="@layout/vy_massage_select_time_sub_tab_item" dp:tabSpace="0" />
-    <com.dianping.voyager.joy.massage.widgets.MassageSelectTimeItemsLayout android:id="@id/items_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-</LinearLayout>

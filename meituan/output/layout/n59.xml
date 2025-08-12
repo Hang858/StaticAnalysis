@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.meituan.android.movie.tradebase.view.MovieSingleViewTypeFlowLayout android:id="@id/bay9" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="43.5dip" android:layout_marginTop="22.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="22.0dip" app:horizontalSpacing="7.5dip" app:verticalSpacing="15.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

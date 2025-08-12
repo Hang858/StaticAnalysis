@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sankuai.waimai.platform.widget.RoundedCornerFrameLayout android:id="@id/br6" android:background="@android:color/white" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cornerRadius="12.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <LinearLayout android:orientation="vertical" android:id="@id/oer" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    <include android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/vtv" />
-    <include android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/lxv" />
-</com.sankuai.waimai.platform.widget.RoundedCornerFrameLayout>

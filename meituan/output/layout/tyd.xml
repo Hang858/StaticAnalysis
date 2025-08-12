@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:gravity="center_vertical" android:orientation="horizontal" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/ohj" android:id="@id/lzp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/eaz" />
-    <TextView android:textStyle="bold" android:gravity="right" android:id="@id/tyd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:singleLine="true" />
-</merge>

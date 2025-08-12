@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="10.559998dip" android:textStyle="bold" android:textColor="#fffb5c35" android:gravity="center" android:layout_gravity="center" android:id="@id/hour_view" android:background="@drawable/lightbox_dialog_retain_countdown_bg" android:layout_width="21.0dip" android:layout_height="21.0dip" />
-    <TextView android:textSize="10.559998dip" android:textStyle="bold" android:textColor="#fffb5c35" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:text=":" />
-    <TextView android:textSize="10.559998dip" android:textStyle="bold" android:textColor="#fffb5c35" android:gravity="center" android:layout_gravity="center" android:id="@id/minute_view" android:background="@drawable/lightbox_dialog_retain_countdown_bg" android:layout_width="21.0dip" android:layout_height="21.0dip" />
-    <TextView android:textSize="10.559998dip" android:textStyle="bold" android:textColor="#fffb5c35" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:text=":" />
-    <TextView android:textSize="10.559998dip" android:textStyle="bold" android:textColor="#fffb5c35" android:gravity="center" android:layout_gravity="center" android:id="@id/second_view" android:background="@drawable/lightbox_dialog_retain_countdown_bg" android:layout_width="21.0dip" android:layout_height="21.0dip" />
-</LinearLayout>

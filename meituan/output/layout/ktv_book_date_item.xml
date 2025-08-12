@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="horizontal" android:id="@id/ktvdateContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="70.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/text_size_h15" android:textColor="@color/ktv_text_color_black_to_lightgreen" android:gravity="center" android:id="@id/ktvDateTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="3.0dip" android:layout_centerInParent="true" />
-    <TextView android:textSize="9.0sp" android:textColor="@color/ktv_white" android:gravity="center" android:id="@id/ktvDateDiscount" android:background="@drawable/ktv_background_round_lightyellow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginTop="7.0dip" android:layout_toRightOf="@id/ktvDateTV" />
-    <ImageView android:id="@id/ktvReduction" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="7.0dip" android:src="@drawable/ktv_icon_coupon_jian" android:layout_toRightOf="@id/ktvDateTV" />
-    <View android:background="@drawable/ktv_date_tab_filter" android:layout_width="70.0dip" android:layout_height="3.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
-</RelativeLayout>

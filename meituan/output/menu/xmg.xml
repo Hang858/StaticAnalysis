@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:support="http://schemas.android.com/apk/res-auto">
-    <item android:id="@id/favor" android:title="@string/favorite" support:actionLayout="@layout/s50" support:showAsAction="always" />
-    <item android:id="@id/share" android:title="@string/share_share" support:actionLayout="@layout/hfd" support:showAsAction="always" />
-    <item android:id="@id/report_error" android:title="@string/bctt" support:actionLayout="@layout/tc7" support:showAsAction="always" />
-</menu>

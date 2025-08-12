@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <android.support.v7.widget.AppCompatEditText android:textSize="14.0sp" android:textColor="@color/black" android:textColorHint="#33000000" android:id="@id/s69" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="12.0dip" android:minHeight="43.0dip" android:hint="@string/g52" android:includeFontPadding="false" />
-    <TextView android:textSize="12.0sp" android:textColor="#33000000" android:id="@id/bc57" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_marginBottom="6.0dip" android:layout_below="@id/s69" android:layout_alignParentRight="true" />
-</merge>

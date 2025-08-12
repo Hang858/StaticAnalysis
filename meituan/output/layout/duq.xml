@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.meituan.roodesign.resfetcher.widgets.RooImageView android:id="@id/feed_placeholder" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:project="waimai_c" app:srcName="waimai_c_drug_home_feed_place_holder" />
-    <include android:id="@id/loadingView" layout="@layout/ss2" />
-    <include android:id="@id/noMoreView" layout="@layout/rb7" />
-</merge>

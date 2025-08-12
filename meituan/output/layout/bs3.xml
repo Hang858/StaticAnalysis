@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.sankuai.meituan.mapsdk.maps.MapView android:id="@id/vz5" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="1.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.0" app:mapsdk_key="@string/qja" app:mtMapType="mt" />
-    <android.support.v7.widget.AppCompatTextView android:textColor="@color/red" android:id="@id/bo3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/j4h" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
-    <com.meituan.sankuai.map.unity.lib.views.RectangleView android:id="@id/tz5" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-</android.support.constraint.ConstraintLayout>

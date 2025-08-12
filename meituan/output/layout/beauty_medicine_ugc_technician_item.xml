@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.meituan.android.beauty.widget.BeautyMedicalTechnicanItem android:layout_width="65.0dip" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
-    <com.dianping.imagemanager.DPNetworkImageView android:id="@id/iv_normal" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_centerHorizontal="true" dp:isCircle="true" dp:placeholderEmpty="@drawable/beauty_defalut_img" dp:placeholderError="@drawable/beauty_defalut_img" />
-    <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/beauty_select_technician_color" android:id="@id/tv_item" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_below="@id/iv_normal" android:layout_centerHorizontal="true" style="@style/BeautyTextStyle" />
-</com.meituan.android.beauty.widget.BeautyMedicalTechnicanItem>

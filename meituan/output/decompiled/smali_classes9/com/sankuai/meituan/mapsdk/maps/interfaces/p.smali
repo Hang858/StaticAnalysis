@@ -1,8 +1,0 @@
-.class public interface abstract Lcom/sankuai/meituan/mapsdk/maps/interfaces/p;
-.super Ljava/lang/Object;
-.source "SourceFile"
-
-
-# virtual methods
-.method public abstract onReusedMapFirstRenderFinish()V
-.end method

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="48.0dip" android:layout_height="48.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <View android:id="@id/num_bg" android:background="@drawable/passport_frame_bindphone_no_soild" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <TextView android:textSize="23.0sp" android:textStyle="bold" android:textColor="#ff191919" android:gravity="center" android:id="@id/num_a" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxLength="1" />
-    <View android:layout_gravity="center" android:id="@id/num_i" android:background="@drawable/passport_verification_edit_cursor" android:layout_width="1.5dip" android:layout_height="23.0dip" />
-</FrameLayout>

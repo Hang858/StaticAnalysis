@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <android.support.constraint.ConstraintLayout android:layout_gravity="center" android:background="@drawable/i19" android:layout_width="281.0dip" android:layout_height="68.0dip" xmlns:app="http://schemas.android.com/apk/res-auto">
-        <com.meituan.android.yoda.widget.view.BaseImageView android:id="@id/rdr" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_marginStart="15.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
-        <com.meituan.android.yoda.widget.view.BaseTextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/tk_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="16.0dip" android:layout_marginStart="15.0dip" app:layout_constraintStart_toEndOf="@id/rdr" app:layout_constraintTop_toTopOf="parent" />
-        <com.meituan.android.yoda.widget.view.BaseTextView android:textColor="#ff999999" android:ellipsize="end" android:id="@id/jy3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="6.0dip" android:maxLines="1" android:maxEms="12" android:layout_marginStart="15.0dip" app:layout_constraintStart_toEndOf="@id/rdr" app:layout_constraintTop_toBottomOf="@id/tk_" />
-    </android.support.constraint.ConstraintLayout>
-</LinearLayout>

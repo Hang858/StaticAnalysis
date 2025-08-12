@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yourapp="http://schemas.android.com/apk/res-auto">
-    <item android:id="@id/favor" android:title="收藏" yourapp:actionLayout="@layout/h9x" yourapp:showAsAction="always" />
-    <item android:icon="?movie_base_component_action_share_icon" android:id="@id/action_share" android:title="分享" yourapp:showAsAction="always" />
-</menu>

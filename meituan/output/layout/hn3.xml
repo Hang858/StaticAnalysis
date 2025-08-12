@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:id="@id/layout_remind" android:paddingTop="8.0dip" android:paddingBottom="12.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/bbma" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/txt_remind" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:text="满减优惠与折扣商品不能共享" android:maxLines="2" android:drawableLeft="@drawable/f2w" android:drawablePadding="5.0dip" android:lineSpacingExtra="5.0dip" />
-</LinearLayout>

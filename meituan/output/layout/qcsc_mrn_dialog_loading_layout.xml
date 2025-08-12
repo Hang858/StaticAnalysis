@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="bottom" android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/qcsc_bottom_swipe_card_bg" android:layout_width="fill_parent" android:layout_height="350.0dip">
-        <ProgressBar android:layout_width="26.0dip" android:layout_height="26.0dip" android:indeterminateDrawable="@drawable/mrn_loading_anim" />
-        <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:text="@string/mrn_common_loading" />
-    </LinearLayout>
-</LinearLayout>

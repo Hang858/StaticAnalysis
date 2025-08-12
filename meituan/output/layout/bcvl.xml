@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/iv" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bbj2" android:layout_marginRight="@dimen/bbj2" android:scaleType="fitXY" />
-    <TextView android:textStyle="bold" android:ellipsize="end" android:id="@id/tv" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bbj2" android:layout_marginRight="@dimen/bbj2" android:maxLines="1" />
-</merge>

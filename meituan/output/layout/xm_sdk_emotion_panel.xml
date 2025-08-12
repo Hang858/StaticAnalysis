@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <android.support.v7.widget.RecyclerView android:id="@id/xm_sdk_item_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
-    <View android:id="@id/xm_sdk_btn_del_mask" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="96.0dip" android:layout_height="90.0dip" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
-    <ImageView android:id="@id/xm_sdk_btn_del" android:background="@drawable/xm_sdk_bg_emotion_del_btn" android:paddingTop="9.0dip" android:paddingBottom="9.0dip" android:visibility="gone" android:layout_width="54.0dip" android:layout_height="42.0dip" android:layout_marginBottom="18.0dip" android:src="@drawable/xm_sdk_ic_del" android:layout_alignParentBottom="true" android:rotationY="@integer/rotation" android:paddingStart="15.0dip" android:paddingEnd="15.0dip" android:layout_marginEnd="12.0dip" android:layout_alignParentEnd="true" />
-</RelativeLayout>

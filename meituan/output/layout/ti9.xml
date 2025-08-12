@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.meituan.sankuai.map.unity.lib.views.TransitLineContentView android:id="@id/uh4" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    <com.meituan.sankuai.map.unity.lib.views.TransitFrontImageView android:id="@id/fha" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    <TextView android:textSize="10.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/desc" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="预估值仅供参考，请以行程中实际计算值为准" android:alpha="0.3" />
-</LinearLayout>

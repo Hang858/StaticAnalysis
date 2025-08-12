@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:gravity="center" android:id="@id/g_r" android:background="@color/ce1" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.meituan.android.paycommon.lib.widgets.CornersLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/wkt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:paycommon_corner_left_bottom="6.0dip" app:paycommon_corner_left_top="6.0dip" app:paycommon_corner_right_bottom="6.0dip" app:paycommon_corner_right_top="6.0dip">
-        <RelativeLayout android:id="@id/i4i" android:background="@color/d1v" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    </com.meituan.android.paycommon.lib.widgets.CornersLinearLayout>
-</RelativeLayout>

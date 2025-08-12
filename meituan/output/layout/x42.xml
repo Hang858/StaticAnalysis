@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <TextView android:textSize="13.0sp" android:textColor="@color/black3" android:id="@id/viw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:maxLines="1" />
-    <android.support.v7.widget.GridLayout android:id="@id/bbr" android:layout_width="fill_parent" android:layout_height="wrap_content" app:columnCount="3" />
-</merge>

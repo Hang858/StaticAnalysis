@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <android.support.v7.widget.RecyclerView android:id="@id/hl9" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="28.0dip" android:overScrollMode="never" android:paddingStart="15.0dip" android:paddingEnd="15.0dip" app:layout_constraintTop_toTopOf="parent" />
-    <android.support.v7.widget.RecyclerView android:id="@id/uw8" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="92.0dip" android:layout_marginTop="14.0dip" android:overScrollMode="never" android:paddingStart="15.0dip" android:paddingEnd="15.0dip" app:layout_constraintTop_toBottomOf="@id/hl9" />
-</merge>

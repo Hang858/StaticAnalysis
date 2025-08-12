@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.meituan.android.qcsc.business.widget.iconfont.IconFontTextView android:layout_gravity="center_horizontal" android:id="@id/iv_result" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginTop="39.399994dip" app:qcsc_iconDpSize="48.0dip" app:qcsc_iconDrawableColor="#ff00b85c" app:qcsc_iconDrawableLeft="@string/qcsc_icon_qcs_success" />
-    <TextView android:textSize="15.0sp" android:textColor="@color/qcsc_text_primary_new" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/qcsc_multiple_cancel_applied" />
-    <TextView android:textColor="@color/qcsc_text_tertiary" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_apply_success_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="54.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="54.0dip" android:text="@string/qcsc_multiple_cancel_apply_success" android:lineSpacingExtra="6.0sp" />
-</LinearLayout>

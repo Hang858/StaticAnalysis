@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <View android:id="@id/s6" android:background="@color/mf5" android:layout_width="129.0dip" android:layout_height="18.0dip" android:layout_marginTop="10.0dip" android:layout_marginStart="10.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
-    <android.support.v7.widget.RecyclerView android:id="@id/w_t" android:paddingBottom="5.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/s6" android:paddingStart="10.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/s6" />
-    <View android:id="@id/g55" android:background="@color/mf5" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="@id/w_t" app:layout_constraintTop_toTopOf="parent" />
-</android.support.constraint.ConstraintLayout>

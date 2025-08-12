@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="horizontal" android:paddingTop="1.0dip" android:paddingBottom="1.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/lh5" android:textColor="@color/nmj" android:id="@id/p6o" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cno" android:singleLine="false" android:layout_weight="2.0" android:importantForAccessibility="no" style="@style/cashier__order_info_single_line" />
-    <TextView android:textSize="@dimen/lh5" android:textColor="@color/nmj" android:gravity="right" android:layout_gravity="end" android:id="@id/bcqz" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/cno" android:layout_weight="1.0" android:importantForAccessibility="no" style="@style/cashier__order_info_single_line" />
-</LinearLayout>

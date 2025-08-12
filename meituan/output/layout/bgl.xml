@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:id="@id/jd1" android:background="@drawable/g8z" android:paddingLeft="4.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="24.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <ImageView android:layout_gravity="center" android:id="@id/guide_icon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="3.0dip" android:scaleType="centerCrop" />
-    <com.maoyan.android.common.view.author.AvatarView android:layout_gravity="center" android:id="@id/ua9" android:layout_width="16.0dip" android:layout_height="16.0dip" app:maoyan_common_view_avatar_decorator_type="none" app:maoyan_common_view_avatar_error="@drawable/skm" app:maoyan_common_view_avatar_placeholder="@drawable/skm" />
-    <TextView android:textSize="12.0sp" android:textColor="@color/kgh" android:gravity="center_vertical" android:id="@id/jy_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:maxLines="1" />
-</LinearLayout>

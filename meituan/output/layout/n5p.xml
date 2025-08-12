@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <EditText android:textSize="@dimen/gc_text_size_15" android:textColorHint="@color/l82" android:id="@id/wxi" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLength="50" android:inputType="text" />
-    <TextView android:textSize="@dimen/gc_text_size_13" android:textColor="@color/l82" android:gravity="end" android:id="@id/s_y" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-</LinearLayout>

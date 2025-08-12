@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:paddingBottom="29.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="9.0dip" android:paddingEnd="9.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:orientation="vertical" android:background="@drawable/psk" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <TextView android:textSize="14.0dip" android:textColor="@color/jyy" android:gravity="center" android:layout_width="fill_parent" android:layout_height="42.0dip" android:text="@string/jyy" />
-        <android.support.v7.widget.RecyclerView android:id="@id/zk7" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    </LinearLayout>
-    <TextView android:textSize="18.0dip" android:textColor="@color/la4" android:gravity="center" android:id="@id/tv_cancel" android:background="@drawable/psk" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_marginTop="9.0dip" android:text="@string/mobike_cancel" />
-</LinearLayout>

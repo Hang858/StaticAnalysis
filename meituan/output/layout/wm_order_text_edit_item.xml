@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:gravity="center" android:id="@id/password_dot_container" android:background="@drawable/wm_sc_order_text_edit_bg" android:layout_width="40.0dip" android:layout_height="40.0dip">
-        <FrameLayout android:id="@id/password_dot" android:background="#ff000000" android:layout_width="10.0dip" android:layout_height="10.0dip" />
-    </LinearLayout>
-</LinearLayout>

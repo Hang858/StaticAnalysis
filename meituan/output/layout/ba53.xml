@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sankuai.ptview.view.PTFrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.meituan.android.pt.homepage.mine.modules.games.GameAreaPager android:id="@id/t1e" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0pt" android:layout_marginRight="8.0pt" />
-</com.sankuai.ptview.view.PTFrameLayout>

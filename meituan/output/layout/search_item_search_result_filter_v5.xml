@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sankuai.meituan.search.result3.view.SearchRadiusView android:id="@id/radius_view" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.sankuai.meituan.search.result2.filter.view.QuickFilterLayout android:id="@id/filter_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-</com.sankuai.meituan.search.result3.view.SearchRadiusView>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.meituan.android.food.widget.image.FoodStrokeImageView android:id="@id/vxl" android:layout_width="@dimen/fju" android:layout_height="@dimen/fju" android:layout_marginTop="2.0dip" android:scaleType="centerCrop" app:foodCornerRadius="@dimen/wzk" app:foodOverlayColor="#ffffffff" app:foodStrokeColor="@color/spa" />
-    <ImageView android:id="@id/nrk" android:layout_width="@dimen/ltx" android:layout_height="@dimen/eom" android:layout_marginStart="@dimen/v6l" />
-    <com.meituan.android.food.widget.text.FoodTextView android:textSize="@dimen/k6k" android:textColor="@color/bbwy" android:ellipsize="end" android:gravity="center" android:id="@id/rpe" android:background="@drawable/bgv" android:layout_width="@dimen/wdq" android:layout_height="@dimen/zbj" android:maxLines="1" android:singleLine="true" android:layout_alignBottom="@id/vxl" />
-</merge>

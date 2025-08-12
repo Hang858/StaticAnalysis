@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/back_iv" android:layout_width="11.0dip" android:layout_height="20.0dip" android:layout_marginLeft="15.0dip" android:src="@drawable/beauty_ic_left_back_arrow" android:scaleType="centerCrop" android:tint="#ff06c1ae" android:layout_alignParentLeft="true" android:layout_centerInParent="true" android:layout_marginStart="15.0dip" android:layout_alignParentStart="true" />
-    <TextView android:textSize="@dimen/text_size_18" android:textColor="#ff000000" android:id="@id/title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
-    <TextView android:textSize="@dimen/text_size_16" android:textStyle="bold" android:textColor="#ff06c1ae" android:layout_gravity="end|center" android:id="@id/complete_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:text="完成" android:layout_alignParentRight="true" android:layout_centerInParent="true" android:layout_marginEnd="12.0dip" android:layout_alignParentEnd="true" />
-</RelativeLayout>

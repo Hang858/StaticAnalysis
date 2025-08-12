@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <RelativeLayout android:layout_gravity="center|right" android:id="@id/jw9" android:layout_width="wrap_content" android:layout_height="wrap_content">
-        <ImageView android:id="@id/nc_" android:padding="2.0dip" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_centerVertical="true" />
-        <TextView android:textSize="@dimen/bcfo" android:textColor="@color/ohj" android:ellipsize="end" android:gravity="left" android:id="@id/x2g" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:layout_toRightOf="@id/nc_" android:layout_centerVertical="true" />
-        <com.airbnb.lottie.LottieAnimationView android:id="@id/bb8" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_toLeftOf="@id/x2g" android:layout_centerVertical="true" app:lottie_fileName="feedapprove/lottie_zan.json" app:lottie_imageAssetsFolder="feedapprove/images/" app:lottie_loop="false" />
-    </RelativeLayout>
-</merge>

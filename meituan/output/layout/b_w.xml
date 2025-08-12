@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/lyt" android:background="@color/gho" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <FrameLayout android:id="@id/pr1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <com.sankuai.meituan.search.result.view.SearchResultStatusView android:id="@id/search_result_status" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <com.sankuai.meituan.search.view.SearchResultActionbarLayout android:id="@id/k3h" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    <ViewStub android:id="@id/beq" android:layout="@layout/yi9" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <FrameLayout android:id="@id/g25" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-</FrameLayout>

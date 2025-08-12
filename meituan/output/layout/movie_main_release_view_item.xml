@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout android:orientation="horizontal" android:id="@id/container1" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <ImageView android:id="@id/poster_iv" android:layout_width="90.0dip" android:layout_height="58.0dip" android:scaleType="fitXY" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
-    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#cc000000" android:ellipsize="end" android:id="@id/title_tv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:maxLines="1" android:includeFontPadding="false" android:layout_marginStart="7.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/poster_iv" app:layout_constraintTop_toTopOf="@id/poster_iv" />
-    <com.meituan.android.movie.tradebase.view.shadow.ShadowLayoutMY android:id="@id/p7g" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginStart="2.0dip" app:layout_constraintBottom_toBottomOf="@id/poster_iv" app:layout_constraintStart_toEndOf="@id/poster_iv" app:layout_constraintTop_toBottomOf="@id/title_tv" app:my_cornerRadius="100.0dip" app:my_shadowLimit="2.0dip" app:my_shadowOffsetY="1.0dip" app:my_shadowSymmetry="true">
-        <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/p11" android:layout_width="54.0dip" android:layout_height="28.0dip" />
-    </com.meituan.android.movie.tradebase.view.shadow.ShadowLayoutMY>
-</android.support.constraint.ConstraintLayout>

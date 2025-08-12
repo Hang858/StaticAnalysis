@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.meituan.android.generalcategories.view.schedulelistview.ExpandView android:gravity="center" android:orientation="vertical" android:background="@color/gcbase_white" android:layout_width="fill_parent" android:layout_height="44.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/text_size_h15" android:textColor="@color/gcbase_expand_gray" android:id="@id/expand_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="查看全部" android:drawableRight="@drawable/gcbase_arrow_down_shop" android:drawablePadding="6.0dip" />
-</com.meituan.android.generalcategories.view.schedulelistview.ExpandView>

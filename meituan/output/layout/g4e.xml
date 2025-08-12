@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="start" android:orientation="vertical" android:layout_width="81.0dip" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <View android:layout_gravity="start" android:background="@drawable/i6f" android:layout_marginEnd="@dimen/ghq" style="@style/movie_action_movie_show_post_style" />
-    <View android:layout_gravity="start" android:background="@color/mf5" android:layout_width="76.0dip" android:layout_height="15.0dip" android:layout_marginTop="9.0dip" />
-    <View android:layout_gravity="start" android:background="@color/mf5" android:layout_width="44.0dip" android:layout_height="15.0dip" android:layout_marginTop="4.0dip" android:layout_marginBottom="5.0dip" />
-    <View android:id="@id/dk5" android:background="@drawable/gj1" android:layout_width="50.0dip" android:layout_height="28.0dip" android:layout_marginTop="4.0dip" android:layout_marginBottom="10.0dip" />
-</LinearLayout>

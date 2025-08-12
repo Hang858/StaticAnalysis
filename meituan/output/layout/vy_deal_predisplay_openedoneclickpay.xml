@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:paddingLeft="15.0dip" android:paddingTop="16.0dip" android:paddingRight="15.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/vy_text_size_15" android:textColor="#ff777777" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="支付方式" />
-    <TextView android:textSize="@dimen/vy_text_size_15" android:textColor="#ff777777" android:ellipsize="end" android:gravity="end" android:layout_gravity="center_vertical" android:id="@id/openedoneclickpay_subtitle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
-    <TextView android:textSize="@dimen/vy_text_size_15" android:textColor="#ff333333" android:layout_gravity="center_vertical" android:id="@id/openedoneclickpay_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
-    <ImageView android:layout_gravity="center_vertical" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/vy_arrow_right_gray" />
-</LinearLayout>

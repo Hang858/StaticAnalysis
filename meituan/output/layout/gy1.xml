@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.meituan.android.paybase.screen.AutoFitLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/e60" android:layout_width="wrap_content" android:layout_height="160.0dip" android:layout_marginLeft="83.0dip" android:layout_marginTop="120.0dip" android:layout_marginRight="82.0dip" android:src="@drawable/ujt" />
-    <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:gravity="center_horizontal" android:id="@id/p1n" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/n_o" android:includeFontPadding="false" />
-    <Button android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/mjm" android:clickable="false" android:layout_width="120.0dip" android:layout_height="41.0dip" android:layout_marginTop="20.0dip" android:text="@string/kuq" android:includeFontPadding="false" style="@style/mtpaysdk_button_net_error" />
-</com.meituan.android.paybase.screen.AutoFitLinearLayout>

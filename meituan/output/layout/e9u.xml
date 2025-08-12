@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/e9u" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/j5d" android:paddingLeft="@dimen/bcwd" android:paddingRight="@dimen/bcwd" android:layout_width="fill_parent" android:layout_height="@dimen/que" android:layout_marginTop="@dimen/uq6">
-        <ImageView android:id="@id/city_locate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/iek" android:contentDescription="@null" android:layout_marginEnd="5.0dip" />
-        <android.support.v7.widget.AppCompatTextView android:id="@id/city_name" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/BorderlessButton.TwoLines" />
-    </LinearLayout>
-</FrameLayout>

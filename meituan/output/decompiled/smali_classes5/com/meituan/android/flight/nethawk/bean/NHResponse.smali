@@ -1,3 +1,0 @@
-.class public interface abstract Lcom/meituan/android/flight/nethawk/bean/NHResponse;
-.super Ljava/lang/Object;
-.source "SourceFile"

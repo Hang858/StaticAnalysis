@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="vertical" android:background="@color/ktv_white" android:layout_width="0.0dip" android:layout_height="80.0dip" android:layout_weight="1.0"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
-    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/ktv_text_color_t1" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="21.5dip" style="@style/KTVSingleLineTextView" />
-    <TextView android:textSize="12.0sp" android:id="@id/subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_below="@id/title" style="@style/KTVSingleLineTextView" />
-    <com.dianping.imagemanager.DPNetworkImageView android:id="@id/img" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginRight="10.0dip" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" dp:placeholderEmpty="@drawable/placeholder_loading" dp:placeholderError="@drawable/placeholder_error" dp:placeholderLoading="@drawable/placeholder_loading" />
-</RelativeLayout>

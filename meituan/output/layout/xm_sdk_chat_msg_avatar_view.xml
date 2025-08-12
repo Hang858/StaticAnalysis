@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/xm_sdk_img_chat_msg_portrait" android:layout_width="@dimen/xm_sdk_chat_msg_portrait_size" android:layout_height="@dimen/xm_sdk_chat_msg_portrait_size" />
-</merge>

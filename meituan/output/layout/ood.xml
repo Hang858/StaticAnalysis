@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="fill_parent" android:layout_height="54.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <ImageView android:id="@id/i8a" android:layout_width="@dimen/d2e" android:layout_height="@dimen/d2e" android:layout_marginLeft="15.0dip" android:scaleType="fitXY" android:layout_centerVertical="true" />
-    <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/wyl" android:ellipsize="end" android:id="@id/pry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:singleLine="true" android:layout_toRightOf="@id/i8a" android:layout_centerVertical="true" />
-    <com.meituan.android.paybase.widgets.bankcard.RoundImageView android:id="@id/mpay_brand_marketing" android:visibility="gone" android:layout_width="200.0dip" android:layout_height="fill_parent" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:riv_topRight="@dimen/badp" />
-    <View android:id="@id/b8n" android:layout_alignParentBottom="true" style="@style/paybase__horizonal_divider" />
-</RelativeLayout>

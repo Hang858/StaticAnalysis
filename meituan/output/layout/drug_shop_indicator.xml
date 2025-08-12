@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="45.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.sankuai.waimai.store.drug.goods.list.views.flash.FlashTabLayout android:id="@id/drug_shop_flash_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:tabBackground="@null" app:tabGravity="center" app:tabIndicatorHeight="0.0dip" app:tabMaxWidth="0.0dip" app:tabPaddingBottom="2.0dip" app:tabPaddingEnd="0.0dip" app:tabPaddingStart="0.0dip" app:tabPaddingTop="2.0dip" />
-    <LinearLayout android:orientation="horizontal" android:id="@id/wm_sc_indicator_container" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <com.sankuai.waimai.store.drug.goods.list.views.flash.FlashIndicateView android:id="@id/drug_shop_flash_indicator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layerType="software" />
-    </LinearLayout>
-</FrameLayout>

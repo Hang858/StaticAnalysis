@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <View android:id="@id/bc72" android:background="@drawable/li0" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <com.sankuai.waimai.business.page.home.head.majorcategory.MajorCategoryViewPager android:id="@id/wvg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-        <com.sankuai.waimai.business.page.home.head.majorcategory.indicator.DotsIndicator android:layout_gravity="bottom|center" android:id="@id/se1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="4.0dip" android:layout_marginBottom="2.0dip" app:dotsColor="#33000000" app:dotsCornerRadius="2.0dip" app:dotsSize="4.0dip" app:dotsSpacing="2.0dip" app:dotsWidthFactor="3.0" app:progressMode="false" app:selectedDotColor="#ffffd500" />
-    </FrameLayout>
-</FrameLayout>

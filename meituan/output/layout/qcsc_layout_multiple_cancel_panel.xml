@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <include android:id="@id/ll_multiple_cancel_tip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/qcsc_layout_multiple_cancel_tip" />
-    <include android:id="@id/ll_multiple_cancel_feedback" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/qcsc_layout_multiple_cancel_feedback" />
-    <include android:id="@id/fl_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/qcsc_dialog_loading" />
-    <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/qcsc_layout_multiple_cancel_applied_success" />
-</FrameLayout>

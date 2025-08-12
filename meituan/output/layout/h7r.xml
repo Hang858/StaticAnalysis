@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sankuai.ptview.view.PTFrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ViewStub android:id="@id/ljq" android:visibility="gone" android:layout="@layout/qud" android:inflatedId="@id/baef" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    <com.meituan.android.pt.homepage.modules.category.view.IndexCategoryPager android:id="@id/o3b" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-</com.sankuai.ptview.view.PTFrameLayout>

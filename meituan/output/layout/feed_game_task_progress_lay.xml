@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="fill_parent" android:layout_height="14.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <android.support.v7.widget.AppCompatImageView android:id="@id/game_task_progress_line_iv" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_marginTop="4.0dip" />
-    <android.support.v7.widget.AppCompatImageView android:id="@id/game_task_progress_stage_iv" android:layout_width="14.0dip" android:layout_height="14.0dip" android:scaleType="fitXY" />
-</FrameLayout>

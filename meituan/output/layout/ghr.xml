@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/d6r" android:layout_width="65.0dip" android:layout_height="83.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.maoyan.android.presentation.sns.PressDarkableImageView android:id="@id/icon" android:layout_width="fill_parent" android:layout_height="42.0dip" android:scaleType="centerInside" />
-    <TextView android:textSize="11.0sp" android:textColor="#ff666666" android:gravity="center_horizontal" android:id="@id/share_type" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:maxLength="5" android:layout_alignParentBottom="true" />
-</RelativeLayout>

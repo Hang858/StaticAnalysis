@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.meituan.android.generalcategories.view.BasicSingleItem android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_height="wrap_content" android:minHeight="@dimen/nmi" style="@style/GCSingleLineTableItemWithPadding"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

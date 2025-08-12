@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.meituan.android.movie.tradebase.view.BubbleLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="28.0dip" app:arrow_arc_secant_offset="1.0dip" app:arrow_direction="top" app:arrow_gravity="start" app:arrow_height="6.0dip" app:arrow_offset="36.0dip" app:arrow_width="14.0dip" app:bubble_color="@color/ztl" app:bubble_padding_bottom="5.0dip" app:bubble_padding_left="10.0dip" app:bubble_padding_right="10.0dip" app:bubble_padding_top="5.0dip" app:radius="6.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <TextView android:textSize="13.0sp" android:textColor="@color/bagv" android:id="@id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="197.0dip" />
-</com.meituan.android.movie.tradebase.view.BubbleLayout>

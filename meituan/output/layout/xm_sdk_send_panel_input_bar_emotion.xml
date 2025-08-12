@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout style="@style/xm_sdk_send_panel_normal_style"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.sankuai.xm.imui.common.panel.plugin.VoicePlugin android:id="@id/voice_plugin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/xm_sdk_send_panel_input_child_space" />
-    <com.sankuai.xm.imui.common.panel.plugin.InputEditorPlugin android:id="@id/editor_plugin" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/xm_sdk_send_panel_input_child_space" />
-    <com.sankuai.xm.imui.common.panel.plugin.EmotionPlugin android:id="@id/emotion_plugin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/xm_sdk_send_panel_input_child_space" />
-    <com.sankuai.xm.imui.common.panel.plugin.SendPlugin android:id="@id/send_plugin" android:tag="SEND" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/xm_sdk_send_panel_input_child_space" />
-    <com.sankuai.xm.imui.common.panel.plugin.ExtraPlugin android:id="@id/extra_plugin" android:tag="ALT:SEND" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/xm_sdk_send_panel_input_child_space" />
-</LinearLayout>

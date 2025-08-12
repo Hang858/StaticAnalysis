@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:background="@color/fpd" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.sankuai.meituan.search.home.view.SearchRichTextView android:textSize="12.0dip" android:textColor="@color/r5z" android:ellipsize="end" android:id="@id/hz8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="12.0dip" android:maxLines="1" />
-</FrameLayout>

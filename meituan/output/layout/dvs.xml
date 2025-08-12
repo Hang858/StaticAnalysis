@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:background="@drawable/e4e" android:layout_width="96.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.maoyan.android.component.MovieItem1 android:id="@id/y3o" android:layout_width="96.0dip" android:layout_height="134.0dip" />
-    <TextView android:textSize="15.0sp" android:textColor="#ff222222" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:singleLine="true" />
-</LinearLayout>

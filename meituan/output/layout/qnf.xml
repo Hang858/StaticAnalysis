@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:gravity="center" android:background="@drawable/uo3" android:layout_width="37.399994pt" android:layout_height="37.399994pt" android:contentDescription="回到顶部,按钮">
-        <ImageView android:layout_gravity="center" android:layout_width="19.0pt" android:layout_height="19.0pt" android:src="@drawable/y7y" android:scaleType="centerInside" />
-    </LinearLayout>
-</FrameLayout>

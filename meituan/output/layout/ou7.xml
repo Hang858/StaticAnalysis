@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:gravity="center" android:id="@id/rl_shop_cart_rest" android:background="@drawable/e86" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/bczi" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="@dimen/e5p"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
-        <TextView android:textSize="15.0dip" android:textColor="@color/jpg" android:gravity="center_vertical" android:id="@id/wm_st_poi_rest_text" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="@dimen/bczi" android:text="@string/wm_sc_goods_list_poi_shopcart_rest" />
-        <TextView android:textSize="14.0dip" android:textColor="@color/wm_sg_color_FFA200" android:gravity="center_vertical" android:id="@id/txt_shopcart_poi_im" android:layout_width="wrap_content" android:layout_height="@dimen/bczi" android:layout_marginLeft="@dimen/uv2" android:text="@string/wm_sc_goods_list_poi_shopcart_rest_im" />
-    </LinearLayout>
-</RelativeLayout>

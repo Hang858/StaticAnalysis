@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:background="#ffefefef" android:layout_width="fill_parent" android:layout_height="44.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/im_back_button" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="12.0dip" android:src="@drawable/qcsc_im_back_button" android:layout_centerVertical="true" />
-    <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/im_driver_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:includeFontPadding="false" android:layout_toRightOf="@id/im_back_button" android:layout_centerVertical="true" />
-    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
-        <include android:id="@id/layout_im_title_bar_right" layout="@layout/qcsc_layout_im_titlebar_right" />
-    </LinearLayout>
-</RelativeLayout>

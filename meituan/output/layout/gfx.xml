@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sankuai.ptview.view.PTFrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="80.639984pt" android:layout_height="60.44998pt"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.sankuai.ptview.view.PTImageView android:layout_gravity="center_horizontal" android:id="@id/iv_game_icon" android:layout_width="37.439972pt" android:layout_height="37.439972pt" android:layout_marginTop="3.8099976pt" />
-    <com.sankuai.ptview.view.PTTextView android:textSize="9.599976pt" android:textColor="#ffffffff" android:gravity="center" android:id="@id/xd2" android:background="@drawable/eb5" android:paddingTop="0.52pt" android:paddingBottom="0.52pt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="39.0pt" android:maxLines="1" />
-    <com.sankuai.ptview.view.PTTextView android:textSize="12.47998pt" android:textColor="#e6000000" android:layout_gravity="bottom|center" android:id="@id/y1n" android:layout_width="wrap_content" android:layout_height="17.279999pt" />
-</com.sankuai.ptview.view.PTFrameLayout>

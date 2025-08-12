@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <Space android:id="@id/dr" android:layout_width="fill_parent" android:layout_height="84.0dip" />
-    <FrameLayout android:id="@id/rg6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="-10.0dip" android:layout_marginRight="-10.0dip" android:layout_marginBottom="3.0dip" />
-</LinearLayout>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/header_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.sankuai.waimai.platform.mach.dialog.DynamicImageView android:id="@id/spy" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitEnd" android:contentDescription="天降红包已到账" />
-    <com.sankuai.waimai.platform.mach.lottieextend.MachSafeLottieAnimView android:id="@id/htz" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="天降红包已到账" />
-</FrameLayout>

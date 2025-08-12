@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:background="#fff3f6f7" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:layout_width="160.0dip" android:layout_height="140.0dip" android:layout_marginTop="26.0dip" android:src="@drawable/sw6" />
-    <TextView android:textSize="16.0sp" android:textColor="#ff222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="无法连接到网络" />
-    <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:id="@id/bcj2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="请检查网络设置或稍后重试" />
-    <TextView android:textSize="13.0sp" android:textColor="#ff222222" android:gravity="center" android:id="@id/j63" android:layout_width="76.0dip" android:layout_height="31.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="40.0dip" android:text="刷新重试" />
-</merge>

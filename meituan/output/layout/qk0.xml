@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/uvj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.sankuai.waimai.ugc.creator.widgets.round.RoundCornerFrameLayout android:id="@id/fl_thumbnail_container" android:layout_width="54.0dip" android:layout_height="54.0dip" app:cornerRadius="6.0dip">
-        <ImageView android:id="@id/un" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/mvi" android:scaleType="centerCrop" />
-    </com.sankuai.waimai.ugc.creator.widgets.round.RoundCornerFrameLayout>
-    <TextView android:textSize="12.0dip" android:textColor="#ffffffff" android:id="@id/mkq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:textAlignment="center" />
-</LinearLayout>

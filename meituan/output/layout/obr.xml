@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/jfn" android:layout_width="fill_parent" android:layout_height="65.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/vow" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="30.0dip" android:scaleType="fitXY" android:layout_centerVertical="true" />
-    <ImageView android:id="@id/q29" android:background="@drawable/rsb" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
-    <TextView android:textSize="16.0dip" android:textColor="@color/uih" android:ellipsize="end" android:id="@id/ly" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:lines="1" android:layout_toLeftOf="@id/q29" android:layout_toRightOf="@id/vow" android:layout_centerVertical="true" />
-    <View android:id="@id/bcax" android:layout_marginLeft="43.0dip" android:layout_marginRight="22.0dip" android:layout_alignParentBottom="true" style="@style/paybase__horizonal_divider" />
-</RelativeLayout>

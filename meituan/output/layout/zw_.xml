@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="84.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
-    <TextView android:textSize="16.0sp" android:textColor="@color/jy" android:layout_gravity="center_vertical" android:id="@id/uqu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" />
-    <com.meituan.android.ugc.cipugc.widget.RatingBar android:layout_gravity="center_vertical" android:id="@id/rho" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_weight="1.0" dp:ratingview_default="?rating_default" dp:ratingview_selected="?rating_selected" />
-    <TextView android:textSize="14.0sp" android:textColor="@color/fr5" android:layout_gravity="center_vertical" android:id="@id/dun" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-</LinearLayout>

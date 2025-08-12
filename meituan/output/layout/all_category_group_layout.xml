@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.sankuai.ptview.view.PTLinearLayout android:orientation="vertical" android:id="@id/half_card_container" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <com.sankuai.ptview.view.PTTextView android:textSize="14.399994pt" android:textColor="#e6000000" android:ellipsize="end" android:gravity="center" android:id="@id/group_title" android:layout_width="wrap_content" android:layout_height="22.079987pt" android:maxLines="1" android:includeFontPadding="false" android:layout_marginStart="17.279999pt" />
-        <com.meituan.android.pt.homepage.activity.view.AllCategoryGridLayout android:id="@id/group_grid_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    </com.sankuai.ptview.view.PTLinearLayout>
-</merge>

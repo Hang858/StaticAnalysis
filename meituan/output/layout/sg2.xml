@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/k1" android:background="@drawable/omu" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="3.5dip"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <ProgressBar android:id="@id/msv_download_progress" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:progress="0" android:progressDrawable="@drawable/msv_download_progress_drawable" style="?android:progressBarStyleHorizontal" />
-        <android.support.v7.widget.AppCompatTextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ffcccccc" android:gravity="center" android:layout_gravity="center" android:id="@id/pw0" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="28.0dip" android:lines="1" android:drawableEnd="@drawable/etb" />
-        <android.support.v7.widget.AppCompatTextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ffcccccc" android:gravity="center" android:layout_gravity="center" android:id="@id/msv_mount_card_btn_new" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="28.0dip" android:lines="1" android:drawableEnd="@drawable/etb" />
-    </FrameLayout>
-</LinearLayout>

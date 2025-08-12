@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:orientation="vertical" android:id="@id/passport_more_other" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    <View android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="8.0dip" />
-    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff191919" android:gravity="center" android:id="@id/passport_more_other_cancel" android:background="@drawable/passport_more_other_login_cancel_bg_selector" android:layout_width="fill_parent" android:layout_height="57.0dip" android:text="@string/passport_cancel" />
-</LinearLayout>

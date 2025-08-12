@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <ImageView android:id="@id/iv_close_left" android:padding="4.0dip" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/lightbox_ic_close_round_gray" android:scaleType="fitXY" app:layout_constraintBottom_toTopOf="@id/iv_center" app:layout_constraintRight_toLeftOf="@id/iv_center" />
-    <ImageView android:id="@id/iv_center" android:visibility="gone" android:layout_width="64.0dip" android:layout_height="64.0dip" android:scaleType="fitXY" app:layout_constraintRight_toLeftOf="@id/iv_close_left" app:layout_constraintTop_toBottomOf="@id/iv_close_left" />
-</merge>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.meituan.android.food.widget.FoodPriorityHorizontalLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <TextView android:textSize="@dimen/r0i" android:textColor="@color/bbhe" android:ellipsize="end" android:id="@id/wq1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/udh" android:maxLines="1" android:singleLine="true" app:layout_priority="1" />
-    <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
-    <TextView android:textSize="@dimen/text_size_h9" android:textColor="@color/black2" android:ellipsize="end" android:id="@id/bafs" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gzy" android:maxLines="1" android:singleLine="true" android:drawablePadding="@dimen/bamr" android:drawableEnd="@drawable/mwy" android:layout_marginStart="20.0dip" app:layout_priority="2" />
-    <TextView android:textSize="@dimen/r0i" android:textColor="@color/bbhe" android:id="@id/f7p" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/udh" app:layout_priority="2" />
-</com.meituan.android.food.widget.FoodPriorityHorizontalLayout>

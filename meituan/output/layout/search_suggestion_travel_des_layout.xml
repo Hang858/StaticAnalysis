@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center|right" android:id="@id/sv8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dcu"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.sankuai.meituan.search.home.sug.view.SearchTagsLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/i6m" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bahw" android:layout_weight="1.0" />
-    <com.sankuai.meituan.search.home.view.SearchRichTextView android:textSize="12.0dip" android:textColor="@color/on1" android:gravity="right" android:layout_gravity="right" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" android:includeFontPadding="false" />
-</LinearLayout>

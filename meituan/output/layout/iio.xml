@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <android.support.constraint.ConstraintLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#ffeff0f1" android:layout_width="fill_parent" android:layout_height="39.359985pt">
-        <TextView android:textSize="15.0pt" android:gravity="center" android:id="@id/bbxo" android:background="@null" android:layout_width="wrap_content" android:layout_height="18.199982pt" android:layout_marginTop="9.599976pt" android:minWidth="24.0pt" android:text="@string/i3c" android:layout_marginStart="14.399994pt" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
-        <EditText android:textColor="#ffeff0f1" android:layout_gravity="center_vertical" android:id="@id/bap9" android:background="@null" android:layout_width="1.0pt" android:layout_height="1.0pt" android:cursorVisible="false" android:digits="\ 1234567890" android:inputType="number" android:imeOptions="actionDone" app:layout_constraintLeft_toRightOf="@id/bbxo" app:layout_constraintTop_toTopOf="parent" />
-        <TextView android:textSize="15.0pt" android:textStyle="bold" android:textColor="#ff3488ff" android:gravity="center" android:id="@id/bc7a" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.599976pt" android:text="@string/d10" android:layout_marginEnd="14.399994pt" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
-    </android.support.constraint.ConstraintLayout>
-</FrameLayout>

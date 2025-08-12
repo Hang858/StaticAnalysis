@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <FrameLayout android:id="@id/gzp" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    <com.sankuai.waimai.store.newwidgets.SCViewPagerCompat android:id="@id/r5r" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/gzp" />
-    <com.sankuai.waimai.store.newwidgets.NetInfoLoadView android:id="@id/lhq" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <android.support.v7.widget.RecyclerView android:id="@id/e3p" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="12.0dip" />
-</RelativeLayout>

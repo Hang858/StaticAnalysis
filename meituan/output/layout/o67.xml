@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/x4t" android:background="@color/cqq" android:layout_width="3.0dip" android:layout_height="20.0dip" android:layout_alignParentLeft="true" />
-    <TextView android:textSize="@dimen/gc_text_size_15" android:textColor="@color/gc_color_deep_gray" android:id="@id/dg4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
-    <TextView android:textSize="@dimen/gc_text_size_15" android:textColor="@color/gc_color_deep_gray" android:ellipsize="end" android:id="@id/e44" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:maxLines="2" android:layout_toLeftOf="@id/dg4" android:layout_toRightOf="@id/x4t" />
-    <View android:id="@id/y1_" android:layout_width="3.0dip" android:layout_height="fill_parent" android:layout_below="@id/x4t" />
-    <LinearLayout android:orientation="vertical" android:id="@id/baxw" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="15.0dip" android:layout_toRightOf="@id/y1_" android:layout_below="@id/e44" />
-</RelativeLayout>

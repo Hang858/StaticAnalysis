@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:id="@id/batn" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <View android:background="@color/gma" android:layout_width="fill_parent" android:layout_height="0.5dip" />
-    <TextView android:textSize="18.0dip" android:textColor="@color/la4" android:gravity="center" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="55.0dip" />
-</LinearLayout>

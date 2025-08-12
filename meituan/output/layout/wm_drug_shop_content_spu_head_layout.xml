@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:verticalityPagerView="http://schemas.android.com/apk/res-auto">
-    <com.sankuai.waimai.store.drug.goods.list.viewblocks.header.widget.MemberLevelLogoView android:id="@id/poi_member_entrance" android:layout_width="fill_parent" android:layout_height="@dimen/nkq" android:layout_marginLeft="@dimen/i6c" android:layout_marginRight="@dimen/i6c" android:layout_marginBottom="@dimen/i6c" />
-    <com.sankuai.waimai.store.drug.goods.list.viewblocks.header.widget.SCPoiCouponView android:orientation="vertical" android:id="@id/shop_content_coupon_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
-    <com.sankuai.waimai.store.view.banner.AutoScrollPagerView android:id="@id/shop_content_operation_view" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="@dimen/sg" android:layout_marginLeft="10.0dip" android:layout_marginTop="@dimen/wpy" android:layout_marginRight="10.0dip" verticalityPagerView:isShowCircle="false" verticalityPagerView:radioMarginBottom="5.0dip" />
-</LinearLayout>

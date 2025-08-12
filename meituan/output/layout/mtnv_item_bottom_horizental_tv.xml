@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/mtnv_ll_feedback_item" android:layout_width="fill_parent" android:layout_height="100.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.meituan.sankuai.navisdk.place.ui.MultifunctionLinearLayout android:gravity="center" android:id="@id/mtnv_btn_bottom_item" android:layout_width="52.0dip" android:layout_height="52.0dip" android:scaleType="centerInside" app:duration="200" app:end_color="@color/mtnv_color_gray_button_end" app:end_color_night="@color/mtnv_color_gray_button_end_night" app:fun_drawable="@drawable/mtnv_feedback_cicle_strike" app:fun_drawable_night="@drawable/mtnv_feedback_cicle_strike_night" app:start_color="@color/mtnv_color_gray_button_start" app:start_color_night="@color/mtnv_color_gray_button_start_night">
-        <ImageView android:id="@id/mtnv_img_button_item_icon" android:layout_width="52.0dip" android:layout_height="52.0dip" />
-    </com.meituan.sankuai.navisdk.place.ui.MultifunctionLinearLayout>
-    <TextView android:textSize="12.0dip" android:textColor="@color/mtnv_ugc_main_text" android:gravity="center" android:id="@id/mtnv_tv_bottom_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:hint="方案缺陷" />
-</LinearLayout>

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/bof" android:background="@color/ukq" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.meituan.android.bike.component.feature.qrcode.view.MobikesScanCodeView android:id="@id/l6s" android:layout_width="fill_parent" android:layout_height="fill_parent" android:adjustViewBounds="true" app:cameraFacing="front" app:cameraRatio="16:9" app:flashMode="off" />
-</FrameLayout>

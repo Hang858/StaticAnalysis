@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/bbcq" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="14.0sp" android:textColor="@color/uwv" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/default_text" android:layout_width="0.0dip" android:layout_height="fill_parent" android:singleLine="true" android:includeFontPadding="false" android:layout_weight="1.0" />
-    <FrameLayout android:id="@id/pic_search" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:contentDescription="扫一扫入口 按钮">
-        <ImageView android:layout_gravity="center" android:id="@id/pic_search_image" android:visibility="visible" android:layout_width="22.0dip" android:layout_height="22.0dip" />
-    </FrameLayout>
-</LinearLayout>

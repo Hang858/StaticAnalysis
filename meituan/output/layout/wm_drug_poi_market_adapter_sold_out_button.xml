@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="11.0sp" android:textColor="#ff858687" android:id="@id/sold_out_button" android:background="@drawable/wm_drug_poi_market_sold_out_button" android:paddingLeft="@dimen/f7u" android:paddingTop="@dimen/z34" android:paddingRight="@dimen/f7u" android:paddingBottom="@dimen/z34" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/j8y" android:layout_marginBottom="@dimen/wpy" android:text="查看全部售罄商品" android:drawablePadding="@dimen/z34" />
-</LinearLayout>

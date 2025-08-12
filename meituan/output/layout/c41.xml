@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
-    <com.dianping.imagemanager.DPNetworkImageView android:id="@id/r1y" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" dp:enableProgressPrint="true" dp:placeholderEmpty="@drawable/bbu7" dp:placeholderError="@drawable/bbu7" dp:placeholderLoading="@drawable/bbu7" />
-    <ImageView android:layout_gravity="center" android:id="@id/toa" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/baes" android:scaleType="centerCrop" />
-    <ImageView android:layout_gravity="center|right|top" android:id="@id/wl1" android:background="@drawable/bcce" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:scaleType="fitXY" />
-</merge>

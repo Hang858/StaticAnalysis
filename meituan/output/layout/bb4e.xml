@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.meituan.android.movie.tradebase.view.MovieRoundRectFImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="101.0dip" android:layout_marginLeft="21.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="21.0dip" android:layout_marginBottom="21.0dip" android:scaleType="centerCrop" app:radius="15.0dip" />
-    <ImageView android:layout_gravity="start|bottom|center" android:id="@id/tjr" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="12.0dip" android:layout_marginBottom="27.0dip" android:src="@drawable/kao" android:scaleType="fitXY" android:layout_marginStart="27.0dip" />
-</FrameLayout>

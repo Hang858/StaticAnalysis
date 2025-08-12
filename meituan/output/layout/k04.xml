@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="@color/jr9" android:gravity="center" android:id="@id/tv_item_title" android:paddingTop="30.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="24.0dip" android:paddingEnd="24.0dip" />
-    <com.meituan.android.bike.framework.widgets.MobikeFixedAspectRatioImageView android:id="@id/fz4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip" app:aspectRatioHeight="160" app:aspectRatioWidth="327" />
-</LinearLayout>

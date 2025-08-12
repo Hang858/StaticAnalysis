@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <android.support.v7.widget.AppCompatTextView android:textSize="11.0dip" android:textColor="@color/search_color_FF2D00" android:gravity="bottom" android:id="@id/search_sug_discount_first" android:padding="0.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
-    <android.support.v7.widget.AppCompatTextView android:textSize="10.0dip" android:textColor="@color/search_color_FF2D00" android:gravity="bottom" android:id="@id/search_sug_discount_second" android:padding="0.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
-    <android.support.v7.widget.AppCompatImageView android:id="@id/search_sug_discount_image" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="10.0dip" android:layout_marginBottom="1.0dip" android:scaleType="fitXY" />
-</merge>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:id="@id/ly_security_notify_group" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <RelativeLayout android:orientation="horizontal" android:background="@drawable/qcsc_bg_security_notify_dialog" android:layout_width="fill_parent" android:layout_height="110.0dip">
-        <ImageView android:id="@id/img_security_notify_title_tip" android:background="@drawable/qcsc_ic_security_notify_tip" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginRight="40.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
-        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/qcsc_white" android:id="@id/tv_security_notify_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginRight="53.0dip" android:layout_toLeftOf="@id/img_security_notify_title_tip" android:layout_centerVertical="true" />
-    </RelativeLayout>
-</LinearLayout>

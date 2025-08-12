@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/pjm" android:background="@color/bagv" android:layout_width="fill_parent" android:layout_height="150.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <TextView android:textSize="15.0sp" android:textColor="@color/qg6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:text="暂无筛选项" />
-    <TextView android:textSize="13.0sp" android:textColor="@color/bai2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="32.0dip" android:text="请检查网络或稍后重试" />
-</LinearLayout>

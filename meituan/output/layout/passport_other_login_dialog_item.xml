@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="21.0dip" android:textColor="#ff111111" android:gravity="center" android:id="@id/other_item_text" android:layout_width="wrap_content" android:layout_height="56.72998dip" android:layout_marginLeft="9.609985dip" android:text="@string/passport_cancel" />
-</LinearLayout>

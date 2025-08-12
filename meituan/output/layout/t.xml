@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sankuai.waimai.platform.widget.RoundedLinearLayout android:orientation="vertical" android:paddingTop="@dimen/uv2" android:paddingBottom="@dimen/wpy" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/yxh" android:paddingEnd="@dimen/yxh" app:cornerRadius="6.0dip" app:cropBackground="true"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <TextView android:textSize="@dimen/e_9" android:textColor="@color/ugj" android:id="@id/cv2" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    <TextView android:textSize="@dimen/m8w" android:textColor="@color/wm_sg_color_FF8000" android:layout_gravity="end" android:id="@id/ye1" android:paddingTop="@dimen/uv2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vcr" />
-    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/j8y" android:layout_marginTop="@dimen/wpy" android:layout_marginRight="@dimen/j8y" android:layout_marginBottom="-12.0dip" layout="@layout/tnk" />
-</com.sankuai.waimai.platform.widget.RoundedLinearLayout>

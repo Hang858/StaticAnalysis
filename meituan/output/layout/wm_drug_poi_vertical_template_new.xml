@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/fl_template_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.sankuai.waimai.store.drug.home.blocks.second_floor.DrugTwoLevelPullToRefreshView android:id="@id/pull_to_refresh_view" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <com.sankuai.waimai.store.drug.home.widget.AssemblerView android:id="@id/assembler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" app:isNewDrug="true" />
-    </com.sankuai.waimai.store.drug.home.blocks.second_floor.DrugTwoLevelPullToRefreshView>
-    <com.sankuai.waimai.store.drug.newwidgets.DrugNetInfoLoadView android:id="@id/net_layout_info_poi_list" android:layout_width="fill_parent" android:layout_height="fill_parent" app:centerVertical="true" />
-    <include android:id="@id/full_screen_loading_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/drug_home_full_screen_loading_layout" />
-</FrameLayout>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/CardView.Light"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="test" android:layout_centerVertical="true" />
-        <Spinner android:id="@id/phd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/TripTrainSpinner" />
-    </RelativeLayout>
-</android.support.v7.widget.CardView>

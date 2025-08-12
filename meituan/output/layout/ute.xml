@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.meituan.android.pay.widget.view.QuickAlphabeticBar android:layout_gravity="center|right" android:id="@id/v42" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="2.0dip" android:layout_marginBottom="5.0dip" android:scaleType="centerInside"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

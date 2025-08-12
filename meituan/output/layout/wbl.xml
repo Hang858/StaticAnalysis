@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.dianping.widget.view.NovaRelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/ihf" android:layout_width="fill_parent" android:layout_height="48.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="14.0sp" android:textColor="@color/g3u" android:id="@id/l8j" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/WmText" />
-    <TextView android:textSize="12.0sp" android:textColor="@color/po9" android:gravity="left" android:id="@id/bjd" android:visibility="gone" android:layout_toLeftOf="@id/bcdj" android:layout_toRightOf="@id/l8j" android:layout_centerVertical="true" style="@style/WmText.Weighted.Right" />
-    <ImageView android:gravity="center" android:layout_gravity="right" android:id="@id/bcdj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/uzc" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
-</com.dianping.widget.view.NovaRelativeLayout>

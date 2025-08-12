@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:orientation="horizontal" android:id="@id/ba2_" android:layout_width="fill_parent" android:layout_height="16.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip">
-        <ImageView android:id="@id/giz" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" />
-        <ImageView android:id="@id/b4x" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:scaleType="centerCrop" android:adjustViewBounds="true" />
-    </LinearLayout>
-</merge>

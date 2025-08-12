@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:paddingLeft="@dimen/wov" android:paddingRight="@dimen/wov" android:layout_width="fill_parent" android:layout_height="@dimen/isp"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/x9" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@id/mhp" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="uninit" />
-    <View android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="@dimen/lsm" android:layout_alignParentBottom="true" />
-    <android.support.v7.widget.SwitchCompat android:id="@id/qs7" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
-</RelativeLayout>

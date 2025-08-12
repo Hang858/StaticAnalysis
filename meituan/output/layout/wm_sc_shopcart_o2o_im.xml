@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:paddingBottom="@dimen/dnf" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/im_top_img" android:layout_width="@dimen/p7e" android:layout_height="@dimen/p7e" android:layout_marginTop="@dimen/e5p" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_centerHorizontal="true" />
-    <TextView android:textSize="@dimen/hwz" android:textColor="@color/wm_sg_color_575859" android:id="@id/im_bottom_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bbj2" android:text="联系商家" android:layout_below="@id/im_top_img" android:layout_centerHorizontal="true" />
-</RelativeLayout>

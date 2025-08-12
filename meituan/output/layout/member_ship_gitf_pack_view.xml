@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/fl_red_pack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:rotation="10.0"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/iv_icon" android:layout_width="28.0dip" android:layout_height="33.0dip" android:scaleType="fitXY" />
-    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/price_content_view" android:layout_width="wrap_content" android:layout_height="fill_parent" android:baselineAligned="true">
-        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="bottom" android:id="@id/pa3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
-        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/tv_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
-    </LinearLayout>
-</FrameLayout>

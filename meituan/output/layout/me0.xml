@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.meituan.retail.c.android.widget.LoadingRelativeLayout android:background="@android:color/transparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.meituan.retail.c.android.widget.RetailPullDownAnimationView android:gravity="center" android:id="@id/maicai_controls_animView" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_centerInParent="true" app:maicai_controls_animDurationMills="800" />
-</com.meituan.retail.c.android.widget.LoadingRelativeLayout>

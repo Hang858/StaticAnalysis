@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:layout_gravity="center_horizontal" android:id="@id/ftx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/kxh" android:layout_centerHorizontal="true" />
-    <com.meituan.android.bike.framework.widgets.shadow.BaseTextView android:id="@id/kxh" android:layout_marginLeft="1.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="1.0dip" android:layout_marginBottom="4.0dip" android:maxWidth="250.0dip" android:maxLines="2" android:layout_centerHorizontal="true" style="@style/mobike_home_marker_title" />
-</RelativeLayout>

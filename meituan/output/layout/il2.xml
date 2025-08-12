@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/e2n" android:paddingRight="7.0dip" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginBottom="8.0dip" android:minWidth="61.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.meituan.roodesign.resfetcher.widgets.RooImageView android:id="@id/btn_global_cart" android:layout_width="50.0dip" android:layout_height="50.0dip" android:contentDescription="购物车" app:project="waimai_c" app:srcName="waimai_c_globalcart_icon2" />
-</FrameLayout>

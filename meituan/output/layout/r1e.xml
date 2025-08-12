@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/s20" android:background="@drawable/n97" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="24.0dip" android:layout_height="22.0dip" android:src="@drawable/mat" android:paddingStart="6.0dip" android:paddingEnd="6.0dip" />
-    <ImageView android:layout_gravity="center_vertical" android:id="@id/bb51" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/oiv" />
-</merge>

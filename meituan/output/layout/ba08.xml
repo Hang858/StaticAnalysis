@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="12.0dip" android:paddingTop="16.0dip" android:paddingRight="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffff5050" android:id="@id/hhx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="默认排序" />
-    <View android:background="#ffcccccc" android:layout_width="0.5dip" android:layout_height="11.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
-    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ff595959" android:id="@id/u_i" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="按时间排序" />
-    <FrameLayout android:id="@id/cw1" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-</LinearLayout>

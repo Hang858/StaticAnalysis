@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/mach_container_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:orientation="horizontal" android:id="@id/common_mach_container" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layerType="hardware" />
-</FrameLayout>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:support="http://schemas.android.com/apk/res-auto">
-    <item android:icon="@drawable/ic_action_share" android:id="@id/share" android:title="@string/pim" support:showAsAction="ifRoom" />
-    <item android:id="@id/favor" android:title="@string/favorite" support:actionLayout="@layout/ndz" support:showAsAction="ifRoom" />
-    <item android:id="@id/fso" android:title="" support:actionProviderClass="com.meituan.android.travel.block.common.DealOptionsMenuActionProvider" support:showAsAction="always" />
-</menu>

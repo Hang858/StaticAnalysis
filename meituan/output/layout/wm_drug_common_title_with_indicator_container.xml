@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <android.support.design.widget.TabLayout android:id="@id/wm_sc_tablayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" app:tabBackground="@null" app:tabGravity="center" app:tabIndicatorHeight="0.0dip" app:tabPaddingBottom="0.0dip" app:tabPaddingEnd="@dimen/tx7" app:tabPaddingStart="@dimen/tx7" app:tabPaddingTop="0.0dip" />
-    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
-        <com.sankuai.waimai.store.drug.newwidgets.indicator.common.IndicateView android:id="@id/wm_drug_indicator" android:layout_width="fill_parent" android:layout_height="6.0dip" />
-        <View android:layout_width="fill_parent" android:layout_height="5.0dip" />
-    </LinearLayout>
-</RelativeLayout>

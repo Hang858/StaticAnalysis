@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/t74" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <android.support.v7.widget.AppCompatImageView android:id="@id/sno" android:background="@drawable/owz" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <android.support.v7.widget.AppCompatImageView android:id="@id/ztj" android:background="@drawable/ijy" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <android.support.v7.widget.AppCompatImageView android:id="@id/bxg" android:layout_width="fill_parent" android:layout_height="213.0dip" android:src="@drawable/f6g" />
-</FrameLayout>

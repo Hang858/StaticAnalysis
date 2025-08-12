@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="14.0sp" android:textColor="#ff222426" android:gravity="center" android:id="@id/iv7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:text="@string/di7" />
-    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/q5m" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:layout_marginBottom="13.0dip">
-        <com.meituan.android.ptcommonim.widget.PTFeedbackTagView android:textSize="14.0sp" android:id="@id/gsv" android:layout_width="82.0dip" android:layout_height="28.0dip" android:layout_marginRight="7.0dip" />
-        <com.meituan.android.ptcommonim.widget.PTFeedbackTagView android:textSize="14.0sp" android:id="@id/dld" android:layout_width="82.0dip" android:layout_height="28.0dip" android:layout_marginLeft="7.0dip" />
-    </LinearLayout>
-</merge>

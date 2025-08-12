@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/tqd" android:background="@drawable/zli" android:layout_width="328.0dip" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginTop="9.0dip" android:text="配置直连类型" />
-    <ImageView android:id="@id/img_close" android:layout_width="13.5dip" android:layout_height="13.5dip" android:layout_marginTop="10.5dip" android:src="@drawable/pkf" android:layout_alignRight="@id/rv_content" />
-    <ImageView android:id="@id/divider" android:background="@color/f26" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_marginLeft="-16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="-16.0dip" android:layout_below="@id/tv_title" android:layout_alignLeft="@id/rv_content" android:layout_alignRight="@id/rv_content" />
-    <com.meituan.android.trafficayers.views.AutoResizeHeightRecyclerView android:id="@id/rv_content" android:layout_width="293.0dip" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:layout_below="@id/divider" />
-    <Button android:textSize="16.0sp" android:textColor="@color/bce6" android:id="@id/btn_confirm" android:background="@drawable/qnb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="10.0dip" android:text="@string/u05" android:layout_below="@id/rv_content" android:layout_alignLeft="@id/rv_content" android:layout_alignRight="@id/rv_content" />
-</RelativeLayout>

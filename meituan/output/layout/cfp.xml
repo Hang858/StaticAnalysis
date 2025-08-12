@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/bcf3" android:layout_width="fill_parent" android:layout_height="44.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.meituan.roodesign.resfetcher.widgets.RooImageView android:layout_gravity="start|center" android:id="@id/h0a" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginStart="16.0dip" app:project="ugccreator" app:srcName="ugccreator_ugc_media_close_btn_icon" />
-    <com.meituan.roodesign.resfetcher.widgets.RooImageView android:layout_gravity="end|center" android:id="@id/ely" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginEnd="16.0dip" app:project="ugccreator" app:srcName="ugccreator_ugc_media_switch_camera_icon" />
-</FrameLayout>

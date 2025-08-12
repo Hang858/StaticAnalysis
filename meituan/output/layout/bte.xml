@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/g2x" android:showDividers="middle" style="@style/MTScoreStyle"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.meituan.android.ugc.cipugc.widget.RatingView android:id="@id/sz3" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" app:rate_layout="@layout/bb8u" />
-    <com.meituan.android.ugc.review.add.view.ReviewTagContainer android:id="@id/w6g" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-</LinearLayout>

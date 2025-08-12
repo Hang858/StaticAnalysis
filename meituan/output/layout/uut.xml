@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:layout_width="80.0dip" android:layout_height="48.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
-        <TextView android:textSize="15.0sp" android:textColor="@color/black1" android:gravity="center" android:id="@id/tpa" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:text="今天" />
-        <View android:id="@id/q79" android:background="@color/t8a" android:layout_width="fill_parent" android:layout_height="0.5dip" />
-    </LinearLayout>
-    <View android:id="@id/ph6" android:background="@color/t8a" android:layout_width="0.5dip" android:layout_height="fill_parent" />
-</LinearLayout>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/qcp" android:background="@color/w5t" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <FrameLayout android:id="@id/webView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <ImageView android:layout_gravity="right" android:id="@id/r2w" android:layout_width="@dimen/f2l" android:layout_height="@dimen/f2l" android:layout_marginTop="@dimen/m2o" android:layout_marginRight="@dimen/m2o" android:src="@drawable/u2z" />
-</FrameLayout>

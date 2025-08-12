@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sankuai.waimai.rocks.page.tablist.tab.TabViewPagerLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <FrameLayout android:id="@id/u79" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    <com.sankuai.waimai.rocks.page.tablist.tab.viewpager.DisallowAnimatedViewPager android:id="@id/bdd" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-</com.sankuai.waimai.rocks.page.tablist.tab.TabViewPagerLayout>

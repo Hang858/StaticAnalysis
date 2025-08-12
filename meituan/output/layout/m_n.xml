@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/gzo" android:background="@drawable/nob" android:paddingLeft="12.0dip" android:paddingRight="16.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="14.0sp" android:textColor="#ff348bed" android:layout_gravity="center_vertical" android:id="@id/v9j" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="14:00" android:drawableLeft="@drawable/fwf" android:drawablePadding="5.0dip" />
-    <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/l5" android:paddingLeft="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="后打烊" />
-</LinearLayout>

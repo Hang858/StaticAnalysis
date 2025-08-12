@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:background="#fff6f6f6" style="@style/xm_sdk_send_panel_normal_style"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:imui="http://schemas.android.com/apk/res-auto">
-    <com.sankuai.waimai.business.im.common.plugin.IMVoicePlugin android:id="@id/voice_plugin" android:tag="ALT:SEND" android:layout_width="@dimen/xm_sdk_send_panel_ic_size" android:layout_height="wrap_content" imui:plugin_next_focus="@id/editor_plugin" />
-    <com.sankuai.waimai.store.im.base.SGIMInputEditor android:id="@id/editor_plugin" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
-    <com.sankuai.waimai.business.im.common.plugin.IMEmotionPlugin android:id="@id/emotion_plugin" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <com.sankuai.waimai.business.im.common.plugin.IMSendPlugin android:id="@id/send_plugin" android:tag="SEND" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <com.sankuai.waimai.business.im.common.plugin.IMExtraPlugin android:id="@id/extra_plugin" android:layout_width="wrap_content" android:layout_height="wrap_content" imui:plugin_next_focus="@id/editor_plugin" />
-</LinearLayout>

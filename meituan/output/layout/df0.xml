@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <include layout="@layout/fja" />
-    <include layout="@layout/bcdf" />
-    <TextView android:textSize="@dimen/nhp" android:textStyle="bold" android:textColor="@color/ohj" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/s__" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="6.5dip" android:maxLines="2" />
-    <include layout="@layout/w4c" />
-    <include layout="@layout/u8l" />
-</LinearLayout>

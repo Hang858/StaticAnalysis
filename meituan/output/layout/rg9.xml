@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="horizontal" android:id="@id/ba3z" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/e5p"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.sankuai.waimai.platform.widget.tag.virtualtag.TagCanvasView android:id="@id/jlj" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
-    <ImageView android:id="@id/qm" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/uv2" />
-</LinearLayout>

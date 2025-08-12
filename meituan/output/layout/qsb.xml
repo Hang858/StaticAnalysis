@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/baqo" android:background="@drawable/p7r" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="12.0dip" android:paddingEnd="12.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <TextView android:textSize="11.0sp" android:textColor="#ffffffff" android:id="@id/bsf" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <com.meituan.roodesign.resfetcher.widgets.RooImageView android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginTop="2.0dip" android:layout_marginStart="4.0dip" app:project="waimai_c" app:srcName="waimai_c_order_confirm_additional_bargain_arrow" />
-</LinearLayout>

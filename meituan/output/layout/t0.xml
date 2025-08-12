@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="horizontal" android:id="@id/title_container" android:paddingRight="@dimen/uh2" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:TriangleView="http://schemas.android.com/apk/res-auto">
-    <com.meituan.sankuai.map.unity.lib.views.ShadowLayout android:layout_width="wrap_content" android:layout_height="wrap_content" app:bottomShow="true" app:dx="2.0dip" app:dy="2.0dip" app:leftShow="true" app:rightShow="true" app:shadowLimit="5.0dip" app:topShow="true" xmlns:app="http://schemas.android.com/apk/res-auto">
-        <TextView android:textSize="@dimen/o6f" android:textColor="@color/k0w" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/nqn" android:background="@drawable/okm" android:layout_width="wrap_content" android:layout_height="@dimen/xbs" android:singleLine="true" android:paddingStart="@dimen/uki" android:paddingEnd="@dimen/uki" />
-    </com.meituan.sankuai.map.unity.lib.views.ShadowLayout>
-    <com.meituan.sankuai.map.unity.lib.views.TriangleView android:layout_gravity="center_vertical" android:id="@id/n4g" android:visibility="visible" android:layout_width="@dimen/nbv" android:layout_height="@dimen/jog" android:rotation="270.0" android:layout_marginStart="-10.0dip" android:translationZ="1.0dip" TriangleView:color="@color/vhp" />
-</LinearLayout>

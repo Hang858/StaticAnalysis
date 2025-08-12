@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/pk5" android:background="#80000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <include android:id="@id/vrv" android:visibility="gone" layout="@layout/elq" />
-        <include android:id="@id/n_l" android:visibility="gone" layout="@layout/bbbt" />
-    </LinearLayout>
-    <include android:id="@id/rjx" android:visibility="gone" layout="@layout/vuv" />
-</merge>

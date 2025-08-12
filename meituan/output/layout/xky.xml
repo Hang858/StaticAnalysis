@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sankuai.waimai.business.im.common.view.ContentLinearLayout android:orientation="vertical" android:id="@id/ync" android:layout_width="fill_parent" android:layout_height="wrap_content" app:WidthRatio="0.693"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wpy" android:layout_marginTop="@dimen/wpy" android:layout_marginRight="@dimen/yxh" android:layout_marginBottom="@dimen/bbj2">
-        <include layout="@layout/g8e" />
-    </LinearLayout>
-    <com.sankuai.waimai.store.widgets.SCMaxHeightRecyclerView android:id="@id/g58" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wpy" android:layout_marginTop="@dimen/ea5" android:layout_marginRight="@dimen/yxh" android:layout_marginBottom="@dimen/wpy" />
-</com.sankuai.waimai.business.im.common.view.ContentLinearLayout>

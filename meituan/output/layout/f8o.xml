@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="top" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:id="@id/hbl" android:paddingTop="@dimen/zn_" android:paddingRight="6.0dip" android:paddingBottom="@dimen/q1o" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent">
-        <com.meituan.android.paycommon.lib.widgets.ThemeRelatedCheckBox android:layout_gravity="center|left|top" android:id="@id/iok" android:background="@drawable/bc7k" android:visibility="gone" android:clickable="false" android:layout_width="18.0dip" android:layout_height="18.0dip" android:button="@null" />
-    </LinearLayout>
-    <TextView android:id="@id/agreement" style="@style/cashier__paylater_guide_dialog_agreement" />
-</LinearLayout>

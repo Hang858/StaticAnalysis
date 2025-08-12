@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <View android:id="@id/paz" android:background="@drawable/i0h" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <com.sankuai.waimai.platform.widget.RoundedCornerLinearLayout android:orientation="horizontal" android:id="@id/rdb" android:background="@color/fis" android:paddingTop="2.0dip" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cornerRadius="17.0dip">
-        <com.sankuai.waimai.platform.widget.filterbar.view.view.DynamicHeightListView android:id="@id/qp0" android:background="@color/fis" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="#00000000" android:divider="@null" />
-    </com.sankuai.waimai.platform.widget.RoundedCornerLinearLayout>
-</RelativeLayout>

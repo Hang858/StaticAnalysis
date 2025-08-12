@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:id="@id/sxr" android:background="@color/transparent" android:paddingLeft="@dimen/ba97" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <View android:id="@id/b8n" android:background="@color/iy5" style="@style/paybase__horizonal_divider" />
-</LinearLayout>

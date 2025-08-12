@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.meituan.android.edfu.mbar.view.ScanAnimView android:id="@id/bbr9" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <ImageView android:layout_gravity="center|left|top" android:id="@id/n5r" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:src="@drawable/ro5" android:contentDescription="返回" />
-    <ImageView android:layout_gravity="center|right|top" android:id="@id/bqt" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/i0l" />
-    <TextView android:textSize="15.0sp" android:textColor="@color/zte" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/og" android:background="@drawable/og" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/orj" />
-</FrameLayout>

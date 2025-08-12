@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/floatwin_base_root" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <TextView android:id="@id/close_push_background" android:background="@drawable/hades_floatwin_rectangle_image_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignBottom="@id/close_push_desk_layout" />
-    <ImageView android:id="@id/floatwin_desk_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" android:layout_alignParentTop="true" />
-    <LinearLayout android:id="@id/close_push_desk_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/floatwin_desk_image">
-        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ff0042fb" android:gravity="center" android:id="@id/close_push_desk_image" android:background="@drawable/float_win_close_background" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/hades_push_close" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" android:layout_marginStart="12.0dip" />
-    </LinearLayout>
-</RelativeLayout>

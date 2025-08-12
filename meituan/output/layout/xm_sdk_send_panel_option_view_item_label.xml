@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TextView android:textSize="12.0sp" android:textColor="#e6000000" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="3.0dip" android:text="@string/xm_sdk_emotion_recent" android:layout_marginStart="6.0dip" style="@style/xm_sdk_text_view_style_18n"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

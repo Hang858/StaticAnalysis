@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.airbnb.lottie.LottieAnimationView android:id="@id/mobike_pin_lottie" android:layout_width="32.0dip" android:layout_height="40.0dip" android:layout_centerInParent="true" app:lottie_fileName="mobike_airbnb_loader/mobike_part1.json" app:lottie_imageAssetsFolder="mobike_airbnb_loader/" app:lottie_loop="false" />
-</FrameLayout>

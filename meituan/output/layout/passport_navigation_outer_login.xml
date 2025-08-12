@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sankuai.meituan.navigation.NavViewGroup android:layout_width="fill_parent" android:layout_height="fill_parent" app:startDestination="@id/login_loading_page"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <fragment android:label="@string/passport_page_login_label_loading_page" android:name="com.meituan.passport.login.fragment.LoginLoadingFragment" android:id="@id/login_loading_page" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <fragment android:label="@string/passport_page_login_label_dynamic_verify" android:name="com.meituan.passport.login.fragment.DynamicAccountLoginFragment" android:id="@id/dynamic_verify" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <fragment android:label="@string/passport_page_login_label_dynamic_account_outer" android:name="com.meituan.passport.outer.OuterMobileIndexFragment" android:id="@id/outer_dynamic_account" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <fragment android:label="@string/passport_page_login_label_china_mobile_outer" android:name="com.meituan.passport.login.fragment.AgencyFragment" android:id="@id/outer_china_mobile" android:tag="com.meituan.passport.onekeylogin.outer.OuterMobileOperatorFragment" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-</com.sankuai.meituan.navigation.NavViewGroup>

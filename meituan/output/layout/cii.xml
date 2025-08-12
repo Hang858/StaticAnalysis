@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:background="@drawable/puy" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <FrameLayout android:id="@id/uqm" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <com.meituan.android.traffichome.views.TrafficBottomCropImageView android:id="@id/iv_traffic_home_top_brand_img" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <ImageView android:layout_gravity="bottom" android:id="@id/iv_traffic_home_top_brand_cover" android:background="@drawable/po0" android:layout_width="fill_parent" android:layout_height="120.0dip" />
-</FrameLayout>

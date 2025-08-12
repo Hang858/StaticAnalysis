@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.meituan.android.widget.ShadowLayout android:id="@id/shadow_container" android:layout_width="wrap_content" android:layout_height="wrap_content" app:shadowColor="#14000000" app:shadowDx="0.0dip" app:shadowDy="1.0dip" app:shadowRadius="3.5dip" app:shadowRx="17.75dip" app:shadowRy="17.75dip" app:shadowShape="rectangle"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.sankuai.meituan.mbc.dsp.awaken.ScrollClickableLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/label_root" android:paddingLeft="40.0dip" android:paddingRight="12.0dip" android:layout_width="@dimen/awaken_baidu_style_return_width" android:layout_height="@dimen/awaken_baidu_style_return_height">
-        <ImageView android:id="@id/awaken_arrow" android:layout_width="8.5dip" android:layout_height="8.5dip" android:layout_marginLeft="9.25dip" android:layout_marginRight="8.25dip" android:src="@drawable/awaken_arrow" />
-        <ImageView android:id="@id/awaken_baidu_icon" android:layout_width="13.549988dip" android:layout_height="15.0dip" android:layout_marginRight="4.4499817dip" android:src="@drawable/awaken_baidu" />
-        <TextView android:textSize="13.0sp" android:textColor="#ff222222" android:gravity="center" android:id="@id/channel" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/awaken_baidu_label" android:layout_weight="1.0" />
-    </com.sankuai.meituan.mbc.dsp.awaken.ScrollClickableLinearLayout>
-</com.meituan.android.widget.ShadowLayout>

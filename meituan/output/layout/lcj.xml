@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="10.0sp" android:textColor="@color/wm_sg_color_222426" android:id="@id/ngt" android:paddingLeft="@dimen/bbrs" android:paddingTop="@dimen/j8y" android:paddingRight="@dimen/bbrs" android:paddingBottom="@dimen/j8y" android:visibility="gone" android:includeFontPadding="false" style="@style/WmStStoreText" />
-    <TextView android:textSize="10.0sp" android:textColor="@color/wm_sg_color_222426" android:id="@id/hl1" android:paddingLeft="@dimen/bbrs" android:paddingTop="@dimen/j8y" android:paddingRight="@dimen/bbrs" android:paddingBottom="@dimen/j8y" android:visibility="gone" android:includeFontPadding="false" android:drawablePadding="@dimen/bbj2" style="@style/WmStStoreText" />
-</merge>

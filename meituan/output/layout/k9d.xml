@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="44.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:layout_gravity="center_vertical" android:id="@id/ch6" android:paddingTop="@dimen/tc3" android:paddingBottom="@dimen/tc3" android:layout_width="@dimen/xnd" android:layout_height="@dimen/m4o" android:layout_marginLeft="@dimen/wsi" android:src="@drawable/hwi" />
-    <ImageView android:layout_gravity="center_vertical" android:id="@id/qqj" android:layout_width="@dimen/th3" android:layout_height="@dimen/banc" android:layout_marginLeft="@dimen/m4o" android:src="@drawable/knv" />
-    <com.meituan.android.food.homepage.search.FoodHomeSearchView android:layout_gravity="center_vertical" android:id="@id/n_m" android:layout_width="fill_parent" android:layout_height="@dimen/xnd" android:layout_marginLeft="@dimen/fus" android:layout_marginRight="@dimen/r1f" android:layout_weight="1.0" />
-    <com.meituan.android.food.homepage.mapentrance.FoodHomeMapEntranceButton android:layout_gravity="center|right" android:id="@id/g54" android:layout_width="@dimen/xnd" android:layout_height="@dimen/xnd" android:layout_marginRight="@dimen/wsi" />
-</merge>

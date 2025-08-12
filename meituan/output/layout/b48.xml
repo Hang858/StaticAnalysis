@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sankuai.waimai.platform.widget.RoundedCornerFrameLayout android:orientation="vertical" android:id="@id/ela" android:tag="ignore_rocks_margin" android:layout_width="fill_parent" android:layout_height="fill_parent" app:cornerRadius="12.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.sankuai.waimai.rocks.page.view.NestedRecyclerView android:id="@id/fd_" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <com.sankuai.waimai.platform.modular.blockimpl.empty.EmptyView android:id="@id/pl4" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-</com.sankuai.waimai.platform.widget.RoundedCornerFrameLayout>

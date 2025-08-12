@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/beauty_light_green" android:id="@id/tv_icon" android:background="@drawable/beauty_bg_green_border" android:paddingLeft="4.0dip" android:paddingTop="1.5dip" android:paddingRight="4.0dip" android:paddingBottom="1.5dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="新客专享" />
-    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/beauty_deep_gray" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" style="@style/BeautyTextStyle" />
-</LinearLayout>

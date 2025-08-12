@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:id="@id/xq7" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.sankuai.waimai.store.view.banner.roundview.UniversalImageView android:id="@id/x7w" android:layout_width="fill_parent" android:layout_height="105.0dip" android:scaleType="centerCrop" app:riv_corner_radius="8.0dip" />
-    <com.sankuai.waimai.store.view.pricev2.UnifyPriceView android:id="@id/dau" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="4.0dip" android:maxLines="1" />
-</LinearLayout>

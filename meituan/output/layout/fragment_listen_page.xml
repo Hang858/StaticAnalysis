@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/mel" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <FrameLayout android:id="@id/fl_mrn_container" android:background="@color/msv_listen_feed_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <FrameLayout android:layout_gravity="bottom" android:id="@id/tqr" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <include layout="@layout/msv_listen_tab_play_panel" />
-    </FrameLayout>
-</FrameLayout>

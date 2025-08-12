@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sankuai.ptview.view.PTFrameLayout android:id="@id/zz3" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <android.support.constraint.ConstraintLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <com.sankuai.ptview.view.PTImageView android:id="@id/d_0" android:layout_width="11.519989pt" android:layout_height="11.519989pt" android:layout_marginTop="5.7599792pt" android:src="@drawable/egw" android:scaleType="fitXY" android:layout_marginEnd="5.7599792pt" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
-        <com.sankuai.ptview.view.PTTextView android:textColor="#e6000000" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.7199707pt" android:maxWidth="280.3125pt" android:singleLine="true" android:layout_marginStart="9.599976pt" android:layout_marginEnd="25.0pt" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
-        <com.meituan.android.pt.homepage.modules.ordersmart.view.HangUnderLayout android:id="@id/id_" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.599976pt" android:layout_marginBottom="8.159973pt" android:layout_marginEnd="8.159973pt" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_title" />
-    </android.support.constraint.ConstraintLayout>
-</com.sankuai.ptview.view.PTFrameLayout>

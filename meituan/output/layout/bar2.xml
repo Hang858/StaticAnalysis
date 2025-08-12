@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <View android:id="@id/bc2r" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <View android:layout_gravity="bottom|center|right" android:id="@id/dbm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ivx" />
-    <com.meituan.android.food.widget.FoodClickEffectFrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <View android:id="@id/paf" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    </com.meituan.android.food.widget.FoodClickEffectFrameLayout>
-</FrameLayout>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:id="@id/root_view_xm_sdk_title_bar_right" style="@style/xm_sdk_title_bar_sub_container"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/btn_right_image_button" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" />
-    <ImageView android:id="@id/btn_right_image_button2" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" />
-    <TextView android:id="@id/btn_right_text_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/xm_sdk_text_view_style_18n" />
-</LinearLayout>

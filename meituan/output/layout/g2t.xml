@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/iv_video_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
-    <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:id="@id/play_position" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:layout_alignParentBottom="true" android:layout_marginStart="12.0dip" android:layout_alignParentStart="true" />
-    <ImageView android:id="@id/mute_btn" android:padding="7.0dip" android:visibility="gone" android:layout_width="36.0dip" android:layout_height="26.0dip" android:layout_marginTop="10.0dip" android:layout_alignParentTop="true" android:layout_marginStart="10.0dip" android:layout_alignParentStart="true" />
-</RelativeLayout>

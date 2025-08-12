@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.dianping.videoview.widget.video.ui.panelitem.PlayControlItem android:id="@id/ct3" android:layout_width="15.5dip" android:layout_height="19.5dip" android:scaleType="fitCenter" android:layout_weight="0.0" android:layout_marginEnd="10.0dip" dp:defaultStatus="negative" dp:srcNegative="@drawable/ptb" dp:srcPositive="@drawable/e8"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto" />

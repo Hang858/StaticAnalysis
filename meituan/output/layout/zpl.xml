@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <FrameLayout android:id="@id/v3g" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <FrameLayout android:id="@id/vsz" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    <FrameLayout android:id="@id/rx5" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    <FrameLayout android:layout_gravity="center" android:id="@id/w9s" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-</merge>

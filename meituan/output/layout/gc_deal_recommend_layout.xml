@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.actionbarsherlock.internal.widget.IcsLinearLayout android:orientation="vertical" android:id="@id/gc_recommend_deals" android:background="@color/gc_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/xyu" android:showDividers="beginning|end|middle"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="14.0sp" android:textColor="@color/gc_soft_gray" android:gravity="center|left" android:id="@id/title_view" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip" />
-    <LinearLayout android:orientation="horizontal" android:id="@id/catetab" android:background="@color/gc_white" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    <com.actionbarsherlock.internal.widget.IcsLinearLayout android:orientation="vertical" android:id="@id/recommend_content" android:background="@color/gc_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/xyu" android:showDividers="middle" />
-</com.actionbarsherlock.internal.widget.IcsLinearLayout>

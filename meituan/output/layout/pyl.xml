@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/jh5" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff333333" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="讨论" android:layout_weight="1.0" />
-        <TextView android:textSize="11.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/fxk" android:background="@drawable/vqy" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="参与讨论" android:includeFontPadding="false" />
-        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#fff03d37" android:id="@id/bcmm" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="编辑我的讨论" />
-    </LinearLayout>
-</merge>

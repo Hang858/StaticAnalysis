@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sankuai.meituan.msv.list.widget.LikeLayout android:id="@id/ro" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <android.support.v7.widget.AppCompatImageView android:id="@id/ks3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
-    <android.support.v7.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/pa1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <com.sankuai.meituan.msv.list.widget.PageLoadingItem android:gravity="center" android:orientation="vertical" android:id="@id/jty" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="?android:listPreferredItemHeight">
-        <ImageView android:id="@id/anim_icon" android:layout_width="92.0dip" android:layout_height="92.0dip" android:contentDescription="@string/s93" />
-    </com.sankuai.meituan.msv.list.widget.PageLoadingItem>
-</com.sankuai.meituan.msv.list.widget.LikeLayout>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:id="@id/tfp" android:layout_width="fill_parent" android:layout_height="115.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <TextView android:textSize="11.0dip" android:textColor="#ffbcbcbd" android:layout_gravity="center_horizontal" android:id="@id/bi3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="8.0dip" />
-    <com.sankuai.waimai.ugc.creator.widgets.clipper.VideoClipperView android:id="@id/f15" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" app:slideThumbWidth="16.0dip" />
-</LinearLayout>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <FrameLayout android:id="@id/wmb" android:paddingBottom="@dimen/eo8" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <com.meituan.android.ugc.edit.view.StickerEditGroup android:id="@id/o_8" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <ProgressBar android:layout_gravity="center" android:id="@id/loading" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginBottom="105.5dip" android:indeterminateDrawable="@anim/loading_animtaion" />
-    <ViewStub android:id="@id/bbxx" android:layout="@layout/gza" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-</FrameLayout>

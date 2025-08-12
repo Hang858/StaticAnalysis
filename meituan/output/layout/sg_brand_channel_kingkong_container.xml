@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/sg_brand_kingkong_container" android:layout_width="fill_parent" android:layout_height="44.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <android.support.v7.widget.RecyclerView android:layout_gravity="top" android:id="@id/sg_brand_kingkong_collasps_rv" android:paddingLeft="12.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:layout_marginRight="44.0dip" />
-    <FrameLayout android:layout_gravity="end|center|top" android:id="@id/sg_brand_kingkong_expand_view" android:layout_width="wrap_content" android:layout_height="wrap_content">
-        <ImageView android:id="@id/sg_brand_kingkong_expand_img" android:layout_width="48.0dip" android:layout_height="44.0dip" android:src="@drawable/sg_new_brand_channel_kingkong_down_icon" />
-    </FrameLayout>
-</FrameLayout>

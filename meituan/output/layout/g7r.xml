@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ViewStub android:layout_gravity="center_horizontal" android:id="@id/vu4" android:visibility="gone" android:layout="@layout/mg5" android:inflatedId="@id/l1s" android:layout_width="146.5dip" android:layout_height="40.0dip" android:layout_marginTop="40.0dip" />
-    <android.support.v7.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/fwy" android:layout_width="72.0dip" android:layout_height="72.0dip" android:src="@drawable/xle" />
-    <android.support.v7.widget.AppCompatImageView android:layout_gravity="end|center" android:id="@id/bbsv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/v1h" android:layout_marginEnd="45.0dip" />
-</FrameLayout>

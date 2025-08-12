@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:gravity="bottom" android:paddingTop="@dimen/xm_sdk_send_panel_vertical_padding" android:paddingBottom="@dimen/xm_sdk_send_panel_vertical_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="16.0sp" android:textColor="#ff999999" android:gravity="center" android:id="@id/input_bar_forbidden_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/xm_sdk_send_panel_ic_margin_bottom" android:text="@string/xm_sdk_default_can_not_send" style="@style/xm_sdk_text_view_style_18n" />
-</FrameLayout>

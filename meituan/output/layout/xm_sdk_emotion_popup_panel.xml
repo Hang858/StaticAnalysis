@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/xm_sdk_bg_emotion_preview_panel" android:padding="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.sankuai.xm.imui.common.view.AdaptiveImageView android:layout_gravity="center_horizontal" android:id="@id/xm_sdk_image_view" android:layout_width="120.0dip" android:layout_height="120.0dip" />
-    <TextView android:textSize="14.0sp" android:textColor="#61000000" android:layout_gravity="center_horizontal" android:id="@id/xm_sdk_image_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="1.0dip" style="@style/xm_sdk_text_view_style_18n" />
-</LinearLayout>

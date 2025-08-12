@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/mbc_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.sankuai.meituan.mbc.ui.nest.NestedRecyclerViewChild android:id="@id/mbc_recycler" android:focusable="false" android:focusableInTouchMode="false" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-</FrameLayout>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/b4f" android:paddingLeft="@dimen/ewn" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <View android:id="@id/pfz" style="@style/paybase__horizonal_divider" />
-    <TextView android:textSize="13.0sp" android:textColor="@color/rtv" android:id="@id/d5a" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
-    <com.meituan.android.paycommon.lib.widgets.PayLabelContainer android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/jr2" android:paddingRight="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
-</LinearLayout>

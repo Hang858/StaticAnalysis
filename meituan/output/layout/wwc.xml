@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TextView android:textSize="13.0sp" android:textColor="@color/kkw" android:id="@id/l_k" android:paddingLeft="@dimen/f7u" android:paddingRight="@dimen/f7u" android:layout_width="fill_parent" android:layout_height="@dimen/o4g" style="@style/WmScText"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

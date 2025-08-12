@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.Toolbar android:id="@id/toolbar" style="@style/MTToolbar"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/z1n" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/rbj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="?hotelreuse_toolbarTitleTextAppearance" />
-</android.support.v7.widget.Toolbar>

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.meituan.android.ptcommonim.pageadapter.widget.PTCommonBottomSideView android:layout_width="wrap_content" android:layout_height="wrap_content" imui:align_msg_content="bottom_side"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:imui="http://schemas.android.com/apk/res-auto">
-    <TextView android:textSize="13.0sp" android:textColor="#5a000000" android:id="@id/b17" android:background="@drawable/mjq" android:padding="7.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:maxWidth="246.0dip" />
-</com.meituan.android.ptcommonim.pageadapter.widget.PTCommonBottomSideView>

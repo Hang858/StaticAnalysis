@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/videolib_rl_play_video" android:background="@color/videolib_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.sankuai.meituan.player.vodlibrary.view.MTVodPlayerView android:id="@id/videolib_videoview_play_video" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
-    <TextView android:textSize="@dimen/videolib_play_text_touch_size" android:textColor="@color/white" android:gravity="center" android:id="@id/videolib_tv_play_touch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:text="@string/xm_sdk_video_play_touch_to_exit" android:includeFontPadding="false" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/xm_sdk_video_text_view_style_18n" />
-</RelativeLayout>

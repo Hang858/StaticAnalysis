@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.meituan.android.beauty.widget.header.BeautyHeaderFlipperView android:gravity="left" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.meituan.android.beauty.widget.BeautyPullViewPager android:id="@id/shop_cover_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="180.0dip">
-        <View android:layout_gravity="bottom" android:background="@color/beauty_bg_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
-    </com.meituan.android.beauty.widget.BeautyPullViewPager>
-    <View android:id="@id/middle_divder_line" android:background="@drawable/bxa" android:layout_width="fill_parent" android:layout_height="1.0px" />
-    <com.meituan.android.beauty.widget.header.BeautyHeaderShopInfoView android:id="@id/shop_info" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-</com.meituan.android.beauty.widget.header.BeautyHeaderFlipperView>

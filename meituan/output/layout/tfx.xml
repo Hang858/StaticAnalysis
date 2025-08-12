@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <FrameLayout android:id="@id/m2y" android:background="#fff1f1f2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" />
-    <TextView android:textSize="14.0sp" android:id="@id/tm3" android:paddingLeft="@dimen/ddv" android:paddingTop="@dimen/i6c" android:paddingRight="@dimen/ddv" android:paddingBottom="@dimen/i6c" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="综合排序"
-      xmlns:android="http://schemas.android.com/apk/res/android" />
-</LinearLayout>

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.meituan.sankuai.navisdk.place.ui.StrokeTextView android:textSize="12.0dip" android:textStyle="bold" android:textColor="@color/cjv" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="78.0dip" android:maxLines="10" />
-</LinearLayout>

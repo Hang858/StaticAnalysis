@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:gravity="center|left" android:id="@id/ktv_schedule_meal_detail_item_single_first" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="@integer/gc_ktv_schedule_meal_detail_first_weight" />
-    <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:gravity="center|right" android:id="@id/ktv_schedule_meal_detail_item_single_second" android:paddingRight="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="@integer/gc_ktv_schedule_meal_detail_second_weight" />
-    <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:gravity="center|right" android:id="@id/ktv_schedule_meal_detail_item_single_third" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="@integer/gc_ktv_schedule_meal_detail_third_weight" />
-</LinearLayout>

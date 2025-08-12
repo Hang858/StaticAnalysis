@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.meituan.android.common.ui.widget.RoundFrameLayout android:id="@id/gs5" android:layout_width="92.0dip" android:layout_height="92.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="30.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" app:rfl_radius="12.0dip">
-        <ImageView android:id="@id/thumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    </com.meituan.android.common.ui.widget.RoundFrameLayout>
-    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff191919" android:id="@id/tv_name" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="28.0dip" app:layout_constraintLeft_toRightOf="@id/gs5" app:layout_constraintTop_toTopOf="@id/gs5" />
-    <TextView android:textSize="14.0sp" android:textColor="#80191919" android:id="@id/tv_num" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.5dip" app:layout_constraintLeft_toLeftOf="@id/tv_name" app:layout_constraintTop_toBottomOf="@id/tv_name" />
-</android.support.constraint.ConstraintLayout>

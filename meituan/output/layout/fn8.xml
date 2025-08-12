@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:id="@id/topPanel" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/title_template" android:paddingTop="@dimen/m0_" android:paddingBottom="@dimen/m0_" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <ImageView android:id="@android:id/icon" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginRight="8.0dip" android:src="@null" android:scaleType="fitCenter" android:layout_marginEnd="8.0dip" />
-        <com.meituan.roodesign.widgets.dialog.widget.DialogTitle android:textColor="?rooGrayDim" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/alertTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="?rooTextAppearanceHeadline5" />
-    </LinearLayout>
-</LinearLayout>

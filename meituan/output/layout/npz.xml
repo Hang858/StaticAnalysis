@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:theme="@style/Theme.RooDesign" android:orientation="vertical" android:background="@drawable/daf" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Theme.RooDesign"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
-        <TextView android:textColor="#ff575859" android:id="@id/vr_" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="返回" android:layout_alignParentRight="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
-        <android.support.v7.widget.AppCompatTextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="?rooGrayDim" android:id="@id/y7i" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="“餐具设置”引导" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
-    </android.support.constraint.ConstraintLayout>
-    <com.sankuai.waimai.platform.widget.RoundedCornerImageView android:id="@id/osy" android:layout_width="fill_parent" android:layout_height="285.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="59.5dip" android:scaleType="fitCenter" app:cornerRadius="6.0dip" app:src="@drawable/wm_restaurant_pic_goods_default" />
-</LinearLayout>

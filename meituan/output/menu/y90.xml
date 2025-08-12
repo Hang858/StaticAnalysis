@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:icon="@drawable/oqt" android:id="@id/z5c" android:title="问题反馈" />
-    <item android:icon="@drawable/y4r" android:id="@id/e87" android:title="切换验证方式" />
-</menu>

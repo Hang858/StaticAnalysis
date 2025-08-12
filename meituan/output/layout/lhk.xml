@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/bah8" android:paddingRight="@dimen/y0z" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/e_9" android:textColor="@color/kkw" android:gravity="center|left" android:id="@id/yz2" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="28.5dip" android:singleLine="true" />
-    <TextView android:textSize="@dimen/hwz" android:textColor="@color/wm_sg_color_999794" android:gravity="bottom" android:id="@id/qm_" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="28.5dip" android:layout_marginLeft="2.0dip" android:layout_marginBottom="5.0dip" android:singleLine="true" android:layout_toRightOf="@id/yz2" android:layout_alignBottom="@id/yz2" />
-    <RelativeLayout android:layout_width="wrap_content" android:layout_height="@dimen/bbj2" android:layout_below="@id/yz2" android:layout_alignLeft="@id/yz2" android:layout_alignRight="@id/yz2">
-        <View android:id="@id/dkt" android:background="@color/nfm" android:layout_width="@dimen/p7e" android:layout_height="@dimen/bbj2" android:layout_centerHorizontal="true" />
-    </RelativeLayout>
-</RelativeLayout>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sankuai.waimai.platform.widget.RoundedCornerLinearLayout android:orientation="vertical" android:background="#fffafafa" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" app:cornerRadius="6.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ff575859" android:ellipsize="end" android:id="@id/n8l" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
-    <TextView android:textSize="12.0sp" android:textColor="#ff575859" android:id="@id/zx7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:lineSpacingExtra="3.0dip" />
-</com.sankuai.waimai.platform.widget.RoundedCornerLinearLayout>

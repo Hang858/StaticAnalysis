@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="7.6799927pt" android:paddingEnd="7.6799927pt"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.meituan.android.common.ui.widget.RoundFrameLayout android:background="#ffffffff" android:paddingTop="8.599976pt" android:paddingBottom="9.599976pt" android:layout_width="fill_parent" android:layout_height="wrap_content" app:rfl_borderColor="#00ffffff" app:rfl_borderWidth="0.0dip" app:rfl_radius="11.519989pt">
-        <TextView android:textSize="11.519989pt" android:textColor="#e6000000" android:ellipsize="end" android:id="@id/qjf" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="常买推荐" android:singleLine="true" android:contentDescription="根据你常买的商品推荐" android:layout_marginStart="11.5pt" android:layout_marginEnd="11.519989pt" />
-        <android.support.v7.widget.RecyclerViewEx android:orientation="horizontal" android:id="@id/recycle_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0pt" android:overScrollMode="never" android:layout_marginStart="11.5pt" app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
-    </com.meituan.android.common.ui.widget.RoundFrameLayout>
-</LinearLayout>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.meituan.android.ktv.base.view.KTVLoadingView android:gravity="center" android:orientation="vertical" android:background="@color/ktv_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/ktv_loading_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ktv_loading_drawable" />
-    <TextView android:textSize="15.0sp" android:textColor="@color/ktv_text_color_t1" android:id="@id/ktv_loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在加载开唱时间..." />
-</com.meituan.android.ktv.base.view.KTVLoadingView>

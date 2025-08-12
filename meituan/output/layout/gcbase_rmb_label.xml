@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.meituan.android.generalcategories.pricewidget.OverFlowedDetectableTextView android:textSize="18.0sp" android:gravity="bottom" android:id="@id/minus_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
-    <com.meituan.android.generalcategories.pricewidget.OverFlowedDetectableTextView android:textSize="18.0sp" android:gravity="bottom" android:id="@id/rmb_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
-    <com.meituan.android.generalcategories.pricewidget.OverFlowedDetectableTextView android:textSize="18.0sp" android:ellipsize="end" android:gravity="bottom" android:id="@id/money_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
-</LinearLayout>

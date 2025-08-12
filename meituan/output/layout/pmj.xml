@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:background="#ffffffff" android:paddingRight="@dimen/e5p" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.sankuai.waimai.store.goods.list.templet.market.view.custom.BorderTextView android:id="@id/qfv" android:layout_width="@dimen/fax" android:layout_height="@dimen/bpi" />
-</FrameLayout>

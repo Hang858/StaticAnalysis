@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sankuai.xm.imui.common.view.ContentRelativeLayout android:background="@drawable/m9" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" app:msgContentWidthRatio="1.0"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/jmq" android:id="@id/tgt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
-    <TextView android:textSize="12.0sp" android:textColor="@color/xtb" android:ellipsize="end" android:id="@id/qbb" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:maxLines="3" android:layout_below="@id/tgt" />
-    <TextView android:textSize="12.0sp" android:textColor="@color/jmq" android:ellipsize="end" android:gravity="center" android:id="@id/xuq" android:background="@drawable/s9i" android:layout_width="wrap_content" android:layout_height="29.0dip" android:layout_marginTop="12.0dip" android:singleLine="true" android:layout_below="@id/qbb" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" android:layout_alignParentEnd="true" />
-</com.sankuai.xm.imui.common.view.ContentRelativeLayout>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout android:paddingLeft="15.0dip" android:paddingTop="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <View android:id="@id/first" android:background="@color/ujj" android:layout_width="200.0dip" android:layout_height="20.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
-    <View android:id="@id/second" android:background="@color/ujj" android:layout_width="135.0dip" android:layout_height="20.0dip" android:layout_marginTop="24.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toBottomOf="@id/first" />
-    <View android:id="@id/third" android:background="@color/ujj" android:layout_width="0.0dip" android:layout_height="20.0dip" android:layout_marginTop="34.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/second" />
-    <View android:id="@id/four" android:background="@color/ujj" android:layout_width="0.0dip" android:layout_height="20.0dip" android:layout_marginTop="11.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/third" />
-    <View android:background="@color/ujj" android:layout_width="0.0dip" android:layout_height="20.0dip" android:layout_marginTop="22.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/four" />
-</android.support.constraint.ConstraintLayout>

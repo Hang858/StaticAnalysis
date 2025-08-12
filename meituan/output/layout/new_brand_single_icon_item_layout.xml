@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:id="@id/bah8" android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/d8z" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:layout_gravity="bottom|center" android:id="@id/iv_poi_tab_image" android:layout_width="40.0dip" android:layout_height="40.0dip" android:scaleType="fitXY" />
-    <TextView android:textSize="12.0dip" android:textColor="@color/wm_sg_widget_filter_bar_text_white" android:layout_gravity="center_horizontal" android:id="@id/tv_tablayout_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.5dip" android:maxLines="1" android:maxEms="6" android:singleLine="true" android:includeFontPadding="false" android:layout_centerHorizontal="true" />
-</LinearLayout>

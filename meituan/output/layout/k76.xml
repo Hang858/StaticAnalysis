@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/ytb" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" android:layout_marginEnd="10.0dip" />
-        <TextView android:textSize="14.0dip" android:textColor="@color/k6_" android:gravity="center" android:id="@id/tv_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableEnd="@drawable/rc8" />
-    </LinearLayout>
-    <TextView android:textSize="14.0dip" android:textColor="@color/wn5" android:id="@id/tv_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:lineSpacingExtra="4.0dip" />
-</LinearLayout>

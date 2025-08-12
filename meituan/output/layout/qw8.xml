@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/g0o" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.299988dip" android:contentDescription="@string/qhu" android:importantForAccessibility="yes">
-        <com.meituan.android.yoda.widget.view.BaseTextView android:textSize="17.0sp" android:textColor="#ff222222" android:gravity="center" android:id="@id/ise" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ov8" android:importantForAccessibility="no" />
-        <com.meituan.android.yoda.widget.view.BaseTextView android:textSize="12.0sp" android:textColor="#ff222222" android:gravity="center" android:layout_gravity="center" android:id="@id/ou4" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/oe7" android:importantForAccessibility="no" />
-    </LinearLayout>
-    <android.support.v7.widget.RecyclerView android:id="@id/recycle_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="45.0dip" />
-</LinearLayout>

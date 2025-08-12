@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout android:layout_width="162.0dip" android:layout_height="92.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.maoyan.android.presentation.mediumstudio.moviedetail.blocks.videostills.video.PortraitImageView android:id="@id/iv_photo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" app:cardCornerRadius="8.0dip" app:cardElevation="0.0dip" app:contentPadding="0.0dip" />
-    <ImageView android:id="@id/iv_icon" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="13.0dip" android:layout_marginLeft="7.0dip" android:layout_marginTop="4.0dip" android:scaleType="centerCrop" android:layout_marginStart="7.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
-    <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/tv_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:maxLines="1" android:singleLine="true" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" app:layout_constraintBottom_toBottomOf="@id/iv_photo" />
-</android.support.constraint.ConstraintLayout>

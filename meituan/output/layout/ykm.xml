@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <TextView android:textSize="12.0sp" android:textColor="#fffaaf00" android:id="@id/q8e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/w_l" app:layout_constraintTop_toTopOf="parent" />
-    <com.maoyan.android.presentation.mediumstudio.moviedetail.blocks.reputation.DigitalScrollTextView android:textSize="12.0sp" android:textColor="#99ffffff" android:id="@id/w_l" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="6.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/ins" app:layout_constraintTop_toTopOf="parent" />
-    <com.maoyan.android.presentation.mediumstudio.moviedetail.blocks.reputation.DigitalScrollTextView android:textSize="12.0sp" android:textColor="#99ffffff" android:id="@id/ins" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="4.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/img_arrow" app:layout_constraintTop_toTopOf="parent" />
-    <ImageView android:id="@id/img_arrow" android:visibility="gone" android:layout_width="5.0dip" android:layout_height="9.0dip" android:src="@drawable/shi" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
-</merge>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/e4w" android:layout_width="fill_parent" android:layout_height="52.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/iv_dislike_dialog_item" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="12.0dip" android:src="@drawable/bb_5" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
-    <TextView android:textSize="16.0sp" android:textColor="#ff191919" android:id="@id/tv_dislike_dialog_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/c" android:layout_centerVertical="true" android:layout_toEndOf="@id/iv_dislike_dialog_item" />
-    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cbg" android:layout_centerVertical="true" android:layout_marginEnd="12.0dip" android:layout_alignParentEnd="true" />
-</RelativeLayout>

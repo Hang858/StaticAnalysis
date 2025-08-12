@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.meituan.sankuai.navisdk.place.ui.MtTextView android:textSize="21.0dip" android:textColor="@color/he4" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/text_title" android:paddingTop="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8.0dip" android:layout_marginEnd="3.0dip" app:mt_text_face="bcav" />
-    <ImageView android:layout_gravity="center_vertical" android:id="@id/image_icon2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-6.0dip" />
-    <ImageView android:layout_gravity="center_vertical" android:id="@id/image_icon1" android:paddingTop="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="0.5dip" />
-</LinearLayout>

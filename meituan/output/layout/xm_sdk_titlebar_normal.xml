@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/root_view" style="@style/xm_sdk_title_bar_container"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <include layout="@layout/xm_sdk_title_bar_left" />
-    <include layout="@layout/xm_sdk_title_bar_right" />
-    <include layout="@layout/xm_sdk_title_bar_middle" />
-</RelativeLayout>

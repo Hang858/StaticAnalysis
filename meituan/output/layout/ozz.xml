@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
-    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
-        <com.dianping.imagemanager.DPNetworkImageView android:id="@id/bbr4" android:layout_width="wrap_content" android:layout_height="70.0dip" android:layout_marginRight="10.0dip" android:scaleType="fitXY" dp:placeholderEmpty="@drawable/vy_placeholder_empty" dp:placeholderError="@drawable/vy_placeholder_error" dp:placeholderLoading="@drawable/vy_placeholder_loading" />
-        <ImageView android:layout_gravity="bottom|center|right" android:id="@id/k8x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/vy_edu_video_play" />
-    </FrameLayout>
-    <TextView android:textSize="13.0sp" android:textColor="#ff333333" android:ellipsize="end" android:gravity="left" android:id="@id/lg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="Maggie" android:maxLines="1" />
-</LinearLayout>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="47.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <ImageView android:id="@id/iv_left_icon" android:layout_width="34.0dip" android:layout_height="31.0dip" android:scaleType="fitCenter" android:layout_marginStart="7.0dip" />
-    <TextView android:textSize="13.0dip" android:textColor="#ff222222" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:layout_weight="1.0" android:layout_marginStart="6.0dip" android:layout_marginEnd="6.0dip" />
-    <com.meituan.android.mtgb.business.coupon.CountDownView android:id="@id/count_down_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:suffix_text=" 后失效" app:suffix_text_color="@color/mtg_color_FF2D19" app:suffix_text_size="12.0sp" app:time_num_bg_color="@color/mtg_color_FF2D19" app:time_num_bg_radius="2.0dip" app:time_num_text_color="@color/white" app:time_num_text_size="10.0dip" />
-    <ImageView android:id="@id/iv_see_now" android:visibility="gone" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/mtg_coupon_arrow" android:layout_marginEnd="8.0dip" />
-</LinearLayout>

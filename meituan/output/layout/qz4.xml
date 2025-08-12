@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:id="@id/p9r" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerVertical="true" style="@style/CellTitleTextStyle" />
-    <TextView android:id="@id/t3n" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:drawableRight="@drawable/movie_ic_arrow_right_gray" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/CellSubtitleTextStyle" />
-    <TextView android:textSize="12.0sp" android:textColor="@color/bai2" android:id="@id/kqa" android:background="@drawable/zry" android:paddingLeft="5.0dip" android:paddingTop="3.0dip" android:paddingRight="5.0dip" android:paddingBottom="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="11.0dip" android:text="- ¥523.6" android:maxLines="1" android:layout_toLeftOf="@id/t3n" android:layout_centerVertical="true" />
-</RelativeLayout>

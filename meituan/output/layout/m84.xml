@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/px2" android:paddingRight="@dimen/goc" android:paddingBottom="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/main_role_img" android:background="@drawable/opa" android:padding="1.0dip" android:layout_width="52.0dip" android:layout_height="52.0dip" />
-    <TextView android:textSize="@dimen/j3o" android:textColor="#ffffffff" android:gravity="center" android:id="@id/qw" android:background="@drawable/sfa" android:layout_width="52.0dip" android:layout_height="18.0dip" android:layout_marginTop="36.0dip" android:text="角色对话" />
-</FrameLayout>

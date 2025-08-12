@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/ob6" android:background="@color/eia" android:layout_width="fill_parent" android:layout_height="30.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:orientation="horizontal" android:id="@id/ma6" android:background="@color/moi" android:layout_width="fill_parent" android:layout_height="30.0dip" />
-    <View android:layout_gravity="bottom" android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="0.5dip" />
-</FrameLayout>

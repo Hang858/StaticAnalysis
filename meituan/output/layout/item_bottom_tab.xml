@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
-        <android.support.v7.widget.AppCompatImageView android:id="@id/iv_tab_icon" android:background="@color/red" android:layout_width="26.0dip" android:layout_height="26.0dip" android:scaleType="centerCrop" />
-        <android.support.v7.widget.AppCompatTextView android:textSize="10.0dip" android:textColor="#ffcccccc" android:id="@id/kqc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" />
-    </LinearLayout>
-    <android.support.v7.widget.AppCompatTextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_tab_badge" android:background="@drawable/bg_tab_badge" android:paddingTop="1.0dip" android:paddingBottom="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-1.0dip" android:lines="1" android:layout_alignParentTop="true" android:paddingStart="4.0dip" android:paddingEnd="4.0dip" android:layout_marginStart="17.0dip" android:layout_alignParentStart="true" android:elevation="2.0dip" android:outlineProvider="background" />
-</RelativeLayout>

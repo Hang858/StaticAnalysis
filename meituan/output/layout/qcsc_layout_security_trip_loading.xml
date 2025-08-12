@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.meituan.android.qcsc.widget.layout.QcscLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" app:qcsc_contentBackgroundColor="@color/qcsc_color_f7f7f7" app:qcsc_topLeftRadius="15.0dip" app:qcsc_topRightRadius="15.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <View android:layout_gravity="center_horizontal" android:background="@color/qcsc_toolbar_divider" android:layout_width="190.0dip" android:layout_height="20.0dip" android:layout_marginTop="42.0dip" android:layout_marginBottom="32.0dip" />
-    <include layout="@layout/qcsc_layout_security_trip_loading_item" />
-    <include layout="@layout/qcsc_layout_security_trip_loading_item" />
-    <include layout="@layout/qcsc_layout_security_trip_loading_item" />
-    <include layout="@layout/qcsc_layout_security_trip_loading_item" />
-</com.meituan.android.qcsc.widget.layout.QcscLinearLayout>

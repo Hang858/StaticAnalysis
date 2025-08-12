@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/sg_brand_kingkong_container_v3" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.sankuai.waimai.store.poi.list.newbrand.kingkong.SGBrandExpandKingKongView android:id="@id/sg_brand_kingkong_view_v3" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-</FrameLayout>

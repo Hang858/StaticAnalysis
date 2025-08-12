@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:orientation="vertical" android:background="@color/gc_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="18.0sp" android:textColor="@color/black1" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/gc_pay_result_header_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:drawablePadding="8.0dip" />
-    <TextView android:textSize="@dimen/gc_text_size_14" android:textColor="@color/black1" android:id="@id/gc_pay_result_header_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_centerHorizontal="true" />
-    <TextView android:textSize="@dimen/gc_text_size_14" android:textColor="@color/gc_common_green" android:layout_gravity="center_horizontal" android:id="@id/gc_pay_result_consumetime_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="25.0dip" android:text="" />
-</merge>

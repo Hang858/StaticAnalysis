@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sankuai.waimai.store.poi.list.view.ActionBarRootWrapper android:id="@id/h4o" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/iv_top_background" android:layout_width="fill_parent" android:layout_height="105.0dip" android:scaleType="fitXY" />
-    <FrameLayout android:id="@id/fl_action_bar_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-</com.sankuai.waimai.store.poi.list.view.ActionBarRootWrapper>

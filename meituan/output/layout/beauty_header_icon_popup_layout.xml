@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.dianping.voyager.beauty.widget.BeautyRoundRelativeLayout android:layout_gravity="center" android:background="@color/beauty_white" android:layout_width="fill_parent" android:layout_height="wrap_content" dp:beautyRoundRadius="4.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
-    <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/beauty_deep_gray" android:id="@id/tv_title" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:layout_centerHorizontal="true" />
-    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/beauty_color_text_gray" android:id="@id/tv_content" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/tv_title" android:layout_centerHorizontal="true" />
-    <ImageView android:id="@id/iv_close" android:padding="15.0dip" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/beauty_ic_close_gray" android:scaleType="fitCenter" android:layout_alignParentRight="true" />
-</com.dianping.voyager.beauty.widget.BeautyRoundRelativeLayout>

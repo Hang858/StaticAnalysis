@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="37.0dip">
-        <TextView android:textSize="14.0sp" android:textColor="@color/bbxu" android:id="@id/expand_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="查看全部" />
-        <ImageView android:id="@id/expand_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:src="@drawable/bk4" />
-    </LinearLayout>
-</merge>

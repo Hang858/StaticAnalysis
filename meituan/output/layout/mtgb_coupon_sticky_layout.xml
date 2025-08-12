@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="47.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:gravity="center_vertical" android:id="@id/ll_sticky_content" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginTop="17.0dip" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip">
-        <ImageView android:id="@id/iv_left_logo_sticky" android:layout_width="63.0dip" android:layout_height="16.0dip" android:layout_marginStart="6.0dip" />
-        <TextView android:textSize="12.0dip" android:textColor="#ff222222" android:ellipsize="end" android:id="@id/tv_cash_title_sticky" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:layout_weight="1.0" android:layout_marginStart="4.0dip" />
-        <ImageView android:id="@id/iv_see_now_sticky" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/mtg_coupon_arrow" android:layout_marginStart="12.0dip" android:layout_marginEnd="6.0dip" />
-    </LinearLayout>
-</FrameLayout>

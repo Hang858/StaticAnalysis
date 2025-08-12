@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <RelativeLayout android:background="@drawable/vy_massage_select_time_grid_item_bg" android:duplicateParentState="true" android:clipChildren="true" android:layout_width="fill_parent" android:layout_height="40.0dip"
-      xmlns:android="http://schemas.android.com/apk/res/android">
-        <TextView android:textColor="@color/vy_fitness_coach_selected_name_color" android:id="@id/selecttime_item_service_servicetime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
-        <ImageView android:id="@id/selecttime_item_service_fullytag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vy_icon_coach_order_fully" android:layout_alignParentRight="true" />
-    </RelativeLayout>
-</FrameLayout>

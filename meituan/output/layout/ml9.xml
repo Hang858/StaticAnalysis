@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <android.support.v7.widget.RecyclerView android:id="@id/dv9" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/progress" android:background="#ffffffff" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <ProgressBar android:layout_width="55.0dip" android:layout_height="55.0dip" />
-        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="正在解析..." />
-    </LinearLayout>
-</FrameLayout>

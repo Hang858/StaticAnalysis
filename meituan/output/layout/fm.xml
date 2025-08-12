@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sankuai.waimai.store.newwidgets.RoundedLinearLayout android:orientation="vertical" android:background="@color/wm_sc_black8" android:padding="@dimen/p7e" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cornerRadius="8.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.sankuai.waimai.store.newwidgets.AnimatableImageView android:id="@id/s0i" android:layout_width="fill_parent" android:layout_height="@dimen/bpu" android:scaleType="centerInside" app:drawableRes="@drawable/qil" />
-    <TextView android:textSize="14.0sp" android:textColor="@color/dcn" android:id="@id/c31" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="图片上传中" />
-</com.sankuai.waimai.store.newwidgets.RoundedLinearLayout>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="bottom" android:orientation="vertical" android:background="@color/bagv" android:layout_width="fill_parent" android:layout_height="346.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="17.0sp" android:textColor="@color/ohj" android:gravity="center" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/n0y" />
-    <ScrollView android:id="@id/b9q" android:layout_width="fill_parent" android:layout_height="250.0dip">
-        <LinearLayout android:orientation="vertical" android:id="@id/kko" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/yzq" android:showDividers="middle" />
-    </ScrollView>
-    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/ohj" android:gravity="center" android:id="@id/r2p" android:background="@drawable/kt4" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="12.0dip" android:text="我知道了" />
-</LinearLayout>

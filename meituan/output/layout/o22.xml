@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.dianping.videoview.widget.video.ui.panelitem.TimeTextItem android:textSize="10.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/o22" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="29.0dip" android:text="00:00" android:singleLine="true" android:includeFontPadding="false" android:layout_weight="0.0" dp:timeTextType="total"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto" />

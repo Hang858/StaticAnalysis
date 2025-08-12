@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.meituan.android.ugc.review.add.view.ReviewTagLayout android:id="@id/ss9" android:background="@color/white" android:paddingLeft="12.5dip" android:paddingTop="12.5dip" android:paddingRight="12.5dip" android:paddingBottom="12.5dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:horizontalSpace="15.0dip" app:maxRowCount="adjust" app:rowGravity="center" app:tagPaddingLeftAndRight="15.0dip" app:tagPaddingTopAndBottom="7.0dip" app:verticalSpace="15.0dip" />
-</LinearLayout>

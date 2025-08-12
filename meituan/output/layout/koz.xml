@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ViewStub android:id="@id/whm" android:layout="@layout/kst" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <ViewStub android:id="@id/mmj" android:layout="@layout/djx" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <ViewStub android:id="@id/ql6" android:layout="@layout/gpc" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-</merge>

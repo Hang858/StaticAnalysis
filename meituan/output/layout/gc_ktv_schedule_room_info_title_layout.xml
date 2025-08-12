@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:paddingLeft="@dimen/gc_ktv_schedule_common_padding" android:paddingRight="@dimen/gc_ktv_schedule_common_padding" android:layout_width="fill_parent" android:layout_height="40.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="13.0sp" android:textColor="#ff999999" android:ellipsize="end" android:gravity="center" android:id="@id/ktv_schedule_room_info_title_first" android:layout_width="0.0dip" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="@integer/gc_ktv_schedule_room_info_first_weight" />
-    <View android:layout_gravity="center_vertical" android:background="@color/gc_ktv_divider_color" android:layout_width="1.0dip" android:layout_height="20.0dip" />
-    <TextView android:textSize="13.0sp" android:textColor="#ff999999" android:ellipsize="end" android:gravity="center" android:id="@id/ktv_schedule_room_info_title_second" android:layout_width="0.0dip" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="@integer/gc_ktv_schedule_room_info_second_weight" />
-    <View android:layout_gravity="center_vertical" android:background="@color/gc_ktv_divider_color" android:layout_width="1.0dip" android:layout_height="20.0dip" />
-    <TextView android:textSize="13.0sp" android:textColor="#ff999999" android:ellipsize="end" android:gravity="center" android:id="@id/ktv_schedule_room_info_title_third" android:layout_width="0.0dip" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="@integer/gc_ktv_schedule_room_info_third_weight" />
-</LinearLayout>

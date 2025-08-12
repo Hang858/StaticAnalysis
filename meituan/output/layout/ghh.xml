@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_gravity="center" android:background="@drawable/ba1e" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/text_size_14" android:textColor="#ffffffff" android:id="@id/b92" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="243.0dip" android:text="很长很长很长很长很长的文字" />
-</FrameLayout>

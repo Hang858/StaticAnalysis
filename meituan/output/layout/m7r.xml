@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/m7r" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.sankuai.meituan.msv.list.adapter.holder.image.pager.ImageViewPager android:id="@id/y98" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <View android:id="@id/tu1" android:background="#33000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <FrameLayout android:id="@id/fl_like_view_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-</FrameLayout>

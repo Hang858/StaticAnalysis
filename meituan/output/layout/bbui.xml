@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sankuai.ptview.view.PTRelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0pt" android:layout_marginBottom="14.0pt"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.sankuai.ptview.view.PTTextView android:textSize="13.439972pt" android:textColor="#e6000000" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="300.0pt" android:lines="1" />
-    <com.sankuai.ptview.view.PTTextView android:textSize="11.519989pt" android:textColor="#80000000" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_alignTop="@id/tv_title" android:layout_alignBottom="@id/tv_title" android:layout_marginStart="8.0pt" android:layout_toEndOf="@id/tv_title" />
-    <com.meituan.android.base.ui.widget.TagsLayout android:id="@id/sn0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.899994pt" android:layout_below="@id/tv_title" app:horizontalSpace="9.599976pt" app:maxRowCount="99" app:verticalSpace="8.0pt" />
-</com.sankuai.ptview.view.PTRelativeLayout>

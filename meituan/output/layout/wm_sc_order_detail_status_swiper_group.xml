@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<view android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" class="com.sankuai.waimai.store.order.detail.blockview.OrderStatusSwiperBlockView$ContainerView"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <view android:id="@id/order_feedback_detail_swiper_content" android:layout_width="fill_parent" android:layout_height="115.0dip" class="com.sankuai.waimai.store.order.detail.blockview.OrderStatusSwiperBlockView$CustomViewPager" />
-</view>

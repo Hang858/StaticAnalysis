@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.dianping.widget.view.NovaTextView android:textSize="@dimen/lp4" android:textColor="@color/ba5m" android:gravity="center" android:layout_width="wrap_content" android:layout_height="28.0dip" android:layout_marginRight="6.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

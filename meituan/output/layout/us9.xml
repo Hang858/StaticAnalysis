@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ea5" android:minHeight="@dimen/bbj2"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="11.0sp" android:textColor="#ff858687" android:id="@id/tv_stickyfood_recommend_reason" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ea5" android:singleLine="true" style="@style/WmScText" />
-    <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#ffaa771d" android:ellipsize="middle" android:id="@id/tv_stickyfood_rank" android:paddingRight="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ea5" android:singleLine="true" style="@style/WmScText" />
-</FrameLayout>

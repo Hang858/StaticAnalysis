@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:orientation="horizontal" android:background="@color/wm_sg_color_FFFFFF" android:layout_width="fill_parent" android:layout_height="@dimen/jd7"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:orientation="horizontal" android:id="@id/shop_cart_b2c_goods_detail" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    <LinearLayout android:orientation="horizontal" android:id="@id/shop_cart_b2c_poi" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-</FrameLayout>

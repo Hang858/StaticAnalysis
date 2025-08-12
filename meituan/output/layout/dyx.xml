@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/dyx" android:layout_width="100.0dip" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="16.0sp" android:textColor="?rooGrayDim" android:gravity="center" android:id="@id/txt_foodCount_number" android:background="@android:color/white" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="55.0dip" android:text="0" android:maxEms="3" android:layout_centerInParent="true" />
-    <ImageView android:id="@id/img_foodCount_dec" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/ema" android:scaleType="center" android:contentDescription="@string/cje" android:layout_alignParentStart="true" />
-    <ImageView android:id="@id/img_foodCount_add" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/dmy" android:scaleType="center" android:contentDescription="@string/gvx" android:layout_alignParentEnd="true" />
-</RelativeLayout>

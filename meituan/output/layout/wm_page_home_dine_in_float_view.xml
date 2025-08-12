@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/dine_in_header_float_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="24.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <RelativeLayout android:gravity="center_vertical" android:id="@id/dine_in_text_layout" android:background="@drawable/wm_page_head_float_black_theme_bg" android:layout_width="78.0dip" android:layout_height="24.0dip" android:alpha="1.0">
-        <TextView android:textSize="12.0dip" android:textStyle="bold" android:textColor="#ff222426" android:gravity="right" android:id="@id/dine_in_text_view" android:paddingLeft="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="24.0dip" android:text="堂食打卡" android:maxLines="1" android:layout_alignParentRight="true" />
-    </RelativeLayout>
-    <ImageView android:id="@id/dine_in_icon" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="2.0dip" android:src="@drawable/wm_dine_in_icon_black" android:layout_alignRight="@id/dine_in_text_layout" android:layout_centerVertical="true" />
-</RelativeLayout>

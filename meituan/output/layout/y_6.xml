@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#99000000" android:layout_gravity="center" android:id="@id/vst" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="机票" />
-    <com.meituan.android.trafficayers.views.MeiTuanTypeTextView android:textSize="15.0sp" android:textColor="#99000000" android:layout_gravity="center" android:id="@id/q0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="机票" android:alpha="0.0" />
-</FrameLayout>

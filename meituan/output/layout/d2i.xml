@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/rbi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60.0dip" android:layout_marginRight="60.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.sankuai.waimai.platform.widget.RoundRectImageView android:id="@id/s9_" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_margin="5.0dip" android:scaleType="centerCrop" app:cornerRadius="8.0dip" />
-</LinearLayout>

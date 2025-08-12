@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:background="@drawable/qcsc_bg_security_convoy_setting" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <TextView android:textSize="12.0sp" android:textColor="@color/qcsc_text_84" android:layout_gravity="center|left" android:id="@id/tv_left_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <LinearLayout android:layout_gravity="center|right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
-        <TextView android:textSize="11.0sp" android:textColor="#ff009659" android:layout_gravity="center_vertical" android:id="@id/tv_right_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-        <com.meituan.android.qcsc.business.widget.iconfont.IconFontTextView android:layout_gravity="center_vertical" android:id="@id/tv_right_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="3.0dip" app:qcsc_iconDpSize="10.0dip" app:qcsc_iconDrawableColor="#6b000000" app:qcsc_iconDrawableLeft="@string/qcsc_icon_qcs_right" />
-    </LinearLayout>
-</FrameLayout>

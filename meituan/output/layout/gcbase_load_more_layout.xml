@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="14.0sp" android:textColor="@color/gcbase_common_text_gray" android:layout_gravity="center" android:id="@id/load_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看更多" android:drawableRight="@drawable/gcbase_gray_down_arrow" android:drawablePadding="8.0dip" />
-</merge>

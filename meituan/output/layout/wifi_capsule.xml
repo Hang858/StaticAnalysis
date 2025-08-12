@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/wifi_capsule_bg" android:layout_width="86.0dip" android:layout_height="28.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/iv_wifi_capsule_more" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/ic_wifi_capsule_more" android:layout_marginEnd="6.0dip" />
-    <View android:layout_gravity="center" android:background="#ff8f8f8f" android:layout_width="1.0px" android:layout_height="12.0dip" />
-    <ImageView android:id="@id/iv_wifi_capsule_close" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/ic_wifi_capsule_close" android:layout_marginStart="6.0dip" />
-</LinearLayout>

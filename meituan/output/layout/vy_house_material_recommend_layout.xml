@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:background="@color/vy_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:id="@id/vy_house_material_recommend_header" android:padding="@dimen/vy_standard_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <TextView android:textSize="15.0sp" android:textColor="#ff333333" android:ellipsize="end" android:id="@id/housematerialrecomm" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
-        <TextView android:textSize="12.0sp" android:textColor="@color/vy_light_gray" android:ellipsize="end" android:layout_gravity="center|right" android:id="@id/vy_house_material_recommend_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:maxEms="10" android:drawableRight="@drawable/vy_arrow_right" android:drawablePadding="5.0dip" />
-    </LinearLayout>
-    <GridLayout android:id="@id/vy_house_material_recommend_grid" android:paddingLeft="@dimen/vy_standard_padding" android:paddingRight="@dimen/vy_standard_padding" android:paddingBottom="@dimen/vy_standard_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:rowCount="2" android:columnCount="2" />
-</LinearLayout>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:orientation="vertical" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.meituan.sankuai.navisdk.place.ui.TrafficBarView android:layout_gravity="center_horizontal" android:id="@id/mtnv_v_traffic_bar" android:layout_width="16.0dip" android:layout_height="fill_parent" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:translationZ="4.0dip" />
-    <ImageView android:layout_gravity="bottom|center" android:id="@id/mtnv_img_traffic_bar_icon" android:layout_width="36.0dip" android:layout_height="36.0dip" android:translationZ="4.0dip" />
-    <View android:layout_gravity="center_horizontal" android:id="@id/ece" android:background="@drawable/mtnv_traffic_bar_shadow_bg" android:layout_width="16.0dip" android:layout_height="fill_parent" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:elevation="3.0dip" />
-</FrameLayout>

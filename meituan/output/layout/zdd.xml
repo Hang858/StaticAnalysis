@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sankuai.waimai.platform.widget.filterbar.view.view.FilterBarAnimatableImageView android:background="@drawable/i2b" android:layout_width="@dimen/pg2" android:layout_height="@dimen/mkx" android:scaleType="centerInside" app:drawableResList="@drawable/ftj"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ubu" android:paddingTop="@dimen/ddv" android:paddingBottom="@dimen/uv2" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/xo6" />
-    <ImageView android:id="@id/pk4" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="@dimen/uv2" />
-    <TextView android:textSize="14.0sp" android:textColor="#fffe7537" android:id="@id/gbq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ea5" android:text="为你推荐" />
-    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uv2" android:src="@drawable/v7o" />
-</LinearLayout>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sankuai.ptview.view.PTFrameLayout android:id="@id/upq" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.sankuai.ptview.view.PTFrameLayout android:id="@id/main" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/bbf9" />
-    <com.meituan.android.pt.homepage.tab.TabBlockV2 android:layout_gravity="bottom" android:id="@id/bottom_tab_block" android:clickable="false" android:layout_width="fill_parent" android:layout_height="@dimen/s0l" />
-    <com.sankuai.ptview.view.PTFrameLayout android:id="@id/holder" android:fitsSystemWindows="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <com.sankuai.ptview.view.PTFrameLayout android:id="@id/sao" android:fitsSystemWindows="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <ViewStub android:id="@id/cfn" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-</com.sankuai.ptview.view.PTFrameLayout>

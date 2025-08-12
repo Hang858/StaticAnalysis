@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
-    <com.dianping.imagemanager.DPNetworkImageView android:id="@id/head_show_pic" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" dp:placeholderError="@drawable/placeholder_error" />
-    <ImageView android:id="@id/pic_head_video_img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/beauty_head_pic_video_play_btn" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
-</RelativeLayout>

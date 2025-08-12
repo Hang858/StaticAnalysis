@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.sankuai.waimai.store.view.banner.roundview.UniversalImageView android:layout_gravity="center" android:id="@id/product_tag_background_iv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" app:riv_corner_radius_bottom_left="6.0dip" app:riv_corner_radius_bottom_right="6.0dip" />
-    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <android.support.v4.widget.Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
-        <TextView android:textSize="6.5dip" android:gravity="center" android:id="@id/product_tag_right_tv" android:layout_width="0.0dip" android:layout_height="fill_parent" android:maxLines="1" android:layout_weight="1.0" android:paddingStart="1.0dip" android:paddingEnd="1.0dip" />
-    </LinearLayout>
-</FrameLayout>

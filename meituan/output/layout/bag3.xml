@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:background="@drawable/lg8" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="6.0dip" android:paddingEnd="10.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <android.support.v7.widget.AppCompatImageView android:id="@id/osf" android:layout_width="17.0dip" android:layout_height="17.0dip" />
-    <android.support.v7.widget.AppCompatTextView android:textSize="12.0dip" android:textStyle="bold" android:textColor="#ff695b4f" android:ellipsize="none" android:id="@id/phe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
-    <com.sankuai.meituan.msv.common.ui.MSVCountdownView android:textSize="12.0dip" android:textStyle="bold" android:textColor="#ff695b4f" android:ellipsize="none" android:id="@id/countdown_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" app:countDownInterval="100" />
-</LinearLayout>

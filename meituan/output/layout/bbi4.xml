@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:background="@color/fnf" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="36.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="13.0dip" android:textColor="@color/fnq" android:ellipsize="end" android:id="@id/hy3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/is8" android:lines="1" android:layout_centerVertical="true" />
-    <TextView android:textSize="13.0dip" android:textStyle="bold" android:textColor="@color/fnq" android:id="@id/zsb" android:paddingLeft="10.0dip" android:paddingTop="4.0dip" android:paddingRight="10.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/hxl" android:layout_toRightOf="@id/hy3" android:layout_centerVertical="true" />
-    <ImageView android:textSize="13.0dip" android:textStyle="bold" android:textColor="@color/fnq" android:id="@id/search_location_close_iv" android:padding="2.0dip" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/qje" android:text="@string/hxl" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
-</RelativeLayout>

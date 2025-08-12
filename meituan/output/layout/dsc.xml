@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sankuai.xm.imui.common.view.ContentRelativeLayout android:layout_width="261.0dip" android:layout_height="wrap_content" android:layout_margin="0.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <TextView android:textSize="16.0sp" android:textColor="@color/jmq" android:ellipsize="end" android:id="@id/mk" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:singleLine="true" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" />
-    <TextView android:textSize="12.0sp" android:textColor="@color/xtb" android:ellipsize="end" android:id="@id/gqz" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="3.0dip" android:singleLine="true" android:layout_below="@id/mk" android:layout_marginEnd="12.0dip" />
-    <com.meituan.android.legwork.ui.component.CornerImageView android:id="@id/bad4" android:layout_width="fill_parent" android:layout_height="147.0dip" android:layout_marginTop="9.0dip" android:scaleType="centerCrop" android:layout_below="@id/gqz" app:left_bottom_radius="9.0dip" app:right_bottom_radius="9.0dip" />
-</com.sankuai.xm.imui.common.view.ContentRelativeLayout>

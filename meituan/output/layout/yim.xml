@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:gravity="center" android:layout_gravity="top" android:orientation="horizontal" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="15.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="12.0dip" android:textColor="@color/ba2u" android:ellipsize="end" android:id="@id/bld" android:paddingLeft="25.0dip" android:paddingRight="12.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawableRight="@drawable/omf" android:drawablePadding="11.0dip" android:layout_alignParentRight="true" />
-    <TextView android:textSize="12.0dip" android:textColor="@color/zo2" android:ellipsize="end" android:id="@id/zq4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:maxWidth="221.0dip" android:text="@string/pf7" android:singleLine="true" android:layout_alignParentLeft="true" />
-    <TextView android:textSize="12.0dip" android:textColor="@color/ba2u" android:id="@id/or9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:singleLine="true" android:layout_toLeftOf="@id/bld" android:layout_toRightOf="@id/zq4" />
-</RelativeLayout>

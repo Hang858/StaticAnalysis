@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout android:layout_gravity="bottom|center" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <View android:id="@id/vzp" android:background="@drawable/bbxe" android:layout_width="fill_parent" android:layout_height="25.0dip" android:translationY="17.0dip" app:layout_constraintBottom_toTopOf="@id/mtnv_trash_container" />
-    <View android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="0.0dip" android:translationY="17.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/vzp" />
-    <android.support.constraint.ConstraintLayout android:layout_gravity="bottom|center" android:id="@id/mtnv_trash_container" android:background="@drawable/mtnv_bg_round_rect_trash" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="34.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
-        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ffff2d19" android:id="@id/du_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="拖拽到此，退出导航" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
-    </android.support.constraint.ConstraintLayout>
-</android.support.constraint.ConstraintLayout>

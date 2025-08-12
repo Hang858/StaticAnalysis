@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sankuai.waimai.store.view.RoundedCornerRelativeLayout android:orientation="vertical" android:background="#fff5f5f6" android:padding="@dimen/wpy" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cornerRadius="@dimen/ea5"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <ImageView android:id="@id/qp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:src="@drawable/wub" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
-    <ImageView android:id="@id/nqr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/e5p" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
-    <TextView android:textSize="@dimen/text_size_12" android:textColor="#ffbcbcbd" android:id="@id/i48" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uv2" android:layout_marginTop="@dimen/z34" android:layout_below="@id/slo" android:layout_toStartOf="@id/nqr" android:layout_toEndOf="@id/qp" />
-    <TextView android:textSize="@dimen/text_size_14" android:textColor="#ff222426" android:ellipsize="end" android:id="@id/slo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uv2" android:maxLines="2" android:layout_alignParentTop="true" android:layout_toStartOf="@id/nqr" android:layout_toEndOf="@id/qp" />
-</com.sankuai.waimai.store.view.RoundedCornerRelativeLayout>

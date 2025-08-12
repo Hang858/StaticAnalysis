@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <ImageView android:id="@id/dmz" android:layout_width="0.0dip" android:layout_height="0.0dip" android:scaleType="fitXY" app:layout_constraintDimensionRatio="750:168" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" />
-    </android.support.constraint.ConstraintLayout>
-    <ImageView android:id="@id/img_close" android:padding="4.0dip" android:layout_width="21.0dip" android:layout_height="21.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/vco" android:scaleType="centerCrop" android:layout_alignParentRight="true" />
-</RelativeLayout>

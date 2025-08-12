@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="vertical" android:background="@drawable/xm_sdk_selector_chat_msg_multi_link_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <include android:id="@id/img_multi_item" android:layout_width="fill_parent" android:layout_height="@dimen/xm_sdk_chat_multi_richcard_head_height" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" layout="@layout/xm_sdk_img_view" />
-    <TextView android:textSize="16.0sp" android:textColor="@color/xm_sdk_text_color_white" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/title" android:background="@color/xm_sdk_text_color_dark_gray" android:padding="@dimen/xm_sdk_chat_multi_richcard_head_title_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignBottom="@id/img_multi_item" android:lineSpacingExtra="2.0dip" android:layout_alignStart="@id/img_multi_item" android:layout_alignEnd="@id/img_multi_item" style="@style/xm_sdk_text_view_style_18n" />
-</RelativeLayout>

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="17.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <android.support.v7.widget.AppCompatTextView android:textSize="10.0dip" android:textColor="#33ffffff" android:ellipsize="end" android:gravity="end|center" android:id="@id/bc1z" android:layout_width="fill_parent" android:layout_height="fill_parent" android:lines="1" android:shadowColor="#26000000" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="2.0" android:alpha="1.0" />
-</LinearLayout>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sankuai.waimai.store.view.RoundedCornerFrameLayout android:layout_width="@dimen/d_a" android:layout_height="@dimen/d_a" app:cornerRadius="@dimen/bbrs"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <ImageView android:id="@id/fko" android:layout_width="@dimen/d_a" android:layout_height="@dimen/d_a" android:scaleType="fitCenter" />
-    <TextView android:textSize="@dimen/hwz" android:textColor="@color/jpg" android:ellipsize="end" android:layout_gravity="bottom" android:id="@id/spu_price" android:paddingLeft="@dimen/bbrs" android:paddingRight="@dimen/bbrs" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" />
-    <View android:background="@color/opd" android:layout_width="@dimen/d_a" android:layout_height="@dimen/d_a" />
-</com.sankuai.waimai.store.view.RoundedCornerFrameLayout>

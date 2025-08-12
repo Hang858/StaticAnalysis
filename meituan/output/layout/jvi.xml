@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.meituan.android.pt.homepage.modules.navigation.view.HomepageShortcutLayout android:layout_gravity="center_vertical" android:id="@id/oww" android:layout_width="37.0pt" android:layout_height="35.0pt" android:layout_marginLeft="5.5999756pt"
-  xmlns:android="http://schemas.android.com/apk/res/android" />
