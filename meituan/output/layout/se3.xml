@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="12.0dip" android:paddingRight="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="@dimen/wru" android:textColor="@color/srw" android:gravity="center|left" android:id="@id/wqe" android:background="@drawable/raz" android:paddingLeft="5.0dip" android:layout_width="100.0dip" android:layout_height="45.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="旅游" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/wru" android:textColor="@color/nhy" android:gravity="center|left" android:id="@id/debug_domain" android:background="@drawable/fl2" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="10.0dip" android:text="http://lvyou.meituan.com" android:singleLine="true" android:layout_toRightOf="@id/wqe" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

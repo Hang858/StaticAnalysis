@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/dr7" android:background="@drawable/zp8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/mo4" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/g3u" android:layout_gravity="center" android:id="@id/bbxf" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:layout_gravity="center|right" android:id="@id/collect_food_layout_close_img" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/i6_" android:contentDescription="@string/bbea" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="22.0dip" android:layout_below="@id/mo4">
+        <android.support.v7.widget.RecyclerView android:id="@id/dng" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/baw5" android:background="@drawable/ot6" android:layout_width="fill_parent" android:layout_height="33.0dip" android:layout_below="@id/mo4">
+        <TextView android:textSize="11.0sp" android:textColor="@color/g3u" android:layout_gravity="center" android:id="@id/yfn" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <com.meituan.roodesign.resfetcher.widgets.RooImageView android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_alignParentBottom="true" app:project="waimai_c" app:srcName="waimai_c_order_bg_confirm_submit_mask" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:layout_alignParentBottom="true">
+        <FrameLayout android:id="@id/lcn" android:background="@drawable/dh8" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginBottom="20.0dip">
+            <TextView android:textSize="11.0sp" android:textColor="#ff666666" android:layout_gravity="center_horizontal" android:id="@id/cr3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+        </FrameLayout>
+        <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/g3u" android:layout_gravity="bottom" android:id="@id/wyw" android:background="@drawable/d7r" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/confirm" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/root_view" android:background="@drawable/xlx" android:paddingLeft="@dimen/wjt" android:paddingRight="@dimen/wjt" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/nmk" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/yd4" android:layout_width="@dimen/ejr" android:layout_height="@dimen/ejr" android:layout_marginTop="@dimen/k0r" android:layout_marginBottom="@dimen/pkd" android:scaleType="fitXY" />
+        <RelativeLayout android:id="@id/rt2" android:layout_width="fill_parent" android:layout_height="@dimen/s2l">
+            <View android:id="@id/ba3i" android:background="@drawable/m5c" android:layout_width="@dimen/bbo" android:layout_height="@dimen/m1m" android:layout_marginTop="@dimen/hqe" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="@dimen/wwq" android:textStyle="bold" android:textColor="@color/z0y" android:id="@id/score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ykk" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="@dimen/pe3" android:textColor="@color/z0y" android:ellipsize="end" android:id="@id/lwu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mvu" android:layout_below="@id/score" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/wju" android:textStyle="bold" android:textColor="@color/z0y" android:gravity="center" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/trj" />
+        <TextView android:textSize="@dimen/kli" android:textColor="@color/z0y" android:gravity="center" android:id="@id/desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x9b" />
+        <ImageView android:id="@id/klo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bbex" android:layout_marginBottom="@dimen/kpi" android:scaleType="fitXY" />
+        <android.support.v4.widget.Space android:id="@id/sru" android:layout_width="fill_parent" android:layout_height="@dimen/qd7" />
+    </LinearLayout>
+</FrameLayout>

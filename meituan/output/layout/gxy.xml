@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mbc_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/mxu" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.sankuai.meituan.mbc.ui.PullToRefreshView android:id="@id/c14" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include android:id="@id/r7e" android:visibility="gone" layout="@layout/cpm" />
+        <ViewStub android:id="@id/gll" android:layout="@layout/omi" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:id="@id/cpq" android:layout="@layout/bbbm" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/dp_" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</RelativeLayout>

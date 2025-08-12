@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/xm_sdk_send_panel_top_divider" android:background="@color/xm_sdk_divider" android:layout_width="fill_parent" android:layout_height="@dimen/xm_sdk_divider_width" />
+    <ViewStub android:id="@id/xm_sdk_send_panel_input_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/xm_sdk_send_panel_input_forbidden" android:layout="@layout/xm_sdk_send_panel_forbidden" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/xm_sdk_send_panel_bottom_divider" android:background="@color/xm_sdk_divider" android:layout_width="fill_parent" android:layout_height="@dimen/xm_sdk_divider_width" />
+</LinearLayout>

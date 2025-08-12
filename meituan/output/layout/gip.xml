@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:background="@color/y0y" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="10.0sp" android:textColor="@color/e59" android:gravity="center" android:id="@id/bbbg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" app:layout_constraintBottom_toTopOf="@id/xue" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/e59" android:gravity="center" android:id="@id/xue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="50.0dip" android:text="@string/bacg" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/e59" android:gravity="center" android:id="@id/l73" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/xue" />
+    <ImageView android:id="@id/zen" android:layout_width="40.0dip" android:layout_height="52.0dip" android:layout_marginStart="40.0dip" app:layout_constraintBottom_toBottomOf="@id/l73" app:layout_constraintStart_toEndOf="@id/l73" />
+</android.support.constraint.ConstraintLayout>

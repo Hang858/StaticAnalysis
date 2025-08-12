@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.store.drug.base.BaseRelativeLayout android:id="@id/root_layout" android:background="@color/foq" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/img_adult_ad_container" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img_adult_ad" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_marginStart="12.0dip" />
+    </FrameLayout>
+    <com.sankuai.waimai.store.newwidgets.list.SCRecyclerView android:id="@id/poi_dish_categories" android:layout_width="@dimen/yni" android:layout_height="fill_parent" android:layout_below="@id/img_adult_ad_container" android:layout_alignParentLeft="true" />
+    <com.sankuai.waimai.store.newwidgets.PrioritySmoothNestedScrollView android:id="@id/priority_scrollview" android:background="@color/jpg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/poi_dish_categories" android:layout_below="@id/img_adult_ad_container">
+        <LinearLayout android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/poi_header_layout" layout="@layout/wm_drug_shop_content_spu_head_layout" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/f9_" android:textColor="@color/k4x" android:gravity="center" android:id="@id/loading_view" android:layout_width="fill_parent" android:layout_height="500.0dip" android:text="@string/wm_sc_common_loading" />
+                <com.sankuai.waimai.store.drug.goods.list.templet.newmarket.spulist.ShopContentRecyclerView android:id="@id/poi_pinned_layout" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </FrameLayout>
+        </LinearLayout>
+    </com.sankuai.waimai.store.newwidgets.PrioritySmoothNestedScrollView>
+    <include android:layout_width="fill_parent" android:layout_height="@dimen/o4g" android:layout_toRightOf="@id/poi_dish_categories" android:layout_below="@id/img_adult_ad_container" layout="@layout/wm_drug_shop_content_tab_list" />
+    <include android:id="@id/poi_all_category_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/poi_dish_categories" android:layout_below="@id/img_adult_ad_container" layout="@layout/wm_drug_shop_content_all_category_layout" />
+    <FrameLayout android:id="@id/fl_brand_drowdown_container" android:background="@color/wm_sc_half_transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/lv0" android:layout_toRightOf="@id/poi_dish_categories" android:layout_below="@id/img_adult_ad_container" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_marginBottom="106.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <ImageView android:layout_gravity="right" android:id="@id/shop_content_back_to_top" android:background="@drawable/gg3" android:visibility="visible" android:layout_width="@dimen/baee" android:layout_height="@dimen/baee" android:layout_marginTop="@dimen/e5p" android:scaleType="fitXY" />
+    </LinearLayout>
+</com.sankuai.waimai.store.drug.base.BaseRelativeLayout>

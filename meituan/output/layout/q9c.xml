@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.store.newwidgets.AnimatableImageView android:id="@id/sir" android:layout_width="@dimen/bpu" android:layout_height="@dimen/bpu" android:scaleType="centerInside" app:drawableRes="@drawable/qil"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

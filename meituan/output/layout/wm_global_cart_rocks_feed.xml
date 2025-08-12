@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sankuai.waimai.rocks.page.view.NestedRecyclerView android:id="@id/global_cart_feed_recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.sankuai.waimai.platform.modular.blockimpl.empty.EmptyView android:id="@id/global_cart_feed_empty_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/soe" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.imagemanager.DPNetworkImageView android:id="@id/g3c" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" dp:cornerRadius="3.0px" dp:placeholderEmpty="@drawable/deallist_default_image" dp:placeholderError="@drawable/placeholder_error" dp:placeholderLoading="@drawable/deallist_default_image" />
+    <FrameLayout android:id="@id/w8r" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.1" />
+        <ImageView android:layout_gravity="center" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/jcg" />
+    </FrameLayout>
+</FrameLayout>

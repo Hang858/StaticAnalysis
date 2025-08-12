@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/root_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:textColor="#ffff0000" android:layout_gravity="center|left" android:id="@id/text_test_dyn_resource_version" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.5" />
+    <TextView android:textSize="30.0dip" android:textColor="#ffff0000" android:layout_gravity="center|right|top" android:id="@id/text_test_water_mark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="测试版" android:alpha="0.5" />
+</FrameLayout>

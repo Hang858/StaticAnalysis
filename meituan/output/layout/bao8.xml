@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.ptview.view.PTLinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sankuai.ptview.view.PTLinearLayout android:orientation="vertical" android:id="@id/fk4" android:paddingTop="14.299988pt" android:paddingBottom="14.299988pt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="30.0pt" android:layout_marginEnd="30.0pt">
+        <com.sankuai.ptview.view.PTTextView android:textSize="20.0pt" android:textStyle="bold" android:textColor="#ff000000" android:gravity="center" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0pt" android:layout_marginBottom="1.0pt" android:text="@string/ftg" />
+        <android.support.v7.widget.RecyclerView android:orientation="vertical" android:id="@id/t5c" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.sankuai.ptview.view.PTLinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="29.0pt" android:paddingStart="14.399994pt" android:paddingEnd="14.399994pt">
+            <com.sankuai.ptview.view.PTTextView android:id="@id/zu5" android:text="@string/i3c" android:layout_marginEnd="8.639984pt" style="@style/ShoppingCart_Dialog_Btn.Negative" />
+            <com.sankuai.ptview.view.PTTextView android:id="@id/s6p" android:text="@string/tir" style="@style/ShoppingCart_Dialog_Btn.Positive" />
+        </com.sankuai.ptview.view.PTLinearLayout>
+    </com.sankuai.ptview.view.PTLinearLayout>
+</com.sankuai.ptview.view.PTLinearLayout>

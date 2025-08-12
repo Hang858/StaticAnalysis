@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.business.search.ui.result.view.RedPacketFloatView android:clipChildren="true" android:layout_width="fill_parent" android:layout_height="54.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="end" android:id="@id/red_pack_fold_view" android:layout_width="54.0dip" android:layout_height="54.0dip" android:src="@drawable/cp7" />
+    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/wnb" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginStart="3.0dip" android:layout_marginEnd="3.0dip">
+        <android.support.v7.widget.AppCompatImageView android:id="@id/red_pack_icon" android:layout_width="20.0dip" android:layout_height="23.0dip" android:scaleType="fitXY" android:layout_centerVertical="true" android:layout_marginStart="13.0dip" android:layout_marginEnd="8.0dip" app:srcCompat="@drawable/wek" />
+        <FrameLayout android:id="@id/bao6" android:layout_width="33.0dip" android:layout_height="fill_parent" android:layout_alignParentEnd="true">
+            <android.support.v7.widget.AppCompatImageView android:layout_gravity="center" android:layout_width="9.0dip" android:layout_height="9.0dip" android:scaleType="centerInside" app:srcCompat="@drawable/iqd" />
+        </FrameLayout>
+        <android.support.v7.widget.AppCompatTextView android:textSize="11.0sp" android:textColor="#ffff3c26" android:gravity="center" android:id="@id/hhm" android:background="@drawable/oq8" android:paddingLeft="8.0dip" android:paddingTop="4.0dip" android:paddingRight="8.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="6.0dip" android:layout_marginEnd="5.0dip" android:layout_toStartOf="@id/bao6" />
+        <android.support.v7.widget.AppCompatTextView android:textSize="13.0sp" android:textColor="#ff575859" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/cu8" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxLines="1" android:layout_toStartOf="@id/hhm" android:layout_toEndOf="@id/red_pack_icon" />
+    </RelativeLayout>
+</com.sankuai.waimai.business.search.ui.result.view.RedPacketFloatView>

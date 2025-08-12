@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meituan.android.customerservice.kit.widget.PercentRelativeLayout android:id="@id/root_view" android:background="@drawable/otm" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/bb2c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bb4c" android:layout_marginTop="@dimen/qwr" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/zu2" android:visibility="gone" android:layout_width="@dimen/woo" android:layout_height="@dimen/woo" android:layout_marginRight="@dimen/kj" android:src="@drawable/yek" />
+        <TextView android:textSize="@dimen/whf" android:textStyle="bold" android:textColor="@color/bban" android:id="@id/ix8" android:background="@drawable/hxj" android:padding="@dimen/pby" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="当前通话连接质量不佳" android:layout_alignRight="@id/zu2" />
+    </LinearLayout>
+    <ImageView android:id="@id/vfc" android:padding="15.0dip" android:layout_width="52.0dip" android:layout_height="52.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="14.5dip" android:src="@drawable/w6p" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <com.meituan.android.customerservice.callkefuuisdk.widget.CallKFStateView android:id="@id/vkh" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="129.0dip" android:layout_above="@id/vpb" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/kf1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="13.0dip" android:layout_above="@id/vpb">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/ud7" android:layout_width="67.0dip" android:layout_height="67.0dip" android:src="@drawable/nun" />
+        <TextView android:textSize="12.5sp" android:textColor="#ff666666" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="上传凭证" />
+    </LinearLayout>
+    <com.meituan.android.customerservice.callkefuuisdk.widget.CallKFKeyboardView android:id="@id/koh" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_centerHorizontal="true" app:cs_layout_heightPercent="61.5%" />
+    <com.meituan.android.customerservice.callkefuuisdk.widget.CallKFOperationView android:id="@id/vpb" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:cs_layout_heightPercent="35.000004%" app:cs_layout_marginBottomPercent="3.4999967%" />
+</com.meituan.android.customerservice.kit.widget.PercentRelativeLayout>

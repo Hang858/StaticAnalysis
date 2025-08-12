@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.qcs.view.QcsMapBubbleTipsCircleView android:id="@id/qcs_map_bubble_tips_circle" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_margin="1.5dip" />
+    <TextView android:textSize="@dimen/qcs_bubble_tips_text" android:textColor="@color/qcs_text_primary" android:gravity="center_vertical" android:id="@id/qcs_map_bubble_tips_text" android:layout_width="wrap_content" android:layout_height="33.0dip" android:layout_marginLeft="6.0dip" android:includeFontPadding="false" style="@style/QcsWidget.MapBubbleTipsText" />
+</merge>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/zwg" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="更多操作浮层"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/ni7" />
+    <include layout="@layout/kzw" />
+</FrameLayout>

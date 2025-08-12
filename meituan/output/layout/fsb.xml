@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingRight="16.0dip" android:layout_width="@dimen/fax" android:layout_height="@dimen/bhl"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="bottom|center|left" android:id="@id/wm_sg_img_red_packet" android:layout_width="@dimen/jd7" android:layout_height="@dimen/jd7" android:layout_marginTop="@dimen/ea5" />
+    <ImageView android:layout_gravity="right" android:id="@id/wm_sg_img_red_packet_close" android:layout_width="@dimen/wpy" android:layout_height="@dimen/wpy" />
+</FrameLayout>

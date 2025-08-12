@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="200.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.meituan.android.wedding.widget.PullViewPager android:id="@id/uv9" android:layout_width="fill_parent" android:layout_height="200.0dip" />
+    <com.dianping.imagemanager.DPNetworkImageView android:id="@id/t0r" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" dp:cornerRadius="3.0px" dp:placeholderEmpty="@drawable/deallist_default_image" dp:placeholderError="@drawable/placeholder_error" dp:placeholderLoading="@drawable/deallist_default_image" />
+</FrameLayout>

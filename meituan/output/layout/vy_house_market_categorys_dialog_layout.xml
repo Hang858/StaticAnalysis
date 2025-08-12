@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/vy_shape_20px_corner_white_color_bg" android:paddingTop="@dimen/vy_standard_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+        <Button android:layout_gravity="center|right|top" android:id="@id/close_btn" android:background="@drawable/vy_cancel" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginRight="@dimen/vy_standard_margin" android:scaleType="fitXY" />
+        <TextView android:textSize="@dimen/vy_text_size_16" android:textColor="@color/vy_black7" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/vy_standard_margin" android:layout_marginTop="7.0dip" android:layout_marginRight="@dimen/vy_standard_margin" android:text="按品类查看商户" android:maxLines="1" />
+        <View android:layout_gravity="center_horizontal" android:id="@id/title_line" android:background="@drawable/vy_line_divider_bg" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/vy_standard_margin" android:layout_marginTop="4.0dip" android:layout_marginRight="@dimen/vy_standard_margin" />
+        <android.support.v4.widget.NestedScrollView android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/vy_standard_margin" android:layout_marginTop="@dimen/vy_standard_margin" android:layout_marginRight="@dimen/vy_standard_margin" android:layout_marginBottom="@dimen/vy_standard_margin">
+            <GridLayout android:orientation="horizontal" android:id="@id/grid_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:columnCount="3" />
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+</FrameLayout>

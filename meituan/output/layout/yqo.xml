@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/u2r" android:layout_width="fill_parent" android:layout_height="@dimen/q4n"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/zdj" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@id/shy" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/shy" android:paddingBottom="6.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <View android:background="@color/eeh" android:layout_width="0.5dip" android:layout_height="12.0dip" android:layout_marginTop="11.0dip" android:layout_marginRight="25.0dip" />
+        <RelativeLayout android:layout_width="45.0dip" android:layout_height="34.0dip">
+            <com.meituan.roodesign.widgets.iconfont.RooIconFont android:textSize="14.0dip" android:textColor="#ff929293" android:gravity="center" android:id="@id/filter_icon" android:layout_width="17.0dip" android:layout_height="17.0dip" android:text="@string/cvn" android:layout_centerVertical="true" />
+            <TextView android:textSize="8.0sp" android:textStyle="bold" android:textColor="@color/iq2" android:gravity="center" android:layout_gravity="center" android:id="@id/j84" android:background="@drawable/u4g" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginTop="4.0dip" android:includeFontPadding="false" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_marginEnd="22.0dip" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

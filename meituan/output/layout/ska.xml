@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/bbjz" android:background="@drawable/oj0" android:layout_width="wrap_content" android:layout_height="73.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/l6e" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.sankuai.waimai.platform.widget.RoundedCornerImageView android:id="@id/l3k" android:layout_width="73.0dip" android:layout_height="73.0dip" android:scaleType="centerCrop" app:cornerRadius="6.0dip" />
+        <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:id="@id/b5y" android:background="@drawable/muu" android:paddingLeft="5.0dip" android:paddingTop="2.5dip" android:paddingRight="5.0dip" android:paddingBottom="2.5dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <LinearLayout android:id="@id/ml5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:adjustViewBounds="true" android:minWidth="98.0dip" android:layout_toRightOf="@id/l6e" android:layout_alignParentBottom="true">
+        <TextView android:textSize="16.0sp" android:textColor="@color/g3u" android:ellipsize="end" android:id="@id/nfd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.299988dip" android:lines="1" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:ellipsize="end" android:id="@id/bcd5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:lines="1" />
+        <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center|right" android:id="@id/yrr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/hoo" />
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/g3u" android:ellipsize="end" android:id="@id/rv1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:lines="2" android:layout_toRightOf="@id/l6e" android:layout_alignRight="@id/ml5" />
+</RelativeLayout>

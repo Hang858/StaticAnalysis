@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gho" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sankuai.meituan.search.view.SearchHomeActionBarLayout android:id="@id/z1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/main" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="#00ffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ViewStub android:id="@id/wdw" android:layout="@layout/uyw" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:layout_marginBottom="8.0dip" />
+            <com.sankuai.meituan.search.home.sug.view.SearchNoLocationTipView android:id="@id/sud" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <android.support.v7.widget.RecyclerView android:id="@id/t5c" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <ViewStub android:id="@id/mme" android:layout="@layout/jb1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</LinearLayout>

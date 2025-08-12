@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:paddingBottom="40.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/apk/res-auto">
+    <com.sankuai.meituan.search.result2.ui.SearchEmptyPage android:id="@id/oi6" android:layout_width="fill_parent" android:layout_height="fill_parent" tools:buttonText="@string/commonui_empty_page_retry" tools:mainMessage="@string/commonui_empty_page_network_error" tools:pageImage="@drawable/lhz" tools:subMessage="@string/commonui_empty_page_check_network_settings_please" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/pv5" android:gravity="bottom|center" android:id="@id/kv4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/nr4" android:layout_alignParentBottom="true" />
+</RelativeLayout>

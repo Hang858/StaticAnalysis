@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_info" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sankuai.waimai.store.view.banner.roundview.UniversalImageView android:id="@id/img_info" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/ps0" android:textColor="#ff999999" android:ellipsize="end" android:gravity="center" android:id="@id/txt_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sk1" android:text="您还没有登录，请登录后查看" android:singleLine="true" />
+    <TextView android:textSize="@dimen/ps0" android:textStyle="bold" android:textColor="#ff333333" android:gravity="center" android:id="@id/btn_info" android:background="@drawable/sg_common_unlogin_btn_bg" android:layout_width="87.0dip" android:layout_height="@dimen/l3t" android:layout_marginTop="@dimen/ddv" android:text="登录/注册" />
+</LinearLayout>

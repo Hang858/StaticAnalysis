@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_title" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/g3h" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="10.0dip" android:layout_toEndOf="@id/tv_title">
+            <TextView android:textSize="12.0sp" android:textColor="#99ffffff" android:id="@id/hhx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="默认" />
+            <View android:id="@id/c4f" android:background="#4dd8d8d8" android:layout_width="0.5dip" android:layout_height="9.0dip" android:layout_marginStart="7.0dip" android:layout_marginEnd="7.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/fd7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="4.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="#99ffffff" android:id="@id/baat" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="4.0dip" />
+            <ImageView android:id="@id/iv_celebrity_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="22.0dip" android:src="@drawable/nyb" android:paddingStart="2.0dip" android:paddingEnd="10.0dip" />
+        </LinearLayout>
+        <ImageView android:id="@id/irrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/shi" android:tint="#b3ffffff" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0sp" android:textColor="#b3ffffff" android:id="@id/ts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.5dip" android:includeFontPadding="false" android:layout_toLeftOf="@id/irrow" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/recyclerview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rl_title" />
+    <include android:id="@id/divider" android:layout_width="fill_parent" android:layout_height="8.0dip" android:layout_below="@id/recyclerview" layout="@layout/vtb" />
+</merge>

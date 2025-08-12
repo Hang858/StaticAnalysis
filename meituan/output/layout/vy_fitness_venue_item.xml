@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/vy_shape_8px_bold_corner_light_gray_bg" android:padding="@dimen/vy_standard_margin" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/vy_black1_to_black3" android:ellipsize="end" android:id="@id/item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" />
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/vy_black3" android:ellipsize="end" android:id="@id/item_title_desc" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxLines="1" android:singleLine="true" />
+    <TextView android:textSize="@dimen/vy_text_size_13" android:textColor="@color/vy_theme_new_color_to_black3" android:ellipsize="end" android:id="@id/item_tags" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/vy_standard_margin" android:maxLines="1" android:singleLine="true" android:drawableRight="@drawable/vy_fitness_venue_book_tag_icon_bg" android:drawablePadding="3.0dip" />
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.feed.widget.FeedPoiView android:orientation="horizontal" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="88.0dip" dp:photo_placeholderEmpty="?imageview_placeholderEmpty" dp:photo_placeholderError="?imageview_placeholderError" dp:photo_placeholderLoading="?imageview_placeholderLoading"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.feed.widget.FeedCornerFrameLayout android:layout_gravity="center_vertical" android:layout_width="58.0dip" android:layout_height="58.0dip" dp:cardCornerRadius="3.0dip">
+        <com.dianping.imagemanager.DPNetworkImageView android:id="@id/picture" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" dp:placeholderEmpty="?imageview_placeholderEmpty" dp:placeholderError="?imageview_placeholderError" dp:placeholderLoading="?imageview_placeholderLoading" dp:placeholderScaleType="centerCrop" />
+        <com.dianping.imagemanager.DPNetworkImageView android:id="@id/black_pearl_icon" android:layout_width="43.0dip" android:layout_height="18.0dip" android:scaleType="fitStart" />
+    </com.dianping.feed.widget.FeedCornerFrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="12.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/b_7" android:ellipsize="end" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.5dip">
+            <com.dianping.feed.widget.FeedGradientRatingBar android:layout_gravity="center_vertical" android:id="@id/star" android:layout_width="68.0dip" android:layout_height="12.0dip" android:layout_marginRight="6.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/ert" android:ellipsize="end" android:id="@id/rlz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:maxLines="1" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/ert" android:ellipsize="end" android:id="@id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.5dip">
+            <TextView android:textSize="12.0sp" android:textColor="@color/ert" android:ellipsize="end" android:id="@id/region" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/ert" android:ellipsize="end" android:id="@id/distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:maxLines="1" />
+        </LinearLayout>
+    </LinearLayout>
+</com.dianping.feed.widget.FeedPoiView>

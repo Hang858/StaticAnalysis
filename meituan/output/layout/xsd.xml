@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/u90" android:background="#ffffffff" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/u6g" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff333333" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="相关快讯" android:layout_weight="1.0" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff666666" android:id="@id/wcv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全部" android:drawableRight="@drawable/ttu" android:drawablePadding="4.0dip" />
+    </LinearLayout>
+    <View style="@style/maoyan_medium_line_one_px" />
+    <com.maoyan.android.common.view.IcsLinearLayout android:orientation="vertical" android:id="@id/hdl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:showDividers="none" />
+</LinearLayout>

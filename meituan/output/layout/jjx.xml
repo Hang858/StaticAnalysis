@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/vxz" android:background="@drawable/tta" android:layout_width="wrap_content" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/jo1" android:background="@drawable/cuk" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" />
+    <TextView android:textSize="12.0dip" android:textColor="#ff000000" android:gravity="center" android:id="@id/z4p" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginTop="11.5dip" android:layout_marginRight="9.0dip" android:text="正在加载" />
+    <ImageView android:id="@id/vc8" android:background="@drawable/hr7" android:layout_width="9.0dip" android:layout_height="9.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="12.0dip" />
+</LinearLayout>

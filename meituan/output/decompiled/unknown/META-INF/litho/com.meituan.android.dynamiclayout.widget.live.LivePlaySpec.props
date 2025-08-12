@@ -1,0 +1,15 @@
+node
+layoutController
+imageLoader
+liveUrl
+liveId
+liveBiz
+mute
+display
+coverUrl
+fadeAnim
+animDuration
+successAction
+endAction
+failAction
+defaultImageUrl

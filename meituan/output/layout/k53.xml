@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/m8w" android:id="@id/tv_search_sort_filter_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="@dimen/bbrs" />
+    <FrameLayout android:id="@id/uy5" android:visibility="gone" android:layout_width="13.0dip" android:layout_height="13.5dip" android:layout_marginLeft="@dimen/bbrs">
+        <View android:layout_gravity="bottom" android:background="@drawable/vvp" android:layout_width="@dimen/n_x" android:layout_height="@dimen/n_x" />
+        <TextView android:textSize="@dimen/hwz" android:textColor="@color/eq" android:gravity="center" android:id="@id/bf2" android:layout_width="@dimen/n_x" android:layout_height="@dimen/n_x" />
+    </FrameLayout>
+</merge>

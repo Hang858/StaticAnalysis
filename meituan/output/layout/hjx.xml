@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center" android:layout_width="295.0dip" android:layout_height="419.0dip">
+        <android.support.v7.widget.AppCompatImageView android:id="@id/background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/s9f" android:scaleType="fitXY" />
+        <android.support.v7.widget.AppCompatImageView android:layout_gravity="end|center|top" android:id="@id/close_button" android:layout_width="29.0dip" android:layout_height="29.0dip" android:layout_marginTop="8.0dip" android:src="@drawable/pt5" android:layout_marginEnd="8.0dip" />
+        <com.meituan.android.common.ui.widget.RoundFrameLayout android:layout_gravity="center_horizontal" android:id="@id/nj3" android:layout_width="51.0dip" android:layout_height="51.0dip" android:layout_marginTop="18.0dip">
+            <android.support.v7.widget.AppCompatImageView android:id="@id/user_avatar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/j3h" android:scaleType="centerCrop" />
+        </com.meituan.android.common.ui.widget.RoundFrameLayout>
+        <android.support.v7.widget.AppCompatTextView android:textSize="15.0sp" android:textColor="#ffffedd1" android:layout_gravity="center_horizontal" android:id="@id/user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="74.0dip" />
+        <android.support.v7.widget.AppCompatTextView android:textSize="28.0sp" android:textStyle="bold" android:textColor="#ffffedd1" android:ellipsize="end" android:gravity="center" android:layout_gravity="center|top" android:id="@id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="113.0dip" android:maxWidth="255.0dip" android:maxHeight="99.0dip" android:maxLines="2" />
+        <android.support.v7.widget.AppCompatImageView android:layout_gravity="bottom|center" android:id="@id/open_button" android:layout_width="129.0dip" android:layout_height="129.0dip" android:layout_marginBottom="44.0dip" android:src="@drawable/mb3" />
+        <LinearLayout android:layout_gravity="bottom|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip">
+            <android.support.v7.widget.AppCompatImageView android:id="@id/bottom_icon" android:layout_width="21.0dip" android:layout_height="21.0dip" android:layout_marginTop="2.0dip" android:src="@drawable/uko" />
+            <android.support.v7.widget.AppCompatTextView android:textSize="15.0sp" android:textColor="#ffffc3b6" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/qdy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="2.0dip" />
+        </LinearLayout>
+    </FrameLayout>
+    <android.support.v7.widget.AppCompatTextView android:textSize="15.0sp" android:textColor="#80ffffff" android:layout_gravity="center" android:id="@id/ff1" android:layout_width="wrap_content" android:layout_height="21.0dip" android:layout_marginTop="230.0dip" />
+    <android.support.v7.widget.AppCompatTextView android:textSize="15.0sp" android:textColor="#80ffffff" android:layout_gravity="bottom|center" android:id="@id/fc1" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_marginBottom="37.0dip" android:drawablePadding="4.0dip" />
+</FrameLayout>

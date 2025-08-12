@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/roombookheader" layout="@layout/vy_backroom_shop_book_header" />
+    <include android:id="@id/backing_card" android:layout_width="fill_parent" android:layout_height="38.0dip" layout="@layout/vy_backkroom_booktable_card" />
+    <View android:background="@color/vy_line_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.dianping.voyager.joy.backroom.widget.ecogallery.EcoGallery android:id="@id/images_ecogallery" android:paddingTop="10.0dip" android:paddingBottom="13.0dip" android:saveEnabled="false" android:layout_width="fill_parent" android:layout_height="130.0dip" app:movieAnimationDuration="260" app:movieGravity="80" app:movieSpacing="7.0dip" app:movieUnselectedAlpha="1.0" app:movieUserZoomAnimation="true" />
+        <View android:layout_gravity="center_horizontal" android:id="@id/gallery_arrow" android:background="@drawable/vy_backroom_up_triangle" android:layout_width="18.0dip" android:layout_height="9.0dip" android:layout_marginTop="-9.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/detail" android:background="@color/vy_white" android:paddingLeft="@dimen/vy_shop_margin" android:paddingTop="15.0dip" android:paddingRight="@dimen/vy_shop_margin" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="@dimen/vy_text_size_16" android:textColor="@color/vy_black1" android:ellipsize="end" android:id="@id/detail_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" />
+                        </FrameLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@id/layout_pin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+                            <TextView android:textSize="@dimen/vy_text_size_12" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="拼场规则" android:singleLine="true" />
+                            <View android:background="@drawable/vy_icon_ing" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="4.0dip" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+                <TextView android:textSize="@dimen/vy_text_size_12" android:textColor="#ff999999" android:id="@id/text_book_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="2198人订过" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/vy_text_size_12" android:textColor="@color/vy_black2" android:ellipsize="end" android:gravity="bottom" android:id="@id/detail_difficulty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="难度" android:maxLines="1" android:singleLine="true" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/difficulty_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" />
+                <TextView android:textSize="@dimen/vy_text_size_11" android:textColor="@color/vy_black3" android:id="@id/detail_sugestion_first" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="" android:maxLines="1" android:singleLine="true" />
+                <TextView android:textSize="@dimen/vy_text_size_11" android:textColor="@color/vy_black3" android:id="@id/detail_sugestion_second" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxLines="1" android:singleLine="true" />
+                <TextView android:textSize="@dimen/vy_text_size_11" android:textColor="@color/vy_black3" android:id="@id/detail_sugestion_third" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxLines="1" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/vy_text_size_11" android:textColor="#ffff6633" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/rank_detail" android:background="@drawable/vy_joy_backroom_rank_item" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="18.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="5.0dip" android:text="" android:maxLines="1" />
+                <com.dianping.voyager.widgets.FlowLayout android:id="@id/layout_tags" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:layout_gravity="center_vertical" android:id="@id/indicator" android:background="@drawable/shop_right_arrow" android:layout_width="10.0dip" android:layout_height="10.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/pin_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/vy_line_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/vy_backroom_pin_bgColor" android:padding="@dimen/vy_standard_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/vy_text_size_10" android:textColor="@color/vy_bath_shop_tag_color" android:id="@id/pin_title" android:background="@drawable/vy_shape_2dp_corner_pin_color_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/pin_content_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <ImageView android:id="@id/arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:src="@drawable/shop_right_arrow" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

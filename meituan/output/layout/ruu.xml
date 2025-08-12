@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:id="@id/layout_info" android:background="@color/ii3" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/w_g" />
+    <ViewStub android:id="@id/ih9" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

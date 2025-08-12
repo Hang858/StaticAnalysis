@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/rl_bottom_container" android:background="@drawable/qcsc_bg_im_add_common_word" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/qcsc_add_commonword_000000" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:layout_marginBottom="12.0dip" android:text="@string/qcsc_im_addCommonWord" />
+        <FrameLayout android:orientation="vertical" android:background="@drawable/qcsc_im_addcommonword_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+            <EditText android:textSize="14.0sp" android:gravity="top" android:id="@id/et_content" android:background="@null" android:padding="9.0dip" android:layout_width="fill_parent" android:layout_height="78.0dip" android:hint="@string/qcsc_im_addCommonWord_hint" android:maxLength="20" android:textCursorDrawable="@drawable/qcsc_im_add_common_word_cursor" />
+            <TextView android:textSize="12.0sp" android:layout_gravity="bottom|center|right" android:id="@id/tv_number" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9.0dip" android:layout_marginBottom="9.0dip" android:hint="0/20" />
+        </FrameLayout>
+        <View android:background="@color/qcsc_add_commonword_F0000000" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="18.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="17.0sp" android:textColor="@color/qcsc_add_commonword_80000000" android:gravity="center" android:id="@id/tv_cancel" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/qcsc_im_addCommonWord_cancel" android:layout_weight="1.0" />
+            <View android:background="@color/qcsc_add_commonword_F0000000" android:layout_width="0.5dip" android:layout_height="48.0dip" />
+            <TextView android:textSize="17.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/tv_ok" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/qcsc_im_addCommonWord_add" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

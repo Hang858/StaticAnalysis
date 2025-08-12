@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="bottom|center" android:id="@id/nur" android:background="@drawable/xcq" android:layout_width="wrap_content" android:layout_height="24.0dip" />
+    <View android:layout_gravity="bottom|center" android:id="@id/zsa" android:layout_width="wrap_content" android:layout_height="24.0dip" />
+    <com.sankuai.waimai.store.view.banner.roundview.UniversalImageView android:layout_gravity="bottom" android:id="@id/qg9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:scaleType="centerCrop" />
+</FrameLayout>

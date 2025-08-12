@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.meituan.android.generalcategories.view.BasicSingleItem android:id="@id/phone" dp:item_subTitleColor="@color/gc_tuan_color_black" dp:item_subTitleSize="@dimen/gc_text_size_15" dp:item_titleColor="@color/gc_text_color_black2" dp:item_titleSize="@dimen/gc_text_size_15" style="@style/GCCreateOrderItem" />
+</LinearLayout>

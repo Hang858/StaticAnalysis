@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/vy_white" android:paddingLeft="@dimen/vy_standard_padding" android:paddingTop="@dimen/vy_standard_padding" android:paddingRight="15.0dip" android:paddingBottom="@dimen/vy_standard_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/bonusexposure_icon" android:layout_width="@dimen/vy_shopinfo_icon_size" android:layout_height="@dimen/vy_shopinfo_icon_size" android:src="@drawable/vy_bouns_icon" />
+    <TextView android:textSize="@dimen/vy_shopinfo_title_size" android:textColor="@color/vy_black1" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/bonusexposure_summary" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" android:drawableRight="@drawable/vy_arrow_right" android:layout_weight="1.0" />
+</LinearLayout>

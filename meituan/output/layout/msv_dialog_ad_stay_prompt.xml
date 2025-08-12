@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/fak" android:background="#cc000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_container" android:background="@drawable/msv_bg_msv_stay_prompt_dialog" android:paddingLeft="29.0dip" android:paddingTop="16.0dip" android:paddingRight="29.0dip" android:paddingBottom="12.0dip" android:layout_width="290.0dip" android:layout_height="wrap_content" android:elevation="8.0dip">
+        <TextView android:textSize="16.0dip" android:textColor="#ff1a1a1a" android:id="@id/tv_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" />
+        <ImageView android:id="@id/iv_middle" android:layout_width="180.0dip" android:layout_height="90.0dip" android:layout_marginBottom="6.0dip" />
+        <TextView android:textSize="16.0dip" android:textColor="#ff1a1a1a" android:id="@id/pgs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" />
+        <Button android:textSize="16.0dip" android:textColor="#ffffffff" android:id="@id/positiveButton" android:background="@drawable/msv_bg_ad_stay_promp_btn" android:layout_width="232.0dip" android:layout_height="40.0dip" android:text="继续观看" android:stateListAnimator="@null" />
+        <Button android:textSize="12.0dip" android:textColor="#99000000" android:id="@id/negativeButton" android:background="@color/transparent" android:layout_width="232.0dip" android:layout_height="17.0dip" android:layout_marginTop="12.0dip" android:text="放弃领取" />
+    </LinearLayout>
+</LinearLayout>

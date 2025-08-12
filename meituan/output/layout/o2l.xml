@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:background="@color/y0y" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.Guideline android:orientation="horizontal" android:id="@id/ui6" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_begin="0.0dip" app:layout_constraintGuide_end="0.0dip" />
+    <ImageView android:id="@id/zen" android:layout_width="40.0dip" android:layout_height="52.0dip" android:contentDescription="@string/wts" android:layout_marginEnd="25.0dip" app:layout_constraintBottom_toBottomOf="@id/xue" app:layout_constraintEnd_toEndOf="parent" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/e59" android:gravity="center" android:id="@id/l73" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="5" app:layout_constraintTop_toBottomOf="@id/ui6" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/e59" android:gravity="center" android:id="@id/xue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/bacg" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/l73" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/e59" android:gravity="center" android:id="@id/bbbg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" app:layout_constraintTop_toBottomOf="@id/xue" />
+    <View android:layout_width="fill_parent" android:layout_height="40.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/bbbg" />
+</android.support.constraint.ConstraintLayout>

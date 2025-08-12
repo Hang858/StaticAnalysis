@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/cxv" android:background="@color/u_y" android:paddingLeft="16.0dip" android:paddingTop="15.0dip" android:paddingRight="16.0dip" android:paddingBottom="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.view.View android:layout_gravity="center_vertical" android:id="@id/bbjy" android:background="@drawable/qxd" android:layout_width="2.0dip" android:layout_height="16.0dip" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/djh" android:ellipsize="end" android:id="@id/mh3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:lines="1" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <com.meituan.android.common.ui.widget.RoundFrameLayout android:id="@id/hd8" android:background="@color/uq2" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" app:rfl_border="false" app:rfl_radius="19.0dip">
+                <EditText android:textSize="14.0sp" android:textColor="@color/z3l" android:textColorHint="@color/ej2" android:layout_gravity="center_vertical" android:id="@id/bc2j" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="100.0dip" android:hint="@string/o9w" android:maxLength="2000" android:textCursorDrawable="@drawable/m7f" />
+            </com.meituan.android.common.ui.widget.RoundFrameLayout>
+            <com.meituan.android.common.ui.widget.RoundFrameLayout android:layout_gravity="center_vertical" android:id="@id/lxa" android:background="@color/jz6" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:layout_weight="0.0" app:rfl_border="false" app:rfl_radius="15.0dip">
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/ool" android:layout_gravity="center" android:id="@id/zca" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ld5" />
+            </com.meituan.android.common.ui.widget.RoundFrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

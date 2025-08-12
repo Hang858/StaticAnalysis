@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.ptview.view.PTLinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="7.0pt" android:paddingBottom="7.0pt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="11.5pt" android:paddingEnd="11.5pt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sankuai.ptview.view.PTTextView android:textSize="11.519989pt" android:textColor="#e6000000" android:gravity="center_vertical" android:id="@id/t2h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+    <View android:id="@id/divider" android:background="#1f000000" android:layout_width="0.5pt" android:layout_height="9.599976pt" android:layout_marginStart="6.799988pt" android:layout_marginEnd="7.5999756pt" />
+    <com.sankuai.ptview.view.PTTextView android:textSize="11.519989pt" android:textColor="#e6000000" android:gravity="center_vertical" android:id="@id/vrt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+</com.sankuai.ptview.view.PTLinearLayout>

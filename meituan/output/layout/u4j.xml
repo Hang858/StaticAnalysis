@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.ptview.view.PTTextView android:textSize="11.519989pt" android:textColor="#80000000" android:gravity="center" android:id="@id/bagp" android:background="@drawable/gis" android:layout_width="wrap_content" android:layout_height="21.119995pt" android:singleLine="true" android:paddingStart="9.599976pt" android:paddingEnd="9.599976pt"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

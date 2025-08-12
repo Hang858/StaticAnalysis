@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="horizontal" android:background="@color/white" android:paddingBottom="10.0dip" android:clickable="false" android:layout_width="fill_parent" android:layout_height="50.0dip" android:importantForAccessibility="no"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meituan.roodesign.widgets.iconfont.RooIconFont android:textSize="14.0sp" android:textColor="@color/wm_address_text_color_gray" android:layout_gravity="bottom" android:id="@id/img_address_namually_list_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wm_address_margin_left" android:importantForAccessibility="no" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/wm_address_text_color_gray" android:id="@id/txt_address_manually_list_header" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginBottom="2.0dip" android:text="@string/wm_address_manually_history_locations" />
+</LinearLayout>

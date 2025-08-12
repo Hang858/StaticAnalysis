@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:id="@id/vf_sweep_view" android:paddingLeft="3.0dip" android:paddingTop="2.0dip" android:visibility="gone" android:layout_width="53.0dip" android:layout_height="52.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewFlipper android:layout_gravity="center_horizontal" android:id="@id/vf_sweep_view_flipper" android:layout_width="50.0dip" android:layout_height="50.0dip" android:inAnimation="@anim/sweep_light_in" android:flipInterval="2000" android:autoStart="true">
+        <ImageView android:id="@id/vf_sweep_view_child" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+    </ViewFlipper>
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:biz="http://schemas.android.com/apk/res-auto">
+    <com.dianping.bizcomponent.widgets.container.headview.viewpager.BizHeaderViewPager android:id="@id/o4a" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/z7d" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/largephoto_close" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="6.0dip" android:src="@drawable/e01" />
+        <TextView android:textSize="15.0sp" android:textColor="#ffff6633" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/iik" android:padding="10.0dip" android:paddingRight="12.0dip" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="6.0dip" android:maxLines="1" />
+        <TextView android:textSize="15.0sp" android:textColor="#ffff6633" android:gravity="center" android:layout_gravity="right" android:id="@id/iko" android:padding="10.0dip" android:visibility="invisible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="5.0dip" android:text="加载更多" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom|center|right" android:id="@id/h5g" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.dianping.bizcomponent.preview.widgets.BizNavigationDot android:layout_gravity="bottom|center" android:id="@id/zfn" android:background="@color/uh1" android:paddingTop="8.0dip" android:paddingBottom="52.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" biz:biznavigationDotSelected="@drawable/bbvh" biz:biznavigationDotUnselected="@drawable/i0w" />
+    </FrameLayout>
+</merge>

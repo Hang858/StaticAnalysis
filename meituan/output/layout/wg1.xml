@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/baga" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/d1q" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginTop="67.0dip" android:layout_marginBottom="16.0dip" android:src="@drawable/zpz" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/qg6" android:id="@id/y63" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/d1q" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/bai2" android:id="@id/m_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="可重置筛选条件或查看未来场次" android:layout_below="@id/y63" android:layout_centerHorizontal="true" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/show_state_layout_text" android:background="@drawable/movie_shape_stroke_corner_27" android:layout_width="wrap_content" android:layout_height="42.0dip" android:layout_marginTop="12.0dip" android:minWidth="182.0dip" android:layout_below="@id/m_8" android:layout_centerHorizontal="true">
+            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/mg0" android:gravity="center" android:id="@id/z98" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="重置筛选" android:maxLines="1" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/qg6" android:gravity="center" android:id="@id/count_down_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:maxLines="1" />
+        </LinearLayout>
+        <TextView android:textSize="13.0sp" android:textColor="#ff4e759e" android:id="@id/lt_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_below="@id/show_state_layout_text" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <TextView android:textSize="15.0sp" android:textColor="@color/qg6" android:gravity="center_horizontal" android:id="@id/uwl" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" />
+</LinearLayout>

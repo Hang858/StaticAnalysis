@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/kaz" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="wrap_content" android:contentDescription="消息"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/message_center_home_icon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:scaleType="fitCenter" />
+    <TextView android:textSize="8.0sp" android:textColor="@color/ihf" android:gravity="center" android:id="@id/dud" android:background="@drawable/tda" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <ImageView android:id="@id/message_center_home_bubble" android:visibility="gone" android:layout_width="5.0dip" android:layout_height="5.0dip" android:layout_marginRight="2.0dip" android:src="@drawable/pfs" android:layout_alignParentRight="true" />
+</RelativeLayout>

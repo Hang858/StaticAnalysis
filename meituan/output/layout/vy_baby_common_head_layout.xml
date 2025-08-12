@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/head_layout" android:background="@drawable/vy_table_view_item" android:paddingRight="@dimen/vy_standard_margin" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/vy_standard_common_height" android:layout_centerVertical="true">
+        <ImageView android:id="@id/iv_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/vy_standard_margin" android:scaleType="centerCrop" android:minWidth="17.0dip" android:minHeight="17.0dip" />
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="#ff333333" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:id="@id/sub_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="#ff999999" android:id="@id/more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" />
+        <ImageView android:id="@id/arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/vy_arrow_right_gray" />
+    </LinearLayout>
+    <View android:id="@id/divider_line" android:background="@color/vy_line_gray" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+</RelativeLayout>

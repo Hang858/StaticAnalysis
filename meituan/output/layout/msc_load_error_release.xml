@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/msc_load_failed_logo" android:layout_width="180.0dip" android:layout_height="135.0dip" android:layout_marginTop="170.0dip" android:src="@drawable/pic_empty_state_no_network_v2" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/msc_exception_title" android:id="@id/msc_load_failed_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msc_load_failed_title" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/msc_exception_desc" android:gravity="center" android:id="@id/msc_load_failed_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="12.0dip" android:text="@string/msc_load_failed_subtitle" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/load_fail_btn_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="17.0dip">
+        <Button android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ff191919" android:id="@id/load_fail_retry_button" android:background="@drawable/msc_retry_buttonshape" android:layout_width="wrap_content" android:layout_height="32.0dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:text="@string/msc_load_failed_retry" />
+        <Button android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ff191919" android:id="@id/load_fail_close_button" android:background="@drawable/msc_retry_buttonshape" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="32.0dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:text="@string/msc_load_failed_close" />
+    </LinearLayout>
+</LinearLayout>

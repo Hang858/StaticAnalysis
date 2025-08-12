@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/zyp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="bottom" android:id="@id/fl_bg_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/tr0" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/ba60" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.sankuai.waimai.business.page.home.widget.secondfloor.view.NewSecondFloorBackHomeLayout android:layout_gravity="bottom" android:id="@id/j2d" android:background="@drawable/ho0" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginLeft="-1.0dip" android:layout_marginRight="-1.0dip" android:layout_marginBottom="-1.0dip">
+            <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="#ff575859" android:id="@id/bbbo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="回首页" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                <com.meituan.roodesign.widgets.iconfont.RooIconFont android:textSize="20.0dip" android:textColor="#33575859" android:gravity="center" android:id="@id/tog" android:layout_width="23.0dip" android:layout_height="23.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="2.0dip" android:text="@string/xpi" android:layout_centerVertical="true" />
+                <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="#ffbcbcbd" android:id="@id/ihs" android:text="@string/bau6" android:lines="1" android:layout_toRightOf="@id/tog" android:layout_centerVertical="true" style="@style/WmText" />
+                <com.meituan.roodesign.resfetcher.widgets.RooImageView android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="16.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:project="waimai_c" app:srcName="waimai_c_second_floor_message_icon" />
+            </RelativeLayout>
+        </com.sankuai.waimai.business.page.home.widget.secondfloor.view.NewSecondFloorBackHomeLayout>
+    </FrameLayout>
+</FrameLayout>

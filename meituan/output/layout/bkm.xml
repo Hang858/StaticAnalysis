@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meituan.android.travel.widgets.RadarSearchView android:layout_gravity="center" android:id="@id/nw9" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:layout_gravity="center" android:id="@id/ywj" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+    <ImageView android:layout_gravity="center" android:id="@id/user_icon" android:padding="2.0dip" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/r91" android:scaleType="centerCrop" />
+</FrameLayout>

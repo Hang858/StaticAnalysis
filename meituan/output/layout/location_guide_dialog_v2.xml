@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="300.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/bms" android:background="@drawable/ooo" android:layout_width="300.0dip" android:layout_height="wrap_content" android:minHeight="150.0dip">
+        <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="#e0000000" android:ellipsize="end" android:id="@id/locate_guide_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:maxWidth="230.0dip" android:maxLines="1" />
+        <TextView android:textSize="14.0dip" android:textColor="#e0000000" android:ellipsize="end" android:gravity="center" android:id="@id/locate_guide_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.5dip" android:layout_marginBottom="22.0dip" android:maxWidth="268.79688dip" android:maxLines="2" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip">
+            <TextView android:textSize="15.0dip" android:textColor="#ff1f1f1f" android:id="@id/locate_guide_cancel_btn" android:background="@drawable/locate_guide_cancel_btn_v2" android:layout_width="130.0dip" android:layout_height="40.0dip" android:maxLines="1" style="@style/Widget.AppCompat.Button.Borderless" />
+            <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="#ff1f1f1f" android:id="@id/locate_guide_confirm_btn" android:background="@drawable/locate_guide_primary_btn_v2" android:layout_width="130.0dip" android:layout_height="40.0dip" android:layout_marginLeft="7.6799927dip" android:maxLines="1" style="@style/Widget.AppCompat.Button.Borderless" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="center|right|top" android:id="@id/locate_guide_close_btn" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/vpn" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="9.0dip" android:src="@drawable/ew1" android:scaleType="fitCenter" android:contentDescription="@string/close" />
+    </FrameLayout>
+</FrameLayout>

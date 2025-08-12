@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sankuai.ptview.view.PTImageView android:layout_gravity="center_horizontal" android:id="@id/cate_img" android:layout_width="63.399994pt" android:layout_height="46.099976pt" android:scaleType="centerInside" />
+    <com.sankuai.ptview.view.PTTextView android:textSize="10.559998pt" android:textColor="#e6000000" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/l5l" android:layout_width="fill_parent" android:layout_height="16.319977pt" android:layout_marginTop="46.099976pt" android:maxLines="1" android:includeFontPadding="false" />
+    <com.sankuai.ptview.view.PTTextView android:textSize="9.599976pt" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:id="@id/cate_badge_text" android:background="@drawable/half_cate_badge_bg" android:paddingLeft="4.5pt" android:paddingRight="4.5pt" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="15.359985pt" android:layout_marginTop="3.8399963pt" android:maxLines="1" android:includeFontPadding="false" />
+</merge>

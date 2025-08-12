@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textColor="@color/ba4e" android:id="@id/title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/indicator" android:layout_width="0.0dip" android:layout_height="3.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="3.0dip" android:src="@drawable/cy_" app:layout_constraintLeft_toLeftOf="@id/title_tv" app:layout_constraintRight_toRightOf="@id/title_tv" app:layout_constraintTop_toBottomOf="@id/title_tv" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/vy_white" android:paddingLeft="@dimen/vy_standard_margin" android:paddingTop="10.0dip" android:paddingRight="@dimen/vy_standard_margin" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.imagemanager.DPNetworkImageView android:id="@id/header_image" android:layout_width="60.0dip" android:layout_height="45.0dip" android:layout_marginRight="10.0dip" android:scaleType="fitXY" dp:placeholderEmpty="@drawable/vy_placeholder_empty" dp:placeholderError="@drawable/vy_placeholder_empty" dp:placeholderLoading="@drawable/vy_placeholder_loading" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="45.0dip" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/vy_text_size_15" android:textColor="@color/vy_black1" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" />
+        <View android:layout_width="1.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/vy_text_size_12" android:textColor="@color/vy_black3" android:ellipsize="end" android:id="@id/title_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/vy_text_size_19" android:textColor="@color/vy_bath_theme_color" android:ellipsize="end" android:id="@id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxLines="1" android:singleLine="true" />
+    <ImageView android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/tuan_shop_book_arrow" />
+</LinearLayout>

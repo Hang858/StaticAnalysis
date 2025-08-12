@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaRelativeLayout android:gravity="center" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.imagemanager.DPNetworkImageView android:id="@id/image_gallery_pic" android:layout_width="108.0dip" android:layout_height="81.0dip" android:scaleType="centerCrop" android:layout_centerInParent="true" dp:placeholderEmpty="@drawable/deallist_default_image" dp:placeholderError="@drawable/placeholder_error" dp:placeholderLoading="@drawable/deallist_default_image" />
+    <ImageView android:id="@id/image_gallery_video" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gcbase_video_play_ic" android:layout_centerInParent="true" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/image_gallery_more" android:background="#30000000" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:alpha="30.0">
+        <ImageView android:id="@id/more_img" android:background="@drawable/gcbase_icon_photo_white" android:layout_width="27.0dip" android:layout_height="24.0dip" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+        <TextView android:textSize="@dimen/gcbase_text_medium" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看更多" android:layout_below="@id/more_img" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</com.dianping.widget.view.NovaRelativeLayout>

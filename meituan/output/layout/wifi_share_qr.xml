@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="#ff191919" android:id="@id/textViewHeader" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="面对面分享WiFi" />
+    <ImageView android:id="@id/imageViewQRCode" android:background="@drawable/wifi_share_qr_background" android:padding="2.0dip" android:layout_width="110.0dip" android:layout_height="110.0dip" android:layout_marginTop="13.5dip" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff191919" android:id="@id/textViewFooter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="美团扫码连接WiFi" />
+</LinearLayout>

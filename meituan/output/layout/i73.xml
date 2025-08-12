@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.widget.Space android:layout_width="@dimen/ee0" android:layout_height="@dimen/dhu" />
+    <com.meituan.android.widget.ShadowLayout android:layout_gravity="center" android:id="@id/ua5" android:layout_width="@dimen/yt6" android:layout_height="@dimen/r4x" app:shadowColor="@color/k9x" app:shadowRadius="@dimen/ii0" app:shadowRx="@dimen/ii0" app:shadowRy="@dimen/ii0" app:shadowShape="rectangle" app:shadowSide="all">
+        <com.meituan.android.common.ui.widget.RoundFrameLayout android:layout_width="@dimen/sjg" android:layout_height="@dimen/x3n" app:rfl_border="false" app:rfl_radius="8.0dip">
+            <android.support.v7.widget.RecyclerView android:id="@id/rv_fv_cover" android:background="@drawable/t0b" android:layout_width="@dimen/sjg" android:layout_height="@dimen/x3n" />
+            <FrameLayout android:layout_gravity="bottom" android:id="@id/fl_entertainment" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="24.0dip">
+                <ImageView android:id="@id/iv_entertainment" android:background="@color/dcc" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+                <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ff191919" android:layout_gravity="bottom|center" android:id="@id/tv_entertainment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:lines="1" />
+            </FrameLayout>
+            <ImageView android:layout_gravity="bottom|center|right" android:id="@id/r17" android:layout_width="36.0dip" android:layout_height="36.0dip" />
+            <ImageView android:layout_gravity="right" android:id="@id/lhe" android:background="@drawable/ngm" android:padding="3.0dip" android:visibility="gone" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="4.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="4.0dip" android:src="@drawable/ccy" android:scaleType="centerInside" />
+            <com.meituan.android.novel.library.globalfv.floatv.view.CoverIndicatorLayout android:layout_gravity="bottom|center" android:id="@id/ll_cover_indicator" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ImageView android:layout_gravity="center" android:id="@id/iv_fv_mask_Layer" android:visibility="gone" android:layout_width="@dimen/sjg" android:layout_height="@dimen/x3n" android:scaleType="fitCenter" />
+            <FrameLayout android:id="@id/qs0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0">
+                <ImageView android:layout_gravity="center" android:id="@id/u94" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+                <android.view.View android:background="@drawable/lk6" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <ImageView android:layout_gravity="right" android:id="@id/xie" android:layout_width="@dimen/hmi" android:layout_height="fill_parent" android:src="@drawable/gi5" android:scaleType="centerInside" />
+            </FrameLayout>
+        </com.meituan.android.common.ui.widget.RoundFrameLayout>
+    </com.meituan.android.widget.ShadowLayout>
+    <TextView android:textSize="10.0sp" android:textColor="@color/gnc" android:gravity="center" android:layout_gravity="right" android:id="@id/bdf" android:background="@drawable/f_a" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="14.0dip" android:layout_marginLeft="@dimen/jep" android:layout_marginTop="8.0dip" android:layout_marginRight="@dimen/jep" android:minWidth="14.0dip" android:lines="1" />
+    <ImageView android:layout_gravity="left" android:id="@id/pbd" android:visibility="gone" android:layout_width="@dimen/hmi" android:layout_height="@dimen/hmi" android:src="@drawable/vgm" />
+    <ImageView android:layout_gravity="right" android:id="@id/g2v" android:visibility="gone" android:layout_width="@dimen/hmi" android:layout_height="@dimen/hmi" android:src="@drawable/vgm" />
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/zkc" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/bcot" android:background="@color/gho" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="0.0" />
+    <View android:id="@id/sbb" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="0.0" />
+</FrameLayout>

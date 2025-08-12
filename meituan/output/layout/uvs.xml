@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/xxu" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:id="@id/v43" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <FrameLayout android:id="@id/fragment_container" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <com.meituan.android.qtitans.container.ui.loading.QtitansLoadingView android:id="@id/kep" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="18.0sp" android:textColor="#ff32b9aa" android:layout_gravity="start" android:id="@id/bb1b" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="200.0dip" />
+</FrameLayout>

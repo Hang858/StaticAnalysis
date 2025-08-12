@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/layout_local_share_view_layout_stub" android:visibility="invisible" android:layout="@layout/r3q" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/bus" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:layout_gravity="bottom|center|left" android:id="@id/u5e" android:layout="@layout/baq7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="200.0dip" />
+    <FrameLayout android:id="@id/bc0e" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/uxj" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/b2" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/w_g" />
+</FrameLayout>

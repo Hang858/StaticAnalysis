@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/lmj" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="165.0dip" android:layout_height="174.0dip" android:layout_marginTop="100.0dip" android:src="@drawable/fap" />
+    <TextView android:textSize="14.0sp" android:textColor="#7d000000" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="抱歉，数据获取失败" />
+    <TextView android:textSize="13.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/kxr" android:background="@drawable/k9o" android:layout_width="76.0dip" android:layout_height="31.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="250.0dip" android:text="刷新获取" />
+</LinearLayout>

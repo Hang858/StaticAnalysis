@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ib7" android:background="@drawable/k8u" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/topLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/ohj" android:id="@id/lm4" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/bai2" android:ellipsize="end" android:id="@id/r96" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:drawablePadding="6.0dip" android:layout_alignBaseline="@id/lm4" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <com.meituan.android.movie.tradebase.home.view.AutoAlignTopNestRecyclerView android:orientation="horizontal" android:id="@id/contentLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="12.0dip" android:layout_below="@id/topLayout" app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+</RelativeLayout>

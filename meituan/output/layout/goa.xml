@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/cfk" android:padding="2.0dip" android:layout_width="@dimen/l9r" android:layout_height="@dimen/l9r" android:layout_marginTop="4.0dip" android:src="@drawable/r6q" android:scaleType="fitXY" />
+    <TextView android:textSize="9.0sp" android:textColor="@color/jpg" android:gravity="center" android:layout_gravity="right" android:id="@id/edi" android:background="@drawable/wm_st_poi_order_prompt_count" android:visibility="gone" android:minWidth="@dimen/n_x" android:minHeight="@dimen/n_x" style="@style/WmStStoreText" />
+</FrameLayout>

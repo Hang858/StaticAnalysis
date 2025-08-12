@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meituan.android.house.view.HouseShopCommonCell android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.widget.view.NovaLinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/title_layout" android:background="@drawable/tju" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" android:scaleType="centerCrop" android:minWidth="17.0dip" android:minHeight="17.0dip" android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/w_a" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/title" android:paddingRight="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" android:layout_centerVertical="true" />
+        <com.dianping.widget.view.NovaTextView android:textSize="14.0sp" android:textColor="@color/light_gray" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/srg" android:drawablePadding="6.0dip" />
+    </com.dianping.widget.view.NovaLinearLayout>
+</com.meituan.android.house.view.HouseShopCommonCell>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/all_category_container" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.ConstraintLayout android:id="@id/all_category_bar" android:layout_width="fill_parent" android:layout_height="51.839996pt">
+        <LinearLayout android:gravity="center" android:id="@id/all_category_back_arrow" android:layout_width="34.549988pt" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <ImageView android:layout_width="23.049988pt" android:layout_height="23.049988pt" android:src="@drawable/all_category_back" />
+        </LinearLayout>
+        <TextView android:textSize="19.199982pt" android:textColor="#ff000000" android:id="@id/all_category_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全部服务" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v7.widget.RecyclerView android:id="@id/all_category_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include android:id="@id/r7e" android:visibility="gone" layout="@layout/cpm" />
+        <ViewStub android:id="@id/cpq" android:layout="@layout/bbbm" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</LinearLayout>

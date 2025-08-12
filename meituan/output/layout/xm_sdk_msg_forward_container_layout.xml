@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="65.0dip" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RadioGroup android:orientation="horizontal" android:id="@id/xm_sdk_btn_forward_container" android:background="#fff8f8f8" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RadioButton android:layout_gravity="bottom" android:id="@id/sdk_sdk_btn_forward_by_one" android:paddingTop="8.0dip" android:text="@string/xm_sdk_msg_forward_by_one" android:drawableTop="@drawable/xm_sdk_msg_forward_by_one_bg" style="@style/xm_sdk_msg_forward_item_style" />
+    </RadioGroup>
+</LinearLayout>

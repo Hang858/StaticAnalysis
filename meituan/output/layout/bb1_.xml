@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="horizontal" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="50.0dip" android:showDividers="beginning"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="12.0sp" android:textColor="@color/bc5r" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/y8_" android:includeFontPadding="false" />
+        <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="@color/bc5r" android:id="@id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:includeFontPadding="false" />
+    </LinearLayout>
+    <View android:background="#ffe9edf0" android:layout_width="1.0px" android:layout_height="fill_parent" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/e7i" android:id="@id/favorite" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/c5r" android:drawableTop="@drawable/w3m" />
+    <View android:background="#ffe9edf0" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/e7i" android:id="@id/share" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/i5d" android:drawableTop="@drawable/gb" />
+    <View android:background="#ffe9edf0" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/e7i" android:id="@id/consultation" android:paddingLeft="15.0dip" android:paddingTop="8.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/bbl4" android:drawableTop="@drawable/gzi" />
+    <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/buy" android:background="@drawable/gt_" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/nlu" />
+</merge>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/title_background_id" android:background="@drawable/gc_white_list_row_selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:baselineAligned="false">
+        <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="18.0sp" android:textColor="@color/gc_deep_gray" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            <TextView android:textSize="9.0sp" android:textColor="@color/white" android:id="@id/chain_cer" android:background="@drawable/vy_shape_1px_corner_eed1a5_bg" android:paddingLeft="5.0dip" android:paddingTop="1.0dip" android:paddingRight="5.0dip" android:paddingBottom="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="-4.0dip" android:text="" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/region_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/gc_text_size_13" android:textColor="@color/gc_soft_gray" android:id="@id/business_region" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginRight="7.0dip" android:text="area" android:singleLine="true" />
+            <TextView android:textSize="@dimen/gc_text_size_13" android:textColor="@color/gc_soft_gray" android:ellipsize="end" android:id="@id/shop_distance" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="style" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/score_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="12.0dip" android:baselineAligned="false">
+        <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <RatingBar android:id="@id/avg_scroe_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:stepSize="0.1" android:isIndicator="true" style="?android:ratingBarStyleSmall" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/gc_light_yellow" android:id="@id/score_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/gc_soft_gray" android:ellipsize="end" android:id="@id/avg_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:maxLines="1" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/shop_extra_tag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/gc_light_yellow" android:layout_gravity="left" android:id="@id/other_merchant_evaluate" android:paddingLeft="12.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

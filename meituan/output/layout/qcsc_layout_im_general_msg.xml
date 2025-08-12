@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="12.0dip" android:paddingTop="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="16.0sp" android:textColor="@color/qcsc_im_general_msg_title" android:ellipsize="end" android:id="@id/tv_msg_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/qcsc_im_general_msg_content" android:id="@id/tv_msg_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="12.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_im_msg_action_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@color/qcsc_border_im_general_msg" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/qcsc_im_genenral_msg_feedback" android:id="@id/tv_im_msg_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_marginBottom="9.0dip" android:drawableRight="@drawable/qcsc_ic_gray_right_arrow_24_unselected" android:drawablePadding="5.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

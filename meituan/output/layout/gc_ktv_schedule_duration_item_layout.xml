@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meituan.android.widget.AutofitTextView android:textSize="13.0sp" android:textColor="@color/gc_ktv_time_range_tag_color" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:background="@drawable/gc_ktv_schedule_duration_item_background" android:layout_width="95.0dip" android:layout_height="29.0dip" android:layout_marginLeft="4.0dip" android:singleLine="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.ptview.view.PTLinearLayout android:orientation="vertical" android:id="@id/bb6" android:layout_width="63.399994pt" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.meituan.android.common.ui.widget.RoundFrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" app:rfl_borderColor="#00000000" app:rfl_radius="5.7599792pt">
+        <com.sankuai.ptview.view.PTImageView android:id="@id/iv_product_img" android:background="#fff6f6f6" android:layout_width="63.399994pt" android:layout_height="63.399994pt" android:scaleType="centerCrop" android:contentDescription="商品图片" />
+    </com.meituan.android.common.ui.widget.RoundFrameLayout>
+    <com.sankuai.ptview.view.PTTextView android:textSize="10.559998pt" android:textColor="#e6000000" android:id="@id/tv_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.6999817pt" android:maxLines="1" />
+    <com.sankuai.ptview.view.PTTextView android:textSize="11.519989pt" android:textStyle="bold" android:textColor="@color/ue8" android:gravity="center_vertical" android:id="@id/tv_price" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="2.2999878pt" android:maxLines="1" android:layout_marginStart="0.0pt" />
+</com.sankuai.ptview.view.PTLinearLayout>

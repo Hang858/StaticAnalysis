@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/hwz" android:textColor="@color/gsl" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/hand_price_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+    <View android:id="@id/gj" android:background="@color/wm_sg_color_F5DAD7" android:layout_width="@dimen/hue" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/yxe" android:layout_marginTop="@dimen/bbj2" android:layout_marginRight="@dimen/yxe" android:layout_marginBottom="@dimen/bbj2" />
+    <TextView android:textSize="@dimen/iz4" android:textStyle="bold" android:textColor="@color/fi2" android:gravity="center" android:id="@id/bck8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥" android:singleLine="true" android:includeFontPadding="false" />
+    <TextView android:textSize="@dimen/bkf" android:textStyle="bold" android:textColor="@color/fi2" android:id="@id/bckm" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/j8y" android:text="¥" android:singleLine="true" android:includeFontPadding="false" />
+    <TextView android:textSize="@dimen/iz4" android:textStyle="bold" android:textColor="@color/gsl" android:gravity="center" android:id="@id/bag1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="26" android:singleLine="true" android:includeFontPadding="false" />
+    <TextView android:textSize="@dimen/hwz" android:textStyle="bold" android:textColor="@color/gsl" android:gravity="center" android:id="@id/hand_price_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+</LinearLayout>

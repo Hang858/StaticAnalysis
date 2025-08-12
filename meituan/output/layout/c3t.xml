@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="简介" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/d1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="6.0dip" android:layout_toEndOf="@id/tv_title">
+            <ImageView android:id="@id/tips_icon" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_marginStart="6.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/uao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="116.0dip" android:minHeight="24.0dip" android:paddingStart="22.0dip" android:layout_marginStart="-22.0dip">
+                <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/c1l" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxEms="18" android:singleLine="true" android:layout_marginStart="5.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/iv_arrow" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginLeft="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0sp" android:textColor="#99ffffff" android:id="@id/ft2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/iv_arrow" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/f49" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="false" />
+    <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:id="@id/nno" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="8.0dip" />
+</merge>

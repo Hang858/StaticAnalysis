@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="@dimen/xcy"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/hlu" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="0.0" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:id="@id/h12" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <android.support.constraint.ConstraintLayout android:layout_gravity="bottom" android:id="@id/th5" android:layout_width="fill_parent" android:layout_height="44.0dip">
+            <FrameLayout android:id="@id/o69" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/wpy" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <TextView android:textSize="@dimen/ps0" android:textStyle="bold" android:textColor="@color/usk" android:ellipsize="end" android:layout_gravity="center" android:id="@id/search_location_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/n83" android:maxLines="1" android:maxLength="6" android:drawableStart="@drawable/oxn" android:drawableEnd="@drawable/x1q" />
+                <ImageView android:layout_gravity="end|center" android:id="@id/w6m" android:visibility="gone" android:layout_width="18.0dip" android:layout_height="@dimen/ps0" android:src="@drawable/baoj" android:layout_marginEnd="@dimen/yxh" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/search_back_button_container" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="@dimen/wpy" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <TextView android:layout_gravity="center" android:id="@id/bc4g" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/w4y" />
+            </FrameLayout>
+            <com.sankuai.waimai.store.view.RoundedCornerLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/fmd" android:background="@android:color/white" android:layout_width="0.0dip" android:layout_height="@dimen/bpi" android:layout_marginRight="@dimen/wpy" app:borderColor="@color/ohb" app:borderWidth="@dimen/lli" app:cornerRadius="@dimen/ddv" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/o69" app:layout_constraintStart_toEndOf="@id/search_back_button_container" app:layout_constraintTop_toTopOf="parent">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wpy" android:layout_marginRight="@dimen/bbrs" android:src="@drawable/bauf" />
+                <HorizontalScrollView android:id="@id/mfm" android:scrollbars="none" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="@dimen/uv2" android:fillViewport="true" android:layout_weight="1.0" android:fadeScrollbars="false" android:overScrollMode="never">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/mhh" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                        <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+                            <EditText android:textSize="@dimen/ps0" android:textColor="@color/wfe" android:textColorHint="#ff999794" android:ellipsize="end" android:gravity="center|left" android:id="@id/ftp" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLines="1" android:inputType="text" android:imeOptions="actionSearch" android:textCursorDrawable="@drawable/l9y" />
+                            <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:id="@id/ccs" android:background="@android:color/white" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+                        </FrameLayout>
+                        <TextView android:textSize="@dimen/iz4" android:textColor="@color/zy2" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/bamt" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLines="1" android:layout_marginStart="4.0dip" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+                <ImageView android:id="@id/eug" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/uv2" android:src="@drawable/d4d" />
+                <FrameLayout android:id="@id/search_button_container" android:paddingLeft="@dimen/bbrs" android:paddingRight="@dimen/bbrs" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.sankuai.waimai.store.view.standardpro.FlashButtonPro android:gravity="center" android:layout_gravity="center" android:id="@id/v7_" android:visibility="visible" android:clickable="false" android:layout_width="@dimen/bbt8" android:layout_height="@dimen/l9r" android:text="@string/d2f" app:flashProSize="h48f28" app:gradientEndColor="@color/rd4" app:gradientStartColor="@color/gy0" />
+                </FrameLayout>
+            </com.sankuai.waimai.store.view.RoundedCornerLinearLayout>
+        </android.support.constraint.ConstraintLayout>
+    </FrameLayout>
+</merge>

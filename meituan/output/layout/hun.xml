@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/yj5" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.meituan.library.base.ParentRecyclerView android:id="@id/content_container" android:background="@color/bgc" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+        <LinearLayout android:id="@id/q0y" android:background="@color/nn0" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                <ImageView android:id="@id/ubn" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="8.0dip" android:src="@drawable/bvq" android:layout_centerVertical="true" />
+                <TextView android:textSize="17.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="44.0dip" android:text="@string/page_title" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <com.meituan.library.view.ui.BottomAbsBannerNoticeView android:id="@id/i1_" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        <com.meituan.library.view.ui.HeaderBannerNoticeView android:id="@id/djr" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.meituan.library.view.ui.IndexBannerNoticeView android:id="@id/rl8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="98.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

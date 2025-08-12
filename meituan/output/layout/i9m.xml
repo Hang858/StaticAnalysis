@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/j8w" android:layout_width="fill_parent" android:layout_height="132.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="6.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center_vertical" android:layout_width="120.0dip" android:layout_height="120.0dip" android:layout_marginLeft="4.0dip">
+        <LinearLayout android:background="@drawable/oa2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.meituan.library.base.RoundImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" app:radius="6.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="10.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/bam" android:background="@drawable/bam" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="17.0dip" android:text="优选" />
+        <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/oog" android:background="@drawable/oog" android:visibility="gone" android:layout_width="52.0dip" android:layout_height="17.0dip" android:layout_marginLeft="32.0dip" android:text="次日自提" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="8.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="新鲜土鸡蛋打的撒大所多阿萨德阿萨决胜巅峰看节后" android:maxLines="1" />
+        <TextView android:textSize="12.0sp" android:textColor="#80000000" android:ellipsize="end" android:id="@id/subtitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="已售5万+件" android:maxLines="1" />
+        <RelativeLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/tag" android:layout_width="48.0dip" android:layout_height="19.0dip" android:layout_marginBottom="2.0dip" android:scaleType="fitXY" android:layout_above="@id/price" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#fff73000" android:id="@id/price_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+            <TextView android:textSize="24.0sp" android:textColor="#fff73000" android:ellipsize="end" android:id="@id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginBottom="-5.0dip" android:maxWidth="60.0dip" android:text="0.01" android:maxLines="1" android:includeFontPadding="false" android:layout_toRightOf="@id/price_tag" android:layout_alignParentBottom="true" />
+            <ImageView android:id="@id/button" android:layout_width="82.0dip" android:layout_height="32.0dip" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            <TextView android:textStyle="bold" android:textColor="#ff000000" android:gravity="center" android:id="@id/lo2" android:background="@drawable/e2b" android:visibility="gone" android:layout_width="82.0dip" android:layout_height="32.0dip" android:text="马上抢" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

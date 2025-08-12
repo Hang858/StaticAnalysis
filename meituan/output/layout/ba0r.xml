@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/gg1" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:divider="@null" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="vertical" android:id="@id/button_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/ynl" android:showDividers="beginning">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="48.5dip" android:divider="@drawable/n7z" android:showDividers="middle">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black1" android:gravity="center" android:id="@id/q0s" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/reset" android:layout_weight="1.0" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/fzl" android:gravity="center" android:id="@id/m8z" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/done" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/paz" android:background="@color/jjn" android:clickable="true" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+</LinearLayout>

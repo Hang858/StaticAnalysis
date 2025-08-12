@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.ptview.view.PTLinearLayout android:id="@id/vnj" android:background="@drawable/ba4x" android:paddingTop="2.8799744pt" android:paddingBottom="12.959991pt" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="68.639984pt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:visibility="gone" layout="@layout/ylw" />
+    <include android:visibility="gone" layout="@layout/ylw" />
+    <include android:visibility="gone" layout="@layout/ylw" />
+    <include android:visibility="gone" layout="@layout/ylw" />
+    <include android:visibility="gone" layout="@layout/ylw" />
+</com.sankuai.ptview.view.PTLinearLayout>

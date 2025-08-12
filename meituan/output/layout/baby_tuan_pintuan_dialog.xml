@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="end" android:id="@id/pintuan_dialog_quit" android:clickable="true" android:layout_width="30.0dip" android:layout_height="30.0dip">
+        <ImageView android:layout_gravity="center|right|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/baby_quit" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/baby_text_size_19" android:textStyle="bold" android:layout_gravity="center_horizontal" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="妈妈团" />
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:src="@drawable/baby_tuan_pintuan_dialog_content" />
+    <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/white" android:gravity="center" android:id="@id/confirm_btn" android:background="@drawable/baby_btn_weight" android:paddingTop="7.0dip" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="10.0dip" android:text="去支付" />
+</LinearLayout>

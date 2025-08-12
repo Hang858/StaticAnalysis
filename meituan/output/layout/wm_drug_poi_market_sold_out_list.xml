@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/wm_drug_market_sold_out_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/q9s" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/sold_out_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff333333" android:paddingTop="@dimen/sk1" android:paddingBottom="@dimen/sk1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:text="订阅商品到货后会通过消息第一时间通知您" android:singleLine="true" android:drawableRight="@drawable/yyd" android:layout_toLeftOf="@id/sold_out_iv_close" />
+        <ImageView android:id="@id/sold_out_iv_close" android:padding="@dimen/wpy" android:layout_width="@dimen/l3t" android:layout_height="@dimen/l3t" android:layout_marginRight="13.0dip" android:src="@drawable/uxg" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.sankuai.waimai.store.newwidgets.list.SCRecyclerView android:id="@id/sold_out_spu_list" android:paddingLeft="@dimen/sk1" android:paddingRight="@dimen/sk1" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:layout_below="@id/sold_out_title" app:divider="@color/wm_st_common_e4e4e4" app:dividerHeight="@dimen/uwe" />
+    <com.sankuai.waimai.store.newwidgets.NetInfoLoadView android:id="@id/sold_out_net_info" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/sold_out_title" app:centerVertical="true" />
+</RelativeLayout>

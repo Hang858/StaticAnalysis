@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="13.0sp" android:textColor="@color/jy" android:layout_gravity="center_vertical" android:id="@id/uqu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" />
+    <com.meituan.android.ugc.cipugc.widget.RatingBar android:layout_gravity="center_vertical" android:id="@id/rho" android:layout_width="wrap_content" android:layout_height="22.0dip" android:layout_marginLeft="40.0dip" android:layout_marginRight="24.0dip" app:hotel_ratingview_default="@drawable/bo7" app:hotel_ratingview_divider="22.0dip" app:hotel_ratingview_selected="@drawable/eh1" app:hotel_ratingview_starCount="5" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/fr5" android:layout_gravity="center_vertical" android:id="@id/dun" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

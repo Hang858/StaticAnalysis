@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/search_project_root_layout" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="49.0dip">
+        <EditText android:textSize="@dimen/text_size_13" android:textColor="@color/beauty_text_black" android:textColorHint="@color/beauty_border_gray" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/keyword_edittext" android:background="@drawable/beauty_bg_light_gray_circle_corner" android:paddingLeft="15.0dip" android:layout_width="0.0dip" android:layout_height="30.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:hint="@string/beauty_search_project" android:lines="1" android:drawableLeft="@drawable/beauty_ic_search" android:drawablePadding="10.0dip" android:layout_weight="1.0" android:inputType="text" android:imeOptions="actionNone" android:drawableStart="@drawable/beauty_ic_search" />
+        <TextView android:textSize="@dimen/text_size_16" android:textStyle="bold" android:textColor="@color/beauty_platform_color" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/cancel_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/beauty_cancel" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/suggest_list_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

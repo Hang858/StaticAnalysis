@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/s0c" android:paddingBottom="101.0dip" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/mobike_ll_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/baw" android:layout_marginStart="18.0dip" android:layout_marginEnd="18.0dip">
+        <ImageView android:id="@id/mobike_iv_icon_v2" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/bj" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="9.0dip">
+            <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/pfp" android:ellipsize="end" android:id="@id/mobike_tv_title_v2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1.5dip" android:maxLines="1" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/d91" android:ellipsize="end" android:id="@id/mobike_tv_description_v2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.5dip" android:maxLines="1" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center|right|top" android:id="@id/mobike_iv_close" android:paddingBottom="18.0dip" android:layout_width="31.5dip" android:layout_height="31.5dip" android:src="@drawable/vde" android:paddingStart="18.0dip" android:layout_marginEnd="2.0dip" />
+    </LinearLayout>
+    <View android:background="@color/upf" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="13.0dip" android:layout_marginBottom="13.0dip" android:layout_marginStart="18.0dip" android:layout_marginEnd="18.0dip" />
+    <TextView android:textSize="12.0dip" android:textColor="@color/d5k" android:id="@id/mobike_tv_content_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="19.0dip" android:paddingEnd="19.0dip" />
+    <com.meituan.android.bike.framework.widgets.MobikeButton android:textSize="13.0dip" android:textColor="@color/uqt" android:ellipsize="end" android:gravity="start|center" android:id="@id/mog" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="12.0dip" android:text="@string/ba5y" android:maxLines="1" android:drawablePadding="8.0dip" android:drawableStart="@drawable/f_x" android:paddingStart="13.0dip" android:layout_marginStart="18.0dip" android:layout_marginEnd="18.0dip" app:mobikeDisableColor="@color/w90" app:mobikeEnableColor="@color/w90" app:mobikeRadius="6.0dip" />
+</LinearLayout>

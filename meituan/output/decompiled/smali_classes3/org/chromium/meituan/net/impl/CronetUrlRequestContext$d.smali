@@ -1,0 +1,65 @@
+.class public final Lorg/chromium/meituan/net/impl/CronetUrlRequestContext$d;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lorg/chromium/meituan/net/impl/CronetUrlRequestContext;->onRttObservation(IJI)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic a:Ld/p;
+
+.field public final synthetic b:I
+
+.field public final synthetic c:J
+
+.field public final synthetic d:I
+
+
+# direct methods
+.method public constructor <init>(Ld/p;IJI)V
+    .locals 0
+
+    iput-object p1, p0, Lorg/chromium/meituan/net/impl/CronetUrlRequestContext$d;->a:Ld/p;
+
+    iput p2, p0, Lorg/chromium/meituan/net/impl/CronetUrlRequestContext$d;->b:I
+
+    iput-wide p3, p0, Lorg/chromium/meituan/net/impl/CronetUrlRequestContext$d;->c:J
+
+    iput p5, p0, Lorg/chromium/meituan/net/impl/CronetUrlRequestContext$d;->d:I
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 5
+
+    iget-object v0, p0, Lorg/chromium/meituan/net/impl/CronetUrlRequestContext$d;->a:Ld/p;
+
+    iget v1, p0, Lorg/chromium/meituan/net/impl/CronetUrlRequestContext$d;->b:I
+
+    iget-wide v2, p0, Lorg/chromium/meituan/net/impl/CronetUrlRequestContext$d;->c:J
+
+    iget v4, p0, Lorg/chromium/meituan/net/impl/CronetUrlRequestContext$d;->d:I
+
+    iget-object v0, v0, Ld/p;->a:Lorg/chromium/meituan/net/n;
+
+    invoke-virtual {v0, v1, v2, v3, v4}, Lorg/chromium/meituan/net/n;->onRttObservation(IJI)V
+
+    return-void
+.end method

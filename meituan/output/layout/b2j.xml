@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:id="@id/p1v" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="34.0dip" android:paddingEnd="9.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:id="@id/fuq" android:background="@drawable/svs" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="4.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/v0s" android:layout_width="15.0dip" android:layout_height="15.0dip" android:scaleType="centerCrop" />
+    </LinearLayout>
+    <TextSwitcher android:id="@id/xwz" android:layout_width="wrap_content" android:layout_height="34.0dip" android:layout_marginStart="7.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/fuq" app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

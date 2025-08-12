@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="bottom" android:id="@id/ll_info_container" android:paddingBottom="5.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="50.0dip" android:layout_height="47.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/normal_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.sankuai.waimai.store.view.banner.roundview.UniversalImageView android:layout_gravity="center_horizontal" android:id="@id/tab_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="10.0dip" android:layout_gravity="center_horizontal" android:id="@id/tab_text" android:layout_width="wrap_content" android:layout_height="14.0dip" android:layout_marginTop="1.0dip" android:maxLines="1" android:singleLine="true" />
+    </LinearLayout>
+    <com.sankuai.waimai.store.view.banner.roundview.UniversalImageView android:layout_gravity="center_horizontal" android:id="@id/t8o" android:visibility="gone" android:layout_width="@dimen/cro" android:layout_height="@dimen/cro" android:layout_marginBottom="2.0dip" />
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mach_pro_coupon_package_root_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/mach_pro_coupon_package_status_bar_space" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/mach_pro_coupon_package_root" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/mach_pro_coupon_package_bottom_bar_space" android:layout_below="@id/mach_pro_coupon_package_status_bar_space" />
+    <View android:id="@id/mach_pro_coupon_package_bottom_bar_space" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="49.0dip" android:layout_alignParentBottom="true" />
+    <FrameLayout android:id="@id/mach_pro_coupon_package_second_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

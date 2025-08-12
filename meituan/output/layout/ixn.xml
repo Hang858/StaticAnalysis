@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sankuai.titans.widget.media.widget.TouchImageView android:gravity="center" android:id="@id/iv_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/snm" android:scaleType="fitCenter"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <ImageView android:layout_gravity="center" android:id="@id/titans_preview_loading" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/nl5" />
+    <ImageView android:layout_gravity="bottom|center|right" android:id="@id/titans_preview_pic_download" android:background="@drawable/cgc" android:padding="3.0dip" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="1.0dip" android:src="@drawable/titans_preview_pic_download" android:alpha="0.5" />
+</FrameLayout>

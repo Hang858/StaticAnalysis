@@ -1,0 +1,36 @@
+.class public final Lcom/sankuai/waimai/popup/intelligent/a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# instance fields
+.field public final synthetic a:Lcom/sankuai/waimai/popup/intelligent/e;
+
+
+# direct methods
+.method public constructor <init>(Lcom/sankuai/waimai/popup/intelligent/e;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/sankuai/waimai/popup/intelligent/a;->a:Lcom/sankuai/waimai/popup/intelligent/e;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onClick(Landroid/view/View;)V
+    .locals 1
+
+    iget-object p1, p0, Lcom/sankuai/waimai/popup/intelligent/a;->a:Lcom/sankuai/waimai/popup/intelligent/e;
+
+    const/4 v0, 0x1
+
+    invoke-virtual {p1, v0}, Lcom/sankuai/waimai/popup/intelligent/e;->b(Z)V
+
+    return-void
+.end method

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/yc_" android:layout_width="fill_parent" android:layout_height="45.5dip" android:layout_marginLeft="@dimen/dxm" android:layout_marginRight="@dimen/dxm" android:layout_marginBottom="6.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/le9" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="21.0sp" android:textStyle="bold" android:textColor="@color/ml4" android:id="@id/f6p" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/depart" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/ml4" android:id="@id/vbv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_toRightOf="@id/f6p" android:layout_alignBaseline="@id/f6p" />
+    </RelativeLayout>
+    <Space android:layout_width="10.0dip" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/xjb" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="12.0sp" android:textColor="@color/ml4" android:id="@id/bcbg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBaseline="@id/vh3" android:layout_alignParentRight="true" />
+        <TextView android:textSize="21.0sp" android:textStyle="bold" android:textColor="@color/ml4" android:id="@id/vh3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_toLeftOf="@id/bcbg" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

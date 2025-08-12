@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/outside_bg" android:background="#80000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.meituan.android.pt.homepage.activity.view.BottomSheetLinearLayout android:orientation="vertical" android:id="@id/all_category_container" android:background="@drawable/all_category_round_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.constraint.ConstraintLayout android:id="@id/all_category_bar" android:layout_width="fill_parent" android:layout_height="51.839996pt">
+            <TextView android:textSize="17.279999pt" android:textColor="#ff191919" android:id="@id/all_category_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全部服务" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout android:gravity="center" android:id="@id/all_category_close" android:layout_width="48.0pt" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <ImageView android:layout_width="17.279999pt" android:layout_height="17.279999pt" android:src="@drawable/all_category_close_icon" />
+            </LinearLayout>
+        </android.support.constraint.ConstraintLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.v7.widget.RecyclerView android:id="@id/all_category_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <include android:id="@id/r7e" android:visibility="gone" layout="@layout/cpm" />
+            <ViewStub android:id="@id/cpq" android:layout="@layout/bbbm" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </com.meituan.android.pt.homepage.activity.view.BottomSheetLinearLayout>
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.ptview.view.PTLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/bawl" android:layout_width="fill_parent" android:layout_height="19.0pt" android:layout_marginLeft="8.5pt" android:layout_marginBottom="1.0pt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sankuai.ptview.view.PTLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.sankuai.ptview.view.PTLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/one" android:layout_width="wrap_content" android:layout_height="19.0pt" android:layout_weight="1.0">
+            <com.sankuai.ptview.view.PTImageView android:id="@id/address_location_tag_icon" android:layout_width="15.359985pt" android:layout_height="15.359985pt" android:layout_marginLeft="2.5pt" android:layout_marginRight="1.0pt" android:src="@drawable/j_1" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+            <com.sankuai.ptview.view.PTTextView android:textSize="13.439972pt" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/address_twoLine_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:includeFontPadding="false" android:layout_weight="1.0" />
+            <com.sankuai.ptview.view.PTImageView android:id="@id/address_twoLine_button_right_drawable" android:layout_width="11.519989pt" android:layout_height="11.519989pt" android:src="@drawable/new_down_arrow_v3" android:importantForAccessibility="no" />
+        </com.sankuai.ptview.view.PTLinearLayout>
+    </com.sankuai.ptview.view.PTLinearLayout>
+</com.sankuai.ptview.view.PTLinearLayout>

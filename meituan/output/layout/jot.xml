@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meituan.android.ugc.review.add.view.ReviewTagEditText android:textSize="@dimen/tzf" android:textColorHint="@color/cb_" android:gravity="center|left|top" android:id="@id/l_g" android:background="@null" android:paddingLeft="15.0dip" android:paddingTop="6.0dip" android:paddingRight="15.0dip" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/mrg" android:hint="" android:singleLine="false" android:textCursorDrawable="@null" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/ugq" android:gravity="center_vertical" android:id="@id/dt7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" android:minHeight="15.0dip" android:lineSpacingExtra="1.0dip" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/ugq" android:gravity="center_vertical" android:id="@id/bbjf" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" android:minHeight="15.0dip" android:lineSpacingExtra="1.0dip" />
+</LinearLayout>

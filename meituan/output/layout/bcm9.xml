@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/xqd" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/o_y" android:background="#fff4f4f4" android:layout_width="88.0dip" android:layout_height="fill_parent" android:divider="@null" android:choiceMode="singleChoice" />
+        <ListView android:id="@id/wdh" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="18.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" />
+    </LinearLayout>
+    <include android:id="@id/di5" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/progress_layout" />
+    <include android:id="@id/iaz" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/info_empty_view" />
+</RelativeLayout>

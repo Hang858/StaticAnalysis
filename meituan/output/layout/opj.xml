@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sankuai.meituan.msv.page.widget.popup.bottomsheet.MSVBottomSheetView android:id="@id/q6v" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.sankuai.meituan.msv.list.widget.MSVRoundedCornerLinearLayout android:orientation="vertical" android:id="@id/pvq" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" app:borderWidth="0.0dip" app:cornerRadius="22.0dip">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/nlm" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="@dimen/f6q">
+                <View android:id="@id/kgf" android:background="@drawable/q39" android:layout_width="40.0dip" android:layout_height="4.0dip" />
+            </LinearLayout>
+            <com.sankuai.meituan.msv.page.widget.popup.MSVPageContainerView android:id="@id/rao" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </com.sankuai.meituan.msv.list.widget.MSVRoundedCornerLinearLayout>
+    </com.sankuai.meituan.msv.page.widget.popup.bottomsheet.MSVBottomSheetView>
+    <FrameLayout android:id="@id/hvo" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/q6v" />
+</RelativeLayout>

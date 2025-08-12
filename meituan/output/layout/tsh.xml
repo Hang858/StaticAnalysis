@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bavy" android:layout_width="260.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.meituan.android.movie.tradebase.seat.view.MovieAutoFitScrollView android:scrollbars="vertical" android:fadingEdge="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fadeScrollbars="false" app:maxHeight="265.1953dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/ie6" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="265.1953dip" android:divider="@drawable/ud3" android:showDividers="middle" />
+    </com.meituan.android.movie.tradebase.seat.view.MovieAutoFitScrollView>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/bmm" android:background="@color/w88" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/background_lottie" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="150.0dip" android:scaleType="fitXY" app:lottie_loop="true" />
+    <com.sankuai.waimai.store.view.banner.roundview.UniversalImageView android:id="@id/background_img" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="150.0dip" android:scaleType="fitXY" />
+</FrameLayout>

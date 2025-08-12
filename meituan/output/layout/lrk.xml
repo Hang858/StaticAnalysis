@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sankuai.meituan.msv.list.adapter.holder.rightinteraction.BaseScaleImageView android:layout_gravity="center_horizontal" android:id="@id/iv_comment_icon" android:layout_width="54.0dip" android:layout_height="44.0dip" android:src="@drawable/lrk" />
+    <android.support.v7.widget.AppCompatTextView android:textSize="12.0dip" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/exi" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+</merge>

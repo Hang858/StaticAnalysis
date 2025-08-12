@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meituan.android.qcsc.widget.layout.QcscLinearLayout android:orientation="vertical" android:paddingLeft="12.0dip" android:paddingTop="13.0dip" android:layout_width="fill_parent" android:layout_height="82.0dip" android:layout_marginLeft="18.0dip" android:layout_marginRight="18.0dip" android:layout_marginBottom="9.0dip" app:qcsc_bottomLeftRadius="6.0dip" app:qcsc_bottomRightRadius="6.0dip" app:qcsc_contentBackgroundColor="@color/qcsc_white" app:qcsc_topLeftRadius="6.0dip" app:qcsc_topRightRadius="6.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/qcsc_color_f5f5f5" android:layout_width="85.0dip" android:layout_height="20.0dip" />
+    <View android:background="@color/qcsc_color_f5f5f5" android:layout_width="165.0dip" android:layout_height="10.0dip" android:layout_marginTop="20.0dip" />
+</com.meituan.android.qcsc.widget.layout.QcscLinearLayout>

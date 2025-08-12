@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/lyc" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/qqz" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.meituan.android.movie.tradebase.orderdetail.view.MovieOrderDetailRefundStatusBlock android:id="@id/nzm" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/szg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/bottom_layout" android:background="@color/mfv" android:paddingLeft="12.0dip" android:paddingTop="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.maoyan.android.common.view.RoundImageView android:id="@id/e8w" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:scaleType="centerCrop" />
+        <com.maoyan.android.common.view.RoundImageView android:id="@id/e8w" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:scaleType="centerCrop" />
+        <com.meituan.android.movie.tradebase.orderdetail.view.MovieOrderMemberRewardBlock android:id="@id/f_h" android:layout_width="fill_parent" android:layout_height="64.0dip" android:layout_marginBottom="12.0dip" />
+        <View android:id="@id/s_g" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/banner" android:background="@drawable/jca" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" />
+        <View android:id="@id/we5" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" />
+        <View android:id="@id/dl4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" />
+        <com.meituan.android.movie.tradebase.orderdetail.view.MovieOrderDetailBlock android:id="@id/zx5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" />
+        <com.meituan.android.movie.tradebase.orderdetail.view.MovieOrderNoticeBlock android:id="@id/ye2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" />
+        <View android:id="@id/ttl" android:visibility="@integer/z_n" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" />
+        <View android:id="@id/x7p" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" />
+        <ViewStub android:layout_gravity="center" android:id="@id/v8i" android:layout="?movie_layout_ticket_verify_view" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginBottom="12.0dip" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/baj0" android:visibility="@integer/movieOrderDetailLogoVisible" android:layout_width="149.0dip" android:layout_height="19.0dip" android:layout_marginTop="11.0dip" android:layout_marginBottom="13.0dip" android:scaleType="fitXY" />
+    </LinearLayout>
+</LinearLayout>

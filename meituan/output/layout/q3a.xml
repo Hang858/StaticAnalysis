@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/yva" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ere" android:paddingLeft="@dimen/vjy" android:paddingRight="@dimen/y26" android:layout_width="fill_parent" android:layout_height="67.5dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/eaq" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/cashier_pay_icon" android:layout_width="@dimen/d2e" android:layout_height="@dimen/d2e" android:layout_marginRight="9.0dip" android:scaleType="fitXY" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/won" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0dip" android:textColor="@color/wyl" android:ellipsize="middle" android:id="@id/dz6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/bck5" android:singleLine="true" />
+                    <com.meituan.android.paycommon.lib.widgets.PayLabelContainer android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/baae" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="12.0dip" android:textColor="@color/jha" android:ellipsize="end" android:id="@id/jd4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/r39" android:layout_marginTop="@dimen/vsx" android:maxLines="2" />
+            <com.meituan.android.paycommon.lib.widgets.PayLabelContainer android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/yf4" android:paddingRight="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/r39" android:layout_marginTop="@dimen/vsx" />
+        </LinearLayout>
+        <ImageView android:id="@id/attach_icon" android:visibility="visible" android:layout_width="63.0dip" android:layout_height="18.0dip" />
+        <TextView android:textSize="12.0dip" android:id="@id/v2y" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.meituan.android.paycommon.lib.widgets.ThemeRelatedCheckBox android:id="@id/hkk" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" style="@style/mtpaysdk__payment_checkbox_bg" />
+    </LinearLayout>
+</LinearLayout>

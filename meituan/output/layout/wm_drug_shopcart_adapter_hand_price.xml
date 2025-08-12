@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/wm_sg_color_FAFAFA" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/shop_cart_han_price_item_divider" android:background="@color/wm_sg_color_D3D3D3" android:layout_width="fill_parent" android:layout_height="@dimen/hue" android:layout_marginTop="@dimen/z34" android:layout_marginBottom="@dimen/z34" />
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/by0" android:paddingBottom="@dimen/by0" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textColor="@color/pjf" android:ellipsize="end" android:id="@id/shop_cart_han_price_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:drawablePadding="@dimen/yxe" />
+            </FrameLayout>
+            <com.sankuai.waimai.store.widgets.StrikeTextView android:textSize="12.0sp" android:textColor="@color/wm_sg_color_575859" android:layout_gravity="center_vertical" android:id="@id/shop_cart_han_price_item_underline_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:singleLine="true" />
+            <TextView android:textSize="@dimen/m8w" android:textStyle="bold" android:id="@id/shop_cart_han_price_item_price" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/iz4" android:textColor="@color/wm_sg_color_858687" android:ellipsize="end" android:id="@id/shop_cart_han_price_item_sub_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uv2" android:maxLines="1" />
+    </LinearLayout>
+</LinearLayout>

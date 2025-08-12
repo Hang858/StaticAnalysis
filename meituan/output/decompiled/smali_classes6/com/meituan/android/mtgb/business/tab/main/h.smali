@@ -1,0 +1,67 @@
+.class public final Lcom/meituan/android/mtgb/business/tab/main/h;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic a:Lcom/meituan/android/mtgb/business/tab/main/MTGTabChildFragment;
+
+
+# direct methods
+.method public constructor <init>(Lcom/meituan/android/mtgb/business/tab/main/MTGTabChildFragment;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/meituan/android/mtgb/business/tab/main/h;->a:Lcom/meituan/android/mtgb/business/tab/main/MTGTabChildFragment;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 1
+
+    .line 100000
+    sget-boolean v0, Lcom/meituan/android/sr/common/utils/n;->a:Z
+
+    .line 100001
+    .line 100002
+    if-eqz v0, :cond_0
+
+    .line 100003
+    .line 100004
+    iget-object v0, p0, Lcom/meituan/android/mtgb/business/tab/main/h;->a:Lcom/meituan/android/mtgb/business/tab/main/MTGTabChildFragment;
+
+    .line 100005
+    .line 100006
+    invoke-virtual {v0}, Lcom/meituan/android/mtgb/business/tab/main/MTGTabChildFragment;->U8()Ljava/lang/String;
+
+    .line 100007
+    .line 100008
+    .line 100009
+    iget-object v0, p0, Lcom/meituan/android/mtgb/business/tab/main/h;->a:Lcom/meituan/android/mtgb/business/tab/main/MTGTabChildFragment;
+
+    .line 100010
+    .line 100011
+    iget v0, v0, Lcom/meituan/android/mtgb/business/tab/main/MTGTabChildFragment;->d:I
+
+    .line 100012
+    .line 100013
+    sget-object v0, Lcom/meituan/android/sr/common/utils/n;->changeQuickRedirect:Lcom/meituan/robust/ChangeQuickRedirect;
+
+    .line 100014
+    .line 100015
+    :cond_0
+    iget-object v0, p0, Lcom/meituan/android/mtgb/business/tab/main/h;->a:Lcom/meituan/android/mtgb/business/tab/main/MTGTabChildFragment;
+
+    iget-object v0, v0, Lcom/meituan/android/mtgb/business/tab/main/MTGTabChildFragment;->i:Lcom/meituan/android/mtgb/business/tab/main/k;
+
+    invoke-virtual {v0}, Lcom/meituan/android/mtgb/business/tab/main/k;->i()V
+
+    return-void
+.end method

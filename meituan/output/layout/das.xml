@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_gravity="bottom" android:background="@drawable/pv4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/jbl" android:background="@drawable/w3d" android:layout_width="40.0dip" android:layout_height="4.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:alpha="0.3" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout android:id="@id/jim" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/jbl">
+        <ViewStub android:id="@id/wzt" android:layout="@layout/xq2" android:inflatedId="@id/bcuc" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ViewStub android:id="@id/w0n" android:layout="@layout/ba14" android:inflatedId="@id/fmp" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/m7i" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="29.0dip" android:layout_marginTop="24.5dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/jim">
+        <android.support.design.widget.TabLayout android:id="@id/oxv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerVertical="true" android:layout_alignParentStart="true" app:tabBackground="@color/transparent" app:tabIndicatorHeight="0.0dip" app:tabMinWidth="0.0dip" app:tabMode="scrollable" app:tabPaddingEnd="0.0dip" app:tabPaddingStart="0.0dip" />
+        <View android:id="@id/ycw" android:background="@drawable/fgi" android:visibility="visible" android:layout_width="16.0dip" android:layout_height="fill_parent" android:layout_alignParentStart="true" />
+        <View android:id="@id/jxx" android:background="@drawable/naz" android:visibility="visible" android:layout_width="16.0dip" android:layout_height="fill_parent" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <com.sankuai.meituan.msv.page.videoset.widget.SelectRecyclerView android:id="@id/ba_e" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="12.0dip" android:overScrollMode="never" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/m7i" />
+    <include android:id="@id/vwd" android:visibility="gone" layout="@layout/ppk" />
+</android.support.constraint.ConstraintLayout>

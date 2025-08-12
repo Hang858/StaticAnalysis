@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meituan.android.widget.ShadowLayout android:layout_width="wrap_content" android:layout_height="wrap_content" app:shadowColor="#14000000" app:shadowDx="0.0dip" app:shadowDy="6.0dip" app:shadowRadius="29.0dip" app:shadowRx="9.599976dip" app:shadowRy="9.599976dip" app:shadowShape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="right" android:orientation="vertical" android:id="@id/pqa" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/w06" android:layout_width="18.199982dip" android:layout_height="5.799988dip" android:layout_marginRight="28.399994dip" android:src="@drawable/mqt" />
+        <com.sankuai.meituan.mbc.ui.RoundFrameLayout android:id="@id/rkv" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/ifh" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </com.sankuai.meituan.mbc.ui.RoundFrameLayout>
+        <ImageView android:id="@id/cgv" android:visibility="gone" android:layout_width="18.199982dip" android:layout_height="5.799988dip" android:layout_marginRight="28.399994dip" android:src="@drawable/mqt" android:scaleY="-1.0" />
+    </LinearLayout>
+</com.meituan.android.widget.ShadowLayout>

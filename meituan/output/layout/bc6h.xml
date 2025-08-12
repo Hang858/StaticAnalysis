@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/xvf" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/fkh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/uv2">
+        <FrameLayout android:id="@id/kc7" android:layout_width="@dimen/j2j" android:layout_height="@dimen/j2j">
+            <com.sankuai.waimai.store.view.banner.roundview.UniversalImageView android:layout_gravity="center" android:id="@id/back_product_iv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:adjustViewBounds="true" app:riv_corner_radius="6.0dip" />
+            <com.sankuai.waimai.store.view.banner.roundview.UniversalImageView android:layout_gravity="center" android:id="@id/iv_product" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:adjustViewBounds="true" app:riv_corner_radius="6.0dip" />
+            <View android:id="@id/tme" android:background="@drawable/gtc" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.sankuai.waimai.store.view.banner.roundview.UniversalImageView android:layout_gravity="center" android:id="@id/front_product_iv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:adjustViewBounds="true" app:riv_corner_radius="6.0dip" />
+        </FrameLayout>
+        <TextView android:textSize="11.0dip" android:textColor="@color/wm_sg_color_222426" android:id="@id/tv_name" android:layout_width="74.0dip" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:maxLines="1" />
+        <FrameLayout android:layout_gravity="bottom" android:layout_width="74.0dip" android:layout_height="wrap_content">
+            <ViewStub android:layout_gravity="bottom" android:id="@id/c3m" android:layout="@layout/ggu" android:layout_width="@dimen/j2j" android:layout_height="wrap_content" />
+            <com.sankuai.waimai.store.view.pricev2.UnifyPriceView android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/hrn" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginTop="1.0dip" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

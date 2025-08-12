@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/qj3" android:padding="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="?movie_cinema_no_poi_error" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23.0dip" android:text="您所在的区域暂未开通服务\n返回美团首页切换城市看看吧" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/yic" android:background="@drawable/tsl" android:layout_width="120.0dip" android:layout_height="44.0dip" android:layout_marginTop="23.0dip" android:text="返回上一页" />
+</LinearLayout>

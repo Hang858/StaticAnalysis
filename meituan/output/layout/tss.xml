@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ujv" android:background="#ffefefef" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/b0d">
+        <RelativeLayout android:gravity="center" android:id="@id/ey_" android:layout_width="@dimen/cro" android:layout_height="fill_parent">
+            <ImageView android:id="@id/tia" android:layout_width="@dimen/e5p" android:layout_height="@dimen/sk1" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/e_9" android:textStyle="bold" android:textColor="#e6000000" android:ellipsize="end" android:id="@id/ug8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wpy" android:maxLines="1" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/q5f" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip">
+                <TextView android:textSize="@dimen/m8w" android:textColor="#5a000000" android:id="@id/ti" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                <TextView android:textSize="@dimen/m8w" android:textColor="#b3000000" android:id="@id/boa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/z34" />
+            </LinearLayout>
+        </LinearLayout>
+        <include android:id="@id/vhw" layout="@layout/qg7" />
+        <include android:id="@id/jl5" layout="@layout/qg7" />
+        <include android:id="@id/ct2" layout="@layout/qg7" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/r_c" android:background="@drawable/vdd" android:paddingLeft="@dimen/by0" android:paddingRight="@dimen/by0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wpy" android:layout_marginTop="@dimen/ea5" android:layout_marginRight="@dimen/wpy" android:layout_marginBottom="@dimen/wpy">
+        <include android:id="@id/g4k" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/sx1" />
+    </RelativeLayout>
+    <View android:background="#0f000000" android:layout_width="fill_parent" android:layout_height="@dimen/uwe" />
+</LinearLayout>

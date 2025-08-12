@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/parent" android:layout_width="70.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/background" android:background="@drawable/ofo" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="10.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_centerHorizontal="true">
+            <android.support.v7.widget.AppCompatImageView android:layout_gravity="center" android:layout_width="13.0dip" android:layout_height="13.0dip" android:src="@drawable/gn2" />
+            <android.support.v7.widget.AppCompatTextView android:textSize="12.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="现金" />
+        </LinearLayout>
+        <RelativeLayout android:background="@drawable/bbhg" android:layout_width="fill_parent" android:layout_height="36.5dip" android:layout_margin="3.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <android.support.v7.widget.AppCompatTextView android:textSize="9.0dip" android:textColor="#ff00a72d" android:id="@id/wdv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="最高" android:layout_alignParentRight="true" android:alpha="0.2" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/cash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <android.support.v7.widget.AppCompatTextView android:textSize="24.0dip" android:textColor="#ff00a72d" android:id="@id/k0k" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5" />
+                <android.support.v7.widget.AppCompatTextView android:textSize="14.0dip" android:textColor="#ff00a72d" android:id="@id/cib" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:text="元" />
+            </LinearLayout>
+            <android.support.v7.widget.AppCompatImageView android:id="@id/checked" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="17.0dip" android:src="@drawable/q3l" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <android.support.v7.widget.AppCompatTextView android:textSize="10.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/ppr" android:background="@drawable/mp3" android:layout_width="31.5dip" android:layout_height="17.5dip" android:layout_marginRight="2.0dip" android:text="大额" android:layout_alignParentRight="true" />
+    <android.support.v7.widget.AppCompatTextView android:textSize="12.0dip" android:textColor="#ff808080" android:gravity="center" android:id="@id/text" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="73.0dip" android:text="第1天" />
+    <View android:id="@id/line" android:background="#ff12b32d" android:layout_width="10.0dip" android:layout_height="4.0dip" android:layout_marginTop="45.0dip" android:layout_alignParentRight="true" android:alpha="0.4" />
+</RelativeLayout>

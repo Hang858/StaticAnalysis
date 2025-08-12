@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_tab1" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="32.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/commonui_action_bar_tab_text_selector_default" android:gravity="center" android:id="@id/tv_tab1_text" android:layout_width="wrap_content" android:layout_height="0.0dip" android:maxWidth="128.0dip" android:singleLine="true" android:layout_weight="1.0" />
+        <View android:id="@id/v_tab1_underline" android:background="@drawable/commonui_action_bar_bg_tab_selector_default" android:layout_width="fill_parent" android:layout_height="1.5dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_tab2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:minWidth="32.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/commonui_action_bar_tab_text_selector_default" android:gravity="center" android:id="@id/tv_tab2_text" android:layout_width="wrap_content" android:layout_height="0.0dip" android:maxWidth="128.0dip" android:singleLine="true" android:layout_weight="1.0" />
+        <View android:id="@id/v_tab2_underline" android:background="@drawable/commonui_action_bar_bg_tab_selector_default" android:layout_width="fill_parent" android:layout_height="1.5dip" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tool="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff333333" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/jaa" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="猫眼问答" android:layout_weight="1.0" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff666666" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/q_4" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="暂无回答,快来提第一个问题吧" android:layout_weight="1.0" />
+        <TextView android:textSize="11.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/y7a" android:background="@drawable/wvj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="我要提问" android:includeFontPadding="false" />
+    </LinearLayout>
+    <include layout="@layout/o74" />
+    <LinearLayout android:orientation="vertical" android:id="@id/bcq8" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include android:id="@id/gaj" android:visibility="gone" layout="@layout/o74" />
+    <com.maoyan.android.common.view.MoreView android:gravity="center" android:orientation="vertical" android:id="@id/udy" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip" />
+</LinearLayout>

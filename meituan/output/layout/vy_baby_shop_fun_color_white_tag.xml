@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/vy_text_size_11" android:textColor="@color/white" android:background="@drawable/vy_shape_2px_bold_corner_white_color_bg" android:paddingLeft="3.0dip" android:paddingTop="2.0dip" android:paddingRight="3.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

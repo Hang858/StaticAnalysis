@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/dcr" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/i6c">
+        <com.sankuai.waimai.platform.widget.roundview.RoundedImageView android:layout_gravity="center_vertical" android:id="@id/l2r" android:layout_width="@dimen/j82" android:layout_height="@dimen/j82" android:scaleType="centerCrop" app:riv_corner_radius="@dimen/bbrs" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/uv2">
+            <TextView android:textSize="@dimen/ps0" android:textStyle="bold" android:textColor="@color/pjf" android:ellipsize="end" android:id="@id/kr4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:includeFontPadding="false" android:layout_above="@id/holder" android:layout_alignParentTop="true" />
+            <LinearLayout android:id="@id/holder" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <com.sankuai.waimai.store.view.standard.FlashPrice android:id="@id/bc3t" android:layout_width="wrap_content" android:layout_height="wrap_content" app:priceAlignment="left" app:priceDirection="bt" app:priceSize="f32" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

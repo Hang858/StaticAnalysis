@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.store.view.RoundedCornerLinearLayout android:gravity="center" android:background="#08000000" android:layout_width="wrap_content" android:layout_height="@dimen/d_a" android:layout_marginLeft="@dimen/bbrs" app:cornerRadius="@dimen/bbrs"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/hwz" android:textColor="@color/vu2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/z34" android:text="进店购" />
+    <ImageView android:id="@id/cwd" android:layout_width="@dimen/bbrs" android:layout_height="@dimen/e5p" android:layout_marginLeft="@dimen/bbrs" android:layout_marginTop="@dimen/hue" android:layout_marginRight="@dimen/bbrs" />
+</com.sankuai.waimai.store.view.RoundedCornerLinearLayout>

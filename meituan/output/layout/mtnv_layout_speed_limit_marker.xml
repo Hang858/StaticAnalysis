@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/mtnv_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" />
+    <com.meituan.sankuai.navisdk.place.ui.MtTextView android:textColor="#ff000000" android:gravity="center" android:layout_gravity="center" android:id="@id/mtnv_tv_save_time_limit_marker" android:paddingTop="0.5dip" android:layout_width="wrap_content" android:layout_height="19.0dip" app:mt_text_face="bcav" />
+</FrameLayout>

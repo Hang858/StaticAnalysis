@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/bal8" android:background="@color/dg5" android:layout_width="fill_parent" android:layout_height="@dimen/tvb" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/om5" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/tvb">
+        <com.meituan.roodesign.widgets.iconfont.RooIconFont android:textSize="20.0dip" android:textColor="#ff222426" android:id="@id/lwz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/bc6" android:layout_centerVertical="true" android:contentDescription="@string/gjx" />
+        <TextView android:textSize="@dimen/ens" android:textColor="@color/g3u" android:ellipsize="end" android:id="@id/mm8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/WmTitle" />
+        <TextView android:textSize="@dimen/ens" android:textColor="@color/g3u" android:ellipsize="start" android:id="@id/e9p" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="245.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/WmTitle" />
+        <ImageView android:id="@id/ypm" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="20.0dip" android:scaleType="fitXY" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</FrameLayout>

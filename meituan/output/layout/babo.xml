@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/maoyan_medium_line_one_px" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="14.0sp" android:id="@id/rba" android:background="@drawable/xwi" android:paddingLeft="5.0dip" android:scrollbars="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="36.0dip" android:hint="@string/bc06" android:maxLines="6" android:scrollHorizontally="false" android:drawableLeft="@drawable/bccj" android:drawablePadding="5.0dip" android:layout_weight="1.0" android:inputType="textMultiLine" />
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@id/ysk" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+            <View android:background="@drawable/s8t" android:layout_width="21.0dip" android:layout_height="21.0dip" android:layout_marginTop="4.0dip" />
+            <TextView android:textSize="8.0sp" android:textColor="#ffffffff" android:id="@id/exi" android:background="@drawable/cgm" android:paddingLeft="4.0dip" android:paddingTop="1.0dip" android:paddingRight="4.0dip" android:paddingBottom="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" />
+        </FrameLayout>
+        <Button android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/ufd" android:background="@drawable/d8h" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" android:layout_width="45.0dip" android:layout_height="36.0dip" android:layout_marginLeft="10.0dip" android:text="@string/uj7" />
+    </LinearLayout>
+    <include layout="@layout/maoyan_medium_line_one_px" />
+</merge>

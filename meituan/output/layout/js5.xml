@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meituan.android.mtgb.business.filter.selector.detail.MTGDetailFilterItem android:id="@id/item_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/title_container" android:layout_width="fill_parent" android:layout_height="22.0dip">
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/e6d" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/item_title" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="22.0dip" android:maxWidth="200.0dip" android:maxLines="1" android:includeFontPadding="false" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/expand_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="6.0dip">
+            <TextView android:textSize="13.0sp" android:textColor="@color/mny" android:ellipsize="end" android:id="@id/v17" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="125.0dip" android:maxLines="1" android:includeFontPadding="false" />
+            <ImageView android:id="@id/ebw" android:background="@drawable/fuc" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="2.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.meituan.android.base.ui.widget.TagsLayout android:id="@id/ggb" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/title_container" />
+</com.meituan.android.mtgb.business.filter.selector.detail.MTGDetailFilterItem>

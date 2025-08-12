@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:id="@id/xx5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/w20" android:background="@color/zro" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+    <ImageView android:id="@id/km6" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/y60" android:scaleType="fitCenter" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/xb4" android:padding="12.0dip" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="60.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ProgressBar android:id="@id/w3f" android:layout_width="fill_parent" android:layout_height="2.0dip" android:max="100" android:progressDrawable="@drawable/qwo" android:layout_alignParentBottom="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" style="?android:progressBarStyleHorizontal" />
+</android.support.constraint.ConstraintLayout>

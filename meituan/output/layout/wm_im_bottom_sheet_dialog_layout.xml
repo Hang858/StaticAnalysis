@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/wm_im_bottom_sheet_dialog_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:textColor="#ff191919" android:gravity="center" android:id="@id/tv_send_location" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="发送位置" />
+    <View android:background="#fff5f5f5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textSize="16.0dip" android:textColor="#ff191919" android:gravity="center" android:id="@id/tv_share_location" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="共享实时位置" />
+    <View android:background="#fff5f5f5" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+    <TextView android:textSize="16.0dip" android:textColor="#ff191919" android:gravity="center" android:id="@id/tv_cancel" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginBottom="12.0dip" android:text="取消" />
+</LinearLayout>

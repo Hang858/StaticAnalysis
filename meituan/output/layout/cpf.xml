@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/epz" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/vxk" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v7.widget.AppCompatImageView android:id="@id/e6b" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <FrameLayout android:id="@id/hb0" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/fi4" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:layout_gravity="bottom" android:background="@drawable/baxs" android:layout_width="fill_parent" android:layout_height="160.0dip" />
+        <com.sankuai.meituan.msv.list.adapter.holder.live.simple.LiveGestureView android:id="@id/jbf" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/e3o" android:background="@drawable/qbv" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_marginBottom="220.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+                <com.airbnb.lottie.LottieAnimationView android:layout_width="15.0dip" android:layout_height="15.0dip" app:lottie_autoPlay="true" app:lottie_fileName="msv_live_lottie.json" app:lottie_loop="true" />
+                <android.support.v7.widget.AppCompatTextView android:textSize="17.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="0.5dip" android:text="点击进入直播间" android:shadowColor="#29000000" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_marginStart="6.0dip" />
+            </LinearLayout>
+            <View android:background="@drawable/nj2" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="@id/e3o" app:layout_constraintLeft_toLeftOf="@id/e3o" app:layout_constraintRight_toRightOf="@id/e3o" app:layout_constraintTop_toTopOf="@id/e3o" />
+            <com.sankuai.meituan.msv.list.widget.MuteButton android:id="@id/rip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:layout_marginStart="12.0dip" app:layout_constraintBottom_toTopOf="@id/gr3" app:layout_constraintStart_toStartOf="parent" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/gr3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" app:layout_constraintBottom_toTopOf="@id/ej5" app:layout_constraintStart_toStartOf="parent">
+                <android.support.v7.widget.AppCompatTextView android:textSize="17.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/yc2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:shadowColor="#33000000" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_weight="1.0" android:layout_marginStart="12.0dip" />
+                <android.support.v7.widget.AppCompatTextView android:textSize="10.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/vpv" android:background="@drawable/bcq7" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="16.0dip" android:text="直播中" android:includeFontPadding="false" android:layout_marginStart="4.0dip" android:layout_marginEnd="12.0dip" />
+            </LinearLayout>
+            <FrameLayout android:id="@id/ej5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_marginStart="12.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintWidth_percent="0.714">
+                <com.sankuai.meituan.msv.list.adapter.holder.live.simple.LiveGoodsView android:id="@id/vq6" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="72.0dip" />
+                <com.sankuai.meituan.msv.list.adapter.holder.live.simple.LiveGoodsView android:id="@id/rx1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="72.0dip" />
+            </FrameLayout>
+        </com.sankuai.meituan.msv.list.adapter.holder.live.simple.LiveGestureView>
+        <View android:id="@id/cs7" android:background="@color/nmh" android:focusable="false" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.3" android:importantForAccessibility="no" />
+    </FrameLayout>
+    <include layout="@layout/f3z" />
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/oba" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="-145.0dip" android:layout_marginTop="-235.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.meituan.roodesign.resfetcher.widgets.RooImageView android:id="@id/esj" android:layout_width="wrap_content" android:layout_height="wrap_content" app:project="waimai_c" app:srcName="waimai_c_weather_ultra_high_temp_light" />
+    <com.meituan.roodesign.resfetcher.widgets.RooImageView android:id="@id/iix" android:layout_width="wrap_content" android:layout_height="wrap_content" app:project="waimai_c" app:srcName="waimai_c_weather_ultra_high_temp_halo" />
+    <com.meituan.roodesign.resfetcher.widgets.RooImageView android:id="@id/x8c" android:layout_width="wrap_content" android:layout_height="wrap_content" app:project="waimai_c" app:srcName="waimai_c_weather_ultra_high_temp_sun" />
+    <com.meituan.roodesign.resfetcher.widgets.RooImageView android:id="@id/cmg" android:layout_width="wrap_content" android:layout_height="wrap_content" app:project="waimai_c" app:srcName="waimai_c_weather_ultra_high_temp_block" />
+</FrameLayout>

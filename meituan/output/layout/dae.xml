@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.android.oversea.base.widget.OsNetWorkImageView android:id="@id/image" android:layout_width="115.0dip" android:layout_height="86.0dip" android:layout_marginRight="10.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="86.0dip">
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/c_1" android:ellipsize="end" android:id="@id/title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/pb1" android:ellipsize="end" android:id="@id/introduction" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:maxLines="2" android:includeFontPadding="false" />
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <com.dianping.richtext.BaseRichTextView android:ellipsize="end" android:id="@id/price" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/pb1" android:id="@id/count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:id="@id/ad_feed_card_top_bar_layout" android:layout_width="fill_parent" android:layout_height="76.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/ad_feed_card_top_bar_bg_layout" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginTop="6.0dip" app:layout_constraintTop_toTopOf="parent">
+        <android.support.v7.widget.AppCompatImageView android:id="@id/ad_feed_card_top_bar_bg" android:layout_width="fill_parent" android:layout_height="70.0dip" android:scaleType="fitXY" />
+    </FrameLayout>
+    <android.support.v7.widget.AppCompatImageView android:id="@id/ad_feed_card_top_bar_left_icon" android:layout_width="65.0dip" android:layout_height="67.0dip" android:layout_marginLeft="20.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <android.support.v7.widget.AppCompatTextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/ad_feed_card_top_bar_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="10.0dip" android:text="下单再得" android:maxLines="1" android:singleLine="true" app:layout_constraintLeft_toRightOf="@id/ad_feed_card_top_bar_left_icon" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/r55" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Space android:id="@id/t2j" android:layout_width="fill_parent" android:layout_height="6.0dip" />
+    <com.sankuai.waimai.platform.widget.RatioImageView android:id="@id/img_order_detail_banner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="88.5dip" android:scaleType="fitXY" app:ratio="0.25" />
+    <com.sankuai.waimai.platform.widget.RoundedCornerFrameLayout android:id="@id/qam" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cornerRadius="12.0dip" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_expand_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="30.0dip">
+        <ImageView android:id="@id/iv_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/qcsc_security_check_status_success" android:layout_centerVertical="true" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/qcsc_text_84" android:id="@id/tv_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_toRightOf="@id/iv_status" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/iv_item_title_problem" android:padding="3.0dip" android:visibility="visible" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="6.0dip" android:layout_toRightOf="@id/tv_item_title" android:layout_centerVertical="true" />
+        <FrameLayout android:id="@id/iv_down_arrow_wrapper" android:paddingLeft="20.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:layout_gravity="center" android:id="@id/iv_down_arrow" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:visibility="gone" android:layout_width="14.0dip" android:layout_height="12.0dip" android:src="@drawable/qcsc_security_down_arrow" android:scaleType="fitCenter" />
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

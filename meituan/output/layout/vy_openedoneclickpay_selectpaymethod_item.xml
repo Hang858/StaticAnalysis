@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/vy_text_size_16" android:id="@id/selectpaymethod_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/vy_text_size_14" android:textColor="#ff999999" android:id="@id/selectpaymethod_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/selectpaymethod_selected" android:layout_width="18.0dip" android:layout_height="12.0dip" android:src="@drawable/vy_deal_predisplay_openedoneclick_selected" />
+</LinearLayout>

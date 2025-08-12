@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/order_container" android:background="@color/tbf" android:paddingTop="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView android:id="@id/eko" android:paddingLeft="4.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/ipc" />
+    </FrameLayout>
+    <ViewStub android:id="@id/wsb" android:layout="@layout/wm_common_im_send_debug_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/vke" />
+</LinearLayout>

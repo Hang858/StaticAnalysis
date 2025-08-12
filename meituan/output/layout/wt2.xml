@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.AppCompatTextView android:textSize="16.0dip" android:textColor="#ff4d4d4d" android:gravity="center" android:id="@id/fdl" android:layout_width="0.0dip" android:layout_height="48.0dip" android:layout_marginRight="11.0dip" android:maxLines="1" android:layout_weight="1.0" />
+    <RelativeLayout android:layout_width="209.0dip" android:layout_height="48.0dip">
+        <com.sankuai.meituan.msv.list.adapter.holder.adfeedcard.view.FliperLayout android:gravity="center" android:layout_gravity="end" android:id="@id/xtp" android:layout_width="209.0dip" android:layout_height="fill_parent" android:layout_alignParentEnd="true">
+            <android.support.v7.widget.AppCompatTextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="#ff191919" android:gravity="center" android:layout_gravity="center" android:id="@id/ba_r" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_alignParentEnd="true" />
+            <android.support.v7.widget.AppCompatTextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="#ff191919" android:gravity="center" android:layout_gravity="center" android:id="@id/c_r" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看店铺详情" android:maxLines="1" android:layout_alignParentEnd="true" />
+        </com.sankuai.meituan.msv.list.adapter.holder.adfeedcard.view.FliperLayout>
+        <android.support.v7.widget.AppCompatImageView android:id="@id/jyt" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/jyt" android:adjustViewBounds="true" android:layout_toRightOf="@id/xtp" android:layout_alignTop="@id/xtp" android:layout_alignBottom="@id/xtp" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/cf" android:layout_width="fill_parent" android:layout_height="44.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.meituan.android.overseahotel.common.widget.ColorFilterImageView android:id="@id/w72" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/erl" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:filter_color="@color/lh8" />
+    <TextView android:textSize="17.0sp" android:textColor="@color/dk7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vtd" android:layout_centerInParent="true" />
+</RelativeLayout>

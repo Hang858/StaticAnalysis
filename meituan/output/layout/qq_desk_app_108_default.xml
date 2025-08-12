@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/container_common_widget" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/background" android:background="@drawable/qq_wt_108_icon" android:layout_width="@dimen/hades_feature_widget11_width" android:layout_height="@dimen/hades_feature_widget11_height" android:layout_marginTop="5.0dip" />
+    <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/feature_msg_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/qq_wt_label_108" android:lines="1" android:shadowColor="#ff000000" android:shadowDx="0.0" android:shadowDy="0.0" android:shadowRadius="5.0" />
+</LinearLayout>

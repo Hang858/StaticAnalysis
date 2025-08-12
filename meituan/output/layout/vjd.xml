@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="86.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sankuai.waimai.store.newwidgets.RoundedFrameLayout android:layout_gravity="right" android:layout_width="@dimen/lv0" android:layout_height="@dimen/lmz" android:layout_marginTop="10.0dip" android:layout_marginRight="@dimen/bbj2" app:cornerRadius="4.0dip">
+        <com.sankuai.waimai.store.view.banner.roundview.UniversalImageView android:id="@id/img_poi_image" android:layout_width="@dimen/lv0" android:layout_height="@dimen/lmz" android:src="@drawable/yda" android:scaleType="fitXY" app:riv_border_color="#fff2f1f0" app:riv_border_width="0.5dip" app:riv_corner_radius="6.0dip" app:riv_oval="false" />
+        <View android:background="@drawable/wm_st_ui_list_poi_list_item_bg_poi_image_border" android:layout_width="@dimen/lv0" android:layout_height="@dimen/lmz" />
+        <View android:id="@id/g43" android:background="@color/wm_st_common_transparent_half_white" android:visibility="gone" android:layout_width="@dimen/lv0" android:layout_height="@dimen/lmz" />
+        <ImageView android:layout_gravity="end|center|top" android:id="@id/qmh" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/uyy" />
+        <LinearLayout android:layout_gravity="bottom|center|left" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/bi" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="7.0dip" android:layout_marginLeft="2.0dip" android:layout_marginBottom="1.0dip" android:scaleType="fitXY" />
+            <TextView android:textSize="10.0dip" android:textColor="@color/jpg" android:gravity="center" android:id="@id/ttz" android:background="@color/wm_st_common_ffc4c4c4" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="@dimen/lv0" android:layout_height="14.0dip" android:layout_marginRight="8.0dip" style="@style/WmStStoreText" />
+        </LinearLayout>
+    </com.sankuai.waimai.store.newwidgets.RoundedFrameLayout>
+    <com.sankuai.waimai.store.view.banner.roundview.UniversalImageView android:layout_gravity="center|right|top" android:id="@id/ezk" android:layout_width="@dimen/s5w" android:layout_height="18.0dip" android:layout_marginTop="8.0dip" android:scaleType="fitXY" app:riv_border_color="@android:color/transparent" app:riv_border_width="0.5dip" app:riv_corner_radius_bottom_left="4.0dip" app:riv_corner_radius_top_right="4.0dip" app:riv_oval="false" />
+    <ImageView android:layout_gravity="left" android:id="@id/mja" android:layout_width="@dimen/bczi" android:layout_height="50.0dip" android:layout_marginLeft="5.0dip" android:scaleType="fitXY" />
+</FrameLayout>

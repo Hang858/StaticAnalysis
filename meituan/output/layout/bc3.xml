@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/igw" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="bottom" android:id="@id/fl_bg_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/ba_m" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:layout_gravity="bottom|center" android:id="@id/bc0c" android:layout_width="4.0dip" android:layout_height="30.0dip" />
+    <FrameLayout android:gravity="center_horizontal" android:layout_gravity="bottom|center" android:id="@id/banq" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="bottom|center" android:id="@id/iv_second_floor_refresh_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" />
+        <com.sankuai.waimai.lottie.SafeLottieAnimationView android:layout_gravity="bottom|center" android:id="@id/lottie_middle" android:visibility="gone" android:layout_width="300.0dip" android:layout_height="174.0dip" app:lottie_autoPlay="false" app:lottie_loop="false" />
+    </FrameLayout>
+    <LinearLayout android:gravity="bottom|center" android:layout_gravity="bottom|center" android:orientation="vertical" android:id="@id/mjz" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/p2w" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="@color/white" android:id="@id/lb7" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-2.0dip" android:text="￥" android:includeFontPadding="false" />
+            <TextView android:textSize="45.0dip" android:textStyle="bold" android:textColor="@color/white" android:id="@id/lsw" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+        </LinearLayout>
+        <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/gye" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:includeFontPadding="false" android:lineSpacingExtra="0.0dip" />
+    </LinearLayout>
+</FrameLayout>

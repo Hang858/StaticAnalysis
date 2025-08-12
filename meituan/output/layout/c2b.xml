@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img_close" android:paddingLeft="4.0dip" android:paddingTop="4.0dip" android:paddingRight="4.0dip" android:layout_width="21.0dip" android:layout_height="17.0dip" android:layout_marginRight="4.0dip" android:src="@drawable/bb74" android:scaleType="centerCrop" android:layout_alignRight="@id/dmz" />
+    <ImageView android:id="@id/dmz" android:layout_width="88.0dip" android:layout_height="88.0dip" android:scaleType="fitXY" android:layout_below="@id/img_close" />
+</RelativeLayout>

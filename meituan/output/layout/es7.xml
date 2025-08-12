@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.AppCompatImageView android:layout_gravity="right" android:id="@id/bbfy" android:layout_width="24.0dip" android:layout_height="8.0dip" android:layout_marginRight="9.0dip" android:src="@drawable/um9" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="vertical" android:id="@id/rci" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/i57" android:paddingTop="14.0dip" android:paddingBottom="14.0dip" android:layout_width="100.0dip" android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatImageView android:id="@id/n3_" android:layout_width="16.0dip" android:layout_height="16.0dip" android:scaleType="fitXY" />
+            <android.support.v7.widget.AppCompatTextView android:textSize="14.0dip" android:textColor="@color/j_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/m8b" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

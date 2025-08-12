@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/parent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sankuai.meituan.msv.page.dialog.RewardPackageBackgroundView android:id="@id/sfv" android:focusable="true" android:layout_width="295.0dip" android:layout_height="357.5dip" android:layout_centerInParent="true" app:middleOffset="340.0dip" app:sideOffset="270.0dip" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/wun" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignLeft="@id/sfv" android:layout_alignTop="@id/sfv" android:layout_alignRight="@id/sfv" android:layout_alignBottom="@id/sfv">
+        <com.meituan.android.common.ui.widget.RoundImageView android:id="@id/avatar" android:layout_width="53.0dip" android:layout_height="53.0dip" android:layout_marginTop="18.0dip" android:layout_centerHorizontal="true" app:riv_borderColor="#ffffffff" app:riv_borderWidth="1.0dip" app:riv_radius="27.5dip" />
+        <android.support.v7.widget.AppCompatTextView android:textSize="15.0dip" android:textColor="#ffffedd1" android:id="@id/nick_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="74.0dip" android:text="用户微信昵称" android:layout_centerHorizontal="true" />
+        <android.support.v7.widget.AppCompatTextView android:textSize="24.0dip" android:textColor="#ffffedd1" android:id="@id/sww" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="113.0dip" android:text="短视频送你 现金奖励" android:layout_centerHorizontal="true" />
+        <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="80.0dip" android:layout_marginTop="162.0dip" android:layout_centerHorizontal="true">
+            <com.sankuai.meituan.msv.page.dialog.RollNumberView android:id="@id/l4d" android:layout_width="wrap_content" android:layout_height="fill_parent" app:fontSize="60.0dip" app:scrollType="gax" />
+            <android.support.v7.widget.AppCompatTextView android:textSize="60.0dip" android:textStyle="bold" android:id="@id/npr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/l4d" android:layout_centerVertical="true" />
+            <android.support.v7.widget.AppCompatTextView android:textSize="27.0dip" android:textStyle="bold" android:textColor="#ffffedd1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="元" android:layout_toRightOf="@id/npr" android:layout_alignBaseline="@id/npr" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/button" android:background="@drawable/bbuw" android:layout_width="235.0dip" android:layout_height="54.0dip" android:layout_marginTop="252.0dip" android:layout_centerHorizontal="true">
+            <android.support.v7.widget.AppCompatTextView android:textSize="18.0dip" android:textColor="#ff5e3b34" android:id="@id/button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="立即提现" />
+            <android.support.v7.widget.AppCompatTextView android:textSize="18.0dip" android:textColor="#ff5e3b34" android:id="@id/bctv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="" android:alpha="0.8" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19.0dip" android:layout_marginBottom="12.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <android.support.v7.widget.AppCompatImageView android:layout_width="21.0dip" android:layout_height="21.0dip" android:src="@drawable/j_v" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <android.support.v7.widget.AppCompatTextView android:textSize="15.0dip" android:textColor="#ffffc3b6" android:gravity="center" android:layout_width="wrap_content" android:layout_height="21.0dip" android:layout_marginLeft="3.0dip" android:text="官方打款 现金秒到账" />
+        </LinearLayout>
+    </RelativeLayout>
+    <android.support.v7.widget.AppCompatImageView android:id="@id/close" android:layout_width="29.0dip" android:layout_height="29.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="9.0dip" android:src="@drawable/fr" android:layout_alignTop="@id/sfv" android:layout_alignRight="@id/sfv" />
+</RelativeLayout>

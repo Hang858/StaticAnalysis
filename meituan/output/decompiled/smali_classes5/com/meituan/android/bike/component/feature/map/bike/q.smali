@@ -1,0 +1,93 @@
+.class public final Lcom/meituan/android/bike/component/feature/map/bike/q;
+.super Lkotlin/jvm/internal/l;
+.source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/b;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/jvm/internal/l;",
+        "Lkotlin/jvm/functions/b<",
+        "Ljava/lang/Integer;",
+        "Lkotlin/r;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final synthetic a:Lcom/meituan/android/bike/component/feature/map/bike/BikeHomeMapFragment;
+
+
+# direct methods
+.method public constructor <init>(Lcom/meituan/android/bike/component/feature/map/bike/BikeHomeMapFragment;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/meituan/android/bike/component/feature/map/bike/q;->a:Lcom/meituan/android/bike/component/feature/map/bike/BikeHomeMapFragment;
+
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1}, Lkotlin/jvm/internal/l;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 3
+
+    .line 120000
+    check-cast p1, Ljava/lang/Integer;
+
+    .line 120001
+    .line 120002
+    if-eqz p1, :cond_0
+
+    .line 120003
+    .line 120004
+    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
+
+    .line 120005
+    .line 120006
+    .line 120007
+    move-result p1
+
+    .line 120008
+    iget-object v0, p0, Lcom/meituan/android/bike/component/feature/map/bike/q;->a:Lcom/meituan/android/bike/component/feature/map/bike/BikeHomeMapFragment;
+
+    .line 120009
+    .line 120010
+    invoke-virtual {v0}, Lcom/meituan/android/bike/component/feature/shared/view/MobikeBaseFragment;->getActivityOrNull()Lcom/meituan/android/bike/component/feature/main/view/f;
+
+    .line 120011
+    .line 120012
+    .line 120013
+    move-result-object v0
+
+    .line 120014
+    if-eqz v0, :cond_0
+
+    .line 120015
+    .line 120016
+    const/4 v1, 0x0
+
+    .line 120017
+    const/4 v2, 0x6
+
+    .line 120018
+    invoke-static {v0, p1, v1, v2}, Lcom/meituan/android/bike/framework/widgets/uiext/p;->a(Landroid/app/Activity;III)V
+
+    .line 120019
+    .line 120020
+    .line 120021
+    :cond_0
+    sget-object p1, Lkotlin/r;->a:Lkotlin/r;
+
+    .line 120022
+    .line 120023
+    return-object p1
+.end method

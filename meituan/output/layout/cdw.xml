@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.meituan.msv.page.widget.ShortVideoPoisonLoadMoreLayout android:id="@id/k73" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sankuai.meituan.msv.page.widget.ShortVideoPoisonRefreshLayout android:id="@id/lri" android:layout_width="fill_parent" android:layout_height="fill_parent" app:maxHeaderViewHeight="60.0dip">
+        <FrameLayout android:id="@id/fwl" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.sankuai.meituan.msv.page.widget.ShortVideoPoisonRefreshLayout>
+    <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center_horizontal" android:id="@id/lav_tab_loading" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="20.0dip" app:lottie_autoPlay="true" app:lottie_loop="true" />
+    <include android:id="@id/vwd" layout="@layout/ppk" />
+</com.sankuai.meituan.msv.page.widget.ShortVideoPoisonLoadMoreLayout>

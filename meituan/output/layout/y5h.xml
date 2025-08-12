@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.platform.widget.RoundedLinearLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cornerRadius="6.0dip" app:cropBackground="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/jpg" android:paddingLeft="@dimen/i6c" android:paddingTop="@dimen/uv2" android:paddingRight="@dimen/i6c" android:paddingBottom="@dimen/i6c" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/iz4" android:textColor="@color/wm_sg_color_858687" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/bbrs" android:text="@string/wm_sc_common_im_order_info" />
+        <include layout="@layout/nv6" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/r37" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/l9r">
+            <TextView android:textSize="@dimen/ps0" android:textColor="@color/trk" android:gravity="center" android:id="@id/wgn" android:layout_width="@dimen/gnr" android:layout_height="@dimen/m79" android:text="@string/j6e" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+</com.sankuai.waimai.platform.widget.RoundedLinearLayout>

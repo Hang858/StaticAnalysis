@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="44.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/dfs" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_alignParentTop="true" />
+    <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <ProgressBar android:id="@id/lrc" android:layout_width="18.0dip" android:layout_height="18.0dip" android:indeterminate="true" android:indeterminateDrawable="@drawable/by2" android:indeterminateDuration="1300" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/e7i" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="加载中" />
+    </LinearLayout>
+</merge>

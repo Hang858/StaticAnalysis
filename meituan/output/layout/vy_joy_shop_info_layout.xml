@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/vy_white" android:paddingLeft="@dimen/vy_standard_margin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginRight="@dimen/vy_standard_margin" android:layout_marginBottom="12.0dip">
+        <TextView android:textSize="@dimen/vy_text_size_14" android:textColor="@color/vy_black1" android:ellipsize="end" android:id="@id/title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/vy_text_size_13" android:textColor="@color/vy_black3" android:ellipsize="end" android:id="@id/title_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:maxWidth="100.0dip" android:maxLines="1" android:singleLine="true" />
+        <ImageView android:id="@id/right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:src="@drawable/vy_arrow_right" />
+    </LinearLayout>
+    <View android:background="@drawable/vy_line_divider_bg" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="@dimen/vy_text_size_14" android:textColor="@color/vy_black1" android:ellipsize="end" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="@dimen/vy_standard_margin" android:maxLines="1" />
+    <GridLayout android:id="@id/feature_gridview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="@dimen/vy_standard_margin" android:layout_marginBottom="15.0dip" android:columnCount="3" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/tag_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/vy_standard_margin">
+        <com.dianping.imagemanager.DPNetworkImageView android:id="@id/tag_icon" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginRight="6.0dip" android:scaleType="fitXY" />
+        <TextView android:textSize="@dimen/vy_text_size_13" android:textColor="@color/vy_black2" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tag_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

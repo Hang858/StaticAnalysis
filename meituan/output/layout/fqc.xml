@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/ehv" android:layout_marginStart="8.0dip" />
+    <com.meituan.android.movie.tradebase.search.MovieSearchViewFlipper android:id="@id/vt" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="6.0dip" android:layout_marginEnd="8.0dip" />
+</merge>

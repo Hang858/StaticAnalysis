@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/light_red" android:id="@id/s94" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/j19" android:includeFontPadding="false" />
+    <TextView android:textSize="@dimen/text_size_18" android:textStyle="bold" android:textColor="@color/light_red" android:id="@id/m8y" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/bczf" android:id="@id/q9v" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="起" android:singleLine="true" android:includeFontPadding="false" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/bczf" android:id="@id/pa2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/j19" android:includeFontPadding="false" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/bczf" android:id="@id/r_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+</merge>

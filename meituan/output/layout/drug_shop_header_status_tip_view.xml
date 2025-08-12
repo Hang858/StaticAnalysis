@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="@dimen/bpi" android:layout_marginLeft="@dimen/wpy" android:layout_marginRight="@dimen/wpy"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/wpy" android:textStyle="bold" android:textColor="@color/wm_sg_color_FF8000" android:id="@id/tv_header_status_tip_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="12.0dip" android:textStyle="bold" android:textColor="@color/pjf" android:gravity="center" android:id="@id/tv_header_status_subscribe_button" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:paddingBottom="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginEnd="@dimen/ddv" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

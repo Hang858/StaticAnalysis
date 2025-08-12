@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:paddingBottom="30.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meituan.android.bike.framework.widgets.UnlockingProgressView android:id="@id/ed8" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginTop="30.0dip" android:scaleType="centerCrop" android:adjustViewBounds="false" />
+    <com.meituan.android.bike.framework.widgets.shadow.BaseTextView android:textSize="20.0dip" android:textStyle="bold" android:gravity="center" android:id="@id/c78" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" style="@style/mobike_style_secondary_title" />
+    <com.meituan.android.bike.framework.widgets.shadow.BaseTextView android:textSize="15.0dip" android:textColor="@color/s5k" android:gravity="center_horizontal" android:id="@id/mobike_tv_content_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="20.0dip" android:lineSpacingExtra="4.0dip" style="@style/mobike_style_secondary_title" />
+</LinearLayout>

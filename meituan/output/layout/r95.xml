@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_12" android:gravity="center_vertical" android:id="@id/tv_search_sort_list_item_text" android:paddingLeft="@dimen/f7u" android:layout_width="fill_parent" android:layout_height="@dimen/ia6" />
+    <View android:layout_gravity="bottom" android:id="@id/daj" android:background="@color/njp" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</FrameLayout>

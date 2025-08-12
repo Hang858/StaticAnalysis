@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingBottom="9.5dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dianping.imagemanager.DPImageView android:id="@id/jm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" app:cornerRadius="3.0dip" app:isSquare="true" app:placeholderError="@drawable/ofz" />
+    <ImageView android:id="@id/rt6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/w4f" android:layout_alignTop="@id/jm" android:layout_alignRight="@id/jm" />
+    <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:gravity="left" android:id="@id/m15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:maxLines="2" android:layout_below="@id/jm" />
+</RelativeLayout>

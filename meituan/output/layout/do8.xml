@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/fis" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/k_v" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/r21" android:paddingLeft="16.0dip" android:paddingTop="10.0dip" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:importantForAccessibility="yes" />
+    <com.sankuai.waimai.platform.widget.filterbar.view.view.NoScrollListView android:gravity="center" android:id="@id/kfo" android:paddingLeft="16.0dip" android:paddingTop="10.5dip" android:paddingRight="16.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:horizontalSpacing="10.0dip" android:verticalSpacing="12.0dip" />
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/vy_more_deal_image_container" android:layout_width="162.0dip" android:layout_height="90.0dip">
+        <com.dianping.imagemanager.DPNetworkImageView android:id="@id/vy_more_deal_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" app:placeholderEmpty="@drawable/vy_image_default" app:placeholderError="@drawable/vy_image_error" app:placeholderLoading="@drawable/vy_image_default" />
+        <TextView android:textSize="@dimen/vy_text_size_12" android:textColor="@color/vy_more_deals_tag_text_color" android:layout_gravity="center|left|top" android:id="@id/vy_more_deal_tag" android:background="@color/vy_more_deals_tag_bg_color" android:paddingLeft="4.0dip" android:paddingTop="2.0dip" android:paddingRight="4.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/vy_text_size_12" android:textColor="@color/vy_more_deals_title_color" android:id="@id/vy_more_deal_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:lines="2" android:lineSpacingMultiplier="1.1" />
+    <LinearLayout android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+        <TextView android:textSize="@dimen/vy_text_size_12" android:textColor="@color/vy_more_deals_price_color" android:id="@id/vy_more_deal_rmb_symbol" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rmb_symble" />
+        <com.dianping.pioneer.widgets.AutoHideTextView android:textSize="@dimen/vy_more_deal_price_size" android:textColor="@color/vy_more_deals_price_color" android:id="@id/vy_more_deal_price" android:layout_width="wrap_content" android:layout_height="wrap_content" app:auto_hide="true" />
+        <com.dianping.pioneer.widgets.AutoHideTextView android:textSize="@dimen/vy_text_size_12" android:textColor="@color/vy_more_deals_sub_title_color" android:id="@id/vy_more_deal_original_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" app:auto_hide="true" />
+        <View android:layout_width="0.0dip" android:layout_height="1.0px" android:layout_weight="1.0" />
+        <com.dianping.pioneer.widgets.AutoHideTextView android:textSize="@dimen/vy_text_size_12" android:textColor="@color/vy_more_deals_sub_title_color" android:id="@id/vy_more_deal_commit" android:layout_width="wrap_content" android:layout_height="wrap_content" app:auto_hide="true" />
+    </LinearLayout>
+</merge>

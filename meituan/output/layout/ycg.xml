@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/o2u" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/gra" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="3.0dip" />
+    <TextView android:textSize="16.0dip" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="连Wi-Fi" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <CheckBox android:id="@id/no4" android:background="@drawable/nmu" android:layout_width="8.0dip" android:layout_height="8.0dip" android:checked="true" />
+        <CheckBox android:enabled="true" android:id="@id/l8n" android:background="@drawable/nmu" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginLeft="5.0dip" />
+        <CheckBox android:enabled="false" android:id="@id/iu3" android:background="@drawable/nmu" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginLeft="5.0dip" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/lhd" android:background="@drawable/i4t" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="10.0dip">
+        <ImageView android:id="@id/dec" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@mipmap/phx_aladdin_search_phoenix_logo" android:scaleType="fitXY" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff222222" android:id="@id/w3j" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="美团民宿" android:layout_toRightOf="@id/dec" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ff222222" android:id="@id/l0n" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="订民宿" android:layout_toLeftOf="@id/kqz" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/kqz" android:layout_width="4.5dip" android:layout_height="8.0dip" android:src="@mipmap/phx_aladdin_right_arrow" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/r3t" android:background="@drawable/i4t" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="68.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <TextView android:textSize="14.0sp" android:textColor="#ff222222" android:id="@id/jc8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="目的地" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff222222" android:ellipsize="end" android:id="@id/g1i" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:maxLines="1" />
+        </LinearLayout>
+        <ImageView android:layout_width="4.5dip" android:layout_height="8.0dip" android:src="@mipmap/phx_aladdin_right_arrow" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View android:background="#fff3f3f3" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <RelativeLayout android:id="@id/y5t" android:background="@drawable/i4t" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="64.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ywu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <TextView android:textSize="12.0sp" android:textColor="#ff222222" android:id="@id/yfg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="入住" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff222222" android:ellipsize="end" android:id="@id/omb" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff222222" android:id="@id/sjs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/nse" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_toRightOf="@id/ywu" android:layout_centerVertical="true">
+            <TextView android:textSize="12.0sp" android:textColor="#ff222222" android:id="@id/xdi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="离店" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff222222" android:ellipsize="end" android:id="@id/dh7" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff222222" android:id="@id/km3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ff222222" android:id="@id/uok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/op0" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/op0" android:layout_width="4.5dip" android:layout_height="8.0dip" android:src="@mipmap/phx_aladdin_right_arrow" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View android:background="#fff3f3f3" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <RelativeLayout android:id="@id/iea" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="#ff222222" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/ime" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="我的附近" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff222222" android:textColorHint="#ff999999" android:ellipsize="end" android:id="@id/jur" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="24.0dip" android:hint="搜索民宿/地名/关键词" android:maxLines="1" android:layout_toLeftOf="@id/bcbm" android:layout_toRightOf="@id/ime" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/bcbm" android:padding="12.0dip" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginRight="6.0dip" android:src="@mipmap/phx_aladdin_search_icon_clear" android:layout_toLeftOf="@id/ws0" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/ws0" android:layout_width="4.5dip" android:layout_height="8.0dip" android:src="@mipmap/phx_aladdin_right_arrow" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="#fff3f3f3" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff222222" android:gravity="center" android:id="@id/ig8" android:background="@drawable/ial" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="10.0dip" android:text="查找民宿" />
+</LinearLayout>

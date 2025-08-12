@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/d6d" android:visibility="gone" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/ifs" android:background="@drawable/hk2" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginTop="10.0dip">
+        <ImageView android:layout_gravity="bottom" android:id="@id/iv_kangaroo" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="53.0dip" android:layout_marginLeft="-1.5dip" />
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/ii3" android:ellipsize="end" android:id="@id/hmj" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="10.0dip" android:maxWidth="220.0dip" android:maxLines="2" android:layout_weight="1.0" />
+        <View android:id="@id/view_divider" android:background="#33ffffff" android:visibility="gone" android:layout_width="0.8000001dip" android:layout_height="18.0dip" android:layout_marginRight="10.0dip" />
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffff8000" android:id="@id/w89" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" />
+    </LinearLayout>
+    <ImageView android:id="@id/iv_bubble_arrow" android:layout_width="9.0dip" android:layout_height="4.5dip" android:src="@drawable/vil" android:scaleType="centerCrop" android:layout_below="@id/ifs" />
+</RelativeLayout>

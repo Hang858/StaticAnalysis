@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/cwe" android:layout_width="fill_parent" android:layout_height="@dimen/mj6"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/ba_l" android:paddingTop="10.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.flexbox.FlexboxLayout android:id="@id/czp" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="27.0dip" android:layout_marginRight="27.0dip" app:dividerDrawableHorizontal="@drawable/f62" app:flexDirection="row" app:flexWrap="wrap" app:showDividerHorizontal="middle" />
+    </ScrollView>
+    <TextView android:textSize="12.0sp" android:textColor="@color/jy" android:layout_gravity="center" android:id="@id/wg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gy_" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/oxw" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:indeterminateDrawable="@anim/loading_animtaion" />
+</FrameLayout>

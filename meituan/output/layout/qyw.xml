@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/k3" android:paddingLeft="6.0dip" android:paddingTop="12.0dip" android:paddingRight="6.0dip" android:paddingBottom="12.0dip" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <TextView android:textSize="15.0sp" android:textColor="#ff666666" android:layout_gravity="center_vertical" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/kqi" android:layout_gravity="center_vertical" android:id="@id/tv_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <Button android:textSize="12.0sp" android:id="@id/ujw" android:layout_width="70.0dip" android:layout_height="40.0dip" android:text="展开" />
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/tv_msg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" />
+</LinearLayout>

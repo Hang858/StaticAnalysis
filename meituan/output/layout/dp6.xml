@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="35.0dip" android:layout_marginRight="35.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bayo" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="14.0dip" android:paddingEnd="16.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/i_h" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatImageView android:id="@id/p7w" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+            <com.meituan.android.common.ui.widget.RoundImageView android:id="@id/iv_semi_guide_icon_1" android:visibility="gone" android:layout_width="22.0dip" android:layout_height="22.0dip" app:riv_borderColor="#33cccccc" app:riv_borderWidth="0.5dip" app:riv_radius="11.0dip" />
+            <com.meituan.android.common.ui.widget.RoundImageView android:id="@id/iv_semi_guide_icon_2" android:visibility="gone" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginStart="-8.0dip" app:riv_borderColor="#33cccccc" app:riv_borderWidth="0.5dip" app:riv_radius="11.0dip" />
+            <com.meituan.android.common.ui.widget.RoundImageView android:id="@id/iv_semi_guide_icon_3" android:visibility="gone" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginStart="-8.0dip" app:riv_borderColor="#33cccccc" app:riv_borderWidth="0.5dip" app:riv_radius="11.0dip" />
+        </LinearLayout>
+        <android.support.v7.widget.AppCompatImageView android:id="@id/iv_semi_guide_icon_with_text" android:layout_width="78.0dip" android:layout_height="18.0dip" />
+        <View android:id="@id/sbj" android:background="#3dffffff" android:layout_width="1.0dip" android:layout_height="14.0dip" android:layout_marginStart="6.5dip" android:layout_marginEnd="0.5dip" />
+        <com.sankuai.meituan.msv.page.widget.MSVEdgeTransparentView android:id="@id/w4z" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_centerVertical="true" android:requiresFadingEdge="horizontal" android:layout_marginStart="6.0dip" app:edge_position="left|right">
+            <com.sankuai.meituan.msv.page.fragmentcontroller.semi.MSVMarqueeTextView android:textSize="14.0dip" android:textColor="#ffffffff" android:ellipsize="none" android:id="@id/q9w" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sox" android:singleLine="true" />
+        </com.sankuai.meituan.msv.page.widget.MSVEdgeTransparentView>
+        <android.support.v7.widget.AppCompatImageView android:id="@id/content_semi_guide_arrow" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/v36" android:layout_marginStart="4.0dip" />
+    </LinearLayout>
+    <android.support.v7.widget.AppCompatImageView android:id="@id/iv_guide_light" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/qeu" />
+</FrameLayout>

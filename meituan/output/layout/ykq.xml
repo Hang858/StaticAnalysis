@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:background="@drawable/zv4" android:layout_width="47.0dip" android:layout_height="47.0dip" android:layout_marginBottom="33.0dip">
+        <ImageView android:gravity="center" android:id="@id/uge" android:layout_width="32.0dip" android:layout_height="32.0dip" android:contentDescription="加载中" />
+    </LinearLayout>
+</LinearLayout>

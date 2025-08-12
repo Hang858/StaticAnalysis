@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/n05" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/bottom_layout" android:background="@color/jr9" android:paddingTop="18.0dip" android:paddingBottom="80.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/bazl" android:layout_width="121.0dip" android:layout_height="128.0dip" android:layout_marginBottom="30.0dip" android:layout_centerHorizontal="true">
+            <com.meituan.android.common.ui.widget.RoundImageView android:id="@id/lu0" android:layout_width="115.0dip" android:layout_height="115.0dip" android:layout_marginTop="10.0dip" android:layout_centerHorizontal="true" android:contentDescription="demoImg" app:riv_border="false" app:riv_radius="9.0dip" />
+            <ImageView android:id="@id/qt9" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" android:contentDescription="demoBg" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/gp5" android:visibility="invisible" android:layout_width="53.0dip" android:layout_height="53.0dip" android:layout_marginStart="32.0dip" />
+            <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+            <ImageView android:id="@id/jue" android:layout_width="75.0dip" android:layout_height="75.0dip" />
+            <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+            <ImageView android:id="@id/guw" android:layout_width="53.0dip" android:layout_height="53.0dip" android:layout_marginEnd="32.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/qua" android:background="@color/jr9" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/raf" android:padding="10.0dip" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginTop="46.0dip" android:layout_marginBottom="37.0dip" android:scaleType="fitCenter" android:contentDescription="img_cancel" android:layout_marginStart="2.0dip" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:id="@id/s1n" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/bottom_layout" android:layout_below="@id/qua">
+        <FrameLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="16.0dip" android:textColor="@color/bb3o" android:gravity="center" android:layout_gravity="center" android:id="@id/j9n" android:background="@drawable/q14" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="23.0dip" android:paddingEnd="23.0dip" android:layout_marginStart="67.0dip" android:layout_marginEnd="67.0dip" />
+            <com.meituan.android.bike.component.feature.capture.view.CustomLayout android:gravity="center" android:layout_gravity="center" android:id="@id/rcf" android:background="#cc565658" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:layout_gravity="center" android:id="@id/eo5" android:background="@drawable/d2b" android:layout_width="171.0dip" android:layout_height="117.0dip" />
+                <TextView android:textSize="16.0dip" android:textColor="@color/bb3o" android:gravity="bottom|center" android:layout_gravity="bottom" android:id="@id/r4w" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:layout_marginStart="51.0dip" android:layout_marginEnd="51.0dip" />
+            </com.meituan.android.bike.component.feature.capture.view.CustomLayout>
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

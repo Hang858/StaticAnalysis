@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/wl7" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/q_z" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/uqb" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.meituan.android.legwork.ui.component.pickerview.lib.WheelView android:id="@id/jik" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.meituan.android.legwork.ui.component.pickerview.lib.WheelView android:id="@id/ebz" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.meituan.android.legwork.ui.component.pickerview.lib.WheelView android:id="@id/g5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff333333" android:gravity="center" android:id="@id/n1t" android:background="@drawable/ezj" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:text="确定" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:background="@color/vy_white" android:paddingLeft="@dimen/vy_standard_margin" android:paddingTop="12.0dip" android:paddingRight="@dimen/vy_standard_margin" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/vy_text_size_14" android:textColor="@color/vy_black2" android:ellipsize="end" android:id="@id/name_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="备注(选填)" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/vy_text_size_12" android:textColor="@color/vy_black3" android:id="@id/input_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0/20" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <EditText android:textSize="@dimen/vy_text_size_14" android:textColor="@color/vy_black2" android:textColorHint="@color/vy_black4" android:id="@id/edit_name" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:hint="可告知您对商家、技师的要求" android:maxLength="20" android:layout_toLeftOf="@id/input_count" android:layout_toRightOf="@id/name_title" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

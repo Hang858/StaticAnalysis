@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/wtn" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/no_result_full_page_image" android:layout_width="200.0dip" android:layout_height="150.0dip" android:layout_marginTop="133.0dip" android:layout_marginBottom="12.0dip" android:src="@drawable/wm_sg_new_brand_net_error" android:scaleType="fitCenter" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:ellipsize="end" android:gravity="center" android:id="@id/no_result_full_page_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="50.0dip" android:maxLines="3" />
+        <TextView android:textSize="11.0sp" android:textColor="#ff999999" android:ellipsize="end" android:id="@id/no_result_full_page_sub_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="50.0dip" android:maxLines="2" />
+        <TextView android:textSize="@dimen/ps0" android:textStyle="bold" android:textColor="@color/yvw" android:id="@id/no_result_reload_filter" android:background="@drawable/jy0" android:paddingTop="@dimen/ea5" android:paddingBottom="@dimen/ea5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wpy" android:text="@string/b47" android:paddingStart="@dimen/rza" android:paddingEnd="@dimen/rza" />
+        <TextView android:textSize="@dimen/m8w" android:textStyle="bold" android:textColor="@color/usk" android:gravity="center" android:id="@id/no_result_meishi_button" android:background="@drawable/jy0" android:paddingLeft="@dimen/p7e" android:paddingRight="@dimen/p7e" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="28.0dip" android:layout_marginTop="@dimen/wpy" android:text="@string/b47" />
+    </LinearLayout>
+</FrameLayout>

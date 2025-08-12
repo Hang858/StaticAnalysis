@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:id="@id/bbck" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="start|center" android:id="@id/w0_" android:background="@drawable/t99" android:layout_width="46.0dip" android:layout_height="32.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:layout_gravity="center" android:id="@id/r9a" android:background="@drawable/s96" android:layout_width="20.0dip" android:layout_height="6.0dip" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="end|center" android:id="@id/xd0" android:background="@drawable/hg3" android:layout_width="46.0dip" android:layout_height="32.0dip" android:contentDescription="@string/y" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/capsule_divider" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:layout_gravity="center" android:id="@id/liw" android:background="@drawable/esq" android:layout_width="16.0dip" android:layout_height="16.0dip" />
+    </FrameLayout>
+    <View android:layout_gravity="center" android:id="@id/capsule_divider" android:background="@color/vie" android:layout_width="1.0dip" android:layout_height="0.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/w0_" app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

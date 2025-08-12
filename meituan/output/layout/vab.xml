@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:id="@id/fe3" android:background="@drawable/lp" android:layout_width="136.0dip" android:layout_height="136.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/om4" android:layout_width="37.0dip" android:layout_height="37.0dip" android:layout_marginBottom="24.0dip" android:src="@drawable/om4" />
+    <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" android:text="加载中" />
+</FrameLayout>

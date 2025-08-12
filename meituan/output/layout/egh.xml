@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/bg_deal_map_list_selector" android:paddingTop="@dimen/c0" android:paddingRight="@dimen/ura" android:paddingBottom="@dimen/ppt" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/x3r" android:layout_width="@dimen/bahw" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@id/icon" android:layout_width="22.0dip" android:layout_height="16.0dip" android:scaleType="fitCenter" />
+        </FrameLayout>
+        <com.sankuai.meituan.search.view.PriorityLinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.sankuai.meituan.search.home.view.SearchRichTextView android:textSize="15.0dip" android:textColor="@color/qul" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" app:priority="3" />
+            <com.meituan.android.base.ui.widget.TagsLayout android:layout_gravity="center_vertical" android:id="@id/tag_container" android:layout_width="wrap_content" android:layout_height="wrap_content" app:priority="2" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" app:priority="4" />
+            <com.sankuai.meituan.search.home.view.SearchRichTextView android:textSize="11.0dip" android:textColor="@color/on1" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/ufj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" android:includeFontPadding="false" app:priority="1" />
+        </com.sankuai.meituan.search.view.PriorityLinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center|right" android:id="@id/sv8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dcu">
+        <com.sankuai.meituan.search.home.sug.view.SearchTagsLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/i6m" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bahw" android:layout_weight="1.0" />
+        <com.sankuai.meituan.search.home.view.SearchRichTextView android:textSize="12.0dip" android:textColor="@color/on1" android:gravity="right" android:layout_gravity="right" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" android:includeFontPadding="false" />
+    </LinearLayout>
+</LinearLayout>

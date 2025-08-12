@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <fragment android:name="com.meituan.android.qcsc.business.bizmodule.lbs.map.business.MapFragment" android:id="@id/fragment_map" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/qcsc_ic_contact_oval_blue" />
+    <LinearLayout android:orientation="vertical" android:background="@color/qcsc_white" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="是否开启定位MOCK" />
+        <RadioGroup android:id="@id/rg_mock_location_switch" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RadioButton android:id="@id/rb_mock_location_open" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开启" />
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="关闭" />
+        </RadioGroup>
+        <EditText android:id="@id/et_lat" android:layout_width="150.0dip" android:layout_height="wrap_content" android:hint="设置纬度" />
+        <EditText android:id="@id/et_lng" android:layout_width="150.0dip" android:layout_height="wrap_content" android:hint="设置经度" />
+        <EditText android:id="@id/et_accuracy" android:layout_width="150.0dip" android:layout_height="wrap_content" android:hint="设置精确度" />
+        <Button android:id="@id/btn_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="设置" android:onClick="onClick" />
+    </LinearLayout>
+</FrameLayout>

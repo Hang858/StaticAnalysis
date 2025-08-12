@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.store.view.RoundedCornerLinearLayout android:orientation="vertical" android:background="@color/eq" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/uv2" app:cornerRadius="@dimen/uv2"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/m8w" android:textColor="@color/loo" android:ellipsize="end" android:id="@id/x5o" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wpy" android:maxLines="1" android:drawablePadding="@dimen/bbrs" android:drawableStart="@drawable/j3e" android:layout_marginStart="@dimen/i6c" android:layout_marginEnd="@dimen/i6c" />
+    <android.support.v7.widget.RecyclerView android:id="@id/w2q" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/e5p" />
+</com.sankuai.waimai.store.view.RoundedCornerLinearLayout>

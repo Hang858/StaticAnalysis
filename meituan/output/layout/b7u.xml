@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/merchant_info" android:paddingTop="4.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/wkb" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" style="@style/WmCell.Clickable.FixedHeight">
+        <ImageView android:id="@id/poi_type_icon" android:layout_width="wrap_content" android:layout_height="14.0dip" android:layout_marginRight="6.0dip" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="#ff222426" android:gravity="center|left" android:id="@id/bbfv" android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/WmText" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/bcqg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="16.0dip" android:layout_marginLeft="20.0dip" android:scaleType="centerInside" />
+        <com.meituan.roodesign.resfetcher.widgets.RooImageView android:layout_gravity="center_vertical" android:id="@id/v5x" android:visibility="gone" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="6.0dip" app:project="waimai_c" app:srcName="waimai_c_order_icon_normal_question_gray" />
+    </LinearLayout>
+</LinearLayout>

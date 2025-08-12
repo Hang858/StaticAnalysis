@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:id="@id/ep0" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/k56" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll" />
+        <LinearLayout android:orientation="vertical" android:id="@id/h04" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </android.support.design.widget.AppBarLayout>
+    <com.maoyan.android.common.view.recyclerview.HeaderFooterRcview android:id="@id/mm7" android:background="@drawable/lou" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</merge>

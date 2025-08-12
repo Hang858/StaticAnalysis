@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.platform.widget.filterbar.view.view.FloatFilterRelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/bb2q" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.sankuai.waimai.platform.widget.filterbar.view.view.FilterBarViewHome android:id="@id/jnl" android:background="@color/fis" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <FrameLayout android:orientation="vertical" android:id="@id/em2" android:background="@drawable/i0h" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/bb2q" />
+    <FrameLayout android:orientation="vertical" android:id="@id/l6u" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/bb2q" />
+</com.sankuai.waimai.platform.widget.filterbar.view.view.FloatFilterRelativeLayout>

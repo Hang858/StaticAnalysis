@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:background="@drawable/bbrk" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/v8u" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="24.0sp" android:textColor="@color/jpg" android:id="@id/bb4x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_st_dealInfo_total_price_zero" android:singleLine="true" />
+            <com.sankuai.waimai.store.widgets.StrikeTextView android:textSize="10.0sp" android:textColor="@color/hf4" android:id="@id/f2g" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_shipping_fee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip">
+            <TextView android:textSize="11.0sp" android:textColor="@color/hf4" android:ellipsize="end" android:id="@id/qi4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <com.sankuai.waimai.store.widgets.StrikeTextView android:textSize="11.0sp" android:textColor="@color/hf4" android:id="@id/s5i" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/hf4" android:ellipsize="end" android:id="@id/lwp" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+            <ImageView android:id="@id/iv_city_delivery" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/rkw" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/nc6" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="@color/hf4" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/zys" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:layout_weight="1.0" />
+            <ImageView android:id="@id/bc2f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/rkw" />
+        </LinearLayout>
+    </FrameLayout>
+    <TextView android:enabled="false" android:textSize="16.0sp" android:textColor="@color/bwg" android:id="@id/yoj" android:background="@drawable/oo1" android:text="@string/wm_st_shopcart_dealInfo_submit" style="@style/WmScButton.FixedWidth.SolidSquare" />
+</LinearLayout>

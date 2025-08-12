@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="178.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sankuai.waimai.store.view.banner.SCBaseViewPager android:id="@id/view_pager" android:background="@drawable/wm_drug_recommend_pair_bg" android:persistentDrawingCache="animation" android:layout_width="fill_parent" android:layout_height="178.0dip" android:layout_marginLeft="6.0dip" android:flipInterval="30" />
+    <com.sankuai.waimai.store.view.banner.ScSimplePageIndicator android:gravity="center_vertical" android:layout_gravity="bottom|center" android:id="@id/indicator" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="24.0dip" android:layout_marginLeft="6.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:checkedSize="6.0dip" app:childDrawable="@drawable/tsg" app:childLayout="@layout/i5k" app:normalSize="3.0dip" />
+</RelativeLayout>

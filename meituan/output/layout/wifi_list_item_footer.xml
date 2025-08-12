@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/wifi_default_bg" android:paddingTop="18.0dip" android:paddingBottom="34.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@color/wifi_default_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/wifi_footer_shield" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff9c9c9c" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tv_footer_insurance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="中国太平洋保险 上网财产损失100%赔付" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/wifi_footer_mt" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff9c9c9c" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tv_footer_mt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="美团商家WiFi 热点可靠" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/wifi_footer_djcp" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff9c9c9c" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tv_footer_djcp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="公安部认证 信息安全等保三级" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

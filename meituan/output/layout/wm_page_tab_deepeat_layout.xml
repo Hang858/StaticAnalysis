@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/ih_" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/deep_eat_content" android:layout_alignParentBottom="true" />
+    <View android:id="@id/left_space" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.699982dip" android:layout_marginRight="-1.0dip" android:layout_toStartOf="@id/deep_eat_content" android:layout_alignParentStart="true" />
+    <FrameLayout android:id="@id/deep_eat_content" android:layout_width="68.0dip" android:layout_height="54.5dip" android:layout_centerHorizontal="true">
+        <com.sankuai.waimai.irmo.render.WMIrmoView android:id="@id/irmo_view_deep_eat_guide" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" app:enableAsync="true" />
+        <android.support.v7.widget.AppCompatImageView android:id="@id/iv_deep_eat_normal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    </FrameLayout>
+    <View android:id="@id/right_space" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="-1.0dip" android:layout_marginTop="8.699982dip" android:layout_toEndOf="@id/deep_eat_content" android:layout_alignParentEnd="true" />
+</RelativeLayout>

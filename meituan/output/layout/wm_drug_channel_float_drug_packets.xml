@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="right" android:visibility="gone" android:layout_width="@dimen/jd7" android:layout_height="@dimen/jd7"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sankuai.waimai.store.view.banner.roundview.UniversalImageView android:layout_gravity="right" android:id="@id/drug_packet_of_channel_float" android:layout_width="@dimen/jd7" android:layout_height="@dimen/jd7" android:scaleType="centerCrop" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_amount_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/by0">
+        <TextView android:textSize="@dimen/zkm" android:textColor="@color/wm_sg_color_FF471A" android:id="@id/tv_packet_float_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+        <TextView android:textSize="@dimen/yxh" android:textColor="@color/wm_sg_color_FF471A" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/j8y" android:text="@string/wm_sc_common_moneytary_unit_chinese" android:includeFontPadding="false" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/by0" android:textStyle="bold" android:textColor="@color/wm_sg_color_FFF5E2" android:gravity="center" android:id="@id/tv_countdown_time_tail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/bbrs" android:text="后失效" android:includeFontPadding="false" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="@dimen/by0" android:textStyle="bold" android:textColor="@color/wm_sg_color_FFF5E2" android:gravity="center" android:id="@id/tv_packet_float_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_above="@id/tv_countdown_time_tail" />
+    <LinearLayout android:gravity="center" android:id="@id/ll_max_value_tag" android:background="@color/wm_sg_color_FFD349" android:paddingLeft="1.5dip" android:paddingRight="1.5dip" android:layout_width="wrap_content" android:layout_height="@dimen/yxh" android:layout_alignParentRight="true">
+        <TextView android:textSize="@dimen/by0" android:textColor="@color/wm_sg_color_FF471A" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="最高" android:includeFontPadding="false" />
+    </LinearLayout>
+</RelativeLayout>

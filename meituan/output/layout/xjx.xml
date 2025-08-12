@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meituan.android.common.ui.widget.RoundFrameLayout android:orientation="vertical" android:id="@id/bb6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="7.6799927pt" android:layout_marginEnd="7.6799927pt" app:rfl_border="false" app:rfl_radius="10.0pt"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sankuai.ptview.view.PTImageView android:id="@id/iv_banner_img" android:background="#ffffffff" android:layout_width="344.6328pt" android:layout_height="63.359985pt" android:scaleType="fitXY" android:contentDescription="图片" />
+    <com.sankuai.ptview.view.PTImageView android:layout_gravity="end" android:id="@id/iv_banner_close" android:padding="6.0pt" android:layout_width="24.0pt" android:layout_height="24.0pt" android:src="@drawable/mtq" android:scaleType="centerCrop" android:contentDescription="关闭" />
+</com.meituan.android.common.ui.widget.RoundFrameLayout>

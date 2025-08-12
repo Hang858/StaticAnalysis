@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:id="@id/ysp" android:background="@drawable/za4" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="美团买药可以顺丰送货上门啦" android:singleLine="true" />
+    <ImageView android:layout_width="10.0dip" android:layout_height="5.0dip" android:layout_marginLeft="150.0dip" android:layout_marginTop="-1.0dip" android:src="@drawable/vqj" android:layout_above="@id/ysp" android:rotation="180.0" />
+</LinearLayout>

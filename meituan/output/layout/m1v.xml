@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dianping.android.oversea.base.widget.OsNetWorkImageView android:id="@id/icon" android:layout_width="66.0dip" android:layout_height="50.0dip" android:layout_marginRight="10.0dip" android:scaleType="fitXY" app:cornerRadius="3.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="15.0sp" android:textColor="#ff2c3942" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ucv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="@color/pb1" android:id="@id/original_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:singleLine="true" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/gpj" android:id="@id/uqo" android:background="@drawable/badz" android:paddingLeft="5.0dip" android:paddingTop="2.0dip" android:paddingRight="5.0dip" android:paddingBottom="2.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/right" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip">
+            <TextView android:textSize="13.0sp" android:textColor="#ffff6230" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="@string/j7b" android:includeFontPadding="false" />
+            <TextView android:textSize="20.0sp" android:textColor="#ffff6230" android:id="@id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:includeFontPadding="false" />
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="#ff80888e" android:layout_gravity="right" android:id="@id/vkx" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/arrow_right" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:src="@drawable/trip_oversea_arrow_right" />
+</merge>

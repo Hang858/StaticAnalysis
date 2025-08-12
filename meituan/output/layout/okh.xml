@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/enp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/e_9" android:textStyle="bold" android:textColor="@color/wm_st_common_text_money" android:id="@id/txt_stickyfoodList_adapter_food_price_fix" android:includeFontPadding="false" style="@style/WmScText" />
+    <com.sankuai.waimai.store.widgets.StrikeTextView android:textSize="@dimen/hwz" android:textColor="@color/hf4" android:id="@id/txt_stickyfoodList_adapter_food_original_price_fix" android:paddingBottom="@dimen/j8y" android:visibility="visible" android:layout_marginLeft="@dimen/z34" android:text="96.8" android:includeFontPadding="false" android:layout_toRightOf="@id/txt_stickyfoodList_adapter_food_price_fix" android:layout_alignBottom="@id/txt_stickyfoodList_adapter_food_price_fix" style="@style/WmScText" />
+    <ImageView android:id="@id/ic8" android:paddingBottom="@dimen/bbrs" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bbj2" android:src="@drawable/k3z" android:layout_toRightOf="@id/txt_stickyfoodList_adapter_food_price_fix" android:layout_alignBottom="@id/txt_stickyfoodList_adapter_food_price_fix" android:layout_marginStart="-3.0dip" android:layout_alignStart="@id/txt_stickyfoodList_adapter_food_original_price_fix" />
+</RelativeLayout>

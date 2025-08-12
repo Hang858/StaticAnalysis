@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="@dimen/hag" android:layout_alignParentRight="true" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:ellipsize="none" android:gravity="center" android:id="@id/z0x" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/wm_sc_common_filter" android:singleLine="true" />
+    <ImageView android:id="@id/iv_inner_filter_text_arrow" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_toRightOf="@id/z0x" android:layout_centerVertical="true" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/wm_sg_widget_filter_bar_text_white" android:gravity="center" android:id="@id/kmg" android:background="@drawable/lmq" android:visibility="visible" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="2.0dip" android:layout_toRightOf="@id/z0x" android:layout_centerVertical="true" />
+    <View android:id="@id/mb2" android:background="@drawable/ti3" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginLeft="14.0dip" android:layout_marginTop="6.0dip" android:layout_toRightOf="@id/z0x" />
+</RelativeLayout>

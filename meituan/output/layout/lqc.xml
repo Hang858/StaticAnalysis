@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meituan.android.widget.MtAlphabetBar android:layout_gravity="center|right" android:id="@id/vs4" android:layout_width="30.0dip" android:layout_height="310.0dip" android:layout_marginTop="35.0dip" android:layout_marginBottom="15.0dip" app:mtText_color="#ff222222" app:mtText_size="11.0sp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/hrk" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/progress_logo" android:layout_width="34.0dip" android:layout_height="36.0dip" android:layout_marginTop="-3.0dip" android:src="@drawable/recce__progress_dialog_logo" />
+        <com.meituan.android.recce.views.progressdialog.RecceRollingCircleDotView android:id="@id/lxk" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_marginTop="34.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/bpr" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/progress_default_loading_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/recce_progress_default_loading" android:scaleType="fitCenter" android:adjustViewBounds="true" android:maxWidth="38.0dip" android:maxHeight="38.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:id="@id/bcby" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/msc_loading" android:paddingBottom="20.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/msc_icon_container" android:background="@drawable/msc_loading_icon_border" android:padding="0.5dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/msc_icon" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+    </FrameLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/msc_loading_grey" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/msc_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="加载中" android:maxLines="2" android:maxEms="15" android:singleLine="false" />
+    <com.meituan.msc.modules.page.widget.LoadingIndicator android:id="@id/indicator_image" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="2.0dip" />
+</LinearLayout>

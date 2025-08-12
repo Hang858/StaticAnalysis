@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff333333" android:ellipsize="end" android:id="@id/ktv_deal_list_ad_view_ad_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:maxLines="1" android:includeFontPadding="false" />
+    <TextView android:textSize="12.0sp" android:ellipsize="end" android:id="@id/ktv_deal_list_ad_view_ad_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:maxLines="1" android:includeFontPadding="false" />
+    <com.dianping.imagemanager.DPNetworkImageView android:id="@id/ktv_deal_list_ad_view_ad_img" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="7.5dip" android:layout_marginBottom="7.0dip" android:scaleType="fitXY" dp:placeholderEmpty="@drawable/placeholder_loading" dp:placeholderError="@drawable/placeholder_error" dp:placeholderLoading="@drawable/placeholder_loading" />
+</LinearLayout>

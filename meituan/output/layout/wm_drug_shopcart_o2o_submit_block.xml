@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textStyle="bold" android:gravity="center" android:id="@id/o2o_poi_dealInfo_submit_txt" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxWidth="116.0dip" android:minWidth="104.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

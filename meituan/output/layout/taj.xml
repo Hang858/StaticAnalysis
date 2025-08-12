@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/dbx" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <Button android:textSize="14.0sp" android:textColor="@color/mlg" android:gravity="center" android:id="@id/prw" android:background="@drawable/iuw" android:layout_width="68.0dip" android:layout_height="36.0dip" android:layout_marginBottom="48.0dip" android:text="@string/prw" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_above="@id/prw" android:layout_centerHorizontal="true">
+        <ProgressBar android:layout_gravity="center_vertical" android:layout_width="20.0dip" android:layout_height="20.0dip" android:indeterminate="true" android:indeterminateDrawable="@drawable/uov" android:indeterminateDuration="3000" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/mlg" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginLeft="4.0dip" android:text="正在识别…" android:shadowColor="@color/utg" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="2.0" />
+    </LinearLayout>
+</RelativeLayout>

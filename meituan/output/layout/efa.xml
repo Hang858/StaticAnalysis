@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/dvq" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@drawable/ith" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="30.0dip" android:src="@drawable/i1g" />
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip">
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/jmq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="将使用该号码 " />
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/jmq" android:id="@id/q21" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/jmq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" 加密呼出" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="#ff3488ff" android:gravity="center_vertical" android:id="@id/pj7" android:paddingTop="9.0dip" android:paddingBottom="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ywc" android:drawablePadding="3.0dip" />
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="1.0dip" android:src="@drawable/bcuy" />
+            </LinearLayout>
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/jmq" android:gravity="center" android:id="@id/ckb" android:background="@drawable/ogi" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginTop="15.0dip" android:text="立即拨打" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/hum" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="32.0dip">
+                <TextView android:textSize="12.0sp" android:textColor="@color/b3g" android:gravity="center" android:id="@id/ba_5" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="16.0sp" android:textColor="@color/bctm" android:gravity="center" android:layout_gravity="end" android:id="@id/bbtx" android:padding="18.0dip" android:layout_width="56.0dip" android:layout_height="56.0dip" android:drawableStart="@drawable/nby" />
+    </FrameLayout>
+</RelativeLayout>

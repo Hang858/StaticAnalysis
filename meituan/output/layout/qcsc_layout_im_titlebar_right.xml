@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_call_phone" android:layout_width="23.0dip" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_centerVertical="true">
+        <ImageView android:layout_width="23.0dip" android:layout_height="23.0dip" android:src="@drawable/qcsc_im_call" />
+        <TextView android:textSize="10.0sp" android:textColor="#b3000000" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="电话" />
+    </LinearLayout>
+</RelativeLayout>

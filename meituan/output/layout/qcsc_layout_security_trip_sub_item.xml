@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:textColor="@color/qcsc_text_84" android:layout_gravity="center|left" android:id="@id/tv_item_left_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="#ff009659" android:layout_gravity="center|left" android:id="@id/tv_item_right_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <FrameLayout android:id="@id/iv_down_arrow_wrapper" android:paddingLeft="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <ImageView android:layout_gravity="center" android:id="@id/iv_down_arrow" android:layout_width="10.0dip" android:layout_height="10.0dip" android:src="@drawable/qcsc_card_type_price_arrow" android:rotation="90.0" />
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

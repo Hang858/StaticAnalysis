@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/o5d" android:layout="@layout/vjs" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.sankuai.meituan.search.result.view.SearchResultTabRecyclerView android:id="@id/guz" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/b6u" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/bbhs" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:id="@id/if2" android:layout="@layout/w3_" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <ViewStub android:id="@id/f8v" android:layout="@layout/vgq" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/beq" android:layout="@layout/yi9" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.sankuai.meituan.search.result3.tabChild.view.SearchGoodTabFloatRootLayer android:id="@id/ite" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/skeleton_stub" android:layout="@layout/search_child_skeleton_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

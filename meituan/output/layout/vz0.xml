@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/pmx" android:background="#fff5f6f7" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/q57" android:layout_width="fill_parent" android:layout_height="33.0dip" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="44.0dip">
+            <com.meituan.android.bike.framework.widgets.shadow.BaseImageView android:id="@id/mobike_scroll_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/baxg" android:scaleType="center" android:layout_marginStart="12.0dip" />
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <include android:id="@id/bbu8" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" layout="@layout/nxo" />
+                <include android:id="@id/gqg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="31.0dip" layout="@layout/nxo" />
+                <include android:id="@id/d9i" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="31.0dip" layout="@layout/nxo" />
+            </LinearLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.meituan.android.bike.framework.widgets.shadow.BaseImageView android:id="@id/mobike_user_center" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/wh6" android:scaleType="center" android:contentDescription="@null" android:layout_marginEnd="15.0dip" />
+                <View android:layout_gravity="end" android:id="@id/bbn3" android:background="@drawable/yq1" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginStart="20.0dip" android:elevation="3.0dip" />
+            </RelativeLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="right" android:id="@id/mobike_user_bubble" android:visibility="gone" android:layout_width="38.0dip" android:layout_height="15.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="30.0dip" android:elevation="3.0dip" />
+    </FrameLayout>
+</LinearLayout>

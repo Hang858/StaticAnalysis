@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:gravity="center" android:id="@id/checkbox" android:background="@drawable/commonui_dialog_list_checkbox" android:focusable="false" android:clickable="false" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="24.0dip" android:button="@null" />
+    <TextView android:textSize="@dimen/commonui_text_size_h7" android:textColor="@color/commonui_secondary_messages_color" android:id="@id/text" android:layout_width="170.5dip" android:layout_height="20.0dip" android:layout_marginLeft="12.0dip" />
+</LinearLayout>

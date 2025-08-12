@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/d7h" android:layout_width="64.0dip" android:layout_height="32.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="#ff222222" android:gravity="center" android:id="@id/more_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="筛选" android:includeFontPadding="false" />
+    <ImageView android:id="@id/more_icon" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginLeft="2.0dip" android:src="@drawable/sjn" />
+    <TextView android:textSize="10.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/more_count_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="13.0dip" android:layout_marginLeft="2.0dip" android:includeFontPadding="false" />
+</LinearLayout>

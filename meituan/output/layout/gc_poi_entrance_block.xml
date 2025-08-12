@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/poi_entrance_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/entrance_right_now" android:background="@drawable/poi_entrance_enter_selector" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/gc_qa_text" android:id="@id/settleInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/gc_merchant" android:drawablePadding="8.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/arrow_down_up" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/gc_arrow_down" android:layout_alignParentRight="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/poi_entrance_detail" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/poi_image_default" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <ImageView android:id="@id/poi_image" android:layout_width="fill_parent" android:layout_height="130.0dip" android:layout_marginLeft="1.0px" android:layout_marginRight="1.0px" android:src="@drawable/deallist_default_image" android:scaleType="fitXY" />
+        <View android:background="@color/poi_image_default" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+            <Button android:textSize="16.0sp" android:textColor="@color/gc_qa_text" android:id="@id/know_more" android:background="@drawable/gc_bg_poi_entrance_know_more_selector" android:layout_width="0.0dip" android:layout_height="36.0dip" android:layout_marginRight="15.0dip" android:layout_weight="1.0" style="?android:buttonBarButtonStyle" />
+            <Button android:textSize="16.0sp" android:textColor="@color/gc_qa_text" android:id="@id/enter_in" android:background="@drawable/gc_bg_poi_enter_right_now" android:layout_width="0.0dip" android:layout_height="36.0dip" android:layout_weight="1.0" style="?android:buttonBarButtonStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

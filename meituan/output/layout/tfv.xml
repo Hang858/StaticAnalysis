@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.imagemanager.DPNetworkImageView android:id="@id/banner" android:layout_width="fill_parent" android:layout_height="100.0dip" android:scaleType="centerCrop" dp:placeholderEmpty="@drawable/vy_placeholder_empty" dp:placeholderError="@drawable/vy_placeholder_error" dp:placeholderLoading="@drawable/vy_placeholder_loading"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto" />

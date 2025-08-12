@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ret" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/y41" android:layout_width="fill_parent" android:layout_height="@dimen/hue" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/el_" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/hf4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="此消息由机器人自动发送" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/bcy" android:paddingLeft="10.0dip" android:paddingTop="@dimen/wpy" android:paddingRight="10.0dip" android:paddingBottom="@dimen/wpy" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/kkw" android:id="@id/f9j" android:layout_width="wrap_content" android:layout_height="16.0dip" android:text="赞" />
+            <ImageView android:id="@id/o4t" android:layout_width="@dimen/wpy" android:layout_height="@dimen/wpy" android:layout_marginLeft="@dimen/bbj2" android:src="@drawable/bna" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/xeq" android:paddingLeft="@dimen/i6c" android:paddingTop="@dimen/wpy" android:paddingBottom="@dimen/wpy" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/kkw" android:id="@id/sq9" android:layout_width="wrap_content" android:layout_height="16.0dip" android:text="踩" />
+            <ImageView android:id="@id/h22" android:layout_width="@dimen/wpy" android:layout_height="@dimen/wpy" android:layout_marginLeft="@dimen/bbj2" android:layout_marginTop="@dimen/j8y" android:src="@drawable/bjf" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

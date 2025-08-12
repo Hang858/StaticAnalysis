@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/scy" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginBottom="7.0dip">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/nzc" android:id="@id/ba7w" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/q15" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/kwc" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/bbrt" android:layout_centerVertical="true" android:layout_marginEnd="11.699982dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <include android:id="@id/date_picker" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" layout="@layout/cb5" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/vhp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="39.0dip" android:layout_marginBottom="21.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/nzc" android:gravity="center" android:id="@id/lgg" android:background="@drawable/vwz" android:layout_width="0.0dip" android:layout_height="45.0dip" android:text="@string/lf_" android:layout_weight="1.0" android:layout_marginStart="9.0dip" />
+        <TextView android:textColor="@color/vhp" android:gravity="center" android:id="@id/d4h" android:background="@drawable/t3s" android:layout_width="0.0dip" android:layout_height="45.0dip" android:text="@string/determine" android:layout_weight="1.0" android:layout_marginStart="9.0dip" android:layout_marginEnd="9.0dip" />
+    </LinearLayout>
+</LinearLayout>

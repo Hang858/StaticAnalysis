@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingLeft="32.5dip" android:paddingRight="32.5dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/s3g" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.meituan.android.pt.homepage.windows.widget.PartRoundImageView android:id="@id/bot" android:layout_width="fill_parent" android:layout_height="195.0dip" android:scaleType="fitXY" app:riv_top_left_radius="10.0dip" app:riv_top_right_radius="10.0dip" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff000000" android:gravity="center" android:id="@id/n8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.5dip" android:text="@string/heu" android:maxLines="1" android:includeFontPadding="false" android:lineSpacingExtra="8.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff222222" android:id="@id/p2h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="35.0dip" android:text="@string/lm" android:maxLines="2" android:includeFontPadding="false" android:lineSpacingExtra="4.0dip" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff220000" android:gravity="center" android:id="@id/known" android:background="@drawable/o14" android:layout_width="fill_parent" android:layout_height="43.0dip" android:layout_marginLeft="18.0dip" android:layout_marginTop="55.0dip" android:layout_marginRight="18.0dip" android:text="@string/m0i" android:includeFontPadding="false" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff646464" android:id="@id/later" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="12.0dip" android:text="@string/jf8" />
+    </LinearLayout>
+</FrameLayout>

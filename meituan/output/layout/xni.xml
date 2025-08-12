@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="bottom|center|right" android:orientation="horizontal" android:id="@id/eyw" android:background="@drawable/cnd" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" android:layout_marginBottom="13.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff333333" android:ellipsize="none" android:id="@id/eep" android:paddingLeft="15.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="可选择多个商家一起结算啦~" android:singleLine="true" />
+    <ImageView android:id="@id/wm_page_main_globalcart_multi_order_guide_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/fjw" android:scaleType="fitCenter" />
+</LinearLayout>

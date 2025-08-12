@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/ley" android:layout_width="76.0dip" android:layout_height="108.0dip">
+        <FrameLayout android:layout_gravity="end|center" android:id="@id/pl6" android:visibility="gone" android:layout_width="60.799988dip" android:layout_height="86.399994dip">
+            <com.maoyan.android.common.view.RoundImageView android:id="@id/ivThird" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" app:maoyan_common_view_borderColor="#1a2a2a2a" app:maoyan_common_view_border_thickness="1.0px" />
+            <View android:background="@drawable/w1o" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="end|center" android:id="@id/bc0d" android:visibility="gone" android:layout_width="68.399994dip" android:layout_height="97.19998dip">
+            <com.maoyan.android.common.view.RoundImageView android:id="@id/ivFit" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" app:maoyan_common_view_borderColor="#1a2a2a2a" app:maoyan_common_view_border_thickness="1.0px" />
+            <View android:background="@drawable/w1o" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <View android:layout_gravity="end|center" android:id="@id/xd6" android:background="@drawable/eee" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="108.0dip" android:layout_marginEnd="5.0dip" />
+        <FrameLayout android:layout_gravity="start|center" android:id="@id/ffh" android:layout_width="76.0dip" android:layout_height="108.0dip">
+            <com.maoyan.android.common.view.RoundImageView android:id="@id/iv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" app:maoyan_common_view_borderColor="#1a2a2a2a" app:maoyan_common_view_border_thickness="1.0px" />
+            <View android:id="@id/gz5" android:background="@drawable/w1o" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_width="76.0dip" android:layout_height="108.0dip">
+        <FrameLayout android:layout_gravity="top" android:id="@id/y0t" android:visibility="gone" android:layout_width="76.0dip" android:layout_height="29.0dip" android:layout_marginTop="3.0dip">
+            <ImageView android:id="@id/iv_movie_item_head_portrait" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginTop="5.5dip" android:layout_marginBottom="6.0dip" android:scaleType="centerCrop" android:layout_marginStart="7.5dip" />
+            <ImageView android:layout_width="74.0dip" android:layout_height="fill_parent" android:src="@drawable/fui" />
+        </FrameLayout>
+    </FrameLayout>
+    <RelativeLayout android:layout_gravity="top" android:layout_width="76.0dip" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/right_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_alignParentTop="true" android:layout_marginEnd="3.0dip" android:layout_alignParentEnd="true">
+            <TextView android:textSize="9.0sp" android:textColor="#e6ffffff" android:id="@id/hvh" android:background="@drawable/xp1" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="特惠" />
+            <TextView android:textSize="9.0sp" android:textColor="#e6ffffff" android:id="@id/hwo" android:background="@drawable/ypy" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:text="点映" />
+            <TextView android:textSize="9.0sp" android:textColor="@color/kec" android:id="@id/us0" android:background="@drawable/ypy" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="重映" />
+        </LinearLayout>
+        <LinearLayout android:gravity="left" android:orientation="vertical" android:id="@id/f1u" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_toLeftOf="@id/right_layout" android:layout_alignParentTop="true" android:layout_marginStart="3.0dip" android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <ImageView android:layout_gravity="bottom|center|left" android:id="@id/iv_gif_icon" android:layout_width="45.0dip" android:layout_height="16.0dip" android:layout_marginLeft="5.0dip" android:layout_marginBottom="21.0dip" android:src="@drawable/bcr9" />
+    <FrameLayout android:layout_gravity="bottom|center|left" android:orientation="horizontal" android:id="@id/z2s" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="76.0dip" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip">
+        <TextView android:textSize="9.0sp" android:textColor="@color/nrc" android:gravity="center" android:layout_gravity="center|right" android:id="@id/pr3" android:background="@drawable/vr2" android:visibility="gone" android:layout_width="13.0dip" android:layout_height="13.0dip" android:text="荐" android:layout_alignBaseline="@id/vbr" />
+        <TextView android:textColor="#fffaaf00" android:gravity="center_vertical" android:id="@id/vbr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+    </FrameLayout>
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/lottie_dodge" android:visibility="gone" android:layout_width="76.0dip" android:layout_height="108.0dip" app:lottie_autoPlay="false" app:lottie_loop="false" />
+</merge>

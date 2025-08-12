@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/mss" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/jnq" android:layout_width="fill_parent" android:layout_height="66.0dip">
+        <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/mpf" android:id="@id/bcp_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jnq" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/nog" android:padding="17.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/c39" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ListView android:id="@id/pzc" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="129.0dip" android:listSelector="@drawable/xwd" android:divider="@color/transparent" android:layout_below="@id/jnq" />
+    <LinearLayout android:orientation="vertical" android:id="@id/csf" android:background="#ffffffff" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:layout_marginBottom="45.0dip">
+                <TextView android:textSize="12.0dip" android:textColor="#b3000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21.0dip" android:layout_marginBottom="21.0dip" android:text="已省钱:  " />
+                <TextView android:textSize="12.0dip" android:textColor="#ffff6000" android:id="@id/koi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21.0dip" android:layout_marginBottom="21.0dip" android:text="￥7.50" />
+                <TextView android:textSize="12.0dip" android:textColor="#ffff6000" android:id="@id/mwz" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="21.0dip" android:layout_marginBottom="21.0dip" android:text="@string/ua2" />
+            </LinearLayout>
+            <com.meituan.android.paybase.widgets.ProgressButton android:textSize="14.0dip" android:textStyle="bold" android:textColor="#b3000000" android:layout_gravity="bottom" android:id="@id/k0j" android:layout_height="45.0dip" android:layout_marginTop="0.0dip" android:layout_marginBottom="0.0dip" android:text="确定" style="@style/discount_dialog_btn" />
+        </FrameLayout>
+        <View android:id="@id/iiu" android:layout_width="fill_parent" android:layout_height="18.0dip" android:importantForAccessibility="no" />
+    </LinearLayout>
+</RelativeLayout>

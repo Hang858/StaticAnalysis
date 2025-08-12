@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/xm_sdk_selector_chat_msg_multi_link_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/xm_sdk_separator_color_default" android:layout_width="fill_parent" android:layout_height="@dimen/xm_sdk_separator_height_default" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/xm_sdk_chat_multi_richcard_item_margin" android:layout_marginEnd="@dimen/xm_sdk_chat_multi_richcard_item_margin">
+        <include android:id="@id/img_multi_item" android:layout_width="@dimen/xm_sdk_chat_multi_richcard_item_width" android:layout_height="@dimen/xm_sdk_chat_multi_richcard_item_height" android:layout_marginTop="@dimen/xm_sdk_chat_multi_richcard_item_margin" android:layout_marginBottom="@dimen/xm_sdk_chat_multi_richcard_item_margin" android:layout_centerVertical="true" android:layout_alignParentEnd="true" layout="@layout/xm_sdk_img_view" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/xm_sdk_text_color_black" android:gravity="center_vertical" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/xm_sdk_chat_multi_richcard_item_title_margin_top" android:layout_marginBottom="@dimen/xm_sdk_chat_multi_richcard_item_title_margin_bottom" android:minHeight="32.0dip" android:maxLines="2" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/xm_sdk_chat_multi_richcard_item_title_margin_right" android:layout_toStartOf="@id/img_multi_item" android:layout_alignParentStart="true" style="@style/xm_sdk_text_view_style_18n" />
+    </RelativeLayout>
+</LinearLayout>

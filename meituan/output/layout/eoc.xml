@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/pnm" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="66.0dip">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/jn_" android:ellipsize="middle" android:layout_gravity="center" android:id="@id/u2c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginRight="50.0dip" android:singleLine="true" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/jop" android:paddingLeft="10.0dip" android:paddingTop="14.0dip" android:paddingRight="22.0dip" android:paddingBottom="14.0dip" android:layout_width="47.0dip" android:layout_height="55.0dip" android:src="@drawable/qjz" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.meituan.android.cashier.base.view.revision.CashierOrderInfoView android:id="@id/hrj" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" />
+    <ListView android:id="@id/ylm" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="22.0dip" android:listSelector="@android:color/transparent" android:divider="@null" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/tfb" android:layout_width="fill_parent" android:layout_height="84.0dip">
+        <com.meituan.android.paybase.widgets.ProgressButton android:textSize="16.0dip" android:textStyle="bold" android:id="@id/vgf" android:layout_height="48.0dip" android:layout_marginLeft="18.0dip" android:layout_marginRight="18.0dip" android:text="@string/zsr" style="@style/cashier__button" />
+    </LinearLayout>
+</LinearLayout>

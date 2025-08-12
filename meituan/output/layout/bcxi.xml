@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.ConstraintLayout android:orientation="vertical" android:id="@id/bbdq" android:background="@color/wm_sg_widget_filter_bar_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/rv_filter_dropdown_list_top_background" android:layout_width="fill_parent" android:layout_height="50.0dip" app:layout_constraintTop_toTopOf="parent" />
+        <com.sankuai.waimai.store.widgets.SCMaxHeightRecyclerView android:id="@id/u6w" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent" />
+        <View android:id="@id/rnw" android:background="@color/wm_sc_search_global_list_divider_color" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/hue" app:layout_constraintTop_toBottomOf="@id/u6w" />
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="12.0dip" android:paddingTop="12.0dip" android:paddingRight="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/xn4" app:layout_constraintTop_toBottomOf="@id/rnw">
+            <TextView android:textSize="@dimen/e_9" android:textStyle="bold" android:textColor="@color/s7s" android:gravity="center" android:id="@id/bbhk" android:background="@drawable/o9l" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="12.0dip" android:text="@string/wm_sg_widget_filter_bar_filter_dialog_clear_filter" android:layout_weight="1.0" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/wac" android:background="@drawable/q8g" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/WmScButton.FixedWidth.SolidSquare">
+                <TextView android:textSize="@dimen/e_9" android:textStyle="bold" android:textColor="@color/s7s" android:id="@id/pd3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="@string/wm_sc_common_done" />
+                <TextView android:textSize="@dimen/m8w" android:textColor="@color/s7s" android:ellipsize="end" android:gravity="center" android:id="@id/yro" android:background="@drawable/wm_sg_widget_filter_bar_filter_dialog_submit_num_background" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/spm" android:background="@color/wm_sg_widget_filter_bar_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/o4g" android:src="@drawable/g7u" />
+        <TextView android:textColor="@color/kkw" android:gravity="center" android:layout_marginTop="@dimen/p7e" android:text="@string/wm_sg_widget_filter_bar_filter_dialog_no_data" style="@style/WmScText" />
+        <TextView android:textSize="@dimen/e_9" android:textColor="@color/s7s" android:gravity="center" android:id="@id/vnf" android:background="@drawable/q8g" android:layout_width="fill_parent" android:layout_height="@dimen/ia6" android:layout_marginLeft="@dimen/wpy" android:layout_marginTop="@dimen/n_x" android:layout_marginRight="@dimen/wpy" android:layout_marginBottom="@dimen/wpy" android:text="@string/wm_sc_common_done" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/r4l" android:background="@color/wm_sg_widget_filter_bar_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/o4g" android:src="@drawable/yoa" />
+        <TextView android:textColor="@color/kkw" android:gravity="center" android:layout_marginTop="@dimen/p7e" android:text="@string/wm_sc_common_net_error_tip" style="@style/WmScText" />
+        <TextView android:textSize="@dimen/e_9" android:textColor="@color/s7s" android:gravity="center" android:background="@drawable/q8g" android:layout_width="fill_parent" android:layout_height="@dimen/ia6" android:layout_marginLeft="@dimen/wpy" android:layout_marginTop="@dimen/n_x" android:layout_marginRight="@dimen/wpy" android:layout_marginBottom="@dimen/wpy" android:text="@string/wm_sc_common_done" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/jmj" android:background="@color/wm_sg_widget_filter_bar_background" android:paddingBottom="50.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/q9c" />
+    </FrameLayout>
+</FrameLayout>

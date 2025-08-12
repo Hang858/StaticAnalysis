@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/vy_light_gray" android:ellipsize="end" android:id="@id/attr_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.dianping.pioneer.widgets.container.flowlayout.GCTagFlowLayout android:textSize="@dimen/text_size_14" android:textColor="@color/vy_deep_gray" android:layout_gravity="left" android:id="@id/attr_value_flow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+</LinearLayout>

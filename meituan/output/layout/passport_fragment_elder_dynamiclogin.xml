@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginRight="23.0dip">
+        <TextView android:textSize="26.919983sp" android:textStyle="bold" android:textColor="@color/passport_black_v1_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.569977dip" android:text="@string/passport_input_dynamic_code" android:includeFontPadding="false" />
+        <TextView android:textSize="17.299988sp" android:textColor="@color/passport_black_v1_2" android:id="@id/phone_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.599976dip" android:text="@string/passport_sms_send_failue" android:maxLines="2" android:includeFontPadding="false" />
+        <com.meituan.passport.view.VerificationFrameView android:id="@id/verify_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.379974dip" />
+        <TextView android:textSize="17.299988sp" android:textColor="#ffff2d19" android:id="@id/passport_code_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="19.22998dip">
+            <com.meituan.passport.view.TextButton android:textSize="17.299988sp" android:textColor="#ff0a77f5" android:gravity="center" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="24.0dip" android:includeFontPadding="false" />
+            <com.meituan.passport.view.TextButton android:textSize="17.299988sp" android:textColor="#ff555555" android:gravity="center" android:id="@id/mobile_not_in_use_btn" android:layout_width="wrap_content" android:layout_height="24.0dip" android:text="@string/passport_mobile_not_in_use" android:includeFontPadding="false" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

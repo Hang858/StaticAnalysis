@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/olu" android:background="@color/ecl" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="@color/jua" android:gravity="center" android:id="@id/bb9" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="70.0dip" android:text="@string/onz" android:layout_alignParentBottom="true" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_above="@id/bb9">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="27.0sp" android:textStyle="bold" android:textColor="@color/jua" android:gravity="center" android:id="@id/bcoc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/eof" />
+            <TextView android:textSize="17.0sp" android:textColor="@color/se9" android:gravity="center" android:id="@id/eu3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/vi3" />
+            <ImageView android:id="@id/iv_revisit_one" android:layout_width="fill_parent" android:layout_height="147.0dip" android:layout_marginTop="16.0dip" android:scaleType="centerInside" />
+            <TextView android:textSize="17.0sp" android:textColor="@color/se9" android:gravity="center" android:id="@id/gz_" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/bzo" />
+            <ImageView android:id="@id/iv_revisit_two" android:layout_width="fill_parent" android:layout_height="139.0dip" android:layout_marginTop="35.0dip" android:scaleType="centerInside" />
+            <TextView android:textSize="17.0sp" android:textColor="@color/se9" android:gravity="center" android:id="@id/xcs" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/m2v" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

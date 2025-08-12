@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/scroll_image_view" android:background="#f9000000" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/image_background" android:background="#f9000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+            <com.meituan.android.edfu.mvision.ui.widget.TransparentCornerView android:id="@id/view_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <FrameLayout android:id="@id/v4x" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </ScrollView>
+    <android.support.design.widget.CoordinatorLayout android:id="@id/b4v" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="80.0dip" app:layout_behavior="com.meituan.android.edfu.mvision.ui.widget.SearchImageListBehavior">
+            <android.support.v7.widget.RecyclerView android:id="@id/image_list" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="42.0dip" />
+            <ImageView android:layout_gravity="center|right|top" android:id="@id/close_loading" android:padding="13.0dip" android:visibility="invisible" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="19.0dip" android:src="@drawable/mlens_image_close_btn" android:scaleType="centerInside" android:contentDescription="@string/bx_" />
+        </FrameLayout>
+        <com.meituan.android.edfu.mvision.ui.widget.PhotoSearchRadiusView android:orientation="vertical" android:id="@id/search_page_container" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" app:behavior_hideable="false" app:behavior_peekHeight="200.0dip" app:cornerRadiusTopLeft="15.0dip" app:cornerRadiusTopRight="15.0dip" app:layout_behavior="com.meituan.android.edfu.mvision.ui.widget.SearchBottomSheetBehavior" />
+    </android.support.design.widget.CoordinatorLayout>
+</FrameLayout>

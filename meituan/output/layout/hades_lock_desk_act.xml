@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/lock_root_layout" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="80.0dip" android:layout_centerHorizontal="true">
+        <TextView android:textSize="80.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/timeTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4:25" />
+        <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/dateTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="11月2日 星期六" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/lock_win_background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/lock_win_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/lock_center_image" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="100.0dip" android:adjustViewBounds="true" android:layout_centerInParent="true" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" />
+</RelativeLayout>

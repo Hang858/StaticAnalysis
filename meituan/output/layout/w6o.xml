@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/s84" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meituan.android.novel.library.page.reader.mscwidget.bridge.BridgeMscView android:id="@id/njt" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.meituan.android.novel.library.page.reader.reader.ReaderContainerView android:id="@id/ku3" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <android.view.View android:id="@id/c0b" android:background="@android:color/transparent" android:layout_width="1.0px" android:layout_height="25.0dip" />
+    <com.meituan.android.novel.library.page.reader.mscwidget.task.ReadTaskView android:id="@id/s2i" android:layout_width="fill_parent" android:layout_height="@dimen/onp" android:layout_below="@id/c0b" />
+    <com.meituan.android.novel.library.page.reader.mscwidget.common.CommonMSCView android:id="@id/k_n" android:layout_width="fill_parent" android:layout_height="45.0dip" />
+    <com.meituan.android.novel.library.page.reader.view.menutitle.TitleMenuView android:id="@id/xok" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.meituan.android.novel.library.page.reader.view.menubottom.BottomMenuView android:id="@id/h18" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <com.meituan.android.novel.library.page.reader.view.setting.SettingView android:id="@id/bcz5" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/o0j" android:layout_alignParentBottom="true" />
+    <com.meituan.android.novel.library.page.reader.view.chapter.ChaptersInfoView android:id="@id/lcl" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/o0j" android:layout_alignParentBottom="true" />
+    <com.meituan.android.novel.library.page.reader.reader.comment.commlist.CommListView android:id="@id/x9r" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.meituan.android.novel.library.page.reader.view.loading.LoadView android:id="@id/loading_view" android:background="@color/ecl" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.meituan.android.novel.library.page.reader.view.back.BackProxyView android:id="@id/d0n" android:layout_width="wrap_content" android:layout_height="45.0dip" android:minWidth="51.0dip" android:layout_below="@id/c0b" android:layout_alignParentLeft="true" />
+    <com.meituan.android.novel.library.page.reader.mscwidget.topbar.TopBarMSCView android:id="@id/bc1a" android:layout_width="fill_parent" android:layout_height="@dimen/onp" android:layout_below="@id/c0b" />
+    <com.meituan.android.novel.library.page.reader.mscwidget.fullscreen.FullScreenView android:id="@id/nuu" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

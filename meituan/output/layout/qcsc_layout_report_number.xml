@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="@color/qcsc_text_secondary" android:gravity="center_horizontal" android:id="@id/tv_report_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="38.5dip" android:maxLines="1" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/qcsc_text_primary" android:gravity="center_horizontal" android:id="@id/tv_car_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:maxLines="1" android:layout_below="@id/tv_report_title" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/qcsc_text_secondary" android:gravity="center_horizontal" android:id="@id/tv_number_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.5dip" android:text="@string/qcsc_report_car_tip" android:maxLines="1" android:layout_below="@id/tv_car_number" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/qcsc_text_tertiary" android:gravity="center_horizontal" android:id="@id/tv_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="@string/qcsc_report_tip" android:maxLines="1" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <View android:id="@id/divide" android:background="@color/transparent" android:layout_width="1.0px" android:layout_height="1.0px" android:layout_centerHorizontal="true" />
+    <FrameLayout android:id="@id/fl_differ" android:background="@drawable/qcsc_bg_btn_differ" android:layout_width="141.0dip" android:layout_height="36.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="7.0dip" android:layout_toLeftOf="@id/divide" android:layout_below="@id/tv_number_tip">
+        <TextView android:textSize="12.0sp" android:textColor="@color/qcsc_text_secondary" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_differ" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="6.0dip" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/fl_identical" android:background="@drawable/qcsc_bg_btn_differ" android:layout_width="141.0dip" android:layout_height="36.0dip" android:layout_toRightOf="@id/divide" android:layout_alignTop="@id/fl_differ" android:layout_toEndOf="@id/divide">
+        <TextView android:textSize="12.0sp" android:textColor="@color/qcsc_text_secondary" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_identical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="6.0dip" />
+    </FrameLayout>
+</RelativeLayout>

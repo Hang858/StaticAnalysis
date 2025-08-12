@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/vy_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/vy_text_size_14" android:textColor="@color/vy_fitness_experience_foot_promo_text" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="45.0dip" android:layout_marginBottom="45.0dip" android:text="选择到店时间" android:drawableLeft="@drawable/vy_icon_fitness_create_order_select_time_empty_tip" android:drawablePadding="4.0dip" android:layout_centerInParent="true" />
+</RelativeLayout>

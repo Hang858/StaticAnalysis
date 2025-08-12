@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/bag6" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textSize="12.0sp" android:textColor="#ff222426" android:textColorHint="#ff858687" android:gravity="center" android:id="@id/min_price" android:background="@drawable/y6n" android:layout_width="fill_parent" android:layout_height="32.0dip" android:hint="@string/rzq" android:maxLength="8" android:layout_weight="1.0" android:inputType="number" android:textIsSelectable="false" />
+    <View android:layout_gravity="center_vertical" android:background="#ffefeff0" android:layout_width="11.0dip" android:layout_height="1.0dip" android:layout_marginLeft="7.0dip" android:layout_marginRight="7.0dip" />
+    <EditText android:textSize="12.0sp" android:textColor="#ff222426" android:textColorHint="#ff858687" android:gravity="center" android:id="@id/max_price" android:background="@drawable/y6n" android:layout_width="fill_parent" android:layout_height="32.0dip" android:hint="@string/k6r" android:maxLength="8" android:layout_weight="1.0" android:inputType="number" />
+</LinearLayout>

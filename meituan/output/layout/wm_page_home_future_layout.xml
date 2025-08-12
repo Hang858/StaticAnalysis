@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#fff5f5f5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ViewStub android:id="@id/module_tab_container" android:layout="@layout/wm_page_home_tab" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:id="@id/home_view_pager_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.sankuai.waimai.business.page.home.list.future.HomeFutureViewPager android:id="@id/gp3" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ViewStub android:id="@id/bbvn" android:layout="@layout/n72" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </LinearLayout>
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/uml" />
+</RelativeLayout>

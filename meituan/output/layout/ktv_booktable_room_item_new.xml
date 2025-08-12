@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaFrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.widget.view.NovaLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/ktv_book_table_item_bg_color" android:paddingLeft="@dimen/ktv_shop_info_common_padding_left" android:paddingRight="@dimen/ktv_shop_info_common_padding_right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="65.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="14.0sp" android:textColor="@color/ktv_text_color_t1" android:ellipsize="end" android:id="@id/ktvRoomTypeTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="2.0dip" />
+            <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip">
+                <TextView android:textSize="20.0sp" android:textColor="#ffff6200" android:ellipsize="end" android:id="@id/ktvPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-1.0dip" android:maxLines="1" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/ktv_light_yellow" android:ellipsize="end" android:id="@id/booking_reduction" android:background="@drawable/ktv_book_table_room_item_reduction_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginBottom="2.0dip" android:maxLines="1" />
+                <TextView android:ellipsize="end" android:id="@id/ktvRoomComment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginBottom="1.0dip" android:maxLines="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/bookRoomTV" android:background="@drawable/ktv_room_btn_weight" android:layout_width="55.0dip" android:layout_height="30.0dip" />
+    </com.dianping.widget.view.NovaLinearLayout>
+    <View android:layout_gravity="bottom" android:background="@color/ktv_divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/ktv_shop_info_common_padding_left" />
+</com.dianping.widget.view.NovaFrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/vhs" android:background="@drawable/bg_subpage_search_box" android:layout_width="fill_parent" android:layout_height="34.0dip">
+        <android.support.v7.widget.AppCompatImageView android:layout_width="21.0dip" android:layout_height="21.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="4.0dip" android:src="@drawable/p2o" />
+        <android.support.v7.widget.AppCompatTextView android:textSize="14.0dip" android:textColor="#ccffffff" android:ellipsize="end" android:id="@id/mcu" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+        <View android:background="#ccffffff" android:layout_width="0.5dip" android:layout_height="16.0dip" android:layout_marginLeft="14.0dip" />
+        <android.support.v7.widget.AppCompatTextView android:textSize="14.0dip" android:textColor="#ccffffff" android:gravity="center_vertical" android:id="@id/tv_search_box_action" android:paddingLeft="14.159973dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="搜索" />
+    </LinearLayout>
+</FrameLayout>

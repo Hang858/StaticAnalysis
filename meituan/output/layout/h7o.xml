@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sankuai.waimai.store.platform.domain.core.goods.newStylePrice.HandPriceOneLineLayout android:layout_gravity="left" android:orientation="horizontal" android:id="@id/hek" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="@color/gsl" android:id="@id/hgj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥" />
+        <TextView android:textSize="@dimen/ps0" android:textStyle="bold" android:textColor="@color/gsl" android:id="@id/current_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="10.0dip" android:textColor="@color/hf4" android:id="@id/bht" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/j8y" android:includeFontPadding="false" />
+        <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/bbj2" android:layout_marginTop="@dimen/j8y">
+            <ImageView android:id="@id/member_price_icon" android:layout_width="@dimen/f7u" android:layout_height="@dimen/wpy" android:scaleType="centerCrop" />
+        </LinearLayout>
+        <com.sankuai.waimai.platform.widget.text.StrikeTextView android:textSize="@dimen/iz4" android:textColor="@color/wm_sg_color_BCBCBD" android:id="@id/origin_price" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bbrs" android:singleLine="true" android:includeFontPadding="false" />
+    </com.sankuai.waimai.store.platform.domain.core.goods.newStylePrice.HandPriceOneLineLayout>
+    <com.sankuai.waimai.store.platform.domain.core.goods.newStylePrice.HandPriceOneLineLayout android:gravity="center_vertical" android:layout_gravity="left" android:orientation="horizontal" android:id="@id/yyz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bbrs">
+        <com.sankuai.waimai.store.platform.domain.core.goods.newStylePrice.HandPriceWithUnit android:textSize="@dimen/m8w" android:textColor="@color/gsl" android:layout_gravity="center_vertical" android:id="@id/mi8" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.sankuai.waimai.store.platform.domain.core.goods.newStylePrice.ToBeMemberPrice android:id="@id/xy2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.sankuai.waimai.store.platform.domain.core.goods.newStylePrice.HandPriceOneLineLayout>
+</LinearLayout>

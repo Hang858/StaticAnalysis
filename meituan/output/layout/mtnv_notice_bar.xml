@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/mtnv_iv_left_icon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/mtnv_iv_left_icon" android:layout_centerVertical="true">
+        <TextView android:textSize="18.0dip" android:textColor="#ff2b60ff" android:gravity="center_vertical" android:id="@id/mtnv_tv_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff2b60ff" android:gravity="center_vertical" android:id="@id/mtnv_tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:includeFontPadding="false" />
+    </LinearLayout>
+    <ImageView android:id="@id/mtnv_iv_close" android:layout_width="33.0dip" android:layout_height="21.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/bg_deal_map_list_selector" android:paddingTop="@dimen/c0" android:paddingRight="@dimen/ura" android:paddingBottom="@dimen/ppt" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/search_suggestion_travel_title_layout" />
+    <include layout="@layout/search_suggestion_travel_des_layout" />
+    <android.support.v7.widget.AppCompatTextView android:textSize="12.0dip" android:ellipsize="end" android:id="@id/search_sug_travel_deal_rank" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bahw" android:layout_marginTop="@dimen/dcu" android:layout_marginBottom="@dimen/dcu" android:maxLines="1" android:includeFontPadding="false" />
+    <com.sankuai.meituan.search.home.view.SugTravelDealTicketV2Layout android:id="@id/iwk" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bahw" />
+</LinearLayout>

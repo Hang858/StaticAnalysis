@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageViewDish" android:background="@drawable/merchant_deal_image_background" android:layout_width="47.0dip" android:layout_height="47.0dip" android:layout_marginTop="16.5dip" android:layout_marginBottom="16.0dip" android:layout_marginStart="16.0dip" />
+    <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:ellipsize="end" android:id="@id/textViewDishName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="162.0dip" android:maxLines="2" android:layout_alignTop="@id/imageViewDish" android:layout_marginStart="8.0dip" android:layout_toEndOf="@id/imageViewDish" />
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="#e6000000" android:id="@id/textViewPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/imageViewDish" android:layout_marginEnd="16.0dip" android:layout_alignParentEnd="true" />
+    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#e6000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.5dip" android:text="¥" android:layout_alignBottom="@id/textViewPrice" android:layout_marginEnd="1.0dip" android:layout_toStartOf="@id/textViewPrice" />
+    <TextView android:textSize="12.0sp" android:textColor="#e6000000" android:gravity="center" android:id="@id/textViewDiscount" android:background="@drawable/merchant_label_background" android:layout_width="wrap_content" android:layout_height="22.0dip" android:layout_below="@id/textViewPrice" android:paddingStart="6.5dip" android:paddingEnd="6.5dip" android:layout_marginEnd="16.0dip" android:layout_alignParentEnd="true" />
+    <View android:background="#1a000000" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/imageViewDish" />
+</RelativeLayout>

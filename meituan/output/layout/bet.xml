@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.ptview.view.PTLinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/v1u" android:paddingTop="12.5dip" android:paddingBottom="12.5dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.ConstraintLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/channel_icon" android:layout_width="44.0dip" android:layout_height="44.0dip" android:src="@drawable/esr" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" />
+        <TextView android:textSize="9.5sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/f_o" android:background="@drawable/k5m" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:paddingBottom="0.5dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:includeFontPadding="false" android:maxLength="3" app:layout_constraintLeft_toRightOf="@id/channel_icon" app:layout_constraintRight_toRightOf="@id/channel_icon" app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/lpy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:maxLines="1" />
+</com.sankuai.ptview.view.PTLinearLayout>

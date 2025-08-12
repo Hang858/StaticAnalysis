@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meituan.android.ktv.base.view.KTVNovaTextView android:textSize="15.0sp" android:textColor="@color/ktv_book_period_item_text_color" android:gravity="center" android:background="@drawable/ktv_book_period_item_bg" android:layout_width="80.0dip" android:layout_height="29.0dip" style="@style/KTVSingleLineTextView"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/phk" android:layout_width="fill_parent" android:layout_height="66.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="-66.0dip" android:layout_marginRight="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.AppCompatTextView android:textSize="13.0dip" android:textColor="#ff999999" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:text="现金奖励通知" />
+    <android.support.v7.widget.AppCompatTextView android:textSize="14.0dip" android:textColor="#ffff2d19" android:id="@id/k0k" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginBottom="11.0dip" android:text="0.42" android:layout_alignParentBottom="true" />
+    <android.support.v7.widget.AppCompatTextView android:textSize="14.0dip" android:textColor="#ff191919" android:id="@id/jpd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="元已打款至微信，请查收" android:layout_toRightOf="@id/k0k" android:layout_alignBaseline="@id/k0k" android:layout_alignParentBottom="true" />
+    <android.support.v7.widget.AppCompatImageView android:id="@id/icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/u0b" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

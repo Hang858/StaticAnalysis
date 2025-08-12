@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/vy_hongbao_dialog_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="right" android:id="@id/close_btn" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/vy_hongbao_icon_close" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/title_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <TextView android:textSize="@dimen/text_size_20" android:textColor="#fff3ff77" android:ellipsize="end" android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="222.0dip" android:maxLines="2" />
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/vy_white" android:ellipsize="end" android:id="@id/title_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:maxLines="1" android:singleLine="true" />
+        </LinearLayout>
+        <ImageView android:id="@id/title_left_image" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="3.0dip" android:src="@drawable/vy_hongbao_star_left_icon" android:layout_toLeftOf="@id/title_container" />
+        <ImageView android:id="@id/title_right_image" android:layout_width="11.0dip" android:layout_height="11.0dip" android:layout_marginLeft="1.5dip" android:layout_marginTop="8.0dip" android:src="@drawable/vy_hongbao_star_right_icon" android:layout_toRightOf="@id/title_container" />
+    </RelativeLayout>
+    <android.support.v4.widget.NestedScrollView android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/list_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </android.support.v4.widget.NestedScrollView>
+    <TextView android:textSize="@dimen/text_size_18" android:textColor="#fff83f55" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/use_text" android:background="@drawable/vy_shape_30dp_fffc67_bg" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" />
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/d0r" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.AppCompatImageView android:id="@id/ouo" android:focusable="true" android:clickable="true" android:layout_width="319.0dip" android:layout_height="392.0dip" android:src="@drawable/nt0" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_centerInParent="true" />
+    <android.support.v7.widget.AppCompatImageView android:id="@id/ad" android:layout_width="227.0dip" android:layout_height="30.0dip" android:layout_marginBottom="24.0dip" android:layout_above="@id/ouo" android:layout_centerHorizontal="true" />
+    <android.support.v7.widget.AppCompatImageView android:id="@id/close" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginBottom="71.0dip" android:src="@drawable/m1z" android:layout_above="@id/ouo" android:layout_alignRight="@id/ouo" />
+    <RelativeLayout android:orientation="vertical" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignLeft="@id/ouo" android:layout_alignTop="@id/ouo" android:layout_alignRight="@id/ouo" android:layout_alignBottom="@id/ouo">
+        <android.support.v7.widget.AppCompatTextView android:textSize="20.0dip" android:textColor="#ff191919" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="免费看视频 天天领现金" android:layout_centerHorizontal="true" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="52.0dip" android:layout_centerHorizontal="true">
+            <android.support.v7.widget.AppCompatImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/j_v" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <android.support.v7.widget.AppCompatTextView android:textSize="16.0dip" android:textColor="#ff00a72d" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="微信打款" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/j2g" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="87.0dip">
+            <View android:id="@id/line_3" android:background="@drawable/vir" android:layout_width="12.0dip" android:layout_height="106.5dip" android:layout_marginTop="45.0dip" android:layout_marginRight="3.0dip" android:layout_alignParentRight="true" android:alpha="0.2" />
+        </RelativeLayout>
+        <android.support.v7.widget.AppCompatTextView android:textSize="16.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/button" android:background="@drawable/bb68" android:layout_width="271.0dip" android:layout_height="48.0dip" android:layout_marginBottom="43.0dip" android:text="明天继续领奖励" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/remind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <android.support.v7.widget.AppCompatImageView android:id="@id/pl8" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/tmq" />
+            <android.support.v7.widget.AppCompatTextView android:textSize="14.0dip" android:textColor="#ff808080" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="提醒我明天来领钱" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

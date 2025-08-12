@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="42.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/pf4" android:background="@color/bqa" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginStart="9.0dip" android:layout_marginEnd="9.0dip" />
+    <ImageView android:id="@id/menu_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_centerVertical="true" android:layout_marginStart="15.0dip" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/wm_sg_color_FFFFFF" android:id="@id/menu_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="红包" android:maxEms="5" android:singleLine="true" android:layout_centerVertical="true" android:layout_marginStart="6.0dip" android:layout_toEndOf="@id/menu_icon" />
+    <TextView android:textSize="9.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/f43" android:background="@drawable/wm_st_poi_order_prompt_count" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="12.0dip" android:minWidth="12.0dip" android:layout_centerVertical="true" android:layout_marginStart="4.0dip" android:layout_toEndOf="@id/menu_name" />
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:layout_marginStart="28.0dip" android:layout_alignParentStart="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/xm6" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/vov" />
+        <TextView android:textSize="9.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center|right|top" android:id="@id/unread_message_count" android:background="@drawable/wm_st_poi_order_prompt_count" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="12.0dip" android:minWidth="12.0dip" />
+    </FrameLayout>
+</RelativeLayout>

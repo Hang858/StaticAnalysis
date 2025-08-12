@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/o63" android:paddingLeft="12.0dip" android:paddingTop="10.0dip" android:paddingRight="12.0dip" android:paddingBottom="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_14" android:textStyle="bold" android:textColor="@color/g3u" android:id="@id/d16" android:layout_marginRight="20.0dip" android:text="@string/w9q" style="@style/WmText" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/po9" android:id="@id/ki_" android:hint="@string/ibr" style="@style/WmText.Weighted.Right" />
+    <com.meituan.roodesign.widgets.iconfont.RooIconFont android:textSize="8.0dip" android:textColor="@color/po9" android:layout_gravity="center_vertical" android:id="@id/o3v" android:paddingLeft="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nia" />
+</LinearLayout>

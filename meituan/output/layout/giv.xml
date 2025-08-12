@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/n05" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.meituan.android.identifycardrecognizer.widgets.IdCardOcrCaptureClipView android:id="@id/ftn" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:idcard_clip_heigh="200.0dip" app:idcard_clip_width="314.0dip" />
+    <RelativeLayout android:id="@id/p0w" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.meituan.android.identifycardrecognizer.widgets.rotate.RotateImageView android:id="@id/img_mask" android:visibility="gone" android:layout_width="314.0dip" android:layout_height="200.0dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/bottom_layout" android:background="#77000000" android:paddingTop="30.0dip" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.meituan.android.identifycardrecognizer.widgets.rotate.RotateImageView android:id="@id/wrx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:src="@drawable/bbno" android:layout_centerVertical="true" android:scaleX="0.7" android:scaleY="0.7" />
+        <com.meituan.android.identifycardrecognizer.widgets.rotate.RotateImageView android:id="@id/jue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/n1w" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <com.meituan.android.identifycardrecognizer.widgets.rotate.RotateImageView android:id="@id/raf" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:src="@drawable/bbgd" />
+    <com.meituan.android.identifycardrecognizer.widgets.rotate.RotateImageView android:id="@id/guw" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:src="@drawable/bbvt" android:layout_alignParentRight="true" />
+</RelativeLayout>

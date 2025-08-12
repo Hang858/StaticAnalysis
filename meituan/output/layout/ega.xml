@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="#fffff1cd" android:gravity="center" android:id="@id/tv_tag" android:background="@drawable/jvr" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="3.0dip" android:layout_marginBottom="2.0dip" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/uro" />
+    <ImageView android:layout_gravity="end|bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fob" />
+</merge>

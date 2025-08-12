@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/deliver_mode_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <ImageView android:id="@id/self_pick_waimai_channel_icon" android:layout_width="37.5dip" android:layout_height="20.0dip" android:layout_marginLeft="34.0dip" android:src="@drawable/t4v" android:layout_centerVertical="true" android:contentDescription="外卖" android:translationY="-1.0dip" />
+        <RelativeLayout android:layout_width="150.0dip" android:layout_height="44.0dip" android:layout_centerHorizontal="true">
+            <LinearLayout android:gravity="center" android:background="@drawable/wm_page_main_actionbar_deliver_mode_bg" android:layout_width="wrap_content" android:layout_height="28.0dip" android:layout_centerInParent="true">
+                <Button android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff1a1a1a" android:id="@id/btn_homepage" android:background="@drawable/wm_page_main_actionbar_button_default_bg" android:layout_width="52.0dip" android:layout_height="24.0dip" android:text="首页" style="?android:borderlessButtonStyle" />
+                <android.support.v7.widget.AppCompatTextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff1a1a1a" android:id="@id/btn_self_pick_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:text="自取" />
+            </LinearLayout>
+            <Button android:textSize="9.0sp" android:textColor="#ffffffff" android:id="@id/self_pick_float_icon" android:background="@drawable/wm_page_home_actionbar_self_pick_float_icon" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="14.0dip" android:layout_marginTop="2.0dip" android:minWidth="34.0dip" android:minHeight="0.0dip" android:layout_alignParentRight="true" style="?android:borderlessButtonStyle" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/self_pick_unread_msg_container" android:clipChildren="false" android:layout_width="25.0dip" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/location_root_container" android:layout_width="fill_parent" android:layout_height="@dimen/dxu" android:layout_below="@id/deliver_mode_container">
+        <RelativeLayout android:id="@id/channel_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="34.0dip" android:layout_toLeftOf="@id/activity_info_container">
+            <ImageView android:id="@id/waimai_channel_icon" android:visibility="gone" android:layout_width="37.5dip" android:layout_height="20.0dip" android:src="@drawable/t4v" android:layout_centerVertical="true" android:contentDescription="外卖" />
+            <include android:id="@id/wq7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@id/waimai_channel_icon" android:layout_centerVertical="true" layout="@layout/wm_page_home_actionbar_address_container" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/activity_info_container" android:paddingRight="10.0dip" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/barc" android:visibility="gone" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="24.0dip" android:layout_alignWithParentIfMissing="true">
+                <com.meituan.roodesign.resfetcher.widgets.RooImageView android:id="@id/marking_header_float_img" android:layout_width="wrap_content" android:layout_height="20.0dip" android:maxWidth="60.0dip" />
+                <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" layout="@layout/wm_page_home_dine_in_float_view" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@id/common_unread_msg_container" android:clipChildren="false" android:layout_width="25.0dip" android:layout_height="fill_parent" android:layout_marginLeft="17.0dip">
+                <include android:layout_marginLeft="5.0dip" layout="@layout/ulh" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

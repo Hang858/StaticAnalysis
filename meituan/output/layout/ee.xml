@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:layout_gravity="center_vertical" android:id="@id/checkbox" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="6.0dip" android:button="@drawable/wo8" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/jha" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/agreement_prefix" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/lbe" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/agreement_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</merge>

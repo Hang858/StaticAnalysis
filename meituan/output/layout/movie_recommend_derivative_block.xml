@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/k8u" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/tab_title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="12.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ff222222" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <View android:layout_gravity="center_vertical" android:id="@id/view_divider" android:background="@color/ur_" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="15.0dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" />
+            <TextView android:textSize="17.0sp" android:textColor="#ff666666" android:id="@id/bco8" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ysn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="15.0dip">
+            <TextView android:textSize="13.0sp" android:textColor="#ff222222" android:gravity="center_vertical" android:id="@id/tv_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看更多" />
+            <ImageView android:gravity="center_vertical" android:id="@id/iv_more" android:layout_width="4.0dip" android:layout_height="8.0dip" android:layout_marginLeft="8.0dip" android:src="@drawable/movie_order_arrow_right" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.meituan.android.movie.tradebase.home.view.NestRecyclerView android:id="@id/q0p" android:paddingLeft="15.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.meituan.android.movie.tradebase.home.view.NestRecyclerView android:id="@id/ba0f" android:paddingLeft="15.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.store.mrn.viewmanager.textinput.SGOrderTextInput android:layout_width="wrap_content" android:layout_height="wrap_content" android:textCursorDrawable="@drawable/bap7"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="120.0dip" android:layout_height="90.0dip">
+        <com.dianping.imagemanager.DPNetworkImageView android:id="@id/vy_pet_multi_item_image" android:layout_width="120.0dip" android:layout_height="90.0dip" android:scaleType="fitXY" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:background="@color/vy_60_black" android:paddingLeft="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.dianping.imagemanager.DPNetworkImageView android:id="@id/vy_pet_multi_item_icon" android:layout_width="wrap_content" android:layout_height="14.0dip" android:adjustViewBounds="true" />
+            <TextView android:textSize="@dimen/vy_text_size_12" android:textColor="@color/vy_white" android:ellipsize="end" android:id="@id/vy_pet_multi_item_title" android:paddingLeft="2.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" />
+        </LinearLayout>
+    </FrameLayout>
+    <TextView android:textSize="@dimen/vy_text_size_12" android:textColor="@color/vy_pet_display_item_subtitle_color" android:ellipsize="end" android:id="@id/vy_pet_multi_item_sub_title" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+    <TextView android:textSize="@dimen/vy_text_size_14" android:textColor="@color/vy_pet_display_item_main_color" android:ellipsize="end" android:id="@id/vy_pet_multi_item_price" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+</merge>

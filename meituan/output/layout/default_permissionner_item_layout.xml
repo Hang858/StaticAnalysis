@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@drawable/corner" android:layout_width="fill_parent" android:layout_height="67.19998dip" android:layout_marginLeft="11.48999dip" android:layout_marginRight="11.48999dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/permissionner_item_icon" android:layout_width="30.689972dip" android:layout_height="30.689972dip" android:layout_marginTop="18.299988dip" android:layout_marginStart="17.309998dip" />
+    <TextView android:textSize="14.329987sp" android:textColor="#ff333333" android:id="@id/permissionner_item_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.399994dip" android:layout_marginStart="59.48999dip" />
+    <TextView android:textSize="11.519989sp" android:textColor="#ff666666" android:id="@id/permissionner_item_body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="36.50998dip" android:layout_marginStart="59.48999dip" />
+</FrameLayout>

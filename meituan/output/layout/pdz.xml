@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/nw8" android:layout_width="fill_parent" android:layout_height="300.0dip" app:layout_constraintTop_toTopOf="parent" />
+    <com.meituan.sankuai.map.unity.lib.modules.detail.SCornerView android:id="@id/fjp" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="15.0dip" android:translationY="1.0px" app:layout_constraintBottom_toBottomOf="@id/nw8" />
+    <com.meituan.sankuai.map.unity.lib.modules.detail.ArcView android:id="@id/leu" android:background="@color/white" android:layout_width="15.0dip" android:layout_height="15.0dip" app:layout_constraintBottom_toBottomOf="@id/nw8" app:layout_constraintRight_toRightOf="parent" />
+    <com.meituan.sankuai.map.unity.lib.modules.detail.RoundedCornerFrameLayout android:id="@id/on6" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="1000.0dip" app:layout_constraintTop_toBottomOf="@id/nw8" />
+    <View android:id="@id/cde" android:background="@drawable/wdr" android:layout_width="24.0dip" android:layout_height="3.0dip" app:layout_constraintBottom_toBottomOf="@id/nw8" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    <FrameLayout android:id="@id/vpj" android:layout_width="fill_parent" android:layout_height="100.0dip" app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="6.0dip" android:paddingTop="4.0dip" android:paddingRight="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="-1.0dip">
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#bd000000" android:ellipsize="end" android:gravity="center" android:id="@id/title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:maxLines="1" />
+        <ImageView android:id="@id/iv_offsite_bubble_arrow" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="1.0dip" android:layout_marginTop="0.5dip" android:src="@drawable/u3w" android:alpha="0.4" />
+    </LinearLayout>
+    <TextView android:textSize="10.0sp" android:textColor="#66000000" android:ellipsize="end" android:gravity="center" android:id="@id/sub_title_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/offsite_title_scroll_container" android:layout_width="fill_parent" android:layout_height="14.0dip" android:layout_marginLeft="2.0dip">
+        <ImageView android:id="@id/iv_speaker" android:layout_width="14.0dip" android:layout_height="14.0dip" android:scaleType="fitXY" />
+        <com.sankuai.waimai.business.page.home.actionbar.offsite.FadingEdgeRecyclerview android:id="@id/sub_title_scroll_rv" android:fadingEdgeLength="25.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/iv_speaker" android:requiresFadingEdge="horizontal" android:layoutDirection="rtl" />
+    </RelativeLayout>
+</LinearLayout>

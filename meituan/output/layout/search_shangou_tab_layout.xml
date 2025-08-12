@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="bottom" android:id="@id/background_image" android:layout_width="fill_parent" android:layout_height="56.0dip" />
+    <com.sankuai.meituan.search.result2.filter.view.TabMaskView android:id="@id/mask" android:layout_width="0.0dip" android:layout_height="66.0dip" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/tabContainer" android:layout_width="fill_parent" android:layout_height="56.0dip" />
+</FrameLayout>

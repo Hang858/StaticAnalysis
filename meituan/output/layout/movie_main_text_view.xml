@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.AppCompatTextView android:textSize="10.0sp" android:textColor="#ff666666" android:ellipsize="end" android:gravity="center" android:id="@id/tv_ad_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

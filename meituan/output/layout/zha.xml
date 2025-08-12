@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/nhb" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/chz" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/m4n" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="128.0dip">
+            <com.meituan.android.hotellib.widget.OverseaRoundImageView android:id="@id/mcw" android:layout_width="fill_parent" android:layout_height="128.0dip" android:scaleType="centerCrop" app:borderRadius="12.0dip" app:onlyTop="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/tsx" android:paddingLeft="9.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="26.0dip" android:layout_marginTop="109.0dip">
+                <ImageView android:id="@id/m89" android:layout_width="8.0dip" android:layout_height="9.0dip" />
+                <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/xdr" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginLeft="3.0dip" android:maxLines="1" />
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:paddingLeft="9.0dip" android:paddingRight="6.0dip" android:layout_width="fill_parent" android:layout_height="54.0dip" android:layout_marginTop="5.5dip">
+            <TextView android:textSize="14.0sp" android:textColor="#ff222222" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/t7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:lineSpacingExtra="2.0sp" />
+            <TextView android:textSize="10.0sp" android:textColor="#ff004099" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/zve" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:lineSpacingExtra="2.0sp" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="9.0dip" android:paddingRight="9.0dip" android:layout_width="fill_parent" android:layout_height="16.0dip" android:layout_marginTop="7.0dip">
+            <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/ypz" android:background="#ffff4700" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="16.0dip" android:layout_marginRight="3.0dip" />
+            <TextView android:textSize="10.0sp" android:textColor="#ffff4b10" android:gravity="center_vertical" android:id="@id/bjs" android:background="#fffff1ec" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="16.0dip" android:layout_marginRight="3.0dip" />
+            <TextView android:textSize="10.0sp" android:textColor="#ff666666" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/bb6o" android:background="#fff4f4f4" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="16.0dip" android:maxLines="1" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="9.0dip" android:paddingRight="9.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="25.0dip">
+                    <TextView android:textSize="12.0sp" android:textColor="#ffff4b10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥" />
+                    <TextView android:textSize="21.0sp" android:textColor="#ffff4b10" android:id="@id/btd" android:layout_width="wrap_content" android:layout_height="24.0dip" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ffff4b10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="起" />
+                </LinearLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/fv1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/bbvx" android:background="#ffff7700" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginTop="8.0dip" android:text="抢购" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

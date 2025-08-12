@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meituan.android.beauty.widget.header.BeautyHeaderMultiView android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meituan.android.beauty.widget.header.BeautyHeaderShopInfoView android:id="@id/shop_info" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:background="@drawable/bxa" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <HorizontalScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_container" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </HorizontalScrollView>
+    <View android:background="@drawable/bxa" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</com.meituan.android.beauty.widget.header.BeautyHeaderMultiView>

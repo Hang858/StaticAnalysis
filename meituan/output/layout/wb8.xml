@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:background="@drawable/rw2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.ConstraintLayout android:orientation="horizontal" android:id="@id/vhm" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/o1c" android:padding="8.0dip" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/uxg" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/wm_sg_color_33312E" android:ellipsize="end" android:id="@id/tv_title" android:paddingTop="14.0dip" android:paddingBottom="14.0dip" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="头孢拉丁口服液 0.25ml*1瓶/盒" android:singleLine="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/o1c" app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+    <FrameLayout android:id="@id/efq" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" />
+    <ScrollView android:id="@id/pr" android:layout_width="fill_parent" android:layout_height="0.0px" app:layout_constraintBottom_toTopOf="@id/efq" app:layout_constraintTop_toBottomOf="@id/vhm">
+        <LinearLayout android:orientation="vertical" android:id="@id/x6x" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

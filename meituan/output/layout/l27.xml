@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/bai2" android:id="@id/lta" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layout_alignParentRight="true" />
+    <com.meituan.android.movie.tradebase.view.MovieStateTextView android:textSize="12.0sp" android:gravity="center" android:id="@id/buy" android:clickable="false" android:layout_width="52.0dip" android:layout_height="27.0dip" android:minWidth="52.0dip" android:layout_alignParentRight="true" />
+</RelativeLayout>

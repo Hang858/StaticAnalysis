@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:id="@id/cxd" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/b93" />
+    <ImageView android:id="@id/j2o" android:background="@drawable/ecn" android:layout_width="@dimen/rsd" android:layout_height="@dimen/rsd" android:layout_marginBottom="8.0dip" android:src="@drawable/pfe" android:scaleType="center" android:layout_marginEnd="13.0dip" android:elevation="@dimen/mwd" app:layout_constraintBottom_toTopOf="@id/qis" app:layout_constraintRight_toRightOf="parent" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/qis" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent">
+        <com.meituan.sankuai.map.unity.lib.modules.unitymap.simple.view.BottomSingleView android:id="@id/smd" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <include layout="@layout/e_" />
+    </LinearLayout>
+    <View android:id="@id/bb_g" android:background="@color/transparent" android:layout_width="1.0px" android:layout_height="1.0px" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

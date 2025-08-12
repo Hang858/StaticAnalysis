@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="bottom" android:id="@id/ycl" android:layout_width="100.0dip" android:layout_height="40.0dip" />
+    <RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/j9h" android:paddingTop="6.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <View android:id="@id/fe1" android:background="@drawable/scd" android:layout_width="14.0dip" android:layout_height="5.5dip" android:layout_marginBottom="7.0dip" android:layout_alignBottom="@id/d32" android:layout_centerHorizontal="true" />
+            <FrameLayout android:id="@id/d32" android:background="@drawable/rbi" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:id="@id/bc1e" android:layout_width="fill_parent" android:layout_height="26.0dip" android:layout_marginBottom="-26.0dip" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/kj0" android:paddingLeft="11.0dip" android:paddingRight="11.0dip" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="26.0dip">
+                        <TextView android:textSize="12.0dip" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/grd" android:layout_width="fill_parent" android:layout_height="26.0dip" android:maxLines="1" />
+                        <com.sankuai.waimai.platform.widget.RoundRectImageView android:layout_gravity="bottom" android:id="@id/jjw" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="2.0dip" android:layout_marginBottom="2.0dip" android:scaleType="fitXY" app:cornerRadius="6.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="6.0dip">
+                        <com.sankuai.waimai.platform.widget.RoundRectImageView android:id="@id/s9_" android:layout_width="41.0dip" android:layout_height="41.0dip" android:scaleType="centerCrop" app:cornerRadius="7.0dip" />
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+                            <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/w1r" android:ellipsize="end" android:id="@id/main_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:drawableRight="@drawable/o28" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+                            <TextView android:textSize="12.0dip" android:textColor="@color/k4x" android:ellipsize="end" android:id="@id/zvd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_below="@id/main_desc" />
+                            <TextView android:textSize="12.0dip" android:textColor="@color/lz4" android:ellipsize="end" android:id="@id/sub_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:maxLines="1" android:layout_toRightOf="@id/zvd" android:layout_below="@id/main_desc" />
+                            <TextView android:textSize="12.0dip" android:textColor="@color/k4x" android:ellipsize="end" android:id="@id/im6" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:maxLines="1" android:layout_toRightOf="@id/sub_time" android:layout_below="@id/main_desc" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </RelativeLayout>
+        <ImageView android:id="@id/z1b" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="40.0dip" android:layout_marginRight="60.0dip" android:layout_below="@id/j9h" />
+        <RelativeLayout android:id="@id/rwq" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5.0dip" android:layout_toRightOf="@id/z1b" android:layout_below="@id/j9h" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <RelativeLayout android:id="@id/bbmm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                <View android:id="@id/bbnc" android:background="@drawable/scd" android:layout_width="14.0dip" android:layout_height="5.5dip" android:layout_marginBottom="7.0dip" android:layout_alignBottom="@id/g56" android:layout_centerHorizontal="true" />
+                <FrameLayout android:id="@id/g56" android:background="@drawable/utm" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.sankuai.waimai.platform.widget.RoundRectImageView android:layout_gravity="center_horizontal" android:id="@id/z7c" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginTop="3.0dip" android:scaleType="centerCrop" app:cornerRadius="7.0dip" />
+                </FrameLayout>
+                <ImageView android:id="@id/ih5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ern" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <ImageView android:id="@id/twr" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <ImageView android:id="@id/wq_" android:visibility="gone" android:layout_width="71.0dip" android:layout_height="71.0dip" android:layout_marginTop="-15.0dip" android:scaleType="centerCrop" android:layout_below="@id/j9h" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

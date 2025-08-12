@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/h76" android:background="@drawable/ugw" android:paddingLeft="@dimen/sk1" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginRight="2.0dip">
+        <RelativeLayout android:id="@id/phb" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/by0">
+            <ImageView android:id="@id/qo" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/zvr" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/wm_sg_color_FFD161" android:id="@id/pny" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:includeFontPadding="false" android:layout_below="@id/qo" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/ezo" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/t0_" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/od0" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/wm_sg_color_c9c5c2" android:id="@id/ub_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="@string/wm_st_shop_cart_im" android:includeFontPadding="false" android:layout_below="@id/t0_" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:background="@drawable/u6q" android:paddingLeft="@dimen/baee" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/v8u" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5.0dip">
+                <TextView android:textSize="22.0sp" android:textColor="@color/jpg" android:id="@id/bb4x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_st_dealInfo_total_price_zero" android:singleLine="true" />
+                <com.sankuai.waimai.store.widgets.StrikeTextView android:textSize="11.0sp" android:textColor="@color/hf4" android:id="@id/f2g" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_shipping_fee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:layout_marginRight="5.0dip">
+                <TextView android:textSize="10.0sp" android:textColor="@color/hf4" android:ellipsize="end" android:id="@id/qi4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                <com.sankuai.waimai.store.widgets.StrikeTextView android:textSize="10.0sp" android:textColor="@color/hf4" android:id="@id/s5i" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/hf4" android:ellipsize="end" android:id="@id/lwp" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+                <ImageView android:id="@id/iv_city_delivery" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/rkw" />
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@id/nc6" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip">
+                <TextView android:textSize="10.0sp" android:textColor="@color/hf4" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/zys" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:layout_weight="1.0" />
+                <ImageView android:id="@id/bc2f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/rkw" />
+            </LinearLayout>
+        </FrameLayout>
+        <TextView android:enabled="false" android:textSize="12.0sp" android:textColor="@color/bwg" android:gravity="center" android:id="@id/yoj" android:layout_width="@dimen/d8z" android:layout_height="@dimen/bczi" android:text="@string/wm_st_shopcart_dealInfo_submit" android:maxLines="1" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/q43" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="65.0dip">
+        <TextView android:textSize="16.0dip" android:textColor="@color/uih" android:gravity="center_vertical" android:id="@id/name" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <ImageView android:id="@id/right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gtd" />
+    </LinearLayout>
+    <View style="@style/paybase__horizonal_divider" />
+</LinearLayout>

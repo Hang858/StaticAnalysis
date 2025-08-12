@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="194.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.bizcomponent.widgets.container.headview.BizPagerDotFlipperTopImageView android:id="@id/baby_photo_topimage_flipper" android:layout_width="fill_parent" android:layout_height="194.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/baby_photo_tagcontainer" android:background="@drawable/vy_shape_30px_alph33_4d_bg" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_alignParentBottom="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:clickable="false" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/vy_text_size_12" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/baby_photo_videonum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" />
+        <TextView android:textSize="@dimen/vy_text_size_12" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/baby_photo_albumnum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" />
+        <ImageView android:id="@id/arrow" android:layout_width="10.0dip" android:layout_height="11.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/vy_arrow_white" />
+    </LinearLayout>
+</RelativeLayout>

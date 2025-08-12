@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/gwm" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/bbou" android:background="@drawable/bcmn" android:layout_width="16.0dip" android:layout_height="6.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/gkn" android:background="@drawable/ieo" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="36.0dip">
+        <android.support.v7.widget.AppCompatImageView android:id="@id/bubble_left_icon" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/znw" />
+        <android.support.v7.widget.AppCompatTextView android:textSize="13.0dip" android:textColor="@color/black" android:id="@id/bubble_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="这里是文字信息" android:maxLines="1" />
+        <RelativeLayout android:gravity="center" android:id="@id/bc7q" android:background="@drawable/bcgo" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="0.5dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="24.0dip" android:layout_marginLeft="12.0dip">
+            <android.support.v7.widget.AppCompatTextView android:textSize="12.0dip" android:textColor="@color/black" android:id="@id/xoy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="按钮" />
+        </RelativeLayout>
+        <android.support.v7.widget.AppCompatImageView android:id="@id/bubble_close_icon" android:visibility="gone" android:layout_width="11.0dip" android:layout_height="11.0dip" android:layout_marginLeft="12.0dip" android:src="@drawable/we4" />
+    </LinearLayout>
+</LinearLayout>

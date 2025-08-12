@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:background="@color/ulz" android:layout_width="fill_parent" android:layout_height="45.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_back" android:padding="10.0dip" android:layout_width="40.0dip" android:layout_height="44.0dip" android:src="@drawable/lqy" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/bbeg" android:gravity="center" android:id="@id/ivp" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="15.0dip" android:maxLines="1" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="18.0sp" android:textColor="#ff111111" android:ellipsize="end" android:id="@id/wb4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="100.0dip" android:layout_marginRight="100.0dip" android:maxLines="1" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ric" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/dqs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.5dip" android:layout_marginRight="2.5dip">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ppp" />
+            <TextView android:textSize="10.0sp" android:textColor="@drawable/xwj" android:ellipsize="end" android:gravity="center" android:id="@id/d8q" android:layout_width="54.0dip" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ced" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.5dip" android:layout_marginRight="2.5dip">
+            <ImageView android:layout_gravity="center_horizontal" android:padding="2.0dip" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/pav" />
+            <TextView android:textSize="10.0sp" android:textColor="@drawable/xwj" android:ellipsize="end" android:gravity="center" android:id="@id/hrc" android:layout_width="54.0dip" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/cb2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.5dip" android:layout_marginRight="2.5dip">
+            <ImageView android:layout_gravity="center_horizontal" android:padding="1.0dip" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/baj7" />
+            <TextView android:textSize="10.0sp" android:textColor="@drawable/xwj" android:ellipsize="end" android:gravity="center" android:id="@id/cz" android:layout_width="54.0dip" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#ffe1e1e1" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+</merge>

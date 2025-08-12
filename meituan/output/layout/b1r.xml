@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/bbcu" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:showDividers="middle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/b4q" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/bl8" android:showDividers="middle">
+            <TextView android:textStyle="normal" android:textColor="@color/hrw" android:id="@id/dialog_title" android:layout_height="45.0dip" style="@style/WmDialog.Title" />
+            <TextView android:textColor="@color/hrw" android:id="@id/tlg" android:visibility="gone" style="@style/WmDialog.Message" />
+        </LinearLayout>
+        <View android:id="@id/bcgx" android:background="@color/wm_common_dialog_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/wm_common_dialog_divider_width" />
+    </LinearLayout>
+    <FrameLayout android:orientation="vertical" android:id="@id/ffk" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="vertical" android:id="@id/uwf" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/gns" android:background="@color/nqf" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+        <View android:id="@id/d1o" android:background="@color/wm_common_dialog_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/wm_common_dialog_divider_width" />
+        <LinearLayout android:orientation="vertical" android:id="@id/i1s" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/wm_common_dialog_divider_component" android:showDividers="middle">
+            <Button android:id="@id/kdw" style="@style/WmDialog.Button.FullWidth" />
+            <Button android:id="@id/e72" style="@style/WmDialog.Button.FullWidth" />
+            <Button android:id="@id/s1c" style="@style/WmDialog.Button.FullWidth" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

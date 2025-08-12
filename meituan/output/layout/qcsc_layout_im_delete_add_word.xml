@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/rl_bottom_container" android:background="@drawable/qcsc_bg_im_add_common_word" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/qcsc_add_commonword_E6000000" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginBottom="24.0dip" android:text="@string/qcsc_im_addCommonWord_delete_title" />
+        <View android:background="@color/qcsc_add_commonword_F0000000" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="17.0sp" android:textColor="@color/qcsc_add_commonword_80000000" android:gravity="center" android:id="@id/tv_cancel_delete" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/qcsc_im_addCommonWord_cancel" android:layout_weight="1.0" />
+            <View android:background="@color/qcsc_add_commonword_F0000000" android:layout_width="1.0dip" android:layout_height="48.0dip" />
+            <TextView android:textSize="17.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/tv_ok_delete" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="删除" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

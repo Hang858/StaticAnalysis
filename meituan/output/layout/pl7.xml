@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="64.0dip" android:layout_height="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/channel_icon" android:layout_width="64.0dip" android:layout_height="64.0dip" android:src="@drawable/esr" android:scaleType="centerCrop" />
+</FrameLayout>

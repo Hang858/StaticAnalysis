@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/xzg" android:background="@color/u_y" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/l35">
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/d5h" android:gravity="center" android:id="@id/po1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:text="@string/i6j" />
+        <com.meituan.android.novel.library.page.reader.view.menuchapter.ChapterSeekBar android:id="@id/c2" android:layout_width="0.0dip" android:layout_height="24.0dip" android:maxHeight="16.0dip" android:progressDrawable="@drawable/wxs" android:minHeight="16.0dip" android:thumbOffset="0.0dip" android:layout_weight="1.0" android:paddingStart="0.0dip" android:paddingEnd="0.0dip" android:splitTrack="false" />
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/n1e" android:gravity="center" android:id="@id/usw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:text="@string/fi6" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/pp_" android:background="@drawable/ccg" android:visibility="gone" android:layout_width="190.0dip" android:layout_height="52.0dip" android:layout_marginBottom="73.0dip" android:lines="2" android:lineSpacingExtra="2.0dip" android:paddingStart="30.0dip" android:paddingEnd="30.0dip" />
+</FrameLayout>

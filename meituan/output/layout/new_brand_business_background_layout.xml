@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/bmm" android:background="@color/w88" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_actionbar_bg" android:layout_width="fill_parent" android:layout_height="120.0dip">
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/iv_brand_business_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <View android:id="@id/view_brand_business_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <View android:id="@id/view_brand_business_corner" android:background="@drawable/wm_sc_new_brand_business_top_rounder" android:layout_width="fill_parent" android:layout_height="8.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/fl_brand_business_filter" android:background="@color/wm_sg_color_FFFFFF" android:layout_width="fill_parent" android:layout_height="26.0dip" android:layout_below="@id/rl_actionbar_bg" />
+    <FrameLayout android:id="@id/fl_brand_business_gradient" android:background="@color/wm_sg_color_FFFFFF" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_below="@id/fl_brand_business_filter" />
+    <View android:id="@id/bottom_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

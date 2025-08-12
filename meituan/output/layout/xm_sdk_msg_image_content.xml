@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.xm.imui.common.view.shape.ShapeFrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layerType="software"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sankuai.xm.imui.common.view.AdaptiveImageView android:layout_gravity="center" android:id="@id/xm_sdk_chat_img_adaptive_view" android:background="@drawable/xm_sdk_chat_msg_img_holder_bg" android:layout_width="@dimen/xm_sdk_msg_placeholder_size" android:layout_height="@dimen/xm_sdk_msg_placeholder_size" android:scaleType="centerCrop" android:maxWidth="@dimen/xm_sdk_image_msg_max_size" android:maxHeight="@dimen/xm_sdk_image_msg_max_size" android:minWidth="@dimen/xm_sdk_image_msg_min_size" android:minHeight="@dimen/xm_sdk_image_msg_min_size" />
+    <ImageView android:layout_gravity="end|bottom|center" android:id="@id/xm_sdk_gif_icon" android:layout_width="@dimen/xm_sdk_image_msg_gif_tag_width" android:layout_height="@dimen/xm_sdk_image_msg_gif_tag_height" android:layout_margin="6.0dip" android:src="@drawable/xm_sdk_ic_gif" />
+</com.sankuai.xm.imui.common.view.shape.ShapeFrameLayout>

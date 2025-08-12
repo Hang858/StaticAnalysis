@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meituan.android.ktv.dealdetail.view.CircleBackgroundTextView android:textSize="13.0sp" android:textColor="@color/gc_ktv_schedule_day_item_text_color" android:gravity="center" android:layout_width="42.0dip" android:layout_height="42.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

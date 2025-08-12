@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/black_gap_view" android:background="@color/wm_sc_black_cc" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="-12.0dip" android:layout_above="@id/c8v" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/blank_view" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="@dimen/j2j" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/ddv" android:textStyle="bold" android:textColor="@color/ca7" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/b2c_patch_select_done_tv" android:layout_width="fill_parent" android:layout_height="@dimen/o4g" android:layout_marginLeft="@dimen/wpy" android:layout_marginRight="@dimen/wpy" android:text="选好了" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/c8v" android:background="@drawable/jj9" android:paddingLeft="@dimen/wpy" android:paddingRight="@dimen/wpy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/blank_view">
+        <RelativeLayout android:id="@id/rl_title" android:background="@drawable/jj9" android:layout_width="fill_parent" android:layout_height="@dimen/l3t" android:layout_marginTop="@dimen/ddv" android:layout_marginBottom="@dimen/ddv">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="@dimen/l3t" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/v5_" android:layout_width="@dimen/qw0" android:layout_height="@dimen/qw0" android:src="@drawable/uss" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/e_9" android:textStyle="bold" android:textColor="@color/wm_sg_color_222426" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bbrs" android:text="加购成功！搭配使用效果更佳" android:layout_toRightOf="@id/v5_" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:id="@id/iv_close" android:padding="@dimen/wpy" android:layout_width="@dimen/l3t" android:layout_height="@dimen/l3t" android:layout_marginRight="@dimen/uv2" android:src="@drawable/uxg" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView android:id="@id/zs3" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rl_title" />
+        <TextView android:textSize="@dimen/m8w" android:textColor="@color/wm_sg_color_575859" android:ellipsize="end" android:id="@id/j16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wpy" android:maxLines="3" android:layout_below="@id/zs3" android:layout_centerVertical="true" />
+        <android.support.v7.widget.RecyclerView android:id="@id/qy1" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wpy" android:layout_below="@id/j16" />
+    </RelativeLayout>
+</RelativeLayout>

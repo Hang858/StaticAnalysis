@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/l6h" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.dianping.voyager.widgets.container.LoadErrorEmptyView android:id="@id/qzz" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.dianping.shield.component.widgets.container.RVContentView android:orientation="vertical" android:id="@id/content_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/c89" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/bottom_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        <FrameLayout android:id="@id/t1b" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_view" />
+        <FrameLayout android:id="@id/gqp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.dianping.shield.component.widgets.container.RVContentView>
+    <FrameLayout android:id="@id/qem" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

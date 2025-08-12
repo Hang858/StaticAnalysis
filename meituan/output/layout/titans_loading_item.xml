@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.titans.base.LoadingItem android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/anim_icon" android:background="@drawable/titans_loading_small_bkg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:src="@drawable/titans_loading_small_main" />
+    <TextView android:textSize="@dimen/titans_text_size_14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/titans_loading" />
+</com.sankuai.titans.base.LoadingItem>

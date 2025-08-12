@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="90.0dip" android:layout_height="wrap_content" android:layout_marginRight="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sankuai.waimai.store.view.banner.roundview.UniversalImageView android:id="@id/img_poi_product_image" android:layout_width="90.0dip" android:layout_height="67.0dip" android:scaleType="fitCenter" app:riv_border_color="#fff3f3f3" app:riv_border_width="0.5dip" app:riv_corner_radius="6.0dip" app:riv_oval="false" />
+    <com.sankuai.waimai.store.view.banner.roundview.UniversalImageView android:layout_width="90.0dip" android:layout_height="67.0dip" app:riv_background_color="@color/ffl" app:riv_corner_radius="6.0dip" app:riv_oval="false" />
+    <ImageView android:id="@id/p69" android:visibility="visible" android:layout_width="@dimen/o4g" android:layout_height="14.0dip" android:scaleType="fitXY" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/jpg" android:gravity="center" android:id="@id/xb3" android:background="@drawable/wm_st_poi_adapter_goods_item_promotion_new_bg" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="14.0dip" android:layout_above="@id/r8a" android:layout_alignBottom="@id/img_poi_product_image" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/wm_sg_color_33312D" android:id="@id/r8a" android:layout_marginTop="1.0dip" android:layout_below="@id/img_poi_product_image" style="@style/WmStStoreText" />
+    <com.sankuai.waimai.store.widgets.RetailHotSalePriceLayout android:id="@id/enp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/j8y" android:layout_below="@id/r8a" />
+</RelativeLayout>

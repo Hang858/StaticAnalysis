@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.meituan.msv.list.widget.PageLoadingItem android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/anim_icon" android:layout_width="92.0dip" android:layout_height="92.0dip" android:contentDescription="@string/s93" />
+</com.sankuai.meituan.msv.list.widget.PageLoadingItem>

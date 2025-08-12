@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="80.0dip" android:layout_marginRight="9.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/dnj" android:layout_width="54.0dip" android:layout_height="54.0dip" android:layout_marginTop="7.0dip" android:layout_marginBottom="2.0dip">
+        <View android:layout_gravity="center" android:id="@id/d4_" android:background="@drawable/z49" android:layout_width="54.0dip" android:layout_height="54.0dip" />
+        <View android:layout_gravity="center" android:id="@id/qhw" android:background="@drawable/ett" android:layout_width="48.0dip" android:layout_height="48.0dip" />
+        <ImageView android:layout_gravity="center" android:id="@id/tab_image_item_image_icon" android:layout_width="36.0dip" android:layout_height="36.0dip" />
+    </FrameLayout>
+    <TextView android:textSize="12.0sp" android:textColor="#ff4d4d4d" android:layout_gravity="bottom|center" android:id="@id/tk2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:maxLines="1" android:includeFontPadding="false" android:layout_centerHorizontal="true" />
+</FrameLayout>

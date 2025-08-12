@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sankuai.waimai.platform.widget.RoundedCornerFrameLayout android:id="@id/holder" android:background="#fff8f8f8" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" app:cornerRadius="4.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/picture" android:layout_width="50.0dip" android:layout_height="15.0dip" android:scaleType="fitXY" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/hgc" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/filter_icon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="4.0dip" />
+                <TextView android:textSize="12.0dip" android:textColor="#ff575859" android:gravity="center" android:id="@id/y9f" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:textSize="11.0sp" android:ellipsize="end" android:id="@id/vz9" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:maxLines="1" android:maxEms="14" />
+        </LinearLayout>
+    </com.sankuai.waimai.platform.widget.RoundedCornerFrameLayout>
+</LinearLayout>

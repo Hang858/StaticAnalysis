@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/gum" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginRight="32.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="#ff000000" android:gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="18.0dip" android:text="当前有行程正在导航中，是否要退出并开始新导航" />
+    <TextView android:textSize="14.0dip" android:textColor="#ff000000" android:gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="13.0dip" android:layout_marginRight="18.0dip" android:text="当前导航目的地：" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="18.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:src="@drawable/s6o" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff000000" android:gravity="left" android:id="@id/sep" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="22.0dip" android:layout_marginRight="18.0dip" android:layout_marginBottom="16.0dip">
+        <com.meituan.sankuai.navisdk.place.ui.MultifunctionLinearLayout android:gravity="center" android:id="@id/j0v" android:background="@drawable/ra_" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_weight="1.0" android:layout_centerHorizontal="true">
+            <TextView android:textSize="15.0dip" android:textColor="@color/mtnv_color_gray_button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取消" />
+        </com.meituan.sankuai.navisdk.place.ui.MultifunctionLinearLayout>
+        <View android:layout_width="8.0dip" android:layout_height="fill_parent" />
+        <com.meituan.sankuai.navisdk.place.ui.MultifunctionLinearLayout android:gravity="center" android:id="@id/yrj" android:background="@drawable/w8e" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_weight="1.0" android:layout_centerHorizontal="true">
+            <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/mtnv_color_FFFFFF" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开始新导航" />
+        </com.meituan.sankuai.navisdk.place.ui.MultifunctionLinearLayout>
+    </LinearLayout>
+</LinearLayout>

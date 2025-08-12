@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:layout_gravity="center|left" android:id="@id/shop_cart_online_guide_txt" android:paddingLeft="@dimen/uv2" android:paddingTop="@dimen/bbrs" android:paddingRight="@dimen/uv2" android:paddingBottom="@dimen/bbrs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+    <ImageView android:layout_gravity="center" android:id="@id/iv_shop_cart_im_online_arrow" android:layout_width="@dimen/yxh" android:layout_height="@dimen/z34" android:layout_marginLeft="@dimen/vdq" android:src="@drawable/th9" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_below="@id/shop_cart_online_guide_txt" />
+</RelativeLayout>

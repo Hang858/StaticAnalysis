@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/jpg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/mv" android:layout_width="fill_parent" android:layout_height="77.0dip">
+        <com.sankuai.waimai.platform.widget.RoundedFrameLayout android:id="@id/roundfl_food_pic" android:layout_width="57.0dip" android:layout_height="57.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="12.0dip" android:layout_centerVertical="true" app:cornerRadius="20.0dip">
+            <com.sankuai.waimai.platform.widget.roundview.RoundedImageView android:id="@id/sgq" android:layout_width="57.0dip" android:layout_height="57.0dip" android:src="@drawable/sc_" android:scaleType="center" app:riv_border_color="#fff4f4f4" app:riv_border_width="0.5dip" app:riv_corner_radius="30.0dip" app:riv_oval="false" />
+        </com.sankuai.waimai.platform.widget.RoundedFrameLayout>
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/mq3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.5dip" android:layout_marginRight="16.0dip" android:layout_toRightOf="@id/roundfl_food_pic">
+            <TextView android:textSize="@dimen/e_9" android:textColor="@color/s7s" android:ellipsize="end" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/hag" android:maxLines="1" android:layout_toLeftOf="@id/p9v" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/wm_sg_color_24C17F" android:gravity="right" android:id="@id/p9v" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bbrs" android:layout_toRightOf="@id/roundfl_food_pic" android:layout_below="@id/mq3" android:layout_alignLeft="@id/mq3" android:layout_alignRight="@id/mq3">
+            <TextView android:textSize="@dimen/hzr" android:textColor="@color/wm_sg_color_999794" android:ellipsize="end" android:id="@id/w0q" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_marginRight="@dimen/hag" android:maxLines="1" android:layout_toLeftOf="@id/ree" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <TextView android:textSize="@dimen/hzr" android:textColor="@color/hf4" android:gravity="right" android:id="@id/ree" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ea5" android:includeFontPadding="false" android:layout_toLeftOf="@id/l2e" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/e_9" android:textColor="@color/wm_sg_color_33312d" android:gravity="right" android:id="@id/l2e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/e_9" android:textColor="@color/wm_sg_color_FFA200" android:gravity="center" android:id="@id/td3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/bczi" android:text="@string/wm_sc_show_all_order" />
+    <View android:id="@id/view_food_divider_bottom" android:background="@color/wm_sg_color_F2F2F2" android:layout_width="fill_parent" android:layout_height="@dimen/hue" android:layout_marginLeft="@dimen/ddv" />
+</LinearLayout>

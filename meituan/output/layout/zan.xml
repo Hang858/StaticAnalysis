@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:id="@id/b1q" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/vqg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:soundEffectsEnabled="false" android:importantForAccessibility="no" />
+    <com.sankuai.meituan.msv.page.widget.RightTouchFrameLayout android:layout_gravity="center|top" android:id="@id/uyu" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/bottom_sheet_behavior" style="?bottomSheetStyle">
+        <com.sankuai.meituan.msv.page.widget.TopEdgeTouchFrameLayout android:id="@id/ukw" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/wp6" android:background="@drawable/p36" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <FrameLayout android:id="@id/ehx" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </com.sankuai.meituan.msv.page.widget.TopEdgeTouchFrameLayout>
+    </com.sankuai.meituan.msv.page.widget.RightTouchFrameLayout>
+</android.support.design.widget.CoordinatorLayout>

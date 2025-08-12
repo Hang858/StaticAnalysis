@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/q6p" android:paddingTop="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/clm" android:paddingLeft="13.0dip" android:paddingRight="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.meituan.android.phoenix.atom.common.view.RoundCornerImageView android:id="@id/iv_product_img" android:background="@color/ecb" android:layout_width="105.0dip" android:layout_height="70.0dip" android:scaleType="centerCrop" />
+        <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="2.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="@color/szj" android:ellipsize="end" android:id="@id/bckq" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="看看这套房子吧看看这套房子吧看看这套房子吧看看这套房子吧" android:maxLines="1" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/ulw" android:id="@id/km_" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="上海·静安寺" android:maxLines="1" android:layout_below="@id/bckq" />
+            <LinearLayout android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:layout_alignParentBottom="true">
+                <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#fff84c49" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nb0" />
+                <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#fff84c49" android:id="@id/tv_price" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/otv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/晚" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="#ffeaeaea" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="14.0dip" />
+    <TextView android:textSize="12.0sp" android:textColor="#ff3e88ff" android:gravity="center" android:id="@id/c01" android:background="@drawable/q6p" android:layout_width="fill_parent" android:layout_height="42.0dip" android:text="发送房源给房东" />
+</LinearLayout>

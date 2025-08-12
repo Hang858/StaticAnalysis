@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/bc2m" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.meituan.android.ugc.review.add.view.ReviewTagLayout android:id="@id/tw8" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:horizontalSpace="10.0dip" app:maxRowCount="3" app:tagBackground="@drawable/bciw" app:tagPaddingLeftAndRight="15.0dip" app:tagPaddingTopAndBottom="5.0dip" app:tagTextSize="13.0sp" app:verticalSpace="10.0dip" />
+</LinearLayout>

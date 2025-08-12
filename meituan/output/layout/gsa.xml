@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/mobike_map_layer" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center" android:id="@id/fl_bubble_view" android:paddingTop="8.0dip" android:paddingBottom="132.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="25.0dip">
+        <com.meituan.android.bike.framework.widgets.shadow.BaseTextView android:layout_gravity="center_horizontal" android:id="@id/mobike_no_nearby" android:visibility="gone" android:text="@string/ruy" style="@style/mobike_home_marker_title" />
+        <com.meituan.android.bike.framework.widgets.shadow.BaseLinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/mobike_bubble_ll" android:paddingLeft="10.0dip" android:paddingTop="6.0dip" android:paddingRight="10.0dip" android:paddingBottom="6.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" app:mobikeOutsideBackground="@drawable/xxt">
+            <ImageView android:id="@id/mobike_bubble_im" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="2.0dip" android:src="@drawable/gw" android:scaleType="fitXY" />
+            <TextView android:textSize="13.0dip" android:textStyle="bold" android:textColor="@color/ux_" android:id="@id/mobike_bubble_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </com.meituan.android.bike.framework.widgets.shadow.BaseLinearLayout>
+    </FrameLayout>
+    <com.meituan.android.bike.framework.widgets.pin.LoadingPinView android:layout_gravity="center" android:id="@id/mobike_pin_view" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="@dimen/wyn" android:layout_marginBottom="25.0dip" />
+</FrameLayout>

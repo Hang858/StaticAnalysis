@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fffef5da" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/notification_icon" android:layout_width="18.0dip" android:layout_height="14.0dip" android:src="@drawable/xm_sdk_ic_notification" android:layout_centerVertical="true" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff222222" android:ellipsize="end" android:id="@id/text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:maxLines="2" android:layout_toStartOf="@id/close" android:layout_toEndOf="@id/notification_icon" style="@style/xm_sdk_text_view_style_18n" />
+    <ImageView android:id="@id/close" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/xm_sdk_ic_close" android:layout_centerVertical="true" android:layout_marginStart="20.0dip" android:layout_marginEnd="12.0dip" android:layout_alignParentEnd="true" />
+    <View android:background="#ffeaca7e" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/text" />
+</RelativeLayout>

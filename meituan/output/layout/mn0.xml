@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/ce1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginRight="32.0dip">
+        <Button android:id="@id/webview_close" android:background="@drawable/ggs" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <LinearLayout android:background="@drawable/bchv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="30.0dip" android:layout_above="@id/webview_close">
+            <com.meituan.android.paycommon.lib.widgets.CornersLinearLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

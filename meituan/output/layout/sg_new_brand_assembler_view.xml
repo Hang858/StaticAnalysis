@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/background_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.sankuai.waimai.store.poi.list.newbrand.scroll.MeasureAllLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="1.0px">
+            <com.sankuai.waimai.store.poi.list.newbrand.actionbar.ActionBarContainer android:id="@id/mg2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="2.0px" />
+            <FrameLayout android:id="@id/id_kingkong_float" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="1.0px" />
+        </com.sankuai.waimai.store.poi.list.newbrand.scroll.MeasureAllLinearLayout>
+        <com.sankuai.waimai.store.poi.list.newbrand.scroll.PrioritySmoothNestedScrollViewV2 android:id="@id/scroll_card_root" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.sankuai.waimai.store.poi.list.newbrand.scroll.ChildMatchParentLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:id="@id/id_action_bar_shadow_view" android:layout_width="fill_parent" android:layout_height="166.0dip" />
+                <LinearLayout android:orientation="vertical" android:id="@id/operation_container" android:clipChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <com.sankuai.waimai.store.poi.list.newbrand.kingkong.KingKongContainerView android:orientation="vertical" android:id="@id/kingkong_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <LinearLayout android:orientation="vertical" android:id="@id/out_view_pager_container" android:layout_width="fill_parent" android:layout_height="fill_parent" app:matchParentHeight="true" app:occupiedHeight="121.0dip" />
+            </com.sankuai.waimai.store.poi.list.newbrand.scroll.ChildMatchParentLinearLayout>
+        </com.sankuai.waimai.store.poi.list.newbrand.scroll.PrioritySmoothNestedScrollViewV2>
+    </FrameLayout>
+    <FrameLayout android:id="@id/float_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</merge>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_view" android:background="@color/zw4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/ozy" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/na9" android:layout_width="311.0dip" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="17.0sp" android:textColor="@color/fg1" android:gravity="center" android:id="@id/tmc" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/yp0" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/pnd" android:layout_height="fill_parent" android:layout_marginRight="18.0dip" style="@style/paybase__hello_pay_dialog_close" />
+            </RelativeLayout>
+            <View android:background="@color/jdn" style="@style/paybase__horizonal_divider" />
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="281.0dip" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/d_1" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginTop="15.0dip" android:scaleType="fitXY" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/h6s" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+                <View style="@style/paybase__horizonal_divider" />
+            </LinearLayout>
+            <Button android:id="@id/n9x" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/msr" style="@style/mtpaysdk_button" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

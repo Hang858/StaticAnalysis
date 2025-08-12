@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/loading_container" android:background="@drawable/qcsc_progressbar_loading_bg" android:paddingLeft="@dimen/qcsc_progressbar_layout_padding_left_right" android:paddingRight="@dimen/qcsc_progressbar_layout_padding_left_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/qcsc_progressbar_layout_min_width" android:minHeight="@dimen/qcsc_progressbar_layout_min_height">
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/progress_bar" android:layout_width="@dimen/qcsc_progressbar_loading_size" android:layout_height="@dimen/qcsc_progressbar_loading_size" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/qcs_toast_loading_white" />
+        <TextView android:textSize="@dimen/qcsc_progressbar_font_size" android:textColor="@color/qcsc_c2_1" android:id="@id/tv_message" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/qcsc_progressbar_tv_margin_left" />
+    </LinearLayout>
+</FrameLayout>

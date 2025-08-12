@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/cv3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/jf0" android:background="@color/ywi" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v7.widget.Toolbar android:id="@id/dff" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:elevation="5.0dip" app:navigationIcon="@drawable/fe4" />
+        <RelativeLayout android:paddingTop="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:orientation="horizontal" android:id="@id/bcfb" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+                <ImageView android:id="@id/zev" android:background="@drawable/nl0" android:padding="5.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ImageView android:layout_gravity="end" android:id="@id/qmu" android:background="@drawable/nkt" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <com.meituan.android.paybase.widgets.keyboard.SafeKeyBoardView android:id="@id/lru" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/yr9" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/lru" android:layout_below="@id/bcfb">
+                <TextView android:textSize="20.0sp" android:textColor="@color/b5z" android:gravity="bottom|center" android:layout_gravity="center_horizontal" android:id="@id/dds" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:lineSpacingExtra="2.0dip" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/z_g" android:gravity="center" android:id="@id/sub_message" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                    <com.meituan.android.paybase.widgets.password.SafePasswordView android:id="@id/wqf" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+                    <TextView android:textSize="12.0sp" android:ellipsize="end" android:gravity="center" android:id="@id/y4v" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="13.0dip" android:layout_marginRight="30.0dip" android:maxLines="2" android:layout_below="@id/wqf" android:layout_alignParentLeft="true" />
+                    <ViewStub android:id="@id/confirm_btn" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="@dimen/ul" android:layout_marginTop="43.0dip" android:layout_marginRight="@dimen/ul" android:layout_below="@id/wqf" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

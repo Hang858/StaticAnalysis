@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" style="@style/WmPage.NoBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/r8e" android:background="@color/jpg" android:layout_width="fill_parent" android:layout_height="@dimen/d_a" />
+    <android.support.v7.widget.Toolbar android:id="@id/zw8" android:background="@color/jpg" android:layout_width="fill_parent" android:layout_height="@dimen/d_a" android:layout_below="@id/r8e" app:contentInsetStart="0.0dip">
+        <include layout="@layout/ump" />
+    </android.support.v7.widget.Toolbar>
+    <FrameLayout android:id="@id/lyk" android:layout_width="wrap_content" android:layout_height="@dimen/d_a" android:layout_marginRight="10.0dip" android:layout_below="@id/r8e" android:layout_alignParentRight="true" />
+    <LinearLayout android:id="@id/urq" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/zw8">
+        <include android:id="@id/gmg" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/b4z" />
+    </LinearLayout>
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/zw8" layout="@layout/rs" />
+</RelativeLayout>

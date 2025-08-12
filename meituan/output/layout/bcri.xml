@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:background="@drawable/p1a" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="center" android:id="@id/lho" android:layout_width="wrap_content" android:layout_height="fill_parent" android:contentDescription="@string/scg" />
+    <View android:id="@id/divider1" android:background="#1e000000" android:layout_width="0.5pt" android:layout_height="fill_parent" />
+    <TextView android:textSize="11.519989pt" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_num" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@null" android:layout_weight="1.0" android:paddingStart="10.0pt" android:paddingEnd="10.0pt" />
+    <View android:id="@id/divider2" android:background="#1e000000" android:layout_width="0.5pt" android:layout_height="fill_parent" />
+    <TextView android:layout_gravity="center" android:id="@id/b0_" android:layout_width="wrap_content" android:layout_height="fill_parent" android:contentDescription="@string/l8f" />
+</merge>

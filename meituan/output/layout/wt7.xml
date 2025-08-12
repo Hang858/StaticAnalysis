@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/na9" android:layout_width="310.0dip" android:layout_height="219.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/qg0" android:padding="15.0dip" android:layout_width="46.0dip" android:layout_height="46.0dip" android:src="@drawable/c47" android:layout_alignParentRight="true" />
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/z0y" android:ellipsize="end" android:gravity="center" android:id="@id/jf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="31.0dip" android:layout_marginRight="15.0dip" android:singleLine="true" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/b8r" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_below="@id/jf" android:layout_centerHorizontal="true">
+        <TextView android:textSize="20.0dip" android:textColor="@color/ba_f" android:gravity="bottom" android:id="@id/ffx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥ " />
+        <TextView android:textSize="36.0dip" android:textColor="@color/ba_f" android:id="@id/w7x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/z0y" android:ellipsize="end" android:gravity="center" android:id="@id/o76" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:singleLine="true" android:layout_below="@id/b8r" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/tfb" android:layout_width="fill_parent" android:layout_height="75.0dip" android:layout_alignParentBottom="true">
+        <com.meituan.android.paybase.widgets.ProgressButton android:textSize="14.0dip" android:textStyle="bold" android:textColor="@color/jwq" android:ellipsize="end" android:gravity="center" android:id="@id/jnv" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:singleLine="true" style="@style/cashier__button" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/bind_phone_title" layout="@layout/passport_fragment_bindphone_title" />
+    <com.meituan.passport.view.PassportMobileInputViewV2 android:id="@id/bind_phone_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="?bindMarLRSize" android:layout_marginTop="46.0dip" android:layout_marginRight="?bindMarLRSize" />
+    <com.meituan.passport.view.PassportButton android:theme="@style/PassportButtonStyleNew" android:textSize="?bindButtonSize" android:textStyle="bold" android:textColor="@color/passport_recommend_passward_selector" android:gravity="center" android:id="@id/bind_phone_get_dynamic_btn" android:layout_width="fill_parent" android:layout_height="?bindButtonHeight" android:layout_marginLeft="?bindMarLRSize" android:layout_marginTop="12.0dip" android:layout_marginRight="?bindMarLRSize" android:text="@string/passport_bindmobile_retrieve_code" android:stateListAnimator="@null" />
+</LinearLayout>

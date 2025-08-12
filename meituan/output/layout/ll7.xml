@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/fq_" android:background="#ffffffff" android:clickable="true" android:layout_width="fill_parent" android:layout_height="43.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView android:id="@id/content_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+    <com.sankuai.meituan.search.result2.filter.view.widget.QuickMoreItemView android:id="@id/qqk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <com.sankuai.meituan.search.result2.filter.view.widget.FilterTipView android:id="@id/ri_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="24.0dip">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff353535" android:id="@id/tv_task_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" />
+        <ProgressBar android:id="@id/pb_task_progress" android:layout_width="fill_parent" android:layout_height="4.0dip" android:layout_marginBottom="8.0dip" android:max="100" android:progressDrawable="@drawable/mgb_progress_bar_bg" style="?android:progressBarStyleHorizontal" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:layout_gravity="end" android:id="@id/tv_task_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</merge>

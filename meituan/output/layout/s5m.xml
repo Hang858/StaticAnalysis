@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/movie_pay_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerVertical="true" style="@style/CellTitleTextStyle" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <TextView android:layout_gravity="center_vertical" android:id="@id/bb7h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:maxLines="1" style="@style/CellSubtitleTextStyle" />
+        <android.support.v7.widget.SwitchCompat android:layout_gravity="center_vertical" android:id="@id/vbi" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?tradeCheckBoxStyle" />
+    </LinearLayout>
+</merge>

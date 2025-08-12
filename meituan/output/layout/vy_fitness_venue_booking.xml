@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/header_container" layout="@layout/vy_joy_simple_header_view_layout" />
+    <View android:background="@color/vy_line_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/vy_standard_margin" />
+    <com.dianping.voyager.fitness.widget.FitnessVenueBookingTabLayout android:id="@id/tab" android:background="@drawable/vy_tab_bar_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" dp:maxTabCount="99" dp:tabItemLayout="@layout/vy_fitness_venue_booking_tab_item" dp:tabSpace="0" />
+    <LinearLayout android:orientation="vertical" android:background="@color/vy_black6" android:paddingLeft="@dimen/vy_standard_margin" android:paddingTop="@dimen/vy_standard_margin" android:paddingBottom="@dimen/vy_standard_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.dianping.voyager.fitness.widget.FitnessVenueGalleryLayout android:id="@id/grid_view" android:layout_width="fill_parent" android:layout_height="wrap_content" dp:maxTabCount="99" dp:tabItemLayout="@layout/vy_fitness_venue_item" dp:tabSpace="10" />
+        <TextView android:textSize="@dimen/vy_text_size_13" android:textColor="@color/vy_black3" android:ellipsize="end" android:id="@id/tips_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:maxLines="1" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

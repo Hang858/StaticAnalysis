@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/kff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/vht" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ImageView android:layout_gravity="center|right" android:id="@id/close_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/mjf" android:scaleType="center" />
+    <com.dianping.ad.widget.AdBannerNaviDot android:layout_gravity="bottom|center|left" android:id="@id/v_r" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="6.0dip" />
+</FrameLayout>

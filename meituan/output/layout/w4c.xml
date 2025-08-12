@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/odc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="6.5dip" android:layout_marginRight="6.5dip">
+        <TextView android:textSize="@dimen/z8v" android:textColor="@color/qg6" android:ellipsize="end" android:id="@id/ev2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:maxLines="1" android:layout_centerVertical="true" />
+        <View android:id="@id/divider" android:background="#ff979797" android:layout_width="0.5dip" android:layout_height="12.5dip" android:layout_marginLeft="5.5dip" android:layout_marginRight="5.5dip" android:layout_toRightOf="@id/ev2" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/z8v" android:textColor="@color/qg6" android:id="@id/iev" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:maxLines="1" android:layout_toRightOf="@id/divider" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</merge>

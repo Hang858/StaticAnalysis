@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.meituan.android.common.ui.widget.RoundFrameLayout android:id="@id/q5p" android:layout_width="72.0dip" android:layout_height="96.0dip" android:layout_marginEnd="12.0dip" app:rfl_radius="5.0dip">
+        <ImageView android:id="@id/h7f" android:layout_width="72.0dip" android:layout_height="96.0dip" android:src="@color/diy" />
+    </com.meituan.android.common.ui.widget.RoundFrameLayout>
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/ja8" android:ellipsize="end" android:id="@id/txt_recommend_title" android:layout_width="fill_parent" android:layout_height="22.5dip" android:maxLines="1" android:layout_toRightOf="@id/q5p" android:layout_marginEnd="50.0dip" />
+    <TextView android:textSize="18.0sp" android:textColor="#ff88461b" android:id="@id/bcqd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:lineSpacingExtra="0.0dip" android:layout_alignParentEnd="true" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/s9o" android:ellipsize="end" android:id="@id/bbo8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:maxLines="2" android:layout_below="@id/txt_recommend_title" android:layout_alignLeft="@id/txt_recommend_title" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/s9o" android:id="@id/bcjk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.5dip" android:layout_below="@id/bbo8" android:layout_alignLeft="@id/txt_recommend_title" />
+    <Button android:textSize="12.0sp" android:textColor="@color/fya" android:id="@id/oej" android:background="@drawable/vyz" android:layout_width="84.0dip" android:layout_height="24.0dip" android:layout_marginTop="10.5dip" android:text="@string/uzl" android:layout_below="@id/bbo8" android:layout_alignParentEnd="true" android:backgroundTint="#0f000000" />
+</RelativeLayout>

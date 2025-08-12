@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/uninstall_retain_page" android:visibility="gone" layout="@layout/hades_uninstall_retain_page" />
+    <include android:id="@id/uninstall_retain_feed_back_page" android:visibility="gone" layout="@layout/hades_uninstall_feed_back_page" />
+    <com.meituan.android.qtitans.container.ui.view.QtitansTitleBar android:id="@id/title_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" />
+</FrameLayout>

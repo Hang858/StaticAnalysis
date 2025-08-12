@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_action_share" android:id="@id/poidetail_menu_share" android:title="@string/share_share" app:showAsAction="ifRoom" />
+    <item android:id="@id/poidetail_menu_favor" android:title="@string/favorite" app:actionLayout="@layout/gcbase_actionbar_favor" app:showAsAction="always" />
+    <item android:icon="@drawable/gcbase_ic_action_more" android:id="@id/poidetail_menu_more" android:title="" app:actionProviderClass="com.meituan.android.commonmenu.CommonMenuActionProvider" app:showAsAction="always" />
+</menu>

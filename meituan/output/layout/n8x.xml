@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/k_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/iv_close" android:layout_alignTop="@id/ivt" android:layout_alignBottom="@id/ivt" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" />
+        <ImageView android:id="@id/iqw" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginBottom="6.0dip" android:src="@color/c8s" android:scaleType="centerCrop" android:layout_alignBottom="@id/ivt" android:contentDescription="@string/bczb" android:layout_marginStart="24.0dip" />
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/y6g" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" android:layout_alignTop="@id/ivt" android:layout_alignBottom="@id/ivt" android:layout_marginStart="6.0dip" android:layout_marginEnd="8.0dip" android:layout_toStartOf="@id/ivt" android:layout_toEndOf="@id/iqw" />
+        <FrameLayout android:id="@id/ivt" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="36.0dip" android:layout_below="@id/iv_close" android:layout_marginEnd="24.0dip" android:layout_alignParentEnd="true">
+            <TextView android:id="@id/up5" android:visibility="gone" style="@style/MTUI.ButtonStyle.Red" />
+        </FrameLayout>
+        <ImageView android:layout_gravity="end" android:id="@id/iv_close" android:paddingTop="10.0dip" android:paddingBottom="4.0dip" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/db8" android:contentDescription="@string/hj0" android:paddingStart="14.0dip" android:paddingEnd="0.0dip" android:layout_marginEnd="12.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</merge>

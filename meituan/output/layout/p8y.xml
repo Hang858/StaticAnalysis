@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.meituan.android.identifycardrecognizer.cardscanner.maskview.HoleMaskView android:id="@id/ryh" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/img_back" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginTop="20.0dip" android:src="@drawable/laj" />
+    <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="身份证扫描" android:layout_alignTop="@id/img_back" android:layout_alignBottom="@id/img_back" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/spv" android:background="@drawable/py1" android:layout_width="230.0dip" android:layout_height="41.0dip" android:layout_marginTop="65.0dip" android:text="@string/kc9" android:layout_below="@id/img_back" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ffffd100" android:gravity="center" android:id="@id/laa" android:background="@drawable/py1" android:visibility="gone" android:layout_width="230.0dip" android:layout_height="41.0dip" android:layout_marginTop="65.0dip" android:layout_below="@id/img_back" android:layout_centerHorizontal="true" />
+    <com.meituan.android.identifycardrecognizer.cardscanner.maskview.NewIdCardScanView android:id="@id/bclz" android:layout_width="333.0dip" android:layout_height="218.0dip" android:layout_marginTop="150.0dip" android:layout_below="@id/title_tv" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/mby" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_below="@id/bclz" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/cg7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="130.0dip" android:layout_below="@id/bclz">
+        <FrameLayout android:id="@id/p0r" android:layout_width="139.0dip" android:layout_height="90.0dip">
+            <com.meituan.android.common.ui.widget.RoundImageView android:id="@id/oia" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/zg" app:riv_radius="8.0dip" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/lx7" android:layout_width="139.0dip" android:layout_height="90.0dip" android:layout_marginLeft="29.0dip" android:layout_toRightOf="@id/p0r">
+            <com.meituan.android.common.ui.widget.RoundImageView android:id="@id/xkd" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/fv5" app:riv_radius="8.0dip" />
+        </FrameLayout>
+        <TextView android:textSize="13.0sp" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/w2l" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="身份证人像面" android:layout_below="@id/p0r" android:layout_alignLeft="@id/p0r" android:layout_alignRight="@id/p0r" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/ynq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="身份证国徽面" android:layout_below="@id/lx7" android:layout_alignLeft="@id/lx7" android:layout_alignRight="@id/lx7" />
+    </RelativeLayout>
+    <com.meituan.android.common.ui.widget.RoundImageView android:id="@id/p99" android:visibility="invisible" android:layout_width="333.0dip" android:layout_height="218.0dip" android:layout_marginTop="150.0dip" android:scaleType="fitXY" android:layout_below="@id/title_tv" android:layout_centerHorizontal="true" app:riv_radius="16.0dip" />
+    <com.meituan.android.common.ui.widget.RoundImageView android:id="@id/nl4" android:visibility="invisible" android:layout_width="333.0dip" android:layout_height="218.0dip" android:layout_marginTop="150.0dip" android:scaleType="fitXY" android:layout_below="@id/title_tv" android:layout_centerHorizontal="true" app:riv_radius="16.0dip" />
+    <RelativeLayout android:gravity="center" android:id="@id/bgg" android:layout_width="fill_parent" android:layout_height="90.0dip" android:layout_marginTop="130.0dip" android:layout_below="@id/bclz" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/gor" android:visibility="invisible" android:layout_width="33.0dip" android:layout_height="33.0dip" android:src="@drawable/rry" />
+        <ImageView android:id="@id/nvm" android:visibility="invisible" android:layout_width="33.0dip" android:layout_height="33.0dip" android:layout_marginLeft="139.0dip" android:src="@drawable/rry" android:layout_toRightOf="@id/gor" />
+    </RelativeLayout>
+</RelativeLayout>

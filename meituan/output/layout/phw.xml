@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/black" android:layout_width="fill_parent" android:layout_height="70.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dianping.imagemanager.DPNetworkImageView android:id="@id/nj1" android:layout_width="84.0dip" android:layout_height="70.0dip" android:layout_marginLeft="17.0dip" android:layout_marginRight="7.0dip" app:cornerRadius="3.0dip" />
+    <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tqp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18.0dip" android:text="" android:maxLines="1" android:layout_toRightOf="@id/nj1" />
+    <RelativeLayout android:id="@id/fu7" android:layout_width="190.0dip" android:layout_height="wrap_content" android:layout_toRightOf="@id/nj1" android:layout_below="@id/tqp">
+        <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/vy_book_sub_grey" android:id="@id/bavf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="" />
+        <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/vy_book_sub_grey" android:id="@id/zcp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="这是" android:layout_alignParentBottom="true" />
+        <RelativeLayout android:id="@id/cns" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/bavf" android:layout_alignParentBottom="true">
+            <TextView android:textSize="@dimen/text_size_19" android:textColor="@color/vy_btn_pressed" android:gravity="bottom" android:id="@id/x5e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="" />
+            <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/vy_book_sub_grey" android:gravity="bottom" android:id="@id/sj4" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="¥" android:layout_toRightOf="@id/x5e" android:layout_alignBottom="@id/x5e" />
+            <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/vy_book_sub_grey" android:gravity="bottom" android:id="@id/zpc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="" android:layout_toRightOf="@id/sj4" android:layout_alignBottom="@id/x5e" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/vy_book_sub_grey" android:id="@id/ygc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18.0dip" android:text="" android:drawableRight="@drawable/pss" android:drawablePadding="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

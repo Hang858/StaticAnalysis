@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/qvw" android:background="@drawable/sxz" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="55.0dip">
+            <ProgressBar android:layout_width="22.0dip" android:layout_height="22.0dip" android:indeterminate="true" android:indeterminateDrawable="@drawable/rjl" android:indeterminateDuration="3000" />
+            <TextView android:textColor="@android:color/white" android:id="@id/passport_progress_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/iz_" android:singleLine="true" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

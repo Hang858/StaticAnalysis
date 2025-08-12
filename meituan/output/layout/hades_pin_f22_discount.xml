@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_layout" android:background="@color/transparent" android:layout_width="@dimen/hades_feature_widget22_height" android:layout_height="@dimen/hades_feature_widget22_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/hades_pin_feature_discount_layout" />
+</RelativeLayout>

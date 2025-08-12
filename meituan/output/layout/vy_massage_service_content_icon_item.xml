@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.imagemanager.DPNetworkImageView android:id="@id/item_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:scaleType="fitXY" dp:placeholderEmpty="@drawable/vy_placeholder_empty" dp:placeholderError="@drawable/vy_placeholder_error" dp:placeholderLoading="@drawable/vy_placeholder_loading" />
+    <TextView android:textSize="@dimen/vy_text_size_13" android:textColor="@color/vy_black2" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/icon_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:maxLines="1" android:singleLine="true" />
+</LinearLayout>

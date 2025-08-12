@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/jxr" android:paddingBottom="@dimen/tc3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/luj"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="@dimen/cz1" android:layout_height="wrap_content">
+        <com.meituan.android.food.widget.image.FoodStrokeImageView android:id="@id/su8" android:layout_width="100.0dip" android:layout_height="75.0dip" android:layout_marginTop="@dimen/tc3" android:scaleType="centerCrop" android:contentDescription="@string/app_name" android:layout_marginStart="@dimen/bamr" app:foodCornerRadius="4.0dip" app:foodOverlayColor="#ffffffff" />
+        <LinearLayout android:layout_gravity="bottom|center|left" android:orientation="horizontal" android:id="@id/cl0" android:background="@drawable/fy0" android:paddingLeft="@dimen/wzk" android:paddingRight="@dimen/wzk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wzk" android:layout_marginRight="@dimen/bamr" android:layout_marginBottom="@dimen/bamr">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/l5t" android:layout_width="11.0dip" android:layout_height="11.0dip" android:layout_marginRight="4.0dip" android:scaleType="fitCenter" />
+            <TextView android:textSize="@dimen/ka6" android:textColor="@color/bm3" android:ellipsize="end" android:gravity="center" android:id="@id/pyi" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/wdq" android:maxWidth="100.0dip" android:singleLine="true" android:includeFontPadding="false" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/k4i" android:background="@drawable/b4w" android:layout_width="wrap_content" android:layout_height="@dimen/eom" android:layout_marginTop="@dimen/wzk">
+            <com.meituan.android.food.search.widget.FoodSearchCountDownLayout android:id="@id/b63" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wzk" android:layout_marginTop="@dimen/bbi3" android:layout_marginRight="@dimen/wzk" />
+            <TextView android:textSize="@dimen/ka6" android:textColor="@color/bm3" android:ellipsize="end" android:id="@id/o90" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wzk" android:layout_marginTop="@dimen/bbi3" android:layout_marginRight="@dimen/wzk" android:maxLines="1" />
+        </FrameLayout>
+    </FrameLayout>
+    <LinearLayout android:gravity="top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/bc4e" android:layout_marginRight="@dimen/bc4e">
+        <TextView android:textSize="@dimen/r0i" android:textColor="@color/sv5" android:ellipsize="end" android:id="@id/ifn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wzk" android:maxLines="1" android:singleLine="true" android:includeFontPadding="false" />
+        <TextView android:textSize="@dimen/r0i" android:textColor="@color/vnz" android:ellipsize="end" android:id="@id/koe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/luj" android:singleLine="true" android:includeFontPadding="false" />
+        <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/o_e" android:typeface="normal" android:textStyle="bold" android:textColor="@color/nkj" android:ellipsize="end" android:gravity="center" android:id="@id/ij7" android:layout_width="wrap_content" android:layout_height="18.0dip" android:maxLines="1" android:singleLine="true" android:includeFontPadding="false" />
+            <com.meituan.android.food.widget.FlowViewsLayout android:id="@id/zn8" android:layout_width="wrap_content" android:layout_height="18.0dip" android:layout_marginStart="3.0dip" app:horizontalSpace="@dimen/iom" app:maxLine="1" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

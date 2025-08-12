@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/xm_sdk_send_panel_ic_size" android:layout_height="@dimen/xm_sdk_send_panel_ic_size" android:layout_margin="@dimen/xm_sdk_send_panel_icon_view_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/xm_sdk_send_panel_plugin_icon" android:layout_width="@dimen/xm_sdk_send_panel_ic_size" android:layout_height="@dimen/xm_sdk_send_panel_ic_size" android:layout_centerHorizontal="true" />
+</RelativeLayout>

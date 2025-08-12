@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/vy_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.voyager.joy.widget.JoyTabView android:id="@id/first_tab" android:layout_width="fill_parent" android:layout_height="wrap_content" dp:showTabCount="4.6" />
+    <com.dianping.voyager.joy.widget.JoyTabView android:id="@id/sencond_tab" android:layout_width="fill_parent" android:layout_height="wrap_content" dp:showTabCount="2.0" dp:showTabDivider="true" dp:tabDividerPadding="5.0dip" />
+    <com.dianping.voyager.joy.widget.GridLayoutWithExpandView android:id="@id/list" android:paddingLeft="@dimen/vy_standard_margin" android:paddingRight="@dimen/vy_standard_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" dp:columnsSpace="10.0dip" dp:rowsSpace="10.0dip" />
+</LinearLayout>

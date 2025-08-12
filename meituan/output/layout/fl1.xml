@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/bb7n" android:background="@drawable/xgw" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="46.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_guide_img" android:visibility="gone" android:layout_width="46.0dip" android:layout_height="46.0dip" android:layout_marginLeft="-16.0dip" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tsc" android:layout_width="wrap_content" android:layout_height="36.0dip" android:maxLines="1" android:layout_toRightOf="@id/iv_guide_img" android:layout_alignParentBottom="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/iv_guide_arrow" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginLeft="6.0dip" android:layout_marginBottom="11.0dip" android:scaleType="fitXY" android:layout_toRightOf="@id/tsc" android:layout_alignParentBottom="true" />
+</RelativeLayout>

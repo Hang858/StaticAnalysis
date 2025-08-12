@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.ptview.view.PTLinearLayout android:orientation="vertical" android:id="@id/hp6" android:background="@drawable/bbmk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0pt" android:maxWidth="207.0pt" android:paddingStart="11.599976pt" android:paddingEnd="11.599976pt" android:layout_marginEnd="11.599976pt"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sankuai.ptview.view.PTLinearLayout android:gravity="center_vertical" android:id="@id/qrl" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.sankuai.ptview.view.PTTextView android:textSize="11.519989pt" android:textStyle="bold" android:textColor="#e6000000" android:ellipsize="end" android:id="@id/ty" android:paddingTop="8.599976pt" android:paddingBottom="9.0pt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200.0pt" android:maxLines="1" android:drawablePadding="2.0pt" android:drawableEnd="@drawable/rw9" />
+    </com.sankuai.ptview.view.PTLinearLayout>
+    <com.sankuai.ptview.view.PTLinearLayout android:orientation="horizontal" android:id="@id/uxq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="@drawable/q2a" android:showDividers="middle" android:dividerPadding="12.0pt">
+        <include layout="@layout/w1i" />
+        <include layout="@layout/w1i" />
+        <include layout="@layout/w1i" />
+    </com.sankuai.ptview.view.PTLinearLayout>
+    <com.sankuai.ptview.view.PTLinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="24.0pt" android:layout_marginTop="6.0999756pt" android:layout_marginBottom="7.6999817pt" android:minWidth="87.5pt">
+        <com.sankuai.ptview.view.PTTextView android:textSize="10.559998pt" android:textColor="#80000000" android:gravity="center_vertical" android:id="@id/iqm" android:layout_width="0.0pt" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <com.meituan.android.common.ui.widget.RoundFrameLayout android:id="@id/ihc" android:background="#ffffffff" android:layout_width="59.5pt" android:layout_height="24.0pt" app:rfl_borderWidth="0.5pt" app:rfl_radius="12.0pt">
+            <com.sankuai.ptview.view.PTTextView android:textSize="10.559998pt" android:textColor="#e6000000" android:gravity="center" android:layout_width="wrap_content" android:layout_height="24.0pt" android:text="一键加购" android:layout_marginStart="8.599976pt" android:layout_marginEnd="7.899994pt" />
+        </com.meituan.android.common.ui.widget.RoundFrameLayout>
+    </com.sankuai.ptview.view.PTLinearLayout>
+</com.sankuai.ptview.view.PTLinearLayout>

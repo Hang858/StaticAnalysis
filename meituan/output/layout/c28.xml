@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/fqa" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.meituan.android.edfu.mvex.ui.widget.CameraTextureView android:id="@id/cameraView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:adjustViewBounds="true" app:cameraFacing="front" app:cameraRatio="16:9" app:flashMode="off" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/mlg" android:id="@id/text_tips" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginBottom="231.0dip" android:text="@string/qkw" android:shadowColor="@color/utg" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="2.0" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/mlg" android:id="@id/xio" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginBottom="231.0dip" android:text="@string/oq_" android:shadowColor="@color/utg" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="2.0" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/kxi" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.meituan.android.edfu.mvex.ui.widget.LightButton android:layout_gravity="center_horizontal" android:id="@id/jld" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="onLightClick" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="44.0dip" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/b8g" android:layout_width="66.0dip" android:layout_height="66.0dip" android:src="@drawable/r22" android:tint="@drawable/qry" android:layout_centerHorizontal="true" android:onClick="onShutterClick" android:tintMode="src_in" />
+            <com.meituan.android.edfu.mvex.ui.widget.AlbumButtonView android:id="@id/yru" android:layout_width="54.0dip" android:layout_height="54.0dip" android:layout_marginRight="28.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/i8g" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.meituan.android.edfu.mvex.ui.widget.ImageLoadingView android:id="@id/loadingview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <com.meituan.android.edfu.mvex.ui.widget.TitleView android:id="@id/yv5" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginTop="20.0dip" />
+    <FrameLayout android:id="@id/n1i" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

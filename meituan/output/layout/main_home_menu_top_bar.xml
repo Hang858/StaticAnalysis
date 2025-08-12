@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/tsy" android:paddingLeft="12.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_back1" android:layout_width="16.0dip" android:layout_height="20.0dip" android:src="@drawable/kya" />
+    </LinearLayout>
+    <ImageView android:id="@id/tv_movie_theme_scroll" android:layout_width="70.0dip" android:layout_height="17.0dip" android:src="@drawable/kcp" />
+    <com.meituan.android.movie.tradebase.search.MovieSearchView android:id="@id/ldb" android:layout_width="0.0dip" android:layout_height="26.0dip" android:layout_marginRight="12.0dip" android:layout_weight="1.0" android:layout_marginStart="14.0dip" />
+    <ImageView android:id="@id/ic_cinema" android:visibility="gone" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/l1r" />
+    <ImageView android:id="@id/ic_show" android:visibility="gone" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/gvv" />
+</LinearLayout>

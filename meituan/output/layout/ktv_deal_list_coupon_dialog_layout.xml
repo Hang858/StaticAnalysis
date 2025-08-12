@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root" android:background="#d0000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/container" android:layout_width="265.0dip" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="right" android:id="@id/close" android:layout_width="21.0dip" android:layout_height="21.0dip" android:src="@drawable/ktv_deal_list_coupon_close" android:scaleType="fitXY" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="85.0dip" android:src="@drawable/ktv_deal_list_coupon_title" android:scaleType="fitXY" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/ktv_deal_list_coupon_bg" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TableLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/content" android:layout_width="230.0dip" android:layout_height="wrap_content" android:divider="@drawable/ktv_deal_list_coupon_divider" android:shrinkColumns="2" android:showDividers="middle" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffccffff" android:layout_gravity="center_horizontal" android:id="@id/tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" style="@style/KTVSingleLineTextView" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/btn" android:layout_width="166.0dip" android:layout_height="38.0dip" android:layout_marginTop="7.0dip" android:src="@drawable/ktv_deal_list_coupon_btn" android:scaleType="fitXY" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

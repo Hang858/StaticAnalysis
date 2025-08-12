@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/search_word_sge_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="27.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="0.5dip" android:scaleType="fitXY" />
+    <TextView android:textSize="14.0dip" android:textColor="#ff333333" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/sxp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bbio" android:singleLine="true" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/search_word_live_icon" android:visibility="gone" android:layout_width="9.0dip" android:layout_height="12.0dip" android:layout_marginLeft="8.0dip" android:scaleType="fitXY" />
+    <TextView android:textSize="14.0dip" android:textColor="#ffff265c" android:layout_gravity="center_vertical" android:id="@id/bckc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="直播中" android:singleLine="true" />
+</LinearLayout>

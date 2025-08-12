@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="1.0px" android:paddingBottom="1.0px" android:layout_height="43.0dip" android:layout_margin="8.0dip" style="@style/trip_TrainSubmitLinearLayoutStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/sb8" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="url" />
+    <com.meituan.android.trafficayers.views.MtEditTextWithClearButton android:textSize="@dimen/efw" android:textColor="@color/qec" android:textColorHint="@color/c06" android:id="@id/baqt" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginRight="12.0dip" android:hint="请输入下载URL" android:singleLine="true" android:layout_weight="1.0" />
+    <TextView android:enabled="false" android:textSize="12.0sp" android:textColor="@color/yg0" android:id="@id/nwc" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="确认" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/yg0" android:id="@id/bcra" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选择" />
+</LinearLayout>

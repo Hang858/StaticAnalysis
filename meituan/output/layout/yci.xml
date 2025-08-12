@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="39.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v7.widget.AppCompatEditText android:textSize="11.0sp" android:gravity="center" android:id="@id/j4u" android:background="@drawable/glh" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="最低价" android:maxLength="6" android:layout_weight="1.0" android:inputType="phone" />
+        <View android:layout_gravity="center_vertical" android:background="@color/ofs" android:layout_width="4.0dip" android:layout_height="1.0dip" android:layout_marginStart="1.0dip" android:layout_marginEnd="1.0dip" />
+        <android.support.v7.widget.AppCompatEditText android:textSize="11.0sp" android:gravity="center" android:id="@id/n6d" android:background="@drawable/glh" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="最高价" android:maxLength="6" android:layout_weight="1.0" android:inputType="phone" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.voyager.joy.widget.FakeVideoViewContainer android:id="@id/vy_video_album_front_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/vy_standard_margin" android:layout_marginTop="10.0dip" android:layout_marginRight="@dimen/vy_standard_margin" />
+    <com.dianping.voyager.joy.widget.JoyVideoAlbumInfoView android:id="@id/vy_video_album_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/vy_standard_margin" android:layout_marginRight="@dimen/vy_standard_margin" />
+</merge>

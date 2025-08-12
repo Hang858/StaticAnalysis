@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/rk9" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/containers" android:background="@drawable/i20" android:paddingLeft="20.0dip" android:paddingTop="12.0dip" android:paddingRight="20.0dip" android:paddingBottom="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="79.0dip">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:gravity="center" android:id="@id/i56" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:includeFontPadding="false" android:layout_centerVertical="true" />
+            <TextView android:gravity="center" android:id="@id/toMessage" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="" android:includeFontPadding="false" android:layout_toRightOf="@id/i56" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:ellipsize="end" android:id="@id/content" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:maxWidth="251.0dip" android:text="" android:lines="2" android:layout_above="@id/om3" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:gravity="center" android:id="@id/om3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:includeFontPadding="false" android:layout_toLeftOf="@id/fromMessage" android:layout_centerVertical="true" />
+            <TextView android:gravity="center" android:id="@id/fromMessage" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="" android:includeFontPadding="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

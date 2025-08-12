@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="254.5dip" android:layout_height="55.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="10.0dip" android:layout_height="5.0dip" android:layout_marginLeft="16.0dip" android:src="@drawable/vqj" />
+    <RelativeLayout android:background="@drawable/za4" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="4.5dip">
+        <TextView android:textSize="12.0dip" android:textColor="@android:color/white" android:id="@id/y5_" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nf" android:singleLine="true" />
+        <TextView android:textSize="12.0dip" android:textColor="@android:color/white" android:id="@id/y7q" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/y5_" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_below="@id/y7q" android:layout_alignLeft="@id/y7q">
+            <TextView android:textSize="12.0dip" android:textColor="@android:color/white" android:id="@id/nk" android:maxWidth="70.0dip" style="@style/wm_order_base_address_item_name" />
+            <TextView android:textSize="12.0dip" android:textColor="@android:color/white" android:id="@id/xnt" android:layout_marginRight="10.0dip" style="@style/wm_order_base_address_item_gender" />
+            <TextView android:textSize="12.0dip" android:textColor="@android:color/white" android:id="@id/yk7" style="@style/wm_order_base_address_item_phone" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/mux" android:background="@drawable/fg4" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="44.0dip" android:layout_height="fill_parent" android:layout_marginTop="4.5dip" android:src="@drawable/zow" android:scaleType="center" android:layout_alignParentRight="true" />
+</RelativeLayout>

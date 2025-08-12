@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.meituan.msv.lite.viewholder.widget.MSVLiteProgressBarContainer android:layout_gravity="bottom" android:id="@id/bcla" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="35.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginBottom="15.5dip" android:layout_alignParentBottom="true" layout="@layout/msd" />
+    <ViewStub android:id="@id/j31" android:layout="@layout/dwo" android:inflatedId="@id/j31" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginBottom="18.0dip" android:layout_alignParentBottom="true" />
+    <ViewStub android:id="@id/pf0" android:layout="@layout/sfq" android:inflatedId="@id/pf0" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginBottom="16.0dip" android:layout_alignParentBottom="true" />
+</com.sankuai.meituan.msv.lite.viewholder.widget.MSVLiteProgressBarContainer>

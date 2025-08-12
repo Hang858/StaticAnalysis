@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/passport_recommend_input_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.AppCompatTextView android:textSize="17.299988sp" android:textStyle="bold" android:id="@id/passport_country_code" android:paddingTop="15.379974dip" android:paddingBottom="15.379974dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23.099976dip" android:text="@string/passport_default_country_code" android:includeFontPadding="false" android:drawableRight="@drawable/passport_country_code_arrow_down" android:drawablePadding="10.0dip" />
+        <com.meituan.passport.view.PassportEditText android:theme="@style/passport_editText_v2" android:textSize="18.0sp" android:textStyle="bold" android:id="@id/passport_mobile_phone" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="17.799988dip" android:includeFontPadding="false" android:maxLength="19" android:layout_weight="1.0" android:inputType="phone" android:imeOptions="actionNext" />
+        <com.meituan.passport.view.PassportClearTextView android:id="@id/passport_mobile_delete" android:layout_width="18.25998dip" android:layout_height="18.25998dip" android:layout_marginRight="19.199982dip" android:src="@drawable/passport_recommend_input_clear_ic" />
+    </LinearLayout>
+</LinearLayout>

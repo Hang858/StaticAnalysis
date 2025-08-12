@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/qk5" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+        <TextView android:textSize="10.0sp" android:textColor="@color/jrs" android:gravity="center" android:id="@id/mj4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/pb1" android:id="@id/o80" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginTop="6.0dip">
+        <com.dianping.android.oversea.base.widget.OsNetWorkImageView android:id="@id/e76" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/ulz" android:gravity="center" android:id="@id/lx8" android:background="@color/kye" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="16.0dip" android:singleLine="true" android:includeFontPadding="false" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" />
+    </RelativeLayout>
+</merge>

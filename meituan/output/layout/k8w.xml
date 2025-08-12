@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/rbi" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/h1n" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="4.0dip" android:layout_marginTop="5.0dip">
+        <ImageView android:id="@id/bcqc" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+            <TextView android:textSize="16.0dip" android:textColor="@color/w1r" android:ellipsize="end" android:id="@id/main_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:drawableRight="@drawable/o28" android:drawablePadding="4.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/k4x" android:ellipsize="end" android:id="@id/sub_desc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:text="@string/g_" android:maxLines="1" android:layout_toRightOf="@id/r8d" android:layout_below="@id/main_desc" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/lz4" android:ellipsize="end" android:id="@id/uq1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_toRightOf="@id/sub_desc" android:layout_below="@id/main_desc" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:layout_gravity="center_vertical" android:background="#fff1f1f2" android:layout_width="0.5dip" android:layout_height="36.0dip" android:layout_marginLeft="10.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/mnz" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <com.meituan.roodesign.resfetcher.widgets.RooImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:project="waimai_c" app:srcName="waimai_c_order_icon_status_map_self_delivery_navigate" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/woz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/myb" />
+    </LinearLayout>
+</LinearLayout>

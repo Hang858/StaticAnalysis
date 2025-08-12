@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/ozg" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meituan.sankuai.map.unity.lib.views.UnityNoTouchRecyclerView android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/baui" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:baselineAligned="false" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/s2o" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:layout_width="fill_parent" android:layout_height="59.0dip" android:baselineAligned="false">
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/y37" android:ellipsize="end" android:gravity="center" android:id="@id/npk" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:baseline="-1.0dip" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/bci_" android:layout_width="fill_parent" android:layout_height="15.0dip">
+        <View android:layout_gravity="center" android:id="@id/jss" android:background="@drawable/vc0" android:layout_width="24.0dip" android:layout_height="3.0dip" android:layout_marginStart="48.0dip" android:layout_marginEnd="48.0dip" />
+    </FrameLayout>
+</FrameLayout>

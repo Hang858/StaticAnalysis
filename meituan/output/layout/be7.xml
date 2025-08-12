@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:imui="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/so3" android:background="#fff6f6f6" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/wsb" android:layout="@layout/iph" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/mzq" />
+</LinearLayout>

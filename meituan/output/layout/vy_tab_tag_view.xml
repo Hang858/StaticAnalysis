@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/vy_date_tab_filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="50.0dip" android:minHeight="44.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="#ff333333" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/pay_mall_category_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+</LinearLayout>

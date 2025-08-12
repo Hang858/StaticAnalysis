@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meituan.android.mtgb.business.view.MTGGradientBgView android:id="@id/bu" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <android.support.design.widget.CoordinatorLayout android:id="@id/yj5" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.meituan.android.mtgb.business.header.MTGHeaderLayout android:orientation="vertical" android:id="@id/header_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.meituan.android.mtgb.business.actionbar.MTGAddressBarLayout android:id="@id/cfm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="10.0dip" />
+            <com.meituan.android.mtgb.business.actionbar.MTGSearchBarLayout android:id="@id/uy8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="20.0dip" />
+            <com.meituan.android.mtgb.business.banner.MTGBannerLayout android:gravity="center" android:id="@id/zzv" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.meituan.android.mtgb.business.tab.MTGTabLayout android:id="@id/bbh_" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.meituan.android.mtgb.business.coupon.MTGBCouponLayout android:id="@id/nqb" android:paddingTop="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </com.meituan.android.mtgb.business.header.MTGHeaderLayout>
+        <com.meituan.android.mtgb.business.tab.MTGViewPager android:id="@id/bba2" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </android.support.design.widget.CoordinatorLayout>
+    <com.meituan.android.mtgb.business.coupon.MTGBCouponGuideView android:id="@id/coupon_gif" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="64.0dip" android:layout_marginTop="78.0dip" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" />
+    <com.meituan.android.mtgb.business.view.status.MTGPageStatusView android:id="@id/rfz" android:paddingTop="83.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/ba9b" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</RelativeLayout>

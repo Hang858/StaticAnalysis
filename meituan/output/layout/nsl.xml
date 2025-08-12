@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="top" android:id="@id/hpr" android:background="@drawable/y8d" android:layout_width="fill_parent" android:layout_height="94.0dip" />
+    <ViewStub android:id="@id/mhn" android:layout="@layout/jwa" android:inflatedId="@id/jwa" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginStart="60.0dip" android:layout_marginEnd="50.0dip" />
+    <ViewStub android:id="@id/xed" android:layout="@layout/xo" android:inflatedId="@id/xo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="27.0dip" android:layout_marginStart="38.0dip" android:layout_marginEnd="50.0dip" />
+</FrameLayout>

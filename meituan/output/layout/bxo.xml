@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.ptview.view.PTFrameLayout android:id="@id/promotion_root_view" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <com.sankuai.ptview.view.PTImageView android:id="@id/promotion_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:adjustViewBounds="true" />
+    <com.meituan.android.pt.homepage.video.PTVideoView android:id="@id/pvm" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.sankuai.ptview.view.PTLinearLayout android:gravity="bottom|center" android:orientation="horizontal" android:id="@id/zjn" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.sankuai.ptview.view.PTFrameLayout android:id="@id/bbu2" android:paddingLeft="12.0pt" android:layout_width="80.16pt" android:layout_height="fill_parent">
+            <com.sankuai.meituan.mbc.ui.RoundImageView android:id="@id/side_left_image" android:layout_width="61.439972pt" android:layout_height="61.439972pt" android:layout_marginTop="3.8399963pt" android:scaleType="fitXY" android:adjustViewBounds="true" />
+            <com.sankuai.ptview.view.PTImageView android:id="@id/side_left_label" android:layout_width="61.439972pt" android:layout_height="22.079987pt" android:layout_marginTop="46.0pt" android:scaleType="fitXY" android:adjustViewBounds="true" />
+        </com.sankuai.ptview.view.PTFrameLayout>
+        <com.sankuai.ptview.view.PTFrameLayout android:id="@id/scq" android:layout_width="199.68pt" android:layout_height="fill_parent">
+            <com.sankuai.ptview.view.PTImageView android:id="@id/main_container_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:adjustViewBounds="true" />
+            <com.sankuai.ptview.view.PTLinearLayout android:orientation="horizontal" android:id="@id/r6u" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="3.0pt" android:layout_marginTop="3.8399963pt">
+                <com.meituan.android.pt.homepage.modules.promotion.view.MainPromotionViewFlipper android:id="@id/pwa" android:background="@drawable/mym" android:layout_width="61.439972pt" android:layout_height="63.359985pt" android:inAnimation="@anim/ibt" android:outAnimation="@anim/pp0" android:flipInterval="4000" android:autoStart="false" custom:mp_view_flipper_height="63.36" custom:mp_view_flipper_radius="8.64" custom:mp_view_flipper_width="61.44" />
+                <com.sankuai.ptview.view.PTLinearLayout android:orientation="vertical" android:id="@id/xmv" android:layout_width="119.51999pt" android:layout_height="63.359985pt" android:layout_marginLeft="4.7199707pt">
+                    <com.sankuai.ptview.view.PTImageView android:id="@id/main_image_text_top" android:layout_width="fill_parent" android:layout_height="43.19998pt" android:scaleType="fitXY" android:adjustViewBounds="true" />
+                    <com.meituan.android.pt.homepage.modules.promotion.view.MainPromotionViewFlipper android:id="@id/yma" android:layout_width="119.51999pt" android:layout_height="20.159973pt" android:adjustViewBounds="true" android:inAnimation="@anim/ibt" android:outAnimation="@anim/pp0" android:flipInterval="4000" android:autoStart="false" custom:mp_view_flipper_height="20.16" custom:mp_view_flipper_radius="0.0" custom:mp_view_flipper_width="119.52" />
+                </com.sankuai.ptview.view.PTLinearLayout>
+            </com.sankuai.ptview.view.PTLinearLayout>
+        </com.sankuai.ptview.view.PTFrameLayout>
+        <com.sankuai.ptview.view.PTFrameLayout android:id="@id/bcgk" android:paddingLeft="6.8399963pt" android:paddingRight="12.0pt" android:layout_width="80.16pt" android:layout_height="fill_parent">
+            <com.sankuai.meituan.mbc.ui.RoundImageView android:id="@id/side_right_image" android:layout_width="61.439972pt" android:layout_height="61.439972pt" android:layout_marginTop="3.8399963pt" android:scaleType="fitXY" android:adjustViewBounds="true" />
+            <com.sankuai.ptview.view.PTImageView android:id="@id/side_right_label" android:layout_width="61.439972pt" android:layout_height="22.079987pt" android:layout_marginTop="46.0pt" android:scaleType="fitXY" android:adjustViewBounds="true" />
+        </com.sankuai.ptview.view.PTFrameLayout>
+    </com.sankuai.ptview.view.PTLinearLayout>
+</com.sankuai.ptview.view.PTFrameLayout>

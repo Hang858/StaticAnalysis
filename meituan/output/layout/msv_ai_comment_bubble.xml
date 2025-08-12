@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <android.support.v7.widget.AppCompatImageView android:id="@id/image_ai_bubble_triangle" android:layout_width="15.0dip" android:layout_height="wrap_content" android:src="@drawable/msv_icon_ai_bubble_triangle" />
+        <com.meituan.android.common.ui.widget.RoundImageView android:id="@id/image_ai_bubble_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" app:riv_border="false" app:riv_radius="12.0dip" />
+    </LinearLayout>
+    <com.sankuai.meituan.msv.list.adapter.holder.ai.TypewriterTextView android:textSize="14.0dip" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/tv_ai_message" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="19.0dip" android:layout_marginBottom="14.0dip" android:lines="2" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" app:layout_constraintBottom_toTopOf="@id/w0b" app:layout_constraintEnd_toStartOf="@id/ll_emoji_part" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_emoji_part" android:layout_width="wrap_content" android:layout_height="78.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <View android:layout_gravity="center_vertical" android:background="#1a000000" android:layout_width="1.0dip" android:layout_height="18.0dip" android:layout_marginStart="12.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_emoji" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatImageView android:id="@id/iv_emoji_pic" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginTop="13.0dip" android:layout_marginStart="14.0dip" android:layout_marginEnd="14.0dip" />
+            <android.support.v7.widget.AppCompatTextView android:textSize="11.0dip" android:textColor="#ff999999" android:id="@id/tv_emoji" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginStart="11.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/w0b" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_ai_message" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/bbpx" android:background="@color/jpg" android:paddingLeft="@dimen/i6c" android:paddingTop="@dimen/i6c" android:paddingRight="@dimen/i6c" android:paddingBottom="@dimen/wpy" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/nv6" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/r37" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/l9r">
+        <TextView android:textSize="@dimen/ps0" android:textColor="@color/trk" android:gravity="center" android:id="@id/wgn" android:layout_width="@dimen/gnr" android:layout_height="@dimen/m79" android:text="@string/j6e" android:singleLine="true" />
+        <TextView android:textSize="@dimen/ps0" android:textColor="@color/trk" android:gravity="center" android:id="@id/mft" android:layout_width="@dimen/gnr" android:layout_height="@dimen/m79" android:layout_marginLeft="@dimen/bpi" android:text="@string/wm_sc_common_im_remind_order" android:singleLine="true" />
+        <TextView android:textSize="@dimen/ps0" android:textColor="@color/wm_sg_color_FF8000" android:gravity="center" android:id="@id/bcrv" android:layout_width="@dimen/gnr" android:layout_height="@dimen/m79" android:layout_marginLeft="@dimen/bpi" android:text="@string/wm_sc_common_im_send_order" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

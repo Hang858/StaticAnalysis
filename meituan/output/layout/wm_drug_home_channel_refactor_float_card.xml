@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="end|bottom|center" android:orientation="vertical" android:id="@id/ll_float_card_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wpy"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="end|bottom|center" android:layout_gravity="end" android:orientation="vertical" android:id="@id/no_anim_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/tx7" />
+    <LinearLayout android:gravity="end|bottom|center" android:orientation="vertical" android:id="@id/poi_anim_container" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/PioneerTableItem"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center|right" android:id="@id/dtg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ix5" android:src="@drawable/bk4" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/ix5" android:paddingTop="10.0dip" android:paddingRight="@dimen/ix5" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/bczw" android:id="@id/vsk" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <RatingBar android:id="@id/t40" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:stepSize="0.1" android:isIndicator="true" style="?android:ratingBarStyleSmall" />
+            <com.dianping.pioneer.widgets.AutoHideTextView android:textSize="@dimen/sj3" android:textColor="@color/bcqo" android:id="@id/nh8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:maxLines="1" android:layout_toRightOf="@id/t40" dp:auto_hide="true" />
+            <com.dianping.pioneer.widgets.AutoHideTextView android:textSize="@dimen/sj3" android:textColor="@color/bcqo" android:id="@id/bas6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/nh8" dp:auto_hide="true" />
+            <TextView android:textSize="@dimen/sj3" android:textColor="@color/bcqo" android:id="@id/ov4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/n4o" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <TextView android:textSize="@dimen/sj3" android:textColor="@color/bcqo" android:id="@id/baxn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <TextView android:textSize="@dimen/sj3" android:textColor="@color/bcqo" android:id="@id/jmv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:maxLines="1" android:drawablePadding="2.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

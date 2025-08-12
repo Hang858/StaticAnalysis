@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sankuai.meituan.msv.list.adapter.holder.mountzone.component.baseview.HideableLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.5dip" android:layout_marginBottom="6.0dip">
+        <ViewStub android:id="@id/i8_" android:visibility="gone" android:layout="@layout/p59" android:inflatedId="@id/i8_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="4.0dip" />
+        <ViewStub android:id="@id/phu" android:visibility="gone" android:layout="@layout/p59" android:inflatedId="@id/phu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="4.0dip" />
+        <ViewStub android:id="@id/j7h" android:visibility="gone" android:layout="@layout/p59" android:inflatedId="@id/j7h" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.sankuai.meituan.msv.list.adapter.holder.mountzone.component.baseview.HideableLinearLayout>
+    <android.support.constraint.ConstraintLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.sankuai.meituan.msv.list.adapter.holder.mountzone.component.baseview.HideableLinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:layout_marginEnd="8.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/pw0" app:layout_constraintStart_toStartOf="parent">
+            <ViewStub android:id="@id/rc3" android:visibility="gone" android:layout="@layout/p59" android:inflatedId="@id/rc3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="2.0dip" />
+            <ViewStub android:id="@id/pzo" android:tag="notHide" android:visibility="gone" android:layout="@layout/pzo" android:inflatedId="@id/pzo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-1.0dip" />
+            <ViewStub android:id="@id/p79" android:visibility="gone" android:layout="@layout/p59" android:inflatedId="@id/p79" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </com.sankuai.meituan.msv.list.adapter.holder.mountzone.component.baseview.HideableLinearLayout>
+        <android.support.v7.widget.AppCompatTextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#e6000000" android:gravity="center" android:id="@id/pw0" android:background="@drawable/hpi" android:paddingLeft="12.0dip" android:paddingTop="5.0dip" android:paddingRight="12.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="28.0dip" android:lines="1" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>

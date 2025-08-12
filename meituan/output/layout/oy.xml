@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar android:id="@id/oy" android:background="@android:color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:textColor="@color/ux_" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/mobike_toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+</android.support.v7.widget.Toolbar>

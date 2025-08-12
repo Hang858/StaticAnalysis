@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/psl" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/search_button" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="12.0dip" android:src="@drawable/uid" />
+    <com.sankuai.waimai.business.page.home.view.TextSwitchView android:textSize="14.0sp" android:textColor="@color/nup" android:id="@id/bcjj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/twm" android:drawablePadding="5.0dip" />
+</LinearLayout>

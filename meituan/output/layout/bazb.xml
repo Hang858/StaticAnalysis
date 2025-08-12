@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.live.live.mrn.list.MLiveListRecyclerView android:id="@id/gro" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fadeScrollbars="true" android:overScrollMode="never" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/mpy" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/mlive_list_err_pic" android:layout_width="150.0dip" android:layout_height="169.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-15.0dip" android:text="直播加载失败" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="可点击重试" android:alpha="0.5" />
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/sqw" android:background="@drawable/ojf" android:layout_width="91.0dip" android:layout_height="34.0dip" android:layout_marginTop="16.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="#f4000000" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="重试" android:letterSpacing="0.0" />
+        </FrameLayout>
+    </LinearLayout>
+    <include android:id="@id/q89" android:visibility="gone" layout="@layout/mrn_common_loading_layout" />
+    <View android:id="@id/j0c" android:layout_width="fill_parent" android:layout_height="125.0dip" />
+</FrameLayout>

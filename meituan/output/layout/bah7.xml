@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/sf8" android:layout_width="82.0dip" android:layout_height="71.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="bottom|center" android:orientation="vertical" android:background="@drawable/bapu" android:layout_width="fill_parent" android:layout_height="62.0dip">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="5.0dip" android:layout_centerInParent="true">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ba7l" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/ohj" android:ellipsize="end" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/ohj" android:ellipsize="end" android:gravity="center" android:id="@id/g32" android:background="@drawable/sw5" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.5dip" android:text="次日" android:maxLines="1" />
+            </LinearLayout>
+            <TextView android:textSize="10.0sp" android:textColor="@color/qg6" android:ellipsize="end" android:id="@id/language" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_below="@id/ba7l" android:layout_centerHorizontal="true" />
+            <com.meituan.android.movie.tradebase.cinemalist.bymovie2.view.MovieCinemaListPriceBlock2 android:textColor="@color/mg0" android:ellipsize="end" android:id="@id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_below="@id/language" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/xuanfa_label" android:visibility="gone" android:layout_width="57.0dip" android:layout_height="15.0dip" android:scaleType="centerInside" />
+</FrameLayout>

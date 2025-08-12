@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sankuai.waimai.store.view.banner.SCBaseViewPager android:id="@id/mn2" android:persistentDrawingCache="animation" android:layout_width="fill_parent" android:layout_height="fill_parent" android:flipInterval="30" />
+    <ImageView android:id="@id/f3s" android:background="@drawable/bjr" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignBottom="@id/mn2" />
+    <RadioGroup android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_alignParentBottom="true" />
+    <com.sankuai.waimai.store.view.banner.ScSimplePageIndicator android:gravity="center_vertical" android:layout_gravity="bottom|center" android:id="@id/fp4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="10.0dip" android:layout_marginRight="7.0dip" android:layout_marginBottom="6.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:checkedSize="6.0dip" app:childDrawable="@drawable/tsg" app:childLayout="@layout/i5k" app:normalSize="3.0dip" />
+</merge>

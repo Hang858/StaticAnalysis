@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/g49" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <View android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <android.support.v4.widget.Space android:id="@id/w_1" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="12.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/nvy" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layerType="hardware" />
+</LinearLayout>

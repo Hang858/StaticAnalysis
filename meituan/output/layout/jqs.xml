@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meituan.android.base.ui.widget.MtEditTextWithClearButton android:textSize="14.0sp" android:textColor="@color/l4f" android:textColorHint="@color/l4f" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/search_edit" android:background="@drawable/jy9" android:paddingLeft="12.0dip" android:paddingRight="20.0dip" android:layout_width="0.0dip" android:layout_height="32.0dip" android:hint="@string/q_d" android:maxLines="1" android:drawableLeft="@drawable/s4i" android:drawablePadding="15.0dip" android:layout_weight="1.0" android:imeOptions="actionSearch" />
+    <com.meituan.android.food.widget.FoodClickEffectFrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/wsi">
+        <ImageView android:id="@id/zwi" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ye8" android:scaleType="centerCrop" />
+    </com.meituan.android.food.widget.FoodClickEffectFrameLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meituan.android.paybase.screen.AutoFitRelativeLayout android:id="@id/lji" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/nyo" android:background="@color/jdn" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/ba1o" android:id="@id/yxf" android:paddingLeft="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/ba1o" android:id="@id/bhx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/yxf" android:layout_centerVertical="true" />
+    <CheckBox android:id="@id/g0e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/mtpaysdk__credit_checkbox" />
+</com.meituan.android.paybase.screen.AutoFitRelativeLayout>

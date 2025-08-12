@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/m_w" android:layout_width="@dimen/j2j" android:layout_height="109.0dip" android:layout_marginRight="@dimen/uv2"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/l0x" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <ImageView android:id="@id/cml" android:layout_width="@dimen/bpu" android:layout_height="@dimen/bpu" android:layout_marginLeft="-6.0dip" android:layout_marginTop="-6.0dip" android:src="@drawable/cml" />
+    <ImageView android:layout_width="@dimen/bpi" android:layout_height="@dimen/bpi" android:src="@drawable/bbeo" android:scaleType="fitXY" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="@dimen/j2j" android:layout_height="109.0dip">
+        <LinearLayout android:gravity="bottom|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="27.0dip" android:layout_marginTop="9.0dip">
+            <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="#ffff3333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥" />
+            <TextView android:textSize="21.0dip" android:textStyle="bold" android:textColor="#ffff3333" android:id="@id/baio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="15" />
+        </LinearLayout>
+        <TextView android:textSize="10.0dip" android:textColor="#ffff3333" android:id="@id/bty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="满99可用" android:includeFontPadding="false" />
+        <TextView android:textSize="10.0dip" android:textColor="#ff222426" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/x7l" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="通用可叠加" android:maxLines="1" android:singleLine="true" android:includeFontPadding="false" />
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/lwe" android:background="@drawable/god" android:layout_width="55.0dip" android:layout_height="16.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="15.5dip" android:layout_marginRight="3.0dip" android:layout_centerHorizontal="true">
+            <TextView android:textSize="10.0dip" android:textStyle="bold" android:textColor="#ffff3333" android:gravity="center" android:layout_gravity="center" android:id="@id/txi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="领专享券" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/loading_view" android:background="@color/vy_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight">
+        <ImageView android:id="@id/anim_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:src="@drawable/vy_loading_bg" />
+        <TextView android:textSize="@dimen/vy_text_size_14" android:textColor="@color/vy_black3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="加载中..." />
+    </LinearLayout>
+    <com.dianping.voyager.widgets.LoadingErrorView android:gravity="center" android:orientation="horizontal" android:id="@id/loading_error_view" android:background="@color/vy_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight">
+        <TextView android:textSize="@dimen/vy_text_size_16" android:textColor="@color/vy_black3" android:gravity="center" android:id="@android:id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="网络连接失败 点击重新加载" android:drawablePadding="8.0dip" />
+    </com.dianping.voyager.widgets.LoadingErrorView>
+</merge>

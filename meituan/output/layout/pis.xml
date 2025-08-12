@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="65.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="20.0dip" android:layout_toLeftOf="@id/is_selected" android:layout_centerVertical="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/icon" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="10.0dip" />
+            <RelativeLayout android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0dip" android:textColor="@color/ba1o" android:ellipsize="end" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/name_ext" android:layout_centerVertical="true" />
+                <TextView android:textSize="16.0dip" android:textColor="@color/ba1o" android:id="@id/name_ext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView android:textSize="12.0dip" android:textColor="@color/crd" android:ellipsize="middle" android:id="@id/desc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="28.0dip" android:layout_marginTop="3.0dip" android:singleLine="true" />
+        <com.meituan.android.paycommon.lib.widgets.PayLabelContainer android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/eef" android:visibility="gone" android:layout_width="236.0dip" android:layout_height="wrap_content" android:layout_marginLeft="29.0dip" android:layout_marginTop="5.0dip" />
+    </LinearLayout>
+    <ImageView android:id="@id/is_selected" android:visibility="gone" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/xr1" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

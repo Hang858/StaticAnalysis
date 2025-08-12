@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/olu" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/rl_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="62.0dip">
+            <com.meituan.android.movie.tradebase.view.MovieRoundRectFImageView android:id="@id/pa1" android:background="@drawable/sso" android:padding="0.5dip" android:layout_width="62.0dip" android:layout_height="62.0dip" android:scaleType="centerCrop" app:lbRadius="6.0dip" app:ltRadius="6.0dip" app:rbRadius="6.0dip" app:rtRadius="6.0dip" />
+            <ImageView android:id="@id/t7t" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginLeft="2.0dip" android:layout_marginTop="2.0dip" android:maxWidth="95.0dip" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/ohj" android:ellipsize="end" android:id="@id/i55" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginRight="12.0dip" android:maxLines="2" android:includeFontPadding="false" android:layout_toRightOf="@id/pa1" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/x1m" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/pa1" android:layout_below="@id/i55">
+                <ImageView android:id="@id/wk9" android:layout_width="wrap_content" android:layout_height="17.0dip" android:layout_marginLeft="9.0dip" android:layout_marginTop="4.0dip" android:scaleType="centerCrop" />
+                <TextView android:textSize="10.0sp" android:textColor="#ffff9612" android:id="@id/hxe" android:background="@drawable/bavz" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginTop="4.0dip" android:maxLines="1" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/mg9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginTop="7.0dip" android:layout_toRightOf="@id/pa1" android:layout_below="@id/x1m" android:layout_alignParentBottom="true">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/n9y" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.meituan.android.movie.tradebase.common.view.MoviePriceTextView android:textStyle="bold" android:textColor="@color/o0a" android:id="@id/t1f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" app:accentTextSize="15.0sp" app:normalTextSize="13.0sp" app:priceFormat="@string/priceFormat" />
+                    <TextView android:textSize="10.0sp" android:textColor="#ffff9612" android:ellipsize="end" android:id="@id/sla" android:background="@drawable/bavz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="已减2.4元" android:maxLines="1" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/z8t" android:background="@drawable/bavz" android:paddingLeft="3.0dip" android:paddingTop="1.0dip" android:paddingRight="3.0dip" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginLeft="3.0dip">
+                        <TextView android:textSize="10.0sp" android:textColor="#ffff9612" android:ellipsize="end" android:gravity="center" android:id="@id/bcrh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                        <View android:id="@id/no" android:background="#fffa8500" android:layout_width="0.5dip" android:layout_height="9.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" />
+                        <com.meituan.android.movie.tradebase.common.view.MoviePriceTextView android:textSize="10.0sp" android:textColor="#ffff9612" android:gravity="center" android:id="@id/bad_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                    </LinearLayout>
+                </LinearLayout>
+                <com.meituan.android.movie.tradebase.common.view.MoviePriceTextView android:textSize="12.0sp" android:textColor="@color/ul7" android:ellipsize="end" android:id="@id/r1t" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginBottom="1.0dip" android:maxLines="1" android:includeFontPadding="false" android:layout_toRightOf="@id/n9y" android:layout_alignBottom="@id/n9y" />
+                <View android:id="@id/hk1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" />
+            </RelativeLayout>
+            <View android:id="@id/s5v" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/olu">
+        <View android:id="@id/ug3" android:background="@color/ba2b" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <View android:id="@id/xeo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

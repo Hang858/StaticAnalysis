@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_rule" android:padding="0.0dip" android:layout_width="300.0dip" android:layout_height="wrap_content" android:adjustViewBounds="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/iv_close" android:visibility="visible" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginBottom="16.0dip" android:src="@drawable/lightbox_ic_close_round_transparent" android:scaleType="fitXY" app:layout_constraintBottom_toTopOf="@id/iv_rule" app:layout_constraintRight_toRightOf="@id/iv_rule" />
+</android.support.constraint.ConstraintLayout>

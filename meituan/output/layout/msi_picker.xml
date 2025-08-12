@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textColor="#ff7a7e83" android:id="@id/hzp" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取消" />
+        <TextView android:textSize="18.0sp" android:textColor="#ff222222" android:id="@id/xjt" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确定" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/qai" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_marginBottom="40.0dip" />
+</LinearLayout>

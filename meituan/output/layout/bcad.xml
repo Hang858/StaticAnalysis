@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/bbbq" android:background="@drawable/tu_" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.AppCompatImageView android:id="@id/o8s" android:visibility="visible" android:layout_width="45.0dip" android:layout_height="64.0dip" android:src="@drawable/oud" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/qjl" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="45.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/black" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/od1" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:maxWidth="180.0dip" android:maxLines="1" android:lineSpacingExtra="3.0sp" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/n0q" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="182.0dip" android:maxLines="1" android:lineSpacingExtra="3.1999817sp" />
+            <android.support.v7.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@id/dcm" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/v2e" android:layout_marginStart="2.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.meituan.android.common.ui.widget.RoundFrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_marginStart="4.0dip" android:layout_marginEnd="39.0dip" android:layout_alignParentEnd="true" app:rfl_border="false" app:rfl_radius="48.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="#ff191919" android:gravity="center" android:id="@id/v_n" android:background="@color/msv_bottom_banner_btn_bg" android:paddingTop="7.0dip" android:paddingBottom="7.0dip" android:visibility="visible" android:layout_width="68.0dip" android:layout_height="wrap_content" android:alpha="0.9" />
+    </com.meituan.android.common.ui.widget.RoundFrameLayout>
+    <android.support.v7.widget.AppCompatImageView android:id="@id/baax" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginTop="24.5dip" android:layout_marginBottom="24.5dip" android:src="@drawable/vpe" android:layout_centerInParent="true" android:layout_marginEnd="12.0dip" android:layout_alignParentEnd="true" />
+</RelativeLayout>

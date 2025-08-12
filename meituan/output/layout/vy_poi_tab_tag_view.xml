@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="65.0dip" android:minHeight="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.imagemanager.DPNetworkImageView android:id="@id/icon_dp_hot" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="1.0dip" android:scaleType="fitXY" />
+    <TextView android:textSize="15.0sp" android:textColor="#ff333333" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/pay_mall_category_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+    <com.dianping.imagemanager.DPNetworkImageView android:layout_gravity="center_vertical" android:id="@id/icon_mt" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="1.0dip" android:scaleType="fitXY" />
+    <com.dianping.imagemanager.DPNetworkImageView android:id="@id/icon_dp" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="-7.0dip" android:layout_marginBottom="9.0dip" android:scaleType="fitXY" />
+</merge>

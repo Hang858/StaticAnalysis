@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/contaner" android:background="@drawable/shape_route_light_navi_btn_normal" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="@dimen/btn_heightV2" android:layout_marginTop="8.0dip" android:layout_weight="1.0" android:layout_marginStart="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/nd_" android:textStyle="bold" android:textColor="@color/bb9l" android:ellipsize="end" android:gravity="center" android:id="@id/light_navi" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/light_navi" android:maxLines="1" android:drawablePadding="6.0dip" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+</LinearLayout>

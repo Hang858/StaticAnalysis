@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="44.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/close_iv" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ju8" android:scaleType="centerCrop" android:layout_marginStart="12.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/share_iv" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/r5a" android:scaleType="centerCrop" android:layout_marginEnd="12.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/favorite_iv" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/y9k" android:scaleType="centerCrop" android:layout_marginEnd="16.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/share_iv" app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

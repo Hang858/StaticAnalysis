@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/kpj" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/eet" />
+        <TextView android:textSize="@dimen/egv" android:textStyle="bold" android:textColor="@color/ohj" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="24.0dip" android:layout_marginLeft="7.0dip" android:text="成功预约开售提醒" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/bcfo" android:textColor="@color/ohj" android:id="@id/bcw8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/ipb" android:layout_width="238.0dip" android:layout_height="67.0dip" android:layout_marginTop="21.0dip">
+        <TextView android:textSize="@dimen/bcfo" android:textColor="@color/ohj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="临近开售将发送短信提醒至" />
+        <TextView android:textSize="@dimen/nhp" android:textStyle="bold" android:textColor="@color/ohj" android:id="@id/phone_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/bcfo" android:textColor="@color/ul7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="若不是您的常用手机，请前往设置换绑" />
+    <View android:background="@color/luf" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="21.0dip" />
+    <TextView android:textSize="@dimen/egv" android:textStyle="bold" android:textColor="@color/xm2" android:gravity="center" android:id="@id/close" android:layout_width="fill_parent" android:layout_height="46.5dip" android:text="知道了" />
+</LinearLayout>

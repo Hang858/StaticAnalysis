@@ -1,0 +1,497 @@
+.class public final Lcom/meituan/sankuai/map/unity/lib/views/poipullview/a$c;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/meituan/sankuai/map/unity/lib/views/poipullview/a;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x11
+    name = "c"
+.end annotation
+
+
+# static fields
+.field public static changeQuickRedirect:Lcom/meituan/robust/ChangeQuickRedirect;
+
+
+# instance fields
+.field public a:J
+
+.field public final b:Landroid/view/animation/LinearInterpolator;
+
+.field public c:I
+
+.field public d:I
+
+.field public e:Z
+
+.field public f:Z
+
+.field public g:J
+
+.field public h:I
+
+.field public final synthetic i:Lcom/meituan/sankuai/map/unity/lib/views/poipullview/a;
+
+
+# direct methods
+.method public constructor <init>(Lcom/meituan/sankuai/map/unity/lib/views/poipullview/a;)V
+    .locals 5
+
+    .line 120000
+    iput-object p1, p0, Lcom/meituan/sankuai/map/unity/lib/views/poipullview/a$c;->i:Lcom/meituan/sankuai/map/unity/lib/views/poipullview/a;
+
+    .line 120001
+    .line 120002
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 120003
+    .line 120004
+    .line 120005
+    const/4 v0, 0x1
+
+    .line 120006
+    new-array v0, v0, [Ljava/lang/Object;
+
+    .line 120007
+    .line 120008
+    const/4 v1, 0x0
+
+    .line 120009
+    aput-object p1, v0, v1
+
+    .line 120010
+    .line 120011
+    sget-object v2, Lcom/meituan/sankuai/map/unity/lib/views/poipullview/a$c;->changeQuickRedirect:Lcom/meituan/robust/ChangeQuickRedirect;
+
+    .line 120012
+    .line 120013
+    const v3, 0x20e551    # 3.020999E-39f
+
+    .line 120014
+    .line 120015
+    .line 120016
+    invoke-static {v0, p0, v2, v3}, Lcom/meituan/robust/PatchProxy;->isSupport([Ljava/lang/Object;Ljava/lang/Object;Lcom/meituan/robust/ChangeQuickRedirect;I)Z
+
+    .line 120017
+    .line 120018
+    .line 120019
+    move-result v4
+
+    .line 120020
+    if-eqz v4, :cond_0
+
+    .line 120021
+    .line 120022
+    invoke-static {v0, p0, v2, v3}, Lcom/meituan/robust/PatchProxy;->accessDispatch([Ljava/lang/Object;Ljava/lang/Object;Lcom/meituan/robust/ChangeQuickRedirect;I)Ljava/lang/Object;
+
+    .line 120023
+    .line 120024
+    .line 120025
+    return-void
+
+    .line 120026
+    :cond_0
+    sget-boolean v0, Lcom/meituan/sankuai/map/unity/lib/common/MockLocationConstants;->sIsAnimateTimeDebug:Z
+
+    .line 120027
+    .line 120028
+    if-eqz v0, :cond_1
+
+    .line 120029
+    .line 120030
+    sget-wide v2, Lcom/meituan/sankuai/map/unity/lib/common/MockLocationConstants;->sDebugAnimateTime:J
+
+    .line 120031
+    .line 120032
+    goto :goto_1
+
+    .line 120033
+    :cond_1
+    iget p1, p1, Lcom/meituan/sankuai/map/unity/lib/views/poipullview/a;->s:I
+
+    .line 120034
+    .line 120035
+    if-nez p1, :cond_2
+
+    .line 120036
+    .line 120037
+    const/16 p1, 0x12c
+
+    .line 120038
+    .line 120039
+    goto :goto_0
+
+    .line 120040
+    :cond_2
+    const/16 p1, 0x96
+
+    .line 120041
+    .line 120042
+    :goto_0
+    int-to-long v2, p1
+
+    .line 120043
+    :goto_1
+    iput-wide v2, p0, Lcom/meituan/sankuai/map/unity/lib/views/poipullview/a$c;->a:J
+
+    .line 120044
+    .line 120045
+    iput-boolean v1, p0, Lcom/meituan/sankuai/map/unity/lib/views/poipullview/a$c;->f:Z
+
+    .line 120046
+    .line 120047
+    const-wide/16 v0, -0x1
+
+    .line 120048
+    .line 120049
+    iput-wide v0, p0, Lcom/meituan/sankuai/map/unity/lib/views/poipullview/a$c;->g:J
+
+    .line 120050
+    .line 120051
+    const/4 p1, -0x1
+
+    .line 120052
+    iput p1, p0, Lcom/meituan/sankuai/map/unity/lib/views/poipullview/a$c;->h:I
+
+    .line 120053
+    .line 120054
+    new-instance p1, Landroid/view/animation/LinearInterpolator;
+
+    .line 120055
+    .line 120056
+    invoke-direct {p1}, Landroid/view/animation/LinearInterpolator;-><init>()V
+
+    .line 120057
+    .line 120058
+    .line 120059
+    iput-object p1, p0, Lcom/meituan/sankuai/map/unity/lib/views/poipullview/a$c;->b:Landroid/view/animation/LinearInterpolator;
+
+    .line 120060
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 7
+
+    .line 100000
+    const/4 v0, 0x0
+
+    .line 100001
+    new-array v1, v0, [Ljava/lang/Object;
+
+    .line 100002
+    .line 100003
+    sget-object v2, Lcom/meituan/sankuai/map/unity/lib/views/poipullview/a$c;->changeQuickRedirect:Lcom/meituan/robust/ChangeQuickRedirect;
+
+    .line 100004
+    .line 100005
+    const v3, 0x4a69fe
+
+    .line 100006
+    .line 100007
+    .line 100008
+    invoke-static {v1, p0, v2, v3}, Lcom/meituan/robust/PatchProxy;->isSupport([Ljava/lang/Object;Ljava/lang/Object;Lcom/meituan/robust/ChangeQuickRedirect;I)Z
+
+    .line 100009
+    .line 100010
+    .line 100011
+    move-result v4
+
+    .line 100012
+    if-eqz v4, :cond_0
+
+    .line 100013
+    .line 100014
+    invoke-static {v1, p0, v2, v3}, Lcom/meituan/robust/PatchProxy;->accessDispatch([Ljava/lang/Object;Ljava/lang/Object;Lcom/meituan/robust/ChangeQuickRedirect;I)Ljava/lang/Object;
+
+    .line 100015
+    .line 100016
+    .line 100017
+    return-void
+
+    .line 100018
+    :cond_0
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 100019
+    .line 100020
+    .line 100021
+    move-result-wide v1
+
+    .line 100022
+    iget-wide v3, p0, Lcom/meituan/sankuai/map/unity/lib/views/poipullview/a$c;->g:J
+
+    .line 100023
+    .line 100024
+    sub-long/2addr v1, v3
+
+    .line 100025
+    const-wide/16 v3, 0x3e8
+
+    .line 100026
+    .line 100027
+    mul-long/2addr v1, v3
+
+    .line 100028
+    iget-wide v5, p0, Lcom/meituan/sankuai/map/unity/lib/views/poipullview/a$c;->a:J
+
+    .line 100029
+    .line 100030
+    div-long/2addr v1, v5
+
+    .line 100031
+    invoke-static {v1, v2, v3, v4}, Ljava/lang/Math;->min(JJ)J
+
+    .line 100032
+    .line 100033
+    .line 100034
+    move-result-wide v1
+
+    .line 100035
+    const-wide/16 v3, 0x0
+
+    .line 100036
+    .line 100037
+    invoke-static {v1, v2, v3, v4}, Ljava/lang/Math;->max(JJ)J
+
+    .line 100038
+    .line 100039
+    .line 100040
+    move-result-wide v1
+
+    .line 100041
+    iget v3, p0, Lcom/meituan/sankuai/map/unity/lib/views/poipullview/a$c;->d:I
+
+    .line 100042
+    .line 100043
+    iget v4, p0, Lcom/meituan/sankuai/map/unity/lib/views/poipullview/a$c;->c:I
+
+    .line 100044
+    .line 100045
+    sub-int/2addr v3, v4
+
+    .line 100046
+    int-to-float v3, v3
+
+    .line 100047
+    iget-object v4, p0, Lcom/meituan/sankuai/map/unity/lib/views/poipullview/a$c;->b:Landroid/view/animation/LinearInterpolator;
+
+    .line 100048
+    .line 100049
+    long-to-float v1, v1
+
+    .line 100050
+    const/high16 v2, 0x447a0000    # 1000.0f
+
+    .line 100051
+    .line 100052
+    div-float/2addr v1, v2
+
+    .line 100053
+    invoke-virtual {v4, v1}, Landroid/view/animation/LinearInterpolator;->getInterpolation(F)F
+
+    .line 100054
+    .line 100055
+    .line 100056
+    move-result v1
+
+    .line 100057
+    mul-float/2addr v1, v3
+
+    .line 100058
+    invoke-static {v1}, Ljava/lang/Math;->round(F)I
+
+    .line 100059
+    .line 100060
+    .line 100061
+    move-result v1
+
+    .line 100062
+    iget v2, p0, Lcom/meituan/sankuai/map/unity/lib/views/poipullview/a$c;->d:I
+
+    .line 100063
+    .line 100064
+    sub-int/2addr v2, v1
+
+    .line 100065
+    iput v2, p0, Lcom/meituan/sankuai/map/unity/lib/views/poipullview/a$c;->h:I
+
+    .line 100066
+    .line 100067
+    iget-object v1, p0, Lcom/meituan/sankuai/map/unity/lib/views/poipullview/a$c;->i:Lcom/meituan/sankuai/map/unity/lib/views/poipullview/a;
+
+    .line 100068
+    .line 100069
+    iget-object v1, v1, Lcom/meituan/sankuai/map/unity/lib/views/poipullview/a;->a:Ljava/lang/String;
+
+    .line 100070
+    .line 100071
+    const-string v2, "run mScrollToY = "
+
+    .line 100072
+    .line 100073
+    invoke-static {v2}, La/a/a/a/c;->v(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 100074
+    .line 100075
+    .line 100076
+    move-result-object v2
+
+    .line 100077
+    iget v3, p0, Lcom/meituan/sankuai/map/unity/lib/views/poipullview/a$c;->c:I
+
+    .line 100078
+    .line 100079
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 100080
+    .line 100081
+    .line 100082
+    const-string v3, ", mCurrentY = "
+
+    .line 100083
+    .line 100084
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 100085
+    .line 100086
+    .line 100087
+    iget v3, p0, Lcom/meituan/sankuai/map/unity/lib/views/poipullview/a$c;->h:I
+
+    .line 100088
+    .line 100089
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 100090
+    .line 100091
+    .line 100092
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 100093
+    .line 100094
+    .line 100095
+    move-result-object v2
+
+    .line 100096
+    invoke-static {v1, v2}, Lcom/meituan/sankuai/map/unity/base/utils/b;->h(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 100097
+    .line 100098
+    .line 100099
+    iget-object v1, p0, Lcom/meituan/sankuai/map/unity/lib/views/poipullview/a$c;->i:Lcom/meituan/sankuai/map/unity/lib/views/poipullview/a;
+
+    .line 100100
+    .line 100101
+    iget v2, p0, Lcom/meituan/sankuai/map/unity/lib/views/poipullview/a$c;->h:I
+
+    .line 100102
+    .line 100103
+    int-to-float v3, v2
+
+    .line 100104
+    iget-boolean v4, p0, Lcom/meituan/sankuai/map/unity/lib/views/poipullview/a$c;->e:Z
+
+    .line 100105
+    .line 100106
+    iget v5, p0, Lcom/meituan/sankuai/map/unity/lib/views/poipullview/a$c;->c:I
+
+    .line 100107
+    .line 100108
+    if-ne v5, v2, :cond_1
+
+    .line 100109
+    .line 100110
+    const/4 v2, 0x1
+
+    .line 100111
+    goto :goto_0
+
+    .line 100112
+    :cond_1
+    const/4 v2, 0x0
+
+    .line 100113
+    :goto_0
+    invoke-virtual {v1, v3, v4, v2}, Lcom/meituan/sankuai/map/unity/lib/views/poipullview/a;->m(FZZ)V
+
+    .line 100114
+    .line 100115
+    .line 100116
+    iget-boolean v1, p0, Lcom/meituan/sankuai/map/unity/lib/views/poipullview/a$c;->f:Z
+
+    .line 100117
+    .line 100118
+    if-eqz v1, :cond_2
+
+    .line 100119
+    .line 100120
+    iget v1, p0, Lcom/meituan/sankuai/map/unity/lib/views/poipullview/a$c;->c:I
+
+    .line 100121
+    .line 100122
+    iget v2, p0, Lcom/meituan/sankuai/map/unity/lib/views/poipullview/a$c;->h:I
+
+    .line 100123
+    .line 100124
+    if-eq v1, v2, :cond_2
+
+    .line 100125
+    .line 100126
+    iget-object v0, p0, Lcom/meituan/sankuai/map/unity/lib/views/poipullview/a$c;->i:Lcom/meituan/sankuai/map/unity/lib/views/poipullview/a;
+
+    .line 100127
+    .line 100128
+    const-wide/16 v1, 0xa
+
+    .line 100129
+    .line 100130
+    invoke-virtual {v0, p0, v1, v2}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
+
+    .line 100131
+    .line 100132
+    .line 100133
+    goto :goto_1
+
+    .line 100134
+    :cond_2
+    iput-boolean v0, p0, Lcom/meituan/sankuai/map/unity/lib/views/poipullview/a$c;->f:Z
+
+    .line 100135
+    .line 100136
+    const-wide/16 v0, -0x1
+
+    .line 100137
+    .line 100138
+    iput-wide v0, p0, Lcom/meituan/sankuai/map/unity/lib/views/poipullview/a$c;->g:J
+
+    .line 100139
+    .line 100140
+    const/4 v0, -0x1
+
+    .line 100141
+    iput v0, p0, Lcom/meituan/sankuai/map/unity/lib/views/poipullview/a$c;->h:I
+
+    .line 100142
+    .line 100143
+    iget-object v0, p0, Lcom/meituan/sankuai/map/unity/lib/views/poipullview/a$c;->i:Lcom/meituan/sankuai/map/unity/lib/views/poipullview/a;
+
+    .line 100144
+    .line 100145
+    invoke-virtual {v0, p0}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
+
+    .line 100146
+    .line 100147
+    .line 100148
+    :goto_1
+    return-void
+.end method

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meituan.android.movie.home.knb.TitansErrorViewProxy android:gravity="center" android:orientation="vertical" android:id="@id/net_error" android:background="@color/mfv" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/no_info_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/movie_ic_page_net_error" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/bai2" android:gravity="center_horizontal" android:id="@id/no_info_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/movie_common_state_error_default_msg" />
+    <Button android:textSize="13.0sp" android:textColor="@color/cqk" android:id="@id/btn_click_refresh" android:background="@drawable/movie_bg_net_error_btn" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/movie_btn_page_refresh" />
+</com.meituan.android.movie.home.knb.TitansErrorViewProxy>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/bas0" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:seekbar="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/m2o" android:layout_marginTop="@dimen/glb">
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/l4f" android:gravity="center" android:id="@id/bbdp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/e6r" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="9.0sp" android:textColor="@color/nkj" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/xcz" android:text="@string/q18" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/nkj" android:gravity="center" android:id="@id/hmu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bbi3" />
+            <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/bfq" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="@color/nkj" android:gravity="center" android:id="@id/idf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/iom" android:text="~" />
+                <TextView android:textSize="9.0sp" android:textColor="@color/nkj" android:gravity="center" android:id="@id/kib" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/iom" android:text="@string/q18" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/nkj" android:gravity="center" android:id="@id/nes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bbi3" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.meituan.android.food.filter.advanced.FoodFilterAdvancedRangeSeekBar android:id="@id/seekbar" android:paddingBottom="@dimen/bamr" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/xcz" android:layout_marginTop="@dimen/r2x" android:layout_marginRight="@dimen/xcz" seekbar:leftCursorBackground="@drawable/xqg" seekbar:rightCursorBackground="@drawable/xqg" seekbar:seekbarColorSelectedEnd="@color/nkj" seekbar:seekbarColorSelectedStart="@color/bei" seekbar:seekbarHeight="@dimen/bamr" seekbar:spaceBetween="26.0dip" seekbar:textColorNormal="#ffb6b6b6" seekbar:textColorSelected="#ffb6b6b6" seekbar:textSize="@dimen/nlw" />
+</LinearLayout>

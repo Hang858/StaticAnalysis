@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/qcsc_bg_white_top_divider" android:paddingTop="12.0dip" android:paddingRight="18.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/tv_trip_share_wrapper" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.meituan.android.qcsc.business.widget.iconfont.IconFontTextView android:layout_gravity="center_horizontal" android:id="@id/iv_share" android:clickable="true" android:layout_width="15.0dip" android:layout_height="15.0dip" app:qcsc_iconDpSize="15.0dip" app:qcsc_iconDrawablePressColor="@color/qcsc_text_42" app:qcsc_iconDrawableTop="@string/qcsc_icon_qcs_share" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/qcsc_text_93" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.5dip" android:text="@string/qcsc_sec_share" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/tv_connect_customer_service_wrapper" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.meituan.android.qcsc.business.widget.iconfont.IconFontTextView android:layout_gravity="center_horizontal" android:id="@id/iv_service" android:clickable="true" android:layout_width="15.0dip" android:layout_height="15.0dip" app:qcsc_iconDpSize="15.0dip" app:qcsc_iconDrawablePressColor="@color/qcsc_text_42" app:qcsc_iconDrawableTop="@string/qcsc_icon_qcs_service" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/qcsc_text_93" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.5dip" android:text="@string/qcsc_sec_online_help" />
+    </LinearLayout>
+    <TextView android:textSize="15.0sp" android:textColor="@color/qcsc_white" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_call_police" android:background="@drawable/qcsc_bg_call_police" android:layout_width="0.0dip" android:layout_height="45.0dip" android:text="@string/qcsc_sec_emergency" android:layout_weight="3.0" />
+</LinearLayout>

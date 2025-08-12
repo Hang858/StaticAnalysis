@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:id="@id/oem" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/cuo" android:background="@drawable/s41" android:layout_width="310.0dip" android:layout_height="wrap_content">
+            <ImageView android:id="@id/zo4" android:layout_width="286.0dip" android:layout_height="226.5dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:scaleType="centerCrop" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff222426" android:ellipsize="end" android:id="@id/o3d" android:layout_width="wrap_content" android:layout_height="22.5dip" android:layout_marginTop="18.0dip" android:maxLines="1" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff666460" android:ellipsize="end" android:id="@id/batg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:lineSpacingMultiplier="1.2" />
+            <com.meituan.roodesign.widgets.button.RooButton android:textSize="16.0sp" android:textColor="#ff333333" android:ellipsize="end" android:gravity="center" android:id="@id/ke6" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="12.0dip" android:maxLines="1" android:textAlignment="center" style="@style/Widget.RooDesign.Button" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center" android:id="@id/bahy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:src="@drawable/hev" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

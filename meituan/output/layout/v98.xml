@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="10.0sp" android:textColor="@color/p0_" android:id="@id/hz_" android:background="@drawable/lf3" android:paddingLeft="4.0dip" android:paddingRight="10.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.dianping.imagemanager.DPNetworkImageView android:id="@id/vsc" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</merge>

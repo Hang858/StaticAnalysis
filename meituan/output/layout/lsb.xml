@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_deal_map_list_selector" android:paddingTop="@dimen/c0" android:paddingRight="@dimen/ura" android:paddingBottom="@dimen/ppt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/x3r" android:layout_width="@dimen/bahw" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/icon" android:layout_width="16.0dip" android:layout_height="16.0dip" android:scaleType="fitCenter" />
+    </FrameLayout>
+    <com.sankuai.meituan.search.view.PriorityLinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.sankuai.meituan.search.home.view.SearchRichTextView android:textSize="15.0dip" android:textColor="@color/qul" android:gravity="center_vertical" android:id="@id/title" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" app:priority="1" />
+        <TextView android:textSize="12.0dip" android:textColor="#ff808080" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/kyw" android:paddingTop="1.0dip" android:paddingBottom="1.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:singleLine="true" android:includeFontPadding="false" app:priority="2" />
+    </com.sankuai.meituan.search.view.PriorityLinearLayout>
+</LinearLayout>

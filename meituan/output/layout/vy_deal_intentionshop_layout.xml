@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/vy_line_divider_bg" android:showDividers="beginning|middle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/deal_intentionshop_shop_layer" android:background="@color/vy_white" android:paddingLeft="@dimen/vy_standard_padding" android:paddingRight="@dimen/vy_standard_padding" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <TextView android:textSize="@dimen/vy_text_size_15" android:textColor="#ff777777" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="意向门店" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/deal_intentionshop_notselected_layer" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="-" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/deal_intentionshop_selected_layer" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/vy_text_size_16" android:textColor="#ff333333" android:ellipsize="end" android:gravity="right" android:id="@id/deal_intentionshop_selected_shopname_display" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/vy_arrow_right" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/deal_intentionshop_phone_layer" android:background="@color/vy_white" android:paddingLeft="@dimen/vy_standard_padding" android:paddingRight="@dimen/vy_standard_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <TextView android:textSize="@dimen/vy_text_size_15" android:textColor="#ff777777" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="手机号码" />
+            <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/vy_text_size_15" android:textColor="#ff333333" android:layout_gravity="center_vertical" android:id="@id/deal_intentionshop_phone_phonenumber" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textSize="11.0sp" android:textColor="#ff999999" android:id="@id/deal_intentionshop_tooltip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/deal_intentionshop_disclosemobile_layer" android:paddingLeft="@dimen/vy_standard_padding" android:paddingTop="8.0dip" android:paddingRight="@dimen/vy_standard_padding" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/deal_intentionshop_disclosemobile_icon" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+        <TextView android:textSize="@dimen/vy_text_size_14" android:textColor="@color/vy_black2" android:id="@id/deal_intentionshop_disclosemobile_tipmsg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+    </LinearLayout>
+</LinearLayout>

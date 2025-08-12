@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.xm.imui.common.view.message.DefaultBottomMsgSideView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/xm_sdk_chat_msg_below_margin_top" android:layout_marginStart="@dimen/xm_sdk_chat_msg_below_margin_right" android:layout_marginEnd="@dimen/xm_sdk_chat_msg_below_margin_right"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

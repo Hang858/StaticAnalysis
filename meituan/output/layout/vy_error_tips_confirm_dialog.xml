@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/tuan_common_gray_corner_bg" android:paddingLeft="24.0dip" android:paddingTop="24.0dip" android:paddingRight="16.0dip" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/vy_text_size_20" android:textColor="@color/vy_black" android:ellipsize="end" android:id="@id/error_tips_confirm_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="提示" android:maxLines="1" />
+    <TextView android:textSize="@dimen/vy_text_size_16" android:textColor="@color/vy_black2" android:id="@id/error_tips_confirm_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="15.0dip" android:layout_below="@id/error_tips_confirm_title" />
+    <TextView android:textSize="@dimen/vy_text_size_14" android:textColor="@color/vy_default_theme_color" android:id="@id/error_tips_confirm_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确定" android:layout_below="@id/error_tips_confirm_content" android:layout_alignParentRight="true" />
+</RelativeLayout>

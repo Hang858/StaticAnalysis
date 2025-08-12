@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="171.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/qcsc_bottom_button_layout" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="18.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="18.0dip" android:layout_marginBottom="18.0dip" android:layout_alignParentBottom="true">
+        <View android:id="@id/guide_view" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_centerInParent="true" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/qcsc_text_secondary" android:gravity="center" android:id="@id/qcsc_dialog_button_cancel" android:background="@drawable/qcsc_bg_btn_negative" android:clickable="true" android:layout_width="wrap_content" android:layout_height="45.0dip" android:text="@string/qcsc_cancel" android:layout_toLeftOf="@id/guide_view" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/qcsc_dialog_button_ok" android:background="@drawable/qcsc_bg_btn_positive" android:clickable="true" android:layout_width="wrap_content" android:layout_height="45.0dip" android:text="@string/qcsc_confirm" android:layout_toRightOf="@id/guide_view" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <TextView android:textSize="17.0sp" android:textColor="@color/qcsc_text_primary_new" android:gravity="center" android:id="@id/qcsc_dialog_body_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginRight="18.0dip" android:includeFontPadding="false" android:layout_above="@id/qcsc_bottom_button_layout" android:layout_alignParentTop="true" />
+</RelativeLayout>

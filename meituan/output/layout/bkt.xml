@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gc_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/gc_transparent_color"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/top_divider_line" android:background="@drawable/gc_lightgray_seperate_line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/gc_white" android:paddingLeft="12.0dip" android:paddingTop="8.0dip" android:paddingRight="12.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="56.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:id="@id/normal_price" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="33.0sp" android:textColor="@color/gc_light_green" android:ellipsize="end" android:id="@id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-2.0dip" android:text="" android:maxLines="1" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/orgin_tag_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+                <com.dianping.pioneer.widgets.AutoHideTextView android:textSize="13.0sp" android:textColor="@color/gc_light_gray" android:id="@id/original_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" />
+                <com.meituan.android.generalcategories.dealdetail.view.DefTextCountTextView android:textSize="10.0sp" android:textColor="@color/gc_tuan_color_orange" android:id="@id/buy_tag_view" android:background="@drawable/gc_discount_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip" android:text="" android:singleLine="true" dp:minitextcount="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.meituan.android.widget.AutofitTextView android:textSize="17.0sp" android:textColor="@color/gc_white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/buy" android:background="@drawable/gc_cornered_orange_bg" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="125.0dip" android:layout_height="40.0dip" android:text="@string/buy_now" />
+    </LinearLayout>
+    <ImageView android:id="@id/bottom_divider_line" android:background="@drawable/gc_lightgray_seperate_line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

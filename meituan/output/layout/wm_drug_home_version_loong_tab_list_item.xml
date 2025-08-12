@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_tab_item_bg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip">
+        <ImageView android:id="@id/iv_tab_item_icon" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginEnd="4.0dip" />
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#00000000" android:id="@id/tv_tab_item_name_faker" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_tab_item_bg_arrow" android:layout_width="16.0dip" android:layout_height="5.0dip" android:layout_marginTop="29.0dip" />
+    <FrameLayout android:id="@id/ll_sticky_tab_container" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginStart="30.0dip" android:layout_marginEnd="10.0dip">
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ff222426" android:layout_gravity="center" android:id="@id/tv_tab_item_name_real" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ff222426" android:layout_gravity="center" android:id="@id/tv_tab_item_name_real_big" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ff222426" android:layout_gravity="center" android:id="@id/tv_tab_item_name_real_small" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/fl_sticky_indicator_container" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:alpha="0.0" android:layout_marginStart="30.0dip">
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#00000000" android:id="@id/tv_tab_item_name_sticky_faker" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#00000000" android:id="@id/tv_tab_item_name_sticky_faker_big" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#00000000" android:id="@id/tv_tab_item_name_sticky_faker_small" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:layout_gravity="bottom|center" android:id="@id/iv_tab_item_sticky_indicator" android:layout_width="24.0dip" android:layout_height="9.0dip" />
+    </FrameLayout>
+</FrameLayout>

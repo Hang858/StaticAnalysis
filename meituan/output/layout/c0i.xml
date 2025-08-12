@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/znc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="13.0sp" android:textColor="@color/fir" android:layout_gravity="right" android:id="@id/ticket" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/z0j" android:layout_gravity="right" android:id="@id/idt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:maxLines="1" />
+    </LinearLayout>
+    <com.meituan.android.trafficayers.views.IconFontCheckBox android:id="@id/w7j" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" />
+</LinearLayout>

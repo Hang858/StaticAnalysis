@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0sp" android:textColor="@color/jy" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/yo5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="6" />
+    <com.meituan.android.ugc.cipugc.widget.ScoreBar android:layout_gravity="center_vertical" android:id="@id/bhj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" dp:scoreview_high="?score_high" dp:scoreview_low="?score_low" dp:scoreview_normal="?score_normal" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/l6i" android:layout_gravity="center_vertical" android:id="@id/score_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" />
+</LinearLayout>

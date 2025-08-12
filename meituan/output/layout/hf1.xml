@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/vxz" android:background="@drawable/gum" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginRight="32.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="#ff000000" android:gravity="center" android:id="@id/z4p" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="18.0dip" android:text="美团导航使用提示" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="228.0dip" android:layout_marginLeft="18.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="18.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="14.0dip" android:textColor="#ff000000" android:id="@id/dialogMessage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="这里是协议内容。如果文本很长，将会在这个框内滚动。" />
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="18.0dip" android:layout_marginBottom="16.0dip">
+        <com.meituan.sankuai.navisdk.place.ui.MultifunctionLinearLayout android:gravity="center" android:id="@id/cay" android:background="@drawable/ra_" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_weight="1.0" android:layout_centerHorizontal="true">
+            <TextView android:textSize="15.0dip" android:textColor="@color/mtnv_color_gray_button_text" android:id="@id/mtnv_tv_ugc_cancel_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取消" />
+        </com.meituan.sankuai.navisdk.place.ui.MultifunctionLinearLayout>
+        <View android:layout_width="8.0dip" android:layout_height="fill_parent" />
+        <com.meituan.sankuai.navisdk.place.ui.MultifunctionLinearLayout android:gravity="center" android:id="@id/hhs" android:background="@drawable/w8e" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_weight="1.0" android:layout_centerHorizontal="true">
+            <TextView android:textSize="15.0dip" android:textColor="@color/mtnv_color_FFFFFF" android:id="@id/mtnv_tv_ugc_commit_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="同意" />
+        </com.meituan.sankuai.navisdk.place.ui.MultifunctionLinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/s01" android:background="#ffffffff" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="57.599976pt" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/ome" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="11.519989pt" android:paddingEnd="11.519989pt">
+            <ImageView android:id="@id/checkbox_select_all" android:layout_width="17.279999pt" android:layout_height="17.279999pt" android:src="@drawable/xsg" android:scaleType="fitXY" />
+            <TextView android:textSize="11.519989pt" android:textColor="#66000000" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nf7" android:layout_marginStart="6.0pt" />
+        </LinearLayout>
+        <LinearLayout android:gravity="end|center" android:orientation="horizontal" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginEnd="11.519989pt">
+            <TextView android:textSize="11.519989pt" android:textColor="#ff000000" android:gravity="center" android:id="@id/bbwu" android:background="@drawable/rik" android:paddingLeft="14.399994pt" android:paddingRight="14.399994pt" android:layout_width="wrap_content" android:layout_height="38.399994pt" android:minWidth="125.28pt" android:text="@string/br9" android:layout_marginEnd="7.6799927pt" />
+            <TextView android:textSize="12.0pt" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tnj" android:background="@drawable/imw" android:paddingLeft="14.399994pt" android:paddingRight="14.399994pt" android:layout_width="wrap_content" android:layout_height="38.399994pt" android:minWidth="98.879974pt" android:text="@string/yem" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

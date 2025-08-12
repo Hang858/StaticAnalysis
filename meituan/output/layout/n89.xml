@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/bc0s" android:layout_width="wrap_content" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <ImageView android:id="@id/img_quick_access" android:layout_width="32.0dip" android:layout_height="32.0dip" android:scaleType="centerCrop" />
+        <TextView android:textSize="12.0dip" android:textColor="#ff41454d" android:gravity="center" android:id="@id/h62" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.5dip" android:singleLine="true" />
+    </LinearLayout>
+    <android.support.constraint.Guideline android:orientation="vertical" android:id="@id/guide" android:layout_width="0.100000024dip" android:layout_height="fill_parent" app:layout_constraintGuide_percent="0.45" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:id="@id/ss8" android:background="@drawable/or7" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="@id/guide" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="10.0dip" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:id="@id/ngo" android:background="@drawable/pak" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginTop="1.0dip" android:layout_marginBottom="1.0dip" android:scaleType="centerCrop" android:minWidth="28.0dip" android:singleLine="true" android:paddingStart="2.0dip" android:paddingEnd="2.0dip" android:layout_marginStart="1.0dip" android:layout_marginEnd="1.0dip" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

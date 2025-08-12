@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/divider" android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+        <TextView android:textSize="17.0sp" android:textColor="#ff333333" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:maxLines="3" android:layout_weight="1.0" android:lineSpacingMultiplier="1.2" />
+        <FrameLayout android:id="@id/b88" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/avatar" style="@style/maoyan_medium_newsitem_image" />
+            <ImageView android:layout_gravity="bottom|center|right" android:id="@id/dt6" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" />
+        </FrameLayout>
+    </LinearLayout>
+    <include android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" layout="@layout/mda" />
+</LinearLayout>

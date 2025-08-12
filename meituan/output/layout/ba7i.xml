@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/recommend_title_orange" android:layout_width="fill_parent" android:layout_height="250.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:imui="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/xm_sdk_iv_chat_file_pic" android:background="@drawable/xm_sdk_bg_msg_file_icon" android:layout_width="@dimen/xm_sdk_chat_file_icon_width" android:layout_height="@dimen/xm_sdk_chat_file_icon_height" android:layout_marginTop="9.0dip" android:layout_marginBottom="9.0dip" android:layout_marginStart="6.0dip">
+        <com.sankuai.xm.video.RoundProgressBar android:id="@id/xm_sdk_msg_progress" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_centerInParent="true" imui:video_progressColor="@color/xm_sdk_white" imui:video_roundColor="#7f000000" imui:video_roundMargin="-2.0dip" imui:video_roundWidth="2.0dip" imui:video_style="STROKE" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="9.0dip" android:layout_marginStart="@dimen/xm_sdk_chat_file_detail_layout_margin_icon" android:layout_marginEnd="12.0dip" android:layout_toEndOf="@id/xm_sdk_iv_chat_file_pic">
+        <TextView android:textSize="@dimen/xm_sdk_chat_file_name_size" android:textColor="#e5000000" android:ellipsize="end" android:id="@id/xm_sdk_tv_chat_file_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:includeFontPadding="false" style="@style/xm_sdk_text_view_style_18n" />
+        <TextView android:textSize="@dimen/xm_sdk_chat_file_size" android:textColor="#59000000" android:gravity="start|center" android:id="@id/xm_sdk_tv_chat_file_size" android:layout_width="fill_parent" android:layout_height="@dimen/xm_sdk_chat_file_size_height" android:layout_marginTop="@dimen/xm_sdk_chat_file_name" android:includeFontPadding="false" android:layout_below="@id/xm_sdk_tv_chat_file_name" android:layout_alignStart="@id/xm_sdk_tv_chat_file_name" style="@style/xm_sdk_text_view_style_18n" />
+    </RelativeLayout>
+</RelativeLayout>

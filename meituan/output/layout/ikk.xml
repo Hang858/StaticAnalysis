@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.videoview.widget.video.ui.SimpleControlPanel android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/j93" />
+    <com.dianping.videoview.widget.video.ui.panelitem.PanelLinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/pgi" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_alignWithParentIfMissing="true" dp:panelItemVisibility="10101">
+        <include layout="@layout/vgv" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:layout_marginBottom="52.0dip" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip">
+            <include layout="@layout/ct3" />
+            <include layout="@layout/bvi" />
+            <include layout="@layout/di_" />
+            <include layout="@layout/o22" />
+            <include layout="@layout/k8h" />
+        </LinearLayout>
+    </com.dianping.videoview.widget.video.ui.panelitem.PanelLinearLayout>
+    <include layout="@layout/rha" />
+</com.dianping.videoview.widget.video.ui.SimpleControlPanel>

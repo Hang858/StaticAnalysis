@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/czz" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/ey8" android:visibility="gone" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textColor="@color/o4l" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="电话咨询" android:drawableLeft="@drawable/zoo" android:drawablePadding="8.0dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <View android:layout_gravity="center_vertical" android:background="@color/n28" android:layout_width="1.0dip" android:layout_height="30.0dip" />
+    <RelativeLayout android:id="@id/c37" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textColor="@color/o4l" android:gravity="center_vertical" android:id="@id/t3d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="在线客服" android:drawableLeft="@drawable/f7i" android:drawablePadding="8.0dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <View android:layout_gravity="center_vertical" android:background="@color/n28" android:layout_width="1.0dip" android:layout_height="30.0dip" />
+    <RelativeLayout android:id="@id/rhf" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textColor="@color/o4l" android:gravity="center_vertical" android:id="@id/gei" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="预约到店" android:drawableLeft="@drawable/c4e" android:drawablePadding="8.0dip" android:layout_centerInParent="true" />
+        <View android:id="@id/sry" android:background="@drawable/lr6" android:layout_width="20.0dip" android:layout_height="10.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_alignLeft="@id/gei" />
+    </RelativeLayout>
+</LinearLayout>

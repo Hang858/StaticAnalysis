@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingTop="10.0dip" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.imagemanager.DPNetworkImageView android:id="@id/comment_item_detail_avatar" android:layout_width="35.0dip" android:layout_height="35.0dip" android:scaleType="centerCrop" dp:isCircle="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+        <com.dianping.feed.widget.FeedClickableSpanTextView android:textSize="12.0sp" android:textColor="@color/b_7" android:ellipsize="end" android:id="@id/w8z" android:background="@drawable/se" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/mf9" android:ellipsize="end" android:id="@id/ksy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.5dip" android:maxLines="1" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/b_7" android:id="@id/osl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+    </LinearLayout>
+</LinearLayout>

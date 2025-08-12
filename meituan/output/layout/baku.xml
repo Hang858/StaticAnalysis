@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_layout" android:background="@drawable/q6p" android:padding="8.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="@color/szj" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="入住指南" android:maxLines="1" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/fyz" android:id="@id/tv_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="hi，感谢您预订我的民宿，这里有一份入住指南，位置指引、开门方式都在这里" android:lineSpacingMultiplier="1.3" />
+    <LinearLayout android:orientation="vertical" android:id="@id/cjt" android:layout_width="225.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+        <com.meituan.android.phoenix.atom.common.view.RoundCornerImageView android:id="@id/iv_product_img" android:background="@color/ecb" android:layout_width="fill_parent" android:layout_height="160.0dip" android:scaleType="centerCrop" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/szj" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/bckq" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:maxLines="2" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/pv_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:layout_marginBottom="5.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/wrd" android:id="@id/bbtm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点击查看入住指南详情" />
+        <ImageView android:layout_gravity="center" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="8.0dip" android:src="@mipmap/phx_ic_pub_suggest_product_card_more" />
+    </LinearLayout>
+</LinearLayout>

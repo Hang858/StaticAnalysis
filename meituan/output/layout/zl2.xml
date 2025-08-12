@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/klr" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.android.oversea.base.widget.OsStickyRecyclerView android:id="@id/qag" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.meituan.android.oversea.base.widget.OverseaPageLoadingView android:id="@id/bbzx" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.dianping.android.oversea.base.widget.OverseaRetryView android:id="@id/u9l" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

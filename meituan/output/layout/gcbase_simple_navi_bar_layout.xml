@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/gcbase_light_green" android:layout_gravity="center_vertical" android:id="@id/navigate_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:drawablePadding="8.0dip" />
+    <View android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/gcbase_soft_gray" android:layout_gravity="center_vertical" android:id="@id/right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/gcbase_right_arrow" android:drawablePadding="10.0dip" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/gcbase_soft_gray" android:layout_gravity="center_vertical" android:id="@id/down_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/gcbase_comment_arrow_down" android:drawablePadding="10.0dip" />
+</merge>

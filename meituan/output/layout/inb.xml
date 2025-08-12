@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="#2f000000" app:cardCornerRadius="8.0dip" app:cardElevation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.ConstraintLayout android:id="@id/balo" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:textColor="#e6ffffff" android:id="@id/bcxm" android:paddingTop="9.0dip" android:paddingBottom="11.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="猫眼综合口碑" android:drawablePadding="3.0dip" android:drawableStart="@drawable/cis" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <com.maoyan.android.presentation.mediumstudio.moviedetail.blocks.reputation.ReputationTopRightView android:id="@id/bmj" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/bcxm" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="@id/bcxm" />
+        <LinearLayout android:gravity="center" android:id="@id/content_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="40.0dip" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" app:layout_constraintEnd_toStartOf="@id/cni" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/bcxm">
+            <com.maoyan.android.presentation.mediumstudio.moviedetail.blocks.reputation.ReputationScoreContentView android:id="@id/bcxf" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.maoyan.android.presentation.mediumstudio.moviedetail.blocks.reputation.ReputationWishContentView android:id="@id/dqo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/cni" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="15.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/bcxm">
+            <com.maoyan.android.presentation.mediumstudio.moviedetail.blocks.reputation.ReputationRankBoardView android:layout_gravity="center_vertical" android:id="@id/p7t" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.maoyan.android.presentation.mediumstudio.moviedetail.blocks.reputation.ReputationRecommendTagView android:id="@id/ghj" android:visibility="gone" android:layout_width="120.0dip" android:layout_height="40.0dip" />
+        </LinearLayout>
+        <android.support.constraint.Barrier android:id="@id/tqy" android:layout_width="fill_parent" android:layout_height="1.0dip" app:barrierDirection="bottom" />
+        <com.maoyan.android.presentation.mediumstudio.moviedetail.blocks.reputation.AwardAndOneSentenceViewFlipper android:id="@id/clk" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/tqy" />
+    </android.support.constraint.ConstraintLayout>
+</merge>

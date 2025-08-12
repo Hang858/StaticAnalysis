@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sankuai.meituan.msv.list.widget.MuteButton android:id="@id/rip" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="0.0dip" android:alpha="0.0" />
+    <FrameLayout android:id="@id/vxk" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/lam" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/xae" android:background="#fffaede6" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:id="@id/msv_feed_multi_product_gradient_background" android:background="@color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="537.0dip" android:layout_alignBottom="@id/eyu" />
+        <android.support.v7.widget.AppCompatImageView android:id="@id/eyu" android:layout_width="fill_parent" android:layout_height="537.0dip" android:scaleType="fitXY" android:adjustViewBounds="true" />
+        <RelativeLayout android:id="@id/msv_feed_multi_product_header" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="183.0dip">
+            <android.support.v7.widget.AppCompatImageView android:id="@id/nzp" android:layout_width="154.0dip" android:layout_height="100.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="-16.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            <android.support.v7.widget.AppCompatImageView android:id="@id/msl" android:layout_width="176.0dip" android:layout_height="56.0dip" android:layout_marginLeft="26.0dip" android:layout_marginBottom="14.0dip" android:layout_alignParentBottom="true" />
+            <ViewStub android:id="@id/b_l" android:visibility="gone" android:layout="@layout/bag3" android:inflatedId="@id/b_l" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="26.0dip" android:layout_marginBottom="9.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <com.sankuai.meituan.msv.list.adapter.holder.multiproduct.productlist.view.AdMultiProductListLayout android:orientation="vertical" android:id="@id/mvc" android:background="@drawable/e5u" android:paddingLeft="10.0dip" android:paddingTop="8.0dip" android:paddingRight="10.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip" android:layout_marginBottom="61.0dip" android:layout_below="@id/msv_feed_multi_product_header" />
+        <RelativeLayout android:id="@id/load_more" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="57.0dip" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip" android:layout_marginBottom="-64.0dip" android:layout_alignBottom="@id/mvc">
+            <View android:id="@id/blank" android:background="@drawable/hnh" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentBottom="true" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/blank" android:layout_alignBottom="@id/blank" android:layout_centerHorizontal="true">
+                <android.support.v7.widget.AppCompatTextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="#ff1a1a1a" android:gravity="center" android:id="@id/i6l" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看更多" />
+                <android.support.v7.widget.AppCompatImageView android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="1.0dip" android:src="@drawable/msv_back" />
+            </LinearLayout>
+            <include android:id="@id/cj9" android:layout_width="wrap_content" android:layout_height="18.0dip" android:layout_toRightOf="@id/more" layout="@layout/rok" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="84.0dip" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                <android.support.v7.widget.AppCompatImageView android:layout_width="14.0dip" android:layout_height="14.0dip" android:src="@drawable/ban4" />
+                <android.support.v7.widget.AppCompatTextView android:textSize="@dimen/v6a" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="上滑继续看视频" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

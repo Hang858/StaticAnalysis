@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/vy_selected_filter_main_default_black2" android:gravity="center" android:id="@id/btn_filter_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    <ImageView android:id="@id/btn_filter_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:src="@drawable/vy_navi_arrow" />
+</merge>

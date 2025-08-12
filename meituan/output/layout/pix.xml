@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="300.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:id="@id/ckp" android:layout="@layout/h5e" android:inflatedId="@id/h5e" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" />
+    <com.sankuai.meituan.msv.list.widget.MSVProgressBarView android:id="@id/f7v" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginBottom="32.0dip" app:LBackgroundColorAlpha="0x00000026" app:LForegroundColorAlpha="0x000000D9" app:LProgressHeight="8.0dip" app:LThumbColorAlpha="0x000000FF" app:LThumbHeight="14.0dip" app:LThumbWidth="8.0dip" app:mBackgroundColorAlpha="0x00000021" app:mForegroundColorAlpha="0x000000B3" app:mProgressHeight="3.0dip" app:mThumbColorAlpha="0x000000FF" app:mThumbHeight="10.0dip" app:mThumbWidth="10.0dip" app:sBackgroundColorAlpha="0x00000021" app:sForegroundColorAlpha="0x000000B3" app:sProgressHeight="3.0dip" app:sThumbColorAlpha="0x000000FF" app:sThumbHeight="10.0dip" app:sThumbWidth="10.0dip" />
+</LinearLayout>

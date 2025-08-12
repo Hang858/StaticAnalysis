@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meituan.android.trafficayers.views.RoundImageView android:layout_gravity="center" android:id="@id/ges" android:background="@android:color/transparent" android:layout_width="57.0dip" android:layout_height="57.0dip" android:scaleType="fitCenter" app:traffic_borderRadius="2.0dip" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <ImageView android:id="@id/bbxc" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <ImageView android:id="@id/b_p" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+</merge>

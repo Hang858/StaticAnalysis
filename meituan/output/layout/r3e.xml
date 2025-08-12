@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:background="@drawable/bbfa" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="9.0dip" android:paddingEnd="9.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_0" android:layout_width="0.0dip" android:layout_height="60.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/layout_1" app:layout_constraintTop_toBottomOf="@id/ofi">
+        <View android:background="@color/bak1" android:layout_width="16.0dip" android:layout_height="16.0dip" />
+        <View android:background="@color/bak1" android:layout_width="40.0dip" android:layout_height="9.0dip" android:layout_marginTop="9.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_1" android:layout_width="0.0dip" android:layout_height="60.0dip" app:layout_constraintLeft_toRightOf="@id/layout_0" app:layout_constraintRight_toLeftOf="@id/layout_2" app:layout_constraintTop_toBottomOf="@id/ofi">
+        <View android:background="@color/bak1" android:layout_width="16.0dip" android:layout_height="16.0dip" />
+        <View android:background="@color/bak1" android:layout_width="40.0dip" android:layout_height="9.0dip" android:layout_marginTop="9.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_2" android:layout_width="0.0dip" android:layout_height="60.0dip" app:layout_constraintLeft_toRightOf="@id/layout_1" app:layout_constraintRight_toLeftOf="@id/layout_3" app:layout_constraintTop_toBottomOf="@id/ofi">
+        <View android:background="@color/bak1" android:layout_width="16.0dip" android:layout_height="16.0dip" />
+        <View android:background="@color/bak1" android:layout_width="40.0dip" android:layout_height="9.0dip" android:layout_marginTop="9.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_3" android:layout_width="0.0dip" android:layout_height="60.0dip" app:layout_constraintLeft_toRightOf="@id/layout_2" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/ofi">
+        <View android:background="@color/bak1" android:layout_width="16.0dip" android:layout_height="16.0dip" />
+        <View android:background="@color/bak1" android:layout_width="40.0dip" android:layout_height="9.0dip" android:layout_marginTop="10.0dip" />
+    </LinearLayout>
+    <android.support.constraint.ConstraintLayout android:orientation="vertical" android:id="@id/ofi" android:background="@drawable/bbvj" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="62.0dip" android:layout_marginTop="9.0dip" android:layout_marginEnd="4.5dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/e0b" app:layout_constraintTop_toTopOf="parent">
+        <View android:id="@id/nu5" android:background="@color/bak1" android:layout_width="74.0dip" android:layout_height="9.0dip" android:layout_marginTop="6.5dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="@id/kqc" app:layout_constraintTop_toBottomOf="@id/kqc" />
+        <View android:id="@id/kqc" android:background="@color/bak1" android:layout_width="48.0dip" android:layout_height="15.0dip" android:layout_marginStart="15.0dip" app:layout_constraintBottom_toTopOf="@id/nu5" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="packed" />
+    </android.support.constraint.ConstraintLayout>
+    <android.support.constraint.ConstraintLayout android:orientation="vertical" android:id="@id/e0b" android:background="@drawable/bbvj" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="62.0dip" android:layout_marginTop="9.0dip" android:layout_marginStart="4.5dip" app:layout_constraintLeft_toRightOf="@id/ofi" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <View android:id="@id/ovm" android:background="@color/bak1" android:layout_width="74.0dip" android:layout_height="9.0dip" android:layout_marginTop="6.5dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="@id/ksn" app:layout_constraintTop_toBottomOf="@id/ksn" />
+        <View android:id="@id/ksn" android:background="@color/bak1" android:layout_width="48.0dip" android:layout_height="15.0dip" android:layout_marginStart="15.0dip" app:layout_constraintBottom_toTopOf="@id/ovm" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="packed" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

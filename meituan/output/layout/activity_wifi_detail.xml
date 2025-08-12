@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff5f5f5" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.meituan.android.pin.bosswifi.biz.components.titlebar.WifiTitleBar android:id="@id/wifi_titlebar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:showBack="true" app:showCapsule="true" app:showClaimWifiInDialog="true" app:title="@string/wifi_app_name" />
+    <android.support.v4.widget.NestedScrollView android:background="#fff5f5f5" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="167.0dip" android:layout_height="167.0dip" android:layout_marginTop="6.0dip">
+                    <com.airbnb.lottie.LottieAnimationView android:id="@id/connected_lottie" android:visibility="gone" android:layout_width="167.0dip" android:layout_height="167.0dip" />
+                    <FrameLayout android:background="@drawable/wifi_connected_bg_bg" android:layout_width="115.0dip" android:layout_height="115.0dip" android:layout_centerInParent="true" />
+                    <FrameLayout android:id="@id/status_background" android:background="@drawable/wifi_not_connect_status_bg" android:layout_width="115.0dip" android:layout_height="115.0dip" android:layout_centerInParent="true" />
+                    <ImageView android:id="@id/wifi_not_connected" android:layout_width="60.0dip" android:layout_height="48.0dip" android:src="@drawable/wifi_not_connect" android:layout_centerInParent="true" />
+                    <com.airbnb.lottie.LottieAnimationView android:id="@id/lottie_connecting" android:layout_width="60.0dip" android:layout_height="48.0dip" android:layout_centerInParent="true" />
+                    <ImageView android:id="@id/wifi_connected_status" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="48.0dip" android:layout_centerInParent="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff00b300" android:id="@id/wifi_latency" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="109.5dip" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="#e6000000" android:ellipsize="end" android:gravity="center" android:id="@id/wifi_status_desc" android:layout_width="wrap_content" android:layout_height="28.0dip" android:maxWidth="200.0dip" android:text="@string/wifi_state_not_connected" android:maxLines="1" android:layout_centerHorizontal="true" />
+                    <TextView android:textSize="12.0sp" android:textColor="#80000000" android:gravity="center" android:id="@id/net_status" android:background="@drawable/merchant_label_background" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="18.0dip" android:layout_marginTop="5.5dip" android:paddingStart="4.0dip" android:paddingEnd="4.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="5.0dip" android:layout_toEndOf="@id/wifi_status_desc" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_marginTop="34.5dip">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/wifi_near" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ic_wifi_position" />
+                        <TextView android:textSize="14.0sp" android:textColor="#e6000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/boss_wifi_near" android:layout_marginStart="6.0dip" />
+                    </LinearLayout>
+                    <FrameLayout android:layout_gravity="center" android:id="@id/button_line" android:background="#1a000000" android:layout_width="1.0dip" android:layout_height="20.0dip" />
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/face_connect" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ic_wifi_qr_code" />
+                        <TextView android:textSize="14.0sp" android:textColor="#e6000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/boss_wifi_face" android:layout_marginStart="6.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <com.meituan.android.pin.bosswifi.biz.details.merchant.MerchantCardView android:id="@id/merchantCardView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

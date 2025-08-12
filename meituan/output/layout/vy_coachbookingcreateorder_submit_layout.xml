@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingLeft="@dimen/vy_standard_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0">
+        <TextView android:textSize="@dimen/vy_text_size_22" android:textColor="@color/vy_price_color" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="¥" />
+        <TextView android:textSize="@dimen/vy_text_size_22" android:textColor="@color/vy_price_color" android:gravity="center_vertical" android:id="@id/submit_price" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <Button android:textSize="@dimen/vy_text_size_16" android:textColor="@color/vy_white" android:layout_gravity="center" android:id="@id/submit_btn" android:background="@color/vy_standard_orange" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="去支付" android:layout_weight="2.0" />
+</LinearLayout>

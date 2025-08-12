@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ide" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/pt9" android:layout_width="fill_parent" android:layout_height="@dimen/qxj" />
+    <View android:id="@id/gvd" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:layout_gravity="bottom|center|right" android:id="@id/bfl" android:background="@drawable/s67" android:visibility="gone" android:layout_width="@dimen/ygx" android:layout_height="@dimen/ygx" />
+        <LinearLayout android:orientation="vertical" android:id="@id/qph" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:id="@id/t98" android:paddingTop="@dimen/iom" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View android:id="@id/dynamic_slot" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.meituan.android.food.widget.FoodSpace android:id="@id/c__" android:layout_width="fill_parent" android:layout_height="7.0dip" />
+        </LinearLayout>
+    </FrameLayout>
+    <com.meituan.android.food.widget.corner.FoodCornerFrameLayoutV2 android:id="@id/yl" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/sgp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:id="@id/ep2" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View android:id="@id/u5n" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View android:id="@id/non" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </com.meituan.android.food.widget.corner.FoodCornerFrameLayoutV2>
+</LinearLayout>

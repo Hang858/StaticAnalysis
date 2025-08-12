@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/o8n" android:background="@drawable/na9" android:layout_width="300.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/oxu" android:paddingTop="15.0dip" android:paddingRight="15.0dip" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/c47" android:layout_alignParentRight="true" />
+    <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/gg0" android:gravity="center" android:id="@id/pxb" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" android:maxLines="1" android:singleLine="true" android:layout_below="@id/oxu" android:layout_centerHorizontal="true" />
+    <FrameLayout android:id="@id/ofl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="21.0dip" android:layout_below="@id/pxb">
+        <com.meituan.android.paybase.widgets.bankcard.RoundImageView android:id="@id/marketing_background_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="18.0dip" android:layout_marginRight="18.0dip" android:src="@drawable/z0d" android:scaleType="fitXY" />
+        <LinearLayout android:orientation="vertical" android:id="@id/nk9" android:background="#00ffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginRight="18.0dip">
+            <TextView android:textSize="21.0dip" android:textStyle="bold" android:textColor="@color/ba4y" android:gravity="center" android:layout_gravity="center" android:id="@id/mcx" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="21.0dip" android:maxLines="2" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/kzm" android:gravity="center" android:layout_gravity="center" android:id="@id/zc7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:maxLines="1" android:singleLine="true" />
+            <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/rln" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_marginBottom="21.0dip">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/f8_" android:layout_width="15.0dip" android:layout_height="15.0dip" />
+                <TextView android:textSize="14.0dip" android:textColor="@color/m_c" android:gravity="center" android:id="@id/s_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:maxLines="1" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/bcis" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="18.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="18.0dip" android:layout_marginBottom="18.0dip" android:layout_below="@id/ofl">
+        <com.meituan.android.paybase.widgets.bankcard.RoundImageView android:id="@id/dw3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/fml" android:scaleType="fitXY" />
+        <com.meituan.android.paybase.widgets.ProgressButton android:textSize="14.0dip" android:textStyle="bold" android:textColor="@color/ugh" android:ellipsize="end" android:gravity="center" android:id="@id/n3e" android:background="#00ffffff" android:layout_width="fill_parent" android:layout_height="45.0dip" android:singleLine="true" />
+    </FrameLayout>
+</RelativeLayout>

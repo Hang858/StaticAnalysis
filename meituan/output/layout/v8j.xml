@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="70.0dip" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0dip" android:textColor="@color/o40" android:id="@id/w38" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="tab标签" />
+    <View android:layout_gravity="center" android:id="@id/d51" android:background="@drawable/zs8" android:visibility="visible" android:layout_width="15.0dip" android:layout_height="2.5dip" android:layout_marginTop="3.5dip" />
+</LinearLayout>

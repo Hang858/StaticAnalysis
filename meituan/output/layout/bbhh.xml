@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.bizcomponent.widgets.container.roundgroup.BizRoundedCornerLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.bizcomponent.widgets.container.headview.BizRotateImageView android:layout_gravity="center_vertical" android:id="@id/qx3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:src="@drawable/bbez" />
+    <TextView android:textSize="14.0sp" android:gravity="center" android:layout_gravity="left" android:id="@id/t92" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" />
+</com.dianping.bizcomponent.widgets.container.roundgroup.BizRoundedCornerLinearLayout>

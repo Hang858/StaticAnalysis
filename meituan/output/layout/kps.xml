@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sankuai.waimai.platform.widget.roundview.RoundedImageView android:id="@id/iv_comment_pic" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <ImageView android:layout_gravity="end" android:id="@id/iv_comment_video_icon" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/y60" android:scaleType="fitCenter" />
+    <LinearLayout android:gravity="center" android:layout_gravity="end|bottom|center" android:orientation="horizontal" android:id="@id/fqe" android:background="@drawable/nei" android:paddingLeft="4.0dip" android:paddingTop="3.0dip" android:paddingRight="4.0dip" android:paddingBottom="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip">
+        <com.meituan.roodesign.widgets.iconfont.RooIconFont android:textSize="18.0dip" android:textColor="@color/iwh" android:layout_width="18.0dip" android:layout_height="18.0dip" android:text="@string/mnh" android:includeFontPadding="false" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/tv_pic_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:includeFontPadding="false" />
+    </LinearLayout>
+</FrameLayout>

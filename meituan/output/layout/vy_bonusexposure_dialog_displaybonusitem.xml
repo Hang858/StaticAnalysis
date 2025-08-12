@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/vy_bonusexposure_displaybonusitem_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/vy_text_size_13" android:textColor="@color/tuan_common_black" android:id="@id/displaybonusitem_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/displaybonusitem_descriptionlist" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_below="@id/displaybonusitem_title" />
+    <ImageView android:id="@id/displaybonusitem_userreceive" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="48.0dip" android:src="@drawable/vy_bonusexposure_get" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

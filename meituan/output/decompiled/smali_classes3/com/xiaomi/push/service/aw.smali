@@ -1,0 +1,1345 @@
+.class public Lcom/xiaomi/push/service/aw;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/xiaomi/push/service/aw$a;,
+        Lcom/xiaomi/push/service/aw$b;
+    }
+.end annotation
+
+
+# static fields
+.field private static a:J
+
+
+# direct methods
+.method private static a(Landroid/content/Context;Ljava/io/InputStream;)I
+    .locals 3
+
+    new-instance v0, Landroid/graphics/BitmapFactory$Options;
+
+    invoke-direct {v0}, Landroid/graphics/BitmapFactory$Options;-><init>()V
+
+    const/4 v1, 0x1
+
+    iput-boolean v1, v0, Landroid/graphics/BitmapFactory$Options;->inJustDecodeBounds:Z
+
+    const/4 v2, 0x0
+
+    invoke-static {p1, v2, v0}, Landroid/graphics/BitmapFactory;->decodeStream(Ljava/io/InputStream;Landroid/graphics/Rect;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
+
+    iget p1, v0, Landroid/graphics/BitmapFactory$Options;->outWidth:I
+
+    const/4 v2, -0x1
+
+    if-eq p1, v2, :cond_2
+
+    iget p1, v0, Landroid/graphics/BitmapFactory$Options;->outHeight:I
+
+    if-ne p1, v2, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+
+    move-result-object p0
+
+    iget p0, p0, Landroid/util/DisplayMetrics;->densityDpi:I
+
+    int-to-float p0, p0
+
+    const/high16 p1, 0x43200000    # 160.0f
+
+    div-float/2addr p0, p1
+
+    const/high16 p1, 0x42400000    # 48.0f
+
+    mul-float/2addr p0, p1
+
+    invoke-static {p0}, Ljava/lang/Math;->round(F)I
+
+    move-result p0
+
+    iget p1, v0, Landroid/graphics/BitmapFactory$Options;->outWidth:I
+
+    if-le p1, p0, :cond_1
+
+    iget v0, v0, Landroid/graphics/BitmapFactory$Options;->outHeight:I
+
+    if-le v0, p0, :cond_1
+
+    div-int/2addr p1, p0
+
+    div-int/2addr v0, p0
+
+    invoke-static {p1, v0}, Ljava/lang/Math;->min(II)I
+
+    move-result p0
+
+    return p0
+
+    :cond_1
+    return v1
+
+    :cond_2
+    :goto_0
+    const-string p0, "decode dimension failed for bitmap."
+
+    invoke-static {p0}, Lcom/xiaomi/channel/commonutils/logger/b;->a(Ljava/lang/String;)V
+
+    return v1
+.end method
+
+.method public static a(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/Bitmap;
+    .locals 3
+
+    invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object p1
+
+    const/4 v0, 0x0
+
+    :try_start_0
+    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v1
+
+    invoke-virtual {v1, p1}, Landroid/content/ContentResolver;->openInputStream(Landroid/net/Uri;)Ljava/io/InputStream;
+
+    move-result-object v1
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_2
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+
+    :try_start_1
+    invoke-static {p0, v1}, Lcom/xiaomi/push/service/aw;->a(Landroid/content/Context;Ljava/io/InputStream;)I
+
+    move-result v2
+
+    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object p0
+
+    invoke-virtual {p0, p1}, Landroid/content/ContentResolver;->openInputStream(Landroid/net/Uri;)Ljava/io/InputStream;
+
+    move-result-object p0
+    :try_end_1
+    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    :try_start_2
+    new-instance p1, Landroid/graphics/BitmapFactory$Options;
+
+    invoke-direct {p1}, Landroid/graphics/BitmapFactory$Options;-><init>()V
+
+    iput v2, p1, Landroid/graphics/BitmapFactory$Options;->inSampleSize:I
+
+    invoke-static {p0, v0, p1}, Landroid/graphics/BitmapFactory;->decodeStream(Ljava/io/InputStream;Landroid/graphics/Rect;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
+
+    move-result-object p1
+    :try_end_2
+    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
+    .catchall {:try_start_2 .. :try_end_2} :catchall_2
+
+    invoke-static {p0}, Lcom/xiaomi/push/y;->a(Ljava/io/Closeable;)V
+
+    invoke-static {v1}, Lcom/xiaomi/push/y;->a(Ljava/io/Closeable;)V
+
+    return-object p1
+
+    :catch_0
+    move-exception p1
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p1
+
+    goto :goto_1
+
+    :catch_1
+    move-exception p1
+
+    move-object p0, v0
+
+    goto :goto_0
+
+    :catchall_1
+    move-exception p1
+
+    move-object v1, v0
+
+    goto :goto_1
+
+    :catch_2
+    move-exception p1
+
+    move-object p0, v0
+
+    move-object v1, p0
+
+    :goto_0
+    :try_start_3
+    invoke-static {p1}, Lcom/xiaomi/channel/commonutils/logger/b;->a(Ljava/lang/Throwable;)V
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_2
+
+    invoke-static {p0}, Lcom/xiaomi/push/y;->a(Ljava/io/Closeable;)V
+
+    invoke-static {v1}, Lcom/xiaomi/push/y;->a(Ljava/io/Closeable;)V
+
+    return-object v0
+
+    :catchall_2
+    move-exception p1
+
+    move-object v0, p0
+
+    :goto_1
+    invoke-static {v0}, Lcom/xiaomi/push/y;->a(Ljava/io/Closeable;)V
+
+    invoke-static {v1}, Lcom/xiaomi/push/y;->a(Ljava/io/Closeable;)V
+
+    throw p1
+.end method
+
+.method private static a(Ljava/lang/String;Z)Lcom/xiaomi/push/service/aw$a;
+    .locals 10
+
+    const/4 v0, 0x0
+
+    :try_start_0
+    new-instance v1, Ljava/net/URL;
+
+    invoke-direct {v1, p0}, Ljava/net/URL;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v1}, Ljava/net/URL;->openConnection()Ljava/net/URLConnection;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/meituan/metrics/traffic/hurl/b;->b(Ljava/net/URLConnection;)Ljava/net/URLConnection;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/net/HttpURLConnection;
+    :try_end_0
+    .catch Ljava/net/SocketTimeoutException; {:try_start_0 .. :try_end_0} :catch_4
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_3
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+
+    const/16 v2, 0x1f40
+
+    :try_start_1
+    invoke-virtual {v1, v2}, Ljava/net/URLConnection;->setConnectTimeout(I)V
+
+    const/16 v2, 0x4e20
+
+    invoke-virtual {v1, v2}, Ljava/net/URLConnection;->setReadTimeout(I)V
+
+    const-string v2, "User-agent"
+
+    const-string v3, "Mozilla/5.0 (Linux; U;) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/71.0.3578.141 Mobile Safari/537.36 XiaoMi/MiuiBrowser"
+
+    invoke-virtual {v1, v2, v3}, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+
+    invoke-virtual {v1}, Ljava/net/URLConnection;->connect()V
+
+    invoke-virtual {v1}, Ljava/net/URLConnection;->getContentLength()I
+
+    move-result v2
+
+    const v3, 0x19000
+
+    if-eqz p1, :cond_0
+
+    if-le v2, v3, :cond_0
+
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "Bitmap size is too big, max size is 102400  contentLen size is "
+
+    invoke-virtual {p1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v2, " from url "
+
+    invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lcom/xiaomi/channel/commonutils/logger/b;->a(Ljava/lang/String;)V
+    :try_end_1
+    .catch Ljava/net/SocketTimeoutException; {:try_start_1 .. :try_end_1} :catch_2
+    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    invoke-static {v0}, Lcom/xiaomi/push/y;->a(Ljava/io/Closeable;)V
+
+    invoke-virtual {v1}, Ljava/net/HttpURLConnection;->disconnect()V
+
+    return-object v0
+
+    :cond_0
+    :try_start_2
+    invoke-virtual {v1}, Ljava/net/HttpURLConnection;->getResponseCode()I
+
+    move-result v2
+
+    const/16 v4, 0xc8
+
+    if-eq v2, v4, :cond_1
+
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "Invalid Http Response Code "
+
+    invoke-virtual {p1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v2, " received"
+
+    invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lcom/xiaomi/channel/commonutils/logger/b;->a(Ljava/lang/String;)V
+    :try_end_2
+    .catch Ljava/net/SocketTimeoutException; {:try_start_2 .. :try_end_2} :catch_2
+    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_1
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    invoke-static {v0}, Lcom/xiaomi/push/y;->a(Ljava/io/Closeable;)V
+
+    invoke-virtual {v1}, Ljava/net/HttpURLConnection;->disconnect()V
+
+    return-object v0
+
+    :cond_1
+    :try_start_3
+    invoke-virtual {v1}, Ljava/net/URLConnection;->getInputStream()Ljava/io/InputStream;
+
+    move-result-object v2
+    :try_end_3
+    .catch Ljava/net/SocketTimeoutException; {:try_start_3 .. :try_end_3} :catch_2
+    .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_1
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+
+    :try_start_4
+    new-instance v4, Ljava/io/ByteArrayOutputStream;
+
+    invoke-direct {v4}, Ljava/io/ByteArrayOutputStream;-><init>()V
+
+    if-eqz p1, :cond_2
+
+    const p1, 0x19000
+
+    goto :goto_0
+
+    :cond_2
+    const p1, 0x1f4000
+
+    :goto_0
+    const/16 v5, 0x400
+
+    new-array v6, v5, [B
+
+    :goto_1
+    if-lez p1, :cond_4
+
+    const/4 v7, 0x0
+
+    invoke-virtual {v2, v6, v7, v5}, Ljava/io/InputStream;->read([BII)I
+
+    move-result v8
+
+    const/4 v9, -0x1
+
+    if-ne v8, v9, :cond_3
+
+    goto :goto_2
+
+    :cond_3
+    sub-int/2addr p1, v8
+
+    invoke-virtual {v4, v6, v7, v8}, Ljava/io/ByteArrayOutputStream;->write([BII)V
+
+    goto :goto_1
+
+    :cond_4
+    :goto_2
+    if-gtz p1, :cond_5
+
+    const-string p1, "length 102400 exhausted."
+
+    invoke-static {p1}, Lcom/xiaomi/channel/commonutils/logger/b;->a(Ljava/lang/String;)V
+
+    new-instance p1, Lcom/xiaomi/push/service/aw$a;
+
+    invoke-direct {p1, v0, v3}, Lcom/xiaomi/push/service/aw$a;-><init>([BI)V
+    :try_end_4
+    .catch Ljava/net/SocketTimeoutException; {:try_start_4 .. :try_end_4} :catch_5
+    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_0
+    .catchall {:try_start_4 .. :try_end_4} :catchall_2
+
+    invoke-static {v2}, Lcom/xiaomi/push/y;->a(Ljava/io/Closeable;)V
+
+    invoke-virtual {v1}, Ljava/net/HttpURLConnection;->disconnect()V
+
+    return-object p1
+
+    :cond_5
+    :try_start_5
+    invoke-virtual {v4}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
+
+    move-result-object p1
+
+    new-instance v3, Lcom/xiaomi/push/service/aw$a;
+
+    array-length v4, p1
+
+    invoke-direct {v3, p1, v4}, Lcom/xiaomi/push/service/aw$a;-><init>([BI)V
+    :try_end_5
+    .catch Ljava/net/SocketTimeoutException; {:try_start_5 .. :try_end_5} :catch_5
+    .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_0
+    .catchall {:try_start_5 .. :try_end_5} :catchall_2
+
+    invoke-static {v2}, Lcom/xiaomi/push/y;->a(Ljava/io/Closeable;)V
+
+    invoke-virtual {v1}, Ljava/net/HttpURLConnection;->disconnect()V
+
+    return-object v3
+
+    :catch_0
+    move-exception p0
+
+    goto :goto_3
+
+    :catchall_0
+    move-exception p0
+
+    goto :goto_7
+
+    :catch_1
+    move-exception p0
+
+    move-object v2, v0
+
+    goto :goto_3
+
+    :catch_2
+    move-object v2, v0
+
+    goto :goto_5
+
+    :catchall_1
+    move-exception p0
+
+    move-object v1, v0
+
+    goto :goto_7
+
+    :catch_3
+    move-exception p0
+
+    move-object v1, v0
+
+    move-object v2, v1
+
+    :goto_3
+    :try_start_6
+    invoke-static {p0}, Lcom/xiaomi/channel/commonutils/logger/b;->a(Ljava/lang/Throwable;)V
+    :try_end_6
+    .catchall {:try_start_6 .. :try_end_6} :catchall_2
+
+    invoke-static {v2}, Lcom/xiaomi/push/y;->a(Ljava/io/Closeable;)V
+
+    if-eqz v1, :cond_6
+
+    :goto_4
+    invoke-virtual {v1}, Ljava/net/HttpURLConnection;->disconnect()V
+
+    goto :goto_6
+
+    :catch_4
+    move-object v1, v0
+
+    move-object v2, v1
+
+    :catch_5
+    :goto_5
+    :try_start_7
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "Connect timeout to "
+
+    invoke-virtual {p1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {p0}, Lcom/xiaomi/channel/commonutils/logger/b;->d(Ljava/lang/String;)V
+    :try_end_7
+    .catchall {:try_start_7 .. :try_end_7} :catchall_2
+
+    invoke-static {v2}, Lcom/xiaomi/push/y;->a(Ljava/io/Closeable;)V
+
+    if-eqz v1, :cond_6
+
+    goto :goto_4
+
+    :cond_6
+    :goto_6
+    return-object v0
+
+    :catchall_2
+    move-exception p0
+
+    move-object v0, v2
+
+    :goto_7
+    invoke-static {v0}, Lcom/xiaomi/push/y;->a(Ljava/io/Closeable;)V
+
+    if-eqz v1, :cond_7
+
+    invoke-virtual {v1}, Ljava/net/HttpURLConnection;->disconnect()V
+
+    :cond_7
+    throw p0
+.end method
+
+.method public static a(Landroid/content/Context;Ljava/lang/String;Z)Lcom/xiaomi/push/service/aw$b;
+    .locals 6
+
+    new-instance v0, Lcom/xiaomi/push/service/aw$b;
+
+    const/4 v1, 0x0
+
+    const-wide/16 v2, 0x0
+
+    invoke-direct {v0, v1, v2, v3}, Lcom/xiaomi/push/service/aw$b;-><init>(Landroid/graphics/Bitmap;J)V
+
+    invoke-static {p0, p1}, Lcom/xiaomi/push/service/aw;->b(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/Bitmap;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_0
+
+    iput-object v2, v0, Lcom/xiaomi/push/service/aw$b;->a:Landroid/graphics/Bitmap;
+
+    return-object v0
+
+    :cond_0
+    :try_start_0
+    invoke-static {p1, p2}, Lcom/xiaomi/push/service/aw;->a(Ljava/lang/String;Z)Lcom/xiaomi/push/service/aw$a;
+
+    move-result-object v2
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+
+    if-nez v2, :cond_1
+
+    invoke-static {v1}, Lcom/xiaomi/push/y;->a(Ljava/io/Closeable;)V
+
+    return-object v0
+
+    :cond_1
+    :try_start_1
+    iget v3, v2, Lcom/xiaomi/push/service/aw$a;->a:I
+
+    int-to-long v3, v3
+
+    iput-wide v3, v0, Lcom/xiaomi/push/service/aw$b;->a:J
+
+    iget-object v3, v2, Lcom/xiaomi/push/service/aw$a;->a:[B
+
+    if-eqz v3, :cond_3
+
+    const/4 v4, 0x0
+
+    if-eqz p2, :cond_2
+
+    new-instance p2, Ljava/io/ByteArrayInputStream;
+
+    invoke-direct {p2, v3}, Ljava/io/ByteArrayInputStream;-><init>([B)V
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+
+    :try_start_2
+    invoke-static {p0, p2}, Lcom/xiaomi/push/service/aw;->a(Landroid/content/Context;Ljava/io/InputStream;)I
+
+    move-result v1
+
+    new-instance v5, Landroid/graphics/BitmapFactory$Options;
+
+    invoke-direct {v5}, Landroid/graphics/BitmapFactory$Options;-><init>()V
+
+    iput v1, v5, Landroid/graphics/BitmapFactory$Options;->inSampleSize:I
+
+    array-length v1, v3
+
+    invoke-static {v3, v4, v1, v5}, Landroid/graphics/BitmapFactory;->decodeByteArray([BIILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
+
+    move-result-object v1
+
+    iput-object v1, v0, Lcom/xiaomi/push/service/aw$b;->a:Landroid/graphics/Bitmap;
+    :try_end_2
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    move-object v1, p2
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p0
+
+    move-object v1, p2
+
+    goto :goto_3
+
+    :catch_0
+    move-exception p0
+
+    move-object v1, p2
+
+    goto :goto_1
+
+    :cond_2
+    :try_start_3
+    array-length p2, v3
+
+    invoke-static {v3, v4, p2}, Landroid/graphics/BitmapFactory;->decodeByteArray([BII)Landroid/graphics/Bitmap;
+
+    move-result-object p2
+
+    iput-object p2, v0, Lcom/xiaomi/push/service/aw$b;->a:Landroid/graphics/Bitmap;
+
+    :cond_3
+    :goto_0
+    iget-object p2, v2, Lcom/xiaomi/push/service/aw$a;->a:[B
+
+    invoke-static {p0, p2, p1}, Lcom/xiaomi/push/service/aw;->a(Landroid/content/Context;[BLjava/lang/String;)V
+    :try_end_3
+    .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_1
+    .catchall {:try_start_3 .. :try_end_3} :catchall_1
+
+    goto :goto_2
+
+    :catchall_1
+    move-exception p0
+
+    goto :goto_3
+
+    :catch_1
+    move-exception p0
+
+    :goto_1
+    :try_start_4
+    invoke-static {p0}, Lcom/xiaomi/channel/commonutils/logger/b;->a(Ljava/lang/Throwable;)V
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_1
+
+    :goto_2
+    invoke-static {v1}, Lcom/xiaomi/push/y;->a(Ljava/io/Closeable;)V
+
+    return-object v0
+
+    :goto_3
+    invoke-static {v1}, Lcom/xiaomi/push/y;->a(Ljava/io/Closeable;)V
+
+    throw p0
+.end method
+
+.method private static a(Landroid/content/Context;)V
+    .locals 8
+
+    .line 150000
+    new-instance v0, Ljava/io/File;
+
+    .line 150001
+    .line 150002
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 150003
+    .line 150004
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 150005
+    .line 150006
+    .line 150007
+    invoke-virtual {p0}, Landroid/content/Context;->getCacheDir()Ljava/io/File;
+
+    .line 150008
+    .line 150009
+    .line 150010
+    move-result-object p0
+
+    .line 150011
+    invoke-virtual {p0}, Ljava/io/File;->getPath()Ljava/lang/String;
+
+    .line 150012
+    .line 150013
+    .line 150014
+    move-result-object p0
+
+    .line 150015
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 150016
+    .line 150017
+    .line 150018
+    sget-object p0, Ljava/io/File;->separator:Ljava/lang/String;
+
+    .line 150019
+    .line 150020
+    const-string v2, "mipush_icon"
+
+    .line 150021
+    .line 150022
+    invoke-static {v1, p0, v2}, Landroid/arch/lifecycle/a;->n(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 150023
+    .line 150024
+    .line 150025
+    move-result-object p0
+
+    .line 150026
+    invoke-direct {v0, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 150027
+    .line 150028
+    .line 150029
+    invoke-virtual {v0}, Ljava/io/File;->exists()Z
+
+    .line 150030
+    move-result p0
+
+    if-nez p0, :cond_0
+
+    return-void
+
+    :cond_0
+    sget-wide v1, Lcom/xiaomi/push/service/aw;->a:J
+
+    const-wide/16 v3, 0x0
+
+    cmp-long p0, v1, v3
+
+    if-nez p0, :cond_1
+
+    invoke-static {v0}, Lcom/xiaomi/push/x;->a(Ljava/io/File;)J
+
+    move-result-wide v1
+
+    sput-wide v1, Lcom/xiaomi/push/service/aw;->a:J
+
+    :cond_1
+    sget-wide v1, Lcom/xiaomi/push/service/aw;->a:J
+
+    const-wide/32 v5, 0xf00000
+
+    cmp-long p0, v1, v5
+
+    if-lez p0, :cond_4
+
+    :try_start_0
+    invoke-virtual {v0}, Ljava/io/File;->listFiles()[Ljava/io/File;
+
+    move-result-object p0
+
+    const/4 v0, 0x0
+
+    :goto_0
+    array-length v1, p0
+
+    if-ge v0, v1, :cond_3
+
+    aget-object v1, p0, v0
+
+    invoke-virtual {v1}, Ljava/io/File;->isDirectory()Z
+
+    move-result v1
+
+    if-nez v1, :cond_2
+
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v1
+
+    aget-object v5, p0, v0
+
+    invoke-virtual {v5}, Ljava/io/File;->lastModified()J
+
+    move-result-wide v5
+
+    sub-long/2addr v1, v5
+
+    invoke-static {v1, v2}, Ljava/lang/Math;->abs(J)J
+
+    move-result-wide v1
+
+    const-wide/32 v5, 0x127500
+
+    cmp-long v7, v1, v5
+
+    if-lez v7, :cond_2
+
+    aget-object v1, p0, v0
+
+    invoke-virtual {v1}, Ljava/io/File;->delete()Z
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    :cond_2
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    :catch_0
+    move-exception p0
+
+    invoke-static {p0}, Lcom/xiaomi/channel/commonutils/logger/b;->a(Ljava/lang/Throwable;)V
+
+    :cond_3
+    sput-wide v3, Lcom/xiaomi/push/service/aw;->a:J
+
+    :cond_4
+    return-void
+.end method
+
+.method private static a(Landroid/content/Context;[BLjava/lang/String;)V
+    .locals 6
+
+    .line 430000
+    if-nez p1, :cond_0
+
+    .line 430001
+    .line 430002
+    const-string p0, "cannot save small icon cause bitmap is null"
+
+    .line 430003
+    .line 430004
+    invoke-static {p0}, Lcom/xiaomi/channel/commonutils/logger/b;->a(Ljava/lang/String;)V
+
+    .line 430005
+    .line 430006
+    .line 430007
+    return-void
+
+    .line 430008
+    :cond_0
+    invoke-static {p0}, Lcom/xiaomi/push/service/aw;->a(Landroid/content/Context;)V
+
+    .line 430009
+    .line 430010
+    .line 430011
+    new-instance v0, Ljava/io/File;
+
+    .line 430012
+    .line 430013
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 430014
+    .line 430015
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 430016
+    .line 430017
+    .line 430018
+    invoke-virtual {p0}, Landroid/content/Context;->getCacheDir()Ljava/io/File;
+
+    .line 430019
+    .line 430020
+    .line 430021
+    move-result-object v2
+
+    .line 430022
+    invoke-virtual {v2}, Ljava/io/File;->getPath()Ljava/lang/String;
+
+    .line 430023
+    .line 430024
+    .line 430025
+    move-result-object v2
+
+    .line 430026
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 430027
+    .line 430028
+    .line 430029
+    sget-object v2, Ljava/io/File;->separator:Ljava/lang/String;
+
+    .line 430030
+    .line 430031
+    const-string v3, "mipush_icon"
+
+    .line 430032
+    .line 430033
+    invoke-static {v1, v2, v3}, Landroid/arch/lifecycle/a;->n(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 430034
+    .line 430035
+    .line 430036
+    move-result-object v1
+
+    .line 430037
+    invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 430038
+    .line 430039
+    .line 430040
+    invoke-virtual {v0}, Ljava/io/File;->exists()Z
+
+    .line 430041
+    .line 430042
+    .line 430043
+    move-result v1
+
+    .line 430044
+    if-nez v1, :cond_1
+
+    .line 430045
+    .line 430046
+    invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
+
+    .line 430047
+    .line 430048
+    .line 430049
+    :cond_1
+    new-instance v1, Ljava/io/File;
+
+    .line 430050
+    .line 430051
+    invoke-static {p2}, Lcom/xiaomi/push/bo;->a(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 430052
+    .line 430053
+    .line 430054
+    move-result-object p2
+
+    .line 430055
+    invoke-direct {v1, v0, p2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    .line 430056
+    .line 430057
+    .line 430058
+    const/4 p2, 0x0
+
+    .line 430059
+    :try_start_0
+    invoke-virtual {v1}, Ljava/io/File;->exists()Z
+
+    .line 430060
+    .line 430061
+    .line 430062
+    move-result v0
+
+    .line 430063
+    if-nez v0, :cond_2
+
+    .line 430064
+    .line 430065
+    invoke-virtual {v1}, Ljava/io/File;->createNewFile()Z
+
+    .line 430066
+    .line 430067
+    .line 430068
+    :cond_2
+    new-instance v0, Ljava/io/FileOutputStream;
+
+    .line 430069
+    .line 430070
+    invoke-direct {v0, v1}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_2
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+
+    .line 430071
+    .line 430072
+    .line 430073
+    :try_start_1
+    new-instance v2, Ljava/io/BufferedOutputStream;
+
+    .line 430074
+    .line 430075
+    invoke-direct {v2, v0}, Ljava/io/BufferedOutputStream;-><init>(Ljava/io/OutputStream;)V
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_2
+
+    .line 430076
+    .line 430077
+    .line 430078
+    :try_start_2
+    invoke-virtual {v2, p1}, Ljava/io/OutputStream;->write([B)V
+
+    .line 430079
+    .line 430080
+    .line 430081
+    invoke-virtual {v2}, Ljava/io/BufferedOutputStream;->flush()V
+    :try_end_2
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    .line 430082
+    .line 430083
+    .line 430084
+    invoke-static {v2}, Lcom/xiaomi/push/y;->a(Ljava/io/Closeable;)V
+
+    .line 430085
+    .line 430086
+    .line 430087
+    goto :goto_1
+
+    .line 430088
+    :catchall_0
+    move-exception p0
+
+    .line 430089
+    move-object p2, v2
+
+    .line 430090
+    goto :goto_2
+
+    .line 430091
+    :catch_0
+    move-exception p1
+
+    .line 430092
+    move-object p2, v2
+
+    .line 430093
+    goto :goto_0
+
+    .line 430094
+    :catch_1
+    move-exception p1
+
+    .line 430095
+    goto :goto_0
+
+    .line 430096
+    :catchall_1
+    move-exception p0
+
+    .line 430097
+    move-object v0, p2
+
+    .line 430098
+    goto :goto_2
+
+    .line 430099
+    :catch_2
+    move-exception p1
+
+    .line 430100
+    move-object v0, p2
+
+    .line 430101
+    :goto_0
+    :try_start_3
+    invoke-static {p1}, Lcom/xiaomi/channel/commonutils/logger/b;->a(Ljava/lang/Throwable;)V
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_2
+
+    .line 430102
+    .line 430103
+    .line 430104
+    invoke-static {p2}, Lcom/xiaomi/push/y;->a(Ljava/io/Closeable;)V
+
+    .line 430105
+    .line 430106
+    .line 430107
+    :goto_1
+    invoke-static {v0}, Lcom/xiaomi/push/y;->a(Ljava/io/Closeable;)V
+
+    .line 430108
+    .line 430109
+    .line 430110
+    sget-wide p1, Lcom/xiaomi/push/service/aw;->a:J
+
+    .line 430111
+    .line 430112
+    const-wide/16 v4, 0x0
+
+    .line 430113
+    .line 430114
+    cmp-long v0, p1, v4
+
+    .line 430115
+    .line 430116
+    if-nez v0, :cond_3
+
+    .line 430117
+    .line 430118
+    new-instance p1, Ljava/io/File;
+
+    .line 430119
+    .line 430120
+    new-instance p2, Ljava/lang/StringBuilder;
+
+    .line 430121
+    .line 430122
+    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 430123
+    .line 430124
+    .line 430125
+    invoke-virtual {p0}, Landroid/content/Context;->getCacheDir()Ljava/io/File;
+
+    .line 430126
+    .line 430127
+    .line 430128
+    move-result-object p0
+
+    .line 430129
+    invoke-virtual {p0}, Ljava/io/File;->getPath()Ljava/lang/String;
+
+    .line 430130
+    .line 430131
+    .line 430132
+    move-result-object p0
+
+    .line 430133
+    invoke-virtual {p2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 430134
+    .line 430135
+    .line 430136
+    sget-object p0, Ljava/io/File;->separator:Ljava/lang/String;
+
+    .line 430137
+    .line 430138
+    invoke-static {p2, p0, v3}, Landroid/arch/lifecycle/a;->n(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 430139
+    .line 430140
+    .line 430141
+    move-result-object p0
+
+    .line 430142
+    invoke-direct {p1, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 430143
+    .line 430144
+    .line 430145
+    invoke-static {p1}, Lcom/xiaomi/push/x;->a(Ljava/io/File;)J
+
+    .line 430146
+    .line 430147
+    .line 430148
+    move-result-wide p0
+
+    .line 430149
+    invoke-virtual {v1}, Ljava/io/File;->length()J
+
+    .line 430150
+    move-result-wide v0
+
+    add-long/2addr v0, p0
+
+    sput-wide v0, Lcom/xiaomi/push/service/aw;->a:J
+
+    :cond_3
+    return-void
+
+    :catchall_2
+    move-exception p0
+
+    move-object p1, p2
+
+    move-object p2, v0
+
+    move-object v0, p2
+
+    move-object p2, p1
+
+    :goto_2
+    invoke-static {p2}, Lcom/xiaomi/push/y;->a(Ljava/io/Closeable;)V
+
+    invoke-static {v0}, Lcom/xiaomi/push/y;->a(Ljava/io/Closeable;)V
+
+    throw p0
+.end method
+
+.method private static b(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/Bitmap;
+    .locals 4
+
+    .line 260000
+    new-instance v0, Ljava/io/File;
+
+    .line 260001
+    .line 260002
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 260003
+    .line 260004
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 260005
+    .line 260006
+    .line 260007
+    invoke-virtual {p0}, Landroid/content/Context;->getCacheDir()Ljava/io/File;
+
+    .line 260008
+    .line 260009
+    .line 260010
+    move-result-object p0
+
+    .line 260011
+    invoke-virtual {p0}, Ljava/io/File;->getPath()Ljava/lang/String;
+
+    .line 260012
+    .line 260013
+    .line 260014
+    move-result-object p0
+
+    .line 260015
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 260016
+    .line 260017
+    .line 260018
+    sget-object p0, Ljava/io/File;->separator:Ljava/lang/String;
+
+    .line 260019
+    .line 260020
+    const-string v2, "mipush_icon"
+
+    .line 260021
+    .line 260022
+    invoke-static {v1, p0, v2}, Landroid/arch/lifecycle/a;->n(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 260023
+    .line 260024
+    .line 260025
+    move-result-object p0
+
+    .line 260026
+    invoke-static {p1}, Lcom/xiaomi/push/bo;->a(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 260027
+    .line 260028
+    .line 260029
+    move-result-object p1
+
+    .line 260030
+    invoke-direct {v0, p0, p1}, Ljava/io/File;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
+    invoke-virtual {v0}, Ljava/io/File;->exists()Z
+
+    move-result p0
+
+    const/4 p1, 0x0
+
+    if-nez p0, :cond_0
+
+    return-object p1
+
+    :cond_0
+    :try_start_0
+    new-instance p0, Ljava/io/FileInputStream;
+
+    invoke-direct {p0, v0}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+
+    :try_start_1
+    invoke-static {p0}, Landroid/graphics/BitmapFactory;->decodeStream(Ljava/io/InputStream;)Landroid/graphics/Bitmap;
+
+    move-result-object p1
+
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v1
+
+    invoke-virtual {v0, v1, v2}, Ljava/io/File;->setLastModified(J)Z
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    invoke-static {p0}, Lcom/xiaomi/push/y;->a(Ljava/io/Closeable;)V
+
+    goto :goto_1
+
+    :catchall_0
+    move-exception p1
+
+    goto :goto_2
+
+    :catch_0
+    move-exception v0
+
+    move-object v3, p1
+
+    move-object p1, p0
+
+    move-object p0, v3
+
+    goto :goto_0
+
+    :catchall_1
+    move-exception p0
+
+    move-object v3, p1
+
+    move-object p1, p0
+
+    move-object p0, v3
+
+    goto :goto_2
+
+    :catch_1
+    move-exception p0
+
+    move-object v0, p0
+
+    move-object p0, p1
+
+    :goto_0
+    :try_start_2
+    invoke-static {v0}, Lcom/xiaomi/channel/commonutils/logger/b;->a(Ljava/lang/Throwable;)V
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+
+    invoke-static {p1}, Lcom/xiaomi/push/y;->a(Ljava/io/Closeable;)V
+
+    move-object p1, p0
+
+    :goto_1
+    return-object p1
+
+    :goto_2
+    invoke-static {p0}, Lcom/xiaomi/push/y;->a(Ljava/io/Closeable;)V
+
+    throw p1
+.end method

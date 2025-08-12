@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:background="@color/olj" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/fl_title_container" android:layout_width="fill_parent" android:layout_height="47.0dip" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/ohj" android:gravity="center" android:layout_gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bu1" />
+        <FrameLayout android:layout_gravity="center|right" android:id="@id/close" android:layout_width="46.0dip" android:layout_height="fill_parent">
+            <View android:layout_gravity="center" android:background="@drawable/b3x" android:layout_width="16.0dip" android:layout_height="16.0dip" />
+        </FrameLayout>
+    </FrameLayout>
+    <android.support.v4.widget.NestedScrollView android:id="@id/bccz" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/fl_title_container">
+        <LinearLayout android:orientation="vertical" android:id="@id/wx" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="12.0dip" android:paddingEnd="12.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/dl8" android:background="@drawable/k8u" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/ohj" android:id="@id/bj8" android:paddingTop="12.0dip" android:paddingBottom="11.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="5.0dip" android:paddingStart="12.0dip" />
+                    <ImageView android:id="@id/bbsx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:src="@drawable/movie_ic_arrow_right_gray" android:layout_toRightOf="@id/bj8" android:layout_centerVertical="true" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/ohj" android:ellipsize="end" android:id="@id/bmv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="12.0dip" />
+                </RelativeLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/s1_" android:background="@drawable/eok" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/ohj" android:id="@id/xi9" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/lwn" android:background="@drawable/k8u" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/ohj" android:id="@id/tm6" android:paddingTop="12.0dip" android:paddingBottom="11.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="5.0dip" android:paddingStart="12.0dip" />
+                    <ImageView android:id="@id/bcvo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:src="@drawable/movie_ic_arrow_right_gray" android:layout_toRightOf="@id/tm6" android:layout_centerVertical="true" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/ohj" android:ellipsize="end" android:id="@id/bc7t" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="12.0dip" />
+                </RelativeLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/bbs9" android:background="@drawable/eok" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/ohj" android:id="@id/og0" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/pu4" android:background="@drawable/k8u" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip">
+                <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/ohj" android:id="@id/xuj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="11.0dip" android:layout_marginStart="12.0dip" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/pqr" android:background="@drawable/k8u" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="12.0dip" android:paddingEnd="12.0dip">
+                    <TextView android:textSize="13.0sp" android:textColor="@color/qg6" android:id="@id/m9d" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/qg6" android:id="@id/j62" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/qg6" android:id="@id/baf2" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.constraint.ConstraintLayout>

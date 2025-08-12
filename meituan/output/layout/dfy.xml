@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.platform.widget.RoundedLinearLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="81.0dip" app:cornerRadius="6.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/holder" android:background="@color/white" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.sankuai.waimai.platform.widget.roundview.RoundedImageView android:layout_gravity="center_vertical" android:id="@id/h0q" android:layout_width="65.0dip" android:layout_height="65.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:scaleType="centerCrop" android:layout_alignParentLeft="true" app:riv_corner_radius="2.0dip" />
+        <RelativeLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="8.0dip" android:layout_toLeftOf="@id/divider" android:layout_toRightOf="@id/h0q">
+            <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:ellipsize="end" android:id="@id/sh4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_above="@id/i07" android:layout_alignParentTop="true" />
+            <LinearLayout android:id="@id/i07" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="-5.0dip" android:layout_alignParentBottom="true">
+                <TextView android:textSize="18.0sp" android:textColor="#fffb4e44" android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/u_x" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="11.0sp" android:textColor="#ffa9a9a9" android:layout_gravity="bottom" android:id="@id/dvr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:id="@id/divider" android:background="#fff2f2f2" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_toLeftOf="@id/xef" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/vok" android:layout_gravity="center_vertical" android:id="@id/xef" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发送商品" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</com.sankuai.waimai.platform.widget.RoundedLinearLayout>

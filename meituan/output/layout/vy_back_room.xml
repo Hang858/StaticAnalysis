@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_gravity="center_horizontal" android:id="@id/gallery_arrow" android:background="@drawable/vy_backroom_shadow" android:layout_width="98.0dip" android:layout_height="126.0dip" android:layout_marginTop="6.0dip" />
+    <com.dianping.voyager.joy.backroom.widget.ecogallery.EcoGallery android:id="@id/images_ecogallery" android:paddingTop="10.0dip" android:paddingBottom="11.0dip" android:saveEnabled="false" android:layout_width="fill_parent" android:layout_height="130.0dip" app:movieAnimationDuration="260" app:movieGravity="80" app:movieSpacing="7.0dip" app:movieUnselectedAlpha="1.0" app:movieUserZoomAnimation="true" />
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="18.0sp" android:textColor="#ff202020" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginBottom="14.0dip" android:text="划线价格" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff595959" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="产品/服务展示的划横线价格为参考价，该价格指产品/服务的门市价、服务提供商的指导价、零售价、市场价或该产品/服务在美团平台上曾经展示过的销售价等，并非原价；由于地区、时间的差异性和市场行情的波动，该价格可能会与您预定时展示的不一致，该价格仅供您参考。" android:lineSpacingExtra="8.0dip" />
+</LinearLayout>

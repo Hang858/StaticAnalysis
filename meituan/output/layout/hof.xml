@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/r5n" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/eji" android:background="@drawable/eo7" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/s1h" android:background="@drawable/eno" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="@dimen/r0j" android:layout_marginTop="@dimen/r0j" android:layout_marginRight="@dimen/r0j">
+            <ImageView android:id="@id/search_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/mvm" />
+            <TextView android:textSize="20.0sp" android:textColorHint="#ff858687" android:gravity="center|left" android:layout_gravity="center|left" android:id="@id/flg" android:background="@android:color/transparent" android:paddingLeft="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="输入商家/商品名" android:singleLine="true" />
+            <LinearLayout android:gravity="right" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:textSize="22.0sp" android:textStyle="bold" android:textColor="#ff0d0d0d" android:layout_gravity="right" android:id="@id/gao" android:background="@drawable/gn1" android:layout_width="84.0dip" android:layout_height="fill_parent" android:text="搜索" style="?android:borderlessButtonStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

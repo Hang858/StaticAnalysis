@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/floatwin_root" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="94.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="16.0dip">
+            <ImageView android:id="@id/iv_ad_icon" android:layout_width="16.0dip" android:layout_height="16.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/hades_top_floatwin_name_color_honor" android:id="@id/tv_ad_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/hades_top_floatwin_time_color_honor" android:id="@id/tv_ad_push_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hades_push_time_default" android:layout_marginStart="8.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/hades_top_floatwin_title_color" android:id="@id/tv_ad_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/hades_top_floatwin_content_color_honor" android:ellipsize="end" android:id="@id/tv_ad_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:maxLines="1" />
+            </LinearLayout>
+            <ImageView android:id="@id/iv_ad_illustration" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginStart="16.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

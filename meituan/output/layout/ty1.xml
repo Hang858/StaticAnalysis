@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:extendListView="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff333333" android:gravity="center" android:id="@id/ty7" android:background="@drawable/zp8" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/clw" />
+        <ImageView android:gravity="center" android:id="@id/hmx" android:layout_width="40.0dip" android:layout_height="wrap_content" android:src="@drawable/ds1" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/bbea" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0sp" android:textColor="#ff222426" android:ellipsize="end" android:id="@id/ehd" android:background="#fffff9ea" android:paddingLeft="12.0dip" android:paddingTop="8.0dip" android:paddingRight="12.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="最早明天商家10:00营业后开始配送" android:maxLines="2" />
+    <com.sankuai.waimai.bussiness.order.base.widget.extendlist.ExtendListView android:id="@id/hgp" android:background="@color/ihf" android:layout_width="fill_parent" android:layout_height="fill_parent" extendListView:firstWidthPercent="0.33" />
+</LinearLayout>

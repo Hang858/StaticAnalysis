@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/wifi_titlebar_back" android:background="?selectableItemBackgroundBorderless" android:visibility="visible" android:layout_width="48.0dip" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:layout_gravity="center" android:layout_width="34.0dip" android:layout_height="34.0dip" android:src="@drawable/ic_wifi_title_back" />
+    </FrameLayout>
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/black" android:id="@id/wifi_titlebar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="标题" android:layout_marginStart="10.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.meituan.android.pin.bosswifi.biz.components.titlebar.WifiCapsule android:id="@id/wifi_titlebar_capsule" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="12.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

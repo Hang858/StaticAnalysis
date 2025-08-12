@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/header_layout" android:visibility="visible" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="256.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/header_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <TextView android:textSize="@dimen/iz4" android:textColor="@color/jpg" android:id="@id/uv0" android:padding="@dimen/yxe" android:layout_width="18.0dip" android:layout_height="wrap_content" android:layout_marginTop="99.0dip" android:text="@string/moc" android:layout_alignParentRight="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/nkf" android:layout_width="327.0dip" android:layout_height="30.0dip" android:layout_marginTop="173.0dip" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/header_cross_line_left_icon" android:layout_width="32.0dip" android:layout_height="32.0dip" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/wm_sg_color_222426" android:ellipsize="end" android:id="@id/olq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:maxLines="1" android:layout_weight="1.0" />
+        <RelativeLayout android:id="@id/oae" android:paddingLeft="@dimen/hue" android:paddingTop="@dimen/hue" android:layout_width="wrap_content" android:layout_height="@dimen/l9r" android:layout_marginRight="3.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/oux" android:paddingLeft="@dimen/uv2" android:paddingRight="@dimen/uv2" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <TextView android:textSize="12.0sp" android:textColor="@color/wm_sg_color_222426" android:id="@id/p2l" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:id="@id/iv_header_cross_btn_right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bbrs" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@id/yn4" android:background="@color/w88" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

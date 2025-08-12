@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.imagemanager.DPNetworkImageView android:id="@id/vy_bath_website_banner_mixedview_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <com.dianping.voyager.joy.bath.widget.BathWebsiteShortVideoView android:id="@id/vy_bath_website_banner_mixedview_video" android:layout_width="fill_parent" android:layout_height="wrap_content" dp:panelLayoutResource="@layout/vy_joy_website_banner_video_panel_layout" />
+</merge>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/h9d" android:background="@drawable/mni" android:paddingLeft="8.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/refuse_img" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/o9a" />
+    <TextView android:textSize="12.0sp" android:textColor="#5a000000" android:id="@id/zqr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点此拒收" />
+</LinearLayout>

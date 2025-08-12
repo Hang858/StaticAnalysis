@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meituan.android.ktv.deallist.view.ad.KTVDealListAdView android:background="@color/ktv_white" android:layout_width="fill_parent" android:layout_height="125.0dip" android:divider="@drawable/ktv_divider_vertical_drawable" android:showDividers="middle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ktv_deal_list_ad_view_left_ad" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.dianping.imagemanager.DPNetworkImageView android:layout_gravity="center_horizontal" android:id="@id/ktv_deal_list_ad_view_left_title" android:layout_width="wrap_content" android:layout_height="16.0dip" android:layout_marginTop="13.5dip" android:scaleType="fitXY" dp:placeholderEmpty="@drawable/placeholder_loading" dp:placeholderError="@drawable/placeholder_error" dp:placeholderLoading="@drawable/placeholder_loading" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/ktv_ad_view_text_color_1" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/ktv_deal_list_ad_view_left_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="5.0dip" android:maxLines="1" android:includeFontPadding="false" />
+        </LinearLayout>
+        <ViewSwitcher android:id="@id/ktv_deal_list_ad_view_left_switcher" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="16.0dip" android:inAnimation="@anim/ktv_deal_list_ad_view_promo_in" android:outAnimation="@anim/ktv_deal_list_ad_view_promo_out">
+            <include layout="@layout/ktv_deal_list_ad_view_promo_item_layout" />
+            <include layout="@layout/ktv_deal_list_ad_view_promo_item_layout" />
+        </ViewSwitcher>
+    </LinearLayout>
+    <include android:id="@id/ktv_deal_list_ad_view_mid_ad" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/ktv_deal_list_ad_view_ad_item_layout" />
+    <include android:id="@id/ktv_deal_list_ad_view_right_ad" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/ktv_deal_list_ad_view_ad_item_layout" />
+</com.meituan.android.ktv.deallist.view.ad.KTVDealListAdView>

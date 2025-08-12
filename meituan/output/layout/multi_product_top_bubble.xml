@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_top_bubble" android:layout_width="fill_parent" android:layout_height="22.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.AppCompatImageView android:id="@id/iv_top_bubble_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <android.support.v7.widget.AppCompatImageView android:id="@id/iv_top_bubble_icon" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="4.0dip" android:layout_centerVertical="true" />
+    <android.support.v7.widget.AppCompatTextView android:textSize="12.0dip" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/tv_top_bubble_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:maxLines="1" android:layout_toRightOf="@id/iv_top_bubble_icon" android:layout_centerVertical="true" />
+</RelativeLayout>

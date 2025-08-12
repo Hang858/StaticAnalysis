@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/bceg" android:background="@drawable/ws3" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/kj3" layout="@layout/obf" />
+            <LinearLayout android:orientation="vertical" android:paddingLeft="5.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginTop="11.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/wzv" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_centerVertical="true">
+                        <com.sankuai.waimai.store.view.banner.roundview.UniversalImageView android:id="@id/nke" android:visibility="gone" android:layout_width="53.0dip" android:layout_height="16.0dip" android:layout_marginRight="4.0dip" android:scaleType="fitXY" />
+                        <ImageView android:id="@id/of" android:visibility="gone" android:layout_width="29.0dip" android:layout_height="16.0dip" android:layout_marginRight="4.0dip" android:scaleType="center" />
+                        <ImageView android:id="@id/fs6" android:visibility="gone" android:layout_width="29.0dip" android:layout_height="16.0dip" android:layout_marginRight="4.0dip" android:scaleType="center" />
+                        <ImageView android:id="@id/rm8" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="16.0dip" android:layout_marginRight="4.0dip" android:scaleType="fitXY" />
+                        <ImageView android:id="@id/poi_card_general_poi_new_brand_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="16.0dip" android:layout_marginRight="4.0dip" android:scaleType="fitXY" />
+                        <ImageView android:id="@id/poi_card_general_poi_authentication_icon" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="16.0dip" android:layout_marginRight="4.0dip" android:scaleType="fitXY" />
+                        <ImageView android:id="@id/g2w" android:visibility="gone" android:layout_width="43.0dip" android:layout_height="16.0dip" android:layout_marginRight="4.0dip" android:scaleType="center" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/etj" android:layout_width="wrap_content" android:layout_height="16.0dip" android:layout_marginLeft="12.0dip" android:layout_alignParentRight="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/dpv" android:visibility="gone" android:layout_width="38.0dip" android:layout_height="14.0dip" android:layout_marginRight="4.0dip" android:scaleType="fitEnd" />
+                        <ImageView android:id="@id/bka" android:visibility="gone" android:layout_width="52.0dip" android:layout_height="16.0dip" android:layout_marginTop="0.5dip" android:layout_marginBottom="1.0dip" android:scaleType="fitXY" />
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/gyj" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="16.0dip">
+                            <ImageView android:id="@id/zwh" android:visibility="gone" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginLeft="4.0dip" />
+                            <TextView android:textSize="11.0dip" android:id="@id/ysy" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="#ff222426" android:gravity="center_vertical" android:id="@id/sd5" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginTop="-1.0dip" android:maxLines="1" android:includeFontPadding="true" android:layout_toLeftOf="@id/etj" android:layout_toRightOf="@id/wzv" />
+                </RelativeLayout>
+                <FrameLayout android:id="@id/zgc" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="16.0dip" android:layout_marginTop="4.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/evu" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/ju6" android:layout_width="11.0dip" android:layout_height="11.0dip" android:layout_marginLeft="4.0dip" android:src="@drawable/eel" />
+                        <TextView android:textSize="11.0dip" android:textColor="@android:color/white" android:id="@id/vqx" android:paddingLeft="2.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+                    </LinearLayout>
+                    <TextView android:textSize="11.0dip" android:textColor="@android:color/white" android:id="@id/baup" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </FrameLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/inv" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="1.0">
+                    <RelativeLayout android:gravity="bottom" android:id="@id/poi_card_general_poi_mask_delivery_container" android:layout_width="fill_parent" android:layout_height="14.0dip" android:layout_marginTop="4.0dip">
+                        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+                            <TextView android:textSize="11.0dip" android:textColor="#ff575859" android:id="@id/n91" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <com.sankuai.waimai.store.widgets.StrikeTextView android:textSize="10.0dip" android:textColor="#ffc9c5c2" android:id="@id/nco" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" />
+                            <TextView android:textSize="11.0dip" android:ellipsize="end" android:id="@id/vg2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:maxLines="1" />
+                            <TextView android:textSize="11.0dip" android:textColor="#ffbcbcbd" android:id="@id/rkt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="4.0dip" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/bauo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                            <TextView android:textSize="11.0dip" android:textColor="#ff575859" android:id="@id/xm1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" />
+                            <TextView android:textSize="11.0dip" android:textColor="#ff575859" android:id="@id/vyt" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/bbst" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="18.0dip" android:layout_marginTop="4.0dip">
+                        <FrameLayout android:id="@id/speed_and_month" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+                            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/speed_send_layout" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                                <com.sankuai.waimai.store.view.banner.roundview.UniversalImageView android:id="@id/speed_send_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0px" android:scaleType="center" />
+                                <TextView android:textSize="11.0dip" android:textColor="#ffbc8518" android:id="@id/speed_send_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            </LinearLayout>
+                            <TextView android:textSize="11.0dip" android:textColor="#ff575859" android:id="@id/ilo" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </FrameLayout>
+                        <com.sankuai.waimai.store.mach.recommendtag.RecommendFlowLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/scm" android:layout_width="fill_parent" android:layout_height="18.0dip" android:layout_marginRight="12.0dip" android:layout_toLeftOf="@id/speed_and_month" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <FrameLayout android:orientation="horizontal" android:id="@id/p9a" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.5dip" android:layout_marginTop="6.0dip">
+                        <LinearLayout android:orientation="vertical" android:id="@id/l7u" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="24.0dip" />
+                        <FrameLayout android:layout_gravity="center|right|top" android:id="@id/qp7" android:layout_width="40.0dip" android:layout_height="16.0dip" android:layout_marginRight="-15.0dip">
+                            <ImageView android:layout_gravity="center|right" android:id="@id/pb4" android:layout_width="11.0dip" android:layout_height="11.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/xf0" />
+                        </FrameLayout>
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@id/s8o" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginTop="8.0dip" />
+    </LinearLayout>
+</FrameLayout>

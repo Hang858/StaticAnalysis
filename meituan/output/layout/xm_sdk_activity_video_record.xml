@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="@color/videolib_record_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/videolib_text_color_white" android:id="@id/videolib_tv_video_record_return" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xm_sdk_video_record_return" style="@style/xm_sdk_video_text_view_style_18n" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/rl_video_record" android:layout_below="@id/videolib_tv_video_record_return">
+        <SurfaceView android:id="@id/videolib_surface_record" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        <ProgressBar android:id="@id/progress_bar_record_video" android:layout_width="fill_parent" android:layout_height="@dimen/videolib_progress_bar_height" android:layout_alignParentBottom="true" style="?android:progressBarStyleHorizontal" />
+        <TextView android:textSize="@dimen/videolib_record_remind_text_size" android:textColor="@color/videolib_record_remind_text" android:id="@id/videolib_tv_record_remind" android:paddingTop="@dimen/videolib_tv_record_remind_padding_top" android:paddingBottom="@dimen/videolib_tv_record_remind_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/videolib_tv_record_remind_margin_bottom" android:layout_above="@id/progress_bar_record_video" android:layout_centerHorizontal="true" android:paddingStart="@dimen/videolib_tv_record_remind_padding_left" android:paddingEnd="@dimen/videolib_tv_record_remindpadding_right" style="@style/xm_sdk_video_text_view_style_18n" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_video_record" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/videolib_rl_record_area_min_height" android:layout_alignParentBottom="true">
+        <com.sankuai.xm.video.SimpleTextView android:textSize="@dimen/videolib_record_btn_text_size" android:textColor="@color/videolib_main_color" android:gravity="center" android:id="@id/btn_video_record" android:background="@drawable/videolib_ring_record_bg" android:layout_width="@dimen/videolib_record_btn_size" android:layout_height="@dimen/videolib_record_btn_size" android:text="@string/xm_sdk_video_record_pressed_to_record" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

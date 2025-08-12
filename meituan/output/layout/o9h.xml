@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/m6v" android:background="@drawable/jko" android:layout_width="195.0dip" android:layout_height="32.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/mr7" android:background="@drawable/rc_" android:layout_width="95.5dip" android:layout_height="28.0dip" android:layout_marginLeft="2.0dip" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textStyle="bold" android:textColor="@color/ml4" android:gravity="center" android:id="@id/r8_" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="单程" android:layout_weight="1.0" />
+        <TextView android:textStyle="bold" android:textColor="@color/yj" android:gravity="center" android:id="@id/bb27" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="往返" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/giw" android:background="@drawable/qiz" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" app:layout_constraintTop_toTopOf="parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.meituan.sankuai.map.unity.lib.views.SingleShowSearchView android:id="@id/n7" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/g_a" android:background="@color/igq" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <android.support.v7.widget.RecyclerView android:id="@id/u5g" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="28.0dip" android:layout_margin="8.0dip" />
+</LinearLayout>

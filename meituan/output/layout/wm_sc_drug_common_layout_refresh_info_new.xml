@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/top_patch_view" android:layout_width="fill_parent" android:layout_height="106.0dip" />
+    <View android:id="@id/loading_top_patch_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+    <include android:id="@id/progress_round_info" android:visibility="gone" layout="@layout/bb45" />
+    <com.sankuai.waimai.store.newwidgets.AnimatableImageView android:id="@id/progress_info" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:drawableRes="@drawable/drug_common_loading_animation" />
+    <TextView android:textSize="@dimen/iz4" android:textColor="@color/hf4" android:gravity="center" android:id="@id/txt_progress_info" android:layout_marginTop="14.0dip" style="@style/WmStStoreText.MultiLine" />
+    <ImageView android:id="@id/img_info" android:layout_width="@dimen/rd2" android:layout_height="@dimen/bcrp" />
+    <TextView android:textSize="@dimen/sk1" android:textColor="@color/wm_sg_color_858687" android:gravity="center" android:id="@id/txt_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/wm_sg_color_BCBCBD" android:gravity="center" android:id="@id/txt_sub_info" android:layout_marginTop="6.0dip" style="@style/WmStStoreText.MultiLine" />
+    <TextView android:textSize="@dimen/sk1" android:textStyle="bold" android:textColor="@color/pjf" android:gravity="center" android:id="@id/btn_info" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="32.0dip" android:layout_marginTop="12.0dip" />
+    <TextView android:textSize="@dimen/sk1" android:textColor="#ffbcbcbd" android:id="@id/txt_diting_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</merge>

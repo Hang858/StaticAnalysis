@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.4" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:background="@drawable/hv4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.sankuai.waimai.business.restaurant.poicontainer.viewblocks.floatcoupon.FloatCouponTabLayout android:id="@id/gpu" android:layout_width="240.0dip" android:layout_height="42.0dip" android:layout_centerHorizontal="true" app:tabIndicatorColor="@color/hp_" app:tabIndicatorHeight="2.0dip" app:tabIndicatorWidth="20.0dip" app:tabSelectedTextColor="@color/woz" app:tabTextColor="@color/hrw" app:tabTextSize="16.0dip" />
+            <ImageView android:id="@id/close_button" android:layout_width="46.0dip" android:layout_height="46.0dip" android:src="@drawable/dfj" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/pil" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="400.0dip">
+            <com.sankuai.waimai.business.restaurant.poicontainer.views.SafeViewPager android:id="@id/fev" android:layout_width="fill_parent" android:layout_height="400.0dip" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

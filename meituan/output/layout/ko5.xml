@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="310.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/wx" android:layout_width="fill_parent" android:layout_height="wrap_content" app:behavior_hideable="true" app:layout_behavior="@string/bottom_sheet_behavior">
+        <FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/ohj" android:gravity="center" android:layout_gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/om8" />
+            <FrameLayout android:layout_gravity="center|right" android:id="@id/close" android:layout_width="46.0dip" android:layout_height="fill_parent">
+                <View android:layout_gravity="center" android:background="@drawable/b3x" android:layout_width="14.0dip" android:layout_height="14.0dip" />
+            </FrameLayout>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/k8u" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:divider="@drawable/tl8" android:showDividers="middle">
+            <View android:id="@id/z9k" android:paddingLeft="14.5dip" android:paddingTop="12.5dip" android:paddingRight="14.5dip" android:paddingBottom="12.5dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View android:id="@id/gdk" android:paddingLeft="14.5dip" android:paddingTop="12.5dip" android:paddingRight="14.5dip" android:paddingBottom="12.5dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View android:id="@id/gxk" android:paddingLeft="14.5dip" android:paddingTop="12.5dip" android:paddingRight="14.5dip" android:paddingBottom="12.5dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View android:id="@id/nlj" android:paddingLeft="14.5dip" android:paddingTop="12.5dip" android:paddingRight="14.5dip" android:paddingBottom="12.5dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View android:id="@id/rjr" android:paddingLeft="14.5dip" android:paddingTop="12.5dip" android:paddingRight="14.5dip" android:paddingBottom="12.5dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

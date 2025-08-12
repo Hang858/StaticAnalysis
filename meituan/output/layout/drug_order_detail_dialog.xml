@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/drug_order_detail_dialog_bg" android:layout_width="310.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="#ff575859" android:id="@id/tv_drug_order_detail_dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+    <LinearLayout android:gravity="center" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="26.0dip" android:layout_marginBottom="12.0dip">
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff222426" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tv_drug_order_detail_dialog_normal_button" android:background="@drawable/drug_order_detail_dialog_cancel_button" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff222426" android:gravity="center" android:layout_gravity="center|right" android:id="@id/tv_drug_order_detail_dialog_highlight_button" android:background="@drawable/drug_order_detail_dialog_confirm_button" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="12.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

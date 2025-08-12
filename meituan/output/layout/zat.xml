@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/yav" android:background="@drawable/hs7" android:layout_width="300.0dip" android:layout_height="450.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <ImageView android:id="@id/th7" android:layout_width="wrap_content" android:layout_height="16.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/bboc" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <TextView android:textSize="@dimen/text_size_19" android:textColor="@color/urw" android:gravity="center_vertical" android:id="@id/details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:text="套餐介绍" android:layout_alignParentLeft="true" />
+    </LinearLayout>
+    <View android:background="@color/x3s" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="25.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="25.0dip" />
+    <ScrollView android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/m28" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+</LinearLayout>

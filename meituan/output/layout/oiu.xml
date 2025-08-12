@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/wc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="47.5dip" android:layout_marginRight="47.5dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="上传凭证中，请稍侯…" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="38.5dip" android:layout_marginTop="17.0dip" android:layout_marginRight="39.0dip">
+        <ProgressBar android:gravity="center_vertical" android:id="@id/progressBar" android:layout_width="0.0dip" android:layout_height="5.0dip" android:max="100" android:progressDrawable="@drawable/js9" android:layout_weight="1.0" style="?android:progressBarStyleHorizontal" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff222222" android:layout_gravity="center_vertical" android:id="@id/s8b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" />
+    </LinearLayout>
+    <View android:background="#ffd2d3d5" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="23.0dip" />
+    <TextView android:textSize="18.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/btn_cancel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.5dip" android:layout_marginBottom="12.5dip" android:text="取消" />
+</LinearLayout>

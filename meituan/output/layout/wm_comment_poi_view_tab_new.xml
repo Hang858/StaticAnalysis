@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/cv1" android:layout_width="wrap_content" android:layout_height="24.0dip" android:layout_marginRight="24.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/wm_restaurant_comment_111111" android:id="@id/comment_tab_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="center" />
+    <View android:id="@id/comment_tab_indicator" android:background="@color/wm_restaurant_comment_FFDD00" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="3.0dip" />
+</LinearLayout>

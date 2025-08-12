@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/f0a" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sankuai.meituan.msv.list.adapter.holder.rightinteraction.avatar.AvatarView android:id="@id/xfc" android:layout_width="fill_parent" android:layout_height="@dimen/dj8" />
+    <com.sankuai.meituan.msv.list.adapter.holder.rightinteraction.like.LikeView android:id="@id/whv" android:layout_width="fill_parent" android:layout_height="@dimen/muw" android:layout_marginTop="@dimen/g3q" />
+    <com.sankuai.meituan.msv.list.adapter.holder.rightinteraction.comment.CommentView android:id="@id/f_r" android:layout_width="fill_parent" android:layout_height="@dimen/muw" android:layout_marginTop="@dimen/g3q" />
+    <com.sankuai.meituan.msv.list.adapter.holder.rightinteraction.collect.CollectView android:id="@id/s7d" android:layout_width="fill_parent" android:layout_height="@dimen/muw" android:layout_marginTop="@dimen/g3q" />
+    <com.sankuai.meituan.msv.list.adapter.holder.rightinteraction.share.ShareView android:id="@id/pco" android:layout_width="fill_parent" android:layout_height="@dimen/muw" android:layout_marginTop="@dimen/g3q" />
+</LinearLayout>

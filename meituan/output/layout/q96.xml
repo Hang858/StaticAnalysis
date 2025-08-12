@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/fq_" android:background="@color/m5b" android:clickable="true" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <com.meituan.android.mtgb.business.filter.view.QuickFilterRecyclerView android:id="@id/content_list" android:paddingTop="4.0dip" android:paddingBottom="8.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <FrameLayout android:id="@id/ubp" android:paddingTop="2.0dip" android:paddingBottom="6.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="-5.0dip">
+            <ImageView android:id="@id/more_filter_bt_mask" android:layout_width="14.0dip" android:layout_height="32.0dip" />
+            <com.meituan.android.mtgb.business.filter.view.QuickMoreItemView android:id="@id/qqk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

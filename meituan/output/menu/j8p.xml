@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:support="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_action_share" android:id="@id/action_share" android:title="@string/pim" support:showAsAction="always" />
+    <item android:id="@id/fso" android:orderInCategory="2" android:title="" support:actionProviderClass="com.meituan.android.commonmenu.CommonMenuActionProvider" support:showAsAction="always" />
+</menu>

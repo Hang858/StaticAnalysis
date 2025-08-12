@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/msv_tab_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/msv_tab_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:layout_gravity="bottom" android:id="@id/msv_tab_divider" android:background="#fff5f5f5" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="@dimen/msv_tab_container_bottom_tab_height" />
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/msv_tab_view" android:layout_width="fill_parent" android:layout_height="@dimen/msv_tab_container_bottom_tab_height" />
+</FrameLayout>

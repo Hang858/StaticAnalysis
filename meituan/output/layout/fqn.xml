@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/gqa" android:layout_width="300.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/bcrt" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23.0dip" android:text="@string/np8" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/zmo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="28.0dip" android:layout_marginTop="23.0dip" android:layout_marginRight="28.0dip" android:layout_marginBottom="34.0dip" android:layout_below="@id/title">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="@color/qk9" android:ellipsize="end" android:id="@id/uj3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在下载 " android:lines="1" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/qk9" android:id="@id/svq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+        </LinearLayout>
+        <ProgressBar android:id="@id/progress" android:layout_width="fill_parent" android:layout_height="7.0dip" android:layout_marginTop="10.0dip" android:max="100" android:progress="0" android:progressDrawable="@drawable/s4n" style="@android:style/Widget.ProgressBar.Horizontal" />
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/ke3" android:gravity="center" android:layout_gravity="center" android:id="@id/btn_cancel" android:background="@drawable/bwr" android:layout_width="131.0dip" android:layout_height="43.0dip" android:layout_marginLeft="14.0dip" android:layout_marginBottom="14.0dip" android:text="@string/pn4" android:layout_below="@id/zmo" />
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/b_m" android:gravity="center" android:layout_gravity="center" android:id="@id/bbti" android:background="@drawable/u5l" android:layout_width="131.0dip" android:layout_height="45.0dip" android:layout_marginRight="14.0dip" android:layout_marginBottom="14.0dip" android:text="@string/k9n" android:layout_below="@id/zmo" android:layout_alignParentRight="true" />
+</RelativeLayout>

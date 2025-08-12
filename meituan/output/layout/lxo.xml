@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/qfh" android:layout_width="wrap_content" android:layout_height="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/img_member_entry_icon" android:layout_width="wrap_content" android:layout_height="20.0dip" android:src="@drawable/f65" android:adjustViewBounds="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#ff222426" android:ellipsize="end" android:id="@id/j_d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:maxLines="1" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/img_member_entry_icon" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/epv" android:tint="#ff222426" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/j_d" app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

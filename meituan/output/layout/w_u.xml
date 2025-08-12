@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/b5b" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginBottom="14.0dip">
+            <View android:id="@id/ba22" android:background="#ffd8d8d8" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/x6y" app:layout_constraintTop_toTopOf="parent" />
+            <TextView android:textSize="14.0sp" android:textColor="#99000000" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/x6y" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pjx" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/ba22" app:layout_constraintRight_toLeftOf="@id/r86" app:layout_constraintTop_toTopOf="parent" />
+            <View android:id="@id/r86" android:background="#ffd8d8d8" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/x6y" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+        <FrameLayout android:id="@id/bcmx" android:background="@drawable/blq" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+            <com.meituan.android.ptcommonim.widget.PTFeedbackView android:id="@id/jzf" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </FrameLayout>
+    </LinearLayout>
+</merge>

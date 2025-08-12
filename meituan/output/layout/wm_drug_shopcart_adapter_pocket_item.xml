@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_pocket" android:background="@color/jpg" android:paddingTop="9.0dip" android:paddingBottom="9.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="36.0dip">
+        <TextView android:textSize="11.0sp" android:textColor="@color/jpg" android:gravity="center|left" android:id="@id/txt_promotion_info" android:background="@drawable/wm_drug_new_poi_market_adapter_goods_item_promotion_bg" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:visibility="visible" android:layout_marginLeft="15.0dip" android:layout_marginTop="1.0dip" style="@style/WmScLabel" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/s7s" android:gravity="center" android:id="@id/txt_foodCount_number" android:background="@color/wm_st_common_transparent" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="25.0dip" android:text="0" android:maxEms="3" android:layout_centerInParent="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/right_button_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+            <TextView android:textSize="12.0dip" android:textColor="@color/s7s" android:gravity="center|right" android:id="@id/text_plus_tag" android:paddingLeft="12.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_st_shopcart_plus_area" />
+            <ImageView android:layout_gravity="center" android:id="@id/img_shop_cart_arrow" android:visibility="gone" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginTop="0.5dip" android:layout_marginRight="10.0dip" android:scaleType="centerInside" />
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="@color/s7s" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/txt_cart_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:maxLines="2" android:layout_toLeftOf="@id/right_button_layout" android:layout_toRightOf="@id/txt_promotion_info" />
+    </RelativeLayout>
+    <View android:id="@id/view_food_divider" android:background="@color/wm_st_common_e4e4e4" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+    <View android:id="@id/blank_view" android:background="@color/wm_st_shopcart_bg_gray_f5" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+</LinearLayout>

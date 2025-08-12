@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/container" android:padding="@dimen/z34" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/yxh" android:textStyle="bold" android:textColor="@color/wm_sg_color_FF8000" android:id="@id/nvg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:id="@id/n7f" android:layout_width="1.0px" android:layout_height="@dimen/uv2" android:layout_marginRight="@dimen/bbrs" android:layout_toLeftOf="@id/nvg" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/i6c" android:textColor="@color/pjf" android:ellipsize="end" android:id="@id/tv_time" android:paddingRight="@dimen/bbrs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_toLeftOf="@id/n7f" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+</RelativeLayout>

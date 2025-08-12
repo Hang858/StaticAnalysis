@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/filter_container" android:background="@android:color/transparent" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="22.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/filter_lable" android:visibility="gone" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginRight="2.0dip" />
+    <ImageView android:id="@id/filter_title_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="12.0dip" />
+    <TextView android:textSize="13.0sp" android:textColor="#ff222222" android:ellipsize="end" android:gravity="center" android:id="@id/filter_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+    <ImageView android:id="@id/filter_icon" android:layout_width="6.5dip" android:layout_height="4.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/rhr" />
+</LinearLayout>

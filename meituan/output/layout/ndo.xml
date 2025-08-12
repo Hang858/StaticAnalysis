@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/rlh" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff222426" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/bbg_" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="#ff858687" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bav4" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff222426" android:id="@id/doctors" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/record" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="#ff858687" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ljv" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff222426" android:id="@id/zs2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_sc_shop_view_coupon" android:drawableRight="@drawable/jf_" android:drawablePadding="7.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/zks" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="#ff858687" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gxn" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff222426" android:id="@id/pharmacist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/xt_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="16.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="#ff858687" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/jf_" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff222426" android:id="@id/c21" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_sc_shop_view_coupon" android:drawableRight="@drawable/jf_" android:drawablePadding="7.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

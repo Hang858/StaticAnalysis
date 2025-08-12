@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/kmj" android:layout_width="90.0dip" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <TextView android:textSize="10.0sp" android:textColor="@color/lrt" android:ellipsize="end" android:id="@id/yy1" android:background="@drawable/iya" android:paddingLeft="4.0dip" android:paddingTop="2.5dip" android:paddingBottom="2.5dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/ghv" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:adjustViewBounds="true" android:layout_toRightOf="@id/kmj" android:layout_centerVertical="true" />
+    <com.dianping.android.oversea.base.widget.OsRichTextView android:id="@id/t1h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/r4v" android:ellipsize="end" android:id="@id/hmk" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="8.0dip" android:maxLines="1" android:includeFontPadding="false" android:layout_toLeftOf="@id/t1h" android:layout_toRightOf="@id/ghv" android:layout_centerVertical="true" android:layout_marginStart="6.0dip" android:layout_marginEnd="8.0dip" android:layout_toStartOf="@id/t1h" android:layout_toEndOf="@id/ghv" />
+</merge>

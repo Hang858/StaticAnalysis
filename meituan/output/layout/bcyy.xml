@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:id="@id/p4r" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include android:id="@id/ec7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.5dip" layout="@layout/ec7" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/l5k" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.5dip" android:showDividers="middle" />
+</merge>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/filter_list" android:background="@color/zvg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="#ffe4e4e4" android:dividerHeight="0.5dip" android:choiceMode="singleChoice" />
+    <include layout="@layout/h5m" />
+    <View android:id="@id/paz" android:background="@color/filter_bottom_bg" android:clickable="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/dialog_content" android:background="#80000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/oxf" android:background="@drawable/lns" android:clickable="true" android:layout_width="295.0dip" android:layout_height="393.0dip" android:layout_centerInParent="true">
+        <ImageView android:id="@id/bbmf" android:layout_width="78.0dip" android:layout_height="78.0dip" android:layout_marginTop="107.0dip" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/zsu" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="222.0dip" android:text="美团酒店" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/zsu" android:id="@id/desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="送了您一个红包" android:layout_below="@id/title" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff78560e" android:gravity="center" android:id="@id/s0" android:background="@drawable/ba3r" android:layout_width="255.0dip" android:layout_height="50.0dip" android:layout_marginBottom="18.0dip" android:text="立即领取" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/cvk" android:visibility="gone" android:clickable="true" android:layout_width="295.0dip" android:layout_height="392.0dip" android:layout_centerInParent="true">
+        <FrameLayout android:id="@id/d8g" android:background="@drawable/bcw6" android:layout_width="266.0dip" android:layout_height="295.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+            <FrameLayout android:id="@id/dxy" android:background="@drawable/i65" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="25.0dip" android:layout_marginTop="122.0dip" android:layout_marginRight="25.0dip">
+                <ProgressBar android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" style="?android:progressBarStyleSmall" />
+            </FrameLayout>
+        </FrameLayout>
+        <ImageView android:id="@id/p1_" android:visibility="gone" android:layout_width="46.0dip" android:layout_height="46.0dip" android:layout_marginBottom="84.0dip" android:src="@drawable/zk4" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <RelativeLayout android:id="@id/d1j" android:background="@drawable/t2q" android:layout_width="295.0dip" android:layout_height="166.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff78560e" android:gravity="center" android:id="@id/confirm" android:background="@drawable/ba3r" android:layout_width="255.0dip" android:layout_height="50.0dip" android:layout_marginBottom="18.0dip" android:text="我知道了" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:src="@drawable/mr8" android:tint="@color/zsu" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

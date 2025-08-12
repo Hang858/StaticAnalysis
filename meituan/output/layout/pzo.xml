@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:tag="notHide" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="0.0dip" android:paddingEnd="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.AppCompatTextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="#ffff2d19" android:gravity="start" android:id="@id/xmr" android:tag="notHide" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥" android:includeFontPadding="false" android:layout_marginEnd="1.0dip" />
+    <android.support.v7.widget.AppCompatTextView android:textSize="24.0dip" android:textStyle="bold" android:textColor="#ffff2d19" android:ellipsize="end" android:gravity="start" android:id="@id/f6_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:includeFontPadding="false" />
+    <android.support.v7.widget.AppCompatTextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="#ffff2d19" android:gravity="start" android:id="@id/sez" android:tag="notHide" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:includeFontPadding="false" />
+    <android.support.v7.widget.AppCompatTextView android:textSize="14.0dip" android:textColor="#ff999999" android:gravity="start" android:id="@id/duw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥" android:layout_marginStart="4.0dip" />
+    <android.support.v7.widget.AppCompatTextView android:textSize="14.0dip" android:textColor="#ff999999" android:ellipsize="end" android:gravity="start" android:id="@id/bct1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:includeFontPadding="false" />
+</LinearLayout>

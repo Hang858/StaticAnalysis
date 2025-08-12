@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sankuai.xm.imui.common.view.AdaptiveImageView android:layout_gravity="center" android:id="@id/smiley_icon" android:background="@drawable/xm_sdk_bg_emotion_big_item" android:padding="3.0dip" android:layout_width="@dimen/xm_sdk_big_emotion_size" android:layout_height="@dimen/xm_sdk_big_emotion_size" />
+    <TextView android:textSize="12.0sp" android:textColor="#59000000" android:layout_gravity="center_horizontal" android:id="@id/smiley_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" style="@style/xm_sdk_text_view_style_18n" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/ok9" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/tae" android:gravity="center" android:id="@id/tv_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pka" android:drawableTop="@drawable/hg7" android:drawablePadding="15.0dip" />
+    <Button android:id="@id/of5" android:layout_width="@dimen/pu_" android:layout_height="@dimen/zag" android:layout_marginTop="20.0dip" android:text="@string/ce7" style="@style/maicai_controls_retry_loading_button_style" />
+</LinearLayout>

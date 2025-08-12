@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="end" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:gravity="end" android:orientation="vertical" android:id="@id/browseRewardContainer" android:background="@drawable/bg_circular_countdown_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="46.0dip" android:paddingStart="16.0dip" android:paddingEnd="54.0dip">
+        <TextView android:textSize="11.0dip" android:textColor="@android:color/white" android:layout_gravity="end|center|top" android:id="@id/browseText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:includeFontPadding="false" />
+        <TextView android:textSize="11.0dip" android:textColor="@android:color/white" android:layout_gravity="end|bottom|center" android:id="@id/h52" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="7.5dip" android:includeFontPadding="false" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="end" android:id="@id/circularContainer" android:background="@drawable/bg_circular_countdown_view" android:layout_width="46.0dip" android:layout_height="46.0dip">
+        <com.meituan.android.common.ui.widget.RoundImageView android:id="@id/imageView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:riv_border="false" app:riv_radius="23.0dip" />
+        <com.sankuai.meituan.msv.common.ui.MSVCircularCountdownView android:id="@id/circularCountdownView" android:layout_width="fill_parent" android:layout_height="fill_parent" app:circleBorderWidth="2.5dip" app:circleColor="#ffffde85" app:currentTime="15000" app:totalTime="20000" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="10.0dip" android:textColor="@android:color/white" android:gravity="center" android:id="@id/labelText" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.sankuai.meituan.msv.common.ui.MSVCountdownView android:textSize="12.0dip" android:textStyle="bold" android:textColor="#ffffe1b3" android:gravity="center" android:id="@id/countdownText" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" app:endText="" app:textCountDownInterval="1000" app:timeFormat="mm:ss" app:timeInMillis="5000" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

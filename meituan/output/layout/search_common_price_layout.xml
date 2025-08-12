@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.AppCompatTextView android:textSize="11.0dip" android:textColor="@color/search_color_FF2C1A" android:layout_gravity="bottom" android:id="@id/search_common_price_symbol" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+    <android.support.v7.widget.AppCompatTextView android:textColor="@color/search_color_FF2C1A" android:layout_gravity="bottom" android:id="@id/search_common_price_main" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+    <android.support.v7.widget.AppCompatTextView android:textSize="14.0dip" android:textColor="@color/search_color_FF2C1A" android:layout_gravity="bottom" android:id="@id/search_common_price_point" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+    <android.support.v7.widget.AppCompatTextView android:textSize="11.0dip" android:textColor="@color/search_color_FF2C1A" android:layout_gravity="bottom" android:id="@id/search_common_price_sub" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+    <android.support.v7.widget.AppCompatTextView android:textSize="10.0dip" android:textColor="@color/search_color_888888" android:layout_gravity="bottom" android:id="@id/search_common_price_suffixText" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:includeFontPadding="false" />
+</merge>

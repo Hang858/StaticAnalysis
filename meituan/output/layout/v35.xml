@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.meituan.msv.lite.viewholder.widget.MSVLiteProgressBarFrameLayout android:id="@id/emy" android:background="@color/epz" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.AppCompatImageView android:id="@id/kjs" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="60.0dip" android:scaleType="fitCenter" />
+    <FrameLayout android:id="@id/bc39" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="60.0dip" />
+    <android.support.v7.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/d4a" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tsq" />
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/sy1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="60.0dip">
+        <android.support.v7.widget.AppCompatTextView android:textSize="15.0dip" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="start|center|top" android:layout_gravity="bottom" android:id="@id/baac" android:background="@drawable/bx4" android:padding="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:shadowColor="#29000000" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:alpha="0.85" />
+        <ViewStub android:id="@id/fs2" android:layout="@layout/yj7" android:inflatedId="@id/fs2" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+    </LinearLayout>
+    <include layout="@layout/ug_" />
+    <ViewStub android:id="@id/k7j" android:layout="@layout/k7j" android:inflatedId="@id/k7j" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:layout_gravity="bottom|center" android:id="@id/cxe" android:layout="@layout/l5j" android:inflatedId="@id/cxe" android:layout_width="240.0dip" android:layout_height="63.0dip" android:layout_marginBottom="6.0dip" />
+    <ViewStub android:layout_gravity="bottom|center" android:id="@id/vqr" android:layout="@layout/pkc" android:inflatedId="@id/vqr" android:layout_width="343.0dip" android:layout_height="63.0dip" android:layout_marginBottom="6.0dip" />
+    <FrameLayout android:id="@id/g3d" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ViewStub android:layout_gravity="center" android:id="@id/thy" android:layout="@layout/clp" android:inflatedId="@id/thy" android:layout_width="wrap_content" android:layout_height="28.0dip" android:layout_marginLeft="54.0dip" android:layout_marginRight="54.0dip" />
+    </FrameLayout>
+    <ViewStub android:id="@id/bbp2" android:visibility="gone" android:clickable="true" android:layout="@layout/n5z" android:inflatedId="@id/bbp2" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.sankuai.meituan.msv.lite.viewholder.widget.MSVLiteProgressBarFrameLayout>

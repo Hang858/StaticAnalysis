@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.imagemanager.DPNetworkImageView android:id="@id/icon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="5.0dip" android:scaleType="fitXY" />
+    <TextView android:textSize="@dimen/vy_text_size_13" android:textColor="@color/vy_joy_shop_info_feature_item_color" android:ellipsize="end" android:gravity="left" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+</LinearLayout>

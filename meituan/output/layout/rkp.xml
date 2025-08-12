@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/bayc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/tip_image" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/m9o" android:scaleType="fitCenter" />
+    <TextView android:textSize="13.0sp" android:textColor="#ffe75400" android:ellipsize="marquee" android:id="@id/qdg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:singleLine="true" android:includeFontPadding="false" android:layout_weight="1.0" android:marqueeRepeatLimit="marquee_forever" />
+    <com.meituan.android.trafficayers.views.IconFontTextView android:textSize="12.0dip" android:textColor="#ffe75400" android:id="@id/more_icon" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/b" />
+</LinearLayout>

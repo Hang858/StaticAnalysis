@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?quickpass_qrcode_background" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/fhd" android:layout_width="fill_parent" android:layout_height="@dimen/eh4">
+        <ImageView android:id="@id/t5" android:paddingLeft="@dimen/b0w" android:paddingRight="@dimen/b0w" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/wuw" />
+        <TextView android:textSize="@dimen/bc4" android:textStyle="bold" android:textColor="@color/bali" android:gravity="center" android:id="@id/p7c" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/c_a" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/gxa" android:background="@android:color/transparent" android:paddingLeft="@dimen/b0w" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/b0w" android:src="@drawable/dr1" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/v89" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19.0dip" android:layout_marginRight="9.0dip" android:src="@drawable/tnu" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <com.meituan.android.quickpass.widget.AutoScrollTextView android:textSize="13.0sp" android:textColor="@color/q4r" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/j0" android:background="@color/p32" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginBottom="20.0dip" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/fhd" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                <TextView android:textSize="@dimen/h51" android:textColor="@color/x15" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/l6l" />
+                <ImageView android:layout_gravity="center_vertical" android:background="@drawable/f53" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="5.0dip" />
+                <TextView android:textSize="@dimen/h51" android:textColor="@color/x15" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ksl" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/zm3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/hbo">
+                    <RelativeLayout android:id="@id/u_k" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/xkq" android:layout_width="fill_parent" android:layout_height="64.0dip" android:layout_marginTop="20.0dip" android:scaleType="fitXY" />
+                        <TextView android:textSize="16.0sp" android:textColor="@color/baav" android:gravity="center" android:id="@id/oof" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/xkq" />
+                    </RelativeLayout>
+                    <ImageView android:id="@id/c_d" android:layout_width="180.0dip" android:layout_height="180.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="17.0dip" android:scaleType="fitXY" android:layout_below="@id/u_k" android:layout_centerHorizontal="true" />
+                    <include android:id="@id/mn9" android:visibility="gone" layout="@layout/ehp" />
+                </RelativeLayout>
+                <View android:background="@color/mp7" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+                <RelativeLayout android:orientation="vertical" android:id="@id/ba2e" android:paddingTop="19.0dip" android:paddingBottom="19.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/hlo">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                            <ImageView android:layout_gravity="center_vertical" android:id="@id/baiz" android:layout_width="@dimen/o2c" android:layout_height="@dimen/o2c" android:layout_marginLeft="20.0dip" android:layout_marginRight="8.0dip" />
+                            <TextView android:textSize="16.0sp" android:textColor="@color/baav" android:layout_gravity="center_vertical" android:id="@id/huu" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/gps" android:layout_weight="1.0" />
+                        </LinearLayout>
+                        <com.meituan.android.quickpass.widget.CampaignLabelLayout android:id="@id/ond" android:layout_width="240.0dip" android:layout_height="wrap_content" android:layout_marginLeft="46.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="60.0dip" />
+                    </LinearLayout>
+                    <ImageView android:id="@id/hlo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/hlo" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/qee" android:background="@color/v0" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                    <TextView android:textSize="12.0sp" android:textColor="@color/pzk" android:ellipsize="end" android:id="@id/wtf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" android:layout_toLeftOf="@id/e88" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@id/e88" android:background="@drawable/t6o" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginRight="20.0dip" android:text="立即使用" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:stateListAnimator="@null" />
+                </RelativeLayout>
+                <TextView android:textSize="13.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/f4c" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/bar8" android:alpha="0.6" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/bcx1" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:background="@drawable/bbop" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/j8g" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-89.0dip" android:scaleType="centerCrop" />
+    <ImageView android:id="@id/zs4" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-89.0dip" android:scaleType="centerCrop" />
+    <FrameLayout android:id="@id/l3q" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</merge>

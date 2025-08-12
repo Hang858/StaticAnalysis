@@ -1,0 +1,373 @@
+.class public Lcom/meituan/metrics/traffic/apache/ApachePrivacyInterceptor;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lorg/apache/http/HttpRequestInterceptor;
+.implements Lorg/apache/http/HttpResponseInterceptor;
+.implements Lcom/meituan/metrics/traffic/reflection/c;
+
+
+# annotations
+.annotation build Landroid/support/annotation/Keep;
+.end annotation
+
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/meituan/metrics/traffic/apache/ApachePrivacyInterceptor$a;
+    }
+.end annotation
+
+
+# static fields
+.field public static changeQuickRedirect:Lcom/meituan/robust/ChangeQuickRedirect;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onWrapper(Ljava/lang/Object;)V
+    .locals 4
+
+    .line 120000
+    const/4 v0, 0x1
+
+    .line 120001
+    new-array v0, v0, [Ljava/lang/Object;
+
+    .line 120002
+    .line 120003
+    const/4 v1, 0x0
+
+    .line 120004
+    aput-object p1, v0, v1
+
+    .line 120005
+    .line 120006
+    sget-object v1, Lcom/meituan/metrics/traffic/apache/ApachePrivacyInterceptor;->changeQuickRedirect:Lcom/meituan/robust/ChangeQuickRedirect;
+
+    .line 120007
+    .line 120008
+    const v2, 0x243e15
+
+    .line 120009
+    .line 120010
+    .line 120011
+    invoke-static {v0, p0, v1, v2}, Lcom/meituan/robust/PatchProxy;->isSupport([Ljava/lang/Object;Ljava/lang/Object;Lcom/meituan/robust/ChangeQuickRedirect;I)Z
+
+    .line 120012
+    .line 120013
+    .line 120014
+    move-result v3
+
+    .line 120015
+    if-eqz v3, :cond_0
+
+    .line 120016
+    .line 120017
+    invoke-static {v0, p0, v1, v2}, Lcom/meituan/robust/PatchProxy;->accessDispatch([Ljava/lang/Object;Ljava/lang/Object;Lcom/meituan/robust/ChangeQuickRedirect;I)Ljava/lang/Object;
+
+    .line 120018
+    .line 120019
+    .line 120020
+    return-void
+
+    .line 120021
+    :cond_0
+    instance-of v0, p1, Lorg/apache/http/impl/client/DefaultHttpClient;
+
+    .line 120022
+    .line 120023
+    if-eqz v0, :cond_1
+
+    .line 120024
+    .line 120025
+    check-cast p1, Lorg/apache/http/impl/client/DefaultHttpClient;
+
+    .line 120026
+    .line 120027
+    invoke-virtual {p1, p0}, Lorg/apache/http/impl/client/DefaultHttpClient;->addRequestInterceptor(Lorg/apache/http/HttpRequestInterceptor;)V
+
+    .line 120028
+    .line 120029
+    .line 120030
+    invoke-virtual {p1, p0}, Lorg/apache/http/impl/client/DefaultHttpClient;->addResponseInterceptor(Lorg/apache/http/HttpResponseInterceptor;)V
+
+    .line 120031
+    .line 120032
+    .line 120033
+    new-instance v0, Lcom/meituan/metrics/traffic/apache/ApacheCandyInterceptor;
+
+    .line 120034
+    .line 120035
+    invoke-direct {v0}, Lcom/meituan/metrics/traffic/apache/ApacheCandyInterceptor;-><init>()V
+
+    invoke-virtual {p1, v0}, Lorg/apache/http/impl/client/DefaultHttpClient;->addRequestInterceptor(Lorg/apache/http/HttpRequestInterceptor;)V
+
+    :cond_1
+    return-void
+.end method
+
+.method public process(Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;)V
+    .locals 5
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lorg/apache/http/HttpException;,
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 170000
+    const/4 v0, 0x2
+
+    .line 170001
+    new-array v1, v0, [Ljava/lang/Object;
+
+    .line 170002
+    .line 170003
+    const/4 v2, 0x0
+
+    .line 170004
+    aput-object p1, v1, v2
+
+    .line 170005
+    .line 170006
+    const/4 v2, 0x1
+
+    .line 170007
+    aput-object p2, v1, v2
+
+    .line 170008
+    .line 170009
+    sget-object p2, Lcom/meituan/metrics/traffic/apache/ApachePrivacyInterceptor;->changeQuickRedirect:Lcom/meituan/robust/ChangeQuickRedirect;
+
+    .line 170010
+    .line 170011
+    const v3, 0xebbcb9
+
+    .line 170012
+    .line 170013
+    .line 170014
+    invoke-static {v1, p0, p2, v3}, Lcom/meituan/robust/PatchProxy;->isSupport([Ljava/lang/Object;Ljava/lang/Object;Lcom/meituan/robust/ChangeQuickRedirect;I)Z
+
+    .line 170015
+    .line 170016
+    .line 170017
+    move-result v4
+
+    .line 170018
+    if-eqz v4, :cond_0
+
+    .line 170019
+    .line 170020
+    invoke-static {v1, p0, p2, v3}, Lcom/meituan/robust/PatchProxy;->accessDispatch([Ljava/lang/Object;Ljava/lang/Object;Lcom/meituan/robust/ChangeQuickRedirect;I)Ljava/lang/Object;
+
+    .line 170021
+    .line 170022
+    .line 170023
+    return-void
+
+    .line 170024
+    :cond_0
+    invoke-static {}, Lcom/meituan/privacy/PrivacyUtil;->a()Z
+
+    .line 170025
+    .line 170026
+    .line 170027
+    move-result p2
+
+    .line 170028
+    if-nez p2, :cond_1
+
+    .line 170029
+    .line 170030
+    return-void
+
+    .line 170031
+    :cond_1
+    instance-of p2, p1, Lorg/apache/http/client/methods/HttpUriRequest;
+
+    .line 170032
+    .line 170033
+    if-eqz p2, :cond_5
+
+    .line 170034
+    .line 170035
+    move-object p2, p1
+
+    .line 170036
+    check-cast p2, Lorg/apache/http/client/methods/HttpUriRequest;
+
+    .line 170037
+    .line 170038
+    instance-of v1, p2, Lorg/apache/http/impl/client/RequestWrapper;
+
+    .line 170039
+    .line 170040
+    if-eqz v1, :cond_2
+
+    .line 170041
+    .line 170042
+    move-object v1, p2
+
+    .line 170043
+    check-cast v1, Lorg/apache/http/impl/client/RequestWrapper;
+
+    .line 170044
+    .line 170045
+    invoke-virtual {v1}, Lorg/apache/http/impl/client/RequestWrapper;->getOriginal()Lorg/apache/http/HttpRequest;
+
+    .line 170046
+    .line 170047
+    .line 170048
+    move-result-object v3
+
+    .line 170049
+    instance-of v3, v3, Lorg/apache/http/client/methods/HttpRequestBase;
+
+    .line 170050
+    .line 170051
+    if-eqz v3, :cond_2
+
+    .line 170052
+    .line 170053
+    invoke-virtual {v1}, Lorg/apache/http/impl/client/RequestWrapper;->getOriginal()Lorg/apache/http/HttpRequest;
+
+    .line 170054
+    .line 170055
+    .line 170056
+    move-result-object p2
+
+    .line 170057
+    check-cast p2, Lorg/apache/http/client/methods/HttpRequestBase;
+
+    .line 170058
+    .line 170059
+    :cond_2
+    invoke-interface {p2}, Lorg/apache/http/client/methods/HttpUriRequest;->getURI()Ljava/net/URI;
+
+    .line 170060
+    .line 170061
+    .line 170062
+    move-result-object v1
+
+    .line 170063
+    if-nez v1, :cond_3
+
+    .line 170064
+    .line 170065
+    return-void
+
+    .line 170066
+    :cond_3
+    invoke-interface {p2}, Lorg/apache/http/client/methods/HttpUriRequest;->getURI()Ljava/net/URI;
+
+    .line 170067
+    .line 170068
+    .line 170069
+    move-result-object v1
+
+    .line 170070
+    invoke-static {v1}, Lcom/meituan/privacy/PrivacyUtil;->e(Ljava/lang/Object;)Z
+
+    .line 170071
+    .line 170072
+    .line 170073
+    move-result v1
+
+    .line 170074
+    if-eqz v1, :cond_5
+
+    .line 170075
+    .line 170076
+    invoke-interface {p2}, Lorg/apache/http/client/methods/HttpUriRequest;->getURI()Ljava/net/URI;
+
+    .line 170077
+    .line 170078
+    .line 170079
+    move-result-object p2
+
+    .line 170080
+    invoke-static {p2}, Lcom/meituan/privacy/PrivacyUtil;->d(Ljava/net/URI;)Lcom/meituan/privacy/PrivacyUtil$b;
+
+    .line 170081
+    .line 170082
+    .line 170083
+    move-result-object p2
+
+    .line 170084
+    iget v1, p2, Lcom/meituan/privacy/PrivacyUtil$b;->a:I
+
+    .line 170085
+    .line 170086
+    if-eq v1, v0, :cond_4
+
+    .line 170087
+    .line 170088
+    if-ne v1, v2, :cond_5
+
+    .line 170089
+    .line 170090
+    instance-of v0, p1, Lorg/apache/http/impl/client/RequestWrapper;
+
+    .line 170091
+    .line 170092
+    if-eqz v0, :cond_5
+
+    .line 170093
+    .line 170094
+    check-cast p1, Lorg/apache/http/impl/client/RequestWrapper;
+
+    .line 170095
+    .line 170096
+    iget-object p2, p2, Lcom/meituan/privacy/PrivacyUtil$b;->b:Ljava/lang/String;
+
+    .line 170097
+    .line 170098
+    invoke-static {p2}, Ljava/net/URI;->create(Ljava/lang/String;)Ljava/net/URI;
+
+    .line 170099
+    .line 170100
+    .line 170101
+    move-result-object p2
+
+    .line 170102
+    invoke-virtual {p1, p2}, Lorg/apache/http/impl/client/RequestWrapper;->setURI(Ljava/net/URI;)V
+
+    .line 170103
+    .line 170104
+    .line 170105
+    goto :goto_0
+
+    .line 170106
+    :cond_4
+    new-instance p1, Lcom/meituan/metrics/traffic/apache/ApachePrivacyInterceptor$a;
+
+    .line 170107
+    .line 170108
+    invoke-direct {p1}, Lcom/meituan/metrics/traffic/apache/ApachePrivacyInterceptor$a;-><init>()V
+
+    .line 170109
+    .line 170110
+    .line 170111
+    throw p1
+
+    .line 170112
+    :cond_5
+    :goto_0
+    return-void
+.end method
+
+.method public process(Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)V
+    .locals 0
+
+    return-void
+.end method

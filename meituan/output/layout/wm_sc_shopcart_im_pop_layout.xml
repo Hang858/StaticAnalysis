@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sankuai.waimai.store.newwidgets.TipsView android:id="@id/v_tip_im_container" android:layout_width="wrap_content" android:layout_height="wrap_content" app:backColor="@color/wm_sg_color_FFFFFF" app:corner="@dimen/bbrs" app:hasShadow="true" app:shadowRadius="@dimen/i6c">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_tip_im_list" android:paddingLeft="@dimen/p7e" android:paddingTop="@dimen/tx7" android:paddingRight="@dimen/p7e" android:paddingBottom="@dimen/f7u" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.sankuai.waimai.store.newwidgets.TipsView>
+</LinearLayout>

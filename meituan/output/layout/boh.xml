@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@id/o06" android:background="@color/bc7x" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textColor="@color/yhz" android:layout_gravity="bottom|center" android:id="@id/edp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" />
+    <TextView android:textColor="@color/yhz" android:layout_gravity="bottom|center" android:id="@id/yia" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" />
+</FrameLayout>

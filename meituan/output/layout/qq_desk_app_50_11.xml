@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/root_layout" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/ll" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/background" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="3.0dip" />
+        <TextView android:textSize="11.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/feature_msg_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:lines="1" android:shadowColor="#ff000000" android:shadowDx="0.0" android:shadowDy="0.0" android:shadowRadius="5.0" android:textAlignment="center" />
+    </LinearLayout>
+    <TextView android:textSize="11.0sp" android:textColor="#ffffffff" android:id="@id/tv_tip" android:background="@drawable/hades_tip_background" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:paddingBottom="2.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLength="10" android:layout_alignTop="@id/ll" android:layout_alignRight="@id/ll" android:textAlignment="center" />
+</RelativeLayout>

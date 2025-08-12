@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/u8e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.5dip" android:layout_marginBottom="7.0dip">
+        <TextView android:textSize="11.0sp" android:textColor="@color/mg0" android:id="@id/pa3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥" android:includeFontPadding="false" android:layout_alignBaseline="@id/tv_price" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/mg0" android:id="@id/tv_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:includeFontPadding="false" android:layout_toRightOf="@id/pa3" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/bai2" android:id="@id/mrp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="起" android:layout_toRightOf="@id/tv_price" android:layout_alignBaseline="@id/tv_price" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/bai2" android:id="@id/zzr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:includeFontPadding="false" android:layout_toRightOf="@id/mrp" android:layout_alignBaseline="@id/tv_price" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/bagv" android:gravity="center" android:id="@id/pe1" android:paddingLeft="3.0dip" android:paddingTop="2.0dip" android:paddingRight="3.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:includeFontPadding="false" android:layout_toRightOf="@id/zzr" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</merge>

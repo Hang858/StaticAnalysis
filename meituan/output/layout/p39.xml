@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/g6c" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/p2r" android:background="@color/mp7" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+        <TextView android:id="@id/g3k" android:text="取消" style="@style/quickpass_qr_popwindow_text_style" />
+    </LinearLayout>
+</LinearLayout>

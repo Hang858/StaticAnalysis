@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/dialog_root_layout" android:background="#80000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/top_close_area" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_dialog_view" />
+    <FrameLayout android:id="@id/bottom_dialog_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

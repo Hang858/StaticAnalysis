@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/udl" android:textColor="@color/k4x" android:gravity="center|left" android:layout_gravity="top" android:id="@id/rvn" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="45.0dip" android:singleLine="true" />
+    <com.sankuai.waimai.platform.widget.MultiLineHorizontalFlowLayout android:id="@id/qhe" android:visibility="gone" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" app:childHeight="38.0dip" app:childMarginHorizontal="8.0dip" app:childMarginVertical="0.0dip" />
+    <com.sankuai.waimai.platform.widget.MultiLineHorizontalFlowLayout android:id="@id/yo7" android:visibility="gone" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="18.0dip" app:childHeight="38.0dip" app:childMarginHorizontal="12.0dip" app:childMarginVertical="0.0dip" />
+</LinearLayout>

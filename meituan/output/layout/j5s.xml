@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/vuq" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="18.0sp" android:gravity="center" android:id="@id/tv_msg" android:paddingLeft="30.0dip" android:paddingTop="5.0dip" android:paddingRight="30.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hn" />
+        <com.meituan.android.common.ui.widget.RoundFrameLayout android:id="@id/m3x" android:background="@color/commonui_button_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" app:rfl_borderWidth="0.0dip" app:rfl_radius="5.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/ud9" android:paddingLeft="30.0dip" android:paddingTop="5.0dip" android:paddingRight="30.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ufa" />
+        </com.meituan.android.common.ui.widget.RoundFrameLayout>
+    </LinearLayout>
+    <ProgressBar android:id="@id/lrc" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:indeterminate="true" android:layout_above="@id/vuq" android:layout_centerInParent="true" android:indeterminateTint="#ff777777" style="?android:progressBarStyleLarge" />
+    <android.view.View android:id="@id/hm7" android:background="@android:color/transparent" android:layout_width="1.0px" android:layout_height="25.0dip" />
+    <ImageView android:id="@id/iv_loading_back" android:padding="10.0dip" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginLeft="6.0dip" android:src="@drawable/rne" android:layout_below="@id/hm7" android:layout_alignParentLeft="true" />
+</RelativeLayout>

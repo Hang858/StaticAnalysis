@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/xm_sdk_send_panel_icon_view_size" android:divider="@drawable/xm_sdk_send_panel_divider" android:showDividers="middle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sankuai.xm.imui.common.view.SimpleTextView android:textSize="@dimen/xm_sdk_chat_voice_record_btn_text_size" android:textColor="@color/xm_sdk_chat_voice_record_btn_text_color" android:gravity="center" android:id="@id/press_to_talk" android:background="@drawable/xm_sdk_bg_input" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/xm_sdk_voice_record_btn_text" android:layout_weight="1.0" android:layout_marginStart="@dimen/xm_sdk_send_panel_divider_width" android:layout_marginEnd="@dimen/xm_sdk_send_panel_divider_width" />
+    <ImageView android:id="@id/open_voice" android:layout_width="@dimen/xm_sdk_send_panel_ic_size" android:layout_height="@dimen/xm_sdk_send_panel_ic_size" android:layout_margin="@dimen/xm_sdk_send_panel_icon_view_margin" android:rotationY="@integer/rotation" />
+</LinearLayout>

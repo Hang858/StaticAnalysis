@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.widget.NestedScrollView android:id="@id/scrollview" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/xew" android:background="@android:color/white" android:paddingTop="25.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip">
+                    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开场时间" />
+                    <TextView android:textSize="13.0sp" android:textColor="#fff03d37" android:id="@id/xvz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" />
+                </LinearLayout>
+                <com.meituan.android.movie.tradebase.cinemalist.bymovie2.filter.MovieCinemaFilterSlideSeekBar android:id="@id/ko9" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" app:bigInfoText="24:00" app:bigValue="48" app:hasRule="false" app:imageBig="@drawable/v94" app:imageLow="@drawable/v94" app:imageheight="22.0dip" app:imagewidth="21.0dip" app:inColor="#fff03d37" app:lineHeight="2.0dip" app:outLeftColor="#ffe8e8e8" app:outRightColor="#ffe8e8e8" app:smallInfoText="00:00" app:smallValue="0" app:textColor="#ff666666" app:textSize="10.0sp" />
+                <LinearLayout android:orientation="vertical" android:id="@id/filter_container" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View android:id="@id/kjc" android:layout_width="fill_parent" android:layout_height="56.0dip" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@android:color/white" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_alignBottom="@id/scrollview">
+        <Button android:textSize="15.0sp" android:textColor="@color/ohj" android:gravity="center" android:id="@id/reset" android:background="@drawable/niu" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="@string/bcg5" android:layout_weight="110.0" />
+        <Button android:textSize="15.0sp" android:textColor="@color/bagv" android:gravity="center" android:id="@id/confirm" android:background="@drawable/ni5" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="7.0dip" android:text="@string/zl6" android:layout_weight="228.0" />
+    </LinearLayout>
+</RelativeLayout>

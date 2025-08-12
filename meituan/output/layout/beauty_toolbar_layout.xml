@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="55.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/beauty_line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/toolbar_content" android:layout_width="fill_parent" android:layout_height="54.0dip" android:layout_marginLeft="10.0dip" />
+</LinearLayout>

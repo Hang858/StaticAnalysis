@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/bah8" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="@dimen/yni"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="top" android:id="@id/q2b" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/dzs">
+        <ImageView android:layout_gravity="bottom|center" android:id="@id/v_selected_bg" android:visibility="visible" android:layout_width="53.0dip" android:layout_height="63.0dip" android:src="@drawable/view_bg_selected" android:scaleType="center" android:layout_centerHorizontal="true" />
+        <FrameLayout android:id="@id/t9z" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <View android:layout_gravity="bottom|center" android:id="@id/zsc" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="37.0dip" />
+            <ImageView android:layout_gravity="bottom|center" android:id="@id/iv_poi_tab_image" android:layout_width="50.0dip" android:layout_height="50.0dip" android:scaleType="fitXY" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/hkg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/bbj2" android:layout_below="@id/t9z" android:layout_centerHorizontal="true">
+            <TextView android:layout_gravity="bottom|center" android:id="@id/eh0" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_marginBottom="2.0dip" android:includeFontPadding="false" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/wm_sg_widget_filter_bar_text_white" android:layout_gravity="center_horizontal" android:id="@id/tv_tablayout_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:maxEms="6" android:singleLine="true" android:includeFontPadding="false" android:layout_centerHorizontal="true" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_tablayout_item_icon_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginTop="2.0dip" android:scaleType="centerCrop" android:layout_centerHorizontal="true" />
+        </FrameLayout>
+        <ImageView android:id="@id/iv_tag_icon" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="24.0dip" android:scaleType="fitStart" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

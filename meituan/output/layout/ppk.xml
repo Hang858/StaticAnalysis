@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/jty" android:layout="@layout/wn" android:inflatedId="@id/jty" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:layout_gravity="center" android:id="@id/p5l" android:layout="@layout/os9" android:inflatedId="@id/p5l" android:layout_width="90.0dip" android:layout_height="90.0dip" />
+    <ViewStub android:id="@id/x8d" android:layout="@layout/wn" android:inflatedId="@id/x8d" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/rrv" layout="@layout/rrv" />
+    <ViewStub android:layout_gravity="bottom" android:id="@id/hir" android:layout="@layout/hir" android:inflatedId="@id/hir" android:layout_width="fill_parent" android:layout_height="@dimen/ecd" />
+    <ViewStub android:layout_gravity="end" android:id="@id/gey" android:layout="@layout/xp7" android:inflatedId="@id/gey" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/irg" layout="@layout/irg" />
+    <ViewStub android:id="@id/msv_play_error_container" android:layout="@layout/msv_play_error_container" android:inflatedId="@id/msv_play_error_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/in3" android:layout="@layout/in3" android:inflatedId="@id/in3" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

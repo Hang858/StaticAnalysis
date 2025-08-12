@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/kq6" android:background="@color/white" android:focusable="true" android:visibility="invisible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/mwm" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:elevation="5.0dip" app:navigationIcon="@drawable/fe4" />
+    <LinearLayout android:orientation="vertical" android:id="@id/e2c" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

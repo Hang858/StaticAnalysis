@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.meituan.android.phoenix.view.calendar.PinnedHeaderListView android:id="@id/listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" android:dividerHeight="0.0dip" android:fillViewport="true" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/tv_tips" android:background="#80000000" android:visibility="gone" android:layout_width="175.0dip" android:layout_height="30.0dip" android:layout_marginBottom="40.0dip" />
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sankuai.ptview.view.PTLinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/bms" android:background="@drawable/dzu" android:layout_width="312.0dip" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="#e0000000" android:id="@id/alert_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.5dip" />
+        <TextView android:textSize="14.0dip" android:textColor="#e0000000" android:gravity="center" android:id="@id/uv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.5dip" android:layout_marginBottom="22.0dip" android:maxWidth="276.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip">
+            <com.sankuai.ptview.view.PTTextView android:textSize="15.0dip" android:textColor="#ff1f1f1f" android:id="@id/left_button" android:background="@drawable/w_i" android:layout_width="136.0dip" android:layout_height="40.0dip" style="@style/Widget.AppCompat.Button.Borderless" />
+            <com.sankuai.ptview.view.PTTextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="#ff1f1f1f" android:id="@id/right_button" android:background="@drawable/zqd" android:layout_width="136.0dip" android:layout_height="40.0dip" android:layout_marginLeft="8.0dip" style="@style/Widget.AppCompat.Button.Borderless" />
+        </LinearLayout>
+    </com.sankuai.ptview.view.PTLinearLayout>
+</LinearLayout>

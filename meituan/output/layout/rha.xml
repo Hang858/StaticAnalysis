@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.videoview.widget.video.ui.panelitem.PlayImageButton android:id="@id/rha" android:layout_width="55.0dip" android:layout_height="55.0dip" android:src="@drawable/d9o" android:scaleType="fitCenter" android:layout_centerInParent="true" dp:panelItemVisibility="10001"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto" />

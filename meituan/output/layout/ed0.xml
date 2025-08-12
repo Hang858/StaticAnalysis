@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lv8" android:background="@color/hpc" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="46.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+    <TextView android:textSize="@dimen/tjq" android:textColor="#ff202325" android:layout_gravity="center_vertical" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/w24" android:textColor="#ffff6230" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/supplement" android:background="@drawable/yr1" android:paddingLeft="7.0dip" android:paddingTop="2.0dip" android:paddingRight="7.0dip" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" />
+    <Space android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+    <TextView android:textSize="@dimen/fw4" android:textColor="#ff626566" android:layout_gravity="center_vertical" android:id="@id/calendar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:drawableRight="@drawable/vrk" android:drawablePadding="5.0dip" />
+</LinearLayout>

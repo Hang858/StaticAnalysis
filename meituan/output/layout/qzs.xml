@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center" android:paddingLeft="5.0pt" android:paddingTop="5.0pt" android:paddingRight="5.0pt" android:paddingBottom="5.0pt" android:clipChildren="false" android:clipToPadding="false" android:layout_width="37.0pt" android:layout_height="35.0pt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sankuai.ptview.view.PTImageView android:layout_gravity="center" android:id="@id/shortcut_iv" android:layout_width="25.0pt" android:layout_height="25.0pt" android:src="@drawable/q1h" />
+    <com.sankuai.ptview.view.PTImageView android:layout_gravity="end|center|top" android:id="@id/shortcut_red_point" android:background="@drawable/kuj" android:visibility="gone" android:layout_width="8.0pt" android:layout_height="8.0pt" />
+    <ViewStub android:layout_gravity="center_horizontal" android:id="@id/irn" android:visibility="gone" android:layout="@layout/yex" android:inflatedId="@id/k89" android:layout_width="45.0pt" android:layout_height="20.0pt" android:layout_marginTop="-16.319977pt" />
+</merge>

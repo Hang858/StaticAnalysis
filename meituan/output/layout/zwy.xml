@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/mnl" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/mnl">
+        <com.sankuai.waimai.store.newwidgets.list.SCRecyclerView android:id="@id/recycler" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:id="@id/rau" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <com.sankuai.waimai.store.newwidgets.NetInfoLoadView android:id="@id/xbp" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="@dimen/wpy" android:textColor="#ffbcbcbd" android:id="@id/txt_diting_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="110.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</merge>

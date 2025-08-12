@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/r2v" android:layout_width="171.0dip" android:layout_height="46.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:id="@id/banner_item_op_bg" android:visibility="invisible" android:layout_width="178.0dip" android:layout_height="55.0dip" />
+    <com.meituan.android.edfu.mvision.ui.widget.banner.RoundImageView android:layout_gravity="center_vertical" android:id="@id/banner_item_iv" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="10.5dip" android:scaleType="fitCenter" app:borderRadius="8.0dip" app:type="round" />
+    <TextView android:textSize="13.0sp" android:textColor="#ff1a1a1a" android:layout_gravity="center_vertical" android:id="@id/banner_item_tv" android:layout_width="96.0dip" android:layout_height="wrap_content" android:layout_marginLeft="49.5dip" />
+    <TextView android:layout_gravity="center_vertical" android:id="@id/banner_item_ic" android:background="@drawable/q4b" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="146.0dip" />
+</FrameLayout>

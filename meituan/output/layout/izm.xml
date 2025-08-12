@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/gc_text_size_13" android:textColor="@color/gc_soft_gray" android:id="@id/zmx" android:layout_width="70.0dip" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/i4f" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

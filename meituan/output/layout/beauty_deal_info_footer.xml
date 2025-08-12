@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="45.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/line" android:background="@color/beauty_divider_line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/beauty_platform_color" android:id="@id/tv_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看更多图文详情" android:drawableRight="@drawable/ic_global_arrow_green_unfold_normal" android:drawablePadding="5.0dip" android:layout_centerInParent="true" />
+</RelativeLayout>

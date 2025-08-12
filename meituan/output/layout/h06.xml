@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.bizcomponent.widgets.videoview.ui.BizVideoPlayFinishedLayer android:background="@color/trs" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/f_j" android:tag="endFullScreen" android:paddingLeft="12.0dip" android:paddingTop="10.0dip" android:paddingRight="12.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/yb1" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/tfr" android:background="@drawable/t4" android:layout_width="100.0dip" android:layout_height="32.5dip" android:layout_centerInParent="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/z4z" android:scaleType="fitCenter" />
+        <TextView android:textSize="17.5sp" android:textColor="@color/f09" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:text="重播" />
+    </LinearLayout>
+</com.dianping.bizcomponent.widgets.videoview.ui.BizVideoPlayFinishedLayer>

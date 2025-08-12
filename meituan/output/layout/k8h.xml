@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.videoview.widget.video.ui.panelitem.FullscreenItem android:id="@id/k8h" android:layout_width="20.0dip" android:layout_height="20.0dip" android:scaleType="fitCenter" android:layout_weight="0.0" android:layout_marginStart="10.0dip" dp:defaultStatus="negative" dp:srcNegative="@drawable/coo" dp:srcPositive="@drawable/z7p"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto" />

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/bah8" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="center_vertical" android:id="@id/u96" android:background="#0d000000" android:visibility="gone" android:layout_width="1.0px" android:layout_height="20.0dip" android:layout_marginRight="8.0dip" />
+    <View android:id="@id/m34" android:background="#0d000000" android:visibility="gone" android:layout_width="1.0px" android:layout_height="12.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="8.0dip" />
+    <RelativeLayout android:id="@id/q2b" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/lv0">
+        <FrameLayout android:id="@id/t9z" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/m34" android:layout_centerHorizontal="true">
+            <ImageView android:layout_gravity="bottom|center" android:id="@id/iv_poi_tab_image" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" android:scaleType="fitXY" />
+            <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ff222426" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/o4q" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:maxEms="4" />
+        </FrameLayout>
+        <TextView android:textSize="13.0sp" android:textColor="@color/wm_sg_widget_filter_bar_text_white" android:id="@id/tv_tablayout_item_name" android:paddingLeft="7.0dip" android:paddingTop="2.0dip" android:paddingRight="7.0dip" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:maxLines="1" android:maxEms="6" android:singleLine="true" android:includeFontPadding="false" android:layout_below="@id/t9z" android:layout_centerHorizontal="true" />
+        <View android:id="@id/nzu" android:background="@color/wm_st_common_orange_1" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="3.0dip" android:layout_below="@id/tv_tablayout_item_name" android:layout_centerHorizontal="true" />
+        <FrameLayout android:id="@id/fs3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/z34" android:layout_above="@id/nzu" android:layout_centerHorizontal="true">
+            <ImageView android:layout_gravity="bottom|center" android:id="@id/nu9" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" android:scaleType="fitXY" />
+            <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ff222426" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/d5l" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:maxEms="4" />
+        </FrameLayout>
+        <ImageView android:id="@id/iv_tag_icon" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="24.0dip" android:scaleType="fitStart" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

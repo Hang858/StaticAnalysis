@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="45.5dip" android:layout_marginLeft="@dimen/cpu" android:layout_marginRight="@dimen/cpu"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/bb69" android:layout_width="@dimen/izn" android:layout_height="@dimen/izn" android:layout_centerInParent="true">
+        <ImageView android:id="@id/vl6" android:layout_width="@dimen/izn" android:layout_height="@dimen/izn" android:src="@drawable/c1v" android:scaleType="fitCenter" />
+        <ImageView android:id="@id/mgv" android:layout_width="@dimen/izn" android:layout_height="@dimen/izn" android:src="@drawable/rsq" android:scaleType="fitCenter" />
+        <ImageView android:id="@id/k7n" android:layout_width="@dimen/izn" android:layout_height="@dimen/izn" android:src="@drawable/ba90" android:scaleType="fitCenter" />
+    </FrameLayout>
+    <com.meituan.android.trafficayers.views.TrafficCityAnimTextView android:id="@id/eil" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/bb69" android:layout_alignParentLeft="true" app:traffic_city_text="北京" app:traffic_city_textColor="#ff000000" app:traffic_city_textSize="24.0sp" />
+    <com.meituan.android.trafficayers.views.TrafficCityAnimTextView android:textStyle="bold" android:gravity="center|right" android:id="@id/j3q" android:layout_width="100.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/bb69" android:layout_alignParentRight="true" app:traffic_city_text="上海" app:traffic_city_textColor="#ff000000" app:traffic_city_textSize="24.0sp" />
+</RelativeLayout>

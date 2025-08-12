@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="18.0dip" android:textColor="@android:color/holo_red_light" android:id="@id/zw0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="是否支持H265：" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="18.0dip" android:textColor="@android:color/holo_red_light" android:id="@id/b5u" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="当前播放：" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/zw0" />
+    <TextView android:textSize="18.0dip" android:textColor="@android:color/holo_red_light" android:id="@id/koo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="H265Url：" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/b5u" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="310.0dip" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/image" android:layout_width="fill_parent" android:layout_height="310.0dip" android:scaleType="fitXY" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/fd1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="22.0dip" android:layout_marginTop="10.0dip">
+                <LinearLayout android:layout_gravity="center_vertical" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginStart="14.5dip">
+                    <ImageView android:id="@id/icon" android:background="@drawable/e_b" android:layout_width="22.0dip" android:layout_height="22.0dip" android:scaleType="fitXY" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="7.5dip">
+                    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ff222222" android:layout_gravity="center" android:id="@id/nick_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="0.0dip" android:paddingEnd="2.0dip" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff646464" android:ellipsize="end" android:layout_gravity="center" android:id="@id/sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/er5" android:maxLines="1" android:layout_marginStart="4.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff222222" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="11.5dip" android:layout_marginRight="15.0dip" android:text="@string/sdr" android:maxLines="2" />
+            <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff222222" android:id="@id/btn" android:background="@drawable/so6" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="17.0dip" android:layout_marginRight="15.0dip" android:textAllCaps="false" style="@style/Widget.AppCompat.Button.Borderless" />
+            <TextView android:textSize="10.0sp" android:textColor="#ff999999" android:gravity="center" android:id="@id/bctv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_marginBottom="11.0dip" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center" android:id="@id/cancel" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginTop="40.0dip" android:src="@drawable/et3" />
+    </LinearLayout>
+</LinearLayout>

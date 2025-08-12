@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/shop_background_image" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0px" android:scaleType="centerCrop" />
+    <ImageView android:id="@id/img_poi_blurred_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0px" android:scaleType="fitXY" />
+    <FrameLayout android:id="@id/basic_poi_info_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_header_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/basic_poi_info_layout" />
+    <LinearLayout android:orientation="vertical" android:id="@id/drug_shop_header_placeholder" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/basic_poi_info_layout">
+        <com.sankuai.waimai.store.view.RoundedCornerLinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="@dimen/wpy" android:paddingTop="@dimen/sk1" android:paddingRight="@dimen/wpy" android:paddingBottom="@dimen/sk1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wpy" app:cornerRadius="@dimen/ddv">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.sankuai.waimai.store.view.RoundedCornerLinearLayout android:background="#fff7f7f7" android:layout_width="@dimen/xn4" android:layout_height="@dimen/xn4" app:cornerRadius="@dimen/wpy" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/i6c">
+                    <com.sankuai.waimai.store.view.RoundedCornerLinearLayout android:background="#fff7f7f7" android:layout_width="fill_parent" android:layout_height="@dimen/y0z" app:cornerRadius="@dimen/bbrs" />
+                    <com.sankuai.waimai.store.view.RoundedCornerLinearLayout android:background="#fff7f7f7" android:layout_width="fill_parent" android:layout_height="@dimen/wpy" android:layout_marginTop="@dimen/uv2" app:cornerRadius="@dimen/bbrs" />
+                    <com.sankuai.waimai.store.view.RoundedCornerLinearLayout android:background="#fff7f7f7" android:layout_width="fill_parent" android:layout_height="@dimen/wpy" android:layout_marginTop="@dimen/bbrs" app:cornerRadius="@dimen/bbrs" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wpy">
+                <com.sankuai.waimai.store.view.RoundedCornerLinearLayout android:background="#fff7f7f7" android:layout_width="@dimen/z2z" android:layout_height="@dimen/qw0" app:cornerRadius="@dimen/bbrs" />
+                <com.sankuai.waimai.store.view.RoundedCornerLinearLayout android:background="#fff7f7f7" android:layout_width="@dimen/ct6" android:layout_height="@dimen/qw0" android:layout_marginLeft="@dimen/ea5" app:cornerRadius="@dimen/bbrs" />
+                <com.sankuai.waimai.store.view.RoundedCornerLinearLayout android:background="#fff7f7f7" android:layout_width="@dimen/xcy" android:layout_height="@dimen/qw0" android:layout_marginLeft="@dimen/ea5" app:cornerRadius="@dimen/bbrs" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/uv2">
+                <com.sankuai.waimai.store.view.RoundedCornerLinearLayout android:background="#fff7f7f7" android:layout_width="305.0dip" android:layout_height="@dimen/qw0" app:cornerRadius="@dimen/bbrs" />
+                <com.sankuai.waimai.store.view.RoundedCornerLinearLayout android:background="#fff7f7f7" android:layout_width="@dimen/d8a" android:layout_height="@dimen/qw0" android:layout_marginLeft="@dimen/ea5" app:cornerRadius="@dimen/bbrs" />
+            </LinearLayout>
+        </com.sankuai.waimai.store.view.RoundedCornerLinearLayout>
+    </LinearLayout>
+    <View android:id="@id/layout_divider_line" android:background="@color/pzl" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/layout_header_view" />
+    <android.support.v4.widget.Space android:id="@id/v_space_tab_bottom" android:layout_width="fill_parent" android:layout_height="@dimen/uv2" android:layout_below="@id/layout_divider_line" />
+</RelativeLayout>

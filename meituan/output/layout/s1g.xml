@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/qlv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="@android:color/black" android:id="@id/zll" android:background="#fff5f5f5" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="请求" />
+            <TextView android:textSize="14.0sp" android:textColor="#ffa9a9a9" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="(请求采用MAPI标准缓存5min，这里不会主动清除缓存，如需清除，请点开Debug浮标手动删除MAPI缓存)" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ssg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="@android:color/black" android:id="@id/l50" android:background="#fff5f5f5" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="清除" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/d2c" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="@android:color/black" android:id="@id/ijo" android:background="#fff5f5f5" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="模板" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ht9" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="@android:color/black" android:id="@id/bho" android:background="#fff5f5f5" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="模块" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/jsn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="@android:color/black" android:id="@id/nq1" android:background="#fff5f5f5" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="其他" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

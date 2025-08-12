@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/qss" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/hzn" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@drawable/xcn" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.47" />
+        <View android:background="@drawable/xcn" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="10.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:layout_gravity="bottom|center|right" android:id="@id/ci_" android:background="@drawable/xcn" android:layout_width="fill_parent" android:layout_height="106.0dip" android:alpha="0.0" />
+    <com.sankuai.waimai.lottie.SafeLottieAnimationView android:layout_gravity="bottom|center|right" android:id="@id/sid" android:layout_width="fill_parent" android:layout_height="wrap_content" app:lottie_autoPlay="false" app:lottie_loop="false" />
+</FrameLayout>

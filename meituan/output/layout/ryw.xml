@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" style="@style/SingleLineTableItemWithPadding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/gc_text_size_16" android:textColor="@color/gc_text_color_black" android:id="@id/qov" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <com.meituan.android.easylife.createorder.widget.FlowerCheckBox android:layout_gravity="center_vertical" android:id="@id/ho" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

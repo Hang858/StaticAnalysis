@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qq.e.ads.nativ.widget.NativeAdContainer android:id="@id/root" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fl_template_ad" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/fl_native_ad" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v7.widget.AppCompatImageView android:id="@id/pic" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <FrameLayout android:id="@id/mask" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <android.support.v7.widget.AppCompatImageView android:id="@id/sound" android:visibility="invisible" android:layout_width="31.0dip" android:layout_height="31.0dip" android:layout_marginLeft="19.0dip" android:layout_marginTop="43.0dip" android:src="@drawable/msv_sound_mute" />
+        <FrameLayout android:layout_gravity="right" android:id="@id/skip" android:background="@drawable/msv_gray_round" android:focusable="true" android:clickable="true" android:layout_width="67.0dip" android:layout_height="31.0dip" android:layout_marginTop="43.0dip" android:layout_marginRight="19.0dip">
+            <android.support.v7.widget.AppCompatTextView android:textSize="15.0dip" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/bctv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="跳过 3" android:alpha="0.9" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/click_info" android:background="@drawable/msv_gray_round_2" android:layout_width="278.0dip" android:layout_height="47.0dip" android:layout_marginBottom="114.0dip">
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatTextView android:textSize="17.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点击跳转详情页或第三方应用" />
+                <android.support.v7.widget.AppCompatImageView android:layout_gravity="center" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="4.0dip" android:src="@drawable/msv_right_arr" />
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/swap_info" android:background="@drawable/msv_swap_click" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="222.0dip">
+            <android.support.v7.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/swap_pic" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_marginBottom="9.0dip" />
+            <android.support.v7.widget.AppCompatTextView android:textSize="19.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/swap_tips1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="翻转手机或点击图标" />
+            <android.support.v7.widget.AppCompatTextView android:textSize="15.0dip" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/swap_tips2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="跳转详情页或第三方应用" />
+        </LinearLayout>
+        <android.support.v7.widget.AppCompatTextView android:textSize="10.0dip" android:textColor="#ffffffff" android:layout_gravity="bottom|center|right" android:background="@drawable/msv_ad_background" android:paddingLeft="4.0dip" android:paddingTop="2.0dip" android:paddingRight="4.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="28.0dip" android:layout_marginBottom="33.0dip" android:text="广告" />
+    </FrameLayout>
+</com.qq.e.ads.nativ.widget.NativeAdContainer>

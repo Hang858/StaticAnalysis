@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|left" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meituan.roodesign.widgets.iconfont.RooIconFont android:textSize="16.0dip" android:gravity="center" android:id="@id/img_address_icon" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="1.0dip" android:text="@string/xpi" />
+    <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="#ff222426" android:ellipsize="end" android:id="@id/txt_address_info" android:text="@string/bau6" android:maxEms="10" android:singleLine="true" style="@style/WmText" />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/layout_actionbar_content" android:layout_width="fill_parent" android:layout_height="@dimen/d_a"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_back" android:layout_width="34.0dip" android:layout_height="34.0dip" android:scaleType="fitXY" />
+    <RelativeLayout android:gravity="center|left" android:id="@id/title_root_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/iv_back" android:layout_centerVertical="true">
+        <com.sankuai.waimai.store.view.banner.roundview.UniversalImageView android:id="@id/iv_title" android:visibility="visible" android:layout_width="84.0dip" android:layout_height="34.0dip" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/lottie_animation_style_title" android:visibility="gone" android:layout_width="84.0dip" android:layout_height="34.0dip" android:scaleType="fitStart" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:lottie_loop="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_new_change_location" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uv2" android:layout_weight="1.0">
+        <ImageView android:id="@id/location_icon" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginRight="1.0dip" android:layout_marginBottom="-1.0dip" />
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#e6000000" android:id="@id/location_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxEms="10" android:singleLine="true" />
+    </LinearLayout>
+    <ImageView android:id="@id/market_icon" android:layout_width="@dimen/jd7" android:layout_height="@dimen/p7e" android:layout_marginLeft="@dimen/i6c" android:layout_marginRight="@dimen/z34" />
+    <ImageView android:id="@id/new_style_action_bar_right_top_shop_cart" android:layout_width="34.0dip" android:layout_height="34.0dip" android:layout_marginLeft="@dimen/bbj2" android:layout_marginRight="6.0dip" />
+</LinearLayout>

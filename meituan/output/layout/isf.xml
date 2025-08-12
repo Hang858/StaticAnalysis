@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/search_med_consult_image" android:visibility="gone" android:layout_width="92.0dip" android:layout_height="43.0dip" android:layout_marginBottom="158.0dip" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/search_shopping_cart_image" android:background="@drawable/um_" android:visibility="gone" android:layout_width="52.0dip" android:layout_height="52.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="88.0dip" android:scaleType="center" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

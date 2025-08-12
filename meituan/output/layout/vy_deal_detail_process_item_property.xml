@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/vy_text_gray_777" android:ellipsize="end" android:id="@id/process_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:maxLines="1" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/vy_text_gray_777" android:ellipsize="end" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="80.0dip" android:maxLines="1" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/process_item_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+</LinearLayout>

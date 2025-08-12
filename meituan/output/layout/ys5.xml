@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/filter_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/l2c" android:background="@color/eeh" android:visibility="gone" android:layout_width="0.5dip" android:layout_height="12.0dip" />
+    <Space android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+    <ImageView android:layout_gravity="center" android:id="@id/filter_sort_icon" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginRight="5.0dip" android:scaleType="fitXY" />
+    <TextView android:textSize="13.0dip" android:textColor="@color/euj" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/y9f" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:drawablePadding="4.0dip" />
+    <com.meituan.roodesign.widgets.iconfont.RooIconFont android:textSize="15.0dip" android:textColor="@color/euj" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/myk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vn6" android:includeFontPadding="false" />
+    <View android:layout_gravity="top" android:id="@id/eqj" android:background="@drawable/brl" android:layout_width="6.0dip" android:layout_height="6.0dip" />
+    <Space android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textSize="13.0sp" android:textColor="@color/og9" android:id="@id/j1_" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="输入key" android:maxLines="1" android:layout_weight="1.0" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/og9" android:gravity="center|left" android:id="@id/ta_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="获取模板" />
+</LinearLayout>

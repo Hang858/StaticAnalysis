@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:support="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/share" android:title="@string/share_share" support:actionLayout="@layout/fle" support:showAsAction="ifRoom" />
+    <item android:id="@id/favor" android:title="@string/favorite" support:actionLayout="@layout/bcjv" support:showAsAction="always" />
+</menu>

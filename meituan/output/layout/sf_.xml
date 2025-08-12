@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.meituan.android.edfu.edfucamera.cameraview.EdfuCameraView android:id="@id/cameraView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:adjustViewBounds="true" app:cameraRatio="16:9" />
+    <ImageView android:id="@id/image" android:background="@android:color/black" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+</RelativeLayout>

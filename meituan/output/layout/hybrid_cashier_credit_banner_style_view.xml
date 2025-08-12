@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/transparent" android:paddingLeft="18.0dip" android:paddingRight="12.0dip" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="#ff191919" android:id="@id/tv_banner_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginBottom="24.0dip" android:layout_toLeftOf="@id/rl_banner_button" android:lineSpacingExtra="0.0dip" android:lineSpacingMultiplier="1.0" />
+    <RelativeLayout android:id="@id/rl_banner_button" android:layout_width="wrap_content" android:layout_height="24.0dip" android:layout_marginLeft="2.0dip" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+        <ImageView android:id="@id/iv_banner_button_bg" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff191919" android:gravity="center_vertical" android:id="@id/tv_banner_button" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

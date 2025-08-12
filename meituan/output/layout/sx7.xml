@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/g6y" android:clipChildren="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.meituan.android.food.widget.image.FoodStrokeImageView android:id="@id/qge" android:layout_width="@dimen/h9o" android:layout_height="@dimen/ih4" android:scaleType="centerCrop" app:foodCornerRadius="@dimen/iom" app:foodOverlayColor="@color/tmp" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/zxe" android:background="@drawable/l8g" android:clipChildren="true" android:layout_width="fill_parent" android:layout_height="39.0dip" android:layout_marginLeft="@dimen/bamr" android:layout_marginRight="@dimen/bamr" android:layout_marginBottom="@dimen/bamr">
+        <TextView android:textSize="@dimen/r0i" android:textColor="@color/l4f" android:id="@id/pyo" android:layout_width="@dimen/q37" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uhr" android:layout_marginRight="@dimen/uhr" android:maxWidth="@dimen/q37" android:singleLine="true" android:includeFontPadding="false" />
+        <TextView android:textSize="@dimen/ka6" android:textColor="@color/l4f" android:ellipsize="end" android:id="@id/bchr" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/uhr" android:layout_marginTop="@dimen/bbi3" android:layout_marginRight="@dimen/uhr" android:maxWidth="@dimen/q37" android:singleLine="true" android:includeFontPadding="false" />
+    </LinearLayout>
+</FrameLayout>

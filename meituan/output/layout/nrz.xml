@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/t5n" android:paddingBottom="7.6799927pt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="7.6799927pt" android:paddingEnd="7.6799927pt"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sankuai.ptview.view.PTFrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView android:id="@id/wzd" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="24.959991pt" android:layout_marginTop="9.599976pt" android:layout_marginStart="1.9199829pt" android:layout_marginEnd="25.919983pt" />
+        <com.sankuai.ptview.view.PTView android:layout_gravity="end|center|top" android:id="@id/y_o" android:background="@drawable/mwf" android:layout_width="43.19998pt" android:layout_height="24.959991pt" android:layout_marginTop="9.599976pt" android:layout_marginEnd="25.919983pt" />
+        <com.sankuai.ptview.view.PTImageView android:layout_gravity="end|center|top" android:id="@id/dd8" android:layout_width="11.519989pt" android:layout_height="11.519989pt" android:layout_marginTop="7.6799927pt" android:src="@drawable/y_" android:scaleType="fitXY" />
+    </com.sankuai.ptview.view.PTFrameLayout>
+    <com.sankuai.ptview.view.PTLinearLayout android:orientation="horizontal" android:id="@id/vmc" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.279999pt">
+        <com.meituan.android.common.ui.widget.RoundFrameLayout android:id="@id/jiu" android:background="@drawable/d2d" android:layout_width="69.119995pt" android:layout_height="69.119995pt" app:rfl_border="false" app:rfl_radius="3.8399963pt">
+            <com.sankuai.ptview.view.PTImageView android:id="@id/ebd" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+            <com.sankuai.ptview.view.PTView android:layout_gravity="bottom" android:id="@id/yfk" android:background="@drawable/hnx" android:layout_width="fill_parent" android:layout_height="28.799988pt" />
+            <com.sankuai.ptview.view.PTLinearLayout android:gravity="bottom|center" android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/e0c" android:paddingBottom="1.9199829pt" android:layout_width="61.439972pt" android:layout_height="wrap_content">
+                <com.sankuai.ptview.view.PTTextView android:textSize="10.559998pt" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="距你" android:maxLines="1" />
+                <com.sankuai.ptview.view.PTTextView android:textSize="10.559998pt" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/ghi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="0.96000004pt" />
+            </com.sankuai.ptview.view.PTLinearLayout>
+        </com.meituan.android.common.ui.widget.RoundFrameLayout>
+        <com.sankuai.ptview.view.PTLinearLayout android:orientation="vertical" android:id="@id/m93" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="7.6799927pt">
+            <com.sankuai.ptview.view.PTLinearLayout android:orientation="horizontal" android:id="@id/mrf" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginEnd="3.8099976pt">
+                <com.sankuai.ptview.view.PTLinearLayout android:orientation="vertical" android:layout_width="0.0pt" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <com.sankuai.ptview.view.PTTextView android:textSize="13.439972pt" android:textColor="#e6000000" android:ellipsize="end" android:id="@id/oo7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="202.56pt" android:singleLine="true" />
+                    <com.sankuai.ptview.view.PTLinearLayout android:orientation="horizontal" android:id="@id/hic" android:background="@drawable/dia" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.319977pt">
+                        <com.meituan.android.common.ui.widget.RoundFrameLayout android:id="@id/chn" android:layout_width="32.159973pt" android:layout_height="15.359985pt" app:rfl_border="false" app:rfl_radius="1.9199829pt">
+                            <com.sankuai.ptview.view.PTImageView android:id="@id/yz0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+                        </com.meituan.android.common.ui.widget.RoundFrameLayout>
+                        <com.sankuai.ptview.view.PTTextView android:textSize="9.599976pt" android:textColor="#ff993300" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/zdk" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxWidth="154.56pt" android:singleLine="true" android:layout_marginStart="1.9199829pt" android:layout_marginEnd="3.3599854pt" />
+                    </com.sankuai.ptview.view.PTLinearLayout>
+                </com.sankuai.ptview.view.PTLinearLayout>
+                <com.sankuai.ptview.view.PTLinearLayout android:gravity="center" android:layout_gravity="end|center" android:orientation="vertical" android:id="@id/mzs" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.sankuai.ptview.view.PTImageView android:id="@id/b6d" android:layout_width="23.039978pt" android:layout_height="23.039978pt" android:scaleType="fitXY" />
+                    <com.sankuai.ptview.view.PTTextView android:textSize="9.599976pt" android:textColor="#80000000" android:ellipsize="none" android:id="@id/nht" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="4" />
+                </com.sankuai.ptview.view.PTLinearLayout>
+            </com.sankuai.ptview.view.PTLinearLayout>
+            <com.sankuai.ptview.view.PTView android:layout_gravity="bottom" android:background="#0f000000" android:layout_width="fill_parent" android:layout_height="0.48000002pt" android:layout_marginTop="7.6799927pt" android:layout_marginEnd="4.799988pt" />
+            <com.meituan.android.pt.homepage.modules.ordersmart.view.HangUnderLayout android:layout_gravity="bottom" android:id="@id/id_" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.639984pt" android:layout_marginEnd="7.6799927pt" />
+        </com.sankuai.ptview.view.PTLinearLayout>
+    </com.sankuai.ptview.view.PTLinearLayout>
+</LinearLayout>

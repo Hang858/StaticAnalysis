@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/wqq" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@id/gsz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="Title" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff7d7f80" android:id="@id/uht" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:text="Snippet" android:layout_below="@id/gsz" android:lineSpacingExtra="1.0dip" />
+</RelativeLayout>

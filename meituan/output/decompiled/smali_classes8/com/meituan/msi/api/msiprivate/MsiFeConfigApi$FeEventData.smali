@@ -1,0 +1,51 @@
+.class public Lcom/meituan/msi/api/msiprivate/MsiFeConfigApi$FeEventData;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation runtime Lcom/meituan/msi/annotations/MsiSupport;
+.end annotation
+
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/meituan/msi/api/msiprivate/MsiFeConfigApi;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "FeEventData"
+.end annotation
+
+
+# static fields
+.field public static changeQuickRedirect:Lcom/meituan/robust/ChangeQuickRedirect;
+
+
+# instance fields
+.field public bizFEConfig:Lcom/meituan/msi/api/msiprivate/MsiFeConfigApi$BizFEConfig;
+
+.field public fieldsReportSwitch:Z
+
+.field public filterApis:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public sampleRate:F
+
+.field public switchConfigs:Lcom/google/gson/JsonElement;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

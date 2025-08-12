@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/bb4m" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/bmc" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <FrameLayout android:id="@id/ywm" android:background="@drawable/baub" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="13.0sp" android:textColor="@color/lot" android:ellipsize="end" android:gravity="center" android:id="@id/area" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:drawableRight="@drawable/zec" android:drawablePadding="4.0dip" android:layout_centerInParent="true" android:textAllCaps="false" />
+                <View android:id="@id/hgq" android:background="#ffe5e5e5" android:layout_width="1.0px" android:layout_height="30.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@id/w31" android:background="@drawable/baub" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="13.0sp" android:textColor="@color/lot" android:gravity="center" android:id="@id/jhe" android:paddingLeft="5.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:drawableRight="@drawable/zec" android:drawablePadding="4.0dip" android:layout_centerInParent="true" />
+                <View android:id="@id/r1_" android:background="#ffe5e5e5" android:layout_width="1.0px" android:layout_height="30.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@id/bav9" android:background="@drawable/baub" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="13.0sp" android:textColor="@color/lot" android:gravity="center" android:id="@id/sort" android:paddingLeft="5.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:drawableRight="@drawable/zec" android:drawablePadding="4.0dip" android:layout_centerInParent="true" />
+                <View android:id="@id/bb53" android:background="#ffe5e5e5" android:layout_width="1.0px" android:layout_height="30.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@id/d87" android:background="@drawable/baub" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="13.0sp" android:textColor="@color/lot" android:gravity="center" android:id="@id/y9f" android:paddingLeft="5.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/gia" android:singleLine="true" android:drawableRight="@drawable/zec" android:drawablePadding="4.0dip" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <View android:id="@id/divider" android:background="@drawable/dni" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</LinearLayout>

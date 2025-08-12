@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/user_feedback_main" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/baee"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_user_feedback_bubble_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/im_user_feedback_close" android:paddingLeft="@dimen/n_x" android:paddingTop="@dimen/f7u" android:paddingRight="@dimen/n_x" android:paddingBottom="@dimen/f7u" android:layout_width="@dimen/o4g" android:layout_height="@dimen/o4g" android:src="@drawable/lc8" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingRight="@dimen/n4v" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="#ff222426" android:ellipsize="end" android:id="@id/user_feedback_bubble_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="@dimen/hwz" android:textColor="#ff575859" android:ellipsize="end" android:id="@id/user_feedback_bubble_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/j8y" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="center|right" android:layout_width="@dimen/baee" android:layout_height="@dimen/baee">
+        <ImageView android:layout_gravity="center" android:id="@id/user_feedback_bubble_icon" android:padding="@dimen/wpy" android:layout_width="@dimen/o4g" android:layout_height="@dimen/o4g" android:scaleType="fitXY" />
+    </FrameLayout>
+</FrameLayout>

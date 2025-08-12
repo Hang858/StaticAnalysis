@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="70.0dip" android:layout_height="70.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/fl_red_pack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_centerInParent="true" android:rotation="10.0" layout="@layout/member_ship_gitf_pack_view" />
+    <FrameLayout android:id="@id/fl_badge_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="-6.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="-6.0dip" android:layout_toRightOf="@id/fl_red_pack" android:layout_above="@id/fl_red_pack">
+        <ImageView android:id="@id/iv_badge_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <TextView android:textSize="6.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_badge" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLines="1" />
+    </FrameLayout>
+</RelativeLayout>

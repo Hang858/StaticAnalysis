@@ -1,0 +1,14 @@
+.class public interface abstract Lcom/meituan/android/edfu/mvex/ui/widget/ImageLoadingView$b;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/meituan/android/edfu/mvex/ui/widget/ImageLoadingView;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "b"
+.end annotation

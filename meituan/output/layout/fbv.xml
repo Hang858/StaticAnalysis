@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_gravity="top" android:id="@id/divider_line" android:background="@color/wm_st_shopcart_bg_gray_f5" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="@dimen/wpy" android:layout_marginTop="@dimen/sk1" android:layout_marginRight="@dimen/wpy" android:layout_marginBottom="@dimen/sk1" />
+    <android.support.v7.widget.RecyclerView android:id="@id/ts8" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/sgk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wpy" android:layout_marginRight="@dimen/wpy" android:layout_marginBottom="@dimen/sk1">
+        <TextView android:gravity="center_vertical" android:id="@id/noq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/i6c" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/kmr" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/hsd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="5" android:layout_toLeftOf="@id/noq" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

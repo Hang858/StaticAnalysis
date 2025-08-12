@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.store.view.RoundedCornerRelativeLayout android:orientation="horizontal" android:id="@id/kl1" android:background="@color/w88" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/yxe" android:minHeight="@dimen/o4g" app:cornerRadius="@dimen/ea5"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sankuai.waimai.store.view.RoundedCornerImageView android:id="@id/o5z" android:background="@android:color/white" android:layout_width="@dimen/bpi" android:layout_height="@dimen/bpi" android:layout_marginTop="@dimen/bbrs" android:layout_marginBottom="@dimen/bbrs" android:scaleType="fitCenter" android:layout_marginStart="@dimen/bbrs" android:layout_marginEnd="@dimen/ea5" app:cornerRadius="@dimen/bbrs" app:ratio="1.0" />
+    <com.sankuai.waimai.store.view.RoundedCornerImageView android:id="@id/nr5" android:background="#08000000" android:layout_width="@dimen/bpi" android:layout_height="@dimen/bpi" android:layout_marginTop="@dimen/bbrs" android:layout_marginBottom="@dimen/bbrs" android:scaleType="fitCenter" android:layout_marginStart="@dimen/bbrs" android:layout_marginEnd="@dimen/ea5" app:cornerRadius="@dimen/bbrs" app:ratio="1.0" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/o5z" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/m8w" android:textColor="@color/yvw" android:ellipsize="end" android:gravity="center" android:id="@id/eyj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        <TextView android:textSize="@dimen/hwz" android:textColor="@color/zy2" android:ellipsize="end" android:gravity="center" android:id="@id/eww" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    </LinearLayout>
+</com.sankuai.waimai.store.view.RoundedCornerRelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/ffs" android:background="@drawable/jj9" android:paddingTop="21.0dip" android:paddingBottom="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignBottom="@id/black_gap_view">
+        <RelativeLayout android:id="@id/top_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_close" android:padding="4.0dip" android:layout_width="@dimen/rza" android:layout_height="@dimen/rza" android:layout_marginRight="8.0dip" android:src="@drawable/uxg" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff222426" android:gravity="center" android:id="@id/ilz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawableLeft="@drawable/uss" android:drawablePadding="3.5dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textSize="11.0sp" android:textColor="#ff858687" android:id="@id/hbc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.5dip" android:singleLine="true" android:layout_below="@id/top_layout" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</merge>

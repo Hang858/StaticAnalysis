@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_info" android:background="@color/ii3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.meituan.roodesign.resfetcher.widgets.RooImageView android:id="@id/img_info" android:layout_width="wrap_content" android:layout_height="wrap_content" app:project="waimai_c" app:srcName="waimai_c_restaurant_redpacket_float_error" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/k4x" android:gravity="center" android:id="@id/txt_info" android:layout_marginTop="14.0dip" android:text="@string/rd" style="@style/WmText" />
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/w1r" android:id="@id/btn_info" android:background="@drawable/zjb" android:layout_width="87.0dip" android:layout_height="36.0dip" android:layout_marginTop="16.0dip" android:text="@string/wy8" style="@style/WmButton.CenterFixedWidth.Solid" />
+</LinearLayout>

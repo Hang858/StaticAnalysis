@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.imagemanager.DPNetworkImageView android:id="@id/appointment_image_view" android:layout_width="62.0dip" android:layout_height="50.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/appointment_title_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/appointment_image_view" android:layout_alignParentTop="true">
+        <TextView android:textSize="15.0sp" android:textColor="@color/vy_black1" android:ellipsize="end" android:id="@id/appointment_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/vy_price_color" android:id="@id/price_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" />
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/vy_light_gray" android:ellipsize="end" android:id="@id/appointment_service_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="11.0dip" android:maxLines="2" android:layout_toRightOf="@id/appointment_image_view" android:layout_below="@id/appointment_title_container" />
+</merge>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rootView" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/rah" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="52.0dip" />
+    <FrameLayout android:orientation="vertical" android:id="@id/bottom_view" android:clickable="true" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_alignParentBottom="true">
+        <include layout="@layout/wm_page_indicator_bg_layout" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/xv3" android:clickable="true" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/zcn" android:clipChildren="false" android:clipToPadding="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:layout_weight="1.0">
+                <ImageView android:id="@id/img_home_selected_roll_top" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/bj6" android:scaleType="fitXY" android:layout_centerHorizontal="true" android:contentDescription="外卖首页" />
+                <ImageView android:id="@id/img_home_selected" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/msg" android:scaleType="fitXY" android:layout_centerHorizontal="true" android:contentDescription="外卖首页" />
+                <ImageView android:id="@id/icon_home_normal" android:visibility="gone" android:layout_width="26.0dip" android:layout_height="26.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/xid" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="11.0sp" android:textColor="#ff575859" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/xjq" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:text="@string/so_" android:layout_centerHorizontal="true" />
+                <ViewStub android:orientation="horizontal" android:id="@id/irmo_view_deep_eat_tab_container" android:visibility="gone" android:layout="@layout/wm_page_tab_deepeat_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-7.8499756dip" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/bcp8" android:visibility="gone" android:clipChildren="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:layout_weight="1.0">
+                <ImageView android:id="@id/icon_vip_normal" android:visibility="visible" android:layout_width="26.0dip" android:layout_height="26.0dip" android:layout_marginTop="5.0dip" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="11.0sp" android:textColor="@color/va5" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/vip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:text="@string/bc5t" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <include android:clipChildren="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/eud" />
+            <RelativeLayout android:id="@id/yon" android:clipChildren="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:layout_weight="1.0">
+                <ImageView android:id="@id/icon_order_normal" android:visibility="visible" android:layout_width="26.0dip" android:layout_height="26.0dip" android:layout_marginTop="5.0dip" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="11.0sp" android:textColor="@color/va5" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/order" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:text="@string/bbun" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/qqk" android:clipChildren="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:layout_weight="1.0">
+                <ImageView android:id="@id/icon_more_normal" android:visibility="visible" android:layout_width="26.0dip" android:layout_height="26.0dip" android:layout_marginTop="5.0dip" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="11.0sp" android:textColor="@color/va5" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:text="@string/op5" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/navigation_bar_margin_layout_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ViewStub android:layout_gravity="bottom|center" android:id="@id/promotion_tab_layer" android:layout="@layout/promotion_tab_layer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="52.0dip" />
+        <ImageView android:layout_gravity="bottom|center" android:id="@id/iv_promotion_holder_night_snack" android:visibility="gone" android:layout_width="73.0dip" android:layout_height="73.0dip" android:scaleType="centerCrop" />
+    </FrameLayout>
+    <View android:id="@id/mask" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_view" />
+    <LinearLayout android:orientation="vertical" android:id="@id/snb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="5.0dip" android:layout_above="@id/bottom_view" android:layout_alignParentRight="true">
+        <ViewStub android:id="@id/bsn" android:visibility="gone" android:layout="@layout/r3s" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ViewStub android:id="@id/bi2" android:visibility="gone" android:layout="@layout/r3s" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/web_view_container" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/deep_eat_ai_container" android:layout="@layout/cjj" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

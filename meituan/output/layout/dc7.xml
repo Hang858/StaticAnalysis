@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/grv" android:visibility="gone" android:clipChildren="false" android:layout_width="66.0dip" android:layout_height="66.0dip" android:layout_marginBottom="24.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.meituan.roodesign.resfetcher.widgets.RooImageView android:id="@id/marking_sidebar_icon" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="22.0dip" />
+    <RelativeLayout android:gravity="center_horizontal" android:id="@id/hst" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginRight="-11.0dip" android:layout_alignRight="@id/marking_sidebar_icon">
+        <com.meituan.roodesign.resfetcher.widgets.RooImageView android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginTop="7.0dip" app:project="waimai_c" app:srcName="waimai_c_user_market_sidebar_close" />
+    </RelativeLayout>
+</RelativeLayout>

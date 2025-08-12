@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom" android:id="@id/indicator_bg_container" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/wm_page_main_home_indicator_bg_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/fox" android:background="#fff1f1f2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <ViewStub android:layout_gravity="bottom" android:id="@id/irmo_container" android:layout="@layout/wm_page_bottom_tab_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

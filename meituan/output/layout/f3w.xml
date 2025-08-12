@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/nmk" android:background="@drawable/hsh" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff2f2f2f" android:gravity="center" android:id="@id/r21" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/b7b" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:lineSpacingExtra="5.0dip" />
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <TextView android:textSize="16.0dip" android:textColor="#ff222222" android:gravity="center" android:id="@id/pm7" android:background="@drawable/j35" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="取消呼叫" android:layout_weight="1.0" />
+        <View android:layout_width="10.0dip" android:layout_height="40.0dip" />
+        <TextView android:textSize="16.0dip" android:textColor="#ff333333" android:gravity="center" android:id="@id/vk8" android:background="@drawable/i3l" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="继续呼叫" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/kl8" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:ellipsize="end" android:id="@id/rw6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:maxLines="1" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffffb000" android:id="@id/j_o" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

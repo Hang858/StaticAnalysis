@@ -1,0 +1,10 @@
+viewEventListener
+components
+currentItem
+animationInterrupted
+currentLoopCount
+loopCount
+interval
+inAnimation
+outAnimation
+onScrollStateListener

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.imagemanager.DPNetworkImageView android:id="@android:id/icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" dp:enableProgressPrint="true" dp:placeholderEmpty="@drawable/upc" dp:placeholderError="@drawable/p5p" dp:placeholderLoading="@drawable/p5p"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto" />

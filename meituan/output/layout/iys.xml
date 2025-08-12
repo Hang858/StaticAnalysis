@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="@dimen/emi"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="31.0dip" android:layout_marginLeft="@dimen/x8y" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+        <TextView android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/OsPoiStyle.Text.MainHeaderText" />
+        <TextView android:id="@id/lx8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" style="@style/OsPoiStyle.Text.MainHeaderDesc" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/w0r" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="33.0dip" android:layout_marginRight="@dimen/x8y" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <com.dianping.android.oversea.base.widget.OsNetWorkImageView android:id="@id/u0_" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="18.0dip" android:layout_marginRight="8.0dip" />
+        <TextView android:id="@id/xzx" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" style="@style/OsPoiStyle.Text.RouteAllText" />
+        <ImageView android:id="@id/iv_arrow" style="@style/OsPoiStyle.Arrow" />
+    </LinearLayout>
+</merge>

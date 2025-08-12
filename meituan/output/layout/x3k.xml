@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/tlr" android:background="@color/ttd" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/opl" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.meituan.android.paybase.widgets.notice.NoticeView android:id="@id/sn6" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+        <RelativeLayout android:orientation="vertical" android:id="@id/ejk" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="17.5dip" android:layout_marginBottom="3.0dip">
+            <LinearLayout android:orientation="vertical" android:id="@id/qog" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/basn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.5dip" android:baselineAligned="false" android:layout_below="@id/qog" />
+        </RelativeLayout>
+        <com.meituan.android.cashier.widget.NSCScrollView android:id="@id/nlq" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.meituan.android.cashier.widget.NativeStandardCashierAreaView android:orientation="vertical" android:id="@id/xpc" android:paddingBottom="150.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </com.meituan.android.cashier.widget.NSCScrollView>
+    </LinearLayout>
+    <RelativeLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/csf" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/y1z" android:background="@drawable/vhb" android:layout_width="fill_parent" android:layout_height="63.0dip" android:layout_alignBottom="@id/iiu" />
+        <FrameLayout android:id="@id/w61" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip">
+            <LinearLayout android:orientation="vertical" android:id="@id/gd2" android:background="@drawable/c5q" android:paddingTop="3.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="96.0dip" />
+            <com.meituan.android.cashier.widget.CashierMarketingGuideFloatView android:orientation="vertical" android:id="@id/geg" android:background="@drawable/c5q" android:paddingTop="10.0dip" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="96.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/jzu" android:background="@drawable/c5q" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="27.0dip" />
+            <com.meituan.android.paybase.widgets.ProgressButton android:textSize="16.0dip" android:textStyle="bold" android:textColor="#ff1e1e1e" android:layout_gravity="bottom" android:id="@id/bc7o" android:layout_height="48.0dip" android:layout_marginTop="0.0dip" android:layout_marginBottom="0.0dip" android:text="@string/ba6f" style="@style/cashier__button" />
+        </FrameLayout>
+        <View android:id="@id/iiu" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_below="@id/w61" android:importantForAccessibility="no" />
+    </RelativeLayout>
+</FrameLayout>

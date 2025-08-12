@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meituan.android.beauty.widget.header.BeautyHeaderMedicineView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@drawable/beauty_bg_medicine_header" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.dianping.imagemanager.DPNetworkImageView android:id="@id/iv_header_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" app:fadeInDisplayEnabled="true" />
+        <com.dianping.imagemanager.DPNetworkImageView android:id="@id/iv_header_logo" android:layout_width="54.0dip" android:layout_height="54.0dip" android:layout_marginTop="50.0dip" android:scaleType="centerCrop" android:layout_centerHorizontal="true" app:fadeInDisplayEnabled="true" app:isCircle="true" />
+        <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/beauty_shop_name" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:singleLine="true" android:drawablePadding="3.5dip" android:layout_below="@id/iv_header_logo" android:layout_centerHorizontal="true" style="@style/BeautyTextStyle" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="4.0dip" android:paddingBottom="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/beauty_shop_name" android:layout_centerHorizontal="true">
+            <RatingBar android:id="@id/avg_scroe_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:stepSize="0.1" android:isIndicator="true" style="?android:ratingBarStyleSmall" />
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/white" android:id="@id/tv_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:alpha="0.7" style="@style/BeautyTextStyle" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.meituan.android.beauty.widget.header.BeautyHeaderMedicineView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meituan.android.food.widget.FoodGradientRatingBar android:layout_gravity="center_vertical" android:id="@id/dxh" android:layout_width="68.0dip" android:layout_height="12.0dip" />
+    <TextView android:textSize="@dimen/r0i" android:ellipsize="end" android:id="@id/z8d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="4.0dip" />
+</merge>

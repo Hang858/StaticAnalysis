@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sankuai.waimai.business.page.home.widget.twolevel.CurveFrameLayout android:orientation="vertical" android:id="@id/ba45" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/yyr">
+        <ImageView android:id="@id/second_floor_bg_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <ImageView android:layout_gravity="bottom" android:id="@id/second_floor_effect_img" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+        <ImageView android:layout_gravity="bottom" android:id="@id/second_floor_guide_img" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/stop_auto_open_second_floor_btn" android:background="@drawable/t9c" android:visibility="invisible" android:layout_width="50.5dip" android:layout_height="22.0dip" android:text="@string/yyn" />
+        <RelativeLayout android:layout_gravity="bottom|center|right" android:id="@id/ni6" android:background="@drawable/d6m" android:visibility="invisible" android:layout_width="92.0dip" android:layout_height="36.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="150.0dip">
+            <TextView android:textSize="17.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/vzv" android:background="@drawable/d6m" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <TextView android:textSize="17.0sp" android:textColor="@color/white" android:gravity="center" android:layout_width="56.0dip" android:layout_height="fill_parent" android:text="跳过" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:textAlignment="center" />
+        </RelativeLayout>
+    </com.sankuai.waimai.business.page.home.widget.twolevel.CurveFrameLayout>
+    <com.sankuai.waimai.platform.widget.RatioImageView android:layout_gravity="bottom" android:id="@id/refresh_header_bg" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/yyr" android:src="@drawable/n0e" android:scaleType="fitXY" app:ratio="0.77" />
+    <com.sankuai.waimai.business.page.home.widget.twolevel.RefreshHeaderPlaceHolder android:layout_gravity="bottom|center" android:id="@id/x3t" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/yyr" />
+    <TextView android:textSize="11.0sp" android:textColor="#ff330000" android:layout_gravity="bottom|center" android:id="@id/xf3" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="104.0dip" />
+</FrameLayout>

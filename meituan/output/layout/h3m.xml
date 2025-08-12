@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/bbsm" android:background="#ffffffff" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="#ff595959" android:ellipsize="end" android:id="@id/x2i" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="16.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/bazi" android:background="@drawable/dsb" android:layout_width="132.0dip" android:layout_height="38.0dip" android:text="查看房型" />
+    </LinearLayout>
+</LinearLayout>

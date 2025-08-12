@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:theme="@style/Theme.RooDesign" android:id="@id/bq5" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Theme.RooDesign"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="24.0dip">
+        <android.support.v7.widget.AppCompatTextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="#ff222426" android:layout_width="fill_parent" android:layout_height="21.0dip" android:text="选择餐具数量" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ggn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+            <com.meituan.roodesign.widgets.label.RooLabel android:textSize="14.0dip" android:textColor="#ffff8000" android:gravity="center" android:id="@id/bb2m" android:layout_width="0.0dip" android:layout_height="32.0dip" android:text="@string/cqc" android:layout_weight="2.0" android:contentDescription="@string/q99" android:strokeColor="?rooBrandWarning" app:backgroundColor="#fffff8e1" app:cornerRadius="6.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:strokeWidth="0.5dip" />
+            <include android:layout_width="0.0dip" android:layout_height="32.0dip" android:layout_weight="2.0" android:layout_marginStart="12.0dip" layout="@layout/w6n" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

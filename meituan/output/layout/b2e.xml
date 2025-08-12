@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="43.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/divider" android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="15.0sp" android:textColor="#ffff6633" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_text" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:drawableRight="@drawable/jr" android:drawablePadding="5.0dip" />
+</merge>

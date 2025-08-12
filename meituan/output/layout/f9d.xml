@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="end" android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.meituan.android.food.widget.FoodLottieAnimationView android:id="@id/f9d" android:visibility="invisible" android:layout_width="@dimen/z0a" android:layout_height="@dimen/z0a" android:layout_marginEnd="@dimen/wsi" />
+    <FrameLayout android:id="@id/r08" android:visibility="invisible" android:layout_width="@dimen/prm" android:layout_height="@dimen/prm" android:layout_marginTop="@dimen/tc3">
+        <ImageView android:id="@id/dq4" android:layout_width="@dimen/prm" android:layout_height="@dimen/prm" />
+        <com.meituan.android.food.widget.text.FoodAutoSizeTextView android:textSize="12.0sp" android:textColor="@color/bm3" android:gravity="center" android:layout_gravity="right" android:id="@id/bb3t" android:background="@drawable/ckd" android:layout_width="@dimen/wdq" android:layout_height="@dimen/wdq" android:layout_marginTop="@dimen/bamr" android:singleLine="true" android:layout_marginEnd="@dimen/wsi" app:foodAutoSizePresetSizes="@array/frf" app:foodAutoSizeTextType="uniform" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/yv0" android:visibility="invisible" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-9.0dip">
+        <TextView android:textSize="@dimen/r0i" android:textStyle="bold" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/vo2" android:background="@drawable/vku" android:paddingBottom="@dimen/bamr" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/jk5" android:includeFontPadding="false" android:paddingEnd="@dimen/mvx" android:layout_marginEnd="@dimen/kln" />
+        <ImageView android:layout_gravity="end|center" android:id="@id/pcv" android:layout_width="@dimen/prm" android:layout_height="@dimen/prm" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sankuai.waimai.store.view.RoundedCornerLinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/baml" android:background="@android:color/white" android:paddingBottom="@dimen/wpy" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/wpy" android:paddingEnd="@dimen/wpy" app:cornerRadius="@dimen/wpy">
+        <TextView android:textSize="@dimen/e_9" android:textStyle="bold" android:textColor="@color/wm_sg_color_222426" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/qll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/qw0" android:layout_marginBottom="@dimen/rzl" android:maxLines="1" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/y0z">
+            <TextView android:textSize="@dimen/ps0" android:textColor="@color/wm_sg_color_222426" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/yh6" android:paddingTop="@dimen/wpy" android:paddingBottom="@dimen/wpy" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:layout_weight="1.0" />
+            <Space android:id="@id/bbo5" android:layout_width="@dimen/wpy" android:layout_height="0.0dip" />
+            <TextView android:textSize="@dimen/ps0" android:textColor="@color/wm_sg_color_222426" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/o33" android:paddingTop="@dimen/wpy" android:paddingBottom="@dimen/wpy" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:layout_weight="1.0" />
+        </LinearLayout>
+    </com.sankuai.waimai.store.view.RoundedCornerLinearLayout>
+</FrameLayout>

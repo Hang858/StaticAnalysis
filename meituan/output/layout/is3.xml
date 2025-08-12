@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/ksg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/l9h" android:divider="@drawable/fyc" android:showDividers="beginning|end|middle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/n1v" android:gravity="center_vertical" android:id="@id/title" android:paddingLeft="@dimen/xy7" android:paddingRight="@dimen/xy7" android:layout_width="fill_parent" android:layout_height="45.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/xy7" android:paddingRight="@dimen/xy7" android:layout_width="fill_parent" android:layout_height="45.0dip" android:weightSum="3.0">
+        <TextView android:textSize="14.0sp" android:textColor="@color/nhy" android:gravity="left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="参数名称" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/nhy" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="参数描述" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/nhy" android:gravity="right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="参数类型" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/zsp" android:paddingLeft="@dimen/xy7" android:paddingRight="@dimen/xy7" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

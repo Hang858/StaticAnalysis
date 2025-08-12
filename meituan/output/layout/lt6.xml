@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bm3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <TextView android:textSize="@dimen/iyo" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:text="ABTest设置开关" android:layout_weight="1.0" />
+        <android.support.v7.widget.SwitchCompat android:id="@id/q22" android:layout_width="70.0dip" android:layout_height="fill_parent" android:layout_marginRight="15.0dip" android:switchMinWidth="60.0dip" app:switchMinWidth="60.0dip" />
+    </LinearLayout>
+    <View android:background="@color/xtz" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <android.support.v7.widget.RecyclerView android:id="@id/t5c" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

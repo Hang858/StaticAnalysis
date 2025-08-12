@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/k5r" android:focusable="true" android:focusableInTouchMode="true" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.meituan.android.mgc.container.comm.unit.ui.MGCComponentView android:orientation="vertical" android:id="@id/x5w" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/ptm" android:background="@drawable/znf" android:visibility="gone" android:layout_width="45.0dip" android:layout_height="45.0dip" />
+    <FrameLayout android:id="@id/gdy" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/bbbv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/la0" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.meituan.android.mgc.container.comm.unit.ui.loading.anim.MGCLoadingAnimationView android:id="@id/f87" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.meituan.android.mgc.container.comm.unit.ui.MGCForceUpgradeView android:orientation="vertical" android:id="@id/ih8" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.meituan.android.mgc.container.comm.unit.ui.MGCCapsuleView android:layout_gravity="end|center|top" android:id="@id/lx" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21.0dip" android:layout_marginEnd="10.0dip" />
+    <com.meituan.android.mgc.widgets.MGCInputView android:layout_gravity="bottom" android:id="@id/wxg" android:background="@color/y0y" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="307.1953pt" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/vdr" android:layout_width="fill_parent" android:layout_height="115.19998pt" android:scaleType="fitCenter" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/sms" android:paddingLeft="9.599976pt" android:paddingTop="9.599976pt" android:paddingRight="9.599976pt" android:paddingBottom="9.599976pt" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ListView android:layout_gravity="top" android:id="@id/list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="9.599976pt" android:overScrollMode="never" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/x87" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.5pt" android:layout_marginBottom="3.6999817pt">
+            <TextView android:textSize="12.0sp" android:textColor="#ff222222" android:ellipsize="end" android:id="@id/button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <ImageView android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginLeft="4.0dip" android:layout_marginTop="1.0dip" android:src="@drawable/r_3" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/qd3" android:layout_width="34.599976pt" android:layout_height="34.599976pt" android:layout_marginTop="20.0pt" android:src="@drawable/oow" />
+</LinearLayout>

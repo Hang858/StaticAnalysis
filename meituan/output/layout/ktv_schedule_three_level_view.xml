@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meituan.android.generalcategories.view.schedulelistview.ScheduleThreeLevelView android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/block_name_container" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:textSize="@dimen/text_size_h15" android:id="@id/block_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" />
+    </LinearLayout>
+    <View android:background="@color/poi_entrance_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <HorizontalScrollView android:id="@id/schedule_showdates_scroll" android:background="@color/ktv_white" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rg_schedule_show_date" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </HorizontalScrollView>
+    <View android:background="@color/poi_entrance_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/second_view_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layer_show_schedule" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:background="@color/poi_entrance_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</com.meituan.android.generalcategories.view.schedulelistview.ScheduleThreeLevelView>

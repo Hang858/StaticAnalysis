@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/bbic" android:layout_width="wrap_content" android:layout_height="35.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/urb" android:layout_width="wrap_content" android:layout_height="35.0dip">
+        <View android:gravity="center" android:id="@id/bae" android:background="@drawable/ttq" android:layout_width="35.0dip" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/uhs" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/geb" android:gravity="center" android:id="@id/tjs" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="20.0dip" />
+            <EditText android:textSize="@dimen/nu7" android:gravity="center" android:id="@id/tkq" android:background="@drawable/ld8" android:focusable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="50.0dip" android:inputType="number" />
+        </LinearLayout>
+        <View android:gravity="center" android:id="@id/fke" android:background="@drawable/e38" android:layout_width="35.0dip" android:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center_vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="36.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/wow" android:background="@drawable/dwk" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <LinearLayout android:gravity="center_vertical" android:background="#00ffffff" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/z3b" android:layout_width="24.0dip" android:layout_height="24.0dip" android:scaleType="fitXY" android:contentDescription="leftIcon" android:layout_marginStart="9.0dip" />
+        <TextView android:textSize="13.0dip" android:textColor="@color/d5k" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/wuj" android:layout_width="0.0dip" android:layout_height="wrap_content" android:lines="1" android:layout_weight="1.0" android:lineSpacingExtra="2.0dip" android:layout_marginStart="3.0dip" android:layout_marginEnd="9.0dip" />
+        <ImageView android:id="@id/sea" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/e07" android:contentDescription="rightIcon" android:layout_marginStart="15.0dip" android:layout_marginEnd="12.0dip" />
+    </LinearLayout>
+</FrameLayout>

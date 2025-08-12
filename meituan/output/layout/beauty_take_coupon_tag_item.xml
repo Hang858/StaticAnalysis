@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/norule_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.imagemanager.DPNetworkImageView android:id="@id/take_coupon_icon" android:layout_width="57.0dip" android:layout_height="13.0dip" android:layout_marginRight="7.0dip" android:layout_centerVertical="true" dp:placeholderEmpty="@drawable/placeholder_empty" dp:placeholderError="@drawable/placeholder_error" dp:placeholderLoading="@drawable/placeholder_loading" />
+    <TextView android:textSize="12.0sp" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/take_coupon_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_toRightOf="@id/take_coupon_icon" android:layout_alignBaseline="@id/take_coupon_icon" />
+</RelativeLayout>

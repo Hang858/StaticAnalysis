@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/prt" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" />
+    <com.sankuai.waimai.platform.widget.HorizontalFlowLayout android:id="@id/f0g" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:maxLines="2" app:childHeight="23.0dip" app:childMarginHorizontal="5.0dip" />
+</LinearLayout>

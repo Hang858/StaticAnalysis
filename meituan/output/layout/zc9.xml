@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/dqa" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/e_9" android:textColor="#e6000000" android:id="@id/l79" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/z34" android:text="进群领专享优惠券" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff222426" android:id="@id/bzt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="亲爱的顾客，感谢您下单，本店已开通商家顾客交流群，群中会经常发布优惠商品及营销活动，快来加入吧！" android:layout_below="@id/l79" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/jpg" android:gravity="center" android:id="@id/fkr" android:background="@drawable/c7z" android:paddingLeft="18.0dip" android:paddingTop="6.0dip" android:paddingRight="18.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="立即加入粉丝群" android:layout_below="@id/bzt" android:layout_alignParentRight="true" />
+</RelativeLayout>

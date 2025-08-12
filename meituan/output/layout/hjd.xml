@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/b2p" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sankuai.waimai.store.newwidgets.flowlayout.FlowLayout android:id="@id/c7c" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+    <RelativeLayout android:id="@id/mx" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/yxe" android:layout_marginRight="@dimen/wpy">
+        <RelativeLayout android:id="@id/cqb" android:layout_width="16.0dip" android:layout_height="22.0dip" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/t7k" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginTop="8.0dip" android:layout_marginStart="@dimen/ea5" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/cqb">
+            <LinearLayout android:orientation="horizontal" android:id="@id/o4e" android:paddingTop="@dimen/z34" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/yvi" android:layout_width="@dimen/n_x" android:layout_height="@dimen/n_x" android:layout_marginTop="@dimen/j8y" android:scaleType="centerCrop" />
+                <TextView android:textSize="@dimen/iz4" android:textStyle="bold" android:textColor="#ffff4a26" android:id="@id/opf" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/yxe" />
+            </LinearLayout>
+            <com.sankuai.waimai.platform.widget.tag.virtualtag.TagCanvasView android:id="@id/qn1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+            <com.sankuai.waimai.store.newwidgets.labelview.LabelView android:textSize="10.0sp" android:id="@id/p05" android:paddingRight="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="4.0dip" android:drawablePadding="2.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

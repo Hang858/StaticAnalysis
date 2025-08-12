@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.ptview.view.PTLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="21.099976pt" android:paddingStart="34.599976pt" android:paddingEnd="32.599976pt"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sankuai.ptview.view.PTTextView android:textSize="13.439972pt" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/lx8" android:layout_width="0.0pt" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+    <com.meituan.android.pt.homepage.shoppingcart.ui.view.StepView android:id="@id/v7n" android:layout_width="wrap_content" android:layout_height="21.119995pt" app:ptsv_fraction="false" app:ptsv_imageColor="#b3000000" app:ptsv_imageDisableColor="#1f000000" app:ptsv_imageSize="9.599976pt" />
+</com.sankuai.ptview.view.PTLinearLayout>

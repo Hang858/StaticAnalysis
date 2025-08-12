@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/onp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/v45" android:layout_width="fill_parent" android:layout_height="@dimen/onp">
+        <com.meituan.android.novel.library.page.reader.view.back.BackView android:id="@id/menu_back_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/onp">
+            <com.meituan.android.novel.library.page.reader.view.menutitle.ChangeBookView android:textSize="14.0sp" android:textColor="@color/z1p" android:layout_gravity="center_vertical" android:id="@id/zm" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+            <com.meituan.android.novel.library.page.reader.view.menutitle.AddShelfView android:textSize="14.0sp" android:textColor="@color/z1p" android:layout_gravity="center_vertical" android:id="@id/pto" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+            <com.meituan.android.novel.library.page.reader.view.menutitle.CommSwitchView android:layout_gravity="center_vertical" android:id="@id/iv_comm_switch" android:padding="10.0dip" android:layout_width="45.0dip" android:layout_height="45.0dip" />
+            <com.meituan.android.novel.library.page.reader.view.menutitle.share.ShareView android:layout_gravity="center_vertical" android:id="@id/iv_share" android:padding="10.0dip" android:visibility="gone" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginRight="6.0dip" />
+        </LinearLayout>
+    </FrameLayout>
+    <com.meituan.android.novel.library.page.reader.mscwidget.titletips.TitleTipsView android:id="@id/imq" android:layout_width="fill_parent" android:layout_height="11.0dip" android:layout_marginTop="-11.0dip" android:layout_below="@id/v45" />
+</RelativeLayout>

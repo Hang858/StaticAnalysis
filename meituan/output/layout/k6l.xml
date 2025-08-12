@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/xlx" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/bbe6">
+        <TextView android:textStyle="bold" android:textColor="@color/vn5" android:ellipsize="end" android:gravity="center" android:id="@id/ensure" android:background="@drawable/sp2" android:layout_width="fill_parent" android:layout_height="@dimen/p8w" android:maxLines="1" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/cashier__paylater_guide_dialog_button" />
+        <TextView android:textSize="@dimen/sg5" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/dmn" android:background="@drawable/bci1" android:paddingLeft="@dimen/m2g" android:paddingRight="@dimen/m2g" android:layout_width="wrap_content" android:layout_height="@dimen/p5s" android:maxLines="1" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <TextView android:textColor="@color/z0y" android:ellipsize="end" android:gravity="center" android:id="@id/cancel" android:background="@drawable/ef7" android:layout_width="fill_parent" android:layout_marginTop="@dimen/iep" android:layout_marginBottom="@dimen/x_j" android:maxLines="1" style="@style/cashier__paylater_guide_dialog_button" />
+</LinearLayout>

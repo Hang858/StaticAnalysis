@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meituan.android.base.ui.widget.CategoryCheckableLayout android:gravity="center_vertical" android:background="@color/transparent" android:paddingLeft="24.0dip" android:paddingRight="28.0dip" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="44.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/j_u" android:ellipsize="marquee" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/name" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/qwp" android:ellipsize="marquee" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/count" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+</com.meituan.android.base.ui.widget.CategoryCheckableLayout>

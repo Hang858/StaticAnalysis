@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/ka6" android:textColor="@color/bm3" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/bc0v" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" app:layout_priority="1" />
+    <com.meituan.android.food.widget.FoodCountDownTextView android:textSize="@dimen/ka6" android:textColor="@color/bm3" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/bbvd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wzk" android:adjustViewBounds="true" android:minWidth="@dimen/x1y" android:maxLines="1" android:includeFontPadding="false" app:layout_priority="2" />
+</merge>

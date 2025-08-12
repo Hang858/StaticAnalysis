@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:background="@drawable/jh" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginRight="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.meituan.android.movie.tradebase.common.view.MoviePriceTextView android:textSize="13.0sp" android:textColor="@color/mg0" android:id="@id/kze" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" app:priceFormat="@string/priceFormat" />
+    <TextView android:textSize="10.0sp" android:textColor="#ff8d6564" android:id="@id/xpu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="5.0dip" android:maxLines="1" />
+    <View android:id="@id/y_j" android:background="@drawable/jmy" android:layout_width="6.0dip" android:layout_height="fill_parent" android:layout_marginRight="4.0dip" />
+    <TextView android:textSize="10.0sp" android:textColor="#ff8d6564" android:id="@id/xsv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" />
+</LinearLayout>

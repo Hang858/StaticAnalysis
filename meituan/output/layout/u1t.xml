@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.maoyan.android.common.view.RoundImageView android:id="@id/rank_img" android:visibility="visible" android:layout_width="29.0dip" android:layout_height="36.0dip" android:layout_marginLeft="4.0dip" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:scaleType="fitXY" android:layout_centerVertical="true" app:maoyan_common_view_radius="4.0dip" />
+    <RelativeLayout android:id="@id/niz" android:layout_width="29.0dip" android:layout_height="36.0dip" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:layout_centerVertical="true" android:layout_marginStart="4.0dip">
+        <TextView android:textSize="9.0sp" android:textStyle="bold" android:textColor="#b3ffe596" android:id="@id/myd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="TOP" android:includeFontPadding="false" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ffffe186" android:id="@id/xhn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:includeFontPadding="false" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" android:layout_toEndOf="@id/niz">
+        <TextView android:textSize="10.0sp" android:textColor="#ffffeec1" android:id="@id/vfu" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#fffff4bd" android:id="@id/ffm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" />
+    </LinearLayout>
+</merge>

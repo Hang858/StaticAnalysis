@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_gravity="center" android:background="@drawable/sm4" android:layout_width="125.0dip" android:layout_height="29.0dip" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0dip" android:textColor="@color/mtnv_color_FFFFFF" android:id="@id/h8p" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="智能定位中" android:includeFontPadding="false" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/mtnv_tv_dr_loc_prompt_bar_icon" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/mtnv_tv_dr_loc_prompt_bar_icon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="12.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/h8p" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/y2r" android:layout_width="fill_parent" android:layout_height="152.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/uiu" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="11.0dip" android:textColor="#ff222426" android:gravity="center" android:id="@id/lgv" android:background="@drawable/u1j" android:visibility="invisible" android:layout_width="23.0dip" android:layout_height="16.0dip" android:layout_marginTop="2.0dip" android:alpha="0.5" />
+        <SeekBar android:id="@id/hbd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="2.0dip" android:layout_marginBottom="20.0dip" android:maxHeight="2.0dip" android:max="100" android:progress="80" android:progressDrawable="@drawable/dii" android:minHeight="2.0dip" android:thumb="@drawable/n7q" />
+    </FrameLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/hzm" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" />
+</LinearLayout>

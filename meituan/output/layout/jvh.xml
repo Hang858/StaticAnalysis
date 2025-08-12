@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/transparent" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sankuai.waimai.platform.widget.RoundedCornerLinearLayout android:orientation="vertical" android:background="#cc222426" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cornerRadius="6.0dip">
+        <TextView android:textSize="11.0sp" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/ne4" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.sankuai.waimai.platform.widget.RoundedCornerLinearLayout>
+</FrameLayout>

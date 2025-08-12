@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sankuai.xm.imui.common.view.AdaptiveImageView android:layout_gravity="center" android:id="@id/xm_sdk_iv_chat_emotion" android:background="@drawable/xm_sdk_chat_msg_img_holder_bg" android:layout_width="120.0dip" android:layout_height="120.0dip" android:scaleType="fitXY" android:maxWidth="120.0dip" android:maxHeight="120.0dip" />
+    <com.sankuai.xm.imui.common.view.LinkTextView android:gravity="start|center" android:autoLink="none" android:id="@id/xm_sdk_tv_chat_emotion_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_centerVertical="true" style="@style/xm_sdk_chat_msg_content_style" />
+</RelativeLayout>

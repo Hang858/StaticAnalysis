@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ifx" android:paddingLeft="12.0dip" android:paddingTop="10.0dip" android:paddingRight="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_14" android:textStyle="bold" android:textColor="@color/g3u" android:id="@id/w_m" android:layout_marginRight="20.0dip" android:text="@string/ww1" style="@style/WmText" />
+    <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+    <TextView android:textSize="12.0sp" android:textColor="#ff222426" android:id="@id/sdn" android:visibility="gone" android:layout_marginRight="6.0dip" android:drawableLeft="@drawable/kz8" style="@style/WmText" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/g3u" android:textColorHint="#ff999999" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/o0t" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/lfd" android:singleLine="true" />
+    <com.meituan.roodesign.widgets.iconfont.RooIconFont android:textSize="8.0dip" android:textColor="@color/po9" android:layout_gravity="center_vertical" android:id="@id/o3v" android:paddingLeft="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nia" />
+</LinearLayout>

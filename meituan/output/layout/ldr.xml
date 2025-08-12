@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/drx" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/t6w" android:background="@drawable/jx8" android:paddingLeft="16.0dip" android:paddingTop="21.0dip" android:paddingRight="16.0dip" android:paddingBottom="16.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:layout_centerVertical="true" android:radius="18.0dip">
+        <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="#ff191919" android:id="@id/dc6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="体验短视频完整功能 领更多现金" android:maxLines="1" android:textAlignment="center" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff191919" android:id="@id/o_5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginTop="13.0dip" android:text="副标题" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="21.0dip">
+            <Button android:textSize="15.0dip" android:textColor="#ff191919" android:id="@id/y7" android:background="@drawable/xuo" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="我再想想" android:layout_weight="1.0" />
+            <Button android:textSize="15.0dip" android:textColor="#ff191919" android:id="@id/r9t" android:background="@drawable/ep5" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="8.0dip" android:text="立即体验" android:layout_weight="1.0" android:elevation="0.0dip" style="?android:borderlessButtonStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

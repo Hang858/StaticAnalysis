@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/vca" android:background="#cc000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:id="@id/gc0" android:layout_width="312.0dip" android:layout_height="wrap_content">
+        <com.sankuai.ptview.view.PTImageView android:id="@id/basm" android:layout_width="fill_parent" android:layout_height="250.0dip" android:layout_alignParentTop="true" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/i7n" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/basm">
+            <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="#ff191919" android:ellipsize="end" android:gravity="center" android:id="@id/wlq" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="19.0dip" android:layout_marginRight="16.0dip" android:maxLines="1" />
+            <TextView android:textSize="14.0dip" android:textColor="#ff191919" android:ellipsize="end" android:gravity="center" android:id="@id/g6a" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:maxLines="2" />
+            <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="#ff191919" android:ellipsize="end" android:gravity="center" android:id="@id/bbsu" android:background="@drawable/tz6" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:maxLines="1" />
+        </LinearLayout>
+        <ImageView android:id="@id/tnx" android:background="@drawable/tdk" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginTop="10.0dip" android:layout_alignParentTop="true" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/woq" android:layout_width="280.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="#ff333333" android:id="@id/ka7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:text="Whiteboard面板" />
+    <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textColor="#ff333333" android:id="@id/fl0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:text="页面节点面板" />
+</LinearLayout>

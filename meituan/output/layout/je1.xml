@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/xri" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/zce" android:id="@id/ckc" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <View android:id="@id/bad" android:background="@color/vjv" android:layout_width="1.0dip" android:layout_height="13.0dip" android:layout_marginLeft="9.0dip" android:layout_marginRight="9.0dip" />
+        <ImageView android:id="@id/mv3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/znn" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/zce" android:id="@id/bst" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="3.0dip" />
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="17.0dip" android:layout_marginLeft="9.0dip">
+            <ImageView android:id="@id/iv_transit_eta_status" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            <TextView android:textSize="9.5sp" android:gravity="start|center" android:id="@id/z3k" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="4.0dip" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sfi" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="12.0sp" android:gravity="center|left" android:id="@id/vj2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+    </LinearLayout>
+</merge>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/bbg9" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/kmd" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/nkq">
+        <com.sankuai.waimai.store.view.LiveView android:id="@id/b0q" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:gravity="left" android:id="@id/kgp" android:includeFontPadding="false" android:drawablePadding="8.0dip" style="@style/WmText" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/l04" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.sankuai.waimai.store.view.LiveView android:id="@id/rk2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:gravity="left" android:id="@id/bb84" android:includeFontPadding="false" android:drawableRight="@drawable/tv6" android:drawablePadding="8.0dip" style="@style/WmText" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/s4_" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+            <TextView android:textSize="10.0dip" android:textColor="@color/ihf" android:id="@id/bays" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_height="17.0dip" style="@style/WmText" />
+            <com.sankuai.waimai.store.newwidgets.labelview.LabelView android:textSize="10.0dip" android:textColor="#ff37a2ee" android:ellipsize="end" android:gravity="center" android:id="@id/lir" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="17.0dip" android:singleLine="true" android:drawablePadding="2.0dip" app:borderColorNormal="#ff37a2ee" app:borderWidth="0.5dip" app:radiusBottomRight="2.0dip" app:radiusTopRight="2.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/iug" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+            <FrameLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/wex" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="17.0dip">
+                <ImageView android:textColor="@color/red" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/e2" android:visibility="invisible" android:layout_width="14.0dip" android:layout_height="15.0dip" android:src="@drawable/r8t" />
+                <com.sankuai.waimai.platform.widget.tag.virtualtag.TagCanvasView android:layout_gravity="center_vertical" android:id="@id/eln" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" />
+            </FrameLayout>
+            <com.sankuai.waimai.store.orderlist.view.base.SingleLineWithOmitHorizontalFlowLayout android:layout_gravity="center_vertical" android:id="@id/jgw" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:childHeight="17.0dip" app:childMarginHorizontal="4.0dip" app:childMarginVertical="5.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.meituan.roodesign.resfetcher.widgets.RooImageView android:layout_width="100.0dip" android:layout_height="76.0dip" android:layout_marginTop="10.0dip" app:project="waimai_c" app:srcName="waimai_c_restaurantkit_icon_non_recommend_goods" />
+    <TextView android:textSize="14.0dip" android:textColor="#ff575859" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:text="推荐的商品已下架" android:singleLine="true" />
+</LinearLayout>

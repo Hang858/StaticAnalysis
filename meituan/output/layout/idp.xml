@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="115.0dip" android:layout_height="86.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.android.oversea.base.widget.OsNetWorkImageView android:id="@id/iv_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/l5a" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/ulz" android:gravity="center_horizontal" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="#be000000" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:lineSpacingExtra="1.0sp" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/ulz" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/tv_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:maxLines="1" android:shadowColor="#bf000000" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:lineSpacingExtra="0.0sp" />
+    </LinearLayout>
+</merge>

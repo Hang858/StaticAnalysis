@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/hbi" android:background="@color/olj" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="60.0dip" android:minHeight="310.0dip">
+        <FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@color/ohj" android:gravity="center_vertical" android:layout_gravity="center|left" android:id="@id/ynx" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:text="去绑卡" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/ohj" android:gravity="center" android:layout_gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/movie_enjoy_card_discount_dialog_title" />
+            <FrameLayout android:layout_gravity="center|right" android:id="@id/close" android:layout_width="46.0dip" android:layout_height="fill_parent">
+                <View android:layout_gravity="center" android:background="@drawable/b3x" android:layout_width="16.0dip" android:layout_height="16.0dip" />
+            </FrameLayout>
+        </FrameLayout>
+        <FrameLayout android:background="#fff4f4f4" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <android.support.v7.widget.RecyclerView android:id="@id/recyclerview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <TextView android:gravity="center" android:id="@id/empty_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="300.0dip" android:text="@string/bcbb" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom" android:background="@color/bagv" android:paddingLeft="15.0dip" android:paddingTop="8.0dip" android:paddingRight="15.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="17.0sp" android:textColor="@color/bagv" android:gravity="center" android:id="@id/confirm_tv" android:background="@drawable/movie_btn_radius_22_gradient" android:layout_width="fill_parent" android:layout_height="44.0dip" android:text="确定" />
+    </LinearLayout>
+</FrameLayout>

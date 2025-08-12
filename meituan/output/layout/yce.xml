@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.ptview.view.PTLinearLayout android:orientation="horizontal" android:id="@id/zz3" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.meituan.android.common.ui.widget.RoundFrameLayout android:id="@id/bckd" android:background="@drawable/ezx" android:layout_width="42.23999pt" android:layout_height="42.23999pt" android:layout_marginTop="5.7599792pt" android:layout_marginStart="5.7599792pt" android:layout_marginEnd="7.6799927pt" app:rfl_border="false" app:rfl_radius="3.8399963pt">
+        <com.sankuai.ptview.view.PTImageView android:id="@id/gj4" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    </com.meituan.android.common.ui.widget.RoundFrameLayout>
+    <com.sankuai.ptview.view.PTLinearLayout android:orientation="vertical" android:id="@id/isz" android:layout_width="0.0pt" android:layout_height="wrap_content" android:layout_marginTop="7.6799927pt" android:layout_weight="1.0">
+        <com.sankuai.ptview.view.PTLinearLayout android:gravity="center_vertical" android:id="@id/ncx" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.sankuai.ptview.view.PTLinearLayout android:gravity="center_vertical" android:id="@id/bcpi" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.sankuai.ptview.view.PTLinearLayout>
+    <com.sankuai.ptview.view.PTTextView android:textSize="11.519989pt" android:textColor="#e6000000" android:ellipsize="end" android:gravity="center" android:id="@id/voo" android:background="@drawable/bbhu" android:layout_width="wrap_content" android:layout_height="24.959991pt" android:layout_marginTop="16.319977pt" android:maxWidth="100.0pt" android:lines="1" android:paddingStart="11.519989pt" android:paddingEnd="11.519989pt" android:layout_marginStart="2.0pt" android:layout_marginEnd="9.599976pt" />
+</com.sankuai.ptview.view.PTLinearLayout>

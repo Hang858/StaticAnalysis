@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meituan.android.trafficayers.views.IconFontTextView android:textSize="15.0dip" android:textColor="@drawable/wf8" android:id="@id/checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yq2" />
+    <com.meituan.android.trafficayers.views.IconFontTextView android:textSize="15.0dip" android:textColor="@android:color/black" android:id="@id/l9b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wgo" />
+</merge>

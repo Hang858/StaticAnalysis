@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/layout_casetitle" android:background="@drawable/vy_item_selector" android:paddingTop="14.0dip" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/vy_text_size_15" android:textColor="@color/vy_black1" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_title_casename" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:lines="1" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/vy_text_size_12" android:textColor="@color/vy_black3" android:ellipsize="end" android:gravity="center|right" android:id="@id/tv_subtitle_extrainfo" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:text="" android:lines="1" android:drawableRight="@drawable/vy_arrow_right" android:drawablePadding="7.0dip" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/layout_caseinfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/layout_casetitle">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.dianping.imagemanager.DPNetworkImageView android:id="@id/image_before" android:layout_width="100.0dip" android:layout_height="82.0dip" android:scaleType="centerCrop" />
+            <TextView android:textSize="@dimen/vy_text_size_10" android:textColor="@color/white" android:ellipsize="end" android:layout_gravity="bottom|center|left" android:id="@id/tv_tag_before" android:background="@drawable/vy_vc_tag_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="90.0dip" android:text="" android:maxLines="1" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.dianping.imagemanager.DPNetworkImageView android:id="@id/image_after" android:layout_width="100.0dip" android:layout_height="82.0dip" android:scaleType="centerCrop" />
+            <TextView android:textSize="@dimen/vy_text_size_10" android:textColor="@color/white" android:ellipsize="end" android:layout_gravity="bottom|center|left" android:id="@id/tv_tag_after" android:background="@drawable/vy_vc_tag_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="90.0dip" android:text="" android:maxLines="1" />
+        </FrameLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/gwf" android:textColor="@color/vy_black1" android:ellipsize="end" android:id="@id/tv_casename" android:background="@drawable/vy_textview_border" android:padding="10.0dip" android:layout_width="200.0dip" android:layout_height="wrap_content" android:text="" android:maxLines="1" android:layout_below="@id/layout_caseinfo" android:layout_alignLeft="@id/layout_caseinfo" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_detail_onecase" android:background="@color/vy_black6" android:paddingLeft="13.0dip" android:paddingTop="12.0dip" android:paddingRight="13.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="82.0dip" android:layout_toRightOf="@id/layout_caseinfo" android:layout_below="@id/layout_casetitle">
+        <TextView android:textSize="@dimen/vy_text_size_12" android:textColor="@color/vy_black1" android:ellipsize="end" android:id="@id/tv_categoryname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="" android:lines="1" />
+        <TextView android:textSize="@dimen/vy_text_size_12" android:textColor="@color/vy_black2" android:ellipsize="end" android:id="@id/tv_consumedtime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="" android:lines="1" />
+        <TextView android:textSize="@dimen/vy_text_size_12" android:textColor="@color/vy_black2" android:ellipsize="end" android:id="@id/tv_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:lines="1" />
+    </LinearLayout>
+</merge>

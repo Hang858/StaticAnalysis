@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/baut" android:background="#ffffffff" android:paddingRight="16.0pt" android:clickable="true" android:layout_width="fill_parent" android:layout_height="88.0pt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/message_page_back" android:layout_width="wrap_content" android:layout_height="42.359985pt" android:layout_marginLeft="11.519989pt" android:layout_marginRight="3.8399963pt" android:src="@drawable/ifl" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="22.0pt" android:textStyle="bold" android:textColor="#ff191919" android:ellipsize="end" android:gravity="center" android:id="@id/message_title" android:focusable="true" android:layout_width="wrap_content" android:layout_height="44.0pt" android:maxWidth="180.0pt" android:text="@string/message_title" android:maxLines="1" android:layout_toRightOf="@id/message_page_back" android:layout_alignParentBottom="true" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="44.0pt" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/img_message_eraser" android:layout_width="22.0pt" android:layout_height="22.0pt" android:layout_marginTop="1.0pt" android:layout_marginRight="16.0pt" android:src="@drawable/g3x" android:contentDescription="@string/bcgr" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/tv_message_setting" android:layout_width="22.0pt" android:layout_height="22.0pt" android:layout_marginTop="1.0pt" android:src="@drawable/ptmessagecenter_message_pagesetting" android:contentDescription="@string/h0l" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,308 @@
+.class public final Lcom/meituan/android/phoenix/atom/passport/a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# static fields
+.field public static a:Lcom/meituan/android/phoenix/atom/passport/a;
+
+.field public static changeQuickRedirect:Lcom/meituan/robust/ChangeQuickRedirect;
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 2
+
+    const-wide v0, -0x4cb290807616680fL    # -1.4310766727673849E-61
+
+    invoke-static {v0, v1}, Lcom/meituan/android/paladin/Paladin;->record(J)V
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 4
+
+    .line 100000
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 100001
+    .line 100002
+    .line 100003
+    const/4 v0, 0x0
+
+    .line 100004
+    new-array v0, v0, [Ljava/lang/Object;
+
+    .line 100005
+    .line 100006
+    sget-object v1, Lcom/meituan/android/phoenix/atom/passport/a;->changeQuickRedirect:Lcom/meituan/robust/ChangeQuickRedirect;
+
+    .line 100007
+    .line 100008
+    const v2, 0xc55473
+
+    .line 100009
+    .line 100010
+    .line 100011
+    invoke-static {v0, p0, v1, v2}, Lcom/meituan/robust/PatchProxy;->isSupport([Ljava/lang/Object;Ljava/lang/Object;Lcom/meituan/robust/ChangeQuickRedirect;I)Z
+
+    .line 100012
+    .line 100013
+    .line 100014
+    move-result v3
+
+    .line 100015
+    if-eqz v3, :cond_0
+
+    .line 100016
+    .line 100017
+    invoke-static {v0, p0, v1, v2}, Lcom/meituan/robust/PatchProxy;->accessDispatch([Ljava/lang/Object;Ljava/lang/Object;Lcom/meituan/robust/ChangeQuickRedirect;I)Ljava/lang/Object;
+
+    .line 100018
+    .line 100019
+    .line 100020
+    return-void
+
+    .line 100021
+    :cond_0
+    invoke-static {}, Lcom/meituan/android/phoenix/atom/singleton/a;->f()Lcom/meituan/android/phoenix/atom/singleton/a;
+
+    .line 100022
+    .line 100023
+    .line 100024
+    move-result-object v0
+
+    .line 100025
+    invoke-virtual {v0}, Lcom/meituan/android/phoenix/atom/singleton/a;->k()Lcom/meituan/passport/UserCenter;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/meituan/passport/UserCenter;->loginEventObservable()Lrx/Observable;
+
+    move-result-object v0
+
+    sget-object v1, Lcom/meituan/android/movie/home/y;->e:Lcom/meituan/android/movie/home/y;
+
+    invoke-virtual {v0, v1}, Lrx/Observable;->subscribe(Lrx/functions/Action1;)Lrx/Subscription;
+
+    return-void
+.end method
+
+.method public static a()Lcom/meituan/android/phoenix/atom/passport/a;
+    .locals 5
+
+    .line 100000
+    const/4 v0, 0x0
+
+    .line 100001
+    new-array v0, v0, [Ljava/lang/Object;
+
+    .line 100002
+    .line 100003
+    sget-object v1, Lcom/meituan/android/phoenix/atom/passport/a;->changeQuickRedirect:Lcom/meituan/robust/ChangeQuickRedirect;
+
+    .line 100004
+    .line 100005
+    const/4 v2, 0x0
+
+    .line 100006
+    const v3, 0x36a64c
+
+    .line 100007
+    .line 100008
+    .line 100009
+    invoke-static {v0, v2, v1, v3}, Lcom/meituan/robust/PatchProxy;->isSupport([Ljava/lang/Object;Ljava/lang/Object;Lcom/meituan/robust/ChangeQuickRedirect;I)Z
+
+    .line 100010
+    .line 100011
+    .line 100012
+    move-result v4
+
+    .line 100013
+    if-eqz v4, :cond_0
+
+    .line 100014
+    .line 100015
+    invoke-static {v0, v2, v1, v3}, Lcom/meituan/robust/PatchProxy;->accessDispatch([Ljava/lang/Object;Ljava/lang/Object;Lcom/meituan/robust/ChangeQuickRedirect;I)Ljava/lang/Object;
+
+    .line 100016
+    .line 100017
+    .line 100018
+    move-result-object v0
+
+    .line 100019
+    check-cast v0, Lcom/meituan/android/phoenix/atom/passport/a;
+
+    .line 100020
+    .line 100021
+    return-object v0
+
+    .line 100022
+    :cond_0
+    sget-object v0, Lcom/meituan/android/phoenix/atom/passport/a;->a:Lcom/meituan/android/phoenix/atom/passport/a;
+
+    .line 100023
+    .line 100024
+    if-nez v0, :cond_2
+
+    .line 100025
+    .line 100026
+    const-class v0, Lcom/meituan/android/phoenix/atom/passport/a;
+
+    .line 100027
+    .line 100028
+    monitor-enter v0
+
+    .line 100029
+    :try_start_0
+    sget-object v1, Lcom/meituan/android/phoenix/atom/passport/a;->a:Lcom/meituan/android/phoenix/atom/passport/a;
+
+    .line 100030
+    .line 100031
+    if-nez v1, :cond_1
+
+    .line 100032
+    .line 100033
+    new-instance v1, Lcom/meituan/android/phoenix/atom/passport/a;
+
+    .line 100034
+    .line 100035
+    invoke-direct {v1}, Lcom/meituan/android/phoenix/atom/passport/a;-><init>()V
+
+    .line 100036
+    .line 100037
+    .line 100038
+    sput-object v1, Lcom/meituan/android/phoenix/atom/passport/a;->a:Lcom/meituan/android/phoenix/atom/passport/a;
+
+    .line 100039
+    .line 100040
+    :cond_1
+    monitor-exit v0
+
+    .line 100041
+    goto :goto_0
+
+    .line 100042
+    :catchall_0
+    move-exception v1
+
+    .line 100043
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 100044
+    throw v1
+
+    .line 100045
+    :cond_2
+    :goto_0
+    sget-object v0, Lcom/meituan/android/phoenix/atom/passport/a;->a:Lcom/meituan/android/phoenix/atom/passport/a;
+
+    .line 100046
+    .line 100047
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public final b(Landroid/content/Context;)Z
+    .locals 5
+
+    .line 120000
+    const/4 v0, 0x1
+
+    .line 120001
+    new-array v1, v0, [Ljava/lang/Object;
+
+    .line 120002
+    .line 120003
+    const/4 v2, 0x0
+
+    .line 120004
+    aput-object p1, v1, v2
+
+    .line 120005
+    .line 120006
+    sget-object p1, Lcom/meituan/android/phoenix/atom/passport/a;->changeQuickRedirect:Lcom/meituan/robust/ChangeQuickRedirect;
+
+    .line 120007
+    .line 120008
+    const v3, 0xf80c3c
+
+    .line 120009
+    .line 120010
+    .line 120011
+    invoke-static {v1, p0, p1, v3}, Lcom/meituan/robust/PatchProxy;->isSupport([Ljava/lang/Object;Ljava/lang/Object;Lcom/meituan/robust/ChangeQuickRedirect;I)Z
+
+    .line 120012
+    .line 120013
+    .line 120014
+    move-result v4
+
+    .line 120015
+    if-eqz v4, :cond_0
+
+    .line 120016
+    .line 120017
+    invoke-static {v1, p0, p1, v3}, Lcom/meituan/robust/PatchProxy;->accessDispatch([Ljava/lang/Object;Ljava/lang/Object;Lcom/meituan/robust/ChangeQuickRedirect;I)Ljava/lang/Object;
+
+    .line 120018
+    .line 120019
+    .line 120020
+    move-result-object p1
+
+    .line 120021
+    check-cast p1, Ljava/lang/Boolean;
+
+    .line 120022
+    .line 120023
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 120024
+    .line 120025
+    .line 120026
+    move-result p1
+
+    .line 120027
+    return p1
+
+    .line 120028
+    :cond_0
+    invoke-static {}, Lcom/meituan/android/phoenix/atom/singleton/a;->f()Lcom/meituan/android/phoenix/atom/singleton/a;
+
+    .line 120029
+    .line 120030
+    .line 120031
+    move-result-object p1
+
+    .line 120032
+    invoke-virtual {p1}, Lcom/meituan/android/phoenix/atom/singleton/a;->k()Lcom/meituan/passport/UserCenter;
+
+    .line 120033
+    .line 120034
+    .line 120035
+    move-result-object p1
+
+    .line 120036
+    if-eqz p1, :cond_1
+
+    .line 120037
+    .line 120038
+    invoke-virtual {p1}, Lcom/meituan/passport/UserCenter;->isLogin()Z
+
+    .line 120039
+    .line 120040
+    move-result p1
+
+    if-eqz p1, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
+.end method

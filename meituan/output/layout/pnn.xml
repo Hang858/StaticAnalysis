@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_view" android:background="@color/du5" style="@style/xm_sdk_title_bar_container"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/dcl" android:paddingLeft="7.0dip" android:paddingTop="4.0dip" android:paddingRight="7.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/o4f" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_toRightOf="@id/dcl" android:layout_centerVertical="true">
+        <com.sankuai.waimai.business.im.group.View.WmGroupChatMemberPoiView android:id="@id/xbz" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.sankuai.waimai.business.im.group.View.WmGroupChatMemberRiderView android:id="@id/hsb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/k5q" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <include android:id="@id/jwm" android:visibility="visible" layout="@layout/bado" />
+        <include android:id="@id/q1j" android:visibility="visible" layout="@layout/bado" />
+    </LinearLayout>
+</RelativeLayout>

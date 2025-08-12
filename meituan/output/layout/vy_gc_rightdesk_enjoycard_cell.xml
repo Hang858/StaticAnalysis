@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/vy_white" android:paddingBottom="12.0dip" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@drawable/vy_shape_fff1ea_to_trans_bg" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="#ffff8525" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        <com.dianping.imagemanager.DPNetworkImageView android:id="@id/rightdesk_enjoycard_cardicon" android:layout_width="65.0dip" android:layout_height="18.0dip" android:scaleType="fitStart" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="18.5dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="28.0dip" android:layout_marginRight="15.0dip">
+            <TextView android:textStyle="bold" android:textColor="#ff000000" android:layout_gravity="center_vertical" android:id="@id/rightdesk_enjoycard_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/rightdesk_enjoycard_detail" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/vy_icon_info" />
+            <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <com.dianping.imagemanager.DPNetworkImageView android:layout_gravity="end|bottom|center" android:id="@id/rightdesk_enjoycard_ordericon" android:layout_width="52.0dip" android:layout_height="22.0dip" android:layout_marginBottom="-6.0dip" android:scaleType="fitStart" />
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="15.0dip">
+        <com.dianping.imagemanager.DPNetworkImageView android:layout_gravity="end" android:id="@id/rightdesk_enjoycard_coupon" android:layout_width="135.0dip" android:layout_height="30.0dip" android:scaleType="fitStart" />
+        <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textStyle="bold" android:textColor="#ff111111" android:id="@id/rightdesk_enjoycard_cardpricedesc" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/rightdesk_enjoycard_selecticon" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="10.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/rightdesk_enjoycard_carddesc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="15.0dip" />
+</LinearLayout>

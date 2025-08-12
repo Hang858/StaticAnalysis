@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/sg_brand_cross_banner_container_v3" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/j82"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/sg_cross_banner_left" android:visibility="gone" android:layout_width="@dimen/kuh" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <FrameLayout android:layout_gravity="end" android:id="@id/sg_cross_banner_right" android:layout_width="@dimen/kuh" android:layout_height="fill_parent" />
+</FrameLayout>

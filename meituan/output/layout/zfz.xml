@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/cc0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meituan.android.easylife.view.EasylifeNetworkCornerImageView android:id="@id/image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+    <TextView android:ellipsize="end" android:id="@id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:singleLine="true" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="12.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="#ffff6633" android:id="@id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="10.0sp" android:textColor="#ff999999" android:ellipsize="end" android:id="@id/original_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.AppCompatImageView android:id="@id/iv_listen_feed_content_empty_icon" android:layout_width="180.0dip" android:layout_height="135.0dip" android:scaleType="centerCrop" />
+    <android.support.v7.widget.AppCompatTextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="#ff191919" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msv_listen_feed_content_empty_no_history_hint" android:maxLines="1" />
+    <android.support.v7.widget.AppCompatTextView android:textSize="14.0dip" android:textColor="#ff808080" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/msv_listen_feed_content_empty_goto_listen_feed_hint" android:maxLines="1" />
+    <android.support.v7.widget.AppCompatTextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="#ff191919" android:gravity="center" android:id="@id/tv_listen_feed_content_empty_btn" android:background="@drawable/bg_msv_listen_feed_content_empty_button" android:layout_width="84.0dip" android:layout_height="32.0dip" android:layout_marginTop="17.0dip" android:text="@string/msv_listen_feed_content_empty_goto_listen_feed_btn" />
+</LinearLayout>

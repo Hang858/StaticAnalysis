@@ -1,0 +1,640 @@
+.class public final Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroid/os/Parcelable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$IPProfile;,
+        Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$CityStation;,
+        Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$IPReverseAddress;,
+        Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$IPLocation;
+    }
+.end annotation
+
+
+# static fields
+.field public static final CREATOR:Landroid/os/Parcelable$Creator;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroid/os/Parcelable$Creator<",
+            "Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static changeQuickRedirect:Lcom/meituan/robust/ChangeQuickRedirect;
+
+
+# instance fields
+.field public dpCityStation:Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$CityStation;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "dp_city_station"
+    .end annotation
+.end field
+
+.field public identity:Ljava/lang/String;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "identity"
+    .end annotation
+.end field
+
+.field public ipLocation:Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$IPLocation;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "ip_location"
+    .end annotation
+.end field
+
+.field public ipProfile:Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$IPProfile;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "ip_profile"
+    .end annotation
+.end field
+
+.field public ipReverseAddress:Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$IPReverseAddress;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "ip_reverse_address"
+    .end annotation
+.end field
+
+.field public mtCityStation:Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$CityStation;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "mt_city_station"
+    .end annotation
+.end field
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 2
+
+    const-wide v0, 0x7e0dfb94489b0f94L    # 1.5686891962367821E299
+
+    invoke-static {v0, v1}, Lcom/meituan/android/paladin/Paladin;->record(J)V
+
+    new-instance v0, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$1;
+
+    invoke-direct {v0}, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$1;-><init>()V
+
+    sput-object v0, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/os/Parcel;)V
+    .locals 4
+
+    .line 120000
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 120001
+    .line 120002
+    .line 120003
+    const/4 v0, 0x1
+
+    .line 120004
+    new-array v0, v0, [Ljava/lang/Object;
+
+    .line 120005
+    .line 120006
+    const/4 v1, 0x0
+
+    .line 120007
+    aput-object p1, v0, v1
+
+    .line 120008
+    .line 120009
+    sget-object v1, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate;->changeQuickRedirect:Lcom/meituan/robust/ChangeQuickRedirect;
+
+    .line 120010
+    .line 120011
+    const v2, 0x7ba041
+
+    .line 120012
+    .line 120013
+    .line 120014
+    invoke-static {v0, p0, v1, v2}, Lcom/meituan/robust/PatchProxy;->isSupport([Ljava/lang/Object;Ljava/lang/Object;Lcom/meituan/robust/ChangeQuickRedirect;I)Z
+
+    .line 120015
+    .line 120016
+    .line 120017
+    move-result v3
+
+    .line 120018
+    if-eqz v3, :cond_0
+
+    .line 120019
+    .line 120020
+    invoke-static {v0, p0, v1, v2}, Lcom/meituan/robust/PatchProxy;->accessDispatch([Ljava/lang/Object;Ljava/lang/Object;Lcom/meituan/robust/ChangeQuickRedirect;I)Ljava/lang/Object;
+
+    .line 120021
+    .line 120022
+    .line 120023
+    return-void
+
+    .line 120024
+    :cond_0
+    invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    .line 120025
+    .line 120026
+    .line 120027
+    move-result-object v0
+
+    .line 120028
+    iput-object v0, p0, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate;->identity:Ljava/lang/String;
+
+    .line 120029
+    .line 120030
+    const-class v0, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$IPLocation;
+
+    .line 120031
+    .line 120032
+    invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
+
+    .line 120033
+    .line 120034
+    .line 120035
+    move-result-object v0
+
+    .line 120036
+    invoke-virtual {p1, v0}, Landroid/os/Parcel;->readParcelable(Ljava/lang/ClassLoader;)Landroid/os/Parcelable;
+
+    .line 120037
+    .line 120038
+    .line 120039
+    move-result-object v0
+
+    .line 120040
+    check-cast v0, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$IPLocation;
+
+    .line 120041
+    .line 120042
+    iput-object v0, p0, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate;->ipLocation:Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$IPLocation;
+
+    .line 120043
+    .line 120044
+    const-class v0, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$IPReverseAddress;
+
+    .line 120045
+    .line 120046
+    invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
+
+    .line 120047
+    .line 120048
+    .line 120049
+    move-result-object v0
+
+    .line 120050
+    invoke-virtual {p1, v0}, Landroid/os/Parcel;->readParcelable(Ljava/lang/ClassLoader;)Landroid/os/Parcelable;
+
+    .line 120051
+    .line 120052
+    .line 120053
+    move-result-object v0
+
+    .line 120054
+    check-cast v0, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$IPReverseAddress;
+
+    .line 120055
+    .line 120056
+    iput-object v0, p0, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate;->ipReverseAddress:Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$IPReverseAddress;
+
+    .line 120057
+    .line 120058
+    const-class v0, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$CityStation;
+
+    .line 120059
+    .line 120060
+    invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
+
+    .line 120061
+    .line 120062
+    .line 120063
+    move-result-object v0
+
+    .line 120064
+    invoke-virtual {p1, v0}, Landroid/os/Parcel;->readParcelable(Ljava/lang/ClassLoader;)Landroid/os/Parcelable;
+
+    .line 120065
+    .line 120066
+    .line 120067
+    move-result-object v0
+
+    .line 120068
+    check-cast v0, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$CityStation;
+
+    .line 120069
+    .line 120070
+    iput-object v0, p0, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate;->mtCityStation:Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$CityStation;
+
+    .line 120071
+    .line 120072
+    const-class v0, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$CityStation;
+
+    .line 120073
+    .line 120074
+    invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
+
+    .line 120075
+    .line 120076
+    .line 120077
+    move-result-object v0
+
+    .line 120078
+    invoke-virtual {p1, v0}, Landroid/os/Parcel;->readParcelable(Ljava/lang/ClassLoader;)Landroid/os/Parcelable;
+
+    .line 120079
+    .line 120080
+    .line 120081
+    move-result-object v0
+
+    .line 120082
+    check-cast v0, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$CityStation;
+
+    .line 120083
+    .line 120084
+    iput-object v0, p0, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate;->dpCityStation:Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$CityStation;
+
+    .line 120085
+    .line 120086
+    const-class v0, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$IPProfile;
+
+    .line 120087
+    .line 120088
+    invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
+
+    .line 120089
+    .line 120090
+    move-result-object v0
+
+    invoke-virtual {p1, v0}, Landroid/os/Parcel;->readParcelable(Ljava/lang/ClassLoader;)Landroid/os/Parcelable;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$IPProfile;
+
+    iput-object p1, p0, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate;->ipProfile:Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$IPProfile;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public describeContents()I
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public getDpCityStation()Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$CityStation;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate;->dpCityStation:Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$CityStation;
+
+    return-object v0
+.end method
+
+.method public getIdentity()Ljava/lang/String;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate;->identity:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public getIpLocation()Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$IPLocation;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate;->ipLocation:Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$IPLocation;
+
+    return-object v0
+.end method
+
+.method public getIpProfile()Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$IPProfile;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate;->ipProfile:Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$IPProfile;
+
+    return-object v0
+.end method
+
+.method public getIpReverseAddress()Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$IPReverseAddress;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate;->ipReverseAddress:Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$IPReverseAddress;
+
+    return-object v0
+.end method
+
+.method public getMtCityStation()Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$CityStation;
+    .locals 1
+
+    iget-object v0, p0, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate;->mtCityStation:Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$CityStation;
+
+    return-object v0
+.end method
+
+.method public setDpCityStation(Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$CityStation;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate;->dpCityStation:Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$CityStation;
+
+    return-void
+.end method
+
+.method public setIdentity(Ljava/lang/String;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate;->identity:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public setIpLocation(Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$IPLocation;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate;->ipLocation:Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$IPLocation;
+
+    return-void
+.end method
+
+.method public setIpProfile(Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$IPProfile;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate;->ipProfile:Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$IPProfile;
+
+    return-void
+.end method
+
+.method public setIpReverseAddress(Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$IPReverseAddress;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate;->ipReverseAddress:Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$IPReverseAddress;
+
+    return-void
+.end method
+
+.method public setMtCityStation(Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$CityStation;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate;->mtCityStation:Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$CityStation;
+
+    return-void
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 4
+
+    .line 100000
+    const/4 v0, 0x0
+
+    .line 100001
+    new-array v0, v0, [Ljava/lang/Object;
+
+    .line 100002
+    .line 100003
+    sget-object v1, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate;->changeQuickRedirect:Lcom/meituan/robust/ChangeQuickRedirect;
+
+    .line 100004
+    .line 100005
+    const v2, 0x7ff481
+
+    .line 100006
+    .line 100007
+    .line 100008
+    invoke-static {v0, p0, v1, v2}, Lcom/meituan/robust/PatchProxy;->isSupport([Ljava/lang/Object;Ljava/lang/Object;Lcom/meituan/robust/ChangeQuickRedirect;I)Z
+
+    .line 100009
+    .line 100010
+    .line 100011
+    move-result v3
+
+    .line 100012
+    if-eqz v3, :cond_0
+
+    .line 100013
+    .line 100014
+    invoke-static {v0, p0, v1, v2}, Lcom/meituan/robust/PatchProxy;->accessDispatch([Ljava/lang/Object;Ljava/lang/Object;Lcom/meituan/robust/ChangeQuickRedirect;I)Ljava/lang/Object;
+
+    .line 100015
+    .line 100016
+    .line 100017
+    move-result-object v0
+
+    .line 100018
+    check-cast v0, Ljava/lang/String;
+
+    .line 100019
+    .line 100020
+    return-object v0
+
+    .line 100021
+    :cond_0
+    const-string v0, "IPLocate{identity=\'"
+
+    .line 100022
+    .line 100023
+    invoke-static {v0}, La/a/a/a/c;->v(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 100024
+    .line 100025
+    .line 100026
+    move-result-object v0
+
+    .line 100027
+    iget-object v1, p0, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate;->identity:Ljava/lang/String;
+
+    .line 100028
+    .line 100029
+    const/16 v2, 0x27
+
+    .line 100030
+    .line 100031
+    const-string v3, ", ipLocation="
+
+    .line 100032
+    .line 100033
+    invoke-static {v0, v1, v2, v3}, Landroid/support/constraint/solver/a;->v(Ljava/lang/StringBuilder;Ljava/lang/String;CLjava/lang/String;)V
+
+    .line 100034
+    .line 100035
+    .line 100036
+    iget-object v1, p0, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate;->ipLocation:Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$IPLocation;
+
+    .line 100037
+    .line 100038
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 100039
+    .line 100040
+    const-string v1, ", ipReverseAddress="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate;->ipReverseAddress:Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$IPReverseAddress;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", mtCityStation="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate;->mtCityStation:Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$CityStation;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", dpCityStation="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate;->dpCityStation:Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$CityStation;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", ipProfile="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate;->ipProfile:Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$IPProfile;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const/16 v1, 0x7d
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public writeToParcel(Landroid/os/Parcel;I)V
+    .locals 4
+
+    .line 170000
+    const/4 v0, 0x2
+
+    .line 170001
+    new-array v0, v0, [Ljava/lang/Object;
+
+    .line 170002
+    .line 170003
+    const/4 v1, 0x0
+
+    .line 170004
+    aput-object p1, v0, v1
+
+    .line 170005
+    .line 170006
+    new-instance v1, Ljava/lang/Integer;
+
+    .line 170007
+    .line 170008
+    invoke-direct {v1, p2}, Ljava/lang/Integer;-><init>(I)V
+
+    .line 170009
+    .line 170010
+    .line 170011
+    const/4 v2, 0x1
+
+    .line 170012
+    aput-object v1, v0, v2
+
+    .line 170013
+    .line 170014
+    sget-object v1, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate;->changeQuickRedirect:Lcom/meituan/robust/ChangeQuickRedirect;
+
+    .line 170015
+    .line 170016
+    const v2, 0xc14aba
+
+    .line 170017
+    .line 170018
+    .line 170019
+    invoke-static {v0, p0, v1, v2}, Lcom/meituan/robust/PatchProxy;->isSupport([Ljava/lang/Object;Ljava/lang/Object;Lcom/meituan/robust/ChangeQuickRedirect;I)Z
+
+    .line 170020
+    .line 170021
+    .line 170022
+    move-result v3
+
+    .line 170023
+    if-eqz v3, :cond_0
+
+    .line 170024
+    .line 170025
+    invoke-static {v0, p0, v1, v2}, Lcom/meituan/robust/PatchProxy;->accessDispatch([Ljava/lang/Object;Ljava/lang/Object;Lcom/meituan/robust/ChangeQuickRedirect;I)Ljava/lang/Object;
+
+    .line 170026
+    .line 170027
+    .line 170028
+    return-void
+
+    .line 170029
+    :cond_0
+    iget-object v0, p0, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate;->identity:Ljava/lang/String;
+
+    .line 170030
+    .line 170031
+    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+
+    .line 170032
+    .line 170033
+    .line 170034
+    iget-object v0, p0, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate;->ipLocation:Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$IPLocation;
+
+    .line 170035
+    .line 170036
+    invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
+
+    .line 170037
+    .line 170038
+    .line 170039
+    iget-object v0, p0, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate;->ipReverseAddress:Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$IPReverseAddress;
+
+    .line 170040
+    .line 170041
+    invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
+
+    .line 170042
+    .line 170043
+    .line 170044
+    iget-object v0, p0, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate;->mtCityStation:Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$CityStation;
+
+    .line 170045
+    .line 170046
+    invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
+
+    .line 170047
+    .line 170048
+    .line 170049
+    iget-object v0, p0, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate;->dpCityStation:Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$CityStation;
+
+    .line 170050
+    .line 170051
+    invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
+
+    .line 170052
+    .line 170053
+    .line 170054
+    iget-object v0, p0, Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate;->ipProfile:Lcom/sankuai/meituan/mapsdk/search/locate/IPLocate$IPProfile;
+
+    .line 170055
+    .line 170056
+    invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
+
+    .line 170057
+    .line 170058
+    .line 170059
+    return-void
+.end method

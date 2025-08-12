@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="32.0sp" android:textColor="@color/von" android:id="@id/skb" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/x8m" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip">
+        <TextView android:textSize="13.0sp" android:textColor="@color/fr5" android:id="@id/uor" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <RatingBar android:id="@id/q62" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:isIndicator="true" style="?android:ratingBarStyleSmall" />
+    </LinearLayout>
+    <View android:id="@id/divider" android:background="@color/my5" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/bc05" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="13.0sp" android:textColor="@color/fr5" android:ellipsize="end" android:id="@id/m53" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/fr5" android:ellipsize="end" android:id="@id/d7y" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+</merge>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/tzf" android:textColor="@color/jy" android:ellipsize="end" android:id="@id/q8o" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:text="推荐菜" android:singleLine="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/l6d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:src="@drawable/arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/tzf" android:textColor="@color/jy" android:textColorHint="@color/l6i" android:ellipsize="end" android:gravity="left" android:id="@id/lwk" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="5.0dip" android:singleLine="true" android:layout_toLeftOf="@id/l6d" android:layout_toRightOf="@id/q8o" android:layout_centerVertical="true" />
+</RelativeLayout>

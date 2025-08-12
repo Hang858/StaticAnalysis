@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.ptview.view.PTLinearLayout android:orientation="vertical" android:paddingTop="12.0pt" android:paddingBottom="1.5pt" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/d75" />
+    <include android:id="@id/foe" layout="@layout/rbe" />
+</com.sankuai.ptview.view.PTLinearLayout>

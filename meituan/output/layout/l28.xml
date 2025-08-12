@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/fkh" android:layout_width="@dimen/j82" android:layout_height="wrap_content" android:layout_marginRight="@dimen/i6c">
+        <FrameLayout android:layout_width="@dimen/j82" android:layout_height="@dimen/j82">
+            <com.sankuai.waimai.store.view.banner.roundview.UniversalImageView android:layout_gravity="center" android:id="@id/back_product_iv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:adjustViewBounds="true" app:riv_corner_radius="6.0dip" />
+            <com.sankuai.waimai.store.view.banner.roundview.UniversalImageView android:layout_gravity="center" android:id="@id/iv_product" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:adjustViewBounds="true" app:riv_corner_radius="6.0dip" />
+            <View android:id="@id/tme" android:background="@drawable/gtc" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.sankuai.waimai.store.view.banner.roundview.UniversalImageView android:layout_gravity="center" android:id="@id/front_product_iv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:adjustViewBounds="true" app:riv_corner_radius="6.0dip" />
+            <com.sankuai.waimai.platform.widget.tag.virtualtag.TagCanvasView android:layout_gravity="bottom|center|left" android:id="@id/tag_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="14.0dip" app:max_line="1" />
+            <com.sankuai.waimai.store.mach.placingproducts.PlacingProductTagView android:layout_gravity="bottom" android:id="@id/custom_product_tag" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.sankuai.waimai.store.view.banner.roundview.UniversalImageView android:layout_gravity="bottom|center|left" android:id="@id/iv_product_tag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="14.0dip" android:scaleType="centerInside" android:adjustViewBounds="true" app:riv_corner_radius="4.0dip" />
+            <TextView android:textSize="9.0dip" android:textStyle="bold" android:textColor="@color/wm_sg_color_FFFFFF" android:ellipsize="end" android:gravity="center" android:layout_gravity="bottom|center|left" android:id="@id/k5p" android:background="@drawable/zbl" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="14.0dip" android:maxLines="1" android:singleLine="true" />
+            <FrameLayout android:layout_gravity="center" android:id="@id/bbs2" android:background="@drawable/do2" android:visibility="gone" android:layout_width="@dimen/bbt8" android:layout_height="@dimen/bbt8">
+                <TextView android:textSize="11.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="补货中" android:singleLine="true" />
+            </FrameLayout>
+        </FrameLayout>
+        <TextView android:textSize="11.0dip" android:textColor="@color/wm_sg_color_222426" android:id="@id/tv_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:maxLines="1" />
+        <FrameLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/price_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                <TextView android:textSize="10.0dip" android:textColor="#ffff4a26" android:id="@id/tv_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥" android:maxLines="1" android:maxEms="10" android:singleLine="true" android:includeFontPadding="false" />
+                <TextView android:textSize="12.0dip" android:textColor="#ffff4a26" android:id="@id/v7i" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:maxEms="10" android:singleLine="true" android:includeFontPadding="false" />
+                <TextView android:textSize="10.0dip" android:textColor="#ffff4a26" android:id="@id/bcq6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:maxEms="10" android:singleLine="true" android:includeFontPadding="false" />
+                <TextView android:textSize="10.0dip" android:textColor="#ffbcbcbd" android:id="@id/vq5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:maxLines="1" android:maxEms="5" android:singleLine="true" android:includeFontPadding="false" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/yyz" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                <LinearLayout android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <TextView android:textSize="10.0dip" android:textColor="#ffff370f" android:id="@id/mqw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥" android:maxLines="1" android:maxEms="10" android:singleLine="true" android:includeFontPadding="false" />
+                    <TextView android:textSize="12.0dip" android:textColor="#ffff370f" android:id="@id/r84" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:maxEms="10" android:singleLine="true" android:includeFontPadding="false" />
+                    <TextView android:textSize="10.0dip" android:textColor="#ffff370f" android:id="@id/vvr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:maxEms="10" android:singleLine="true" android:includeFontPadding="false" />
+                </LinearLayout>
+                <LinearLayout android:gravity="bottom" android:layout_gravity="center_vertical" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip">
+                    <TextView android:textSize="10.0dip" android:textColor="#ffff370f" android:layout_gravity="center_vertical" android:id="@id/l78" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-0.5dip" android:text="预估" android:maxLines="1" android:maxEms="10" android:singleLine="true" android:includeFontPadding="false" />
+                    <ImageView android:id="@id/poi_god_price_img" android:layout_width="27.0dip" android:layout_height="wrap_content" android:layout_marginLeft="-1.0dip" android:scaleType="fitXY" />
+                </LinearLayout>
+            </LinearLayout>
+            <com.sankuai.waimai.store.view.pricev2.UnifyPriceView android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/hrn" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginTop="1.0dip" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

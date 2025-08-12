@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_marginTop="80.0dip" android:src="@drawable/pic_empty_state_no_order_v2" />
+    <TextView android:textSize="16.0dip" android:textColor="#ff191919" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="暂无新消息哦～" />
+</LinearLayout>

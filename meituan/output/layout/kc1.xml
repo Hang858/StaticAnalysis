@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.android.oversea.base.widget.OsNetWorkImageView android:id="@id/e76" android:layout_width="fill_parent" android:layout_height="90.0dip" android:scaleType="centerCrop" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/qk5" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:singleLine="true" android:includeFontPadding="false" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="@color/xmd" android:id="@id/lx8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/p4j" android:gravity="center" android:id="@id/mj4" android:background="@color/we0" android:layout_width="32.0dip" android:layout_height="15.0dip" android:layout_marginRight="4.0dip" android:singleLine="true" android:includeFontPadding="false" android:layout_toLeftOf="@id/o80" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/p4j" android:id="@id/o80" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</merge>

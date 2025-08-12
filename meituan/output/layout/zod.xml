@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/ryv" android:background="#fff5f5f6" android:layout_width="110.0dip" android:layout_height="fill_parent" android:layout_below="@id/k09" />
+    <ListView android:id="@id/k09" android:scrollbars="none" android:layout_width="110.0dip" android:layout_height="wrap_content" android:divider="@null" android:choiceMode="singleChoice" />
+    <com.sankuai.waimai.log.judas.StatisticsListView android:id="@id/o1e" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="#fff5f5f6" android:dividerHeight="0.5dip" android:choiceMode="singleChoice" android:layout_toRightOf="@id/k09" />
+</merge>

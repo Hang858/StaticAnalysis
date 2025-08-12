@@ -1,0 +1,56 @@
+.class public final Lcom/meituan/android/mss/upload/p;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic a:Lcom/meituan/android/mss/upload/m;
+
+.field public final synthetic b:Lcom/meituan/android/mss/model/a;
+
+
+# direct methods
+.method public constructor <init>(Lcom/meituan/android/mss/upload/m;Lcom/meituan/android/mss/model/a;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/meituan/android/mss/upload/p;->a:Lcom/meituan/android/mss/upload/m;
+
+    iput-object p2, p0, Lcom/meituan/android/mss/upload/p;->b:Lcom/meituan/android/mss/model/a;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 2
+
+    .line 100000
+    iget-object v0, p0, Lcom/meituan/android/mss/upload/p;->a:Lcom/meituan/android/mss/upload/m;
+
+    .line 100001
+    .line 100002
+    iget-object v0, v0, Lcom/meituan/android/mss/upload/m;->f:Lcom/meituan/android/mss/c;
+
+    .line 100003
+    .line 100004
+    if-eqz v0, :cond_0
+
+    .line 100005
+    .line 100006
+    iget-object v1, p0, Lcom/meituan/android/mss/upload/p;->b:Lcom/meituan/android/mss/model/a;
+
+    .line 100007
+    .line 100008
+    invoke-interface {v0, v1}, Lcom/meituan/android/mss/c;->onSuccess(Ljava/lang/Object;)V
+
+    .line 100009
+    .line 100010
+    :cond_0
+    return-void
+.end method

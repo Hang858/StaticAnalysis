@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/wqj" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <Button android:gravity="center" android:id="@id/c6g" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginTop="5.0dip" android:text="返回" />
+        <TextView android:gravity="center" android:id="@id/nxy" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="选择" />
+        <View android:id="@id/q09" android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="3.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/fm7" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/wqj" />
+</RelativeLayout>

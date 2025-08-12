@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mbc_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/mxu" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/mbc_list_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/new_back_ground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-37.0pt" />
+            <LinearLayout android:orientation="vertical" android:id="@id/bccz" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:id="@id/scroll_gradient" android:layout_width="fill_parent" android:layout_height="71.0dip" android:src="@drawable/use_main_gradiant_background" android:scaleType="centerCrop" />
+                <View android:background="#fff5f6f9" android:layout_width="fill_parent" android:layout_height="1500.0dip" />
+            </LinearLayout>
+            <com.meituan.android.pt.homepage.mine.modules.suggestion.UserMainPullToRefreshView android:id="@id/c14" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <include android:id="@id/r7e" android:visibility="gone" layout="@layout/cpm" />
+        </FrameLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/dp_" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</RelativeLayout>

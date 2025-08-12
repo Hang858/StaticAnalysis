@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.ConstraintLayout android:id="@id/bcfk" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="58.0dip" android:layout_marginEnd="12.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="17.0dip" android:textColor="@color/white" android:ellipsize="end" android:id="@id/pko" android:background="@drawable/v40" android:paddingLeft="8.0dip" android:paddingTop="6.0dip" android:paddingRight="8.0dip" android:paddingBottom="6.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/o0w" android:background="@drawable/v40" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/pko">
+            <LinearLayout android:id="@id/og6" android:background="@drawable/j01" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="5.0dip" android:paddingEnd="5.0dip">
+                <TextView android:textSize="12.0dip" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/s3m" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="TOP" android:maxLines="1" />
+                <TextView android:textSize="12.0dip" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/baph" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLines="1" android:layout_marginStart="1.0dip" />
+            </LinearLayout>
+            <TextView android:textSize="12.0dip" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/ec6" android:paddingLeft="8.0dip" android:paddingTop="2.0dip" android:paddingRight="8.0dip" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLines="1" />
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="32.5dip">
+        <View android:id="@id/n41" android:background="@drawable/dr8" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" />
+        <LinearLayout android:gravity="center" android:id="@id/j1d" android:background="@drawable/bamx" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_alignParentBottom="true">
+            <com.maoyan.android.common.view.author.AvatarView android:id="@id/sn_" android:layout_width="28.0dip" android:layout_height="28.0dip" android:scaleType="centerCrop" app:maoyan_common_view_avatar_border_color="#ffe8e8e8" app:maoyan_common_view_avatar_border_width="0.5dip" app:maoyan_common_view_avatar_decorator_type="none" app:maoyan_common_view_avatar_error="@drawable/rjy" app:maoyan_common_view_avatar_placeholder="@drawable/rjy" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginTop="4.5dip" android:layout_toRightOf="@id/j1d">
+            <TextView android:textSize="13.0sp" android:id="@id/zt9" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_toLeftOf="@id/rbn" android:layout_centerVertical="true" />
+            <com.meituan.android.movie.tradebase.pay.view.MoviePayChiefBounsTimer android:id="@id/rbn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</merge>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="108.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dianping.voyager.joy.backroom.widget.ecogallery.DPEcoImageView android:layout_gravity="bottom" android:id="@id/ecoImageView" android:paddingTop="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cornerRadius="2.5dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.dianping.imagemanager.DPNetworkImageView android:id="@id/hui_icon" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+        <com.dianping.imagemanager.DPNetworkImageView android:id="@id/pin_icon" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+    </LinearLayout>
+    <com.dianping.imagemanager.DPNetworkImageView android:layout_gravity="bottom|center|right" android:id="@id/video_icon" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

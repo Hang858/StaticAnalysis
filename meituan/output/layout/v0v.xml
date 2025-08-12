@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/bb_p" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="5.0dip" android:scaleType="fitXY" />
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/bb_p">
+            <com.sankuai.waimai.store.view.LiveView android:id="@id/xui" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/bbrs" />
+            <ImageView android:id="@id/u_4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/ddv" android:layout_marginRight="@dimen/bbrs" android:maxWidth="@dimen/bczi" />
+            <TextView android:textSize="@dimen/ufw" android:textStyle="bold" android:textColor="@color/wm_sg_color_222426" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/txt_poiList_adapter_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_weight="1.0" style="@style/WmStStoreText" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/wm_sg_color_575859" android:layout_gravity="center_vertical" android:id="@id/vkr" android:background="@drawable/cye" android:paddingLeft="@dimen/bbrs" android:paddingTop="@dimen/bbj2" android:paddingRight="@dimen/bbrs" android:paddingBottom="@dimen/bbj2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bbrs" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ba06" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_marginTop="4.0dip">
+        <TextView android:textSize="@dimen/hwz" android:textColor="@color/jpg" android:gravity="center" android:id="@id/eb1" android:paddingLeft="@dimen/bbrs" android:paddingRight="@dimen/bbrs" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/WmStStoreText" />
+        <TextView android:textSize="@dimen/hwz" android:textColor="@color/qxr" android:gravity="center" android:id="@id/o9m" android:paddingLeft="@dimen/bbrs" android:paddingRight="@dimen/bbrs" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/WmStStoreText" />
+    </LinearLayout>
+    <android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ji4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_poiList_poi_rating_sales" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/bat9" android:clickable="false" android:layout_width="@dimen/yxh" android:layout_height="@dimen/yxh" android:src="@drawable/mso" />
+                <TextView android:textSize="@dimen/ps0" android:textColor="@color/wm_sg_color_FF8000" android:id="@id/x0d" android:visibility="gone" android:layout_marginLeft="@dimen/bbj2" android:includeFontPadding="false" style="@style/WmStStoreText" />
+                <TextView android:textSize="11.0sp" android:textColor="@color/wm_sg_color_575859" android:id="@id/pqp" android:layout_marginLeft="8.0dip" android:includeFontPadding="false" style="@style/WmStStoreText" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="11.0sp" android:textColor="@color/qxr" android:layout_gravity="center_vertical" android:id="@id/ba4s" style="@style/WmStStoreText" />
+            </LinearLayout>
+            <TextView android:textSize="11.0sp" android:textColor="@color/wm_sg_color_575859" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/bbor" android:layout_width="wrap_content" android:layout_height="6.0dip" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:singleLine="true" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/wm_sg_color_575859" android:id="@id/txt_poiList_adapter_distance" android:paddingBottom="1.0dip" style="@style/WmStStoreText" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/wm_sg_color_575859" android:id="@id/txt_mt_delivery_time_info" android:layout_marginLeft="3.0dip" style="@style/WmStStoreText" />
+            <ImageView android:id="@id/tie" android:layout_width="@dimen/cro" android:layout_height="14.0dip" android:layout_marginRight="4.0dip" android:scaleType="fitCenter" />
+            <com.sankuai.waimai.store.view.DeliverView android:id="@id/i2k" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/ji4">
+            <ImageView android:id="@id/y5a" android:layout_width="wrap_content" android:layout_height="14.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="11.0sp" android:textColor="@color/wm_sg_color_575859" android:layout_gravity="center_vertical" android:id="@id/txt_poiList_adapter_bottom_left" style="@style/WmStStoreText" />
+                <TextView android:textSize="11.0sp" android:textColor="@color/wm_sg_color_575859" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/ino" android:layout_width="wrap_content" android:layout_height="6.0dip" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:singleLine="true" />
+                <TextView android:textSize="11.0sp" android:textColor="@color/wm_sg_color_575859" android:layout_gravity="center_vertical" android:id="@id/txt_poiList_adapter_bottom_middle" style="@style/WmStStoreText" />
+                <com.sankuai.waimai.store.widgets.StrikeTextView android:textSize="10.0sp" android:textColor="@color/wm_sg_color_BCBCBD" android:layout_gravity="center_vertical" android:id="@id/cre" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" style="@style/WmStStoreText" />
+            </LinearLayout>
+            <TextView android:textSize="11.0sp" android:textColor="@color/wm_sg_color_575859" android:id="@id/bb2f" style="@style/WmStStoreText" />
+        </LinearLayout>
+        <View android:id="@id/baya" android:background="@drawable/lra" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

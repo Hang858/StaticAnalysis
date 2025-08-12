@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meituan.android.food.widget.FoodPriorityHorizontalLayout android:orientation="horizontal" android:paddingLeft="@dimen/v6l" android:paddingRight="@dimen/v6l" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/vk3" android:textColor="@color/l4f" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/hk_" android:layout_width="wrap_content" android:layout_height="@dimen/r1f" android:singleLine="true" app:layout_priority="1" />
+    <TextView android:textSize="@dimen/e6p" android:textColor="@color/bm3" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/n1u" android:background="@drawable/esx" android:paddingLeft="@dimen/uhr" android:paddingRight="@dimen/uhr" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/eom" android:layout_marginLeft="@dimen/uhr" android:singleLine="true" android:maxLength="4" app:layout_priority="2" />
+</com.meituan.android.food.widget.FoodPriorityHorizontalLayout>

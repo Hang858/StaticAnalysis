@@ -1,0 +1,26 @@
+.class public final Lcom/sankuai/waimai/bussiness/order/globalcart/network/response/b$e$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/sankuai/waimai/bussiness/order/globalcart/network/response/b$e;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = "a"
+.end annotation
+
+
+# static fields
+.field public static changeQuickRedirect:Lcom/meituan/robust/ChangeQuickRedirect;
+
+
+# instance fields
+.field public a:I
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "toast_type"
+    .end annotation
+.end field

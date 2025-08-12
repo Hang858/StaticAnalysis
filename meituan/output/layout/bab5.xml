@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/h7i" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="@dimen/y06"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/gzd" android:paddingRight="2.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="22.0dip" />
+    <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/coupon_desc" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:id="@id/coupon_button_text" android:layout_width="28.0dip" android:layout_height="fill_parent" android:maxLines="1" android:singleLine="true" />
+</LinearLayout>

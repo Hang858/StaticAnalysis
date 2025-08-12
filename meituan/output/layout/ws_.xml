@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/z0_" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.meituan.android.mtgb.business.tab.view.tabLayout.MTGImageTabLayout android:id="@id/mdv" android:layout_width="fill_parent" android:layout_height="@dimen/ba7p" app:tabBackground="@color/quh" app:tabIndicatorHeight="0.0dip" app:tabMinWidth="0.0dip" app:tabMode="scrollable" app:tabPaddingBottom="0.0dip" app:tabPaddingEnd="0.0dip" app:tabPaddingStart="0.0dip" app:tabPaddingTop="0.0dip" />
+</FrameLayout>

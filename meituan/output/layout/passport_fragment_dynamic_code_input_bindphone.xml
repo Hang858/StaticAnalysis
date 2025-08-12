@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/dynamic_account_login_ll_root" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="?bindMarLRSize" android:layout_marginRight="?bindMarLRSize">
+        <TextView android:textSize="?bindTitleSize" android:textStyle="bold" android:textColor="#ff111111" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="?bindTiMarTopSize" android:text="@string/passport_input_dynamic_code" android:includeFontPadding="false" />
+        <TextView android:textSize="?bindSubtitleSize" android:textColor="#ff111111" android:id="@id/phone_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/passport_sms_send_failue" android:maxLines="2" android:includeFontPadding="false" />
+        <com.meituan.passport.view.VerificationFrameView android:id="@id/input_dynamic_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="45.0dip" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="27.0dip">
+            <com.meituan.passport.view.TextButton android:textSize="?bindSubtitleSize" android:textColor="#ff0a77f5" android:gravity="center" android:id="@id/send_code_and_time_btn" android:layout_width="wrap_content" android:layout_height="28.0dip" android:text="@string/passport_bindmobile_message_send" android:includeFontPadding="false" />
+            <TextView android:textSize="?bindSubtitleSize" android:textColor="#ffff2d19" android:gravity="center" android:id="@id/passport_error_tips" android:layout_width="wrap_content" android:layout_height="28.0dip" android:includeFontPadding="false" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/e9i" android:padding="15.0dip" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/u83" android:scaleType="center" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/og9" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/pb8" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="本地配置列表" android:layout_weight="1.0" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/y9p" android:gravity="center_vertical" android:layout_gravity="center|right" android:id="@id/s_" android:paddingLeft="10.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="搜索" />
+</LinearLayout>

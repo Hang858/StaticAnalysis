@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/white" android:paddingBottom="10.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meituan.android.ugc.cipugc.widget.RecyclerPhotoFragmentView android:id="@id/ocq" android:scrollbars="none" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:numColumns="4" style="@style/PhotoGridViewTheme" />
+    <TextView android:textSize="13.0sp" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/of2" android:paddingLeft="5.0dip" android:visibility="gone" android:layout_width="165.0dip" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginRight="15.0dip" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/g_b" android:gravity="center" android:id="@id/baaf" android:background="@drawable/bbdy" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="20.0dip" android:text="@string/vkn" android:singleLine="true" />
+</FrameLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meituan.android.qcsc.business.widget.iconfont.IconFontTextView android:id="@id/iv_dialog_close" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="18.0dip" android:layout_marginEnd="18.0dip" android:layout_alignParentEnd="true" app:qcsc_iconDpSize="20.0dip" app:qcsc_iconDrawableColor="#ffffffff" app:qcsc_iconDrawableLeft="@string/qcsc_icon_qcs_close"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_container" android:layout_width="fill_parent" android:layout_height="44.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="12.0dip">
+        <FrameLayout android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginTop="0.5dip">
+            <android.support.v7.widget.AppCompatImageView android:id="@id/iv_action" android:layout_width="16.0dip" android:layout_height="16.0dip" />
+            <View android:layout_gravity="end|center|top" android:id="@id/g9r" android:background="@drawable/yb0" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="6.0dip" />
+        </FrameLayout>
+        <android.support.v7.widget.AppCompatTextView android:textSize="14.0sp" android:textColor="#ff191919" android:gravity="center" android:id="@id/ts" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginStart="4.0dip" />
+    </LinearLayout>
+</LinearLayout>

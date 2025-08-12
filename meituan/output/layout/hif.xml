@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/kqe" android:focusable="true" style="@style/WmPage.Secondary.NoBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/zba" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:id="@id/zsg" android:layout_width="fill_parent" android:layout_height="@dimen/vn_" />
+        <View android:id="@id/qtx" android:background="@drawable/dr4" android:layout_width="fill_parent" android:layout_height="@dimen/vn_" />
+        <android.support.v7.widget.RecyclerView android:id="@id/bccz" android:paddingTop="?actionBarSize" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <ViewStub android:id="@id/t_9" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:layout_alignTop="@id/zba" />
+    <com.meituan.roodesign.resfetcher.widgets.RooImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:project="waimai_c" app:srcName="waimai_c_order_bg_confirm_submit_mask" />
+    <ViewStub android:id="@id/c3d" android:background="#ff333333" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <include android:id="@id/e99" android:background="@color/transparent" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/ba66" />
+    <include android:layout_width="wrap_content" android:layout_height="39.0dip" android:layout_marginLeft="52.0dip" android:layout_marginRight="52.0dip" android:layout_marginBottom="8.0dip" android:layout_above="@id/e99" android:layout_centerHorizontal="true" layout="@layout/uec" />
+    <include android:visibility="gone" android:layout_width="wrap_content" android:layout_height="39.0dip" android:layout_marginLeft="52.0dip" android:layout_marginRight="52.0dip" android:layout_marginBottom="8.0dip" android:layout_above="@id/e99" android:layout_centerHorizontal="true" layout="@layout/rhl" />
+    <include android:layout_width="wrap_content" android:layout_height="39.0dip" android:layout_marginLeft="52.0dip" android:layout_marginRight="52.0dip" android:layout_marginBottom="8.0dip" android:layout_above="@id/e99" android:layout_centerHorizontal="true" layout="@layout/etz" />
+    <FrameLayout android:id="@id/cwx" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="-8.0dip" android:layout_above="@id/e99" />
+    <ViewStub android:id="@id/w5h" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

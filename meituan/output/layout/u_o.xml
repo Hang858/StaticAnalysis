@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:background="@drawable/qm6" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="11.0dip" android:paddingEnd="11.0dip">
+        <com.meituan.android.common.ui.widget.RoundFrameLayout android:id="@id/nmz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:rfl_borderWidth="0.0dip" app:rfl_radius="44.0dip">
+            <ImageView android:id="@id/iv_icon" android:layout_width="36.0dip" android:layout_height="36.0dip" android:scaleType="fitCenter" android:contentDescription="@null" />
+        </com.meituan.android.common.ui.widget.RoundFrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/title_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="10.0dip" android:layout_toStartOf="@id/c6i" android:layout_toEndOf="@id/nmz">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="bottom" android:id="@id/l9c" android:layout_width="57.0dip" android:layout_height="20.0dip" android:layout_marginRight="6.0dip" />
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff191919" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:ellipsize="end" android:id="@id/tv_content" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" android:lineSpacingExtra="3.1999817sp" />
+                <TextView android:textSize="12.0sp" android:textColor="#ffff4b10" android:ellipsize="end" android:id="@id/ey" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:maxLines="1" android:maxLength="8" android:lineSpacingExtra="3.1999817sp" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:ellipsize="end" android:id="@id/bbgt" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:maxLines="1" android:maxLength="6" android:lineSpacingExtra="3.1999817sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:id="@id/c6i" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:maxLength="4" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginStart="8.0dip" style="@style/MTUI.ButtonStyle.Red.Top" />
+    </RelativeLayout>
+</merge>

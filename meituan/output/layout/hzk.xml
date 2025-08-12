@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/yze" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/xkv" app:layout_constraintTop_toTopOf="parent" />
+    <android.support.constraint.ConstraintLayout android:id="@id/xkv" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintLeft_toRightOf="@id/yze" app:layout_constraintTop_toTopOf="parent">
+        <com.sankuai.waimai.platform.widget.RoundRectImageView android:id="@id/j7l" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="@id/bc4j" app:layout_constraintRight_toRightOf="@id/bc4j" app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/bc4j" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/j7l" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="@id/j7l">
+            <com.sankuai.waimai.platform.widget.RoundRectImageView android:id="@id/ls0" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:id="@id/btf" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.sankuai.waimai.platform.widget.RoundRectImageView android:id="@id/bcws" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:id="@id/zuq" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

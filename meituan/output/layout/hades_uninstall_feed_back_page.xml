@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/uninstall_widget_feed_back_page" android:background="#fff8f8f8" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/uninstall_retain_feed_back_list_page" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/feed_back_list_title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="24.0dip" android:textStyle="bold" android:textColor="#e6000000" android:id="@id/uninstall_retain_feed_back_list_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="130.0dip" android:text="已卸载完成" android:layout_marginStart="30.0dip" />
+            <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="#99000000" android:id="@id/uninstall_retain_feed_back_list_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="告诉我们你卸载的原因，\n我们会变得更好的。" android:layout_below="@id/uninstall_retain_feed_back_list_title" android:layout_marginStart="30.0dip" />
+            <ImageView android:id="@id/uninstall_retain_feed_back_list_icon" android:layout_width="175.0dip" android:layout_height="219.0dip" android:layout_marginTop="98.0dip" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="237.0dip" android:layout_marginRight="20.0dip">
+            <LinearLayout android:orientation="vertical" android:id="@id/feed_back_list" android:background="@drawable/uninstall_feed_back_list_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0dip" android:textColor="#99000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="选择你遇到的问题（可多选）" android:maxLines="1" android:layout_marginStart="20.0dip" />
+                <android.support.v7.widget.RecyclerView android:orientation="vertical" android:id="@id/uninstall_retain_feed_back_list_recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="24.0dip" />
+            </LinearLayout>
+            <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="#e6000000" android:gravity="center" android:id="@id/uninstall_retain_feed_back_list_submit_btn" android:background="@drawable/uninstall_feed_back_submit_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="提交" android:layout_below="@id/feed_back_list" android:alpha="0.4" />
+        </RelativeLayout>
+    </FrameLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/uninstall_retain_feed_back_success_page" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/uninstall_retain_feed_back_success_icon" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginTop="233.0dip" />
+        <TextView android:textSize="18.0dip" android:textColor="#e6000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="提交成功" />
+        <TextView android:textSize="16.0dip" android:textColor="#e6000000" android:gravity="center" android:id="@id/uninstall_retain_feed_back_success_close_btn" android:background="@drawable/uninstall_feed_back_submit_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="263.0dip" android:layout_marginRight="20.0dip" android:text="关闭" />
+    </LinearLayout>
+</LinearLayout>

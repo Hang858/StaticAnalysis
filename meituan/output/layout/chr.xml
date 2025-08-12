@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="126.0dip" android:layout_height="35.0dip">
+        <com.meituan.android.legwork.ui.view.StrokeTextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/bctm" android:ellipsize="end" android:id="@id/address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:includeFontPadding="false" android:layout_toRightOf="@id/dor" />
+        <ImageView android:id="@id/dor" android:background="@drawable/it5" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="3.0dip" />
+    </RelativeLayout>
+</merge>

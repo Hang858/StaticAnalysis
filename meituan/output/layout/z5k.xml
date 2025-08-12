@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:elevation="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_triangle" android:layout_width="16.0dip" android:layout_height="6.0dip" android:layout_marginLeft="105.0dip" android:src="@drawable/hf5" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/o15" android:background="@drawable/g6x" android:layout_width="168.0dip" android:layout_height="31.0dip" android:layout_marginTop="5.0dip" android:text="可以搜索直播间或商品了哦" android:shadowRadius="2.0" />
+</RelativeLayout>

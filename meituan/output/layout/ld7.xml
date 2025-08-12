@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="right" android:orientation="vertical" android:paddingRight="@dimen/goc" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_listen" android:layout_width="52.0dip" android:layout_height="52.0dip" android:layout_marginBottom="16.0dip" android:src="@drawable/h5b" />
+    <com.meituan.android.common.ui.widget.RoundFrameLayout android:id="@id/o_w" android:visibility="gone" android:layout_width="52.0dip" android:layout_height="52.0dip" android:layout_marginBottom="16.0dip" app:rfl_border="false" app:rfl_radius="26.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/iv_mute" android:background="@color/n6m" android:padding="15.0dip" android:layout_width="52.0dip" android:layout_height="52.0dip" android:src="@drawable/hwx" />
+    </com.meituan.android.common.ui.widget.RoundFrameLayout>
+    <com.meituan.android.novel.library.page.reader.view.listen.ListenHereMenuView android:id="@id/lws" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="26.0dip" />
+</LinearLayout>

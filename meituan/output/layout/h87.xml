@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/item_container" android:background="@drawable/n61" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="12.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="14.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.dianping.android.oversea.base.widget.OsNetWorkImageView android:id="@id/e2y" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" app:aspectRatio="1.4375" app:borderColor="#14000000" app:borderStrokeWidth="1.0px" app:cornerRadius="3.0dip" />
+            <ImageView android:background="@drawable/dvt" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_alignBottom="@id/e2y" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/fg5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="7.0dip" android:singleLine="true" android:includeFontPadding="false" android:layout_alignBottom="@id/e2y" />
+        </RelativeLayout>
+        <TextView android:textSize="11.0sp" android:textColor="@color/qk5" android:ellipsize="end" android:id="@id/ev9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" android:includeFontPadding="false" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/bc5r" android:ellipsize="end" android:id="@id/bbky" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="11.0dip" android:singleLine="true" android:includeFontPadding="false" android:drawableLeft="@drawable/bc2q" android:drawablePadding="2.0dip" />
+    </LinearLayout>
+</merge>

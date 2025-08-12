@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/ta9" android:paddingTop="@dimen/moe" android:paddingBottom="@dimen/moe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/b_k" android:paddingEnd="@dimen/bvy"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/ws" android:layout_marginBottom="@dimen/bje" style="@style/TextAppearance_City.Title" />
+    <com.meituan.android.base.ui.widget.SpannableGridLayout android:id="@id/grid" android:layout_width="fill_parent" android:layout_height="wrap_content" app:column_divider_size="@dimen/jll" app:row_count="2" app:row_divider_size="@dimen/tay" app:spannablegrid_column_count="4" />
+</LinearLayout>

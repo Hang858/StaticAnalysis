@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/cy0" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/jo2" android:layout_marginRight="6.0dip" android:scaleType="fitXY" style="@style/WmIcon" />
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/g3u" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/t7a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nou" android:singleLine="true" android:includeFontPadding="false" />
+        <LinearLayout style="@style/WmText.Weighted.Right">
+            <TextView android:textSize="14.0sp" android:textColor="#ffff4a26" android:gravity="center|right" android:id="@id/e0u" android:layout_marginLeft="@dimen/vcx" style="@style/WmText" />
+        </LinearLayout>
+        <com.meituan.roodesign.widgets.iconfont.RooIconFont android:textSize="8.0dip" android:textColor="@color/po9" android:layout_gravity="center_vertical" android:id="@id/pyj" android:paddingLeft="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nia" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/dvz" android:background="@drawable/t0h" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="#ff575859" android:ellipsize="end" android:id="@id/k3q" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/z4n" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

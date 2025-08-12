@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/h4h" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.5" />
+    <FrameLayout android:id="@id/peu" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/ecd">
+        <android.support.v7.widget.AppCompatTextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/y3q" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xk" />
+    </FrameLayout>
+    <com.sankuai.meituan.msv.page.widget.OvalShapeGuideView android:id="@id/rut" android:visibility="gone" android:layout_width="58.0dip" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/ecd" app:endColor="@color/n9p" app:isRightDirection="true" app:startColor="@color/gbe" />
+    <com.sankuai.meituan.msv.page.widget.OvalShapeGuideView android:layout_gravity="right" android:id="@id/vse" android:visibility="gone" android:layout_width="58.0dip" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/ecd" app:endColor="@color/n9p" app:isRightDirection="false" app:startColor="@color/gbe" />
+</FrameLayout>

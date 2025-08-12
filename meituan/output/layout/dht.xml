@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sankuai.waimai.store.view.banner.roundview.UniversalImageView android:layout_gravity="center" android:id="@id/jjk" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerInside" app:riv_corner_radius="2.0dip" />
+    <View android:background="@drawable/vu6" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

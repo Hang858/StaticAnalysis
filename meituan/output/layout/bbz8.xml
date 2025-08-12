@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/b87" android:layout_width="310.0dip" android:layout_height="368.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="right" android:id="@id/dialog_close" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginTop="17.0dip" android:layout_marginRight="17.0dip" android:src="@drawable/ejq" />
+    <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/hbp" android:gravity="center_horizontal" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/hbp" android:gravity="center_horizontal" android:id="@id/tv_sub_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" />
+    <ImageView android:id="@id/f76" android:layout_width="fill_parent" android:layout_height="134.0dip" android:layout_marginTop="15.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:textSize="12.0dip" android:textColor="@color/badl" android:id="@id/yjs" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/dih" android:ellipsize="end" android:id="@id/tlo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <TextView android:textSize="12.0dip" android:textColor="@color/dih" android:ellipsize="end" android:id="@id/glw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:singleLine="true" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip">
+        <Button android:textSize="14.0dip" android:textStyle="normal" android:id="@id/btn_left" android:layout_width="0.0dip" android:layout_height="45.0dip" android:layout_marginRight="5.0dip" android:text="继续极速支付" android:layout_weight="1.0" style="@style/cashieroneclick__week_button" />
+        <Button android:textSize="14.0dip" android:id="@id/btn_right" android:layout_width="0.0dip" android:layout_height="45.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="0.0dip" android:layout_marginBottom="0.0dip" android:text="开启买单并支付" android:layout_weight="1.0" style="@style/cashieroneclick__button" />
+    </LinearLayout>
+</LinearLayout>

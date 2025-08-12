@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sankuai.meituan.mbc.ui.nest.NestedRecyclerViewChild android:id="@id/mbc_recycler" android:focusable="false" android:focusableInTouchMode="false" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/feed_header_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.meituan.android.pt.homepage.modules.guessyoulike.quickfilter.FeedQuickFilterLayout android:id="@id/i4j" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.meituan.android.pt.homepage.modules.guessyoulike.gametask.view.GameTaskLayout android:id="@id/fruit_game_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.meituan.android.pt.homepage.modules.guessyoulike.slideback.view.RedPacketTipsView android:id="@id/mbc_red_packet_tips_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/c4l" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</FrameLayout>

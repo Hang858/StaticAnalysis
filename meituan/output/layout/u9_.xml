@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/cez" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="15.0sp" android:textColor="@color/szj" android:gravity="center" android:id="@id/z13" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="21" android:includeFontPadding="false" />
+            <TextView android:textSize="9.0sp" android:textColor="@color/c40" android:id="@id/bz5" android:background="@drawable/pv9" android:paddingLeft="1.0dip" android:paddingRight="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="3.0dip" android:text="休" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:textSize="10.0sp" android:textColor="@color/szj" android:gravity="center" android:layout_gravity="center" android:id="@id/k14" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginTop="1.0dip" android:text="333" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ImageView android:id="@id/user_avatar" android:padding="3.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+</RelativeLayout>

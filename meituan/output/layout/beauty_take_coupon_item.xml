@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/coupon_left_bg" android:background="@drawable/beauty_coupon_green_left" android:paddingLeft="12.0dip" android:layout_width="0.0dip" android:layout_height="90.0dip" android:layout_weight="1.0">
+        <RelativeLayout android:id="@id/tt1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="@color/beauty_common_green" android:id="@id/price_pre" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/beauty_rmb_symbol" android:layout_alignBaseline="@id/price" />
+            <TextView android:textSize="30.0sp" android:textColor="@color/beauty_common_green" android:id="@id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginBottom="-1.0dip" android:layout_toRightOf="@id/price_pre" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/beauty_color_text_black" android:ellipsize="end" android:id="@id/coupon_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:maxLines="1" android:layout_toRightOf="@id/price" android:layout_alignBaseline="@id/price" />
+        </RelativeLayout>
+        <TextView android:textSize="11.0sp" android:textColor="@color/beauty_light_yellow" android:ellipsize="end" android:id="@id/discount" android:background="@drawable/beauty_round_textview_lightred" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="47.5dip" android:maxLines="1" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/beauty_color_text_gray" android:ellipsize="end" android:id="@id/available_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:maxLines="1" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/take_content" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/coupon_right_bg_img" android:layout_width="90.0dip" android:layout_height="90.0dip" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/take_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="立即领取" />
+        <ImageView android:layout_gravity="center" android:id="@id/taked_icon" android:layout_width="48.0dip" android:layout_height="48.0dip" />
+    </FrameLayout>
+</LinearLayout>

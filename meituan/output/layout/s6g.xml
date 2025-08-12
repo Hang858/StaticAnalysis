@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/lt4" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/bb8t" android:background="@android:color/white" android:layout_width="wrap_content" android:layout_height="2.0dip" android:layout_marginLeft="52.5dip" android:layout_marginTop="3.0dip" android:layout_marginRight="52.5dip" android:layout_alignParentTop="true" />
+    <View android:id="@id/ugt" android:background="@android:color/white" android:layout_width="wrap_content" android:layout_height="2.0dip" android:layout_marginLeft="52.5dip" android:layout_marginRight="52.5dip" android:layout_marginBottom="3.0dip" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/jb3" android:background="#b3000000" android:layout_width="4.5dip" android:layout_height="fill_parent" android:layout_marginLeft="51.0dip" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:src="@drawable/lu1" android:scaleType="fitXY" android:layout_alignParentTop="true" />
+    <ImageView android:id="@id/g9l" android:background="#b3000000" android:layout_width="4.5dip" android:layout_height="fill_parent" android:layout_marginTop="3.0dip" android:layout_marginRight="51.0dip" android:layout_marginBottom="3.0dip" android:src="@drawable/xp0" android:scaleType="fitXY" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <View android:id="@id/b8a" android:background="#b3000000" android:layout_width="51.0dip" android:layout_height="fill_parent" android:layout_alignTop="@id/jb3" />
+    <View android:id="@id/vg" android:background="#b3000000" android:layout_width="51.0dip" android:layout_height="fill_parent" android:layout_alignTop="@id/jb3" android:layout_alignParentRight="true" />
+    <View android:id="@id/ba4g" android:background="@drawable/dpn" android:layout_width="4.0dip" android:layout_height="fill_parent" android:layout_toRightOf="@id/jb3" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/all_category_bubble_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="19.199982pt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sankuai.ptview.view.PTImageView android:id="@id/all_category_bubble_icon" android:layout_width="16.319977pt" android:layout_height="16.319977pt" android:layout_marginRight="1.0pt" />
+    <com.sankuai.ptview.view.PTTextView android:textSize="9.599976pt" android:ellipsize="end" android:id="@id/all_category_bubble_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" />
+</LinearLayout>

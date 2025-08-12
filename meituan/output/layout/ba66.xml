@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/riy" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/odu" android:background="@color/transparent" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/WmCell">
+            <FrameLayout android:gravity="center_vertical" android:id="@id/drn" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="12.0sp" android:textColor="@color/ihf" android:id="@id/yiz" style="@style/WmText" />
+                <LinearLayout android:orientation="vertical" android:id="@id/g2p" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textColor="#ffffdd00" android:id="@id/phq" android:layout_height="20.0dip" style="@style/WmText" />
+                    <TextView android:textSize="11.0sp" android:textColor="@color/k4x" android:layout_gravity="center_vertical" android:id="@id/baiw" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:singleLine="true" />
+                    <TextView android:textSize="11.0sp" android:textColor="@color/ihf" android:id="@id/rrt" android:layout_height="15.0dip" style="@style/WmText" />
+                    <com.meituan.roodesign.resfetcher.widgets.RooImageView android:id="@id/promotion_arrow_right" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="10.0dip" android:scaleType="fitXY" app:project="waimai_c" app:srcName="waimai_c_order_bottom_discount_right_arrow" />
+                </LinearLayout>
+            </FrameLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/ihf" android:id="@id/w16" android:layout_marginTop="5.5dip" android:text="@string/lh9" style="@style/WmText" />
+                    <TextView android:textSize="20.0sp" android:textColor="@color/ihf" android:id="@id/pmw" android:layout_marginLeft="@dimen/vcx" android:layout_toRightOf="@id/w16" style="@style/WmText" />
+                </RelativeLayout>
+                <TextView android:textSize="11.0sp" android:textColor="@color/bcq_" android:layout_gravity="end" android:id="@id/osj" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:enabled="false" android:gravity="center" android:orientation="horizontal" android:id="@id/hii" android:background="@drawable/m_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="11.0dip">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/g3u" android:id="@id/m0m" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_order_confirm_submit" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

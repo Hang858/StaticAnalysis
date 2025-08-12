@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qq.e.ads.nativ.widget.NativeAdContainer android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/mu6" />
+    <com.qq.e.ads.nativ.MediaView android:id="@id/qq_media_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <android.support.v7.widget.AppCompatImageView android:id="@id/qq_img_poster" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+    <FrameLayout android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <android.support.constraint.ConstraintLayout android:id="@id/baeo" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_task" android:background="@drawable/msv_bg_ad_task" android:paddingLeft="4.0dip" android:paddingRight="12.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <ImageView android:id="@id/ic_task" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+            <TextView android:textSize="12.0dip" android:id="@id/tv_task" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="倒计时占位" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/rd1" android:background="@drawable/msv_ad_reward_back_bg" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="12.0dip" android:layout_marginEnd="12.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <ImageView android:layout_gravity="center" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/msv_ad_reward_close" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/fl_mute" android:background="@drawable/msv_ad_reward_back_bg" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="12.0dip" android:layout_marginEnd="12.0dip" app:layout_constraintEnd_toStartOf="@id/rd1" app:layout_constraintTop_toTopOf="parent">
+            <ImageView android:layout_gravity="center" android:id="@id/iv_mute" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/msv_ad_reward_mute" />
+        </FrameLayout>
+        <ViewStub android:id="@id/bc1u" android:visibility="gone" android:layout="@layout/s3r" android:inflatedId="@id/bc1u" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" />
+        <ViewStub android:id="@id/o52" android:visibility="gone" android:layout="@layout/s3r" android:inflatedId="@id/o52" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:layout_marginEnd="6.0dip" app:layout_constraintBottom_toTopOf="@id/bc1u" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+        <ImageView android:id="@id/iv_guide_title" android:visibility="gone" android:layout_width="287.0dip" android:layout_height="28.0dip" android:layout_marginBottom="20.0dip" app:layout_constraintBottom_toTopOf="@id/o52" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" />
+        <ImageView android:id="@id/iv_guide_hand" android:visibility="gone" android:layout_width="95.0dip" android:layout_height="95.0dip" android:translationY="15.0dip" app:layout_constraintBottom_toBottomOf="@id/o52" app:layout_constraintRight_toRightOf="@id/o52" />
+        <View android:id="@id/msv_ad_card_touch_area" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="48.0dip" app:layout_constraintBottom_toTopOf="@id/o52" />
+        <include layout="@layout/msv_dialog_ad_stay_prompt" />
+        <ViewStub android:id="@id/msv_mount_end_card_container" android:visibility="gone" android:layout="@layout/msv_mount_end_card_container" android:inflatedId="@id/msv_mount_end_card_container" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+</com.qq.e.ads.nativ.widget.NativeAdContainer>

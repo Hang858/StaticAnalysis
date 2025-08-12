@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="开启相册权限才能保存图片" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="horizontal" android:background="@android:color/transparent" android:layout_width="312.0dip" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginBottom="15.0dip" android:layout_below="@id/title">
+        <TextView android:textSize="14.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/hgk" android:layout_width="132.0dip" android:layout_height="45.0dip" android:text="暂不开启" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/e6" android:layout_width="132.0dip" android:layout_height="45.0dip" android:text="去开启权限" android:layout_marginStart="9.0dip" />
+    </LinearLayout>
+</RelativeLayout>

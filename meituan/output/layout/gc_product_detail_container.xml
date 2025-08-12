@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/gc_product_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/progress" layout="@layout/mrn_common_loading_layout" />
+</FrameLayout>

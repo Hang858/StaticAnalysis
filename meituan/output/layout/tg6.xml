@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/juv" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:elevation="5.0dip" app:navigationIcon="@drawable/fe4" />
+    <com.meituan.android.pay.widget.view.PinnedHeaderListView android:id="@android:id/list" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

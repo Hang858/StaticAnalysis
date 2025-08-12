@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sankuai.waimai.store.poi.list.newbrand.scroll.PrioritySmoothNestedScrollViewV2 android:id="@id/refactor_page_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <com.sankuai.waimai.store.poi.list.newbrand.scroll.ChildMatchParentLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/operation_block" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent" />
+            <View android:id="@id/sg_v_subcategory" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="12.0dip" />
+            <com.sankuai.waimai.store.poi.list.newbrand.scroll.InnerScrollMarkView android:layout_width="fill_parent" android:layout_height="0.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/category_and_content" android:layout_width="fill_parent" android:layout_height="fill_parent" app:matchParentHeight="true">
+                <FrameLayout android:id="@id/gzp" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <FrameLayout android:id="@id/list_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+        </com.sankuai.waimai.store.poi.list.newbrand.scroll.ChildMatchParentLinearLayout>
+    </com.sankuai.waimai.store.poi.list.newbrand.scroll.PrioritySmoothNestedScrollViewV2>
+    <com.sankuai.waimai.store.poi.list.newbrand.business_poi_list.BusinessPoiListView android:id="@id/lr_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</merge>

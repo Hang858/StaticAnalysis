@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="12.0dip" android:paddingTop="14.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/qtj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="土豆烧牛肉土豆烧牛肉土豆烧牛肉土豆烧牛肉土豆烧牛肉土豆烧牛肉土豆烧牛肉土豆烧牛肉土豆烧牛肉土豆烧牛肉土豆烧牛肉土豆烧牛肉" android:singleLine="true" />
+    <RelativeLayout android:id="@id/c_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="#ff858687" android:ellipsize="end" android:id="@id/describe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="1. 先把牛肉洗干净，把肉上包裹的白膜去掉。再把肉切成小块，装进碗里，加盐，加糖，加生抽，加生粉，加点油搅拌均匀待用。         2. 把炒锅洗干净，开火，倒油，油稍微多一点，油开后把腌过的牛肉倒进去翻炒一下，大概两分钟左右，连续翻炒，等差不多要糊底了，加适量水进去 3.时间到了，直接去水龙头下用水流把高压锅气去掉，开盖子。接着把土豆直接倒进高压锅了。 4.时间到了，直接去水龙头下用水流把高压锅气去掉，开盖子。接着把土豆直接倒进高压锅了，如果水少了，加点水，接着再盖上盖子开火，大火开后换小火八分钟。" android:layout_toLeftOf="@id/spread" />
+        <ImageView android:id="@id/spread" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/p26" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:background="#fff1f1f1" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="17.0dip" />
+</LinearLayout>

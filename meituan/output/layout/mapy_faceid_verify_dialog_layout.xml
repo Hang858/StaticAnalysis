@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/mapy_faceid_verify_dialog_bg" android:layout_width="92.0dip" android:layout_height="92.0dip">
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/lv_faceid_verify_dialog" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

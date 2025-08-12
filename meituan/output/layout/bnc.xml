@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/v64" android:background="@drawable/jvj" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/f8q" android:paddingLeft="11.0dip" android:paddingRight="11.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="11.0sp" android:textColor="@color/bm3" android:id="@id/k52" android:background="@drawable/h3_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/bbhe" android:id="@id/decisioninfo" android:paddingLeft="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@id/image" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/image" android:layout_width="72.0dip" android:layout_height="72.0dip" android:layout_marginTop="11.0dip" android:layout_marginRight="12.0dip" android:scaleType="centerCrop" />
+        <TextView android:textSize="17.0sp" android:textColor="@color/l4f" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:singleLine="true" android:layout_toRightOf="@id/image" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/bbhe" android:id="@id/info1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/decisioninfo" android:layout_toRightOf="@id/image" android:layout_alignBottom="@id/image" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/bbhe" android:id="@id/info2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:singleLine="true" android:layout_toRightOf="@id/image" android:layout_above="@id/info1" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/detail_layout" android:paddingLeft="95.0dip" android:layout_width="fill_parent" android:layout_height="62.0dip" android:layout_below="@id/f8q">
+        <View android:background="@color/tba" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/bbhe" android:id="@id/detail_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="17.0dip" android:maxLines="2" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/tba" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/detail_layout" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.meituan.msv.list.adapter.holder.immersivevideoholder.ContentCardContainer android:orientation="horizontal" android:id="@id/fzt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="@drawable/ng4" android:showDividers="middle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/bd4" android:layout="@layout/bd4" android:inflatedId="@id/bd4" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_marginBottom="8.0dip" />
+    <ViewStub android:id="@id/cqi" android:layout="@layout/cqi" android:inflatedId="@id/cqi" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_marginBottom="8.0dip" />
+    <ViewStub android:id="@id/q_k" android:layout="@layout/q_k" android:inflatedId="@id/q_k" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_marginBottom="8.0dip" />
+</com.sankuai.meituan.msv.list.adapter.holder.immersivevideoholder.ContentCardContainer>

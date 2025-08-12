@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/epf" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/wnx" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="100.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="14.0dip">
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/b5z" android:ellipsize="end" android:id="@id/alert_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:maxLines="2" android:layout_alignBottom="@id/nee" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/nee" android:visibility="gone" android:layout_width="46.0dip" android:layout_height="46.0dip" android:src="@drawable/bax1" android:scaleType="centerInside" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@id/clz" style="@style/paybase__horizonal_divider" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/bbsh" android:layout_width="fill_parent" android:layout_height="49.0dip">
+        <TextView android:textSize="17.0sp" android:textColor="@color/z_g" android:gravity="center" android:id="@id/rzx" android:background="@drawable/vwx" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <View android:id="@id/r92" style="@style/paybase__vertical_divider" />
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/xg4" android:gravity="center" android:id="@id/qh0" android:background="@drawable/vwx" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.business.page.home.widget.WmHomeRooView android:id="@id/mav" android:background="@color/jl8" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sankuai.waimai.business.page.home.widget.HomePullToRefreshView android:id="@id/pull_to_refresh_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/r7z" android:background="@color/jl8" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/actionbar_bg_container" android:background="@drawable/bbaa" android:layout_width="fill_parent" android:layout_height="170.0dip" />
+            <ImageView android:id="@id/home_blocks_white_bg" android:background="@drawable/bbaa" android:layout_width="fill_parent" android:layout_height="200.0dip" />
+        </FrameLayout>
+        <ViewStub android:id="@id/edb" android:layout="@layout/d6y" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:id="@id/zw6" android:background="@drawable/m5i" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+        </FrameLayout>
+        <com.sankuai.waimai.business.page.home.basal.HomePageNestedScrollRecyclerView android:id="@id/nested_scroll_recycler_view" android:focusable="true" android:focusableInTouchMode="true" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.sankuai.waimai.business.page.home.widget.HomePullToRefreshView>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/bottom_floating_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/snb" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/bc1r" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <include layout="@layout/rdf" />
+            </LinearLayout>
+            <FrameLayout android:layout_gravity="bottom|center|right" android:id="@id/n7w" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="bottom|center" android:id="@id/up_guide_view_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/i5u" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ViewStub android:id="@id/bab8" android:visibility="gone" android:layout="@layout/h2a" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ViewStub android:id="@id/wm_page_home_remind_layer" android:visibility="gone" android:layout="@layout/wm_page_home_remind_layer" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.sankuai.waimai.business.page.home.factory.FuTiaoMatrixView android:id="@id/lis" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </FrameLayout>
+    <include layout="@layout/lac" style="@style/takeout_main_base_img" />
+    <ViewStub android:id="@id/uy0" android:visibility="gone" android:layout="@layout/qpt" android:inflatedId="@id/uy0" android:layout_marginTop="110.0dip" style="@style/takeout_main_base_img" />
+    <ViewStub android:layout_gravity="bottom|center|left" android:id="@id/u5e" android:layout="@layout/baq7" android:inflatedId="@id/u5e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="200.0dip" />
+    <include android:id="@id/r7s" layout="@layout/zcs" />
+    <ViewStub android:id="@id/crg" android:layout="@layout/gvs" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/tcj" layout="@layout/bc7n" />
+    <ViewStub android:id="@id/action_bar_elderly_viewstub" android:visibility="gone" android:layout="@layout/h6p" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/e3e" android:visibility="gone" android:layout="@layout/zjs" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="12.0dip" />
+    <ViewStub android:id="@id/cj4" android:layout="@layout/q_t" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/ad_new_second_floor" android:layout="@layout/wm_page_home_ad_new_second_floor_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:layout_gravity="bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/bcfl" />
+    <ViewStub android:id="@id/wm_page_home_action_bar_bubble" android:visibility="gone" android:layout="@layout/cjj" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/test_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:layout_gravity="center|right" android:id="@id/test_btn" android:background="#ffff0000" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="50.0dip" />
+</com.sankuai.waimai.business.page.home.widget.WmHomeRooView>

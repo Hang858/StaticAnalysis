@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/g3z" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_14" android:textStyle="bold" android:textColor="@color/g3u" android:id="@id/wwy" android:layout_marginLeft="12.0dip" android:layout_marginTop="11.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="11.0dip" android:text="@string/ip5" style="@style/WmText" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/g3u" android:textColorHint="@color/po9" android:gravity="right" android:id="@id/elv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="66.0dip" android:layout_marginTop="11.0dip" android:layout_marginBottom="11.0dip" android:hint="@string/z1d" android:maxLines="1" android:singleLine="true" android:layout_toLeftOf="@id/o3v" />
+    <com.meituan.roodesign.widgets.iconfont.RooIconFont android:textSize="8.0dip" android:textColor="@color/po9" android:layout_gravity="center_vertical" android:id="@id/o3v" android:paddingLeft="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:text="@string/nia" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/bcoz" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/hdr" android:background="@drawable/q53" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="32.0dip" android:text="不要忘记添加备注哦" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/qp2" android:layout_width="3.5dip" android:layout_height="6.0dip" android:src="@drawable/neb" android:scaleType="centerCrop" />
+    </LinearLayout>
+</RelativeLayout>

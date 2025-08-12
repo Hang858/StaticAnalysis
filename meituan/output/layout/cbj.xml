@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/b87" android:layout_width="@dimen/z3i" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="right" android:id="@id/dialog_close" android:layout_width="@dimen/xuh" android:layout_height="@dimen/xuh" android:layout_marginTop="@dimen/zxk" android:layout_marginRight="@dimen/zxk" android:src="@drawable/ejq" />
+    <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/hbp" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/dhj" android:id="@id/cd7" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/dhj" android:id="@id/f8e" android:background="@drawable/mxm" android:padding="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:lineSpacingExtra="9.0dip" />
+    <TextView android:textSize="12.0dip" android:textColor="@color/eox" android:layout_gravity="center_horizontal" android:id="@id/r8k" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/gpq" android:layout_marginTop="30.0dip" android:layout_marginRight="@dimen/gpq" android:lineSpacingExtra="@dimen/a" />
+    <Button android:id="@id/r9w" android:layout_marginLeft="@dimen/barh" android:layout_marginTop="@dimen/uuu" android:layout_marginRight="@dimen/barh" android:layout_marginBottom="@dimen/o2x" style="@style/cashieroneclick__button" />
+</LinearLayout>

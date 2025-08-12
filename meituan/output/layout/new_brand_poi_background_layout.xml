@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/bmm" android:background="@color/w88" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sankuai.waimai.store.poi.list.refactor.card.background.GradientImageLayout android:id="@id/channel_tab_top_iv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.sankuai.waimai.store.view.banner.roundview.UniversalImageView android:id="@id/home_tab_top_iv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/anim_alpha_video_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/bottom_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

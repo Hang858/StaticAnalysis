@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="end" android:orientation="horizontal" android:id="@id/c_0" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ProgressBar android:id="@id/q8n" android:layout_width="71.0dip" android:layout_height="4.0dip" android:max="100" android:progressDrawable="@drawable/but" android:layout_marginStart="4.0dip" style="?android:progressBarStyleHorizontal" />
+</merge>

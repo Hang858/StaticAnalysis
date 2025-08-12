@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|left|top" android:orientation="vertical" android:id="@id/page_not_found_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/page_not_found_img" android:layout_width="180.0dip" android:layout_height="135.0dip" android:layout_marginTop="170.0dip" android:src="@drawable/pic_empty_state_no_order_v2" android:scaleType="fitXY" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff191919" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msc_page_not_found_title" />
+    <TextView android:textSize="14.0sp" android:gravity="center" android:layout_gravity="center" android:id="@id/page_not_found_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="30.0dip" android:text="@string/msc_page_not_found_message" />
+</LinearLayout>

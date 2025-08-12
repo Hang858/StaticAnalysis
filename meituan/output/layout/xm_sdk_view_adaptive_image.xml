@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/xm_sdk_chat_img_view" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/xm_sdk_img_view" />
+    <include android:id="@id/xm_sdk_chat_gif_view" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/xm_sdk_gif_view" />
+    <ImageView android:id="@id/xm_sdk_image_status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</merge>

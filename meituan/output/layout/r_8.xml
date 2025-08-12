@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/y2f" android:visibility="gone" style="@style/paybase__horizonal_divider" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/xut">
+        <include layout="@layout/q3x" />
+        <com.meituan.android.pay.widget.EditTextWithClearAndHelpButton android:ellipsize="end" android:gravity="center_vertical" android:id="@id/jk9" android:paddingRight="@dimen/rk1" android:layout_width="wrap_content" android:layout_height="fill_parent" android:hint="@string/g_m" android:layout_toLeftOf="@id/divider" android:layout_alignParentLeft="true" android:inputType="number" style="@style/mpay__BankInfoEditText" />
+        <View android:id="@id/divider" android:background="@color/dee" android:layout_width="0.5dip" android:layout_height="24.0dip" android:layout_marginLeft="14.0dip" android:layout_marginTop="13.0dip" android:layout_toLeftOf="@id/ks7" />
+        <Button android:enabled="false" android:textSize="15.0sp" android:textColor="@color/bann" android:gravity="center" android:id="@id/ks7" android:background="@null" android:layout_width="115.0dip" android:layout_height="fill_parent" android:text="@string/tza" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <TextView android:id="@id/y4v" style="@style/mpay__BankInfoEditTextErrorTip" />
+    <View android:id="@id/ct" android:layout_marginTop="@dimen/rpa" style="@style/paybase__horizonal_divider" />
+    <TextView android:id="@id/bottom_tip" android:paddingTop="@dimen/jmw" android:paddingBottom="0.0dip" style="@style/mpay__BottomTip" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meituan.android.beauty.widget.BeautyToolBarButton android:clickable="true" android:layout_width="50.0dip" android:layout_height="40.0dip" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.meituan.android.beauty.widget.BeautyToolbarImageButton android:id="@id/beauty_toolbar_img" android:background="@null" android:duplicateParentState="true" android:layout_width="24.0dip" android:layout_height="24.0dip" android:scaleType="fitCenter" />
+        <TextView android:textSize="10.0sp" android:textColor="#ff646464" android:id="@id/beauty_toolbar_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:singleLine="true" />
+    </LinearLayout>
+</com.meituan.android.beauty.widget.BeautyToolBarButton>
