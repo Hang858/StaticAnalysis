@@ -98,6 +98,10 @@ public class ResourceParser {
         // 导出子布局关系
         SubLayoutExporter subLayoutExporter = new SubLayoutExporter(outPath);
         subLayoutExporter.export();
+
+        // 导出UI上下文
+        UIContextExporter uiContextExporter = new UIContextExporter(outPath);
+        uiContextExporter.export();
     }
 
     public static void main(String[] args) {

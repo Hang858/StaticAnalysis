@@ -16,7 +16,7 @@ import java.util.*;
 /**
  * 子布局导出器 - 处理布局文件中的<include>标签并导出子布局关系
  */
-public class SubLayoutExporter {
+public class SubLayoutExporter implements ResourceExporter {
     private static final Logger logger = LoggerFactory.getLogger(SubLayoutExporter.class);
     private final String outPath;
     private final IncludeTagParser includeTagParser;
@@ -36,29 +36,28 @@ public class SubLayoutExporter {
             return;
         }
 
-        Map<String, Set<String>> layoutMap = new HashMap<>();
         File[] layoutFiles = layoutDir.toFile().listFiles((dir, name) -> name.endsWith(".xml"));
-
+        Set<String> subLayouts = new HashSet<>();
         if (layoutFiles != null) {
             for (File file : layoutFiles) {
                 String layoutName = file.getName().replace(".xml", "");
-                Set<String> subLayouts = includeTagParser.parseIncludeTags(layoutName);
-                if (!subLayouts.isEmpty()) {
-                    layoutMap.put(layoutName, subLayouts);
+                Set<String> parsedSubLayouts = includeTagParser.parseIncludeTags(layoutName);
+                if (parsedSubLayouts != null) {
+                    subLayouts.addAll(parsedSubLayouts);
                 }
             }
         }
 
         // 生成sub_layouts.json文件
-        generateSubLayoutsJson(layoutMap);
+        generateSubLayoutsJson(subLayouts);
     }
 
-    private void generateSubLayoutsJson(Map<String, Set<String>> layoutMap) throws IOException {
+    private void generateSubLayoutsJson(Set<String> subLayouts) throws IOException {
         ObjectMapper mapper = new ObjectMapper();
         mapper.enable(SerializationFeature.INDENT_OUTPUT);
 
         Path outputFile = Paths.get(outPath, ResourceParserConfig.SUB_LAYOUT_FILE);
-        mapper.writeValue(outputFile.toFile(), layoutMap);
+        mapper.writeValue(outputFile.toFile(), subLayouts);
 
         logger.info("已生成子布局关系文件: {}", outputFile);
     }

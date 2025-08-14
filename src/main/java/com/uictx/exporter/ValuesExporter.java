@@ -8,11 +8,8 @@ import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.DocumentHelper;
 import org.dom4j.Element;
-import org.dom4j.io.OutputFormat;
-import org.dom4j.io.XMLWriter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.*;
@@ -72,8 +69,8 @@ public class ValuesExporter implements ResourceExporter {
         // 生成arsc_string.json
         generateArscStringJson(stringsMap, stringIdsMap);
 
-        // 生成drawables.xml
-        generateDrawablesXml(drawables);
+        // 生成drawables.json
+        generateDrawablesJson(drawables);
     }
 
     private void copyPublicXml(Path valuesSrc, Path valuesDstDir) throws IOException {
@@ -114,6 +111,9 @@ public class ValuesExporter implements ResourceExporter {
         }
     }
 
+    // 存储drawable名称和ID的映射
+    private Map<String, String> drawableIdsMap = new TreeMap<>();
+
     private void parsePublicXml(String content, List<String> drawables, Map<String, String> stringIdsMap) {
         try {
             Document doc = DocumentHelper.parseText(content);
@@ -125,6 +125,7 @@ public class ValuesExporter implements ResourceExporter {
 
                 if ("drawable".equals(type)) {
                     drawables.add(name);
+                    drawableIdsMap.put(name, id);
                 } else if ("string".equals(type)) {
                     stringIdsMap.put(name, id);
                 }
@@ -151,23 +152,20 @@ public class ValuesExporter implements ResourceExporter {
         logger.info("已生成arsc_string.json: {}", arscFile);
     }
 
-    private void generateDrawablesXml(List<String> drawables) throws IOException {
-        Path drawablesFile = Paths.get(outPath, ResourceParserConfig.DRAWABLES_FILE);
-        Document doc = DocumentHelper.createDocument();
-        Element root = doc.addElement("drawables");
+    private void generateDrawablesJson(List<String> drawables) throws IOException {
+        Path drawablesFile = Paths.get(outPath, "drawables.json");
+        List<Object> result = new ArrayList<>();
 
         for (String drawable : drawables) {
-            Element item = root.addElement("item");
-            item.setText(drawable);
+            Map<String, String> item = new HashMap<>();
+            String resourceId = drawableIdsMap.get(drawable);
+            item.put("resourceID", resourceId);
+            item.put("resourceName", drawable);
+            result.add(item);
         }
 
-        OutputFormat format = OutputFormat.createPrettyPrint();
-        try (FileOutputStream fos = new FileOutputStream(drawablesFile.toFile())) {
-            XMLWriter writer = new XMLWriter(fos, format);
-            writer.write(doc);
-            writer.flush();
-        }
-
-        logger.info("已生成drawables.xml: {}", drawablesFile);
+        String json = JSON.toJSONString(result, JSONWriter.Feature.PrettyFormat);
+        Files.writeString(drawablesFile, json, StandardCharsets.UTF_8);
+        logger.info("已生成drawables.json: {}", drawablesFile);
     }
 }
