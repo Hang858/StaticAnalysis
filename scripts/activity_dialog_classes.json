@@ -1,0 +1,26 @@
+{
+  "activity_classes": [
+    "Landroid/support/v4/app/BaseFragmentActivityApi14;",
+    "Landroid/support/v4/app/BaseFragmentActivityApi16;",
+    "Lcom/neilmark/ochea/facebook/lite/MainActivity;",
+    "Lcom/neilmark/ochea/facebook/lite/SecondActivity;",
+    "Lcom/neilmark/ochea/facebook/lite/SplashActivity;",
+    "Landroid/support/v4/app/FragmentActivity;",
+    "Landroid/support/v4/app/FragmentActivity$1;",
+    "Landroid/support/v4/app/FragmentActivity$NonConfigurationInstances;",
+    "Landroid/support/v7/app/ActionBarActivity;",
+    "Landroid/support/v4/app/FragmentActivity$HostCallbacks;",
+    "Lcom/neilmark/ochea/facebook/lite/ThirdActivity;",
+    "Landroid/support/v4/app/SupportActivity;",
+    "Landroid/support/v7/app/AppCompatActivity;"
+  ],
+  "dialog_classes": [
+    "Landroid/support/design/widget/BottomSheetDialog;",
+    "Landroid/support/v7/app/AppCompatDialogFragment;",
+    "Landroid/support/v7/app/AlertDialog;",
+    "Landroid/support/design/widget/BottomSheetDialogFragment;",
+    "Landroid/support/v4/app/DialogFragment;",
+    "Landroid/support/v7/app/AppCompatDialog;",
+    "Landroid/support/v4/app/DialogFragment$DialogStyle;"
+  ]
+}
