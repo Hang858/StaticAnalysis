@@ -41,5 +41,5 @@ if __name__ == "__main__":
     script_dir = os.path.dirname(os.path.abspath(__file__))
     # 输出文件路径设置为脚本目录下的 class_hierarchy.json
     output_file = os.path.join(script_dir, "class_hierarchy.json")
-    smali_dir = "/home/zhlinux/work/githubproject/UI-CTX/UI-CTX-main/StaticAnalysis/demo/output/decompiled"  # 修改为你的 smali 根目录
+    smali_dir = "/home/zhlinux/work/githubproject/UI-CTX/UI-CTX-main/StaticAnalysis/meituan/output/decompiled"  # 修改为你的 smali 根目录
     collect_class_hierarchy(smali_dir, output_file)

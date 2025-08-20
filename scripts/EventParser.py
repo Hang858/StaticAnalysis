@@ -1,6 +1,7 @@
 import os
 from collections import defaultdict
 import logging
+from pydoc import classname
 from SmaliClass import SmaliClass
 from SmaliMethod import SmaliMethod
 import sys
@@ -75,7 +76,7 @@ class EventParser:
                     for method, body in all_bodies.items():
                         smali_method = SmaliMethod(method, body)
                         statements = smali_method.get_statements()
-                        for statement in statements:
+                        for idx, statement in enumerate(statements):
                             if smali_method.is_method_invocation(statement):
                                 callee = smali_method.extract_called_method_signature(statement)
                                 if callee in self.reg2handler:
@@ -86,9 +87,11 @@ class EventParser:
                                     self.allEvents[smali_method] = events
                                     self.logger.info(f"找到事件注册方法: {smali_method.method_signature}, 语句: {statement}")
                                 elif callee == self.CALL_SET_CONTENT_VIEW:
-                                    xml = self.handle_setContentView(smali_method, statement)
+                                    # if statement == "invoke-virtual {p0, v0}, Landroid/support/v7/app/AppCompatActivity;->setContentView(I)V" and smali_class.class_name == "com/sankuai/meituan/search/result/SearchResultActivity":
+                                    #     print("break")
+                                    xml = self.handle_setContentView(smali_method, statement, idx)
                                     if xml == None:
-                                        self.logger.error(f"未找到 setContentView对应的xml,{smali_class.class_name}: {statement}")
+                                        self.logger.error(f"未找到 setContentView对应的xml,{smali_class.file_path}: {statement}")
                                     self.class_to_xml[smali_class_name] = xml
                                     self.logger.info(f"找到 setContentView 方法调用: {smali_method.method_signature}, 语句: {statement}")
                                 elif callee == self.CALL_FIND_VIEW_BY_ID:
@@ -98,7 +101,7 @@ class EventParser:
                                     self.handle_inflate(smali_method, statement)
                                     self.logger.info(f"找到 inflate 方法调用: {smali_method.method_signature}, 语句: {statement}")
                                   
-    def handle_setContentView(self, smali_method, statement):
+    def handle_setContentView(self, smali_method, statement, idx):
         """
         处理 setContentView 方法调用
         :param smali_method: SmaliMethod 实例
@@ -106,17 +109,25 @@ class EventParser:
         :return: 布局XML文件名
         """
         id = smali_method.get_method_invocation_param(statement, 1)
-        statement = smali_method.get_previous_statement(statement)
+        statement = smali_method.get_previous_statement(idx)
+        idx = idx - 1
         while statement is not None:
             if smali_method.is_assignment_statement(statement):
                 left = smali_method.get_assignment_left(statement)
                 if left == id:
                     right = smali_method.get_assignment_right(statement)
-                    if right.startswith("0x"):
+                    if right == None: # move-result-xxx statement
+                        if (left == id):
+                            while (statement is not None) and (not smali_method.is_method_invocation(statement)):
+                                statement = smali_method.get_previous_statement(idx)
+                                idx = idx - 1
+                            id = smali_method.get_method_invocation_param(statement, 0)
+                    elif right.startswith("0x"):
                         return right
-                    elif right.startswith("v"):
+                    elif right.startswith("v") or right.startswith("p"):
                         id = right
-            statement = smali_method.get_previous_statement(statement)
+            statement = smali_method.get_previous_statement(idx)
+            idx = idx - 1
             
     def handle_findViewById(self, smali_method, statement):
         """
@@ -151,6 +162,6 @@ class EventParser:
 # 示例用法
 if __name__ == "__main__":
     smali_root = sys.argv[1]
-    dialog_classes_file = sys.argv[2]
+    activity_dialog_classes_file = sys.argv[2]
     event_parser = EventParser(smali_root, activity_dialog_classes_file)
     results = event_parser.parse()

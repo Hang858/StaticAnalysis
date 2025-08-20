@@ -12,33 +12,27 @@ class SmaliMethod:
         """
         return self.method_body
 
-    def get_previous_statement(self, statement):
+    def get_previous_statement(self, index):
         """
-        给定一条语句，获取它的前一条语句
-        :param statement: 当前语句
+        给定一条语句的索引，获取它的前一条语句
+        :param index: 当前语句的索引
         :return: 前一条语句，如果不存在则返回 None
         """
-        if statement not in self.method_body:
+        if index <= 0 or index >= len(self.method_body):
             return None
         
-        index = self.method_body.index(statement)
-        if index > 0:
-            return self.method_body[index - 1]
-        return None
+        return self.method_body[index - 1]
 
-    def get_next_statement(self, statement):
+    def get_next_statement(self, index):
         """
-        给定一条语句，获取它的后一条语句
-        :param statement: 当前语句
+        给定一条语句的索引，获取它的后一条语句
+        :param index: 当前语句的索引
         :return: 后一条语句，如果不存在则返回 None
         """
-        if statement not in self.method_body:
+        if index < 0 or index >= len(self.method_body) - 1:
             return None
         
-        index = self.method_body.index(statement)
-        if index < len(self.method_body) - 1:
-            return self.method_body[index + 1]
-        return None
+        return self.method_body[index + 1]
 
     def is_method_invocation(self, statement):
         """
@@ -60,7 +54,7 @@ class SmaliMethod:
             return None
         
         # 匹配 Smali 方法调用格式，例如: invoke-virtual {p0, p1}, Lcom/example/MyClass;->myMethod(Ljava/lang/String;)V
-        pattern = r'invoke-.*\s*\{[^}]+\},\s*L([^;]*);->(.*)'        
+        pattern = r'invoke-.*\s*\{[^}]*\},\s*L([^;]*);->(.*)'        
         match = re.search(pattern, statement)
         
         if match:
@@ -261,12 +255,19 @@ if __name__ == '__main__':
         # 带范围参数的方法调用语句
         'invoke-static/range {v15 .. v20}, Lcom/example/MyClass;->myMethod()V',
         'invoke-static/range {v15 .. v16}, Lcom/example/MyClass;->anotherMethod()V',
+        'invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;',
         'return-object v0'
     ]
     smali_method = SmaliMethod(method_signature, method_body)
     statements = smali_method.get_statements()
-    for statement in statements:
-        print(f"Statement: {statement}")
+    for i, statement in enumerate(statements):
+        print(f"Statement {i}: {statement}")
+        
+        # 测试前后语句方法
+        prev_statement = smali_method.get_previous_statement(i)
+        next_statement = smali_method.get_next_statement(i)
+        print(f"  Previous statement: {prev_statement}")
+        print(f"  Next statement: {next_statement}")
         
         # 测试方法调用相关方法
         if smali_method.is_method_invocation(statement):
