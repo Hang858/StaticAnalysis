@@ -1,9 +1,13 @@
 import re
 
 class SmaliMethod:
-    def __init__(self, method_signature, method_body):
+    def __init__(self, smali_class, method_signature, method_body):
+        self.smali_class = smali_class
         self.method_signature = method_signature
         self.method_body = method_body  # 存储方法体语句列表
+
+    def get_class_name(self):
+        return self.smali_class
 
     def get_statements(self):
         """
@@ -53,15 +57,18 @@ class SmaliMethod:
         if not self.is_method_invocation(statement):
             return None
         
-        # 匹配 Smali 方法调用格式，例如: invoke-virtual {p0, p1}, Lcom/example/MyClass;->myMethod(Ljava/lang/String;)V
-        pattern = r'invoke-.*\s*\{[^}]*\},\s*L([^;]*);->(.*)'        
+        # 更模糊的匹配模式，支持基本类型、引用类型和数组类型
+        # 例如: invoke-virtual {v0}, Lcom/example/MyClass;->myMethod()V
+        #       invoke-virtual {v3}, [B->clone()Ljava/lang/Object;
+        #       invoke-virtual {v0}, [Lcom/horcrux/svg/TextProperties$FontWeight;->clone()Ljava/lang/Object;
+        pattern = r'invoke-.*\s*\{[^}]*\},\s*([^\s,]+)->(.*)'        
         match = re.search(pattern, statement)
         
         if match:
-            method_class = match.group(1)
+            class_part = match.group(1)
             method_sig = match.group(2)
             if isComplete:
-                return f'{method_class};->{method_sig}'
+                return f'{class_part}->{method_sig}'
             else:
                 return method_sig
         return None
@@ -118,6 +125,27 @@ class SmaliMethod:
                 return params[param_index]
         return None
 
+    def get_invoke_result_register(self, statement, idx):
+        """
+        从 invoke 语句中找到返回值保存到的寄存器
+        :param statement: 要判断的语句
+        :return: 返回值保存的寄存器，如果不是有效 invoke 语句或无返回值则返回 None
+        """
+        if not self.is_method_invocation(statement):
+            return None
+        while statement:
+            if not self.is_assignment_statement(statement):
+                statement = self.get_next_statement(idx)
+                idx = idx + 1
+                continue
+            left = self.get_assignment_left(statement)
+            right = self.get_assignment_right(statement)
+            if right is None:
+                return left
+            statement = self.get_next_statement(idx)
+            idx = idx + 1
+            
+
     def is_assignment_statement(self, statement):
         """
         判断给定语句是否是赋值语句
@@ -135,6 +163,7 @@ class SmaliMethod:
             r'^iput(-\w+)?\s+',  # iput 或 iput-xxx 
             r'^aget(-\w+)?\s+',  # aget 或 aget-xxx 
             r'^aput(-\w+)?\s+',  # aput 或 aput-xxx 
+            r'^new-instance\s+',  # new-instance 开头的指令
         ]
         
         for pattern in assignment_patterns:
@@ -147,6 +176,36 @@ class SmaliMethod:
         
         return False
 
+    # def is_field_operation(self, statement):
+    #     """
+    #     判断给定语句是否是字段操作指令
+    #     :param statement: 要判断的语句
+    #     :return: 是否是字段操作指令
+    #     """
+    #     # Smali 中的字段操作指令通常以 iget, iput, sget, sput 开头
+    #     return statement.startswith(('iget', 'iput', 'sget', 'sput'))
+
+    # def extract_field_signature(self, statement):
+    #     """
+    #     从字段操作指令中提取字段签名
+    #     :param statement: 字段操作指令
+    #     :return: 字段签名，如果不是有效字段操作指令则返回 None
+    #     """
+    #     if not self.is_field_operation(statement):
+    #         return None
+        
+    #     # 匹配 Smali 字段操作格式，例如:
+    #     # iget-object v0, p0, Lcom/example/MyClass;->myField:Ljava/lang/String;
+    #     # sput v1, Lcom/example/MyClass;->staticField:I
+    #     pattern = r'(?:iget|iput|sget|sput)(?:-\w+)?\s+[^,]+,\s*(?:[^,]+,\s*)?L([^;]*);->(.*)'        
+    #     match = re.search(pattern, statement)
+        
+    #     if match:
+    #         field_class = match.group(1)
+    #         field_sig = match.group(2)
+    #         return f'{field_class};->{field_sig}'
+    #     return None
+
     def get_assignment_left(self, statement):
         """
         获取赋值语句的左边部分（目标）
@@ -157,8 +216,8 @@ class SmaliMethod:
             return None
         
         # 处理不同类型的赋值语句
-        if statement.startswith('const') or statement.startswith('move'):
-            # 格式: const v0, 0x1234 或 move v1, v0
+        if statement.startswith('const') or statement.startswith('move') or statement.startswith('new-instance'):
+            # 格式: const v0, 0x1234 或 move v1, v0 或 new-instance v2, Lcom/example/MyClass;
             parts = statement.split(',', 1)
             if len(parts) >= 1:
                 return parts[0].strip().split(' ', 1)[1]
@@ -187,8 +246,8 @@ class SmaliMethod:
             return None
         
         # 处理不同类型的赋值语句
-        if statement.startswith('const') or statement.startswith('move'):
-            # 格式: const v0, 0x1234 或 move v1, v0
+        if statement.startswith('const') or statement.startswith('move') or statement.startswith('new-instance'):
+            # 格式: const v0, 0x1234 或 move v1, v0 或 new-instance v2, Lcom/example/MyClass;
             parts = statement.split(',', 1)
             if len(parts) >= 2:
                 return parts[1].strip()
@@ -244,6 +303,7 @@ if __name__ == '__main__':
         'aget v13, v0, v1',
         'aput-object v0, v1, v2',
         'aput v1, v2, v3',
+        'new-instance v14, Lcom/example/MyClass;',
         
         # 带等号的赋值语句
         'v14 = v1 + 1',
@@ -251,6 +311,7 @@ if __name__ == '__main__':
         
         # 非赋值语句（用于对比）
         'invoke-virtual {v0}, Ljava/lang/String;->toString()Ljava/lang/String;',
+        'invoke-virtual {v0}, [Ljava/lang/String;->toString()Ljava/lang/String;'
         'invoke-virtual {v6, v7}, Lcom/neilmark/ochea/facebook/lite/MainActivity;->findViewById(I)Landroid/view/View;',
         # 带范围参数的方法调用语句
         'invoke-static/range {v15 .. v20}, Lcom/example/MyClass;->myMethod()V',
@@ -258,7 +319,7 @@ if __name__ == '__main__':
         'invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;',
         'return-object v0'
     ]
-    smali_method = SmaliMethod(method_signature, method_body)
+    smali_method = SmaliMethod("Lcom/example/MyClass;->myMethod(Ljava/lang/String;)V", method_signature, method_body)
     statements = smali_method.get_statements()
     for i, statement in enumerate(statements):
         print(f"Statement {i}: {statement}")
@@ -293,9 +354,20 @@ if __name__ == '__main__':
             left = smali_method.get_assignment_left(statement)
             right = smali_method.get_assignment_right(statement)
             print(f"  Is assignment: True")
-            print(f"  Left side: {left}")
-            print(f"  Right side: {right}")
-        else:
-            print(f"  Is assignment: False")
+            if left:
+                print(f"  Left side: {left}")
+            if right:
+                print(f"  Right side: {right}")
+            
+        # 测试字段操作相关方法
+        # if smali_method.is_field_operation(statement):
+        #     field_sig = smali_method.extract_field_signature(statement)
+        #     print(f"  Is field operation: True")
+        #     if field_sig:
+        #         print(f"  Field signature: {field_sig}")
+        #     print(f"  Left side: {left}")
+        #     print(f"  Right side: {right}")
+        # else:
+        #     print(f"  Is assignment: False")
         
         print()

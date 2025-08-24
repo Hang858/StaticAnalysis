@@ -1,0 +1,69 @@
+
+--- 0x7f030044 ---
+  0x7f0500c6: Lcom/neilmark/ochea/facebook/lite/MainActivity$100000020$100000017$100000015;: setOnClickListener(Landroid/view/View$OnClickListener;)V
+  0x7f0500c5: Lcom/neilmark/ochea/facebook/lite/MainActivity$100000020$100000017$100000016;: setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+--- 0x7f030043 ---
+  0x7f0500bd: Lcom/neilmark/ochea/facebook/lite/MainActivity$100000019$100000016$100000015;: setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+--- 0x7f03001d ---
+  0x7f05007d: Lcom/neilmark/ochea/facebook/lite/MainActivity$100000012$100000011;: setOnClickListener(Landroid/view/View$OnClickListener;)V, Lcom/neilmark/ochea/facebook/lite/MainActivity$100000010$100000009;: setOnClickListener(Landroid/view/View$OnClickListener;)V, Lcom/neilmark/ochea/facebook/lite/MainActivity$100000007$100000006;: setOnClickListener(Landroid/view/View$OnClickListener;)V
+  0x7f05007e: Lcom/neilmark/ochea/facebook/lite/MainActivity$100000010$100000008;: setOnClickListener(Landroid/view/View$OnClickListener;)V, Lcom/neilmark/ochea/facebook/lite/MainActivity$100000007$100000005;: setOnClickListener(Landroid/view/View$OnClickListener;)V, Lcom/neilmark/ochea/facebook/lite/MainActivity$100000012$100000010;: setOnClickListener(Landroid/view/View$OnClickListener;)V
+  0x7f05007f: Lcom/neilmark/ochea/facebook/lite/MainActivity$100000007$100000004;: setOnClickListener(Landroid/view/View$OnClickListener;)V, Lcom/neilmark/ochea/facebook/lite/MainActivity$100000010$100000007;: setOnClickListener(Landroid/view/View$OnClickListener;)V, Lcom/neilmark/ochea/facebook/lite/MainActivity$100000012$100000009;: setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+--- 0x7f030047 ---
+  0x7f0500d2: Lcom/neilmark/ochea/facebook/lite/MainActivity$100000023$100000020$100000018;: setOnClickListener(Landroid/view/View$OnClickListener;)V
+  0x7f0500d1: Lcom/neilmark/ochea/facebook/lite/MainActivity$100000023$100000020$100000019;: setOnClickListener(Landroid/view/View$OnClickListener;)V
+  0x7f0500d0: Lcom/neilmark/ochea/facebook/lite/MainActivity$100000021$100000018$100000016;: setOnClickListener(Landroid/view/View$OnClickListener;)V, Lcom/neilmark/ochea/facebook/lite/MainActivity$100000024$100000021$100000019;: setOnClickListener(Landroid/view/View$OnClickListener;)V
+  0x7f0500cf: Lcom/neilmark/ochea/facebook/lite/MainActivity$100000024$100000021$100000020;: setOnClickListener(Landroid/view/View$OnClickListener;)V, Lcom/neilmark/ochea/facebook/lite/MainActivity$100000021$100000018$100000017;: setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+--- 0x7f030000 ---
+  0x7f050049: Lcom/neilmark/ochea/facebook/lite/MainActivity$100000015$100000013;: setOnClickListener(Landroid/view/View$OnClickListener;)V, Lcom/neilmark/ochea/facebook/lite/MainActivity$100000016$100000014;: setOnClickListener(Landroid/view/View$OnClickListener;)V, Lcom/neilmark/ochea/facebook/lite/MainActivity$100000017$100000015;: setOnClickListener(Landroid/view/View$OnClickListener;)V, Lcom/neilmark/ochea/facebook/lite/MainActivity$100000018$100000016;: setOnClickListener(Landroid/view/View$OnClickListener;)V
+  0x7f05004a: Lcom/neilmark/ochea/facebook/lite/MainActivity$100000017$100000016;: setOnClickListener(Landroid/view/View$OnClickListener;)V, Lcom/neilmark/ochea/facebook/lite/MainActivity$100000018$100000017;: setOnClickListener(Landroid/view/View$OnClickListener;)V, Lcom/neilmark/ochea/facebook/lite/MainActivity$100000015$100000014;: setOnClickListener(Landroid/view/View$OnClickListener;)V, Lcom/neilmark/ochea/facebook/lite/MainActivity$100000016$100000015;: setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+--- 0x7f030030 ---
+  0x7f050098: Lcom/neilmark/ochea/facebook/lite/SecondActivity$100000001;: setOnClickListener(Landroid/view/View$OnClickListener;)V
+  0x7f050097: Lcom/neilmark/ochea/facebook/lite/SecondActivity$100000002;: setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+--- 0x7f03003e ---
+  0x7f0500bc: Lcom/neilmark/ochea/facebook/lite/MainActivity$100000020$100000019;: setOnClickListener(Landroid/view/View$OnClickListener;)V
+  0x7f05007c: Lcom/neilmark/ochea/facebook/lite/MainActivity$100000020$100000018;: setOnClickListener(Landroid/view/View$OnClickListener;)V
+  0x7f0500bb: Lcom/neilmark/ochea/facebook/lite/MainActivity$100000020$100000017;: setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+--- 0x7f03002d ---
+  0x7f050090: Lcom/neilmark/ochea/facebook/lite/MainActivity$100000025$100000023;: setOnClickListener(Landroid/view/View$OnClickListener;)V, Lcom/neilmark/ochea/facebook/lite/MainActivity$100000027$100000025;: setOnClickListener(Landroid/view/View$OnClickListener;)V
+  0x7f05008f: Lcom/neilmark/ochea/facebook/lite/MainActivity$100000027$100000026;: setOnClickListener(Landroid/view/View$OnClickListener;)V, Lcom/neilmark/ochea/facebook/lite/MainActivity$100000025$100000024;: setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+--- 0x7f030041 ---
+  0x7f0500c6: Lcom/neilmark/ochea/facebook/lite/MainActivity$100000021$100000020;: setOnClickListener(Landroid/view/View$OnClickListener;)V
+  0x7f05007c: Lcom/neilmark/ochea/facebook/lite/MainActivity$100000023$100000021;: setOnClickListener(Landroid/view/View$OnClickListener;)V, Lcom/neilmark/ochea/facebook/lite/MainActivity$100000021$100000019;: setOnClickListener(Landroid/view/View$OnClickListener;)V
+  0x7f0500c5: Lcom/neilmark/ochea/facebook/lite/MainActivity$100000021$100000018;: setOnClickListener(Landroid/view/View$OnClickListener;)V
+  0x7f0500c8: Lcom/neilmark/ochea/facebook/lite/MainActivity$100000023$100000022;: setOnClickListener(Landroid/view/View$OnClickListener;)V
+  0x7f0500c7: Lcom/neilmark/ochea/facebook/lite/MainActivity$100000023$100000020;: setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+--- 0x7f030031 ---
+  0x7f0500ab: Lcom/neilmark/ochea/facebook/lite/MainActivity$100000003;: setOnClickListener(Landroid/view/View$OnClickListener;)V
+  0x7f0500a6: Lcom/neilmark/ochea/facebook/lite/MainActivity$100000017;: setOnClickListener(Landroid/view/View$OnClickListener;)V
+  0x7f05009f: Lcom/neilmark/ochea/facebook/lite/MainActivity$100000027;: setOnClickListener(Landroid/view/View$OnClickListener;)V
+  0x7f0500a8: Lcom/neilmark/ochea/facebook/lite/MainActivity$100000012;: setOnClickListener(Landroid/view/View$OnClickListener;)V
+  0x7f05009b: Lcom/neilmark/ochea/facebook/lite/MainActivity$100000004;: setOnClickListener(Landroid/view/View$OnClickListener;)V
+  0x7f0500a0: Lcom/neilmark/ochea/facebook/lite/MainActivity$100000023;: setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
+  0x7f0500a9: Lcom/neilmark/ochea/facebook/lite/MainActivity$100000028;: setOnClickListener(Landroid/view/View$OnClickListener;)V
+  0x7f0500af: Lcom/neilmark/ochea/facebook/lite/MainActivity$100000013;: setOnClickListener(Landroid/view/View$OnClickListener;)V
+  0x7f0500a7: Lcom/neilmark/ochea/facebook/lite/MainActivity$100000005;: setOnClickListener(Landroid/view/View$OnClickListener;)V
+  0x7f0500a5: Lcom/neilmark/ochea/facebook/lite/MainActivity$100000024;: setOnClickListener(Landroid/view/View$OnClickListener;)V
+  0x7f0500ae: Lcom/neilmark/ochea/facebook/lite/MainActivity$100000014;: setOnClickListener(Landroid/view/View$OnClickListener;)V
+  0x7f05009c: Lcom/neilmark/ochea/facebook/lite/MainActivity$100000008;: setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+--- 0x7f03002c ---
+  0x7f05008d: Lcom/neilmark/ochea/facebook/lite/MainActivity$100000008$100000006;: setOnClickListener(Landroid/view/View$OnClickListener;)V, Lcom/neilmark/ochea/facebook/lite/MainActivity$100000006$100000004;: setOnClickListener(Landroid/view/View$OnClickListener;)V
+  0x7f05008c: Lcom/neilmark/ochea/facebook/lite/MainActivity$100000006$100000005;: setOnClickListener(Landroid/view/View$OnClickListener;)V, Lcom/neilmark/ochea/facebook/lite/MainActivity$100000008$100000007;: setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+--- 0x7f03003d ---
+  0x7f0500b8: Lcom/neilmark/ochea/facebook/lite/MainActivity$100000019$100000018;: setOnClickListener(Landroid/view/View$OnClickListener;)V
+  0x7f0500b9: Lcom/neilmark/ochea/facebook/lite/MainActivity$100000019$100000016;: setOnClickListener(Landroid/view/View$OnClickListener;)V
+  0x7f05007c: Lcom/neilmark/ochea/facebook/lite/MainActivity$100000019$100000017;: setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+--- 0x7f030046 ---
+  0x7f0500cd: Lcom/neilmark/ochea/facebook/lite/MainActivity$100000022$100000019$100000017;: setOnClickListener(Landroid/view/View$OnClickListener;)V
+  0x7f0500cc: Lcom/neilmark/ochea/facebook/lite/MainActivity$100000022$100000019$100000018;: setOnClickListener(Landroid/view/View$OnClickListener;)V

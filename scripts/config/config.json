@@ -1,6 +1,0 @@
-{
-    "smali_root": null,
-    "output_dir": "/home/zhlinux/work/githubproject/UI-CTX/UI-CTX-main/StaticAnalysis/demo/output",
-    "class_hierarchy_file": "data/class_hierarchy.json",
-    "activity_dialog_classes_file": "data/activity_dialog_classes.json"
-}
