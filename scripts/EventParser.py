@@ -127,6 +127,7 @@ class EventParser:
                 event = self.get_event(smali_method, statement, idx)
                 if event is None:
                     self.logger.error(f"未找到事件注册方法,{smali_method.smali_class}: {statement}")
+                    continue
                 view = self.get_view(smali_method, statement, idx)
                 if not view:
                     continue
@@ -160,8 +161,10 @@ class EventParser:
                             widget = field_view_map.get(right)
                         else:
                             self.logger.error(f"未找到类字段映射,{smali_method.smali_class}: {statement}")
+                            return
                         if widget is None:
                             self.logger.error(f"未找到视图字段映射,{smali_method.smali_class}: {statement}")
+                            return
                         break
                     elif statement.startswith("check-cast"):
                         continue
@@ -169,6 +172,7 @@ class EventParser:
                         widget = self.class_fields_view.get(right)
                         if widget is None:
                             self.logger.error(f"未找到视图,{smali_method.smali_class}: {statement}")
+                            return
                         break
                     elif right.startswith('0x'):
                         widget = right
@@ -197,11 +201,13 @@ class EventParser:
             statement = smali_method.get_previous_statement(idx)
             idx = idx - 1
         
-        if widget is None:
+        if not widget.startswith('0x'):
             self.logger.error(f"未找到视图,{smali_method.smali_class}: {statement}")
             return None
         
         layout = self.class_to_xml.get(smali_method.get_class_name())
+        if layout == None:
+            self.logger.error(f"未找到布局文件,{smali_method.smali_class}: {statement}")
         return layout, widget
                 
 
