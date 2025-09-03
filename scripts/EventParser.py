@@ -230,7 +230,13 @@ class EventParser:
                             self.logger.error(f"未找到视图字段映射,{smali_method.smali_class}: {statement}")
                             return
                         break
+                    elif statement.startswith("iput"):
+                        statement = smali_method.get_previous_statement(idx)
+                        idx = idx - 1
+                        continue
                     elif statement.startswith("check-cast"):
+                        statement = smali_method.get_previous_statement(idx)
+                        idx = idx - 1
                         continue
                     elif right.startswith('L'):
                         widget = self.class_fields_view.get(right)
@@ -613,4 +619,4 @@ if __name__ == "__main__":
     public_xml_file = sys.argv[3]
     event_parser = EventParser(smali_root, ui_context_file, public_xml_file)
     results = event_parser.parse()
-    event_parser.save_results("/home/zhlinux/work/githubproject/UI-CTX/UI-CTX-main/StaticAnalysis/scripts/event_parser_results_temp.txt")
+    event_parser.save_results("/home/zhlinux/work/githubproject/UI-CTX/UI-CTX-main/StaticAnalysis/scripts/results/event_parser_results_temp.txt")

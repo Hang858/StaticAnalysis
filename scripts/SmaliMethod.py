@@ -317,7 +317,8 @@ if __name__ == '__main__':
         'invoke-static/range {v15 .. v20}, Lcom/example/MyClass;->myMethod()V',
         'invoke-static/range {v15 .. v16}, Lcom/example/MyClass;->anotherMethod()V',
         'invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;',
-        'return-object v0'
+        'return-object v0',
+        'invoke-virtual {p0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;'
     ]
     smali_method = SmaliMethod("Lcom/example/MyClass;->myMethod(Ljava/lang/String;)V", method_signature, method_body)
     statements = smali_method.get_statements()
