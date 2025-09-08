@@ -1,9 +1,8 @@
 import os
 from collections import defaultdict
 import logging
-from pydoc import classname
-from SmaliClass import SmaliClass
-from SmaliMethod import SmaliMethod
+from smali_parser.SmaliClass import SmaliClass
+from smali_parser.SmaliMethod import SmaliMethod
 import sys
 import json
 
@@ -619,4 +618,4 @@ if __name__ == "__main__":
     public_xml_file = sys.argv[3]
     event_parser = EventParser(smali_root, ui_context_file, public_xml_file)
     results = event_parser.parse()
-    event_parser.save_results("/home/zhlinux/work/githubproject/UI-CTX/UI-CTX-main/StaticAnalysis/scripts/results/event_parser_results_temp.txt")
+    event_parser.save_results("/home/hangzhang/work/StaticAnalysis/scripts/results/event_parser_results_temp.txt")
