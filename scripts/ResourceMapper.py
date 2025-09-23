@@ -1,7 +1,6 @@
-
-import logging
-from venv import logger
-from LoggerConfig import LoggerConfig
+from LoggerConfig import logger
+from functools import lru_cache
+from typing import Optional
 
 class ResourceMapper:
     """
@@ -13,7 +12,7 @@ class ResourceMapper:
         self.id_to_layout = {}
         self.view_id_to_layout = {}
         self._load()
-        self.logger = LoggerConfig.init_logger(name="Parser")
+        self.logger = logger
 
     def _load(self):
         """

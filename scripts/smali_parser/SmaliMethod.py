@@ -4,7 +4,7 @@ class SmaliMethod:
     def __init__(self, smali_class, method_signature, method_body):
         self.smali_class = smali_class
         self.method_signature = method_signature
-        self.method_body = method_body  # 存储方法体语句列表
+        self.method_body = [line for line in method_body if not line.startswith('.line')]  # 存储方法体语句列表
 
     def get_class_name(self):
         return self.smali_class
@@ -14,7 +14,9 @@ class SmaliMethod:
         返回方法体中的所有语句块
         :return: 语句列表
         """
+        # 过滤掉所有以 .line 开头的行
         return self.method_body
+
 
     def get_previous_statement(self, index):
         """
@@ -224,6 +226,7 @@ class SmaliMethod:
         
         elif statement.startswith(('iget', 'sput', 'sget', 'iput', 'aget', 'aput')):
             # 格式: iget-object v0, p0, Lcom/example/MyClass;->myField:Ljava/lang/String;
+                    
             parts = statement.split(',', 1)
             if len(parts) >= 1:
                 return parts[0].strip().split(' ', 1)[1]
@@ -254,6 +257,10 @@ class SmaliMethod:
         
         elif statement.startswith(('iget', 'sput', 'sget', 'iput', 'aget', 'aput')):
             # 格式: iget-object v0, p0, Lcom/example/MyClass;->myField:Ljava/lang/String;
+            if statement.startswith(('iget', 'iput')):
+                parts = statement.split(',', 2)
+                if len(parts) >= 2:
+                    return parts[2].strip()
             parts = statement.split(',', 1)
             if len(parts) >= 2:
                 return parts[1].strip()

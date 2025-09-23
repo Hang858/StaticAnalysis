@@ -16,7 +16,7 @@ def init_logger(log_dir = "log", name = __name__, level=logging.INFO):
     """
     os.makedirs(log_dir, exist_ok=True)
     logger = logging.getLogger(name)
-    logging.setLevel(level)
+    logger.setLevel(level)
     handler = RotatingFileHandler(os.path.join(log_dir, f"{name}.log"), maxBytes=5*1024*1024, backupCount=5)
     handler.setLevel(level)
     handler.addFilter(MinLevelFilter(level))
@@ -25,4 +25,4 @@ def init_logger(log_dir = "log", name = __name__, level=logging.INFO):
     logger.addHandler(handler)
     return logger
 
-# logger = init_logger(level=logging.DEBUG)
+logger = init_logger(level=logging.DEBUG)

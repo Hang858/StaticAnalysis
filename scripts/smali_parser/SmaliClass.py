@@ -3,24 +3,24 @@ import os
 import json
 
 class SmaliClass:
-    # 静态字段，用于存储所有Activity类和Dialog类
-    activity_classes = set()
-    dialog_classes = set()
+    # # 静态字段，用于存储所有Activity类和Dialog类
+    # activity_classes = set()
+    # dialog_classes = set()
 
-    @classmethod
-    def load_class_lists(cls, json_file):
-        """
-        从JSON文件加载Activity类和Dialog类列表
-        :param json_file: 包含类列表的JSON文件路径
-        """
-        try:
-            with open(json_file, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-                cls.activity_classes = set(data.get('activity_classes', []))
-                cls.dialog_classes = set(data.get('dialog_classes', []))
-                print(f"已加载 {len(cls.activity_classes)} 个Activity类和 {len(cls.dialog_classes)} 个Dialog类")
-        except Exception as e:
-            print(f"加载类列表失败: {e}")
+    # @classmethod
+    # def load_class_lists(cls, json_file):
+    #     """
+    #     从JSON文件加载Activity类和Dialog类列表
+    #     :param json_file: 包含类列表的JSON文件路径
+    #     """
+    #     try:
+    #         with open(json_file, 'r', encoding='utf-8') as f:
+    #             data = json.load(f)
+    #             cls.activity_classes = set(data.get('activity_classes', []))
+    #             cls.dialog_classes = set(data.get('dialog_classes', []))
+    #             print(f"已加载 {len(cls.activity_classes)} 个Activity类和 {len(cls.dialog_classes)} 个Dialog类")
+    #     except Exception as e:
+    #         print(f"加载类列表失败: {e}")
     """
     表示一个Smali类，并提供解析Smali代码的功能
     """
@@ -32,8 +32,8 @@ class SmaliClass:
         self.file_path = file_path
         self.class_name = self._extract_class_name()
         self.super_class = self._extract_super_class()
-        self.is_activity = self._is_activity()
-        self.is_dialog = self._is_dialog()
+        # self.is_activity = self._is_activity()
+        # self.is_dialog = self._is_dialog()
 
     def _extract_class_name(self):
         """
@@ -59,23 +59,23 @@ class SmaliClass:
                 return match.group(1)
             return 'unknown'
 
-    def _is_activity(self):
-        """
-        判断该类是否是Activity的子类
-        :return: 是否是Activity
-        """
-        # 先检查类名是否直接在Activity类列表中
-        if self.class_name in SmaliClass.activity_classes:
-            return True
+    # def _is_activity(self):
+    #     """
+    #     判断该类是否是Activity的子类
+    #     :return: 是否是Activity
+    #     """
+    #     # 先检查类名是否直接在Activity类列表中
+    #     if self.class_name in SmaliClass.activity_classes:
+    #         return True
 
-    def _is_dialog(self):
-        """
-        判断该类是否是Dialog的子类
-        :return: 是否是Dialog
-        """
-        # 先检查类名是否直接在Dialog类列表中
-        if self.class_name in SmaliClass.dialog_classes:
-            return True
+    # def _is_dialog(self):
+    #     """
+    #     判断该类是否是Dialog的子类
+    #     :return: 是否是Dialog
+    #     """
+    #     # 先检查类名是否直接在Dialog类列表中
+    #     if self.class_name in SmaliClass.dialog_classes:
+    #         return True
 
     def get_class_methods(self):
         """
@@ -143,6 +143,3 @@ class SmaliClass:
                 method_bodies[full_signature] = body_lines
 
         return method_bodies
-
-    
-
