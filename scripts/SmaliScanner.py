@@ -5,20 +5,16 @@ from scripts.EventRecord import CallSite
 from LoggerConfig import logger
 from scripts.smali_parser import SmaliClass
 from scripts.smali_parser import SmaliMethod
+from scripts.Tracker import Tracker
 
 class SmaliScanner:
     """
     扫描Smali文件，查找目标方法调用
     """
-    def __init__(self, smali_root: str):
+    def __init__(self, smali_root: str, tracker: Tracker):
         self.smali_root = smali_root
-        self.targets = {
-            "setContentView(I)V",
-            "findViewById(I)Landroid/view/View;",
-            "inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;",
-            "inflate(ILandroid/view/ViewGroup;)Landroid/view/View;",
-            "inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;",
-            # registration APIs may be matched by prefix (get_sub_signature behavior)
+        self.tracker = tracker
+        self.event_listener_methods = {
             "setOnClickListener",
             "setOnLongClickListener",
             "setOnTouchListener",
@@ -26,6 +22,36 @@ class SmaliScanner:
             "setOnFocusChangeListener",
             "setOnKeyListener",
         }
+
+        self.view_creation_methods = {
+        "findViewById(I)Landroid/view/View;",
+        "inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;",
+        "inflate(ILandroid/view/ViewGroup;)Landroid/view/View;",
+        "inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;",
+    }
+        self.layout_inflation_methods = {
+            "setContentView(I)V",
+            "inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;",
+            "inflate(ILandroid/view/ViewGroup;)Landroid/view/View;",
+            "inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;",
+        }
+
+        # self.targets = {
+        #     "findViewById(I)Landroid/view/View;",
+        #     "inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;",
+        #     "inflate(ILandroid/view/ViewGroup;)Landroid/view/View;",
+        #     "inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;",
+        #     # registration APIs may be matched by prefix (get_sub_signature behavior)
+        #     "setOnClickListener",
+        #     "setOnLongClickListener",
+        #     "setOnTouchListener",
+        #     "setOnDragListener",
+        #     "setOnFocusChangeListener",
+        #     "setOnKeyListener",
+        # }
+        self.res_id2callsite = {}
+        self.class2field_res_id = {}
+        self.layout_inflation_callsites = {}
         self.logger = logger
    
 
@@ -37,6 +63,7 @@ class SmaliScanner:
         callsites: List[CallSite] = []
         for root, dirs, files in os.walk(self.smali_root):
             for file in files:
+                file_path = os.path.join(root, file)
                 if not file.endswith(".smali"):
                     continue
                 path = os.path.join(root, file)
@@ -53,8 +80,32 @@ class SmaliScanner:
                         if not sm.is_method_invocation(stmt):
                             continue
                         callee = sm.extract_called_method_signature(stmt)
-                        if any(callee.startswith(t) for t in self.targets):
-                            callsites.append(CallSite(class_name, method_sig, idx, stmt, callee))
+                        if any(callee.startswith(t) for t in self.view_creation_methods):
+                            # if callee.startswith("setOn"):
+                            #     callsites.append(CallSite(file_path, class_name, method_sig, idx, stmt, callee))
+                            if callee.startswith("inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;"):
+                                reg = sm.get_method_invocation_param(stmt, 1)
+                            else:
+                                reg = sm.get_method_invocation_param(stmt, 0)
+                            # 向上找，传入的资源ID
+                            res_id = self.tracker.resolve_register_to_resource(sm, idx, reg)
+                            if not res_id:
+                                self.logger.warning(f"未找到{sm.get_class_name()}: {sm.get_method_signature()}: {stmt}的资源ID")
+                            key = (sm.get_class_name(), sm.get_method_signature(), idx, callee)
+                            if res_id:
+                                self.res_id2callsite[key] = res_id
+                                ### 向下找是否有字段赋值
+                                get_result = self.tracker.resolve_assigned_field(sm, idx, callee)
+                                if get_result:
+                                    field, tag = get_result
+                                    field2res_id = {}
+                                    field2res_id[field] = res_id
+                                    field2res_id["tag"] = tag
+                                    self.class2field_res_id.setdefault(sm.get_class_name(), {}).update(field2res_id)
+                        elif any(callee.startswith(t) for t in self.event_listener_methods):
+                            callsites.append(CallSite(file_path, class_name, method_sig, idx, stmt, callee))
+                        elif any(callee.startswith(t) for t in self.layout_inflation_methods):
+                            self.layout_inflation_callsites.setdefault(sm.get_class_name(), []).append(CallSite(file_path, class_name, method_sig, idx, stmt, callee))
                             
         self.logger.info(f"SmaliScanner: found {len(callsites)} call sites in {self.smali_root}")
         return callsites

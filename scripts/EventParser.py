@@ -531,7 +531,8 @@ class EventParser:
                     if left == result and not statement.startswith("aput"):
                         self.logger.info(f"字段寄存器被修改，未找到 findViewById 方法保存到的字段: {smali_method.get_class_name()}: {statement}")
                     if right == result:
-                        left = result
+                        # left = result
+                        result = left
             statement = smali_method.get_next_statement(idx)
             idx = idx + 1
 
@@ -590,10 +591,6 @@ class EventParser:
 
             statement = smali_method.get_next_statement(idx)
             idx = idx + 1
-            
-
-        
-    
             
         
 

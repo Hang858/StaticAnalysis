@@ -1,7 +1,6 @@
-from typing import Optional
+from typing import Optional, Tuple
 from LoggerConfig import logger
-from smali_parser.SmaliClass import SmaliClass
-from typing import Tuple, Optional
+from scripts.smali_parser import SmaliMethod
 class Tracker:
     """
     回溯寄存器赋值并解析资源 ID / field / handler。保持纯函数风格，方便单元测试。
@@ -13,26 +12,14 @@ class Tracker:
     """
     def __init__(self):
         self.logger = logger
-        self._resolve_cache = {}
 
-    # def backtrack_assignment(self, sm: SmaliClass, start_idx: int, target_reg: str) -> Tuple[Optional[int], Optional[str]]:
+    # def backtrack_assignment(self, sm: SmaliMethod, start_idx: int, reg: str) -> Optional[str]:
     #     """
-    #     从 start_idx 向上回溯，找第一个给 target_reg 赋值的语句（返回语句索引与右值）
-    #     返回 None, None 表示未找到
+    #     回溯寄存器的最终赋值语句，返回溯源结果
     #     """
-    #     stmts =  sm.get_statements()
-    #     idx = start_idx - 1
-    #     while idx >= 0:
-    #         stmt = stmts[idx]
-    #         if sm.is_assignment_statement(stmt):
-    #             left = sm.get_assignment_left(stmt)
-    #             if left == target_reg:
-    #                 right = sm.get_assignment_right(stmt)
-    #                 return idx, right
-    #         idx -= 1
-    #     return None, None
+    #     pass
 
-    def resolve_register_to_resource(self, sm: SmaliClass, start_idx: int, reg: str) -> Optional[str]:
+    def resolve_register_to_resource(self, sm: SmaliMethod, start_idx: int, reg: str) -> Optional[str]:
         """
         解析指定寄存器在给定位置（通常是调用点前）对应的 resource id，比如 0x7f0a0001
         支持三种情况：
@@ -40,14 +27,14 @@ class Tracker:
          - 通过 move-result 从 invoke 返回
          - 通过赋值链（vX <- vY <- 0x7f...）
         """
-        key = (sm.get_class_name(), start_idx, reg)
-        if key in self._resolve_cache:
-            return self._resolve_cache[key]
+        # key = (sm.get_class_name(), start_idx, reg)
+        # if key in self._resolve_cache:
+        #     return self._resolve_cache[key]
 
         stmts = sm.get_statements()
         idx = start_idx - 1
         current = reg
-        visited = set()
+        # visited = set()
         while idx >= 0:
             stmt = stmts[idx]
             if sm.is_assignment_statement(stmt):
@@ -71,20 +58,16 @@ class Tracker:
                             self.logger.error(f"resolve_register_to_resource: move-result case, but previous stmt is not invoke, {sm.get_statement_text(stmt)}")
                             return None
                     elif isinstance(right, str) and right.startswith("0x7f"):
-                        self._resolve_cache[key] = right
                         return right
                     elif isinstance(right, str) and right.startswith("L"):
-                        self._resolve_cache[key] = right
                         return right
                     else:
-                        self._resolve_cache[key] = right
                         return right
             idx -= 1
         
-        self._resolve_cache[key] = None
         return None
     
-    def resolve_registration_handler(self, sm: SmaliClass, start_idx: int, handler_reg: str) -> Optional[str]:
+    def resolve_registration_handler(self, sm: SmaliMethod, start_idx: int, handler_reg: str) -> Optional[str]:
         """
         解析事件注册时传递的 handler 对象（第二个参数通常是 handler）
         回溯 handler_reg 的赋值链，尝试获取：
@@ -113,7 +96,7 @@ class Tracker:
                             callee = sm.extract_called_method_signature(stmts[j])
                             return f"{sm.get_class_name()}: {callee}"
                         else:
-                            self.logger.error(f"resolve_registration_handler: move-result case, but previous stmt is not invoke, {sm.get_statement_text(stmt)}")
+                            self.logger.error(f"resolve_registration_handler: move-result case, but previous stmt is not invoke{stmt}")
                             return None
                     elif right == "p0":
                         return sm.get_class_name()
@@ -126,7 +109,99 @@ class Tracker:
             idx -= 1
         return None
     
+    def resolve_assigned_field(self, sm: SmaliMethod, start_idx: int, tag: str) -> Optional[Tuple[str, str]]:
+        """
+        解析函数返回值，最终保存在哪个字段中
+        """
+        # key = (sm.get_class_name(), start_idx, tag)
+        stmts = sm.get_statements()
+        idx = start_idx
+        reg = sm.get_invoke_result_register(start_idx, stmts[idx])
+        if tag.startswith("findViewById"):
+            tag = "findViewById"
+        elif tag.startswith("inflate"):
+            tag = "inflate"
 
+        # 调用方法返回值没有保存
+        if reg is None:
+            return None
+        while idx < len(stmts) - 1:
+            stmt = stmts[idx]
+            if sm.is_assignment_statement(stmt):
+                # left = sm.get_assignment_left(stmt)
+                # right = sm.get_assignment_right(stmt)
+                if stmt.startswith("check-cast"):
+                    idx += 1
+                    continue
+                if sm.is_assignment_statement(stmt):
+                    left = sm.get_assignment_left(stmt)
+                    right = sm.get_assignment_right(stmt)
+                    if sm.startswith("iput") or sm.startswith("sput"):
+                        if left == reg:
+                            return right, tag
+                    elif left.startswith("v") or left.startswith("p"):
+                        if left == reg and not stmt.startswith("aput"):
+                            self.logger.info(f"字段寄存器被修改，未找到 findViewById 方法保存到的字段: {sm.get_class_name()}: {stmt}")
+                            return None
 
+                        if right == reg:
+                            reg = left
+            idx += 1
+        return None
 
-    
+    def resolve_handler_view(self, sm: SmaliMethod, start_idx: int, reg: str) -> Optional[Tuple[Tuple[str, ...], str]]:
+        """
+        解析 set 回调最终设置的 view 对象,终点到 findViewById 或 inflate 方法 或 字段
+        """
+
+        stmts = sm.get_statements()
+        idx = start_idx - 1
+        tag = ""
+        while idx >= 0:
+            stmt = stmts[idx]
+            if sm.is_assignment_statement(stmt):
+                left = sm.get_assignment_left(stmt)
+                right = sm.get_assignment_right(stmt)
+                if left == reg:
+                    if right is None:
+                        # 遇到 move-result 指令
+                        invoke_stmt = sm.get_invoke_statement(stmt, idx)
+                        if not invoke_stmt:
+                            self.logger.error(f"未找到 move-result 指令对应的 invoke 语句: {sm.get_class_name(): }{stmt}")
+                            return None
+                        callee = sm.extract_called_method_signature(invoke_stmt)
+                        if callee == "findViewById(I)Landroid/view/View;":
+                            key = (sm.get_class_name(), sm.get_method_signature(), idx, callee)
+                            tag = "findViewById"
+                            return key, tag
+                        elif callee in ["inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;",
+                                        "inflate(ILandroid/view/ViewGroup;)Landroid/view/View;",
+                                        "inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;",
+                                        ]:
+                            key = (sm.get_class_name(), sm.get_method_signature(), idx, callee)
+                            tag = "inflate"
+                            return key, tag
+                        else:
+                            self.logger.warning(f"未识别的view对象方法：{sm.get_class_name()}: {callee}")
+                            return None
+                    if right.startswith("L"):
+                        tag = "field"
+                        return right, tag
+                    else:
+                        if not right.startswith("v") and not right.startswith("p"):
+                            self.logger.error(f"未识别的view对象赋值：{sm.get_class_name()}: {stmt}")
+                            return None
+                        reg = right
+
+            idx -= 1
+        return None
+
+    def resolve_view_to_layout(self, sm: SmaliMethod, start_idx: int, reg: str) -> Optional[str]:
+        """
+        解析 view 对象最终关联的 layout 文件 id
+        param sm: 方法对象
+        param start_idx: findViewById方法的起始索引
+        param reg: 调用 findViewById 方法的寄存器
+        """
+
+        

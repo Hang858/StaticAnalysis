@@ -1,13 +1,25 @@
 import re
 
 class SmaliMethod:
+    """
+    Smali方法类，用于解析Smali方法
+    """
     def __init__(self, smali_class, method_signature, method_body):
         self.smali_class = smali_class
         self.method_signature = method_signature
         self.method_body = [line for line in method_body if not line.startswith('.line')]  # 存储方法体语句列表
 
     def get_class_name(self):
+        """
+        获取方法的类名
+        """
         return self.smali_class
+
+    def get_method_signature(self):
+        """
+        获取方法的签名
+        """
+        return self.method_signature
 
     def get_statements(self):
         """
@@ -115,9 +127,9 @@ class SmaliMethod:
                             if start_num <= end_num:
                                 for i in range(start_num, end_num + 1):
                                     params.append(f'{prefix}{i}')
-                    except:
+                    except (ValueError, IndexError):
                         # 如果解析失败，将原始项添加到参数列表
-                        params.append(item)
+                        params.append(item)  # 如果解析范围参数失败，将原始项添加到参数列表
                 else:
                     # 普通参数，直接添加
                     params.append(item)
@@ -144,9 +156,26 @@ class SmaliMethod:
             right = self.get_assignment_right(statement)
             if right is None:
                 return left
+            else:
+                return None
+    
+    def get_invoke_statement(self, statement, idx):
+        """
+        从 move-result 语句向上溯源，寻找匹配的 invoke 语句
+        :param statement: move-result 语句
+        :param idx: 语句在方法中的索引
+        :return: 匹配的 invoke 语句，如果没有找到则返回 None
+        """
+        while statement:
+            if self.is_method_invocation(statement):
+                return statement
+            idx = idx - 1
             statement = self.get_next_statement(idx)
-            idx = idx + 1
-            
+            if self.is_assignment_statement(statement) :
+                if self.get_assignment_right(statement) is None:
+                    ## 遇到另一个 move-result语句，未找到给定的invoke语句
+                    return None
+        return None
 
     def is_assignment_statement(self, statement):
         """
@@ -272,6 +301,7 @@ class SmaliMethod:
                 return parts[1].strip()
         
         return None
+
 
 if __name__ == '__main__':
     method_signature = 'Lcom/example/MyClass;->myMethod(Ljava/lang/String;)V'

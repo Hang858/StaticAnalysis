@@ -5,6 +5,10 @@ from collections import namedtuple
 
 @dataclass
 class EventRecord:
+    """
+    事件记录类，保存事件记录
+    """
+    file_path: str
     class_name: str
     method_sig: str
     stmt_index: int
@@ -15,4 +19,4 @@ class EventRecord:
     layout_name: Optional[str]
     notes: Optional[str] = None
 
-CallSite = namedtuple("CallSite", ["class_name", "method_sig", "stmt_index", "statement", "callee"])
+CallSite = namedtuple("CallSite", ["file_path", "class_name", "method_sig", "stmt_index", "statement", "callee"])

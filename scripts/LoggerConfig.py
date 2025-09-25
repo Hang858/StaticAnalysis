@@ -3,6 +3,9 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 class MinLevelFilter(logging.Filter):
+    """
+    过滤日志级别低于指定级别的日志记录
+    """
     def __init__(self, level):
         super().__init__()
         self.level = level
@@ -13,6 +16,7 @@ class MinLevelFilter(logging.Filter):
 def init_logger(log_dir = "log", name = __name__, level=logging.INFO):
     """
     初始化logger
+    :param log_dir: 日志文件目录
     """
     os.makedirs(log_dir, exist_ok=True)
     logger = logging.getLogger(name)
