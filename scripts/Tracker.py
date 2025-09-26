@@ -194,14 +194,10 @@ class Tracker:
                         reg = right
 
             idx -= 1
+        if reg.startswith('p'):
+            tag = 'param'
+            return (reg), tag
         return None
 
-    def resolve_view_to_layout(self, sm: SmaliMethod, start_idx: int, reg: str) -> Optional[str]:
-        """
-        解析 view 对象最终关联的 layout 文件 id
-        param sm: 方法对象
-        param start_idx: findViewById方法的起始索引
-        param reg: 调用 findViewById 方法的寄存器
-        """
 
-        
+

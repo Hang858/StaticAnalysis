@@ -100,6 +100,7 @@ class SmaliScanner:
                                     field, tag = get_result
                                     field2res_id = {}
                                     field2res_id[field] = res_id
+                                    field2res_id["callsite"] = key
                                     field2res_id["tag"] = tag
                                     self.class2field_res_id.setdefault(sm.get_class_name(), {}).update(field2res_id)
                         elif any(callee.startswith(t) for t in self.event_listener_methods):

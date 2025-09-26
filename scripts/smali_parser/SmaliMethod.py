@@ -1,4 +1,5 @@
 import re
+from typing import List
 
 class SmaliMethod:
     """
@@ -8,6 +9,33 @@ class SmaliMethod:
         self.smali_class = smali_class
         self.method_signature = method_signature
         self.method_body = [line for line in method_body if not line.startswith('.line')]  # 存储方法体语句列表
+        self.params = self._get_method_params()
+    
+    def _get_method_params(self) -> List[str]:
+        """
+        获取方法的参数列表
+        """
+        param_str = re.search(r'\((.*?)\)', self.method_signature).group(1)
+
+        pattern = re.compile(r'(\[*)(L[^;]+;|[ZBSCIJFD])')
+        results = []
+        for m in pattern.finditer(param_str):
+            arr_prefix, base = m.group(1), m.group(2)
+            full = arr_prefix + base
+            results.append(full)
+        return results
+    
+    def get_params(self) -> List[str]:
+        """
+        获取方法的参数列表
+        """
+        return self.params
+
+    def get_params_length(self) -> int:
+        """
+        返回参数的长度
+        """
+        return len(self.params)
 
     def get_class_name(self):
         """
@@ -207,35 +235,6 @@ class SmaliMethod:
         
         return False
 
-    # def is_field_operation(self, statement):
-    #     """
-    #     判断给定语句是否是字段操作指令
-    #     :param statement: 要判断的语句
-    #     :return: 是否是字段操作指令
-    #     """
-    #     # Smali 中的字段操作指令通常以 iget, iput, sget, sput 开头
-    #     return statement.startswith(('iget', 'iput', 'sget', 'sput'))
-
-    # def extract_field_signature(self, statement):
-    #     """
-    #     从字段操作指令中提取字段签名
-    #     :param statement: 字段操作指令
-    #     :return: 字段签名，如果不是有效字段操作指令则返回 None
-    #     """
-    #     if not self.is_field_operation(statement):
-    #         return None
-        
-    #     # 匹配 Smali 字段操作格式，例如:
-    #     # iget-object v0, p0, Lcom/example/MyClass;->myField:Ljava/lang/String;
-    #     # sput v1, Lcom/example/MyClass;->staticField:I
-    #     pattern = r'(?:iget|iput|sget|sput)(?:-\w+)?\s+[^,]+,\s*(?:[^,]+,\s*)?L([^;]*);->(.*)'        
-    #     match = re.search(pattern, statement)
-        
-    #     if match:
-    #         field_class = match.group(1)
-    #         field_sig = match.group(2)
-    #         return f'{field_class};->{field_sig}'
-    #     return None
 
     def get_assignment_left(self, statement):
         """
@@ -303,8 +302,9 @@ class SmaliMethod:
         return None
 
 
+
 if __name__ == '__main__':
-    method_signature = 'Lcom/example/MyClass;->myMethod(Ljava/lang/String;)V'
+    method_signature = 'Lcom/example/MyClass;->([[Ljava/lang/String;[I[ZFF])V'
     method_body = [
         # const 系列指令
         'const-string v0, "Hello, World!"',
@@ -357,55 +357,48 @@ if __name__ == '__main__':
         'return-object v0',
         'invoke-virtual {p0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;'
     ]
-    smali_method = SmaliMethod("Lcom/example/MyClass;->myMethod(Ljava/lang/String;)V", method_signature, method_body)
+    smali_method = SmaliMethod("Lcom/example/MyClass;->([[Ljava/lang/String;[I[ZFF])V", method_signature, method_body)
+    print(smali_method.get_params())
+    print(smali_method.get_params_length())
     statements = smali_method.get_statements()
-    for i, statement in enumerate(statements):
-        print(f"Statement {i}: {statement}")
+
+    # for i, statement in enumerate(statements):
+    #     print(f"Statement {i}: {statement}")
         
-        # 测试前后语句方法
-        prev_statement = smali_method.get_previous_statement(i)
-        next_statement = smali_method.get_next_statement(i)
-        print(f"  Previous statement: {prev_statement}")
-        print(f"  Next statement: {next_statement}")
+    #     # 测试前后语句方法
+    #     prev_statement = smali_method.get_previous_statement(i)
+    #     next_statement = smali_method.get_next_statement(i)
+    #     print(f"  Previous statement: {prev_statement}")
+    #     print(f"  Next statement: {next_statement}")
         
-        # 测试方法调用相关方法
-        if smali_method.is_method_invocation(statement):
-            callee = smali_method.extract_called_method_signature(statement)
-            if callee:
-                print(f"  Called method: {callee}")
-            param = smali_method.get_method_invocation_param(statement, 0)
-            if param:
-                print(f"  Param 0: {param}")
-            param = smali_method.get_method_invocation_param(statement, 1)
-            if param:
-                print(f"  Param 1: {param}")
-            # 测试范围参数
-            param = smali_method.get_method_invocation_param(statement, 2)
-            if param:
-                print(f"  Param 2: {param}")
-            param = smali_method.get_method_invocation_param(statement, 5)
-            if param:
-                print(f"  Param 5: {param}")
+    #     # 测试方法调用相关方法
+    #     if smali_method.is_method_invocation(statement):
+    #         callee = smali_method.extract_called_method_signature(statement)
+    #         if callee:
+    #             print(f"  Called method: {callee}")
+    #         param = smali_method.get_method_invocation_param(statement, 0)
+    #         if param:
+    #             print(f"  Param 0: {param}")
+    #         param = smali_method.get_method_invocation_param(statement, 1)
+    #         if param:
+    #             print(f"  Param 1: {param}")
+    #         # 测试范围参数
+    #         param = smali_method.get_method_invocation_param(statement, 2)
+    #         if param:
+    #             print(f"  Param 2: {param}")
+    #         param = smali_method.get_method_invocation_param(statement, 5)
+    #         if param:
+    #             print(f"  Param 5: {param}")
         
-        # 测试赋值语句相关方法
-        if smali_method.is_assignment_statement(statement):
-            left = smali_method.get_assignment_left(statement)
-            right = smali_method.get_assignment_right(statement)
-            print(f"  Is assignment: True")
-            if left:
-                print(f"  Left side: {left}")
-            if right:
-                print(f"  Right side: {right}")
+    #     # 测试赋值语句相关方法
+    #     if smali_method.is_assignment_statement(statement):
+    #         left = smali_method.get_assignment_left(statement)
+    #         right = smali_method.get_assignment_right(statement)
+    #         print(f"  Is assignment: True")
+    #         if left:
+    #             print(f"  Left side: {left}")
+    #         if right:
+    #             print(f"  Right side: {right}")
             
-        # 测试字段操作相关方法
-        # if smali_method.is_field_operation(statement):
-        #     field_sig = smali_method.extract_field_signature(statement)
-        #     print(f"  Is field operation: True")
-        #     if field_sig:
-        #         print(f"  Field signature: {field_sig}")
-        #     print(f"  Left side: {left}")
-        #     print(f"  Right side: {right}")
-        # else:
-        #     print(f"  Is assignment: False")
         
-        print()
+        
