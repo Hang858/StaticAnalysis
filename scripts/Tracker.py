@@ -196,8 +196,10 @@ class Tracker:
                             tag = "inflate"
                             return key, tag
                         else:
+                            key = (sm.get_class_name(), sm.get_method_signature(), idx, callee)
+                            tag = "unknown"
                             self.logger.warning(f"未识别的view对象方法：{sm.get_class_name()}: {callee}")
-                            return None
+                            return key, tag
                     if right.startswith("L"):
                         tag = "field"
                         return right, tag

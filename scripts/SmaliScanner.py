@@ -35,23 +35,10 @@ class SmaliScanner:
             "inflate(ILandroid/view/ViewGroup;)Landroid/view/View;",
             "inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;",
         }
-
-        # self.targets = {
-        #     "findViewById(I)Landroid/view/View;",
-        #     "inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;",
-        #     "inflate(ILandroid/view/ViewGroup;)Landroid/view/View;",
-        #     "inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;",
-        #     # registration APIs may be matched by prefix (get_sub_signature behavior)
-        #     "setOnClickListener",
-        #     "setOnLongClickListener",
-        #     "setOnTouchListener",
-        #     "setOnDragListener",
-        #     "setOnFocusChangeListener",
-        #     "setOnKeyListener",
-        # }
         self.res_id2callsite = {}
         self.class2field_res_id = {}
         self.layout_inflation_callsites = {}
+        self.class_name2file_path = {}
         self.logger = logger
    
 
@@ -72,6 +59,7 @@ class SmaliScanner:
 
                 if class_name.startswith(("androidx/", "android/support/", "com/google")):
                     continue
+                self.class_name2file_path[class_name] = file_path
                 methods = sc.get_methods_body()
                 for method_sig, body in methods.items():
                     sm = SmaliMethod(class_name, method_sig, body)
@@ -81,12 +69,6 @@ class SmaliScanner:
                             continue
                         callee = sm.extract_called_method_signature(stmt)
                         if any(callee.startswith(t) for t in self.view_creation_methods):
-                            # if callee.startswith("setOn"):
-                            #     callsites.append(CallSite(file_path, class_name, method_sig, idx, stmt, callee))
-                            # if callee.startswith("inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;"):
-                            #     reg = sm.get_method_invocation_param(stmt, 1)
-                            # else:
-                            #     reg = sm.get_method_invocation_param(stmt, 1)
                             reg = sm.get_method_invocation_param(stmt, 1)
                             # 向上找，传入的资源ID
                             res_id = self.tracker.resolve_register_to_resource(sm, idx, reg)

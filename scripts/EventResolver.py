@@ -35,16 +35,12 @@ class EventResolver:
         解析事件记录, 建立回调到组件再到layout的映射关系
         """
         for cs in self.callsites:
-            
-            sub = cs.callee.split("(")[0]
             file_path = cs.file_path
             view_id = None
             layout_id = None
             layout_name = None
             note = None
             sc = SmaliClass(file_path)
-            # 修复dict_values不可下标访问的问题
-            # 先转换为列表，再获取第一个元素
             sm = SmaliMethod(cs.class_name, cs.method_sig, list(sc.get_methods_body(cs.method_sig).values())[0])
             
             # 找到回调设置的方法
@@ -65,7 +61,9 @@ class EventResolver:
                 view_id = key
                 note = "view is param"
             elif tag == "field":
-                res_map = self.smali_scanner.class2field_res_id.get(cs.class_name, {})
+                class_name = key.split(";")[0].lstrip('L').split('->')[0]
+                # res_map = self.smali_scanner.class2field_res_id.get(cs.class_name, {})
+                res_map = self.smali_scanner.class2field_res_id.get(class_name, {})
                 if res_map:
                     view_id = res_map.get(key)
                     if not view_id:
@@ -76,6 +74,26 @@ class EventResolver:
                 else :
                     self.logger.warning(f"未找到事件设置的view字段与ID的映射,{cs.file_path}: {cs.statement}")
                     continue
+            
+            elif tag == "unknown":
+                # view_id 为未知函数的返回值
+                view_id = key[3]
+                note = "view_id 为未知函数的返回值"
+                er = EventRecord(
+                file_path = cs.file_path,
+                class_name = cs.class_name, 
+                method_sig = cs.method_sig,
+                stmt_index = cs.stmt_index,
+                registration_call = cs.callee,
+                handler = handler,
+                view_id = view_id,
+                layout_id = layout_id,
+                layout_name = layout_name,
+                notes = note
+                )
+                self.events.append(er)
+                continue
+
             else:
                 view_id = self.smali_scanner.res_id2callsite.get(key, {})
                 if not view_id:
@@ -83,17 +101,16 @@ class EventResolver:
                     continue
 
             # view向上找，找到layout
-
             if tag == "inflate":
                 layout_id = view_id
                 layout_name = self.rm.id_to_layout.get(layout_id, {})
-            
-            if tag == "param":
-                pass
-
             while tag == "findViewById" :
                 idx = key[2]
-                sm = SmaliMethod(sc, key[1], list(sc.get_methods_body(key[1]).values())[0])
+                # if isinstance(key[0], SmaliClass):
+                #     print(" ")
+
+                sc = SmaliClass(self.smali_scanner.class_name2file_path.get(key[0]))  # 调整 sc 为 key 中的类
+                sm = SmaliMethod(sc.class_name, key[1], list(sc.get_methods_body(key[1]).values())[0])
                 stmt = sm.get_statements()[idx]
                 reg = sm.get_method_invocation_param(stmt, 0)
                 get_result = self.tracker.resolve_handler_view(sm, idx, reg)
@@ -102,7 +119,7 @@ class EventResolver:
                 else:
                     key, tag = get_result
                 
-            if tag == "inflate":
+            if layout_id is None and tag == "inflate":
                 layout_id = self.smali_scanner.res_id2callsite.get(key, {})
                 if layout_id:
                     layout_name = self.rm.id_to_layout.get(layout_id, {})
@@ -117,6 +134,24 @@ class EventResolver:
                     layout_id = res_map.get(key)
                     if layout_id:
                         layout_name = self.rm.id_to_layout.get(layout_id, {})
+            
+            elif tag == "unknown":
+                layout_id = key[3]
+                note = "layout_id 为未知函数调用的返回值"
+                er = EventRecord(
+                file_path = cs.file_path,
+                class_name = cs.class_name, 
+                method_sig = cs.method_sig,
+                stmt_index = cs.stmt_index,
+                registration_call = cs.callee,
+                handler = handler,
+                view_id = view_id,
+                layout_id = layout_id,
+                layout_name = layout_name,
+                notes = note
+                )
+                self.events.append(er)
+                continue
             
             if layout_id is None:
                 # 如果还是找不到 layout_id 则查看距离最近的 setContentView 方法或者 inflate 方法近似
@@ -170,7 +205,6 @@ class EventResolver:
                         if cs.stmt_index - layout_callsite.stmt_index > 0:
                             nearest_callsite = layout_callsite
         return nearest_callsite
-                    
                     
 
     

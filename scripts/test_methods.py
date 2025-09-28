@@ -40,7 +40,7 @@ for event in event_resolver.events:
 
 # 保存到JSON文件，使用缩进确保美观
 import json
-output_file = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "results", "events_data.json")
+output_file = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "results", "events_data_3.json")
 with open(output_file, "w", encoding="utf-8") as f:
     json.dump(events_data, f, ensure_ascii=False, indent=2)
 
