@@ -2,7 +2,7 @@ import os
 from typing import List
 
 from scripts.EventRecord import CallSite
-from LoggerConfig import logger
+from scripts.LoggerConfig import logger
 from scripts.smali_parser import SmaliClass
 from scripts.smali_parser import SmaliMethod
 from scripts.Tracker import Tracker
@@ -83,10 +83,11 @@ class SmaliScanner:
                         if any(callee.startswith(t) for t in self.view_creation_methods):
                             # if callee.startswith("setOn"):
                             #     callsites.append(CallSite(file_path, class_name, method_sig, idx, stmt, callee))
-                            if callee.startswith("inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;"):
-                                reg = sm.get_method_invocation_param(stmt, 1)
-                            else:
-                                reg = sm.get_method_invocation_param(stmt, 0)
+                            # if callee.startswith("inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;"):
+                            #     reg = sm.get_method_invocation_param(stmt, 1)
+                            # else:
+                            #     reg = sm.get_method_invocation_param(stmt, 1)
+                            reg = sm.get_method_invocation_param(stmt, 1)
                             # 向上找，传入的资源ID
                             res_id = self.tracker.resolve_register_to_resource(sm, idx, reg)
                             if not res_id:

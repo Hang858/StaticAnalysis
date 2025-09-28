@@ -1,8 +1,8 @@
 import os
 from collections import defaultdict
 import logging
-from smali_parser.SmaliClass import SmaliClass
-from smali_parser.SmaliMethod import SmaliMethod
+from ..SmaliClass import SmaliClass
+from ..SmaliMethod import SmaliMethod
 import sys
 import json
 

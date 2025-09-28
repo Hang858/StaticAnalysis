@@ -3,7 +3,7 @@ from scripts.Tracker import Tracker
 from scripts.EventRecord import CallSite, EventRecord
 from scripts.SmaliScanner import SmaliScanner
 from typing import List
-from LoggerConfig import logger
+from scripts.LoggerConfig import logger
 from scripts.smali_parser import SmaliClass
 from scripts.smali_parser import SmaliMethod
 class EventResolver:
@@ -38,12 +38,14 @@ class EventResolver:
             
             sub = cs.callee.split("(")[0]
             file_path = cs.file_path
-            view_id = ""
-            layout_id = ""
-            layout_name = ""
-            note = ""
+            view_id = None
+            layout_id = None
+            layout_name = None
+            note = None
             sc = SmaliClass(file_path)
-            sm = SmaliMethod(cs.class_name, cs.method_sig, sc.get_methods_body(cs.method_sig))
+            # 修复dict_values不可下标访问的问题
+            # 先转换为列表，再获取第一个元素
+            sm = SmaliMethod(cs.class_name, cs.method_sig, list(sc.get_methods_body(cs.method_sig).values())[0])
             
             # 找到回调设置的方法
             handler_reg = sm.get_method_invocation_param(cs.statement, 1)
@@ -68,12 +70,17 @@ class EventResolver:
                     view_id = res_map.get(key)
                     if not view_id:
                         self.logger.warning(f"未找到事件设置的view字段与ID的映射,{cs.file_path}: {cs.statement}")
+                        continue
                     tag = res_map.get("tag")
                     key = res_map.get("callsite")
+                else :
+                    self.logger.warning(f"未找到事件设置的view字段与ID的映射,{cs.file_path}: {cs.statement}")
+                    continue
             else:
                 view_id = self.smali_scanner.res_id2callsite.get(key, {})
                 if not view_id:
                     self.logger.warning(f"未找到事件设置的view字段与ID的映射,{cs.file_path}: {cs.statement}")
+                    continue
 
             # view向上找，找到layout
 
@@ -86,6 +93,7 @@ class EventResolver:
 
             while tag == "findViewById" :
                 idx = key[2]
+                sm = SmaliMethod(sc, key[1], list(sc.get_methods_body(key[1]).values())[0])
                 stmt = sm.get_statements()[idx]
                 reg = sm.get_method_invocation_param(stmt, 0)
                 get_result = self.tracker.resolve_handler_view(sm, idx, reg)
@@ -102,6 +110,13 @@ class EventResolver:
                 layout_id = key
                 layout_name = key
                 note = "layout is param"
+
+            elif tag == "field":
+                res_map = self.smali_scanner.class2field_res_id.get(cs.class_name, {})
+                if res_map:
+                    layout_id = res_map.get(key)
+                    if layout_id:
+                        layout_name = self.rm.id_to_layout.get(layout_id, {})
             
             if layout_id is None:
                 # 如果还是找不到 layout_id 则查看距离最近的 setContentView 方法或者 inflate 方法近似

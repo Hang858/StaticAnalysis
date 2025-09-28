@@ -1,5 +1,5 @@
 from typing import Optional, Tuple
-from LoggerConfig import logger
+from scripts.LoggerConfig import logger
 from scripts.smali_parser import SmaliMethod
 class Tracker:
     """
@@ -38,6 +38,9 @@ class Tracker:
         while idx >= 0:
             stmt = stmts[idx]
             if sm.is_assignment_statement(stmt):
+                if stmt.startswith("iput") or stmt.startswith("sput") or stmt.startswith("aput"):
+                    idx -= 1
+                    continue
                 left = sm.get_assignment_left(stmt)
                 if left == current:
                     right = sm.get_assignment_right(stmt)
@@ -48,7 +51,7 @@ class Tracker:
                         while j >= 0 and not sm.is_method_invocation(stmts[j]):
                             j -= 1
                         if j >= 0:
-                            inv_stmt = stmt[j]
+                            inv_stmt = stmts[j]
                             param0 = sm.get_method_invocation_param(inv_stmt, 0)
                             # if isinstance(param0, str) and param0.startswith("0x7f"):
                             #         self._resolve_cache[key] = param0
@@ -62,7 +65,7 @@ class Tracker:
                     elif isinstance(right, str) and right.startswith("L"):
                         return right
                     else:
-                        return right
+                        current = right
             idx -= 1
         
         return None
@@ -84,6 +87,9 @@ class Tracker:
         while idx >= 0:
             stmt = stmts[idx]
             if sm.is_assignment_statement(stmt):
+                if stmt.startswith("iput") or stmt.startswith("sput") or stmt.startswith("aput"):
+                    idx -= 1
+                    continue
                 left = sm.get_assignment_left(stmt)
                 if left == current:
                     right = sm.get_assignment_right(stmt)
@@ -116,15 +122,18 @@ class Tracker:
         # key = (sm.get_class_name(), start_idx, tag)
         stmts = sm.get_statements()
         idx = start_idx
-        reg = sm.get_invoke_result_register(start_idx, stmts[idx])
+        get_result = sm.get_invoke_result_register(stmts[idx], idx)
         if tag.startswith("findViewById"):
             tag = "findViewById"
         elif tag.startswith("inflate"):
             tag = "inflate"
 
         # 调用方法返回值没有保存
-        if reg is None:
+        if get_result is None:
             return None
+        else:
+            reg, idx = get_result
+            idx += 1
         while idx < len(stmts) - 1:
             stmt = stmts[idx]
             if sm.is_assignment_statement(stmt):
@@ -136,7 +145,7 @@ class Tracker:
                 if sm.is_assignment_statement(stmt):
                     left = sm.get_assignment_left(stmt)
                     right = sm.get_assignment_right(stmt)
-                    if sm.startswith("iput") or sm.startswith("sput"):
+                    if stmt.startswith("iput") or stmt.startswith("sput"):
                         if left == reg:
                             return right, tag
                     elif left.startswith("v") or left.startswith("p"):
@@ -160,15 +169,20 @@ class Tracker:
         while idx >= 0:
             stmt = stmts[idx]
             if sm.is_assignment_statement(stmt):
+                if stmt.startswith("iput") or stmt.startswith("sput") or stmt.startswith("aput"):
+                    idx -= 1
+                    continue
                 left = sm.get_assignment_left(stmt)
                 right = sm.get_assignment_right(stmt)
                 if left == reg:
                     if right is None:
                         # 遇到 move-result 指令
-                        invoke_stmt = sm.get_invoke_statement(stmt, idx)
-                        if not invoke_stmt:
-                            self.logger.error(f"未找到 move-result 指令对应的 invoke 语句: {sm.get_class_name(): }{stmt}")
+                        get_result = sm.get_invoke_statement(stmt, idx)
+                        if not get_result:
+                            self.logger.error(f"未找到 move-result 指令对应的 invoke 语句: {sm.get_class_name()}: {stmt}")
                             return None
+                        else:
+                            invoke_stmt, idx = get_result
                         callee = sm.extract_called_method_signature(invoke_stmt)
                         if callee == "findViewById(I)Landroid/view/View;":
                             key = (sm.get_class_name(), sm.get_method_signature(), idx, callee)

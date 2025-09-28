@@ -1,4 +1,4 @@
-from LoggerConfig import logger
+from scripts.LoggerConfig import logger
 from functools import lru_cache
 from typing import Optional
 
@@ -6,9 +6,8 @@ class ResourceMapper:
     """
     负责加载public.xml 和 ui_context.json， 提供 id -> layout_name, view_id -> layout 查询
     """
-    def __init__(self, public_xml_path, ui_context_path):
+    def __init__(self, public_xml_path):
         self.public_xml_path = public_xml_path
-        self.ui_context_path = ui_context_path
         self.id_to_layout = {}
         self.view_id_to_layout = {}
         self._load()

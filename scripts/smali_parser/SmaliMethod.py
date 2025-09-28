@@ -8,7 +8,7 @@ class SmaliMethod:
     def __init__(self, smali_class, method_signature, method_body):
         self.smali_class = smali_class
         self.method_signature = method_signature
-        self.method_body = [line for line in method_body if not line.startswith('.line')]  # 存储方法体语句列表
+        self.method_body = method_body  # 存储方法体语句列表
         self.params = self._get_method_params()
     
     def _get_method_params(self) -> List[str]:
@@ -183,7 +183,7 @@ class SmaliMethod:
             left = self.get_assignment_left(statement)
             right = self.get_assignment_right(statement)
             if right is None:
-                return left
+                return left, idx
             else:
                 return None
     
@@ -195,14 +195,14 @@ class SmaliMethod:
         :return: 匹配的 invoke 语句，如果没有找到则返回 None
         """
         while statement:
+            statement = self.get_previous_statement(idx)
             if self.is_method_invocation(statement):
-                return statement
-            idx = idx - 1
-            statement = self.get_next_statement(idx)
+                return statement, idx-1
             if self.is_assignment_statement(statement) :
                 if self.get_assignment_right(statement) is None:
                     ## 遇到另一个 move-result语句，未找到给定的invoke语句
                     return None
+            idx -= 1
         return None
 
     def is_assignment_statement(self, statement):
