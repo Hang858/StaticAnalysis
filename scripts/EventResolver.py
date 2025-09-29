@@ -36,6 +36,7 @@ class EventResolver:
         """
         for cs in self.callsites:
             file_path = cs.file_path
+            view_type = None
             view_id = None
             layout_id = None
             layout_name = None
@@ -71,6 +72,7 @@ class EventResolver:
                         continue
                     tag = res_map.get("tag")
                     key = res_map.get("callsite")
+                    view_type = self.smali_scanner.callsite2view_type.get(key)
                 else :
                     self.logger.warning(f"未找到事件设置的view字段与ID的映射,{cs.file_path}: {cs.statement}")
                     continue
@@ -87,6 +89,7 @@ class EventResolver:
                 registration_call = cs.callee,
                 handler = handler,
                 view_id = view_id,
+                view_type = view_type,
                 layout_id = layout_id,
                 layout_name = layout_name,
                 notes = note
@@ -96,6 +99,7 @@ class EventResolver:
 
             else:
                 view_id = self.smali_scanner.res_id2callsite.get(key, {})
+                view_type = self.smali_scanner.callsite2view_type.get(key, {})
                 if not view_id:
                     self.logger.warning(f"未找到事件设置的view字段与ID的映射,{cs.file_path}: {cs.statement}")
                     continue
@@ -146,6 +150,7 @@ class EventResolver:
                 registration_call = cs.callee,
                 handler = handler,
                 view_id = view_id,
+                view_type = view_type,
                 layout_id = layout_id,
                 layout_name = layout_name,
                 notes = note
@@ -183,6 +188,7 @@ class EventResolver:
                 registration_call = cs.callee,
                 handler = handler,
                 view_id = view_id,
+                view_type = view_type,
                 layout_id = layout_id,
                 layout_name = layout_name,
                 notes = note

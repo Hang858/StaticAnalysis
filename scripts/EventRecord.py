@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+from optparse import Option
 from typing import Optional
 from collections import namedtuple
 
@@ -15,6 +16,7 @@ class EventRecord:
     registration_call: str
     handler: Optional[str]
     view_id: Optional[str]
+    view_type: Optional[str]
     layout_id: Optional[str]
     layout_name: Optional[str]
     notes: Optional[str] = None

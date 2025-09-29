@@ -39,6 +39,7 @@ class SmaliScanner:
         self.class2field_res_id = {}
         self.layout_inflation_callsites = {}
         self.class_name2file_path = {}
+        self.callsite2view_type = {}
         self.logger = logger
    
 
@@ -77,6 +78,9 @@ class SmaliScanner:
                             key = (sm.get_class_name(), sm.get_method_signature(), idx, callee)
                             if res_id:
                                 self.res_id2callsite[key] = res_id
+                                ### 向下找 view 被转换为了什么类型
+                                view_type = self.tracker.resolve_view_type(sm, idx)
+                                self.callsite2view_type[key] = view_type
                                 ### 向下找是否有字段赋值
                                 get_result = self.tracker.resolve_assigned_field(sm, idx, callee)
                                 if get_result:

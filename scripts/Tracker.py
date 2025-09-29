@@ -158,6 +158,30 @@ class Tracker:
             idx += 1
         return None
 
+    def resolve_view_type(self, sm: SmaliMethod, start_idx: int ) -> Optional[str]:
+        """
+        解析指定的方法保存的 view 最终被转换的类型
+        """
+        stmts = sm.get_statements()
+        idx = start_idx
+        get_result = sm.get_invoke_result_register(stmts[idx], idx)
+        if get_result is None:
+            return None
+        else:
+            reg, idx = get_result
+            idx += 1
+        while idx < len(stmts) - 1:
+            stmt = stmts[idx]
+            if sm.is_assignment_statement(stmt):
+                left = sm.get_assignment_left(stmt)
+                right = sm.get_assignment_right(stmt)
+                if left == reg:
+                    if stmt.startswith("check-cast"):
+                        return right
+            idx += 1
+        return None
+        
+
     def resolve_handler_view(self, sm: SmaliMethod, start_idx: int, reg: str) -> Optional[Tuple[Tuple[str, ...], str]]:
         """
         解析 set 回调最终设置的 view 对象,终点到 findViewById 或 inflate 方法 或 字段
