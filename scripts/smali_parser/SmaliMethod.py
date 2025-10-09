@@ -223,6 +223,7 @@ class SmaliMethod:
             r'^aget(-\w+)?\s+',  # aget 或 aget-xxx 
             r'^aput(-\w+)?\s+',  # aput 或 aput-xxx 
             r'^new-instance\s+',  # new-instance 开头的指令
+            r'^check-cast\s+', # check-cast开头的指令
         ]
         
         for pattern in assignment_patterns:
@@ -246,7 +247,7 @@ class SmaliMethod:
             return None
         
         # 处理不同类型的赋值语句
-        if statement.startswith('const') or statement.startswith('move') or statement.startswith('new-instance'):
+        if statement.startswith('const') or statement.startswith('move') or statement.startswith('new-instance') or statement.startswith('check-cast'):
             # 格式: const v0, 0x1234 或 move v1, v0 或 new-instance v2, Lcom/example/MyClass;
             parts = statement.split(',', 1)
             if len(parts) >= 1:
@@ -277,7 +278,7 @@ class SmaliMethod:
             return None
         
         # 处理不同类型的赋值语句
-        if statement.startswith('const') or statement.startswith('move') or statement.startswith('new-instance'):
+        if statement.startswith('const') or statement.startswith('move') or statement.startswith('new-instance') or statement.startswith('check-cast'):
             # 格式: const v0, 0x1234 或 move v1, v0 或 new-instance v2, Lcom/example/MyClass;
             parts = statement.split(',', 1)
             if len(parts) >= 2:
