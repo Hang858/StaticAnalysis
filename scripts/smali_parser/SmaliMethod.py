@@ -223,7 +223,7 @@ class SmaliMethod:
             r'^aget(-\w+)?\s+',  # aget 或 aget-xxx 
             r'^aput(-\w+)?\s+',  # aput 或 aput-xxx 
             r'^new-instance\s+',  # new-instance 开头的指令
-            r'^check-cast\s+', # check-cast开头的指令
+            # r'^check-cast\s+', # check-cast开头的指令
         ]
         
         for pattern in assignment_patterns:
@@ -235,6 +235,49 @@ class SmaliMethod:
             return True
         
         return False
+
+    def is_check_cast_statement(self, statement):
+        """
+        检查语句是否是 check-cast 语句
+        param statement: 语句
+        """
+
+        check_cast_pattern = r'^check-cast\s+' # check-cast 开头的指令
+        if re.match(check_cast_pattern, statement):
+            return True
+        return False
+
+    def get_check_cast_left(self, statement):
+        """
+        获取 check-cast 语句的左边部分（目标寄存器）
+        :param statement: check-cast 语句
+        :return: 左边部分，如果不是有效 check-cast 语句则返回 None
+        """
+        if not self.is_check_cast_statement(statement):
+            return None
+        
+        # check-cast 语句格式: check-cast v0, Lcom/example/MyClass;
+        parts = statement.split(',', 1)
+        if len(parts) >= 1:
+            return parts[0].strip().split(' ', 1)[1]
+        
+        return None
+
+    def get_check_cast_right(self, statement):
+        """
+        获取 check-cast 语句的右边部分（目标类型）
+        :param statement: check-cast 语句
+        :return: 右边部分，如果不是有效 check-cast 语句则返回 None
+        """
+        if not self.is_check_cast_statement(statement):
+            return None
+        
+        # check-cast 语句格式: check-cast v0, Lcom/example/MyClass;
+        parts = statement.split(',', 1)
+        if len(parts) >= 2:
+            return parts[1].strip()
+        
+        return None
 
 
     def get_assignment_left(self, statement):

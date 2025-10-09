@@ -63,16 +63,18 @@ class EventResolver:
                 note = "view is param"
             elif tag == "field":
                 class_name = key.split(";")[0].lstrip('L').split('->')[0]
+                view_type = key
                 # res_map = self.smali_scanner.class2field_res_id.get(cs.class_name, {})
                 res_map = self.smali_scanner.class2field_res_id.get(class_name, {})
                 if res_map:
-                    view_id = res_map.get(key)
-                    if not view_id:
+
+                    detail = res_map.get(key)
+                    if not detail:
                         self.logger.warning(f"未找到事件设置的view字段与ID的映射,{cs.file_path}: {cs.statement}")
                         continue
-                    tag = res_map.get("tag")
-                    key = res_map.get("callsite")
-                    view_type = self.smali_scanner.callsite2view_type.get(key)
+                    view_id = detail.get("res_id")
+                    tag = detail.get("tag")
+                    key = detail.get("callsite")
                 else :
                     self.logger.warning(f"未找到事件设置的view字段与ID的映射,{cs.file_path}: {cs.statement}")
                     continue
@@ -135,7 +137,9 @@ class EventResolver:
             elif tag == "field":
                 res_map = self.smali_scanner.class2field_res_id.get(cs.class_name, {})
                 if res_map:
-                    layout_id = res_map.get(key)
+                    detail = res_map.get(key)
+                    if detail:
+                        layout_id = detail.get("res_id")
                     if layout_id:
                         layout_name = self.rm.id_to_layout.get(layout_id, {})
             

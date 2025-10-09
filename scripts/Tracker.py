@@ -162,7 +162,7 @@ class Tracker:
         """
         解析指定的方法保存的 view 最终被转换的类型
         """
-        if sm.get_class_name() == "com/maoyan/android/adx/c":
+        if sm.get_class_name() == "com/dianping/voyager/widgets/container/LoadErrorEmptyView":
             print(" ")
         stmts = sm.get_statements()
         idx = start_idx
@@ -174,15 +174,15 @@ class Tracker:
             idx += 1
         while idx < len(stmts) - 1:
             stmt = stmts[idx]
-            if sm.is_assignment_statement(stmt):
-                left = sm.get_assignment_left(stmt)
-                right = sm.get_assignment_right(stmt)
+            if sm.is_check_cast_statement(stmt):
+                left = sm.get_check_cast_left(stmt)
+                right = sm.get_check_cast_right(stmt)
                 if left == reg:
                     if stmt.startswith("check-cast"):
                         return right
                     elif left.startswith("v") or left.startswith("p"):
                         if left == reg and not stmt.startswith("aput") and not stmt.startswith("sput") and not stmt.startswith("iput"):
-                            self.logger.info(f"字段寄存器被修改，未找到 findViewById 方法保存到的字段: {sm.get_class_name()}: {stmt}")
+                            self.logger.info(f"字段寄存器被修改，未找到 findViewById 方法转换的类型: {sm.get_class_name()}: {stmt}")
                             return None
             idx += 1
         return None

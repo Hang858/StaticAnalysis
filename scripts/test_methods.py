@@ -11,8 +11,8 @@ from scripts.ResourceMapper import ResourceMapper
 
 tracker = Tracker()
 # 修复路径格式
-rm = ResourceMapper("/home/zhlinux/work/githubproject/UI-CTX/UI-CTX-main/StaticAnalysis/meituan/output/values/public.xml")
-smali_scanner = SmaliScanner("/home/zhlinux/work/githubproject/UI-CTX/UI-CTX-main/StaticAnalysis/meituan/output/decompiled", tracker)
+rm = ResourceMapper("/home/hangzhang/work/StaticAnalysis/meituan/output/values/public.xml")
+smali_scanner = SmaliScanner("/home/hangzhang/work/StaticAnalysis/meituan/output/decompiled", tracker)
 
 event_resolver = EventResolver(rm, tracker, smali_scanner)
 event_resolver.resolve_event()
