@@ -223,6 +223,7 @@ class SmaliMethod:
             r'^aget(-\w+)?\s+',  # aget 或 aget-xxx 
             r'^aput(-\w+)?\s+',  # aput 或 aput-xxx 
             r'^new-instance\s+',  # new-instance 开头的指令
+            r'^const-class\s+', # const-class 开头的指令
             # r'^check-cast\s+', # check-cast开头的指令
         ]
         
@@ -261,6 +262,26 @@ class SmaliMethod:
         if len(parts) >= 1:
             return parts[0].strip().split(' ', 1)[1]
         
+        return None
+
+    def get_method_return_type(self, statement):
+        """
+        传入一个方法调用语句，返回方法调用语句的返回值类型
+        :param statement: 方法调用语句
+        :return: 返回值类型，如果不是有效方法调用语句则返回 None
+        """
+        if not self.is_method_invocation(statement):
+            return None
+        
+        # 提取方法签名
+        method_sig = self.extract_called_method_signature(statement, isComplete=False)
+        if method_sig is None:
+            return None
+        
+        # 匹配方法签名中的返回类型，方法签名格式如: myMethod()V 或 myMethod(III)Ljava/lang/String;
+        match = re.search(r'\)[^\)]*$', method_sig)
+        if match:
+            return match.group(0)[1:]  # 去掉开头的 ')'
         return None
 
     def get_check_cast_right(self, statement):

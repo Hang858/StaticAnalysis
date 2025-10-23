@@ -1,5 +1,7 @@
+from ast import Call
 import os
-from typing import List
+from typing import List, Dict, Set
+import re
 
 from scripts.EventRecord import CallSite
 from scripts.LoggerConfig import logger
@@ -24,10 +26,11 @@ class SmaliScanner:
         }
 
         self.view_creation_methods = {
-        "findViewById(I)Landroid/view/View;",
-        "inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;",
-        "inflate(ILandroid/view/ViewGroup;)Landroid/view/View;",
-        "inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;",
+            "setContentView(I)V",
+            "findViewById(I)Landroid/view/View;",
+            "inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;",
+            "inflate(ILandroid/view/ViewGroup;)Landroid/view/View;",
+            "inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;",
     }
         self.layout_inflation_methods = {
             "setContentView(I)V",
@@ -36,7 +39,7 @@ class SmaliScanner:
             "inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;",
         }
 
-        self.res_id2callsite = {}
+        self.callsite2res_id = {}
         self.class2field_res_id = {}
         self.layout_inflation_callsites = {}
         self.class_name2file_path = {}
@@ -44,8 +47,34 @@ class SmaliScanner:
         self.logger = logger
 
         ### 寻找 与Layout 布局相关的信息
+        self.class2direct_layouts = {}
+        self.class2fragments = {}
+        self.class2adapters = {}
+        self.class2added_views = {}
 
-           
+
+        self.resolved_layouts_cache = {}
+
+
+        self.fragment_operation_methods = {
+            "add(ILandroid/support/v4/app/Fragment;Ljava/lang/String;)Landroid/support/v4/app/FragmentTransaction;",
+            "replace(ILandroid/support/v4/app/Fragment;Ljava/lang/String;)Landroid/support/v4/app/FragmentTransaction;",
+            "add(ILandroid/support/v4/app/Fragment;)Landroid/support/v4/app/FragmentTransaction;",
+            "replace(ILandroid/support/v4/app/Fragment;)Landroid/support/v4/app/FragmentTransaction;",
+        }
+
+        self.adapter_methods = {
+           "setAdapter(" 
+        }
+
+        self.add_set_view = {
+            "addView(",
+            "setView(",
+            "setContentView(Landroid/view/View;)V",
+            "addContentView(Landroid/view/View"
+        }
+
+
 
     def _process_view_creation(self, sm: SmaliMethod, stmt: str, idx: int, callee: str):
         """
@@ -53,12 +82,14 @@ class SmaliScanner:
         """
         reg = sm.get_method_invocation_param(stmt, 1)
         # 向上找，传入的资源ID
+        if callee.startswith('setContentView'):
+            print(" ")
         res_id = self.tracker.resolve_register_to_resource(sm, idx, reg)
         if not res_id:
             self.logger.warning(f"未找到{sm.get_class_name()}: {sm.get_method_signature()}: {stmt}的资源ID")
         key = (sm.get_class_name(), sm.get_method_signature(), idx, callee)
         if res_id:
-            self.res_id2callsite[key] = res_id
+            self.callsite2res_id[key] = res_id
             # 向下找 view 被转换为了什么类型
             view_type = self.tracker.resolve_view_type(sm, idx)
             if view_type:
@@ -81,13 +112,58 @@ class SmaliScanner:
         """
         return CallSite(file_path, class_name, method_sig, idx, stmt, callee)
 
-    def _process_layout_inflation(self, class_name: str, file_path: str, method_sig: str, idx: int, stmt: str, callee: str):
+    def _process_layout_inflation(self, class_name: str, file_path: str, method_sig: str, idx: int, stmt: str, callee: str): 
         """
         处理布局膨胀方法的调用
         """
+        # if callee.startswith("setContentView(I)V"):
+        #     print(" ")
         self.layout_inflation_callsites.setdefault(class_name, []).append(
             CallSite(file_path, class_name, method_sig, idx, stmt, callee)
         )
+        # if class_name == "com/sankuai/titans/base/TitansFragment":
+        #     print(" ")
+        key = (class_name, method_sig, idx, callee)
+        res_id = self.callsite2res_id.get(key)
+        if res_id:
+            self.class2direct_layouts.setdefault(class_name, set()).add(res_id)
+
+    def _process_fragment_operation(self, sm: SmaliMethod, stmt: str, idx: int):
+        """
+        处理 Fragment 调用
+        """
+        # if sm.get_class_name() == 'com/meituan/android/traffichome/TrafficHomePageActivity':
+        #     print(" ")
+        reg = sm.get_method_invocation_param(stmt, 2)
+        frag = self.tracker.resolve_register_class(sm, idx, reg)
+        if frag is None:
+            return
+        if frag.startswith("p") or frag == 'Landroid/support/v4/app/Fragment;':
+            return
+        self.class2fragments.setdefault(sm.get_class_name(), set()).add(frag)
+
+    def _perform_adapter_set(self, sm: SmaliMethod, stmt: str, idx: int):
+        reg = sm.get_method_invocation_param(stmt, 1)
+        adapter = self.tracker.resolve_register_class(sm, idx, reg)
+        if adapter is None:
+            return
+        if adapter.startswith('p'):
+            return
+        self.class2adapters.setdefault(sm.get_class_name(), set()).add(adapter)
+
+
+    def _perform_add_set_view(self, sm: SmaliMethod, stmt: str, idx: int):
+        reg = sm.get_method_invocation_param(stmt, 1)
+        view = self.tracker.resolve_register_class(sm, idx, reg)
+        if view is None:
+            return
+        if view.startswith('p') or view.startswith('Landroid/'):
+            return
+        self.class2added_views.setdefault(sm.get_class_name(), set()).add(view)
+
+
+
+
 
     def scan(self) -> List[CallSite]:
         """
@@ -119,10 +195,74 @@ class SmaliScanner:
                         # 调用模块化的方法处理不同类型的方法调用
                         if any(callee.startswith(t) for t in self.view_creation_methods):
                             self._process_view_creation(sm, stmt, idx, callee)
-                        elif any(callee.startswith(t) for t in self.event_listener_methods):
+                        if any(callee.startswith(t) for t in self.event_listener_methods):
                             callsites.append(self._process_event_listener(file_path, class_name, method_sig, idx, stmt, callee))
-                        elif any(callee.startswith(t) for t in self.layout_inflation_methods):
+                        if any(callee.startswith(t) for t in self.layout_inflation_methods):
                             self._process_layout_inflation(class_name, file_path, method_sig, idx, stmt, callee)
+                        if any(callee.startswith(t) for t in self.fragment_operation_methods):
+                            self._process_fragment_operation(sm, stmt, idx)
+                        if any(callee.startswith(t) for t in self.adapter_methods):
+                            self._perform_adapter_set(sm, stmt, idx)
+                        if any(callee.startswith(t) for t in self.add_set_view):
+                            self._perform_add_set_view(sm, stmt, idx)
                             
         self.logger.info(f"SmaliScanner: found {len(callsites)} call sites in {self.smali_root}")
         return callsites
+
+    def resolve_all_layouts(self) -> dict:
+        """
+        扫描所有的类解析其完整的布局依赖树
+        """
+        all_class_layouts = {}
+        # 遍历所有我们扫描过的类
+        for class_name in self.class_name2file_path.keys():
+            # if class_name == "com/meituan/android/pt/homepage/activity/MainActivity":
+            #     print(" ")
+            if class_name not in self.resolved_layouts_cache:
+                all_class_layouts[class_name] = self._resolve_layouts_recursively(class_name, set())
+
+        return self.resolved_layouts_cache
+    
+    def _resolve_layouts_recursively(self, class_name: str, visited: set) -> set:
+        """
+        递归地为一个类查找所有相关的布局
+        """
+        if class_name in self.resolved_layouts_cache:
+            return self.resolved_layouts_cache[class_name]
+
+        if class_name in visited:
+            # 循环引用
+            return set()
+
+        visited.add(class_name)
+        # 初始化当前类的布局集合，首先包含它自己直接加载的布局
+        layouts = self.class2direct_layouts.get(class_name, set()).copy()
+
+        for fragment_class in self.class2fragments.get(class_name, []):
+            match = re.search(r'L(.*?);', fragment_class)
+            if match:
+                child_class_name = match.group(1)
+                fragment_layouts = self._resolve_layouts_recursively(child_class_name, visited)
+                layouts.update(fragment_layouts)
+
+        for adapter_class in self.class2adapters.get(class_name, []):
+            match = re.search(r'L(.*?);', adapter_class)
+            if match:
+                child_class_name = match.group(1)
+                adapter_layouts = self._resolve_layouts_recursively(child_class_name, visited)
+                layouts.update(adapter_layouts)
+
+        for view_class in self.class2added_views.get(class_name, []):
+            # 自定义View也可能在其内部inflate布局
+            match = re.search(r'L(.*?);', view_class)
+            if match:
+                child_class_name = match.group(1)
+                view_layouts = self._resolve_layouts_recursively(child_class_name, visited)
+                layouts.update(view_layouts)
+
+        visited.remove(class_name)
+        if layouts:
+            self.resolved_layouts_cache[class_name] = layouts
+        return layouts
+    
+    

@@ -84,6 +84,8 @@ class Tracker:
         stmts = sm.get_statements()
         idx = start_idx - 1
         current = handler_reg
+        if handler_reg == "p0":
+            return sm.get_class_name()
         while idx >= 0:
             stmt = stmts[idx]
             if sm.is_assignment_statement(stmt):
@@ -244,6 +246,43 @@ class Tracker:
             tag = 'param'
             return (reg), tag
         return None
+    
+    def resolve_register_class(self, sm: SmaliMethod, start_idx: int, reg: str):
+        """
+        返回寄存器中存放的类
+        """
+        stmts = sm.get_statements()
+        idx = start_idx - 1
+        while idx >= 0:
+            stmt = stmts[idx]
+            if sm.is_assignment_statement(stmt):
+                if stmt.startswith("iput") or stmt.startswith("sput") or stmt.startswith("aput"):
+                    idx -= 1
+                    continue
+                left = sm.get_assignment_left(stmt)
+                right = sm.get_assignment_right(stmt)
+                
+                if left == reg:
+                    if right is None:
+                        get_result = sm.get_invoke_statement(stmt, idx)
+                        if not get_result:
+                            self.logger.error(f"未找到 move-result 指令对应的 invoke 语句: {sm.get_class_name()}: {stmt}")
+                            return None
+                        else:
+                            invoke_stmt, idx = get_result
+                        return_type = sm.get_method_return_type(invoke_stmt)
+                        return return_type
 
-
-
+                    elif right.startswith("L"):
+                        if len(right.split(":")) == 1:
+                            return right
+                        return right.split(":")[1].split("#")[0].strip()
+                    else:
+                        if not right.startswith("v") and not right.startswith("p"):
+                            self.logger.error(f"未识别的view对象赋值：{sm.get_class_name()}: {stmt}")
+                            return None
+                        reg = right
+            idx -= 1
+        if reg.startswith('p'):
+            return reg
+        return None

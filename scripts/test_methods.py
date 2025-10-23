@@ -11,10 +11,11 @@ from scripts.ResourceMapper import ResourceMapper
 
 tracker = Tracker()
 # 修复路径格式
-rm = ResourceMapper("/home/hangzhang/work/StaticAnalysis/meituan/output/values/public.xml")
-smali_scanner = SmaliScanner("/home/hangzhang/work/StaticAnalysis/meituan/output/decompiled", tracker)
+rm = ResourceMapper("/home/hangzhang/work/StaticAnalysis/keystoredemo/output/values/public.xml", "/home/hangzhang/work/StaticAnalysis/scripts/InfoExtract/full_class_hierarchy.json")
+smali_scanner = SmaliScanner("/home/hangzhang/work/StaticAnalysis/keystoredemo/output/decompiled", tracker)
 
 event_resolver = EventResolver(rm, tracker, smali_scanner)
+event_resolver.save_analysis_results("results/layouts.json")
 event_resolver.resolve_event()
 
 # 输出事件数量
@@ -24,9 +25,12 @@ print(f"找到 {events_count} 个事件记录")
 # 将EventRecord对象转换为字典列表以便JSON序列化
 events_data = []
 for event in event_resolver.events:
+    full_class_name = 'L' + event.class_name + ';'
+    class_chain = event_resolver.rm.get_class_chain(full_class_name)
     event_dict = {
         "file_path": event.file_path,
         "class_name": event.class_name,
+        "class_chain": class_chain,
         "method_sig": event.method_sig,
         "stmt_index": event.stmt_index,
         "registration_call": event.registration_call,
@@ -41,7 +45,7 @@ for event in event_resolver.events:
 
 # 保存到JSON文件，使用缩进确保美观
 import json
-output_file = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "results", "events_data_4.json")
+output_file = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "results", "events_data_6.json")
 with open(output_file, "w", encoding="utf-8") as f:
     json.dump(events_data, f, ensure_ascii=False, indent=2)
 
