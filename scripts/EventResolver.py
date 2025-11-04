@@ -1,11 +1,11 @@
-from scripts.ResourceMapper import ResourceMapper
-from scripts.Tracker import Tracker
-from scripts.EventRecord import CallSite, EventRecord
-from scripts.SmaliScanner import SmaliScanner
+from .ResourceMapper import ResourceMapper
+from .Tracker import Tracker
+from .EventRecord import CallSite, EventRecord
+from .SmaliScanner import SmaliScanner
 from typing import List, Dict, Set
-from scripts.LoggerConfig import logger
-from scripts.smali_parser import SmaliClass
-from scripts.smali_parser import SmaliMethod
+from .LoggerConfig import logger
+from .smali_parser import SmaliClass
+from .smali_parser import SmaliMethod
 import json
 
 class EventResolver:
@@ -166,8 +166,7 @@ class EventResolver:
                 )
                 self.events.append(er)
                 continue
-            
-            if layout_id is None or layout_id == "p0":
+            if layout_id is None or layout_id == {} or layout_id.startswith("p"):
                 # 如果还是找不到 layout_id 则查看距离最近的 setContentView 方法或者 inflate 方法近似
                 layout_callsites = self.smali_scanner.layout_inflation_callsites.get(sm.get_class_name())
                 

@@ -10,3 +10,10 @@
 /keystoredemo
 /scripts/log/
 /scripts/result/
+/infomaniak/
+/keepassdx/
+/app/
+__pycache__/
+/scripts/.smaliparser/
+/results/
+/log/

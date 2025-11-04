@@ -16,4 +16,5 @@ public class ResourceParserConfig {
     public static final String DRAWABLES_FILE = "drawables.xml";
     public static final String SUB_LAYOUT_FILE = "sub_layout.json";
     public static final String UI_CONTEXT_FILE = "ui_context.json";
+    public static final String CUSTOM_COMPONENTS_FILE = "custom_components.json";
 }

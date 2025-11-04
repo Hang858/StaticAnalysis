@@ -80,6 +80,29 @@ class SmaliMethod:
         
         return self.method_body[index + 1]
 
+    def is_return_statement(self, statement: str) -> bool:
+        """
+        判断给定语句是否是返回语句
+        :param statement: 要判断的语句
+        :return: 是否是返回语句
+        """
+        return statement.startswith('return')
+
+    def get_return_register(self, statement: str) -> str:
+        """
+        获取 return 语句所使用的寄存器
+        :param statement: return 语句
+        :return: 使用的寄存器名，如果不是 return 语句则返回 None
+        """
+        if not self.is_return_statement(statement):
+            return None
+        
+        # return 系列指令格式: return v0 或 return-object v0 或 return-wide v0 等
+        parts = statement.strip().split()
+        if len(parts) >= 2:
+            return parts[-1]  # 最后一个部分即为寄存器名
+        return None
+
     def is_method_invocation(self, statement):
         """
         判断给定语句是否是方法调用语句

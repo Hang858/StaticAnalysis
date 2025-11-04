@@ -38,8 +38,7 @@ def collect_class_hierarchy(smali_root, output_file="class_hierarchy.json"):
 
 if __name__ == "__main__":
     # 获取脚本所在目录
-    script_dir = os.path.dirname(os.path.abspath(__file__))
     # 输出文件路径设置为脚本目录下的 class_hierarchy.json
-    output_file = os.path.join(script_dir, "class_hierarchy.json")
-    smali_dir = "/home/hangzhang/work/StaticAnalysis/keystoredemo/output/decompiled"  # 修改为你的 smali 根目录
+    output_file = "/home/hangzhang/work/StaticAnalysis/app/keepassdx/output/class_hierarchy.json"
+    smali_dir = "/home/hangzhang/work/StaticAnalysis/app/keepassdx/output/decompiled"  # 修改为你的 smali 根目录
     collect_class_hierarchy(smali_dir, output_file)

@@ -102,6 +102,9 @@ public class ResourceParser {
         // 导出UI上下文
         UIContextExporter uiContextExporter = new UIContextExporter(outPath);
         uiContextExporter.export();
+
+        CustomComponentExporter componentExporter = new CustomComponentExporter(outPath);
+        componentExporter.export();
     }
 
     public static void main(String[] args) {

@@ -3,11 +3,11 @@ import os
 from typing import List, Dict, Set
 import re
 
-from scripts.EventRecord import CallSite
-from scripts.LoggerConfig import logger
-from scripts.smali_parser import SmaliClass
-from scripts.smali_parser import SmaliMethod
-from scripts.Tracker import Tracker
+from .EventRecord import CallSite
+from .LoggerConfig import logger
+from .smali_parser import SmaliClass
+from .smali_parser import SmaliMethod
+from .Tracker import Tracker
 
 class SmaliScanner:
     """
@@ -58,9 +58,16 @@ class SmaliScanner:
 
         self.fragment_operation_methods = {
             "add(ILandroid/support/v4/app/Fragment;Ljava/lang/String;)Landroid/support/v4/app/FragmentTransaction;",
+            "add(ILandroidx/fragment/app/Fragment;)Landroidx/fragment/app/FragmentTransaction;",
+            "add(ILandroidx/fragment/app/Fragment;Ljava/lang/String;)Landroidx/fragment/app/FragmentTransaction;",
             "replace(ILandroid/support/v4/app/Fragment;Ljava/lang/String;)Landroid/support/v4/app/FragmentTransaction;",
+            "replace(ILandroidx/fragment/app/Fragment;Ljava/lang/String;)Landroidx/fragment/app/FragmentTransaction;",
+            "replace(ILandroidx/fragment/app/Fragment;)Landroidx/fragment/app/FragmentTransaction;",
             "add(ILandroid/support/v4/app/Fragment;)Landroid/support/v4/app/FragmentTransaction;",
             "replace(ILandroid/support/v4/app/Fragment;)Landroid/support/v4/app/FragmentTransaction;",
+        }
+        self.create_fragment = {
+            "createFragment(I)Landroidx/fragment/app/Fragment;"
         }
 
         self.adapter_methods = {
@@ -76,14 +83,15 @@ class SmaliScanner:
 
 
 
+
     def _process_view_creation(self, sm: SmaliMethod, stmt: str, idx: int, callee: str):
         """
         处理视图创建方法的调用
         """
         reg = sm.get_method_invocation_param(stmt, 1)
         # 向上找，传入的资源ID
-        if callee.startswith('setContentView'):
-            print(" ")
+        # if callee.startswith('setContentView'):
+        #     print(" ")
         res_id = self.tracker.resolve_register_to_resource(sm, idx, reg)
         if not res_id:
             self.logger.warning(f"未找到{sm.get_class_name()}: {sm.get_method_signature()}: {stmt}的资源ID")
@@ -116,8 +124,6 @@ class SmaliScanner:
         """
         处理布局膨胀方法的调用
         """
-        # if callee.startswith("setContentView(I)V"):
-        #     print(" ")
         self.layout_inflation_callsites.setdefault(class_name, []).append(
             CallSite(file_path, class_name, method_sig, idx, stmt, callee)
         )
@@ -132,7 +138,7 @@ class SmaliScanner:
         """
         处理 Fragment 调用
         """
-        # if sm.get_class_name() == 'com/meituan/android/traffichome/TrafficHomePageActivity':
+        # if sm.get_class_name() == 'com/kunzisoft/keepass/activities/KeyGeneratorActivity':
         #     print(" ")
         reg = sm.get_method_invocation_param(stmt, 2)
         frag = self.tracker.resolve_register_class(sm, idx, reg)
@@ -185,9 +191,18 @@ class SmaliScanner:
                 self.class_name2file_path[class_name] = file_path
                 methods = sc.get_methods_body()
                 for method_sig, body in methods.items():
+                    # if method_sig == 'createFragment(I)Landroidx/fragment/app/Fragment;':
+                    #     pass
                     sm = SmaliMethod(class_name, method_sig, body)
                     stmts = sm.get_statements()
                     for idx, stmt in enumerate(stmts):
+                        # 处理 createFragment 的情况
+                        if any(method_sig == t for t in self.create_fragment):
+                            if sm.is_return_statement(stmt):
+                                return_reg = sm.get_return_register(stmt)
+                                frag = self.tracker.resolve_register_class(sm, idx, return_reg)
+                                self.class2fragments.setdefault(sm.get_class_name(), set()).add(frag)
+
                         if not sm.is_method_invocation(stmt):
                             continue
                         callee = sm.extract_called_method_signature(stmt)

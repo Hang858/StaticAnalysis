@@ -1,6 +1,6 @@
 from typing import Optional, Tuple
-from scripts.LoggerConfig import logger
-from scripts.smali_parser import SmaliMethod
+from .LoggerConfig import logger
+from .smali_parser import SmaliMethod
 class Tracker:
     """
     回溯寄存器赋值并解析资源 ID / field / handler。保持纯函数风格，方便单元测试。
@@ -164,8 +164,6 @@ class Tracker:
         """
         解析指定的方法保存的 view 最终被转换的类型
         """
-        if sm.get_class_name() == "com/dianping/voyager/widgets/container/LoadErrorEmptyView":
-            print(" ")
         stmts = sm.get_statements()
         idx = start_idx
         get_result = sm.get_invoke_result_register(stmts[idx], idx)
@@ -272,7 +270,9 @@ class Tracker:
                             invoke_stmt, idx = get_result
                         return_type = sm.get_method_return_type(invoke_stmt)
                         return return_type
-
+                    elif stmt.startswith("check-cast"):
+                        if right.startswith("Landroid"):
+                            continue
                     elif right.startswith("L"):
                         if len(right.split(":")) == 1:
                             return right
@@ -283,6 +283,6 @@ class Tracker:
                             return None
                         reg = right
             idx -= 1
-        if reg.startswith('p'):
+        if reg.startswith('p') or reg.startswith('L'):
             return reg
         return None
