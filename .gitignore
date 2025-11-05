@@ -17,3 +17,4 @@ __pycache__/
 /scripts/.smaliparser/
 /results/
 /log/
+scripts/__pycache__/

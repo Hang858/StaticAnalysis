@@ -222,48 +222,89 @@ class EventResolver:
         return nearest_callsite
 
 
-    def save_analysis_results(self, output_path: str):
+    def save_analysis_results(self, results_dir: str, app_name: str):
         """
-        将分析得到的类与布局的完整映射关系保存到 JSON 文件中。
+        将所有分析结果分别保存到指定目录下的单独的 JSON 文件中。
 
         该函数会处理从 set 到 list 的转换，以便能够被 JSON 序列化，
         并以格式化的方式写入文件，方便阅读。
 
         Args:
-            results_map (Dict[str, Set[str]]): 
-                分析结果。字典的键是 Smali 类名，值是与该类关联的所有布局ID的集合。
-                例如: {'Lcom/example/MainActivity;': {'0x7f0c001a', '0x7f0c002b'}}
-
-            output_path (str): 
-                结果要保存的文件路径，例如 'analysis_results.json'。
+            results_dir (str): 
+                结果要保存的目录路径，例如 'output/results'。
+            app_name (str):
+                App 的名称, 将用作每个 JSON 文件的命名前缀。
+                例如: 'my_app_complete_layout_map.json'
         """
-        print(f"正在准备保存分析结果到: {output_path} ...")
+        print(f"正在准备将 {app_name} 的分析结果保存到: {results_dir} ...")
 
-        # 1. 将字典中的 set 转换为 list，因为 JSON 格式不支持 set 类型
-        # 为了保持结果的可复现性，最好对 list 进行排序
-        serializable_map = {
-            class_name: sorted(list(layouts)) 
-            for class_name, layouts in self.complete_layout_map.items()
+        # --- 1. 确保输出目录存在 ---
+        try:
+            import os
+            os.makedirs(results_dir, exist_ok=True)
+        except OSError as e:
+            print(f"错误：无法创建目录 '{results_dir}'. {e}")
+            return  # 如果无法创建目录，则停止执行
+
+        # --- 2. 辅助函数：将 {str: Set[str]} 转换为 {str: List[str]} ---
+        # (为了保持结果的可复现性，最好对 list 进行排序)
+        def _serialize_map(data_map: Dict[str, Set[str]]) -> Dict[str, List[str]]:
+            return {
+                class_name: sorted(list(items))
+                for class_name, items in data_map.items()
+                if items  # 只保留有数据的条目
+            }
+
+        # --- 3. 定义要保存的所有数据映射 ---
+        # 字典的键 'base_name' 将用于生成文件名
+        data_maps_to_save = {
+            "complete_layout_map": self.complete_layout_map,
+            "class2direct_layouts": self.smali_scanner.class2direct_layouts,
+            "class2fragments": self.smali_scanner.class2fragments,
+            "class2adapters": self.smali_scanner.class2adapters,
+            "class2added_views": self.smali_scanner.class2added_views,
+            "class2custom_components": self.smali_scanner.class2custom_components,
+            "class2dialog_fragment": self.smali_scanner.class2dialog_fragment,
         }
 
-        # 2. 使用 try-except 块来处理可能的文件写入错误
-        try:
-            # 3. 打开文件并写入 JSON 数据
-            # 'w' 表示写入模式，如果文件已存在则会覆盖
-            # encoding='utf-8' 是处理各种字符的最佳实践
-            with open(output_path, 'w', encoding='utf-8') as f:
-                # json.dump() 用于将 Python 对象写入文件
-                # indent=4 让输出的 JSON 文件有4个空格的缩进，非常易读
-                # ensure_ascii=False 确保中文字符等能被正确写入，而不是转义为 \uXXXX
-                json.dump(serializable_map, f, indent=4, ensure_ascii=False)
-            
-            print(f"分析结果已成功保存，共包含 {len(self.complete_layout_map)} 个类的映射关系。")
+        total_saved_count = 0
 
-        except IOError as e:
-            print(f"错误：无法将结果写入文件 '{output_path}'。请检查路径和文件权限。")
-            print(f"具体错误信息: {e}")
-        except Exception as e:
-            print(f"保存结果时发生未知错误: {e}")
+        # --- 4. 遍历并保存每个数据映射到单独的文件 ---
+        for base_name, data_source in data_maps_to_save.items():
+            
+            # 构造文件名，例如: "my_app_class2fragments.json"
+            file_name = f"{app_name}_{base_name}.json"
+            output_path = os.path.join(results_dir, file_name)
+
+            print(f"  -> 正在序列化并保存 {file_name} ...")
+
+            # 转换 set -> list
+            serializable_data = _serialize_map(data_source)
+
+            # 如果序列化后没有数据，可以选择跳过保存空文件
+            if not serializable_data:
+                print(f"     ...跳过，没有数据。")
+                continue
+            
+            # 5. 使用 try-except 块来处理可能的文件写入错误
+            try:
+                # 'w' 表示写入模式，如果文件已存在则会覆盖
+                # encoding='utf-8' 是处理各种字符的最佳实践
+                with open(output_path, 'w', encoding='utf-8') as f:
+                    # json.dump() 用于将 Python 对象写入文件
+                    # indent=4 让输出的 JSON 文件有4个空格的缩进，非常易读
+                    # ensure_ascii=False 确保中文字符等能被正确写入
+                    json.dump(serializable_data, f, indent=4, ensure_ascii=False)
+                
+                total_saved_count += 1
+
+            except IOError as e:
+                print(f"错误：无法将结果写入文件 '{output_path}'。请检查路径和文件权限。")
+                print(f"具体错误信息: {e}")
+            except Exception as e:
+                print(f"保存 '{output_path}' 时发生未知错误: {e}")
+
+        print(f"\n分析结果保存完毕。共成功保存 {total_saved_count} 个文件到 {results_dir}。")
                     
 
     

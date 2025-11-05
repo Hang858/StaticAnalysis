@@ -6,11 +6,13 @@ class ResourceMapper:
     """
     负责加载public.xml 和 ui_context.json， 提供 id -> layout_name, view_id -> layout 查询
     """
-    def __init__(self, public_xml_path, full_class_chain):
+    def __init__(self, public_xml_path, full_class_chain, custom_components_path):
         self.public_xml_path = public_xml_path
         self.full_class_chain = full_class_chain
+        self.custom_components_path = custom_components_path
         self.id_to_layout = {}
         self.view_id_to_layout = {}
+        self.xml_to_custom_components = {}
         self._load()
         self.logger = logger
 
@@ -48,7 +50,16 @@ class ResourceMapper:
             logger.info(f"ResourceMapper: 已加载 {len(self.class_hierarchy)} 个类层次关系")
         except Exception as e:
             logger.error(f"加载 full_class_hierarchy.json 失败: {e}")
-        
+
+        try:
+            if not self.custom_components_path or not os.path.exists(self.custom_components_path):
+                logger.error(f"{self.custom_components_path} 文件不存在")
+                return
+            with open(self.custom_components_path, 'r', encoding='utf-8') as f:
+                self.xml_to_custom_components = json.load(f)
+        except Exception as e:
+            logger.error(f"load {self.custom_components_path} failed, {e}")
+            return
         # 保留原有的注释掉的ui_context.json加载代码
         # try:
         #     import json

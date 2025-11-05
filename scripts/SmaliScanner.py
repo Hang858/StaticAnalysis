@@ -3,6 +3,8 @@ import os
 from typing import List, Dict, Set
 import re
 
+from scripts import ResourceMapper
+
 from .EventRecord import CallSite
 from .LoggerConfig import logger
 from .smali_parser import SmaliClass
@@ -13,9 +15,10 @@ class SmaliScanner:
     """
     扫描Smali文件，查找目标方法调用
     """
-    def __init__(self, smali_root: str, tracker: Tracker):
+    def __init__(self, smali_root: str, tracker: Tracker, rm: ResourceMapper):
         self.smali_root = smali_root
         self.tracker = tracker
+        self.rm = rm
         self.event_listener_methods = {
             "setOnClickListener",
             "setOnLongClickListener",
@@ -52,8 +55,31 @@ class SmaliScanner:
         self.class2adapters = {}
         self.class2added_views = {}
 
+        ### 存储类与静态自定义的view
+        self.class2custom_components = {}
+
+        ### 存储dialogFragment
+        self.class2dialog_fragment = {}
 
         self.resolved_layouts_cache = {}
+
+        self.dialog_fragment_show_methods = {
+          # --- androidx ---
+            "show(Landroidx/fragment/app/FragmentManager;Ljava/lang/String;)V",
+            "show(Landroidx/fragment/app/FragmentTransaction;Ljava/lang/String;)I",
+            "showNow(Landroidx/fragment/app/FragmentManager;Ljava/lang/String;)V",
+            "showNow(Landroidx/fragment/app/FragmentTransaction;Ljava/lang/String;)V",
+
+            # --- support v4 ---
+            "show(Landroid/support/v4/app/FragmentManager;Ljava/lang/String;)V",
+            "show(Landroid/support/v4/app/FragmentTransaction;Ljava/lang/String;)I",
+            "showNow(Landroid/support/v4/app/FragmentManager;Ljava/lang/String;)V",
+            "showNow(Landroid/support/v4/app/FragmentTransaction;Ljava/lang/String;)V",
+
+            # --- platform (android.app) ---
+            "show(Landroid/app/FragmentManager;Ljava/lang/String;)V",
+            "show(Landroid/app/FragmentTransaction;Ljava/lang/String;)I",  
+        }
 
 
         self.fragment_operation_methods = {
@@ -80,9 +106,6 @@ class SmaliScanner:
             "setContentView(Landroid/view/View;)V",
             "addContentView(Landroid/view/View"
         }
-
-
-
 
     def _process_view_creation(self, sm: SmaliMethod, stmt: str, idx: int, callee: str):
         """
@@ -131,6 +154,11 @@ class SmaliScanner:
         #     print(" ")
         key = (class_name, method_sig, idx, callee)
         res_id = self.callsite2res_id.get(key)
+        xml = self.rm.id_to_layout.get(res_id, {})
+        if xml:
+            custom_componnts_list = self.rm.xml_to_custom_components.get(xml)
+            if custom_componnts_list:
+                self.class2custom_components.setdefault(class_name, set()).update(custom_componnts_list)
         if res_id:
             self.class2direct_layouts.setdefault(class_name, set()).add(res_id)
 
@@ -167,9 +195,12 @@ class SmaliScanner:
             return
         self.class2added_views.setdefault(sm.get_class_name(), set()).add(view)
 
-
-
-
+    def _perform_dialog_fragment(self, sm: SmaliMethod, stmt: str, idx: int):
+        reg = sm.get_method_invocation_param(stmt, 0)
+        dialog_fragment = self.tracker.resolve_register_class(sm, idx, reg)
+        if dialog_fragment is None:
+            return
+        self.class2dialog_fragment.setdefault(sm.get_class_name(), set()).add(dialog_fragment)
 
     def scan(self) -> List[CallSite]:
         """
@@ -220,6 +251,8 @@ class SmaliScanner:
                             self._perform_adapter_set(sm, stmt, idx)
                         if any(callee.startswith(t) for t in self.add_set_view):
                             self._perform_add_set_view(sm, stmt, idx)
+                        if any(callee.startswith(t) for t in self.dialog_fragment_show_methods):
+                            self._perform_dialog_fragment(sm, stmt, idx)
                             
         self.logger.info(f"SmaliScanner: found {len(callsites)} call sites in {self.smali_root}")
         return callsites

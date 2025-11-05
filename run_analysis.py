@@ -34,17 +34,17 @@ def run_event_analysis(app_name, base_output_dir, hierarchy_file_path, results_d
     print(f"[*] Starting Step 2: Running Event Analysis for '{app_name}'...")
     smali_dir = os.path.join(base_output_dir, "decompiled")
     public_xml_path = os.path.join(base_output_dir, "values", "public.xml")
+    custom_components_path = os.path.join(base_output_dir, "custom_components.json")
 
     print("    - Initializing analyzers...")
     tracker = Tracker()
-    rm = ResourceMapper(public_xml_path, hierarchy_file_path)
-    smali_scanner = SmaliScanner(smali_dir, tracker)
+    rm = ResourceMapper(public_xml_path, hierarchy_file_path, custom_components_path)
+    smali_scanner = SmaliScanner(smali_dir, tracker, rm)
     event_resolver = EventResolver(rm, tracker, smali_scanner)
     print("    - Analyzers initialized.")
 
     print("    - Saving layout analysis results...")
-    layouts_output_path = os.path.join(results_dir, f"{app_name}_layouts.json")
-    event_resolver.save_analysis_results(layouts_output_path)
+    event_resolver.save_analysis_results(results_dir, app_name)
     
     print("    - Resolving events (this may take a moment)...")
     start_time = time.time()
