@@ -9,7 +9,7 @@ from .EventRecord import CallSite
 from .LoggerConfig import logger
 from .smali_parser import SmaliClass
 from .smali_parser import SmaliMethod
-from .Tracker import Tracker
+from .TrackerCFG import Tracker
 
 class SmaliScanner:
     """

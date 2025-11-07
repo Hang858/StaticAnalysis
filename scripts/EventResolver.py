@@ -1,5 +1,5 @@
 from .ResourceMapper import ResourceMapper
-from .Tracker import Tracker
+from .TrackerCFG import Tracker
 from .EventRecord import CallSite, EventRecord
 from .SmaliScanner import SmaliScanner
 from typing import List, Dict, Set

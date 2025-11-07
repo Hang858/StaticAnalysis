@@ -3,7 +3,7 @@ import time
 import json
 from scripts.EventResolver import EventResolver
 from scripts.SmaliScanner import SmaliScanner
-from scripts.Tracker import Tracker
+from scripts.TrackerCFG import Tracker
 from scripts.ResourceMapper import ResourceMapper
 
 from scripts.InfoExtract.FullChain import collect_direct_parents, build_full_chains
@@ -94,12 +94,12 @@ def main():
     """
     Main pipeline controller.
     """
-    APP_NAME = "keepassdx"
+    APP_NAME = "meituan"
     PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
     APP_BASE_DIR = os.path.join(PROJECT_ROOT, "app", APP_NAME, "output")
     SMALI_ROOT_DIR = os.path.join(APP_BASE_DIR, "decompiled")
     HIERARCHY_FILE_PATH = os.path.join(APP_BASE_DIR, "full_class_hierarchy.json")
-    RESULTS_DIR = os.path.join(PROJECT_ROOT, "results")
+    RESULTS_DIR = os.path.join(PROJECT_ROOT, "results_temp")
 
     print(f"--- Starting Analysis Pipeline for: {APP_NAME} ---")
     if not os.path.isdir(SMALI_ROOT_DIR):

@@ -58,7 +58,7 @@ class Tracker:
                             #         return param0
                             current = param0
                         else:
-                            self.logger.error(f"resolve_register_to_resource: move-result case, but previous stmt is not invoke, {sm.get_statement_text(stmt)}")
+                            self.logger.error(f"resolve_register_to_resource: move-result case, but previous stmt is not invoke, {stmt}")
                             return None
                     elif isinstance(right, str) and right.startswith("0x7f"):
                         return right

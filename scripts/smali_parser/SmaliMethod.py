@@ -1,5 +1,5 @@
 import re
-from typing import List
+from typing import List, Dict
 
 class SmaliMethod:
     """
@@ -10,6 +10,14 @@ class SmaliMethod:
         self.method_signature = method_signature
         self.method_body = method_body  # 存储方法体语句列表
         self.params = self._get_method_params()
+        # ---- 新增控制流属性 -----
+
+        self.labels: Dict[str, int] = {}
+        self.successors: Dict[int, List[int]] = {}
+        self.predecessors: Dict[int, List[int]] = {}
+        self.try_catch_blocks: List[Dict[str, int]] = []
+
+        self._build_cfg()
     
     def _get_method_params(self) -> List[str]:
         """
@@ -24,7 +32,128 @@ class SmaliMethod:
             full = arr_prefix + base
             results.append(full)
         return results
+
+    ## 创建控制流，新增方法
+    def _build_cfg(self):
+        stmts = self.get_statements()
+        num_stmts = len(stmts)
+
+        self.predecessors = {i: [] for i in range(num_stmts)}
+        self.successors = {i: [] for i in range(num_stmts)}
+        self.labels.clear()
+        self.try_catch_blocks.clear()
+
+        # 解析所有的标签
+        for idx, stmt in enumerate(stmts):
+            if stmt.startswith(':'):
+                self.labels[stmt] = idx
+
+        # 解析 .catch 块
+        catch_pattern = re.compile(r'^\.(?:catch|catchall).*?{\s*(:.*?)\s*\.\.\s*(:.*?)\s*}\s*(:.*)')
+        
+        for idx, stmt in enumerate(stmts):
+            catch_match = catch_pattern.match(stmt)
+            if catch_match:
+                start_label, end_label, handler_label = catch_match.groups()
+                start_idx = self.labels.get(start_label, -1)
+                end_idx = self.labels.get(end_label, -1) # end_idx 标签指向最后一条指令的 *下一条*
+                handler_idx = self.labels.get(handler_label, -1)
+                
+                if start_idx != -1 and end_idx != -1 and handler_idx != -1:
+                    self.try_catch_blocks.append({
+                        'start_idx': start_idx,
+                        'end_idx': end_idx,
+                        'handler_idx': handler_idx
+                    })
+        # 构建 Successors (后继)
+        for idx, stmt in enumerate(stmts):
+            default_next = []
+            if (idx + 1) < num_stmts:
+                default_next = [idx + 1]
+            
+            if stmt.startswith('return') or stmt.startswith('throw'):
+                self.successors[idx] = []
+
+            elif stmt.startswith('goto'):
+                label = stmt.split()[1]
+                target_idx = self.labels.get(label)
+                if target_idx is not None:
+                    self.successors[idx] = [target_idx]
+                else:
+                    self.successors[idx] = []
+
+            elif stmt.startswith('if-'):
+                label = stmt.split(',')[-1].strip()
+                target_idx = self.labels.get(label)
+                if target_idx is not None:
+                    self.successors[idx] = default_next + [target_idx]
+                else:
+                    self.successors[idx] = default_next
+            elif stmt.startswith('packed-switch') or stmt.startswith('sparse-switch'):
+                label = stmt.split(',')[-1].strip()
+                target_data_idx = self.labels.get(label)
+                targets = []
+                if target_data_idx is not None:
+                    pass
+
+                self.successors[idx] = default_next + targets
+            else:
+                self.successors[idx] = default_next
+
+            if self.is_method_invocation(stmt) or \
+               stmt.startswith('new-instance') or \
+               stmt.startswith('check-cast') or \
+               stmt.startswith('aget') or \
+               stmt.startswith('iget') or \
+               stmt.startswith('array-length') or \
+               stmt.startswith('div-') or \
+               stmt.startswith('rem-'):
+                
+                for block in self.try_catch_blocks:
+                    # 检查当前指令是否在 try 块的 [start, end) 范围内
+                    if block['start_idx'] <= idx < block['end_idx']:
+                        if block['handler_idx'] not in self.successors.get(idx, []):
+                            self.successors.setdefault(idx, []).append(block['handler_idx'])
+
+        # 构建前驱
+        for idx, targets in self.successors.items():
+            for target_idx in targets:
+                if target_idx < num_stmts: # 确保目标有效
+                    if idx not in self.predecessors[target_idx]:
+                        self.predecessors[target_idx].append(idx)
     
+    def get_predecessors(self, index: int) -> List[int]:
+        """
+        获取给定索引处语句的所有 *直接* 前驱语句的索引
+        这在回溯分析（如 Tracker）中非常有用
+        :param index: 语句索引
+        :return: 前驱语句的索引列表
+        """
+        return self.predecessors.get(index, [])
+
+    def get_successors(self, index: int) -> List[int]:
+        """
+        获取给定索引处语句的所有 *直接* 后继语句的索引
+        :param index: 语句索引
+        :return: 后继语句的索引列表
+        """
+        return self.successors.get(index, [])
+        
+    def get_exception_handlers(self, index: int) -> List[int]:
+        """
+        获取给定索引处的指令 *如果* 抛出异常，可能的处理程序（catch块）的起始索引
+        :param index: 语句索引
+        :return: catch 块起始语句的索引列表
+        """
+        handlers = []
+        for block in self.try_catch_blocks:
+            if block['start_idx'] <= index < block['end_idx']:
+                if block['handler_idx'] not in handlers:
+                    handlers.append(block['handler_idx'])
+        return handlers
+
+    ### ---- 控制流新增的方法------------ ## 
+
     def get_params(self) -> List[str]:
         """
         获取方法的参数列表
