@@ -267,6 +267,7 @@ class SmaliMethod:
                 return method_sig
         return None
 
+
     def get_method_invocation_param(self, statement, param_index):
         """
         从方法调用语句中获取指定序号的参数

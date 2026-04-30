@@ -82,8 +82,8 @@ class EventResolver:
                     key = detail.get("callsite")
                 else :
                     self.logger.warning(f"未找到事件设置的view字段与ID的映射,{cs.file_path}: {cs.statement}")
-                    continue
-            
+                    note = "view_id 为未解析类字段"
+                    view_id = key            
             elif tag == "unknown":
                 # view_id 为未知函数的返回值
                 view_id = key[3]

@@ -34,7 +34,9 @@ class SmaliScanner:
             "inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;",
             "inflate(ILandroid/view/ViewGroup;)Landroid/view/View;",
             "inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;",
-    }
+        }
+
+        # self.view_creation
         self.layout_inflation_methods = {
             "setContentView(I)V",
             "inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;",
@@ -84,10 +86,12 @@ class SmaliScanner:
 
         self.fragment_operation_methods = {
             "add(ILandroid/support/v4/app/Fragment;Ljava/lang/String;)Landroid/support/v4/app/FragmentTransaction;",
+            "add(Landroid/app/Fragment;Ljava/lang/String;)Landroid/app/FragmentTransaction;",
             "add(ILandroidx/fragment/app/Fragment;)Landroidx/fragment/app/FragmentTransaction;",
             "add(ILandroidx/fragment/app/Fragment;Ljava/lang/String;)Landroidx/fragment/app/FragmentTransaction;",
             "replace(ILandroid/support/v4/app/Fragment;Ljava/lang/String;)Landroid/support/v4/app/FragmentTransaction;",
             "replace(ILandroidx/fragment/app/Fragment;Ljava/lang/String;)Landroidx/fragment/app/FragmentTransaction;",
+            "replace(ILandroid/app/Fragment;)Landroid/app/FragmentTransaction;",
             "replace(ILandroidx/fragment/app/Fragment;)Landroidx/fragment/app/FragmentTransaction;",
             "add(ILandroid/support/v4/app/Fragment;)Landroid/support/v4/app/FragmentTransaction;",
             "replace(ILandroid/support/v4/app/Fragment;)Landroid/support/v4/app/FragmentTransaction;",
@@ -106,6 +110,140 @@ class SmaliScanner:
             "setContentView(Landroid/view/View;)V",
             "addContentView(Landroid/view/View"
         }
+
+        # 等价addView方法
+        self.base_add_methods = {
+            "addView(Landroid/view/View;",
+            "setView(Landroid/view/View;",
+            "addContentView(Landroid/view/View;",
+        }
+        self.wrapper_methods = {}
+        self.wrapper_methods_exclude = {
+            "onCreate",
+            "onCreateView",
+            "onViewCreated",
+            "onStart",
+            "onResume",
+            "onPause",
+            "onStop",
+            "onDestroy",
+            "onAttach",
+            "onDetach",
+            "<init>", # 构造函数
+            "<clinit>" # 静态初始化
+        }
+        self.android_view = {
+            # 基础
+            "Landroid/view/View;",
+            "Landroid/view/ViewGroup;",
+            
+            # 常见的 Widget
+            "Landroid/widget/TextView;",
+            "Landroid/widget/ImageView;",
+            "Landroid/widget/Button;",
+            "Landroid/widget/EditText;",
+            "Landroid/widget/ImageButton;",
+            "Landroid/widget/CheckBox;",
+            "Landroid/widget/RadioButton;",
+            "Landroid/widget/CheckedTextView;",
+            "Landroid/widget/ProgressBar;",
+            "Landroid/widget/SeekBar;",
+            "Landroid/widget/RatingBar;",
+            "Landroid/widget/Switch;",
+            "Landroid/widget/Spinner;",
+            "Landroid/widget/ScrollView;",
+            "Landroid/widget/HorizontalScrollView;",
+            
+            # 常见的 Layout
+            "Landroid/widget/LinearLayout;",
+            "Landroid/widget/RelativeLayout;",
+            "Landroid/widget/FrameLayout;",
+            "Landroid/widget/TableLayout;",
+            "Landroid/widget/GridLayout;",
+            
+            # 列表视图
+            "Landroid/widget/ListView;",
+            "Landroid/widget/GridView;",
+            "Landroid/widget/ExpandableListView;",
+            
+            # AndroidX / Support 库常见 View
+            "Landroidx/recyclerview/widget/RecyclerView;",
+            "Landroid/support/v7/widget/RecyclerView;",
+            "Landroidx/constraintlayout/widget/ConstraintLayout;",
+            "Landroid/support/constraint/ConstraintLayout;",
+            "Landroidx/viewpager/widget/ViewPager;",
+            "Landroid/support/v4/view/ViewPager;",
+            "Landroidx/viewpager2/widget/ViewPager2;",
+            "Landroidx/cardview/widget/CardView;",
+            "Landroid/support/v7/widget/CardView;",
+            "Landroidx/drawerlayout/widget/DrawerLayout;",
+            "Landroidx/coordinatorlayout/widget/CoordinatorLayout;",
+            "Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;",
+            "Lcom/google/android/material/tabs/TabLayout;",
+            "Landroid/support/design/widget/TabLayout;",
+            "Landroidx/appcompat/widget/Toolbar;",
+            "Landroid/support/v7/widget/Toolbar;",
+        }
+
+    def _pre_scan_wrappers(self):
+        """
+        预扫描：使用不动点迭代发现所有封装了 addView 的方法
+        """
+        for root, dirs, files in os.walk(self.smali_root):
+            for file in files:
+                file_path = os.path.join(root, file)
+                if not file.endswith(".smali"):
+                    continue
+                path = os.path.join(root, file)
+                sc = SmaliClass(path)
+                class_name = sc.class_name
+
+                if class_name.startswith(("androidx/", "android/support/", "com/google")):
+                    continue
+
+                methods = sc.get_methods_body()
+                for method_sig, body in methods.items():
+                    sm = SmaliMethod(class_name, method_sig, body)
+                    stmts = sm.get_statements()
+                    current_full_sig = f"{class_name}->{method_sig}"
+
+                    for idx, stmt in enumerate(stmts):
+                        if not sm.is_method_invocation(stmt):
+                            continue
+                        callee = sm.extract_called_method_signature(stmt)
+                        full_callee = sm.extract_called_method_signature(stmt, True)
+                        view_reg = None
+                        if any(callee.startswith(t) for t in self.base_add_methods):
+                            view_reg = sm.get_method_invocation_param(stmt, 1)
+                            # if view_reg.startswith("p"):
+                            #     param_idx = view_reg[1:-1]
+                        elif full_callee in self.wrapper_methods:
+                            mapped_idx = self.wrapper_methods[full_callee]
+                            view_reg = sm.get_method_invocation_param(stmt, mapped_idx)
+                        if view_reg and view_reg.startswith("p"):
+                            if any(method_sig.startswith(t) for t in self.wrapper_methods_exclude):
+                                continue
+                            param_idx = view_reg[1:]
+                            if int(param_idx) == 0:
+                                break
+                            param = sm.params[int(param_idx) - 1]
+                            class_chain = self.rm.get_class_chain(param)
+                            is_view = False
+                            if not class_chain:
+                                break
+                            for view_class in class_chain:
+                                if view_class in self.android_view:
+                                    is_view = True
+                            if is_view:
+                                self.wrapper_methods[current_full_sig] = param_idx
+                                self.logger.info(f"发现封装方法: {method_sig}, View参数索引: {param_idx}")
+                                break
+                            else:
+                                break
+                            # self.wrapper_methods[current_full_sig] = param_idx
+                            # self.logger.info(f"发现封装方法: {method_sig}, View参数索引: {param_idx}")
+                            # break
+
 
     def _process_view_creation(self, sm: SmaliMethod, stmt: str, idx: int, callee: str):
         """
@@ -201,12 +339,26 @@ class SmaliScanner:
         if dialog_fragment is None:
             return
         self.class2dialog_fragment.setdefault(sm.get_class_name(), set()).add(dialog_fragment)
+    
+    def _perform_wrapper_method(self, sm: SmaliMethod, stmt: str, idx: int, callee: str):
+
+        param_idx = self.wrapper_methods[callee]
+        if param_idx is None:
+            return
+        reg = sm.get_method_invocation_param(stmt, param_idx)
+        view = self.tracker.resolve_register_class(sm, idx, reg)
+        if view is None:
+            return
+        if view.startswith('p') or view.startswith('Landroid/'):
+            return
+        self.class2added_views.setdefault(sm.get_class_name(), set()).add(view)
 
     def scan(self) -> List[CallSite]:
         """
         扫描Smali文件，查找目标方法调用
         :return: 调用站点列表
         """
+        self._pre_scan_wrappers()
         callsites: List[CallSite] = []
         for root, dirs, files in os.walk(self.smali_root):
             for file in files:
@@ -226,6 +378,8 @@ class SmaliScanner:
                     #     pass
                     sm = SmaliMethod(class_name, method_sig, body)
                     stmts = sm.get_statements()
+                    if method_sig.startswith("bind(Landroid/view/View;)"):
+                        pass
                     for idx, stmt in enumerate(stmts):
                         # 处理 createFragment 的情况
                         if any(method_sig == t for t in self.create_fragment):
@@ -251,6 +405,8 @@ class SmaliScanner:
                             self._perform_adapter_set(sm, stmt, idx)
                         if any(callee.startswith(t) for t in self.add_set_view):
                             self._perform_add_set_view(sm, stmt, idx)
+                        if any(callee.startswith(t) for t in self.wrapper_methods):
+                            self._perform_wrapper_method(sm, stmt, idx, callee)
                         if any(callee.startswith(t) for t in self.dialog_fragment_show_methods):
                             self._perform_dialog_fragment(sm, stmt, idx)
                             
