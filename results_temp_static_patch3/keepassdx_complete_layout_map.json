@@ -1,0 +1,243 @@
+{
+    "com/kunzisoft/androidclearchroma/ChromaDialog": [
+        "Lcom/kunzisoft/androidclearchroma/R$layout;->color_dialog_fragment:I"
+    ],
+    "com/kunzisoft/androidclearchroma/view/ChannelView": [
+        "Lcom/kunzisoft/androidclearchroma/R$layout;->channel_row:I"
+    ],
+    "com/kunzisoft/androidclearchroma/view/ChromaColorView": [
+        "Lcom/kunzisoft/androidclearchroma/R$layout;->channel_row:I",
+        "Lcom/kunzisoft/androidclearchroma/R$layout;->chroma_color:I"
+    ],
+    "com/kunzisoft/keepass/settings/SettingsActivity": [
+        "0x7f0c0025"
+    ],
+    "com/kunzisoft/keepass/settings/ExternalSettingsActivity": [
+        "0x7f0c0025"
+    ],
+    "com/kunzisoft/keepass/settings/preferencedialogfragment/adapter/ListRadioItemAdapter": [
+        "0x7f0c00b3"
+    ],
+    "com/kunzisoft/keepass/settings/preferencedialogfragment/DatabaseTemplatesGroupPreferenceDialogFragmentCompat": [
+        "0x7f0c00b3"
+    ],
+    "com/kunzisoft/keepass/settings/preferencedialogfragment/adapter/AutofillBlocklistAdapter": [
+        "0x7f0c00b4"
+    ],
+    "com/kunzisoft/keepass/settings/preferencedialogfragment/AutofillBlocklistPreferenceDialogFragmentCompat": [
+        "0x7f0c00b4"
+    ],
+    "com/kunzisoft/keepass/settings/preferencedialogfragment/DatabaseKeyDerivationPreferenceDialogFragmentCompat": [
+        "0x7f0c00b3"
+    ],
+    "com/kunzisoft/keepass/settings/preferencedialogfragment/DatabaseDataCompressionPreferenceDialogFragmentCompat": [
+        "0x7f0c00b3"
+    ],
+    "com/kunzisoft/keepass/settings/preferencedialogfragment/DatabaseColorPreferenceDialogFragmentCompat": [
+        "0x7f0c003d"
+    ],
+    "com/kunzisoft/keepass/settings/preferencedialogfragment/DatabaseRecycleBinGroupPreferenceDialogFragmentCompat": [
+        "0x7f0c00b3"
+    ],
+    "com/kunzisoft/keepass/settings/preferencedialogfragment/DatabaseEncryptionAlgorithmPreferenceDialogFragmentCompat": [
+        "0x7f0c00b3"
+    ],
+    "com/kunzisoft/keepass/settings/preferencedialogfragment/adapter/ListSelectionItemAdapter": [
+        "0x7f0c00b2"
+    ],
+    "com/kunzisoft/keepass/settings/preferencedialogfragment/PasskeysPrivilegedAppsPreferenceDialogFragmentCompat": [
+        "0x7f0c00b2"
+    ],
+    "com/kunzisoft/keepass/activities/fragments/PassphraseGeneratorFragment": [
+        "0x7f0c0043"
+    ],
+    "com/kunzisoft/keepass/activities/fragments/PasswordGeneratorFragment": [
+        "0x7f0c0044"
+    ],
+    "com/kunzisoft/keepass/adapters/KeyGeneratorPagerAdapter": [
+        "0x7f0c0043",
+        "0x7f0c0044"
+    ],
+    "com/kunzisoft/keepass/activities/fragments/KeyGeneratorFragment": [
+        "0x7f0c0043",
+        "0x7f0c0044",
+        "0x7f0c004f"
+    ],
+    "com/kunzisoft/keepass/activities/KeyGeneratorActivity": [
+        "0x7f0c0023",
+        "0x7f0c0043",
+        "0x7f0c0044",
+        "0x7f0c004f"
+    ],
+    "com/kunzisoft/keepass/activities/fragments/IconPickerFragment": [
+        "0x7f0c004f"
+    ],
+    "com/kunzisoft/keepass/activities/IconPickerActivity": [
+        "0x7f0c0021",
+        "0x7f0c004f"
+    ],
+    "com/kunzisoft/keepass/activities/AboutActivity": [
+        "0x7f0c001c"
+    ],
+    "com/kunzisoft/keepass/adapters/FileDatabaseHistoryAdapter": [
+        "0x7f0c005e"
+    ],
+    "com/kunzisoft/keepass/activities/FileDatabaseSelectActivity": [
+        "0x7f0c001f",
+        "0x7f0c005e"
+    ],
+    "com/kunzisoft/keepass/adapters/NodesAdapter": [
+        "0x7f0c0061",
+        "0x7f0c0062"
+    ],
+    "com/kunzisoft/keepass/activities/fragments/GroupFragment": [
+        "0x7f0c004a",
+        "0x7f0c0061",
+        "0x7f0c0062"
+    ],
+    "com/kunzisoft/keepass/adapters/BreadcrumbAdapter": [
+        "0x7f0c005c"
+    ],
+    "com/kunzisoft/keepass/activities/GroupActivity": [
+        "0x7f0c0020",
+        "0x7f0c004a",
+        "0x7f0c005c",
+        "0x7f0c0061",
+        "0x7f0c0062"
+    ],
+    "com/kunzisoft/keepass/biometric/DeviceUnlockFragment": [
+        "0x7f0c003e"
+    ],
+    "com/kunzisoft/keepass/activities/MainCredentialActivity": [
+        "0x7f0c0024",
+        "0x7f0c003e"
+    ],
+    "com/kunzisoft/keepass/adapters/TemplatesSelectorAdapter": [
+        "0x7f0c0066"
+    ],
+    "com/kunzisoft/keepass/activities/EntryEditActivity": [
+        "0x7f0c001e",
+        "0x7f0c0066"
+    ],
+    "com/kunzisoft/keepass/activities/ImageViewerActivity": [
+        "0x7f0c0022"
+    ],
+    "com/kunzisoft/keepass/adapters/TagsAdapter": [
+        "0x7f0c0064"
+    ],
+    "com/kunzisoft/keepass/activities/EntryActivity": [
+        "0x7f0c001d",
+        "0x7f0c0064"
+    ],
+    "com/kunzisoft/keepass/activities/dialogs/GroupEditDialogFragment": [
+        "0x7f0c0046"
+    ],
+    "com/kunzisoft/keepass/activities/dialogs/ColorPickerDialogFragment": [
+        "0x7f0c003d"
+    ],
+    "com/kunzisoft/keepass/activities/dialogs/SetMainCredentialDialogFragment": [
+        "0x7f0c004c"
+    ],
+    "com/kunzisoft/keepass/activities/dialogs/EntryCustomFieldDialogFragment": [
+        "0x7f0c0042"
+    ],
+    "com/kunzisoft/keepass/activities/dialogs/SortDialogFragment": [
+        "0x7f0c004e"
+    ],
+    "com/kunzisoft/keepass/activities/dialogs/IconEditDialogFragment": [
+        "0x7f0c0047"
+    ],
+    "com/kunzisoft/keepass/activities/dialogs/FileManagerDialogFragment": [
+        "0x7f0c003c"
+    ],
+    "com/kunzisoft/keepass/activities/dialogs/GroupDialogFragment": [
+        "0x7f0c0045",
+        "0x7f0c0064"
+    ],
+    "com/kunzisoft/keepass/activities/dialogs/UnavailableFeatureDialogFragment": [
+        "0x7f0c0050"
+    ],
+    "com/kunzisoft/keepass/activities/dialogs/SetOTPDialogFragment": [
+        "0x7f0c004d"
+    ],
+    "com/kunzisoft/keepass/activities/dialogs/MainCredentialDialogFragment": [
+        "0x7f0c0049"
+    ],
+    "com/kunzisoft/keepass/adapters/EntryHistoryAdapter": [
+        "0x7f0c0060"
+    ],
+    "com/kunzisoft/keepass/activities/fragments/EntryHistoryFragment": [
+        "0x7f0c0041",
+        "0x7f0c0060"
+    ],
+    "com/kunzisoft/keepass/adapters/IconPickerAdapter": [
+        "0x7f0c005f"
+    ],
+    "com/kunzisoft/keepass/activities/fragments/IconFragment": [
+        "0x7f0c005f"
+    ],
+    "com/kunzisoft/keepass/adapters/EntryAttachmentsItemsAdapter": [
+        "0x7f0c0052"
+    ],
+    "com/kunzisoft/keepass/activities/fragments/EntryFragment": [
+        "0x7f0c003f",
+        "0x7f0c0052"
+    ],
+    "com/kunzisoft/keepass/activities/fragments/EntryEditFragment": [
+        "0x7f0c0040",
+        "0x7f0c0052"
+    ],
+    "com/kunzisoft/keepass/adapters/FieldsAdapter": [
+        "0x7f0c0069"
+    ],
+    "com/kunzisoft/keepass/view/SearchFiltersView": [
+        "0x7f0c00d8"
+    ],
+    "com/kunzisoft/keepass/view/KeyFileSelectionView": [
+        "0x7f0c00d4"
+    ],
+    "com/kunzisoft/keepass/view/TemplateAbstractView": [
+        "0x7f0c00d9"
+    ],
+    "com/kunzisoft/keepass/view/DateTimeEditFieldView": [
+        "0x7f0c00d1"
+    ],
+    "com/kunzisoft/keepass/view/MainCredentialView": [
+        "0x7f0c00d5"
+    ],
+    "com/kunzisoft/keepass/view/PasswordEditView": [
+        "0x7f0c00d6"
+    ],
+    "com/kunzisoft/keepass/view/DeviceUnlockView": [
+        "0x7f0c00d0"
+    ],
+    "com/kunzisoft/keepass/view/TextSelectFieldView$ValueSpinnerAdapter": [
+        "0x7f0c0063"
+    ],
+    "com/kunzisoft/keepass/view/TextSelectFieldView": [
+        "0x7f0c0063"
+    ],
+    "com/kunzisoft/keepass/view/DateTimeFieldView": [
+        "0x7f0c00cf"
+    ],
+    "com/kunzisoft/keepass/view/AddNodeButtonView": [
+        "0x7f0c00cd"
+    ],
+    "com/kunzisoft/keepass/view/HardwareKeySelectionView": [
+        "0x7f0c00d3"
+    ],
+    "com/kunzisoft/keepass/view/TagsCompletionView": [
+        "0x7f0c0065"
+    ],
+    "com/kunzisoft/keepass/tasks/ProgressTaskDialogFragment": [
+        "0x7f0c004b"
+    ],
+    "com/kunzisoft/keepass/credentialprovider/magikeyboard/KeyboardView": [
+        "Lcom/kunzisoft/keepass/credentialprovider/magikeyboard/KeyboardView;->mPopupLayout:I"
+    ],
+    "com/kunzisoft/keepass/credentialprovider/magikeyboard/MagikeyboardService": [
+        "0x7f0c0067",
+        "0x7f0c0068",
+        "0x7f0c0069"
+    ]
+}

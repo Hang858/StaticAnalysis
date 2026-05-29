@@ -1,0 +1,76 @@
+{
+    "com/kunzisoft/keepass/settings/preferencedialogfragment/DatabaseColorPreferenceDialogFragmentCompat": [
+        "com.kunzisoft.androidclearchroma.view.ChromaColorView"
+    ],
+    "com/kunzisoft/keepass/activities/KeyGeneratorActivity": [
+        "com.kunzisoft.keepass.view.ToolbarAction"
+    ],
+    "com/kunzisoft/keepass/activities/IconPickerActivity": [
+        "com.kunzisoft.keepass.view.ToolbarAction"
+    ],
+    "com/kunzisoft/keepass/activities/FileDatabaseSelectActivity": [
+        "com.kunzisoft.keepass.view.ToolbarSpecial"
+    ],
+    "com/kunzisoft/keepass/activities/GroupActivity": [
+        "com.kunzisoft.keepass.view.AddNodeButtonView",
+        "com.kunzisoft.keepass.view.NavigationDatabaseView",
+        "com.kunzisoft.keepass.view.SearchFiltersView",
+        "com.kunzisoft.keepass.view.ToolbarAction",
+        "com.kunzisoft.keepass.view.ToolbarSpecial"
+    ],
+    "com/kunzisoft/keepass/activities/MainCredentialActivity": [
+        "com.kunzisoft.keepass.view.MainCredentialView",
+        "com.kunzisoft.keepass.view.ToolbarSpecial"
+    ],
+    "com/kunzisoft/keepass/activities/EntryEditActivity": [
+        "com.kunzisoft.keepass.activities.fragments.EntryEditFragment",
+        "com.kunzisoft.keepass.view.ToolbarAction",
+        "com.kunzisoft.keepass.view.ToolbarSpecial"
+    ],
+    "com/kunzisoft/keepass/activities/EntryActivity": [
+        "com.kunzisoft.keepass.activities.fragments.EntryFragment"
+    ],
+    "com/kunzisoft/keepass/activities/dialogs/GroupEditDialogFragment": [
+        "com.kunzisoft.keepass.view.DateTimeEditFieldView",
+        "com.kunzisoft.keepass.view.InheritedCompletionView",
+        "com.kunzisoft.keepass.view.TagsCompletionView"
+    ],
+    "com/kunzisoft/keepass/activities/dialogs/ColorPickerDialogFragment": [
+        "com.kunzisoft.androidclearchroma.view.ChromaColorView"
+    ],
+    "com/kunzisoft/keepass/activities/dialogs/SetMainCredentialDialogFragment": [
+        "com.kunzisoft.keepass.view.HardwareKeySelectionView",
+        "com.kunzisoft.keepass.view.KeyFileSelectionView",
+        "com.kunzisoft.keepass.view.PasswordEditView"
+    ],
+    "com/kunzisoft/keepass/activities/dialogs/GroupDialogFragment": [
+        "com.kunzisoft.keepass.view.DateTimeFieldView"
+    ],
+    "com/kunzisoft/keepass/activities/dialogs/MainCredentialDialogFragment": [
+        "com.kunzisoft.keepass.view.MainCredentialView"
+    ],
+    "com/kunzisoft/keepass/activities/fragments/EntryFragment": [
+        "com.kunzisoft.keepass.activities.fragments.EntryHistoryFragment",
+        "com.kunzisoft.keepass.view.TemplateView"
+    ],
+    "com/kunzisoft/keepass/activities/fragments/PasswordGeneratorFragment": [
+        "com.kunzisoft.keepass.view.PasswordEditView"
+    ],
+    "com/kunzisoft/keepass/activities/fragments/PassphraseGeneratorFragment": [
+        "com.kunzisoft.keepass.view.PasswordEditView"
+    ],
+    "com/kunzisoft/keepass/activities/fragments/EntryEditFragment": [
+        "com.kunzisoft.keepass.view.TagsCompletionView",
+        "com.kunzisoft.keepass.view.TemplateEditView"
+    ],
+    "com/kunzisoft/keepass/view/TemplateAbstractView": [
+        "com.kunzisoft.keepass.view.SectionView"
+    ],
+    "com/kunzisoft/keepass/view/MainCredentialView": [
+        "com.kunzisoft.keepass.view.HardwareKeySelectionView",
+        "com.kunzisoft.keepass.view.KeyFileSelectionView"
+    ],
+    "com/kunzisoft/keepass/credentialprovider/magikeyboard/MagikeyboardService": [
+        "com.kunzisoft.keepass.credentialprovider.magikeyboard.KeyboardView"
+    ]
+}

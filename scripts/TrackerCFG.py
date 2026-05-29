@@ -5,6 +5,193 @@ class Tracker:
     def __init__(self):
         self.logger = logger
 
+    @staticmethod
+    def _is_synthetic_lambda_ref(value: Optional[str]) -> bool:
+        return isinstance(value, str) and (
+            "$$ExternalSyntheticLambda" in value
+            or "$r8$lambda$" in value
+            or "lambda$" in value
+        )
+
+    @staticmethod
+    def _is_synthetic_lambda_class(value: Optional[str]) -> bool:
+        return isinstance(value, str) and (
+            "$$ExternalSyntheticLambda" in value
+            or "$r8$lambda$" in value
+            or "lambda$" in value
+        )
+
+    @staticmethod
+    def _normalize_class_descriptor(value: Optional[str]) -> Optional[str]:
+        if not isinstance(value, str):
+            return value
+        if value.startswith("L") and ";" in value:
+            return value[1:value.index(";")]
+        return value
+
+    @staticmethod
+    def _is_view_getter_name(callee: Optional[str]) -> bool:
+        if not callee:
+            return False
+        method_name = callee.split("(", 1)[0]
+        if not (method_name.startswith("get") or method_name.startswith("access$get")):
+            return False
+        return_type = callee.split(")")[-1]
+        return (
+            return_type in {
+                "Landroid/view/View;",
+                "Landroid/view/ViewGroup;",
+                "Landroid/widget/TextView;",
+                "Landroid/widget/ImageView;",
+                "Landroid/widget/Button;",
+                "Landroid/widget/EditText;",
+                "Landroid/widget/ImageButton;",
+                "Landroid/widget/Spinner;",
+                "Landroid/widget/CompoundButton;",
+                "Landroid/widget/CheckedTextView;",
+                "Landroid/widget/AdapterView;",
+                "Landroid/widget/LinearLayout;",
+                "Landroid/widget/RelativeLayout;",
+                "Landroid/widget/FrameLayout;",
+                "Landroidx/appcompat/widget/AppCompatImageButton;",
+                "Landroidx/appcompat/widget/AppCompatAutoCompleteTextView;",
+                "Landroidx/appcompat/widget/AppCompatTextView;",
+                "Landroidx/appcompat/widget/AppCompatButton;",
+                "Landroidx/appcompat/widget/AppCompatEditText;",
+                "Landroidx/appcompat/widget/AppCompatImageView;",
+                "Landroidx/appcompat/widget/SearchView;",
+                "Landroidx/core/widget/NestedScrollView;",
+                "Landroidx/recyclerview/widget/RecyclerView;",
+                "Landroid/support/v7/widget/RecyclerView;",
+                "Landroidx/constraintlayout/widget/ConstraintLayout;",
+                "Landroidx/cardview/widget/CardView;",
+                "Lcom/google/android/material/button/MaterialButton;",
+                "Lcom/google/android/material/floatingactionbutton/FloatingActionButton;",
+                "Lcom/google/android/material/textfield/TextInputLayout;",
+                "Lcom/google/android/material/textfield/TextInputEditText;",
+                "Lcom/google/android/material/card/MaterialCardView;",
+                "Lcom/google/android/material/chip/Chip;",
+                "Lcom/google/android/material/chip/ChipGroup;",
+                "Lcom/google/android/material/navigation/NavigationView;",
+                "Lcom/google/android/material/switchmaterial/SwitchMaterial;",
+                "Lcom/google/android/material/appbar/MaterialToolbar;",
+            }
+        )
+
+    @staticmethod
+    def _is_view_compat_call(callee: Optional[str]) -> bool:
+        return isinstance(callee, str) and "setOnApplyWindowInsetsListener" in callee
+
+    def _classify_view_invoke(self, sm: SmaliMethod, invoke_stmt: str, invoke_idx: int):
+        callee = sm.extract_called_method_signature(invoke_stmt)
+        full_callee = sm.extract_called_method_signature(invoke_stmt, True)
+        key = (sm.get_class_name(), sm.get_method_signature(), invoke_idx, callee)
+        if callee == "findViewById(I)Landroid/view/View;" or (isinstance(callee, str) and callee.startswith("findViewById(")):
+            return key, "findViewById"
+        if isinstance(callee, str) and callee.startswith("inflate("):
+            return key, "inflate"
+        if self._is_view_getter_name(callee):
+            return key, "getter"
+        if self._is_view_compat_call(callee):
+            return key, "viewcompat"
+        if self._is_synthetic_lambda_ref(full_callee) or self._is_synthetic_lambda_class(full_callee):
+            return key, "synthetic"
+        if self._is_synthetic_lambda_ref(callee):
+            return key, "synthetic"
+        return key, "unknown"
+
+    def resolve_getter_view(self, sm: SmaliMethod, start_idx: int, reg: str):
+        """
+        [CFG-aware] 解析 getter 方法返回值对应的来源。
+        返回值格式为字典，方便上层继续递归消费。
+        """
+        stmts = sm.get_statements()
+        worklist = []
+        visited = set()
+
+        for pred_idx in sm.get_predecessors(start_idx):
+            if (pred_idx, reg) not in visited:
+                worklist.append((pred_idx, reg))
+                visited.add((pred_idx, reg))
+
+        queue_head = 0
+        final_reg_states = {reg}
+        while queue_head < len(worklist):
+            idx, current = worklist[queue_head]
+            queue_head += 1
+
+            final_reg_states.discard(current)
+            if idx < 0:
+                final_reg_states.add(current)
+                continue
+
+            stmt = stmts[idx]
+            new_reg_to_track = None
+            stop_path = False
+
+            if sm.is_check_cast_statement(stmt):
+                left = sm.get_check_cast_left(stmt)
+                right = sm.get_check_cast_right(stmt)
+                if left == current and right:
+                    if right.startswith('L'):
+                        pass
+                    else:
+                        new_reg_to_track = right
+
+            elif sm.is_assignment_statement(stmt):
+                if stmt.startswith(('iput', 'sput', 'aput')):
+                    pass
+                else:
+                    left = sm.get_assignment_left(stmt)
+                    right = sm.get_assignment_right(stmt)
+                    if left == current:
+                        if right is None:
+                            get_result = sm.get_invoke_statement(stmt, idx)
+                            if not get_result:
+                                self.logger.error(f"未找到 move-result 指令对应的 invoke 语句: {sm.get_class_name()}: {stmt}")
+                                return None
+                            invoke_stmt, invoke_idx = get_result
+                            key, tag = self._classify_view_invoke(sm, invoke_stmt, invoke_idx)
+                            if tag == 'synthetic':
+                                return {'source': key, 'tag': 'synthetic', 'callsite': key, 'callee': sm.extract_called_method_signature(invoke_stmt, True)}
+                            return {
+                                'source': key,
+                                'tag': tag,
+                                'callsite': key,
+                                'callee': sm.extract_called_method_signature(invoke_stmt, True),
+                            }
+                        if stmt.startswith('new-instance') and isinstance(right, str) and right.startswith('L'):
+                            if self._is_synthetic_lambda_class(right):
+                                return {'source': right, 'tag': 'synthetic'}
+                            return {'source': right, 'tag': 'new_instance'}
+                        if isinstance(right, str) and right.startswith('L'):
+                            if self._is_synthetic_lambda_ref(right):
+                                return {'source': right, 'tag': 'synthetic'}
+                            if ';->' in right:
+                                return {'source': right, 'tag': 'field'}
+                            return {'source': right, 'tag': 'new_instance'}
+                        if right and (right.startswith('v') or right.startswith('p')):
+                            new_reg_to_track = right
+                        else:
+                            stop_path = True
+
+            if stop_path:
+                continue
+
+            current_reg_to_propagate = new_reg_to_track or current
+            for pred_idx in sm.get_predecessors(idx):
+                if (pred_idx, current_reg_to_propagate) not in visited:
+                    worklist.append((pred_idx, current_reg_to_propagate))
+                    visited.add((pred_idx, current_reg_to_propagate))
+
+        for reg_name in final_reg_states:
+            if reg_name.startswith('p'):
+                return {'source': reg_name, 'tag': 'param'}
+            if reg_name.startswith('L'):
+                return {'source': reg_name, 'tag': 'field'}
+
+        return None
+
     def resolve_register_to_resource(self, sm: SmaliMethod, start_idx: int, reg: str) -> Optional[str]:
         """
         [CFG-aware] 解析指定寄存器在给定位置对应的 resource id (0x7f...)
@@ -42,6 +229,9 @@ class Tracker:
                             get_result = sm.get_invoke_statement(stmt, idx)
                             if get_result is not None:
                                 invoke_stmt, idx = get_result
+                                callee = sm.extract_called_method_signature(invoke_stmt)
+                                if self._is_view_getter_name(callee) or self._is_view_compat_call(callee):
+                                    return current
                                 param0 = sm.get_method_invocation_param(invoke_stmt, 0)
                                 new_reg_to_track = param0
                             else:
@@ -50,6 +240,8 @@ class Tracker:
                         elif isinstance(right, str) and right.startswith("0x7f"):
                             return right
                         elif isinstance(right, str) and right.startswith("L"):
+                            if self._is_synthetic_lambda_ref(right):
+                                return right
                             return right
                         elif right and (right.startswith('v') or right.startswith('p')):
                             new_reg_to_track = right
@@ -108,6 +300,8 @@ class Tracker:
                             if get_result is not None:
                                 invoke_stmt, idx = get_result
                                 callee = sm.extract_called_method_signature(invoke_stmt)
+                                if self._is_synthetic_lambda_ref(callee):
+                                    return f"SYNTHETIC:{sm.get_class_name()}:{callee}"
                                 return f"{sm.get_class_name()}: {callee}"
                             else:
                                 self.logger.error(f"resolve_register_to_resource: move-result case, but previous stmt is not invoke, {stmt}")
@@ -115,6 +309,8 @@ class Tracker:
                         elif right == "p0":
                             return sm.get_class_name()
                         elif isinstance(right, str) and right.startswith("L"):
+                            if self._is_synthetic_lambda_ref(right):
+                                return f"SYNTHETIC:{right}"
                             return right
                         elif right and (right.startswith('v') or right.startswith('p')):
                             new_reg_to_track = right # Follow chain
@@ -258,7 +454,20 @@ class Tracker:
             new_reg_to_track = None
             stop_path = False
 
-            if sm.is_assignment_statement(stmt):
+            if sm.is_check_cast_statement(stmt):
+                left = sm.get_check_cast_left(stmt)
+                right = sm.get_check_cast_right(stmt)
+                if left == current:
+                    if right.startswith('L'):
+                        if self._is_synthetic_lambda_ref(right):
+                            return right, 'synthetic'
+                        if ';->' in right:
+                            return right, 'field'
+                        return right, 'class'
+                    if right and (right.startswith('v') or right.startswith('p')):
+                        new_reg_to_track = right
+
+            elif sm.is_assignment_statement(stmt):
                 if stmt.startswith("iput") or stmt.startswith("sput") or stmt.startswith("aput"):
                     pass
                 else:
@@ -270,45 +479,33 @@ class Tracker:
                             if not get_result:
                                 self.logger.error(f"未找到 move-result 指令对应的 invoke 语句: {sm.get_class_name()}: {stmt}")
                                 return None
-                            else:
-                                invoke_stmt, idx = get_result
-                                callee = sm.extract_called_method_signature(invoke_stmt)
-                                key = (sm.get_class_name(), sm.get_method_signature(), idx, callee)
-                                if callee == "findViewById(I)Landroid/view/View;":
-                                    tag = "findViewById"
-                                    return key, tag # FOUND
-                                elif callee in ["inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;",
-                                            "inflate(ILandroid/view/ViewGroup;)Landroid/view/View;",
-                                            "inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;"]:
-                                    tag = "inflate"
-                                    return key, tag # FOUND
-                                else:
-                                    tag = "unknown"
-                                    self.logger.warning(f"未识别的view对象方法：{sm.get_class_name()}: {callee}")
-                                    return key, tag # FOUND (unknown)
-                        elif right.startswith("L"):
-                            tag = "field"
-                            return right, tag
-                        elif right and (right.startswith('v') or right.startswith('p')):
+                            invoke_stmt, invoke_idx = get_result
+                            key, tag = self._classify_view_invoke(sm, invoke_stmt, invoke_idx)
+                            return key, tag
+                        if right.startswith('L'):
+                            if self._is_synthetic_lambda_ref(right):
+                                return right, 'synthetic'
+                            if ';->' in right:
+                                return right, 'field'
+                            return right, 'new_instance'
+                        if right and (right.startswith('v') or right.startswith('p')):
                             new_reg_to_track = right # Follow chain
                         else:
-                            self.logger.error(f"未识别的view对象赋值：{sm.get_class_name()}: {stmt}")
                             stop_path = True
             if stop_path:
                 continue
-            current_reg_to_propagate = new_reg_to_track or current
-        
-            for succ_idx in sm.get_predecessors(idx):
-                if (succ_idx, current_reg_to_propagate) not in visited:
-                    worklist.append((succ_idx, current_reg_to_propagate))
-                    visited.add((succ_idx, current_reg_to_propagate))
+            reg_to_propagate = new_reg_to_track or current
 
+            for pred_idx in sm.get_predecessors(idx): # <--- 正确！使用前驱
+                if (pred_idx, reg_to_propagate) not in visited:
+                    worklist.append((pred_idx, reg_to_propagate))
+                    visited.add((pred_idx, reg_to_propagate))
         for reg_name in final_reg_states:
-            if reg_name.startswith('p') or reg_name.startswith('L'):
-                tag = 'param'
-                return (reg), tag
-                
-        return None   
+            if reg_name.startswith('p'):
+                return reg_name, 'param'
+            if reg_name.startswith('L'):
+                return reg_name, 'field'
+        return None
 
     def resolve_register_class(self, sm: SmaliMethod, start_idx: int, reg: str):
         """
@@ -348,6 +545,8 @@ class Tracker:
                     if right.startswith("Landroid"):
                         pass
                     else:
+                        if self._is_synthetic_lambda_ref(right):
+                            return f"SYNTHETIC:{right}"
                         return right
 
             elif sm.is_assignment_statement(stmt):

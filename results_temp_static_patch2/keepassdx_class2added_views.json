@@ -1,0 +1,46 @@
+{
+    "com/kunzisoft/androidclearchroma/view/ChromaColorView": [
+        "Lcom/kunzisoft/androidclearchroma/view/ChannelView;",
+        "com/kunzisoft/androidclearchroma/view/ChannelView"
+    ],
+    "com/getkeepsafe/taptargetview/TapTargetView": [
+        "Lcom/getkeepsafe/taptargetview/TapTargetView;",
+        "com/getkeepsafe/taptargetview/TapTargetView"
+    ],
+    "com/kunzisoft/keepass/view/TextFieldView": [
+        "Landroidx/appcompat/widget/AppCompatImageButton;",
+        "Landroidx/appcompat/widget/AppCompatTextView;",
+        "androidx/appcompat/widget/AppCompatImageButton",
+        "androidx/appcompat/widget/AppCompatTextView"
+    ],
+    "com/kunzisoft/keepass/view/TemplateAbstractView": [
+        "Lcom/kunzisoft/keepass/view/SectionView;",
+        "com/kunzisoft/keepass/view/SectionView"
+    ],
+    "com/kunzisoft/keepass/view/TextEditFieldView": [
+        "Landroidx/appcompat/widget/AppCompatImageButton;",
+        "Lcom/google/android/material/textfield/TextInputEditText;",
+        "Lcom/google/android/material/textfield/TextInputLayout;",
+        "androidx/appcompat/widget/AppCompatImageButton",
+        "com/google/android/material/textfield/TextInputEditText",
+        "com/google/android/material/textfield/TextInputLayout"
+    ],
+    "com/kunzisoft/keepass/view/TextSelectFieldView": [
+        "Landroidx/appcompat/widget/AppCompatImageButton;",
+        "Lcom/google/android/material/textfield/TextInputEditText;",
+        "Lcom/google/android/material/textfield/TextInputLayout;",
+        "androidx/appcompat/widget/AppCompatImageButton",
+        "com/google/android/material/textfield/TextInputEditText",
+        "com/google/android/material/textfield/TextInputLayout"
+    ],
+    "com/kunzisoft/keepass/view/PasswordTextEditFieldView": [
+        "Lcom/google/android/material/progressindicator/LinearProgressIndicator;",
+        "com/google/android/material/progressindicator/LinearProgressIndicator"
+    ],
+    "com/kunzisoft/keepass/view/PasskeyTextFieldView": [
+        "Landroidx/appcompat/widget/AppCompatImageView;",
+        "Landroidx/appcompat/widget/AppCompatTextView;",
+        "androidx/appcompat/widget/AppCompatImageView",
+        "androidx/appcompat/widget/AppCompatTextView"
+    ]
+}

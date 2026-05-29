@@ -1,0 +1,32 @@
+{
+    "com/kunzisoft/androidclearchroma/ChromaDialog": [
+        "Lcom/kunzisoft/androidclearchroma/fragment/ChromaColorFragment;"
+    ],
+    "com/kunzisoft/keepass/settings/SettingsActivity": [
+        "Landroidx/fragment/app/Fragment;",
+        "Lcom/kunzisoft/keepass/settings/NestedSettingsFragment;"
+    ],
+    "com/kunzisoft/keepass/settings/ExternalSettingsActivity": [
+        "Landroidx/preference/PreferenceFragmentCompat;"
+    ],
+    "com/kunzisoft/keepass/activities/KeyGeneratorActivity": [
+        "Lcom/kunzisoft/keepass/activities/fragments/KeyGeneratorFragment;"
+    ],
+    "com/kunzisoft/keepass/activities/IconPickerActivity": [
+        "Lcom/kunzisoft/keepass/activities/fragments/IconPickerFragment;"
+    ],
+    "com/kunzisoft/keepass/activities/GroupActivity": [
+        "Lcom/kunzisoft/keepass/activities/fragments/GroupFragment;"
+    ],
+    "com/kunzisoft/keepass/activities/MainCredentialActivity": [
+        "Lcom/kunzisoft/keepass/biometric/DeviceUnlockFragment;"
+    ],
+    "com/kunzisoft/keepass/adapters/KeyGeneratorPagerAdapter": [
+        "Lcom/kunzisoft/keepass/activities/fragments/PassphraseGeneratorFragment;",
+        "Lcom/kunzisoft/keepass/activities/fragments/PasswordGeneratorFragment;"
+    ],
+    "com/kunzisoft/keepass/adapters/IconPickerPagerAdapter": [
+        "Lcom/kunzisoft/keepass/activities/fragments/IconCustomFragment;",
+        "Lcom/kunzisoft/keepass/activities/fragments/IconStandardFragment;"
+    ]
+}

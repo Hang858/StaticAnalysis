@@ -1,0 +1,69 @@
+{
+    "com/kunzisoft/androidclearchroma/ChromaPreferenceFragmentCompat": [
+        "Lcom/kunzisoft/androidclearchroma/ChromaDialog;"
+    ],
+    "com/kunzisoft/keepass/settings/AutofillSettingsFragment": [
+        "Lcom/kunzisoft/keepass/settings/preferencedialogfragment/AutofillBlocklistAppIdPreferenceDialogFragmentCompat;"
+    ],
+    "com/kunzisoft/keepass/settings/PasskeysSettingsFragment": [
+        "Lcom/kunzisoft/keepass/settings/preferencedialogfragment/PasskeysPrivilegedAppsPreferenceDialogFragmentCompat;"
+    ],
+    "com/kunzisoft/keepass/settings/MagikeyboardSettingsFragment": [
+        "Lcom/kunzisoft/keepass/settings/preferencedialogfragment/DurationDialogFragmentCompat;"
+    ],
+    "com/kunzisoft/keepass/settings/NestedAppSettingsFragment": [
+        "Lcom/kunzisoft/keepass/activities/dialogs/ProFeatureDialogFragment;",
+        "Lcom/kunzisoft/keepass/activities/dialogs/UnavailableFeatureDialogFragment;",
+        "Lcom/kunzisoft/keepass/settings/preferencedialogfragment/DurationDialogFragmentCompat;"
+    ],
+    "com/kunzisoft/keepass/settings/NestedDatabaseSettingsFragment": [
+        "Lcom/kunzisoft/keepass/activities/dialogs/SetMainCredentialDialogFragment;",
+        "Lcom/kunzisoft/keepass/settings/preferencedialogfragment/DatabaseNamePreferenceDialogFragmentCompat;"
+    ],
+    "com/kunzisoft/keepass/settings/NestedSettingsFragment": [
+        "Lcom/kunzisoft/keepass/activities/dialogs/UnderDevelopmentFeatureDialogFragment;"
+    ],
+    "com/kunzisoft/keepass/activities/IconPickerActivity": [
+        "Lcom/kunzisoft/keepass/activities/dialogs/IconEditDialogFragment;"
+    ],
+    "com/kunzisoft/keepass/activities/FileDatabaseSelectActivity": [
+        "Lcom/kunzisoft/keepass/activities/dialogs/SetMainCredentialDialogFragment;"
+    ],
+    "com/kunzisoft/keepass/activities/GroupActivity": [
+        "Lcom/google/android/material/datepicker/MaterialDatePicker;",
+        "Lcom/google/android/material/timepicker/MaterialTimePicker;",
+        "Lcom/kunzisoft/keepass/activities/dialogs/GroupDialogFragment;",
+        "Lcom/kunzisoft/keepass/activities/dialogs/GroupEditDialogFragment;",
+        "Lcom/kunzisoft/keepass/activities/dialogs/MainCredentialDialogFragment;"
+    ],
+    "com/kunzisoft/keepass/activities/MainCredentialActivity": [
+        "Lcom/kunzisoft/keepass/activities/dialogs/DuplicateUuidDialog;"
+    ],
+    "com/kunzisoft/keepass/activities/EntryEditActivity": [
+        "Lcom/google/android/material/datepicker/MaterialDatePicker;",
+        "Lcom/google/android/material/timepicker/MaterialTimePicker;",
+        "Lcom/kunzisoft/keepass/activities/dialogs/ColorPickerDialogFragment;",
+        "Lcom/kunzisoft/keepass/activities/dialogs/EntryCustomFieldDialogFragment;",
+        "Lcom/kunzisoft/keepass/activities/dialogs/FileTooBigDialogFragment;"
+    ],
+    "com/kunzisoft/keepass/activities/helpers/ExternalFileHelper": [
+        "Lcom/kunzisoft/keepass/activities/dialogs/FileManagerDialogFragment;"
+    ],
+    "com/kunzisoft/keepass/activities/legacy/DatabaseActivity$showDatabaseChangedDialog$1": [
+        "Lcom/kunzisoft/keepass/activities/dialogs/DatabaseChangedDialogFragment;"
+    ],
+    "com/kunzisoft/keepass/activities/legacy/DatabaseActivity$startDialog$1": [
+        "Lcom/kunzisoft/keepass/tasks/ProgressTaskDialogFragment;"
+    ],
+    "com/kunzisoft/keepass/activities/legacy/DatabaseLockActivity": [
+        "Lcom/kunzisoft/keepass/activities/dialogs/DeleteNodesDialogFragment;",
+        "Lcom/kunzisoft/keepass/activities/dialogs/SortDialogFragment;"
+    ],
+    "com/kunzisoft/keepass/activities/fragments/GroupFragment$menuProvider$1": [
+        "Lcom/kunzisoft/keepass/activities/dialogs/SortDialogFragment;"
+    ],
+    "com/kunzisoft/keepass/activities/fragments/EntryEditFragment": [
+        "Lcom/kunzisoft/keepass/activities/dialogs/ReplaceFileDialogFragment;",
+        "Lcom/kunzisoft/keepass/activities/dialogs/SetOTPDialogFragment;"
+    ]
+}

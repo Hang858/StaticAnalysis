@@ -1,0 +1,108 @@
+{
+    "com/kunzisoft/keepass/settings/preferencedialogfragment/DatabaseTemplatesGroupPreferenceDialogFragmentCompat": [
+        "Lcom/kunzisoft/keepass/settings/preferencedialogfragment/adapter/ListRadioItemAdapter;",
+        "com/kunzisoft/keepass/settings/preferencedialogfragment/adapter/ListRadioItemAdapter"
+    ],
+    "com/kunzisoft/keepass/settings/preferencedialogfragment/AutofillBlocklistPreferenceDialogFragmentCompat": [
+        "Lcom/kunzisoft/keepass/settings/preferencedialogfragment/adapter/AutofillBlocklistAdapter;",
+        "com/kunzisoft/keepass/settings/preferencedialogfragment/adapter/AutofillBlocklistAdapter"
+    ],
+    "com/kunzisoft/keepass/settings/preferencedialogfragment/DatabaseKeyDerivationPreferenceDialogFragmentCompat": [
+        "Lcom/kunzisoft/keepass/settings/preferencedialogfragment/adapter/ListRadioItemAdapter;",
+        "com/kunzisoft/keepass/settings/preferencedialogfragment/adapter/ListRadioItemAdapter"
+    ],
+    "com/kunzisoft/keepass/settings/preferencedialogfragment/DatabaseDataCompressionPreferenceDialogFragmentCompat": [
+        "Lcom/kunzisoft/keepass/settings/preferencedialogfragment/adapter/ListRadioItemAdapter;",
+        "com/kunzisoft/keepass/settings/preferencedialogfragment/adapter/ListRadioItemAdapter"
+    ],
+    "com/kunzisoft/keepass/settings/preferencedialogfragment/DatabaseRecycleBinGroupPreferenceDialogFragmentCompat": [
+        "Lcom/kunzisoft/keepass/settings/preferencedialogfragment/adapter/ListRadioItemAdapter;",
+        "com/kunzisoft/keepass/settings/preferencedialogfragment/adapter/ListRadioItemAdapter"
+    ],
+    "com/kunzisoft/keepass/settings/preferencedialogfragment/DatabaseEncryptionAlgorithmPreferenceDialogFragmentCompat": [
+        "Lcom/kunzisoft/keepass/settings/preferencedialogfragment/adapter/ListRadioItemAdapter;",
+        "com/kunzisoft/keepass/settings/preferencedialogfragment/adapter/ListRadioItemAdapter"
+    ],
+    "com/kunzisoft/keepass/settings/preferencedialogfragment/PasskeysPrivilegedAppsPreferenceDialogFragmentCompat": [
+        "Lcom/kunzisoft/keepass/settings/preferencedialogfragment/adapter/ListSelectionItemAdapter;",
+        "com/kunzisoft/keepass/settings/preferencedialogfragment/adapter/ListSelectionItemAdapter"
+    ],
+    "com/kunzisoft/keepass/activities/FileDatabaseSelectActivity": [
+        "Lcom/kunzisoft/keepass/adapters/FileDatabaseHistoryAdapter;",
+        "com/kunzisoft/keepass/adapters/FileDatabaseHistoryAdapter"
+    ],
+    "com/kunzisoft/keepass/activities/GroupActivity": [
+        "Lcom/kunzisoft/keepass/adapters/BreadcrumbAdapter;",
+        "com/kunzisoft/keepass/adapters/BreadcrumbAdapter"
+    ],
+    "com/kunzisoft/keepass/activities/EntryEditActivity": [
+        "Lcom/kunzisoft/keepass/adapters/TemplatesSelectorAdapter;",
+        "com/kunzisoft/keepass/adapters/TemplatesSelectorAdapter"
+    ],
+    "com/kunzisoft/keepass/activities/EntryActivity": [
+        "Lcom/kunzisoft/keepass/adapters/TagsAdapter;",
+        "com/kunzisoft/keepass/adapters/TagsAdapter"
+    ],
+    "com/kunzisoft/keepass/activities/dialogs/GroupEditDialogFragment": [
+        "Lcom/tokenautocomplete/FilteredArrayAdapter;",
+        "com/tokenautocomplete/FilteredArrayAdapter"
+    ],
+    "com/kunzisoft/keepass/activities/dialogs/GroupDialogFragment": [
+        "Lcom/kunzisoft/keepass/adapters/TagsAdapter;",
+        "com/kunzisoft/keepass/adapters/TagsAdapter"
+    ],
+    "com/kunzisoft/keepass/activities/dialogs/SetOTPDialogFragment": [
+        "Landroid/widget/ArrayAdapter;",
+        "android/widget/ArrayAdapter"
+    ],
+    "com/kunzisoft/keepass/activities/fragments/EntryHistoryFragment": [
+        "Lcom/kunzisoft/keepass/adapters/EntryHistoryAdapter;",
+        "com/kunzisoft/keepass/adapters/EntryHistoryAdapter"
+    ],
+    "com/kunzisoft/keepass/activities/fragments/IconFragment": [
+        "Lcom/kunzisoft/keepass/adapters/IconPickerAdapter;",
+        "com/kunzisoft/keepass/adapters/IconPickerAdapter"
+    ],
+    "com/kunzisoft/keepass/activities/fragments/GroupFragment": [
+        "Lcom/kunzisoft/keepass/adapters/NodesAdapter;",
+        "com/kunzisoft/keepass/adapters/NodesAdapter"
+    ],
+    "com/kunzisoft/keepass/activities/fragments/EntryFragment": [
+        "Lcom/kunzisoft/keepass/adapters/EntryAttachmentsItemsAdapter;",
+        "com/kunzisoft/keepass/adapters/EntryAttachmentsItemsAdapter"
+    ],
+    "com/kunzisoft/keepass/activities/fragments/KeyGeneratorFragment": [
+        "Lcom/kunzisoft/keepass/adapters/KeyGeneratorPagerAdapter;",
+        "com/kunzisoft/keepass/adapters/KeyGeneratorPagerAdapter"
+    ],
+    "com/kunzisoft/keepass/activities/fragments/IconPickerFragment": [
+        "Lcom/kunzisoft/keepass/adapters/IconPickerPagerAdapter;",
+        "com/kunzisoft/keepass/adapters/IconPickerPagerAdapter"
+    ],
+    "com/kunzisoft/keepass/activities/fragments/PassphraseGeneratorFragment": [
+        "Landroid/widget/ArrayAdapter;",
+        "android/widget/ArrayAdapter"
+    ],
+    "com/kunzisoft/keepass/activities/fragments/EntryEditFragment": [
+        "Lcom/kunzisoft/keepass/adapters/EntryAttachmentsItemsAdapter;",
+        "Lcom/tokenautocomplete/FilteredArrayAdapter;",
+        "com/kunzisoft/keepass/adapters/EntryAttachmentsItemsAdapter",
+        "com/tokenautocomplete/FilteredArrayAdapter"
+    ],
+    "com/kunzisoft/keepass/view/TextSelectFieldView": [
+        "Lcom/kunzisoft/keepass/view/TextSelectFieldView$ValueSpinnerAdapter;",
+        "com/kunzisoft/keepass/view/TextSelectFieldView$ValueSpinnerAdapter"
+    ],
+    "com/kunzisoft/keepass/view/InheritedCompletionView": [
+        "Lcom/kunzisoft/keepass/view/InheritedCompletionView$ArrayAdapterNoFilter;",
+        "com/kunzisoft/keepass/view/InheritedCompletionView$ArrayAdapterNoFilter"
+    ],
+    "com/kunzisoft/keepass/view/HardwareKeySelectionView": [
+        "Lcom/kunzisoft/keepass/view/HardwareKeySelectionView$ArrayAdapterNoFilter;",
+        "com/kunzisoft/keepass/view/HardwareKeySelectionView$ArrayAdapterNoFilter"
+    ],
+    "com/kunzisoft/keepass/credentialprovider/magikeyboard/MagikeyboardService": [
+        "Lcom/kunzisoft/keepass/adapters/FieldsAdapter;",
+        "com/kunzisoft/keepass/adapters/FieldsAdapter"
+    ]
+}

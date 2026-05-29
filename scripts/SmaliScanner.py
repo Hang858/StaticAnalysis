@@ -26,6 +26,24 @@ class SmaliScanner:
             "setOnDragListener",
             "setOnFocusChangeListener",
             "setOnKeyListener",
+            "setOnCheckedChangeListener",
+            "setOnItemClickListener",
+            "setOnItemLongClickListener",
+            "setOnItemSelectedListener",
+            "setOnSeekBarChangeListener",
+            "setOnScrollChangeListener",
+            "setOnEditorActionListener",
+            "setOnPageChangeListener",
+            "setOnHierarchyChangeListener",
+            "setOnApplyWindowInsetsListener",
+            "setOnCreateContextMenuListener",
+            "setOnQueryTextListener",
+            "setOnSearchClickListener",
+            "setOnItemClickListener",
+            "setOnItemLongClickListener",
+            "setOnItemSelectedListener",
+            "addTextChangedListener",
+            "registerForContextMenu",
         }
 
         self.view_creation_methods = {
@@ -62,6 +80,15 @@ class SmaliScanner:
 
         ### 存储dialogFragment
         self.class2dialog_fragment = {}
+        self.view_getter_methods = {}
+        self.synthetic_lambda_methods = {}
+        self.synthetic_lambda_targets = {}
+        self.synthetic_lambda_callsites = {}
+        self.adapter_viewholder_map = {}
+        self.adapter_layout_map = {}
+        self.wrapper_listener_methods = {}
+        self.wrapper_listener_callsites = {}
+        self.dynamic_view_fields = {}
 
         self.resolved_layouts_cache = {}
 
@@ -118,6 +145,23 @@ class SmaliScanner:
             "addContentView(Landroid/view/View;",
         }
         self.wrapper_methods = {}
+        self.synthetic_listener_methods = {
+            "setOnClickListener",
+            "setOnLongClickListener",
+            "setOnTouchListener",
+            "setOnDragListener",
+            "setOnFocusChangeListener",
+            "setOnKeyListener",
+            "setOnCheckedChangeListener",
+            "setOnItemClickListener",
+            "setOnItemLongClickListener",
+            "setOnItemSelectedListener",
+            "setOnSeekBarChangeListener",
+            "setOnScrollChangeListener",
+            "setOnEditorActionListener",
+            "setOnApplyWindowInsetsListener",
+            "addTextChangedListener",
+        }
         self.wrapper_methods_exclude = {
             "onCreate",
             "onCreateView",
@@ -185,6 +229,229 @@ class SmaliScanner:
             "Landroid/support/v7/widget/Toolbar;",
         }
 
+    def _is_view_like_return_type(self, return_type: str) -> bool:
+        if not return_type or not return_type.startswith("L"):
+            return False
+        if return_type in self.android_view:
+            return True
+        class_chain = self.rm.get_class_chain(return_type)
+        if any(item in self.android_view for item in class_chain):
+            return True
+        simple_name = return_type.split("/")[-1].rstrip(";")
+        if "$" in simple_name:
+            inner_name = simple_name.split("$")[-1]
+            if inner_name.endswith(("State", "Listener", "Adapter", "Holder", "Companion", "WhenMappings", "Callback", "Function")):
+                return False
+        return any(token in simple_name for token in ["View", "Button", "TextView", "ImageView", "Spinner", "EditText", "CompoundButton", "SeekBar", "CheckBox", "AutoCompleteTextView", "FloatingActionButton"])
+
+    def _is_synthetic_lambda_class(self, class_name: str) -> bool:
+        return isinstance(class_name, str) and (
+            "$$ExternalSyntheticLambda" in class_name
+            or "$$Lambda$" in class_name
+            or "$r8$lambda$" in class_name
+            or "lambda$" in class_name
+        )
+
+    def _is_view_like_param(self, class_name: str, sm: SmaliMethod, param_index: int) -> bool:
+        candidates = []
+        if param_index == 0:
+            candidates.append(f"L{class_name};")
+            if sm.params:
+                candidates.append(sm.params[0])
+        else:
+            if 0 <= param_index - 1 < len(sm.params):
+                candidates.append(sm.params[param_index - 1])
+            if 0 <= param_index < len(sm.params):
+                candidates.append(sm.params[param_index])
+        return any(self._is_view_like_return_type(item) for item in candidates if item)
+
+    @staticmethod
+    def _is_framework_or_library_class(class_name: str) -> bool:
+        return class_name.startswith((
+            "androidx/",
+            "android/support/",
+            "com/google",
+            "kotlin/",
+            "kotlinx/",
+            "mozilla/",
+        ))
+
+    def _scan_dynamic_view_fields(self):
+        """
+        预扫描：记录代码动态 new 出来的 View 字段。
+        这类 View 没有 XML id，但后续动态执行可以用 field/type 作为 runtime widget key。
+        """
+        for root, dirs, files in os.walk(self.smali_root):
+            for file in files:
+                if not file.endswith(".smali"):
+                    continue
+                file_path = os.path.join(root, file)
+                sc = SmaliClass(file_path)
+                class_name = sc.class_name
+                if self._is_framework_or_library_class(class_name):
+                    continue
+                methods = sc.get_methods_body()
+                for method_sig, body in methods.items():
+                    sm = SmaliMethod(class_name, method_sig, body)
+                    for idx, stmt in enumerate(sm.get_statements()):
+                        if not stmt.startswith("iput-object"):
+                            continue
+                        field_ref = sm.get_assignment_right(stmt)
+                        if not field_ref or ";->" not in field_ref:
+                            continue
+                        view_reg = sm.get_assignment_left(stmt)
+                        view_type = self.tracker.resolve_register_class(sm, idx, view_reg)
+                        if not view_type or view_type.startswith("p"):
+                            continue
+                        field_type = field_ref.split(":", 1)[1] if ":" in field_ref else view_type
+                        if not (self._is_view_like_return_type(view_type) or self._is_view_like_return_type(field_type)):
+                            continue
+                        self.dynamic_view_fields[field_ref] = {
+                            "class_name": class_name,
+                            "method_sig": method_sig,
+                            "stmt_index": idx,
+                            "field": field_ref,
+                            "view_type": field_type if self._is_view_like_return_type(field_type) else view_type,
+                            "source": "dynamic_view_field",
+                        }
+
+    def _scan_synthetic_lambda_methods(self):
+        for root, dirs, files in os.walk(self.smali_root):
+            for file in files:
+                if not file.endswith(".smali"):
+                    continue
+                file_path = os.path.join(root, file)
+                sc = SmaliClass(file_path)
+                class_name = sc.class_name
+                if not self._is_synthetic_lambda_class(class_name):
+                    continue
+                methods = sc.get_methods_body()
+                for method_sig, body in methods.items():
+                    if method_sig.startswith(('<init>', '<clinit>')):
+                        continue
+                    sm = SmaliMethod(class_name, method_sig, body)
+                    key = f"{class_name}->{method_sig}"
+                    for idx, stmt in enumerate(sm.get_statements()):
+                        if not sm.is_method_invocation(stmt):
+                            continue
+                        callee = sm.extract_called_method_signature(stmt)
+                        full_callee = sm.extract_called_method_signature(stmt, True)
+                        if not callee:
+                            continue
+                        if not any(marker in (full_callee or callee) for marker in ["$$ExternalSyntheticLambda", "$r8$lambda$", "lambda$", "access$"]):
+                            continue
+                        info = {
+                            "class_name": class_name,
+                            "method_sig": method_sig,
+                            "callee": callee,
+                            "full_callee": full_callee,
+                            "stmt_index": idx,
+                            "file_path": file_path,
+                        }
+                        self.synthetic_lambda_targets[key] = info
+                        self.synthetic_lambda_methods[key] = info
+                        self.synthetic_lambda_callsites.setdefault(class_name, []).append(info)
+                        break
+
+    def _scan_view_getters(self):
+        """
+        预扫描：识别返回 View / View 子类的 getter 方法，供后续回溯使用。
+        """
+        for root, dirs, files in os.walk(self.smali_root):
+            for file in files:
+                if not file.endswith(".smali"):
+                    continue
+                file_path = os.path.join(root, file)
+                sc = SmaliClass(file_path)
+                class_name = sc.class_name
+                if self._is_framework_or_library_class(class_name):
+                    continue
+                methods = sc.get_methods_body()
+                for method_sig, body in methods.items():
+                    if not method_sig.startswith(("get", "access$get")):
+                        continue
+                    return_type = method_sig.split(")")[-1]
+                    if not self._is_view_like_return_type(return_type):
+                        continue
+                    sm = SmaliMethod(class_name, method_sig, body)
+                    current_full_sig = f"{class_name}->{method_sig}"
+                    for idx, stmt in enumerate(sm.get_statements()):
+                        if not sm.is_return_statement(stmt):
+                            continue
+                        return_reg = sm.get_return_register(stmt)
+                        if not return_reg:
+                            continue
+                        resolved = self.tracker.resolve_register_class(sm, idx, return_reg)
+                        getter_view = self.tracker.resolve_getter_view(sm, idx, return_reg)
+                        if resolved or getter_view:
+                            self.view_getter_methods[current_full_sig] = {
+                                "class_name": class_name,
+                                "method_sig": method_sig,
+                                "return_type": return_type,
+                                "resolved": resolved,
+                                "getter_view": getter_view,
+                                "method_kind": "view_getter",
+                            }
+                            if getter_view and isinstance(getter_view, dict):
+                                source = getter_view.get("source")
+                                if isinstance(source, tuple) and len(source) >= 4:
+                                    self.adapter_viewholder_map.setdefault(class_name, set()).add(source[0])
+                            break
+
+    def _pre_scan_listener_wrappers(self):
+        """
+        预扫描：发现内部把某个 View 参数注册 listener 的工具方法。
+        典型例子是 Kotlin 扩展函数 ViewUtilKt.applyWindowInsets(view, ...)。
+        """
+        for root, dirs, files in os.walk(self.smali_root):
+            for file in files:
+                if not file.endswith(".smali"):
+                    continue
+                file_path = os.path.join(root, file)
+                sc = SmaliClass(file_path)
+                class_name = sc.class_name
+                if self._is_framework_or_library_class(class_name):
+                    continue
+                methods = sc.get_methods_body()
+                for method_sig, body in methods.items():
+                    if method_sig.startswith(("<init>", "<clinit>", "init", "addListeners", "onCreate", "onBind", "onViewCreated", "onStart", "onResume", "onMenuItem", "invoke", "invokeSuspend", "emit")):
+                        continue
+                    sm = SmaliMethod(class_name, method_sig, body)
+                    for idx, stmt in enumerate(sm.get_statements()):
+                        if not sm.is_method_invocation(stmt):
+                            continue
+                        callee = sm.extract_called_method_signature(stmt)
+                        full_callee = sm.extract_called_method_signature(stmt, True)
+                        if not callee or not any(callee.startswith(t) for t in self.event_listener_methods):
+                            continue
+                        view_reg = sm.get_method_invocation_param(stmt, 0)
+                        if not view_reg or not view_reg.startswith("p"):
+                            continue
+                        try:
+                            view_param_index = int(view_reg[1:])
+                        except ValueError:
+                            continue
+                        if view_param_index >= len(sm.params) + 1:
+                            continue
+                        if not self._is_view_like_param(class_name, sm, view_param_index):
+                            continue
+                        current_full_sig = f"{class_name}->{method_sig}"
+                        current_descriptor_sig = f"L{class_name};->{method_sig}"
+                        handler_reg = sm.get_method_invocation_param(stmt, 1)
+                        handler = self.tracker.resolve_registration_handler(sm, idx, handler_reg) if handler_reg else None
+                        info = {
+                            "class_name": class_name,
+                            "method_sig": method_sig,
+                            "listener_callee": callee,
+                            "listener_full_callee": full_callee,
+                            "listener_stmt_index": idx,
+                            "view_param_index": view_param_index,
+                            "handler": handler,
+                        }
+                        self.wrapper_listener_methods[current_full_sig] = info
+                        self.wrapper_listener_methods[current_descriptor_sig] = info
+                        break
+
     def _pre_scan_wrappers(self):
         """
         预扫描：使用不动点迭代发现所有封装了 addView 的方法
@@ -198,7 +465,7 @@ class SmaliScanner:
                 sc = SmaliClass(path)
                 class_name = sc.class_name
 
-                if class_name.startswith(("androidx/", "android/support/", "com/google")):
+                if self._is_framework_or_library_class(class_name):
                     continue
 
                 methods = sc.get_methods_body()
@@ -279,7 +546,10 @@ class SmaliScanner:
         """
         处理事件监听器方法的调用
         """
-        return CallSite(file_path, class_name, method_sig, idx, stmt, callee)
+        callsite = CallSite(file_path, class_name, method_sig, idx, stmt, callee)
+        if callee.startswith("setOnApplyWindowInsetsListener"):
+            self.synthetic_listener_methods.add("setOnApplyWindowInsetsListener")
+        return callsite
 
     def _process_layout_inflation(self, class_name: str, file_path: str, method_sig: str, idx: int, stmt: str, callee: str): 
         """
@@ -292,7 +562,7 @@ class SmaliScanner:
         #     print(" ")
         key = (class_name, method_sig, idx, callee)
         res_id = self.callsite2res_id.get(key)
-        xml = self.rm.id_to_layout.get(res_id, {})
+        xml = self.rm.layout_name_of(res_id)
         if xml:
             custom_componnts_list = self.rm.xml_to_custom_components.get(xml)
             if custom_componnts_list:
@@ -322,6 +592,11 @@ class SmaliScanner:
         if adapter.startswith('p'):
             return
         self.class2adapters.setdefault(sm.get_class_name(), set()).add(adapter)
+        if adapter.startswith('L') and ';' in adapter:
+            adapter_class = adapter[1:adapter.index(';')]
+            self.class2adapters.setdefault(sm.get_class_name(), set()).add(adapter_class)
+        holder_method = sm.get_class_name() + '->' + sm.get_method_signature()
+        self.adapter_layout_map.setdefault(sm.get_class_name(), set()).add(holder_method)
 
 
     def _perform_add_set_view(self, sm: SmaliMethod, stmt: str, idx: int):
@@ -332,6 +607,9 @@ class SmaliScanner:
         if view.startswith('p') or view.startswith('Landroid/'):
             return
         self.class2added_views.setdefault(sm.get_class_name(), set()).add(view)
+        if view.startswith('L') and ';' in view:
+            view_class = view[1:view.index(';')]
+            self.class2added_views.setdefault(sm.get_class_name(), set()).add(view_class)
 
     def _perform_dialog_fragment(self, sm: SmaliMethod, stmt: str, idx: int):
         reg = sm.get_method_invocation_param(stmt, 0)
@@ -358,6 +636,10 @@ class SmaliScanner:
         扫描Smali文件，查找目标方法调用
         :return: 调用站点列表
         """
+        self._scan_view_getters()
+        self._scan_dynamic_view_fields()
+        self._scan_synthetic_lambda_methods()
+        self._pre_scan_listener_wrappers()
         self._pre_scan_wrappers()
         callsites: List[CallSite] = []
         for root, dirs, files in os.walk(self.smali_root):
@@ -369,7 +651,7 @@ class SmaliScanner:
                 sc = SmaliClass(path)
                 class_name = sc.class_name
 
-                if class_name.startswith(("androidx/", "android/support/", "com/google")):
+                if self._is_framework_or_library_class(class_name):
                     continue
                 self.class_name2file_path[class_name] = file_path
                 methods = sc.get_methods_body()
@@ -391,7 +673,12 @@ class SmaliScanner:
                         if not sm.is_method_invocation(stmt):
                             continue
                         callee = sm.extract_called_method_signature(stmt)
+                        full_callee = sm.extract_called_method_signature(stmt, True)
                         
+                        if full_callee in self.wrapper_listener_methods:
+                            self.wrapper_listener_callsites[(class_name, method_sig, idx, callee)] = self.wrapper_listener_methods[full_callee]
+                            callsites.append(self._process_event_listener(file_path, class_name, method_sig, idx, stmt, callee))
+
                         # 调用模块化的方法处理不同类型的方法调用
                         if any(callee.startswith(t) for t in self.view_creation_methods):
                             self._process_view_creation(sm, stmt, idx, callee)
